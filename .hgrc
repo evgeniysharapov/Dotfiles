@@ -1,0 +1,71 @@
+[extensions]
+hgsubversion = ~/.hg-ext/hgsubversion/hgsubversion
+#hggit = ~/.hg-ext/hg-git/hggit
+hgk=
+graphlog=
+rebase =
+histedit =
+mq = 
+record = 
+transplant = 
+purge=
+highlight=
+record=
+schemes=
+color=
+progress=
+
+[alias]
+ll = log --graph --style compact --limit 6 -r 'sort((::. or bookmark()), "-rev")'
+ls = log --template '{rev} {node|short} | {date|shortdate} | {author|user}: {desc|strip|firstline}\n'
+lg = glog -l15 --template '\033[33;40m{rev} \033[37;40m{desc|firstline|fill68} \033[1;30;40m({date|age} ago by {author|person})\033[0;37;40m \033[33;40m{tags}\033[37;40m \033[35;40m{branches}\033[37;40m\n\n'
+lga = lg -l1000000000
+
+cm = commit --message
+up = update --check
+d = diff -p --color=auto
+
+egrep = !$HG locate -0 '$2' $3 $4 $5 $6 $7 $8 $9 | xargs -0 egrep -H '$1'
+
+[defaults]
+qimport = --git
+qrefresh = --git
+annotate = -nu
+heads = --style default
+serve = -v
+#outgoing = --graph
+#incoming = --graph
+diff = -p
+
+[color]
+mode = ansi
+status.ignored = magenta bold
+qseries.unapplied = magenta bold
+qseries.applied = blue bold underline
+qseries.missing = red bold
+diff.diffline = bold
+diff.extended = cyan bold
+diff.file_a = red bold
+diff.file_b = green bold
+diff.hunk = magenta
+diff.deleted = red
+diff.inserted = green
+diff.changed = white
+diff.trailingwhitespace = bold red_background
+
+
+[hostfingerprints]
+ced01ws01.FiservISD.FiservISDRoot.local = 7D:0F:FC:9B:5C:CD:CB:D0:12:08:51:DB:49:E2:42:79:8E:60:FD:AD
+ced01ws01 = 7d:0f:fc:9b:5c:cd:cb:d0:12:08:51:db:49:e2:42:79:8e:60:fd:ad
+
+[ui]
+username = ESharapov
+
+[tortoisehg]
+fontoutputlog = Consolas,10,-1,5,50,0,0,0,0,0
+
+[git]
+authors = ~/authors.txt
+
+[hgsubversion]
+%include ~/.hgrc_private

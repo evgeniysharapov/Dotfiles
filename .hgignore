@@ -1,4 +1,6 @@
 syntax:re
 
 # look-ahead to match everything except
-^(?!\.gitconfig$|\.hgrc$|\.hgignore$)
+^(?!\.gitconfig$|\.hg(rc|ignore|sub)$)
+
+

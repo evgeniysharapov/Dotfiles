@@ -1,6 +1,6 @@
 [extensions]
 hgsubversion = ~/.hg-ext/hgsubversion/hgsubversion
-#hggit = ~/.hg-ext/hg-git/hggit
+hggit = ~/.hg-ext/hg-git/hggit
 hgk=
 graphlog=
 rebase =

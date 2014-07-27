@@ -1,17 +1,50 @@
 [user]
+#	name = Evgeniy Sharapov
+#	email = evgeniy.sharapov@stoneriver.com
 	name = Evgeniy Sharapov
-	email = evgeniy.sharapov@stoneriver.com
-[color]
-	ui = auto
+	email = evgeniy.sharapov@gmail.com
 [alias]
-  st = status
-  ci = commit
-  br = branch
-  co = checkout
-  df = diff
-  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-  lga = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
-  lgp = log -p
+        st = status
+        ci = commit
+        br = branch
+        co = checkout
+        df = diff
+        d = diff -C
+        ds = diff -C --stat
+        dw = diff -C --color-words
+
+        l = log -C --decorate
+        ls = log -C --stat --decorate
+        lsp = log -C --stat -p --decorate
+        lgp = log -p
+        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+#        lg = log --graph '--pretty=tformat: %C(cyan)%h%Creset %Cgreen%ad%Creset %C(yellow)%an%Creset %Cred%d%Creset %s' --date=short
+
+        lga = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
+#        lga = log --graph '--pretty=tformat: %C(cyan)%h%Creset %Cgreen%ad%Creset %C(yellow)%an%Creset %Cred%d%Creset %s' --date=short --all
 
 [push]
 	default = simple
+
+[color]
+	ui = auto
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+
+[color "branch"]
+       current = yellow reverse
+       local = yellow
+       remote = green
+
+#[core]
+#	excludefile = /Users/evgeniysharapov/.gitignore
+#	editor = emacsclient
+#	excludesfile = /Users/evgeniysharapov/.gitignore_global
+#[difftool "sourcetree"]
+#	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+#	path = 
+#[mergetool "sourcetree"]
+#	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+#	trustExitCode = true

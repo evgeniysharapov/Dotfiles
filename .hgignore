@@ -1,4 +1,4 @@
 syntax:re
 
 # look-ahead to match everything except
-^(?!\.git(config|ignore(_global)*)$|\.hg(rc|ignore|sub|-map-cmdline\.lg)(_global)*$|\.inputrc|\.zsh(env|rc(\.pre-oh-my-zsh))|\.gemrc|\.ackrc|\.bash_profile$|\.bashrc)
+^(?!\.git(config|ignore(_global)*)$|\.hg(rc|ignore|sub|-map-cmdline\.lg)(_global)*$|\.inputrc|\.zsh(env|rc(\.pre-oh-my-zsh)*)|\.gemrc|\.ackrc|\.bash_profile$|\.bashrc)

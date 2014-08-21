@@ -79,5 +79,5 @@ fontoutputlog = Consolas,10,-1,5,50,0,0,0,0,0
 #%include ~/.hgrc_private
 
 [pager]
-pager = LESS='FSRX' less
+pager = less -FSRX
 

@@ -24,6 +24,8 @@ ll = log --graph --style compact --limit 6 -r 'sort((::. or bookmark()), "-rev")
 ls = log --template '{rev} {node|short} | {date|shortdate} | {author|user}: {desc|strip|firstline}\n'
 lg = glog -l15 --template '\033[33;40m{rev} \033[37;40m{desc|firstline|fill68} \033[1;30;40m({date|age} ago by {author|person})\033[0;37;40m \033[33;40m{tags}\033[37;40m \033[35;40m{branches}\033[37;40m\n\n'
 lga = lg -l1000000000
+nlog = glog --style=.hg-map-cmdline.lg
+
 cm = commit --message
 up = update --check
 d = diff -p --color=auto

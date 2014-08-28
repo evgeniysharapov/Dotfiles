@@ -17,10 +17,10 @@
         ls = log -C --stat --decorate
         lsp = log -C --stat -p --decorate
         lgp = log -p
-        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold cyan)<%an>%Creset' --abbrev-commit
 #        lg = log --graph '--pretty=tformat: %C(cyan)%h%Creset %Cgreen%ad%Creset %C(yellow)%an%Creset %Cred%d%Creset %s' --date=short
 
-        lga = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
+        lga = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold cyan)<%an>%Creset' --abbrev-commit --all
 #        lga = log --graph '--pretty=tformat: %C(cyan)%h%Creset %Cgreen%ad%Creset %C(yellow)%an%Creset %Cred%d%Creset %s' --date=short --all
 
 [push]

@@ -32,7 +32,9 @@ DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx macports bundler rvm cabal)
+plugins=(git git-extras osx macports bundler rvm cabal)
+# add git extras scripts to the path
+export PATH=${PATH}:$HOME/.git-extras/bin
 
 # Customize to your needs...
 export PATH=$HOME/bin:$HOME/Library/Haskell/bin:/Applications/Emacs.app/Contents/MacOS:/Applications/Emacs.app/Contents/MacOS/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/usr/local/texlive/2012/bin/x86_64-darwin:$PATH

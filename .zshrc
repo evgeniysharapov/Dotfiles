@@ -42,7 +42,7 @@ export PATH=$HOME/bin:$HOME/Library/Haskell/bin:/Applications/Emacs.app/Contents
 alias mysql=/usr/local/mysql/bin/mysql
 alias mysqladmin=/usr/local/mysql/bin/mysqladmin
 # otherwise tends to correct ack command
-alias ack='nocorrect ack-5.16'
+#alias ack='nocorrect ack-5.16'
 alias git='nocorrect git'
 alias e='Emacs -nw'
 alias ec='emacsclient -n'
@@ -56,7 +56,7 @@ function changes(){
 }
 
 # using less with pygments
-export LESSOPEN="| /opt/local/bin/pygmentize-2.4 -g %s"
+#export LESSOPEN="| /opt/local/bin/pygmentize-2.4 -g %s"
 export LESS=' -R '
 
 # Go programming language

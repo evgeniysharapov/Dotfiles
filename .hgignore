@@ -55,8 +55,7 @@ syntax:re
 ^\.ffmpeg
 ^\.fontconfig
 ^\.fonts
-^\.gconf
-^\.gconfd
+^\.gconfd?
 ^\.gdb_history
 ^\.inkscape-etc
 ^\.ivy2

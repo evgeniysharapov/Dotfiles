@@ -49,8 +49,7 @@ syntax:re
 ^\.dbus-keyrings
 ^\.dropbox
 ^\.dvdcss
-^\.eclim
-^\.eclimrc
+^\.eclim(rc)?
 ^\.eclipse_keyring
 ^\.ffmpeg
 ^\.fontconfig
@@ -64,9 +63,7 @@ syntax:re
 ^\.jswat-console
 ^\.lein
 ^\.local
-^\.m2
-^\.m2index
-^\.m2indexcache
+^\.m2(index(cache)?)?
 ^\.macports
 ^\.maven
 ^\.mc
@@ -74,8 +71,7 @@ syntax:re
 ^\.mplayer
 ^\.mysql_history
 ^\.nbprofiler
-^\.netbeans
-^\.netbeans-registration
+^\.netbeans(-registration)?
 ^\.netrc
 ^\.octave_hist
 ^\.pgadmin_histoqueries
@@ -86,8 +82,7 @@ syntax:re
 ^\.qt
 ^\.rdebug_hist
 ^\.rnd
-^\.rvm
-^\.rvmrc
+^\.rvm(rc)?
 ^\.sbt
 ^\.scala_history
 ^\.emacs\.d
@@ -114,7 +109,6 @@ syntax:re
 ^\.zcompdump
 ^\.lesshst
 ^\.yard
-^\.zsh-update
-^\.zsh
+^\.zsh(-update)?
 ^\.zlogin
 ^\.smb

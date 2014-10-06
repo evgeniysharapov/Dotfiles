@@ -1,2 +1,4 @@
-[alias]
-echo = !echo $@
+[ui]
+username = Evgeniy Sharapov <esharapov@infusion.com>
+ssh = tortoiseplink.exe -ssh -i "C:\Users\esharapov\.ssh\cyg.ppk"
+

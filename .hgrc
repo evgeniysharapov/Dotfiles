@@ -83,3 +83,11 @@ fontoutputlog = Consolas,10,-1,5,50,0,0,0,0,0
 [pager]
 pager = less -FSRX
 
+#########################################################################
+#
+#  Include machine specific settings.
+#  They may override ones that have been set
+#
+#########################################################################
+%include ~/.hgrc.$COMPUTERNAME
+

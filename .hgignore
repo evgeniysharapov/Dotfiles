@@ -112,3 +112,52 @@ syntax:re
 ^\.zsh(-update)?
 ^\.zlogin
 ^\.smb
+
+## Infusion Laptop
+^\.grunt-init
+^\.IdeaIC13
+^\.idlerc
+^\.lein
+^\.m2
+^\.nbi
+^\.nbprofiler
+^\.netbeans-derby
+^\.ssh
+^\.vagrant.d
+^\.VirtualBox
+^\.WebStorm8
+^AppData
+^Application
+^Configs
+^Contacts
+^Cookies
+^Desktop
+^Dev
+^Documents
+^Downloads
+^Favorites
+^IdeaProjects
+^Links
+^Local Settings
+^Logs
+^MetLifeWorkspace
+^Music
+^My Documents
+^NetHood
+^Pictures
+^PrintHood
+^Recent
+^Repos
+^Saved Games
+^Searches
+^SendTo
+^ShareFile
+^Start Menu
+^Templates
+^Videos
+^VirtualBox VMs
+^WebstormProjects
+^(?i)NTUSER\..+
+^\.pynche
+# Ignore Kattis file 
+^\.kattisrc

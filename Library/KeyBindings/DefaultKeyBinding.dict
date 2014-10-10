@@ -1,0 +1,17 @@
+/*
+ * Keybindings
+ * Evgeniy Sharapov
+ * Let this file always be in ~/Library/KeyBindings/DefaultKeyBindings.dict
+ */
+{
+ "~f" = (moveWordForward:);
+ "~b" = (moveWordBackward:);
+ "~<" = (moveToBeginningOfDocument:);
+ "~>" = (moveToEndOfDocument:);
+ "~v" = (pageUp:);
+ "~d" = (deleteWordForward:);
+ "~^h" = (deleteWordBackward:);
+ "~w" = (copy:);
+ "~;" = (cancelOperation:);
+}
+

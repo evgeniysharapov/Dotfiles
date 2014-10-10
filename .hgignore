@@ -13,8 +13,7 @@ syntax:re
 ^Downloads
 ^Dropbox
 ^GoogleReader
-^KeyBindings
-^Library
+^Library/(?!KeyBindings)
 ^Library_Preferences
 ^Mail
 ^Movies

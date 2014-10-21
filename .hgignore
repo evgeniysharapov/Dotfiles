@@ -161,3 +161,7 @@ syntax:re
 ^\.pynche
 # Ignore Kattis file 
 ^\.kattisrc
+^ICPCWorkspace
+^AndroidStudioProjects
+^SciTE\.session
+^\.gradle

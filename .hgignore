@@ -161,6 +161,7 @@ syntax:re
 # Ignore Kattis file 
 ^\.kattisrc
 ^ICPCWorkspace
+^\.npm
 ^AndroidStudioProjects
 ^SciTE\.session
 ^\.gradle

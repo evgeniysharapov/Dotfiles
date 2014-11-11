@@ -165,3 +165,6 @@ syntax:re
 ^AndroidStudioProjects
 ^SciTE\.session
 ^\.gradle
+^\.node-gyp
+^\.atom
+

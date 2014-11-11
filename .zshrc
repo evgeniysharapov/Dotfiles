@@ -75,3 +75,7 @@ export PATH=${PATH}:${HOME}/ConTeXt/tex/texmf-osx-64/bin
 # Configure Haskell
 export PATH=${HOME}/Library/Haskell/bin:${PATH}
 
+# Configure Node.JS and NPM paths
+export PATH=${PATH}:${HOME}/.local/lib/npm/bin
+
+

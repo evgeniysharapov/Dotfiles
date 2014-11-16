@@ -39,17 +39,6 @@ export PATH=${PATH}:$HOME/.git-extras/bin
 # Customize to your needs...
 export PATH=$HOME/bin:$HOME/Library/Haskell/bin:/Applications/Emacs.app/Contents/MacOS:/Applications/Emacs.app/Contents/MacOS/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/usr/local/texlive/2012/bin/x86_64-darwin:$PATH
 
-alias mysql=/usr/local/mysql/bin/mysql
-alias mysqladmin=/usr/local/mysql/bin/mysqladmin
-# otherwise tends to correct ack command
-#alias ack='nocorrect ack-5.16'
-alias git='nocorrect git'
-alias e='Emacs -nw'
-alias ec='emacsclient -n'
-alias ctags=/opt/local/bin/ctags
-alias rsd='rails s --debugger'
-alias ffmpeg='/opt/local/bin/ffmpeg'
-
 function changes(){
     __changes=`g --no-pager log --format="%n%x09* %s%d" $(g tag | sort -r | head -1)..HEAD`
     echo "$__changes"

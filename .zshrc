@@ -48,6 +48,11 @@ function changes(){
 #export LESSOPEN="| /opt/local/bin/pygmentize-2.4 -g %s"
 export LESS=' -R '
 
+# Ruby configuration (gems from the HOME directory)
+if which ruby >/dev/null && which gem >/dev/null; then
+	    PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+fi
+
 # Go programming language
 export GOROOT="/usr/local/go"
 export GOPATH="${HOME}/.gocode"

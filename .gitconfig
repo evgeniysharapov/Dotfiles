@@ -53,3 +53,5 @@
 #	trustExitCode = true
 #[core]
 #	autocrlf = true
+[url "https://"]
+	insteadOf = git://

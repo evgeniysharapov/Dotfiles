@@ -16,8 +16,9 @@ schemes=
 color=
 #shelve = ~/.hg-ext/hgshelve/hgshelve.py
 #collapse = ~/.hg-ext/hgcollapse/collapse.py
-hgsubversion = ~/.hg-ext/hgsubversion/hgsubversion
+#hgsubversion = ~/.hg-ext/hgsubversion/hgsubversion
 hggit = ~/.hg-ext/hg-git/hggit
+mercurial_keyring = 
 
 [alias]
 ll = log --graph --style compact --limit 6 -r 'sort((::. or bookmark()), "-rev")'

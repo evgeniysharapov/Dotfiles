@@ -159,7 +159,7 @@ syntax:re
 ^WebstormProjects
 ^(?i)NTUSER\..+
 ^\.pynche
-# Ignore Kattis file 
+# Ignore Kattis file
 ^\.kattisrc
 ^ICPCWorkspace
 ^\.npm$
@@ -168,4 +168,12 @@ syntax:re
 ^\.gradle
 ^\.node-gyp
 ^\.atom
+^ScalaWorkspace
+^\.eclipse
+^\.boot2docker
+^\.ireport
+^LunaWorkspace
+^\.jmc
 
+syntax: glob
+.minttyrc

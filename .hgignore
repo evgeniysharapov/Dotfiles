@@ -171,3 +171,5 @@ syntax:re
 ^LunaWorkspace
 ^\.jmc
 
+syntax: glob
+.minttyrc

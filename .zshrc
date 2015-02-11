@@ -72,4 +72,7 @@ export PATH=${HOME}/Library/Haskell/bin:${PATH}
 # Configure Node.JS and NPM paths
 export PATH=${PATH}:${HOME}/.local/lib/npm/bin
 
-
+# Setting up Boot2Docker and Docker client
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/evgeniysharapov/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1

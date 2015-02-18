@@ -20,10 +20,18 @@ color=
 hggit = ~/.hg-ext/hg-git/hggit
 mercurial_keyring = 
 
+[color]
+# Adding colors for the lgX commands
+c.rev = red
+c.branches = yellow
+c.tags = yellow
+c.author = cyan bold
+c.date = green
+
 [alias]
 ll = log --graph --style compact --limit 6 -r 'sort((::. or bookmark()), "-rev")'
 ls = log --template '{rev} {node|short} | {date|shortdate} | {author|user}: {desc|strip|firstline}\n'
-lg = glog -l15 --template '\033[33;40m{rev} \033[37;40m{desc|firstline|fill68} \033[1;30;40m({date|age} ago by {author|person})\033[0;37;40m \033[33;40m{tags}\033[37;40m \033[35;40m{branches}\033[37;40m\n\n'
+lg = glog -l15 --template "{label('c.rev', rev)} {label('c.tags',tags)}{label('c.branches',branches)} {desc|firstline|fill68} ({label('c.date',date|age)}) <{label('c.author',author|person)}>"
 lga = lg -l1000000000
 nlog = glog --style=.hg-map-cmdline.lg
 

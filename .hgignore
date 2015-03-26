@@ -178,3 +178,4 @@ syntax:re
 
 syntax: glob
 .minttyrc
+Tracing/

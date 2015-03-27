@@ -100,3 +100,7 @@ pager = less -FSRX
 #########################################################################
 %include ~/.hgrc.$COMPUTERNAME
 
+[auth]
+harmony.schemes = https
+harmony.prefix = stash.infusion.com
+harmony.username = esharapov

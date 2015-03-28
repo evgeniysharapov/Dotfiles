@@ -1,4 +1,4 @@
 syntax: glob
-
+*.pyo
 *~
 .DS_Store

@@ -19,6 +19,7 @@ color=
 #hgsubversion = ~/.hg-ext/hgsubversion/hgsubversion
 hggit = ~/.hg-ext/hg-git/hggit
 mercurial_keyring = 
+churn =
 
 [color]
 # Adding colors for the lgX commands

@@ -179,3 +179,8 @@ syntax:re
 syntax: glob
 .minttyrc
 Tracing/
+.IntelliJIdea13/*
+.javahg/*
+Intel.sav/*
+Intel/Logs/*
+pip/pip.log

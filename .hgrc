@@ -39,8 +39,6 @@ nlog = glog --style=.hg-map-cmdline.lg
 cm = commit --message
 up = update --check
 d = diff -p --color=auto
-egrep = !$HG locate -0 '$2' $3 $4 $5 $6 $7 $8 $9 | xargs -0 egrep -H '$1'
-bm = bookmark
 pushbm = !hg log --template "{bookmarks}" -r "bookmark() & ." | xargs hg push -B
 
 [defaults]

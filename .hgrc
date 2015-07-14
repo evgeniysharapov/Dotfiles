@@ -42,6 +42,7 @@ pushbm = !hg log --template "{bookmarks}" -r "bookmark() & ." | xargs hg push -B
 [defaults]
 qimport = --git
 qrefresh = --git
+qseries = -s
 annotate = -nu
 heads = --style default
 serve = -v

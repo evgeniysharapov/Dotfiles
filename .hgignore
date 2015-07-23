@@ -186,3 +186,4 @@ Intel/Logs/*
 pip/pip.log
 .groovy/grapes/*
 MarsWorkspace/*
+.sts/*

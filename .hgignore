@@ -187,3 +187,5 @@ pip/pip.log
 .groovy/grapes/*
 MarsWorkspace/*
 .sts/*
+.cargo/*
+go/*

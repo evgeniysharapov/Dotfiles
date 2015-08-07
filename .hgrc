@@ -81,6 +81,7 @@ ignore = ~/.hgignore_global
 
 [tortoisehg]
 fontoutputlog = Consolas,10,-1,5,50,0,0,0,0,0
+authorcolor = True
 
 [git]
 # mapping of usernames to users/emails required for commit in git
@@ -105,3 +106,7 @@ attend = annotate, cat, diff, export, glog, log, qdiff, lga
 harmony.schemes = https
 harmony.prefix = stash.infusion.com
 harmony.username = esharapov
+
+
+[diff]
+git = True

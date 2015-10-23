@@ -55,7 +55,7 @@ mode = ansi
 status.ignored = magenta bold
 status.added = green bold
 status.removed = red bold
-status.modified = cyan bold
+status.modified = blue bold
 qseries.unapplied = magenta bold
 qseries.applied = blue bold underline
 qseries.missing = red bold
@@ -82,6 +82,7 @@ ignore = ~/.hgignore_global
 [tortoisehg]
 fontoutputlog = Consolas,10,-1,5,50,0,0,0,0,0
 authorcolor = True
+activatebookmarks = auto
 
 [git]
 # mapping of usernames to users/emails required for commit in git

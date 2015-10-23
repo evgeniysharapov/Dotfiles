@@ -189,3 +189,12 @@ MarsWorkspace/*
 .sts/*
 .cargo/*
 go/*
+workspace/*
+vimfiles/*
+ODBA/*
+OneDrive/desktop.ini
+.oracle_jre_usage/*
+.ipython/profile_default/history.sqlite
+.ipython/profile_default/startup/README
+.gnupg/*
+deploy_harmony_locally.bat

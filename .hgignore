@@ -198,3 +198,4 @@ OneDrive/desktop.ini
 .ipython/profile_default/startup/README
 .gnupg/*
 deploy_harmony_locally.bat
+Envs/*

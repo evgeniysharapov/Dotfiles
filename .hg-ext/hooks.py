@@ -13,7 +13,6 @@ def add_issue_from_bookmark(ui, repo, **kwargs):
             return commitctx(ctx, error)
         else:
             m = re.match(r"([a-zA-Z-_]+/)?([a-zA-Z]{2}-\d+)([a-zA-Z0-9-_]+)?", repo._activebookmark)
-            print "JIRA %s"%(m.group(2))
             if not m:
                 return commitctx(ctx, error)
             elif m.group(2):

@@ -12,12 +12,13 @@ def add_issue_from_bookmark(ui, repo, **kwargs):
             # commit already have JIRA issue information
             return commitctx(ctx, error)
         else:
-            m = re.match(r"([a-zA-Z-_]+/)?([a-zA-Z]{2}-\d+)([a-zA-Z0-9-_]+)?", repo._activebookmark)
-            if not m:
-                return commitctx(ctx, error)
-            elif m.group(2):
-                ctx._text = m.group(2).upper() + ': ' + ctx.description()
-                return commitctx(ctx, error)
+            if repo._activebookmark :
+                m = re.match(r"([a-zA-Z-_]+/)?([a-zA-Z]{2}-\d+)([a-zA-Z0-9-_]+)?", repo._activebookmark)
+                if not m:
+                    return commitctx(ctx, error)
+                elif m.group(2):
+                    ctx._text = m.group(2).upper() + ': ' + ctx.description()
+                    return commitctx(ctx, error)
 
     repo.commitctx = updatectx
 

@@ -200,3 +200,9 @@ OneDrive/desktop.ini
 deploy_harmony_locally.bat
 Envs/*
 IntelGraphicsProfiles/*
+.dbshell
+.IdeaIC15/*
+.nuget/*
+R/win-library/3.2/*
+.docker/*
+.mongorc.js

@@ -37,7 +37,7 @@ nlog = glog --style=.hg-map-cmdline.lg
 cm = commit --message
 up = update --check
 d = diff -p --color=auto
-pushbm = !hg log --template "{bookmarks}" -r "bookmark() & ." | xargs hg push -B
+pushbm = !hg log --template "{activebookmark}" -r "bookmark() & ." | xargs hg push -B
 
 [defaults]
 qimport = --git

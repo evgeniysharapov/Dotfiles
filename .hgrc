@@ -32,7 +32,7 @@ ll = log --graph --style compact --limit 6 -r 'sort((::. or bookmark()), "-rev")
 ls = log --template '{rev} {node|short} | {date|shortdate} | {author|user}: {desc|strip|firstline}\n'
 lg = glog -l15 --template "{label('c.rev', rev)} {label('c.tags',tags)}{label('c.branches',branches)} {desc|firstline|fill68} ({label('c.date',date|age)}) <{label('c.author',author|person)}>"
 lga = lg -l1000000000
-nlog = glog --style=${HOME}/.hg-map-cmdline.lg
+nlog = glog --style=${HOME}/.hg-ext/templates.lg
 
 cm = commit --message
 up = update --check

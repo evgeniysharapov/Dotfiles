@@ -32,7 +32,7 @@ ll = log --graph --style compact --limit 6 -r 'sort((::. or bookmark()), "-rev")
 ls = log --template '{rev} {node|short} | {date|shortdate} | {author|user}: {desc|strip|firstline}\n'
 lg = glog -l15 --template "{label('c.rev', rev)} {label('c.tags',tags)}{label('c.branches',branches)} {desc|firstline|fill68} ({label('c.date',date|age)}) <{label('c.author',author|person)}>"
 lga = lg -l1000000000
-nlog = glog --style=.hg-map-cmdline.lg
+nlog = glog --style=${HOME}/.hg-map-cmdline.lg
 
 cm = commit --message
 up = update --check
@@ -77,7 +77,7 @@ ced01ws01 = 7d:0f:fc:9b:5c:cd:cb:d0:12:08:51:db:49:e2:42:79:8e:60:fd:ad
 [ui]
 #username = ESharapov
 username = Evgeniy Sharapov <evgeniy.sharapov@gmail.com>
-ignore = ~/.hgignore_global
+ignore = ${HOME}/.hgignore_global
 
 [tortoisehg]
 fontoutputlog = Consolas,10,-1,5,50,0,0,0,0,0

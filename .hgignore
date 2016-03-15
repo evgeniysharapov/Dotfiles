@@ -206,3 +206,5 @@ IntelGraphicsProfiles/*
 R/win-library/3.2/*
 .docker/*
 .mongorc.js
+syntax: regexp
+^\.vscode

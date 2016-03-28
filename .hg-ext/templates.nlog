@@ -1,0 +1,15 @@
+changeset = "{label('red',rev)} {label('c.author', author|person)} {desc|firstline|strip} {label('green', date|age)} {label('yellow', branches)}{label('yellow',bookmarks)}{label('yellow', tags)}\n\n"
+
+changeset_verbose = "{label('red',rev)}:{node|short} {label('c.author',author|person)} {desc|firstline|strip} {label('green',date|age)} {label('yellow', branches)}{label('yellow',bookmarks)}{label('yellow', tags)}\n\n"
+
+start_branches = " "
+branch = "{label('yellow', branch)}"
+
+start_bookmarks = " "
+bookmark = "{label('yellow', bookmark)}, "
+last_bookmark = "{label('yellow', bookmark)}"
+
+start_tags = " "
+tag = "{label('yellow', tag)}, "
+last_tag = "{label('yellow', tag)}"
+

@@ -27,6 +27,8 @@ c.tags = yellow
 c.author = cyan bold
 c.date = green
 
+[revsetalias]
+
 [alias]
 ll = log --graph --style compact --limit 6 -r 'sort((::. or bookmark()), "-rev")'
 ls = log --template '{rev} {node|short} | {date|shortdate} | {author|user}: {desc|strip|firstline}\n'
@@ -38,6 +40,9 @@ cm = commit --message
 up = update --check
 d = diff -p --color=auto
 pushbm = !hg log --template "{activebookmark}" -r "bookmark() & ." | xargs hg push -B
+
+# Helpful MQ aliases from the most used commands
+qnone = qselect --none
 
 [defaults]
 qimport = --git

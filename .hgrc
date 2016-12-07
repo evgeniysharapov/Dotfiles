@@ -57,10 +57,10 @@ diff = -p
 
 [color]
 mode = ansi
-status.ignored = magenta bold
+status.ignored = magenta
 status.added = green bold
 status.removed = red bold
-status.modified = blue bold
+status.modified = cyan
 qseries.unapplied = magenta bold
 qseries.applied = blue bold underline
 qseries.missing = red bold

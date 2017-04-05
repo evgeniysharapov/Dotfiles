@@ -50,7 +50,7 @@ export LESS=' -R '
 
 # Ruby configuration (gems from the HOME directory)
 if which ruby >/dev/null && which gem >/dev/null; then
-	    PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+    PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
 fi
 
 # Go programming language
@@ -72,7 +72,5 @@ export PATH=${HOME}/Library/Haskell/bin:${PATH}
 # Configure Node.JS and NPM paths
 export PATH=${PATH}:${HOME}/.local/lib/npm/bin
 
-# Setting up Boot2Docker and Docker client
-export DOCKER_HOST=tcp://192.168.59.103:2376
-export DOCKER_CERT_PATH=/Users/evgeniysharapov/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
+# source local configuration
+[ -f ~/.zsh.local ] && source ~/.zsh.local

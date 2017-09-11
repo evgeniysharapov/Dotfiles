@@ -1,78 +1,66 @@
+#
+#  ZSH configuration
+#
+#  This  configuration is  shared among multiple machines, so I try to accomodate all of their specifics
+# 
+#  Author: Evgeniy Sharapov
+#
+
+## Figure out what OS/Host we are on
+Z_OS=$(( cat /etc/*-release | sed -n 's/^ID=\(.*\)/\1/p' ))
+if [ -z $Z_OS ]; then
+    # could be MacOSX or Windows
+    if [ $((uname -v)) == Darwin* ]; then
+        Z_OS=osx
+    else
+        Z_OS=win
+    fi
+fi
+# short name -s option is not always supported
+Z_HOST=${$(hostname)//.*/}
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
-
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
 ZSH_THEME="kphoen"
-
 # we don't want to auto-update
 DISABLE_AUTO_UPDATE="true"
-
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
-
 # Comment this out to disable weekly auto-update checks
 # DISABLE_AUTO_UPDATE="true"
-
 # Uncomment following line if you want to disable colors in ls
 # DISABLE_LS_COLORS="true"
-
 # Uncomment following line if you want to disable autosetting terminal title.
 # DISABLE_AUTO_TITLE="true"
-
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 # COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras osx macports bundler rvm cabal mercurial)
-# add git extras scripts to the path
-export PATH=${PATH}:$HOME/.git-extras/bin
+plugins=()
 
-# Customize to your needs...
-export PATH=$HOME/bin:$HOME/Library/Haskell/bin:/Applications/Emacs.app/Contents/MacOS:/Applications/Emacs.app/Contents/MacOS/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/usr/local/texlive/2012/bin/x86_64-darwin:$PATH
-
-function changes(){
-    __changes=`g --no-pager log --format="%n%x09* %s%d" $(g tag | sort -r | head -1)..HEAD`
-    echo "$__changes"
-}
-
-# using less with pygments
-#export LESSOPEN="| /opt/local/bin/pygmentize-2.4 -g %s"
-export LESS=' -R '
-
-# Ruby configuration (gems from the HOME directory)
-if which ruby >/dev/null && which gem >/dev/null; then
-	    PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+##  $+commands[] checks if command is available
+if (( $+commands[git] )) ; then
+    plugins+=(git git-extras)
+    # add git extras scripts to the path
+    path+=$HOME/.git-extras/bin
 fi
 
-# Go programming language
-export GOROOT="/usr/local/go"
-export GOPATH="${HOME}/.gocode"
-export PATH=${PATH}:${GOROOT}/bin:${GOPATH}/bin
+if (( $+commands[hg] )); then
+    plugins+=mercurial
+fi
 
-# RVM settings (should be at the very end)
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-#[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+if (( $+commands[ruby] )); then
+    plugins+=(bundler rvm)
+fi
+
+## Various System Specific Configurations
+[[ -f "${HOME}/.zshrc.${Z_OS}" ]] && source "${HOME}/.zshrc.${Z_OS}"
+[[ -f "${HOME}/.zshrc.${Z_HOST}" ]] && source "${HOME}/.zshrc.${Z_HOST}"
+    
+# Customize to your needs...
+export LESS=' -R '
+
+## Loading OMZ
 source $ZSH/oh-my-zsh.sh
 
-# TeX and ConTeX settings
-export PATH=${PATH}:${HOME}/ConTeXt/tex/texmf-osx-64/bin
-
-# Configure Haskell
-export PATH=${HOME}/Library/Haskell/bin:${PATH}
-
-# Configure Node.JS and NPM paths
-export PATH=${PATH}:${HOME}/.local/lib/npm/bin
-
-# Setting up Boot2Docker and Docker client
-export DOCKER_HOST=tcp://192.168.59.103:2376
-export DOCKER_CERT_PATH=/Users/evgeniysharapov/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1

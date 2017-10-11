@@ -41,8 +41,13 @@ up = update --check
 d = diff -p --color=auto
 pushbm = !hg log --template "{activebookmark}" -r "bookmark() & ." | xargs hg push -B
 
+reset = revert -a -C
+
 # Helpful MQ aliases from the most used commands
 qnone = qselect --none
+
+# Usually if I want list of bookmarks I want them sorted by rev
+blist = !hg bookmarks | sort -k 2n
 
 [defaults]
 qimport = --git

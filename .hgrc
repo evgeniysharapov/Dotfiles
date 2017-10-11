@@ -116,3 +116,7 @@ harmony.username = esharapov
 
 [diff]
 git = True
+
+[trusted]
+users = root
+groups = vboxsf

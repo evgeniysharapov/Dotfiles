@@ -1,0 +1,8 @@
+You have to have a mercurial tool. In addition to that you would have to have `hg-git` package installed in the python used by mercurial.
+
+By default Mercurial does not allow Git subrepositories, so you would have to override that setting when you clone this repository:
+
+   hg --config subrepos.git:allowed=true clone https://bitbucket.org/evgeniysharapov/dotfiles .dotfiles
+
+Then you can just cd to `~/.dotfiles` and run `./deploy.sh`. This will create links to the dotfiles in your $HOME directory.
+

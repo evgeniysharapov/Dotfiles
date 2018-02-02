@@ -126,3 +126,14 @@ harmony.username = esharapov
 
 [diff]
 git = True
+
+[merge-tools]
+p4merge.args=$base $local $other $output
+p4.executable=C:\PF\Perforce\p4merge.exe
+p4merge.gui=True
+p4merge.priority=100
+p4merge.premerge=True
+#p4merge.diffargs=$parent $child
+#p4merge.diff3args=$child $parent1 $parent2
+#p4merge.dirdiff=False
+#p4merge.checkchanged = True

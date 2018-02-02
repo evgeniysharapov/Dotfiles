@@ -127,6 +127,10 @@ harmony.username = esharapov
 [diff]
 git = True
 
+[trusted]
+users = root
+groups = vboxsf
+
 [merge-tools]
 p4merge.args=$base $local $other $output
 p4.executable=C:\PF\Perforce\p4merge.exe

@@ -97,6 +97,7 @@ ignore = ${HOME}/.hgignore_global
 fontoutputlog = Consolas,10,-1,5,50,0,0,0,0,0
 authorcolor = True
 activatebookmarks = auto
+fontcomment = Consolas,12,-1,5,50,0,0,0,0,0
 
 [git]
 # mapping of usernames to users/emails required for commit in git

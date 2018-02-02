@@ -61,6 +61,9 @@ serve = -v
 #incoming = --graph
 diff = -p
 
+[subrepos]
+git:allowed = true
+
 [color]
 mode = ansi
 status.ignored = magenta

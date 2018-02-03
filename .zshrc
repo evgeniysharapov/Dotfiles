@@ -6,16 +6,21 @@
 #  Author: Evgeniy Sharapov
 #
 
+# avoid "no match" message 
+setopt no_nomatch
+
 ## Figure out what OS/Host we are on
-Z_OS=$(( cat /etc/*-release | sed -n 's/^ID=\(.*\)/\1/p' ))
+Z_OS=$(( cat /etc/*-release 2>/dev/null | sed -n 's/^ID=\(.*\)/\1/p' ))
+
 if [ -z $Z_OS ]; then
     # could be MacOSX or Windows
-    if [ $((uname -v)) == Darwin* ]; then
+    if [[ "$OSTYPE" == darwin* ]]; then
         Z_OS=osx
     else
         Z_OS=win
     fi
 fi
+
 # short name -s option is not always supported
 Z_HOST=${$(hostname)//.*/}
 

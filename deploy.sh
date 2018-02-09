@@ -13,7 +13,8 @@ if [ -n "$custom_skip" ]; then
 fi
 
 # some files don't need to be linked to
-skip="${self#./}\|${custom_skip}\.\(hg\|hgsub\|hgsubstate\|hgignore\|\.\)\?$"
+skip="${self#./}\|${custom_skip}README\|\.\(hg\|hgsub\|hgsubstate\|hgignore\|\.\)\?$"
+echo "$skip"
 for file in $(ls -a | grep -v "$skip")
 do
     ln -s $(pwd)/$file $HOME/$file

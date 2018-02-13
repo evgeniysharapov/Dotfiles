@@ -5,3 +5,7 @@ eval "$(pyenv init -)"
 
 # adding Docker Toolbox default machine
 eval $(docker-machine env)
+
+# increasing ulimit for file descriptors
+ulimit -n 512
+

@@ -9,3 +9,10 @@ eval $(docker-machine env)
 # increasing ulimit for file descriptors
 ulimit -n 512
 
+# add docker to the list of plugins
+plugins+=(docker docker-compose)
+
+# alias docker and docker-machine
+alias dk='docker'
+alias dkm='docker-machine'
+

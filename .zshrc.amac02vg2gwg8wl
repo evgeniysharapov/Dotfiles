@@ -1,13 +1,18 @@
 # configuration specific for new Avanade Macbook
 
 # make sure we initialize pyenv
-eval "$(pyenv init -)"
+which pyenv > /dev/null && \
+    eval "$(pyenv init -)"
 
 # adding Docker Toolbox default machine
+if [ $(docker-machine status) = "Stopped" ]
+then
+    docker-machine start
+fi
 eval $(docker-machine env)
 
 # increasing ulimit for file descriptors
-ulimit -n 512
+ulimit -n 2048
 
 # add docker to the list of plugins
 plugins+=(docker docker-compose)
@@ -16,3 +21,10 @@ plugins+=(docker docker-compose)
 alias dk='docker'
 alias dkm='docker-machine'
 
+# node development
+which nodenv > /dev/null && \
+    eval "$(nodenv init -)"
+
+# java development
+which jenv > /dev/null && \
+    eval "$(jenv init -)"

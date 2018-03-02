@@ -69,3 +69,7 @@ export LESS=' -R '
 ## Loading OMZ
 source $ZSH/oh-my-zsh.sh
 
+# More history 
+HISTSIZE=100000
+SAVEHIST=$HISTSIZE
+

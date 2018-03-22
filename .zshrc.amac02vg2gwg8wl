@@ -28,3 +28,6 @@ which nodenv > /dev/null && \
 # java development
 which jenv > /dev/null && \
     eval "$(jenv init -)"
+
+setopt auto_cd
+cdpath=($HOME/Projects $HOME/Projects/Ensemble)

@@ -42,5 +42,6 @@ function mozart_mocha () {
 # 
 # @param String to use for grepping 
 function mozart_mocha_debug () {
-    LOG_LEVEL=debug MONGO_URL=mongodb://dockerhost:27018/mock-db ./node_modules/.bin/mocha --inspect --inspect-brk --recursive --reporter spec --compilers js:babel-core/register --grep "$1" test/server
+    LOG_LEVEL=silly MONGO_URL=mongodb://dockerhost:27018/mock-db ./node_modules/.bin/mocha --inspect --inspect-brk --recursive --reporter spec --compilers js:babel-core/register --grep "$1" test/server
 }
+

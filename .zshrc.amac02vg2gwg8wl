@@ -45,3 +45,9 @@ function mozart_mocha_debug () {
     LOG_LEVEL=silly MONGO_URL=mongodb://dockerhost:27018/mock-db ./node_modules/.bin/mocha --inspect --inspect-brk --recursive --reporter spec --compilers js:babel-core/register --grep "$1" test/server
 }
 
+# useful aliases
+alias e="emacsclient"
+alias te="emacsclient -t"
+alias et="emacsclient -t"
+alias docker_clean="docker images -f dangling=true -q | xargs docker rmi"
+ 

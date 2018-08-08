@@ -36,7 +36,7 @@ cdpath=($HOME/Projects $HOME/Projects/Ensemble)
 # 
 # @param String to use for grepping 
 function mozart_mocha () {
-    LOG_LEVEL=debug MONGO_URL=mongodb://dockerhost:27018/mock-db ./node_modules/.bin/mocha --recursive --reporter spec --compilers js:babel-core/register --grep "$1" test/server
+    LOG_LEVEL=${LOG_LEVEL:-debug} MONGO_URL=mongodb://dockerhost:27018/mock-db ./node_modules/.bin/mocha --recursive --reporter spec --compilers js:babel-core/register --grep "$1" test/server
 }
 # Debug mocha tests
 # 

@@ -5,11 +5,11 @@ which pyenv > /dev/null && \
     eval "$(pyenv init -)"
 
 # adding Docker Toolbox default machine
-if [ $(docker-machine status) = "Stopped" ]
-then
-    docker-machine start
-fi
-eval $(docker-machine env)
+#if [ $(docker-machine status) = "Stopped" ]
+#then
+#    docker-machine start
+#fi
+#eval $(docker-machine env)
 
 # increasing ulimit for file descriptors
 ulimit -n 2048

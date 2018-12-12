@@ -4,6 +4,11 @@
 which pyenv > /dev/null && \
     eval "$(pyenv init -)"
 
+
+# configure shell for rbenv
+which rbenv > /dev/null && \
+    eval "$(rbenv init -)"
+
 # adding Docker Toolbox default machine
 #if [ $(docker-machine status) = "Stopped" ]
 #then

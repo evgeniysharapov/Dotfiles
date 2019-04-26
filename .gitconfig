@@ -2,7 +2,7 @@
 #	name = Evgeniy Sharapov
 #	email = evgeniy.sharapov@stoneriver.com
 	name = Evgeniy Sharapov
-	email = esharapov@infusion.com
+	email = esharapov@ainq.com
 [alias]
         st = status
         ci = commit
@@ -61,3 +61,7 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+#[core]
+	#editor = \"C:\\Users\\esharapov\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" --wait
+[core]
+	autocrlf = input

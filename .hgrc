@@ -15,10 +15,8 @@ color=
 shelve =
 share =
 #hgsubversion = ~/.hg-ext/hgsubversion/hgsubversion
-#hggit = ~/.hg-ext/hg-git/hggit
 hgext.bookmarks = 
-#hggit = 
-hggit = ~/.hg-ext/hg-git/hggit
+hggit = 
 mercurial_keyring = 
 churn =
 

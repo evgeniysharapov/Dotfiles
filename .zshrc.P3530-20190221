@@ -23,7 +23,7 @@ export DOCKER_HOST=localhost:2375
 plugins+=(docker docker-compose)
 
 setopt auto_cd
-cdpath=($HOME/Projects $HOME/Tools)
+cdpath=($HOME/Projects $HOME/Tools $HOME/Personal $HOME/Projects/ulp-development)
 
 # useful aliases
 alias e="emacsclient"

@@ -17,5 +17,5 @@ skip="${self#./}\|${custom_skip}README\|\.\(hg\|hgsub\|hgsubstate\|hgignore\|\.\
 echo "$skip"
 for file in $(ls -a | grep -v "$skip")
 do
-    ln -s $(pwd)/$file $HOME/$file
+    ln -sn $(pwd)/$file $HOME/$file
 done

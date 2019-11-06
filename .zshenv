@@ -1,4 +1,3 @@
-export GOPATH=/Users/evgeniy.sharapov/.go
+export GOPATH=$HOME/.go
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
-export PATH=/Users/evgeniy.sharapov/.bin:$GOPATH/bin:$PATH
-
+export PATH=$HOME/.bin:$GOPATH/bin:$HOME/.cargo/bin:$PATH

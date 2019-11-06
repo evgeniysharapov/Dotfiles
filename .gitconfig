@@ -1,11 +1,11 @@
 [user]
-#	name = Evgeniy Sharapov
-#	email = evgeniy.sharapov@stoneriver.com
 	name = Evgeniy Sharapov
 	email = esharapov@ainq.com
 [alias]
         st = status
         ci = commit
+        cm = commit -m
+        ca = commit --amend --no-edit
         br = branch
         co = checkout
         df = diff
@@ -13,6 +13,7 @@
         ds = diff -C --stat
         dw = diff -C --color-words
 
+        # logging commands 
         l = log -C --decorate
         ls = log -C --stat --decorate
         lsp = log -C --stat -p --decorate
@@ -41,6 +42,9 @@
        local = yellow
        remote = green
 
+[includeIf "gitdir/i:C:/Users/esharapov/Projects"]
+	path = c:/Users/esharapov/.gitconfig.ainq
+
 #[core]
 #	excludefile = /Users/evgeniysharapov/.gitignore
 #	editor = emacsclient
@@ -64,4 +68,6 @@
 #[core]
 	#editor = \"C:\\Users\\esharapov\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" --wait
 [core]
-	autocrlf = input
+	autocrlf = true
+    filemode = false
+        

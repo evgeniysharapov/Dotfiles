@@ -26,6 +26,10 @@ Z_HOST=${$(hostname)//.*/}
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
+# override customization for OMZ
+ZSH_CUSTOM="${HOME}/.zsh_custom"
+# loading our theme
+#ZSH_THEME="eshar"
 ZSH_THEME="kphoen"
 # we don't want to auto-update
 DISABLE_AUTO_UPDATE="true"

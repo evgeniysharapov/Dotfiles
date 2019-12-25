@@ -69,7 +69,7 @@ mode = ansi
 status.ignored = magenta
 status.added = green bold
 status.removed = red bold
-status.modified = cyan
+status.modified = blue 
 qseries.unapplied = magenta bold
 qseries.applied = blue bold underline
 qseries.missing = red bold
@@ -90,15 +90,17 @@ ced01ws01 = 7d:0f:fc:9b:5c:cd:cb:d0:12:08:51:db:49:e2:42:79:8e:60:fd:ad
 
 [ui]
 #username = ESharapov
-username = Evgeniy Sharapov <evgeniy.sharapov@gmail.com>
+username=Evgeniy Sharapov <esharapov@ainq.com>
 ignore = ${HOME}/.hgignore_global
 
 [tortoisehg]
-fontoutputlog = Consolas,10,-1,5,50,0,0,0,0,0
 authorcolor = True
 activatebookmarks = auto
-fontcomment = Consolas,12,-1,5,50,0,0,0,0,0
 editor = emacsclient
+fontcomment = Consolas,10,-1,5,50,0,0,0,0,0,Regular
+fontdiff = Consolas,10,-1,5,50,0,0,0,0,0,Regular
+fontlog = Consolas,10,-1,5,50,0,0,0,0,0,Regular
+fontoutputlog = Consolas,10,-1,5,50,0,0,0,0,0,Regular
 
 [git]
 # mapping of usernames to users/emails required for commit in git

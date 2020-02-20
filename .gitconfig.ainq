@@ -1,3 +1,7 @@
 [user]
-	name = Evgeniy Sharapov
-	email = esharapov@ainq.com
+        name = Evgeniy N. Sharapov
+        email = esharapov@ainq.com
+
+[credential]
+        helper = store
+        

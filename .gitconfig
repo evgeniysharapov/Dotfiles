@@ -1,6 +1,6 @@
 [user]
-	name = Evgeniy Sharapov
-	email = esharapov@ainq.com
+        name = Evgeniy Sharapov
+        email = evgeniy.sharapov@gmail.com
 [alias]
         st = status
         ci = commit
@@ -19,55 +19,37 @@
         lsp = log -C --stat -p --decorate
         lgp = log -p
         lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold cyan)<%an>%Creset' --abbrev-commit
-#        lg = log --graph '--pretty=tformat: %C(cyan)%h%Creset %Cgreen%ad%Creset %C(yellow)%an%Creset %Cred%d%Creset %s' --date=short
+#       lg = log --graph '--pretty=tformat: %C(cyan)%h%Creset %Cgreen%ad%Creset %C(yellow)%an%Creset %Cred%d%Creset %s' --date=short
 
         lga = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold cyan)<%an>%Creset' --abbrev-commit --all
-#        lga = log --graph '--pretty=tformat: %C(cyan)%h%Creset %Cgreen%ad%Creset %C(yellow)%an%Creset %Cred%d%Creset %s' --date=short --all
+#       lga = log --graph '--pretty=tformat: %C(cyan)%h%Creset %Cgreen%ad%Creset %C(yellow)%an%Creset %Cred%d%Creset %s' --date=short --all
 
-       # searching for a stuff in git repo
-       authors = !git log --format="%aN" | sort -u
+        # searching for a stuff in git repo
+        authors = !git log --format="%aN" | sort -u
 
 [push]
-	default = simple
+        default = simple
 
 [color]
-	ui = auto
-	diff = auto
-	status = auto
-	branch = auto
-	interactive = auto
+        ui = auto
+        diff = auto
+        status = auto
+        branch = auto
+        interactive = auto
 
 [color "branch"]
-       current = yellow reverse
-       local = yellow
-       remote = green
+        current = yellow reverse
+        local = yellow
+        remote = green
 
-[includeIf "gitdir/i:C:/Users/esharapov/Projects"]
-	path = c:/Users/esharapov/.gitconfig.ainq
-
-#[core]
-#	excludefile = /Users/evgeniysharapov/.gitignore
-#	editor = emacsclient
-#	excludesfile = /Users/evgeniysharapov/.gitignore_global
-#[difftool "sourcetree"]
-#	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-#	path = 
-#[mergetool "sourcetree"]
-#	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-#	trustExitCode = true
-#[core]
-#	autocrlf = true
 [url "https://"]
-	insteadOf = git://
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-    cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-    trustExitCode = true
-#[core]
-    #editor = \"C:\\Users\\esharapov\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" --wait
+        insteadOf = git://
+
 [core]
-    autocrlf = false
-    filemode = false
+        autocrlf = false
+        filemode = false
+
+# System Specific files (see https://git-scm.com/docs/git-config#_includes)
+[include]
+        path = ~/.gitconfig.ainq
 

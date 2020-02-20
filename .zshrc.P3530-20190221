@@ -37,3 +37,4 @@ alias docker_clean="docker images -f dangling=true -q | xargs docker rmi"
 
 alias thg="thg.exe &"
 alias dhs="du -hs"
+alias docker_login="cp ~/.docker/config.json.use ~/.docker/config.json && docker login -u esharapov registry.ainq.com"

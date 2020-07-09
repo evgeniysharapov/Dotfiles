@@ -43,3 +43,17 @@ alias docker_login="cp ~/.docker/config.json.use ~/.docker/config.json && docker
 # plus it skips those file mode changes on Windows file system. We still want to use WSL hg for everything else
 alias hgst="hg.exe st"
 
+# just ridiculous that I am getting issues related to daemon for
+# gradlew running when i use command line in WSL so here we will
+# create a function gradlew that would take care of trying to stop
+# daemons
+gradlew () {
+    # try to stop gradle daemons until no daemons are running
+    while  [ "$(./gradlew --stop)" != "No Gradle daemons are running." ]
+    do
+        ./gradlew --stop; sleep 1;
+    done
+    # now run ./gradlew as usual
+    ./gradlew $*
+}
+

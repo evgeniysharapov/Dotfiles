@@ -2,7 +2,11 @@
 username = Evgeniy Sharapov <esharapov@ainq.com>
 
 [auth]
-ainq.schemes = https
-ainq.prefix = git.ainq.com
-ainq.username = esharapov
+#ainq.schemes = https
+#ainq.prefix = git.ainq.com
+#ainq.username = esharapov
+
+#ainqssh.schemes =  ssh
+#ainqssh.prefix = git.ainq.com
+#ainqssh.username = esharapov@ainq.com
 

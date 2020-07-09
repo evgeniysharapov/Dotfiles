@@ -17,7 +17,7 @@ share =
 #hgsubversion = ~/.hg-ext/hgsubversion/hgsubversion
 hgext.bookmarks = 
 hggit = 
-mercurial_keyring = 
+#mercurial_keyring = 
 churn =
 
 [color]

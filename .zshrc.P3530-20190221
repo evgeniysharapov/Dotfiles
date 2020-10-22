@@ -38,6 +38,10 @@ alias lt="ls -laht"
 alias thg="thg.exe &"
 alias dhs="du -hs"
 alias docker_login="cp ~/.docker/config.json.use ~/.docker/config.json && docker login -u esharapov registry.ainq.com"
+# do not put them in history
+alias gst=" gst"
+alias l=" l"
+alias ll=" ll"
 
 # well for whatever reason 'time hg.exe st' is 100 times haster than 'time hg st' in WSL
 # plus it skips those file mode changes on Windows file system. We still want to use WSL hg for everything else

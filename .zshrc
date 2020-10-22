@@ -86,3 +86,5 @@ setopt HIST_IGNORE_SPACE
 setopt HIST_FIND_NO_DUPS
 setopt HIST_SAVE_NO_DUPS
 
+# opam configuration
+test -r /c/Users/esharapov/.opam/opam-init/init.zsh && . /c/Users/esharapov/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true

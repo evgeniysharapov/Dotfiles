@@ -18,10 +18,15 @@ which nodenv > /dev/null && \
 export LS_COLORS=$LS_COLORS:'ow=4;34'
 
 # Redirect X application to the XServer running in Windows
-export DISPLAY=:0.0
+
+# for WSL1 this one
+#export DISPLAY=:0.0
+
+# f or WSL2 ip of the windows itself is different 
+export DISPLAY="$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0.0"
 
 # connect to Docker Daemon running on Windows (make sure it's exposed on tcp://localhost:2375
-export DOCKER_HOST=localhost:2375
+#export DOCKER_HOST=localhost:2375
 
 # add docker to the list of plugins
 plugins+=(docker docker-compose)

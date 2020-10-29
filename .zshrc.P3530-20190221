@@ -32,17 +32,15 @@ export DISPLAY="$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0.0
 plugins+=(docker docker-compose)
 
 setopt auto_cd
-cdpath=($HOME/Projects $HOME/Tools $HOME/Personal $HOME/Projects/ulp-development $HOME/Projects/PULSE $HOME/Projects/ULP)
+cdpath=($HOME/Projects $HOME/Projects/PULSE $HOME/Projects/ULP /mnt/c/Users/esharapov /mnt/c/Users/esharapov/Personal)
 
 # useful aliases
 alias e="emacsclient -c -a ''"
 alias te="emacsclient -t"
 alias et="emacsclient -t"
-alias docker_clean="docker images -f dangling=true -q | xargs docker rmi"
 alias lt="ls -laht"
 alias thg="thg.exe &"
 alias dhs="du -hs"
-alias docker_login="cp ~/.docker/config.json.use ~/.docker/config.json && docker login -u esharapov registry.ainq.com"
 # do not put them in history
 alias gst=" gst"
 alias l=" l"
@@ -50,7 +48,8 @@ alias ll=" ll"
 
 # well for whatever reason 'time hg.exe st' is 100 times haster than 'time hg st' in WSL
 # plus it skips those file mode changes on Windows file system. We still want to use WSL hg for everything else
-alias hgst="hg.exe st"
+# WSL2 which we switched to is ok speedwise as long as you don't use Windows filesystem
+# alias hgst="hg.exe st"
 
 # just ridiculous that I am getting issues related to daemon for
 # gradlew running when i use command line in WSL so here we will

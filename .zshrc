@@ -73,6 +73,7 @@ export LESS=' -R '
 ## Loading OMZ
 source $ZSH/oh-my-zsh.sh
 
+###################################################
 # More history 
 HISTSIZE=100000
 SAVEHIST=$HISTSIZE
@@ -85,6 +86,8 @@ setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
 setopt HIST_FIND_NO_DUPS
 setopt HIST_SAVE_NO_DUPS
+# ignore following command (see http://zsh.sourceforge.net/Doc/Release/Parameters.html#Parameters-Used-By-The-Shell)
+
 
 # opam configuration
 test -r ${HOME}/.opam/opam-init/init.zsh && . ${HOME}/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true

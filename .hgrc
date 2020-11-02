@@ -89,8 +89,7 @@ ced01ws01.FiservISD.FiservISDRoot.local = 7D:0F:FC:9B:5C:CD:CB:D0:12:08:51:DB:49
 ced01ws01 = 7d:0f:fc:9b:5c:cd:cb:d0:12:08:51:db:49:e2:42:79:8e:60:fd:ad
 
 [ui]
-#username = ESharapov
-username=Evgeniy Sharapov <esharapov@ainq.com>
+username=Evgeniy N. Sharapov <evgeniy.sharapov@gmail.com>
 ignore = ${HOME}/.hgignore_global
 
 [tortoisehg]

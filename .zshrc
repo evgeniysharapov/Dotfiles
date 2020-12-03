@@ -46,22 +46,8 @@ DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=()
-
-##  $+commands[] checks if command is available
-if (( $+commands[git] )) ; then
-    plugins+=(git git-extras)
-    # add git extras scripts to the path
-    path+=$HOME/.git-extras/bin
-fi
-
-if (( $+commands[hg] )); then
-    plugins+=mercurial
-fi
-
-if (( $+commands[ruby] )); then
-    plugins+=(bundler rvm)
-fi
+# Plugins do/should check for the command provided
+plugins+=(git git-extras mercurial bundler rvm npm npx)
 
 ## Various System Specific Configurations
 [[ -f "${HOME}/.zshrc.${Z_OS}" ]] && source "${HOME}/.zshrc.${Z_OS}"

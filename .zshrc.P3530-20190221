@@ -36,8 +36,8 @@ cdpath=($HOME/Projects $HOME/Projects/PULSE $HOME/Projects/ULP /mnt/c/Users/esha
 
 # useful aliases
 alias e="emacsclient -c -a ''"
-alias te="emacsclient -t"
-alias et="emacsclient -t"
+alias te="emacsclient -t -a ''"
+alias et="emacsclient -t -a ''"
 alias lt="ls -laht"
 alias thg="thg.exe &"
 alias dhs="du -hs"

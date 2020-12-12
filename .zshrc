@@ -6,73 +6,124 @@
 #  Author: Evgeniy Sharapov
 #
 
+# * Extra Scripts Directory
+ZSH=${HOME}/.zsh
+# caching 
+ZSH_CACHE_DIR=${ZSH}/cache
+
+# * Figure OS/Host
+Z_OS=$(( cat /etc/*-release 2>/dev/null | sed -n 's/^ID=\(.*\)/\1/p' ))
+
+if [ -z $Z_OS ]; then
+    # could be MacOSX or Windows
+    if [[ "$OSTYPE" == darwin* ]]; then
+        Z_OS=osx
+    else
+        Z_OS=win
+    fi
+fi
+# short name -s option is not always supported
+Z_HOST=${$(hostname)//.*/}
+
+
 # * Options
-
-# Perform parameter expansion, command substitution and arithmetic expansion in prompts
-setopt prompt_subst
-
 # avoid "no match" message 
 setopt no_nomatch
+# recognize comments
+setopt interactivecomments
+# jobs
+setopt long_list_jobs
+# correction
+setopt correct_all
 
-# **  History 
+# directories stack
+setopt auto_pushd
+setopt pushd_ignore_dups
+setopt pushdminus
+
+# * History
+if [ -z "$HISTFILE" ]; then
+    HISTFILE=${ZSH}/history/zsh_history-${Z_HOST}
+fi
 # More history is saved 
 HISTSIZE=100000
 SAVEHIST=$HISTSIZE
 # avoid duplicates
 # https://wiki.archlinux.org/index.php/zsh#Preventing_duplicate_lines_in_the_history
-setopt EXTENDED_HISTORY
-setopt HIST_EXPIRE_DUPS_FIRST
-setopt HIST_IGNORE_DUPS
-setopt HIST_IGNORE_ALL_DUPS
-setopt HIST_IGNORE_SPACE
-setopt HIST_FIND_NO_DUPS
-setopt HIST_SAVE_NO_DUPS
+setopt append_history
+setopt extended_history
+setopt hist_expire_dups_first
+setopt hist_ignore_dups
+setopt hist_ignore_all_dups
+setopt hist_ignore_space
+setopt hist_find_no_dups
+setopt hist_save_no_dups
+setopt hist_verify
+setopt inc_append_history
+setopt share_history
+
+alias history='fc -il 1'
+
 # ignore following command (see http://zsh.sourceforge.net/Doc/Release/Parameters.html#Parameters-Used-By-The-Shell)
 
+# * Keybindings
 
-# Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
-# override customization for OMZ
-ZSH_CUSTOM="${HOME}/.zsh_custom"
-# loading our theme
-ZSH_THEME="eshar"
-#ZSH_THEME="kphoen"
-# we don't want to auto-update
-DISABLE_AUTO_UPDATE="true"
-# Set to this to use case-sensitive completion
-# CASE_SENSITIVE="true"
-# Comment this out to disable weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
-# Uncomment following line if you want to disable colors in ls
-# DISABLE_LS_COLORS="true"
-# Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
-# Uncomment following line if you want red dots to be displayed while waiting for completion
-# COMPLETION_WAITING_DOTS="true"
+bindkey -e                                            # Use emacs key bindings
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Plugins do/should check for the command provided
-plugins+=(git git-extras mercurial bundler rvm npm npx)
+# * Completions
+unsetopt menu_complete   # do not autoselect the first completion entry
+unsetopt flowcontrol
+setopt auto_menu         # show completion menu on successive tab press
+setopt complete_in_word
+setopt always_to_end
 
+# case insensitive (all), partial-word and substring completion
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z-_}={A-Za-z_-}' 'r:|=*' 'l:|=* r:|=*'
 
-# * ZSH Settings
+# processes
+zstyle ':completion:*' list-colors ''
+zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#) ([0-9a-z-]#)*=01;34=0=01'
+
+# disable named-directories autocompletion
+zstyle ':completion:*:cd:*' tag-order local-directories directory-stack path-directories
+
+# Use caching so that commands like apt and dpkg complete are useable
+zstyle ':completion::complete:*' use-cache 1
+zstyle ':completion::complete:*' cache-path $ZSH_CACHE_DIR
+
+# Don't complete uninteresting users
+zstyle ':completion:*:*:*:users' ignored-patterns \
+        adm amanda apache at avahi avahi-autoipd beaglidx bin cacti canna \
+        clamav daemon dbus distcache dnsmasq dovecot fax ftp games gdm \
+        gkrellmd gopher hacluster haldaemon halt hsqldb ident junkbust kdm \
+        ldap lp mail mailman mailnull man messagebus  mldonkey mysql nagios \
+        named netdump news nfsnobody nobody nscd ntp nut nx obsrun openvpn \
+        operator pcap polkitd postfix postgres privoxy pulse pvm quagga radvd \
+        rpc rpcuser rpm rtkit scard shutdown squid sshd statd svn sync tftp \
+        usbmux uucp vcsa wwwrun xfs '_*'
+
+# ... unless we really want to.
+zstyle '*' single-ignored show
+
 # add a function path
 fpath=($ZSH/functions $ZSH/completions $fpath)
-# Load all stock functions (from $fpath files) called below.
-autoload -U compaudit compinit
 
-# ** Completions
+# Load all stock functions (from $fpath files) called below.
+autoload -U compaudit
+autoload -U compinit
+
 # Save the location of the current completion dump file.
 if [ -z "$ZSH_COMPDUMP" ]; then
-  ZSH_COMPDUMP="${ZDOTDIR:-${HOME}}/.zcompdump-${SHORT_HOST}-${ZSH_VERSION}"
+  ZSH_COMPDUMP="${HOME}/.zcompdump-${Z_HOST}-${ZSH_VERSION}"
 fi
 compinit -i -d "${ZSH_COMPDUMP}"
 
+# * Prompt
 
-# * PROMPT
+# Perform parameter expansion, command substitution and arithmetic expansion in prompts
+setopt prompt_subst
 
-# ** Theme (VCS Info)
+# Using VCS Info for styling left part 
 autoload -Uz vcs_info
 autoload -U colors && colors
     
@@ -140,47 +191,54 @@ autoload -U add-zsh-hook
 add-zsh-hook precmd  theme_precmd
 
 
-# * Aliases
 
-# useful aliases
+
+
+# * Aliases
+# ** Grep
+alias grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
+
+# ** Editor
 alias e="emacsclient -c -a ''"
 alias te="emacsclient -t -a ''"
 alias et="emacsclient -t -a ''"
+
+
+# ** Directories
+alias -g ...='../..'
+alias -g ....='../../..'
+alias -g .....='../../../..'
+alias -g ......='../../../../..'
+
+alias md='mkdir -p'
+alias rd='rm -rf'
+# List directory contents
+alias lsa='ls -lah'
+alias l='ls -lah'
+alias ll='ls -lh'
+alias la='ls -lAh'
 alias lt="ls -laht"
-alias thg="thg.exe &"
+
+
+
+# * Other Aliases
+
 alias dhs="du -hs"
 # do not put them in history
 alias gst=" gst"
 alias l=" l"
 alias ll=" ll"
 
+
+
+
 # * Machine ( OS and HOST ) Specific Configuration
-# Figure out what OS/Host we are on
-Z_OS=$(( cat /etc/*-release 2>/dev/null | sed -n 's/^ID=\(.*\)/\1/p' ))
-
-if [ -z $Z_OS ]; then
-    # could be MacOSX or Windows
-    if [[ "$OSTYPE" == darwin* ]]; then
-        Z_OS=osx
-    else
-        Z_OS=win
-    fi
-fi
-# short name -s option is not always supported
-Z_HOST=${$(hostname)//.*/}
 # Various System Specific Configurations
-[[ -f "${HOME}/.zshrc.${Z_OS}" ]] && source "${HOME}/.zshrc.${Z_OS}"
-[[ -f "${HOME}/.zshrc.${Z_HOST}" ]] && source "${HOME}/.zshrc.${Z_HOST}"
+[[ -f "${ZSH}/spec/${Z_OS}.zsh" ]] && source "${ZSH}/spec/${Z_OS}.zsh"
+[[ -f "${ZSH}/spec/${Z_HOST}.zsh" ]] && source "${ZSH}/spec/${Z_HOST}.zsh"
 
 
-
-# * Other Configuration
-
-# Customize to your needs...
-export LESS=' -R '
-
-## Loading OMZ
-source $ZSH/oh-my-zsh.sh
+# * TODO: Review Other Configuration
 
 # opam configuration
 test -r ${HOME}/.opam/opam-init/init.zsh && . ${HOME}/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true

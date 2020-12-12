@@ -80,6 +80,9 @@ setopt always_to_end
 # case insensitive (all), partial-word and substring completion
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z-_}={A-Za-z_-}' 'r:|=*' 'l:|=* r:|=*'
 
+# use menu
+zstyle ':completion:*' menu select
+
 # processes
 zstyle ':completion:*' list-colors ''
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#) ([0-9a-z-]#)*=01;34=0=01'
@@ -104,6 +107,8 @@ zstyle ':completion:*:*:*:users' ignored-patterns \
 
 # ... unless we really want to.
 zstyle '*' single-ignored show
+
+
 
 # add a function path
 fpath=($ZSH/functions $ZSH/completions $fpath)
@@ -191,9 +196,6 @@ autoload -U add-zsh-hook
 add-zsh-hook precmd  theme_precmd
 
 
-
-
-
 # * Aliases
 # ** Grep
 alias grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
@@ -202,7 +204,6 @@ alias grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 alias e="emacsclient -c -a ''"
 alias te="emacsclient -t -a ''"
 alias et="emacsclient -t -a ''"
-
 
 # ** Directories
 alias -g ...='../..'
@@ -213,24 +214,12 @@ alias -g ......='../../../../..'
 alias md='mkdir -p'
 alias rd='rm -rf'
 # List directory contents
+alias ls='ls --color'
 alias lsa='ls -lah'
 alias l='ls -lah'
 alias ll='ls -lh'
 alias la='ls -lAh'
 alias lt="ls -laht"
-
-
-
-# * Other Aliases
-
-alias dhs="du -hs"
-# do not put them in history
-alias gst=" gst"
-alias l=" l"
-alias ll=" ll"
-
-
-
 
 # * Machine ( OS and HOST ) Specific Configuration
 # Various System Specific Configurations

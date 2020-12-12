@@ -531,7 +531,6 @@
   sudo apt-get install -y apt-transport-https && \\
   sudo apt-get update && \\
   sudo apt-get install -y aspnetcore-runtime-3.1
-: 1604524824:0;cd 
 : 1604524841:0;mkdir -p .FsAutoComplete/netcore
 : 1604524875:0;mv /mnt/c/Users/esharapov/Downloads/fsautocomplete.netcore.zip ~/.FsAutoComplete/netcore/.
 : 1604524884:0;cd ~/.FsAutoComplete/netcore
@@ -1350,7 +1349,6 @@ EOF
 : 1607142886:0;l svg
 : 1607142894:0;l assets
 : 1607142902:0;rm -rf svg
-: 1607142910:0;hg addremove
 : 1607142925:0;hg cm "removed superfluous SVGs"
 : 1607142950:0;python --version
 : 1607142956:0;cd public
@@ -1428,12 +1426,9 @@ EOF
 : 1607377689:0;gcmsg "OPEB-1600: changed name of the FilterModel test to integration test"
 : 1607378344:0;ga src
 : 1607378368:0;gcmsg "OPEB-1599: moved the classes related to Mongoose schema to their own module"
-: 1607457194:0;cd ~/.dotfiles
 : 1607457235:0;hg commit -m "start daemon on call to editor"
-: 1607457273:0;hg out
 : 1607457283:0;hg in
 : 1607457305:0;cd ..
-: 1607457312:0;hg push
 : 1607488452:0;l Projects
 : 1607488458:0;cd PULSE
 : 1607488464:0;code prompt-service-workspace.code-workspace
@@ -1492,7 +1487,6 @@ EOF
 : 1607618373:0;hg book --help
 : 1607618379:0;hg book -d
 : 1607618393:0;hg book -d use-outline-zshrc
-: 1607618398:0;hg lg
 : 1607619577:0;g lga
 : 1607619594:0;hg book remove-omz
 : 1607619982:0;te .oh-my-zsh/oh-my-zsh.sh
@@ -1525,7 +1519,6 @@ EOF
 : 1607654397:0;hg book working
 : 1607654408:0;hg book
 : 1607654418:0;hg up remove-omz
-: 1607654437:0;e . &
 : 1607655519:0;ls -d ${^~*:-*}(/)
 : 1607655572:0;histgrep () { fc -fl -m "*(#i)$1*" 1 | grep -i --color $1 }
 : 1607655579:0;histgrep fc
@@ -1535,7 +1528,6 @@ EOF
 : 1607655645:0;beep -f 466.2 -l 250 -D 20 -n -f 415.3 -l 250 -D 20 -n -f 370.0 -l 250 -D 20 -n -f 415.3 -l 250 -D 20 -n -f 466.2 -l 250 -r 2 -d 0 -D 20 -n -f 466.2 -l 500 -n -f 10 -l 20
 : 1607655711:0;man zshoptions
 : 1607655735:0;man zshcompwid
-: 1607655981:0;zsh_stats
 : 1607656041:0;aliases
 : 1607656047:0;alias_value grep
 : 1607656336:0;echo $fpath
@@ -1546,7 +1538,6 @@ EOF
 : 1607656868:0;fc -l
 : 1607656873:0;fc -l -1
 : 1607657028:0;which history
-: 1607657032:0;history
 : 1607709490:0;hs
 : 1607709501:0;hgd
 : 1607710788:0;which hash
@@ -1578,10 +1569,8 @@ EOF
 : 1607739002:0;l .zcom*
 : 1607739175:0;return 2
 : 1607739179:0;return 1234
-: 1607739277:0;cd .dotfiles
 : 1607739281:0;hg d
 : 1607739679:0;hg add .zsh
-: 1607739685:0;hgs
 : 1607739709:0;hg remove .zsh_custom
 : 1607739742:0;hg remove .zshrc.*
 : 1607739763:0;hg remove -A
@@ -1589,9 +1578,7 @@ EOF
 : 1607739817:0;hg remove -S .oh-my-zsh
 : 1607739827:0;hg remove --help
 : 1607739864:0;hg cm "removed dependency on OMZ"
-: 1607739866:0;hg st
 : 1607740219:0;printenv
-: 1607740404:0;hg lga
 : 1607740416:0;cd
 : 1607743414:0;man ln
 : 1607743433:0;ln -s .dotfiles/.zsh .zsh
@@ -1602,22 +1589,34 @@ EOF
 : 1607743486:0;rm .zshrc.senmb
 : 1607743491:0;rm .zshrc.osx
 : 1607743506:0;rm .zsh_custom
-: 1607743507:0;l
 : 1607743555:0;cp .zsh_history .zsh/history/.zsh_history-P3530-20190221
 : 1607743986:0;history
-: 1607744013:0;cd ~/.dotfiles
 : 1607744021:0;cd .dotfiles
-: 1607744031:0;cd ~/.dotfiles
-: 1607744039:0;hg st
 : 1607744063:0;hgs
-: 1607744066:0;hg st
 : 1607744094:0;hg addremove
 : 1607744122:0;hg cm "history file for wsl2 on Ai laptop"
 : 1607744125:0;hg lga
 : 1607744130:0;hg out
 : 1607744135:0;hg push
 : 1607744157:0;e . &
-: 1607744252:0;hg st
 : 1607744265:0;rm -rf .oh-my-zsh
 : 1607744268:0;hg st
 : 1607744283:0;hg cm "removed OMZ subrepo"
+: 1607744286:0;hg lg
+: 1607744336:0;which ' l'
+: 1607744349:0;which ll
+: 1607744405:0;which gradlew
+: 1607744410:0;which l
+: 1607744536:0;cd ~/.dotfiles
+: 1607744573:0;ls --color=auto
+: 1607744586:0;cd 
+: 1607744588:0;ls -al --color=auto
+: 1607744619:0;code .dotfiles
+: 1607744734:0;l
+: 1607744956:0;autoload zsh_stats
+: 1607744969:0;autoload -U zsh_stats
+: 1607744978:0;zsh_stats
+: 1607745472:0;.dotfiles
+: 1607745474:0;hg st
+: 1607745485:0;hg d
+: 1607745502:0;hg cm "added colors to ls and menu selection"

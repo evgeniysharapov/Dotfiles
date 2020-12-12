@@ -1613,3 +1613,11 @@ EOF
 : 1607744066:0;hg st
 : 1607744094:0;hg addremove
 : 1607744122:0;hg cm "history file for wsl2 on Ai laptop"
+: 1607744125:0;hg lga
+: 1607744130:0;hg out
+: 1607744135:0;hg push
+: 1607744157:0;e . &
+: 1607744252:0;hg st
+: 1607744265:0;rm -rf .oh-my-zsh
+: 1607744268:0;hg st
+: 1607744283:0;hg cm "removed OMZ subrepo"

@@ -205,6 +205,7 @@ alias gcan!='git commit -v -a --no-edit --amend'
 alias gcb='git checkout -b'
 alias gco='git checkout'
 alias gd='git diff'
+alias gst='git status'
 
 # ** Grep
 alias grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'

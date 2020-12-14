@@ -1178,7 +1178,6 @@ EOF
 : 1606765379:0;man watch
 : 1606765464:0;watch -n 0.5 sass assets/css/styles.scss assets/css/styles.css && make
 : 1606789327:0;watch -n 1 sass assets/css/styles.scss assets/css/styles.css && rm -rf ~/.org-timestamps && make
-: 1606840788:0;ll
 : 1606844426:0;npm run build
 : 1606844482:0;gcmsg "OPEB-1600: updated api"
 : 1606844493:0;gcmsg "OPEB-1600: updated api" --no-verify
@@ -1225,7 +1224,6 @@ EOF
 : 1607014277:0;which e
 : 1607014357:0;e -e '(kill-emacs)'
 : 1607014967:0;.dotfile
-: 1607014971:0;.dotfiles
 : 1607014978:0;hg ou
 : 1607014995:0;ghc
 : 1607015003:0;stack
@@ -1507,7 +1505,6 @@ EOF
 : 1607628666:0;cd LearnFSharp
 : 1607628696:0;dotnet new console -lang 'F#' -o ElegantFSharp
 : 1607628708:0;cd ElegantFSharp
-: 1607628871:0;code .
 : 1607629121:0;dotnet fsi Mutation.fs
 : 1607629164:0;cp Mutation.fs Mutation.fsx
 : 1607629173:0;dotnet fsi Mutation.fsx
@@ -1569,7 +1566,6 @@ EOF
 : 1607739002:0;l .zcom*
 : 1607739175:0;return 2
 : 1607739179:0;return 1234
-: 1607739281:0;hg d
 : 1607739679:0;hg add .zsh
 : 1607739709:0;hg remove .zsh_custom
 : 1607739742:0;hg remove .zshrc.*
@@ -1591,16 +1587,12 @@ EOF
 : 1607743506:0;rm .zsh_custom
 : 1607743555:0;cp .zsh_history .zsh/history/.zsh_history-P3530-20190221
 : 1607743986:0;history
-: 1607744021:0;cd .dotfiles
-: 1607744063:0;hgs
 : 1607744094:0;hg addremove
 : 1607744122:0;hg cm "history file for wsl2 on Ai laptop"
 : 1607744125:0;hg lga
 : 1607744130:0;hg out
-: 1607744135:0;hg push
 : 1607744157:0;e . &
 : 1607744265:0;rm -rf .oh-my-zsh
-: 1607744268:0;hg st
 : 1607744283:0;hg cm "removed OMZ subrepo"
 : 1607744286:0;hg lg
 : 1607744336:0;which ' l'
@@ -1617,15 +1609,33 @@ EOF
 : 1607744969:0;autoload -U zsh_stats
 : 1607744978:0;zsh_stats
 : 1607745472:0;.dotfiles
-: 1607745474:0;hg st
-: 1607745485:0;hg d
 : 1607745502:0;hg cm "added colors to ls and menu selection"
 : 1607831259:0;ll
 : 1607831356:0;cd .dotfiles
 : 1607831359:0;hgs
-: 1607831361:0;hg st
-: 1607831365:0;hg d
 : 1607832487:0;code .
 : 1607917626:0;hg st
 : 1607917627:0;hg d
 : 1607917666:0;hg cm "added few useful aliases"
+: 1607917702:0;hg push
+: 1607917714:0;hg server
+: 1607917717:0;hg serve
+: 1607917794:0;cd .dotfiles
+: 1607917801:0;hg serve NUL
+: 1607917829:0;hg lga
+: 1607917850:0;l
+: 1607918377:0;/mnt/c/Users/esharapov/.emacs.d
+: 1607918382:0;gst
+: 1607918396:0;which g
+: 1607918399:0;which gst
+: 1607918408:0;alias gst='git status'
+: 1607918410:0;gst
+: 1607918415:0;g lga
+: 1607918419:0;g push
+: 1607918434:0;te .
+: 1607918544:0;gst
+: 1607918614:0;gts
+: 1607918617:0;gst
+: 1607918623:0;hg st
+: 1607918625:0;hg d
+: 1607918637:0;hg cm "added git status alias gst"

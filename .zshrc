@@ -108,8 +108,6 @@ zstyle ':completion:*:*:*:users' ignored-patterns \
 # ... unless we really want to.
 zstyle '*' single-ignored show
 
-
-
 # add a function path
 fpath=($ZSH/functions $ZSH/completions $fpath)
 
@@ -197,6 +195,17 @@ add-zsh-hook precmd  theme_precmd
 
 
 # * Aliases
+
+# Git
+alias g='git'
+alias ga='git add'
+alias gau='git add --update'
+alias gcmsg='git commit -m'
+alias gcan!='git commit -v -a --no-edit --amend'
+alias gcb='git checkout -b'
+alias gco='git checkout'
+alias gd='git diff'
+
 # ** Grep
 alias grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 
@@ -220,6 +229,24 @@ alias l='ls -lah'
 alias ll='ls -lh'
 alias la='ls -lAh'
 alias lt="ls -laht"
+
+# ** Useful 
+# find file with name
+alias ff='find . -type f -name'
+# find directory with name
+alias fd='find . -type d -name'
+alias h='history'
+alias hgrep="fc -El 0 | grep"
+# user's processes
+alias p='ps -f'
+# head/tail/grep and silencing std(out|err)
+alias -g H='| head'
+alias -g T='| tail'
+alias -g G='| grep'
+alias -g L="| less"
+alias -g NE="2> /dev/null"
+alias -g NUL="> /dev/null 2>&1"
+
 
 # * Machine ( OS and HOST ) Specific Configuration
 # Various System Specific Configurations

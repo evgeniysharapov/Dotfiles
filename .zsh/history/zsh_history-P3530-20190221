@@ -1620,3 +1620,12 @@ EOF
 : 1607745474:0;hg st
 : 1607745485:0;hg d
 : 1607745502:0;hg cm "added colors to ls and menu selection"
+: 1607831259:0;ll
+: 1607831356:0;cd .dotfiles
+: 1607831359:0;hgs
+: 1607831361:0;hg st
+: 1607831365:0;hg d
+: 1607832487:0;code .
+: 1607917626:0;hg st
+: 1607917627:0;hg d
+: 1607917666:0;hg cm "added few useful aliases"

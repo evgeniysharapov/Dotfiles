@@ -70,6 +70,9 @@ alias history='fc -il 1'
 
 bindkey -e                                            # Use emacs key bindings
 
+# / is not part of the word. This works with word delete functionality
+export WORDCHARS=${WORDCHARS:s/\///}
+
 # * Completions
 unsetopt menu_complete   # do not autoselect the first completion entry
 unsetopt flowcontrol
@@ -196,16 +199,17 @@ add-zsh-hook precmd  theme_precmd
 
 # * Aliases
 
-# Git
+# ** Git
 alias g='git'
 alias ga='git add'
 alias gau='git add --update'
 alias gcmsg='git commit -m'
-alias gcan!='git commit -v -a --no-edit --amend'
+alias gcan='git commit -v -a --no-edit --amend'
 alias gcb='git checkout -b'
 alias gco='git checkout'
 alias gd='git diff'
 alias gst='git status'
+alias grhh='git reset --hard HEAD'
 
 # ** Grep
 alias grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'

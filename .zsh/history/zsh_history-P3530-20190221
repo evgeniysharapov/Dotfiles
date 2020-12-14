@@ -1639,3 +1639,62 @@ EOF
 : 1607918623:0;hg st
 : 1607918625:0;hg d
 : 1607918637:0;hg cm "added git status alias gst"
+: 1607918639:0;g push
+: 1607918641:0;hg push
+: 1607918657:0;cd ../.emacs.d
+: 1607918662:0;gst
+: 1607918663:0;g st
+: 1607918666:0;g d
+: 1607918734:0;grhh
+: 1607918757:0;te ../.dotfiles/.zshrc
+: 1607918918:0;l
+: 1607918991:0;g reset --hard HEAD
+: 1607918994:0;g lga
+: 1607918998:0;g pull
+: 1607919001:0;g lga
+: 1607919009:0;g push
+: 1607919016:0;g pull
+: 1607919042:0;PULSE
+: 1607919044:0;l
+: 1607919047:0;cd .
+: 1607919048:0;..
+: 1607919050:0;l
+: 1607958618:0;g lga
+: 1607958666:0;cd Ocaml
+: 1607958667:0;l
+: 1607958670:0;dc LearnOcaml
+: 1607958676:0;cd LearnOcaml
+: 1607958679:0;l
+: 1607958694:0;hg lg
+: 1607958704:0;hg glog --style=compact
+: 1607958728:0;l
+: 1607959953:0;cd ..
+: 1607959955:0;l
+: 1607959958:0;cd FSharp
+: 1607959959:0;l
+: 1607959968:0;dotnet --version
+: 1607959973:0;dotnet --help
+: 1607960006:0;l
+: 1607960412:0;cd ..
+: 1607960413:0;l
+: 1607960416:0;cd PULSE
+: 1607960417:0;l
+: 1607960420:0;cd enterprise-audit-terraform
+: 1607960422:0;code .
+: 1607963161:0;aws
+: 1607963168:0;aws lambda help
+: 1607963195:0;aws lambda list-layers
+: 1607969962:0;aws lambda list-layers --compatible-runtime python3.8
+: 1607969968:0;aws lambda list-layers --compatible-runtime nodejs
+: 1607969974:0;aws lambda list-layers
+: 1607970586:0;aws
+: 1607970589:0;aws help
+: 1607970629:0;cat ~/.aws/config
+: 1607970643:0;echo $WORDCHARS
+: 1607970713:0;echo ${WORDCHARS:s/\///}
+: 1607970739:0;export WORDCHARS=${WORDCHARS:s/\///}
+: 1607970766:0;te ~/.dotfiles/.zshrc
+: 1607970931:0;.dotfiles
+: 1607970933:0;hg st
+: 1607970934:0;hg d
+: 1607971362:0;hg cm "added few git aliases and changed WORDCHARS"

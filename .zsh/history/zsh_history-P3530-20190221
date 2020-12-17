@@ -199,14 +199,12 @@
 : 1603740939:0;docker_login
 : 1603740963:0;docker login registry.ainq.com
 : 1603741036:0;docker images ls
-: 1603741039:0;docker images
 : 1603741064:0;l ~/.local/bin
 : 1603741222:0;cd ulp-management-reports-client-portlet
 : 1603741572:0;gradle --version
 : 1603741578:0;mvn --version
 : 1603741591:0;ocaml --version
 : 1603767256:0;ghci
-: 1603767304:0;cd ../.emacs.d
 : 1603767425:0;eval $(opam env)
 : 1603810163:0;l source/repos/ConsoleApp1
 : 1603810166:0;l source/repos/ConsoleApp1/ConsoleApp1
@@ -364,7 +362,6 @@
 : 1604330959:0;hg co default
 : 1604332473:0;cd ~/Projects/PULSE/adt-dispatch-service
 : 1604332518:0;g push --set-upstream origin OPEB-1414-metrics
-: 1604333525:0;docker ps
 : 1604333528:0;docker ps -a
 : 1604336053:0;gcmsg "OPEB-1414: lowered some of the levels of information printed to the logs (avoiding clutter)" 
 : 1604345949:0;rg
@@ -449,7 +446,6 @@
 : 1604434105:0;gcmsg "removed font heigh manipulation and different region face based on terminal vs gui"
 : 1604434121:0;g push --set-upstream origin master
 : 1604438379:0;cd ../Projects/Ocaml
-: 1604438384:0;cd LearnOcaml
 : 1604438396:0;hg book main
 : 1604438906:0;cat ~/.ssh/id_rsa.pub
 : 1604439074:0;te .hg/hgrc
@@ -544,7 +540,6 @@
 : 1604525445:0;dotnet run
 : 1604525456:0;dotnet build --help
 : 1604525564:0;dotnet
-: 1604525641:0;dotnet --help
 : 1604525653:0;dotnet list reference
 : 1604525658:0;dotnet list package
 : 1604588529:0;dotnet publish --self-contained
@@ -562,8 +557,6 @@
 : 1604592860:0;unzip awscliv2.zip
 : 1604592873:0;sudo ./aws/install
 : 1604592909:0;rm -rf aws
-: 1604592912:0;aws
-: 1604592916:0;aws help
 : 1604592950:0;l /mnt/c/Users/esharapov/
 : 1604592954:0;l /mnt/c/Users/esharapov/.aws/
 : 1604592963:0;l ~/.aws
@@ -642,7 +635,6 @@
 : 1604677699:0;apt-cache search gyp
 : 1604677743:0;sudo apt-get install -y gyp node-gyp node-pre-gyp
 : 1604678047:0;pip list
-: 1604678052:0;pip3 list
 : 1604678057:0;pip3 list | grep gyp
 : 1604678066:0;pip3 search gyp
 : 1604678364:0;pip install https://github.com/nodejs/node-gyp\#subdirectory\=gyp
@@ -753,7 +745,6 @@
 : 1605207184:0;aws --profile=esharapov_ent sqs send-message --help --queue-url https://sqs.us-east-1.amazonaws.com/778079405878/adt-processing-queue 
 : 1605207339:0;aws --profile=esharapov_ent sqs send-message --queue-url https://sqs.us-east-1.amazonaws.com/778079405878/adt-processing-queue --message-attributes file://samples/Inpatient,Audo.json
 : 1605207356:0;aws --profile=esharapov_ent sqs send-message --queue-url https://sqs.us-east-1.amazonaws.com/778079405878/adt-processing-queue --message-body file://samples/Inpatient,Audo.json
-: 1605210848:0;cat ~/.aws/config
 : 1605210891:0;cat ~/.aws/credentials | grep AKIAVZHYF7QETLQYQMFZ
 : 1605210952:0;aws --profile=pulse sns list-topics
 : 1605211326:0;aws --profile=pulse sns --help
@@ -832,7 +823,6 @@ EOF
 : 1605558619:0;dotnet tool list
 : 1605558630:0;dotnet fsi help
 : 1605558636:0;dotnet fsi --help
-: 1605558870:0;cd FSharp
 : 1605558874:0;cd FSTestApp
 : 1605593467:0;l samples
 : 1605593480:0;em id_file
@@ -985,7 +975,6 @@ EOF
 : 1606148744:0;mv sass ../.
 : 1606148754:0;mv src/dart ../.
 : 1606148762:0;mv src/sass.snapshot ../.
-: 1606148763:0;cd .
 : 1606148777:0;rm -rf dart-sass
 : 1606148785:0;vim sass
 : 1606148811:0;sass
@@ -1091,7 +1080,6 @@ EOF
 : 1606272933:0;cp /mnt/c/Users/esharapov/Dropbox/face-small.png assets/img/.
 : 1606272937:0;cd assets/img
 : 1606272948:0;man optipng
-: 1606272984:0;rehash
 : 1606272999:0;optipng face-small.png -out face-small-opt.png
 : 1606273071:0;identify face-small.png
 : 1606273078:0;identify face-small-opt.png
@@ -1164,7 +1152,6 @@ EOF
 : 1606362796:0;cd ~/Projects/PULSE/ainq-prompt-service
 : 1606363511:0;gcmsg "OPEB-1599: updated combined OpenAPI spec"
 : 1606363523:0;npm run spec2jss
-: 1606363639:0;cat package.json
 : 1606363737:0;npx openapi
 : 1606363751:0;npx openapi2schema
 : 1606364309:0;npx openapi2schema -i openapi/schema/filter.base.v1.yaml
@@ -1313,7 +1300,6 @@ EOF
 : 1607059222:0;cat .git/hooks/husky.sh
 : 1607059306:0;gcmsg "OPEB-1601: added test to pre commit hook"
 : 1607059376:0;gcmsg "OPEB-1601: prettifier changed code slighlty"
-: 1607100672:0;grhh
 : 1607100765:0;npm run build:jss
 : 1607113263:0;gcmsg "OPEB-1600: moved JSON-Schema for filter to src/schema, added generating JSON schema from TS" 
 : 1607113375:0;gcan!
@@ -1321,7 +1307,6 @@ EOF
 : 1607113807:0;./node_modules/.bin/typescript-json-schema src/data-layer/schema/filter-types.ts FilterBase > src/schema/filter-base.schema.json
 : 1607114050:0;gcmsg "OPEB-1600: added json schema validation to the API code"
 : 1607114480:0;gcmsg "OPEB-1599: updated scripts generating json schema from TS"
-: 1607114843:0;gts
 : 1607114996:0;cat  /home/esharapov/.npm/_logs/2020-12-04T20_48_03_970Z-debug.log 
 : 1607115286:0;cat ~/.npmrc
 : 1607115308:0;mv ~/.npmrc ~/.npmrc.bak
@@ -1426,9 +1411,7 @@ EOF
 : 1607378368:0;gcmsg "OPEB-1599: moved the classes related to Mongoose schema to their own module"
 : 1607457235:0;hg commit -m "start daemon on call to editor"
 : 1607457283:0;hg in
-: 1607457305:0;cd ..
 : 1607488452:0;l Projects
-: 1607488458:0;cd PULSE
 : 1607488464:0;code prompt-service-workspace.code-workspace
 : 1607488689:0;e .&
 : 1607531232:0;aws --version
@@ -1443,7 +1426,6 @@ EOF
 : 1607542531:0;te dependencies.txt
 : 1607542977:0;aws --profile=esharapov_ent sns list-tpoics
 : 1607543002:0;l ~/.aws/credentials
-: 1607543005:0;cat ~/.aws/credentials
 : 1607543055:0;aws --profile=enterprise-dev sns list-topics
 : 1607543454:0;aws --profile=esharapov_ent sns list-topics
 : 1607546432:0;l ~/.local/lib/python3.8/site-packages/mercurial/templates
@@ -1452,7 +1434,6 @@ EOF
 : 1607546461:0;less ~/.local/lib/python3.8/site-packages/mercurial/templates/map-cmdline.compact
 : 1607546491:0;te .hgrc.P3530-20190221
 : 1607546500:0;te .hgrc
-: 1607546834:0;dotnet --version
 : 1607546897:0;echo $OSTYPE
 : 1607546912:0;echo $(hostname)
 : 1607546948:0;ainq-prompt-service
@@ -1472,11 +1453,9 @@ EOF
 : 1607548166:0;gcmsg "OPEB-1575: removed versionkey property from Mongoose docs"
 : 1607548211:0;gcm
 : 1607548231:0;g co develop
-: 1607548232:0;g pull
 : 1607548244:0;g co filter-api-tweaks
 : 1607548248:0;g merge develop
 : 1607548316:0;npm run start
-: 1607548670:0;g push
 : 1607548678:0;g push --set-upstream origin filter-api-tweaks
 : 1607614478:0;env
 : 1607614615:0;hg log --style=compact
@@ -1485,18 +1464,14 @@ EOF
 : 1607618373:0;hg book --help
 : 1607618379:0;hg book -d
 : 1607618393:0;hg book -d use-outline-zshrc
-: 1607619577:0;g lga
 : 1607619594:0;hg book remove-omz
 : 1607619982:0;te .oh-my-zsh/oh-my-zsh.sh
-: 1607620164:0;te .
 : 1607620989:0;ag add-zsh-hook
 : 1607620995:0;rg add-zsh-hook
 : 1607621006:0;ag add-zsh
 : 1607621924:0;echo $ZDOTDIR
-: 1607622174:0;gst
 : 1607622247:0;hg commit -m "moving things to zshrc\
 "
-: 1607622253:0;hg glog --style=compact
 : 1607622338:0;hg up -r 196
 : 1607622351:0;hg llga
 : 1607626434:0;which npx
@@ -1549,7 +1524,6 @@ EOF
 : 1607712894:0;dirs
 : 1607712900:0;cd -1
 : 1607713219:0;pulse
-: 1607713222:0;PULSE
 : 1607713231:0;g clone https://git.ainq.com/enterprise-components/enterprise-audit-terraform.git
 : 1607715645:0;which rmdir
 : 1607715649:0;man rmdir
@@ -1589,12 +1563,10 @@ EOF
 : 1607743986:0;history
 : 1607744094:0;hg addremove
 : 1607744122:0;hg cm "history file for wsl2 on Ai laptop"
-: 1607744125:0;hg lga
 : 1607744130:0;hg out
 : 1607744157:0;e . &
 : 1607744265:0;rm -rf .oh-my-zsh
 : 1607744283:0;hg cm "removed OMZ subrepo"
-: 1607744286:0;hg lg
 : 1607744336:0;which ' l'
 : 1607744349:0;which ll
 : 1607744405:0;which gradlew
@@ -1604,97 +1576,342 @@ EOF
 : 1607744586:0;cd 
 : 1607744588:0;ls -al --color=auto
 : 1607744619:0;code .dotfiles
-: 1607744734:0;l
 : 1607744956:0;autoload zsh_stats
 : 1607744969:0;autoload -U zsh_stats
 : 1607744978:0;zsh_stats
-: 1607745472:0;.dotfiles
 : 1607745502:0;hg cm "added colors to ls and menu selection"
 : 1607831259:0;ll
-: 1607831356:0;cd .dotfiles
 : 1607831359:0;hgs
-: 1607832487:0;code .
-: 1607917626:0;hg st
-: 1607917627:0;hg d
 : 1607917666:0;hg cm "added few useful aliases"
-: 1607917702:0;hg push
 : 1607917714:0;hg server
 : 1607917717:0;hg serve
 : 1607917794:0;cd .dotfiles
 : 1607917801:0;hg serve NUL
 : 1607917829:0;hg lga
-: 1607917850:0;l
 : 1607918377:0;/mnt/c/Users/esharapov/.emacs.d
-: 1607918382:0;gst
 : 1607918396:0;which g
 : 1607918399:0;which gst
 : 1607918408:0;alias gst='git status'
-: 1607918410:0;gst
-: 1607918415:0;g lga
-: 1607918419:0;g push
-: 1607918434:0;te .
-: 1607918544:0;gst
 : 1607918614:0;gts
-: 1607918617:0;gst
-: 1607918623:0;hg st
-: 1607918625:0;hg d
 : 1607918637:0;hg cm "added git status alias gst"
-: 1607918639:0;g push
-: 1607918641:0;hg push
 : 1607918657:0;cd ../.emacs.d
-: 1607918662:0;gst
-: 1607918663:0;g st
 : 1607918666:0;g d
 : 1607918734:0;grhh
 : 1607918757:0;te ../.dotfiles/.zshrc
-: 1607918918:0;l
 : 1607918991:0;g reset --hard HEAD
-: 1607918994:0;g lga
-: 1607918998:0;g pull
-: 1607919001:0;g lga
 : 1607919009:0;g push
 : 1607919016:0;g pull
 : 1607919042:0;PULSE
-: 1607919044:0;l
 : 1607919047:0;cd .
-: 1607919048:0;..
-: 1607919050:0;l
-: 1607958618:0;g lga
 : 1607958666:0;cd Ocaml
-: 1607958667:0;l
 : 1607958670:0;dc LearnOcaml
 : 1607958676:0;cd LearnOcaml
-: 1607958679:0;l
 : 1607958694:0;hg lg
 : 1607958704:0;hg glog --style=compact
-: 1607958728:0;l
-: 1607959953:0;cd ..
-: 1607959955:0;l
 : 1607959958:0;cd FSharp
-: 1607959959:0;l
 : 1607959968:0;dotnet --version
 : 1607959973:0;dotnet --help
-: 1607960006:0;l
-: 1607960412:0;cd ..
-: 1607960413:0;l
 : 1607960416:0;cd PULSE
-: 1607960417:0;l
 : 1607960420:0;cd enterprise-audit-terraform
 : 1607960422:0;code .
-: 1607963161:0;aws
 : 1607963168:0;aws lambda help
-: 1607963195:0;aws lambda list-layers
 : 1607969962:0;aws lambda list-layers --compatible-runtime python3.8
 : 1607969968:0;aws lambda list-layers --compatible-runtime nodejs
 : 1607969974:0;aws lambda list-layers
 : 1607970586:0;aws
 : 1607970589:0;aws help
-: 1607970629:0;cat ~/.aws/config
 : 1607970643:0;echo $WORDCHARS
 : 1607970713:0;echo ${WORDCHARS:s/\///}
 : 1607970739:0;export WORDCHARS=${WORDCHARS:s/\///}
 : 1607970766:0;te ~/.dotfiles/.zshrc
 : 1607970931:0;.dotfiles
-: 1607970933:0;hg st
-: 1607970934:0;hg d
 : 1607971362:0;hg cm "added few git aliases and changed WORDCHARS"
+: 1607971364:0;hg push
+: 1607974790:0;mkdir ainq-aod-service
+: 1607974794:0;cd ainq-aod-service
+: 1607974885:0;md lambda
+: 1607974887:0;cd lambda
+: 1607974921:0;md momentjs-lambda-layer
+: 1607974937:0;npm i -s momentjs
+: 1607974947:0;rm -rf *
+: 1607974958:0;npm i moment
+: 1607974964:0;cat package.json
+: 1607975053:0;cd momentjs-lambda-layer/
+: 1607975058:0;npm prune --production
+: 1607975062:0;l node_modules
+: 1607975064:0;cd..
+: 1607975113:0;sudo apt-get install zip
+: 1607975126:0;zip -r momentjs-lambda-layer.zip momentjs-lambda-layer
+: 1607975182:0;cat ~/.aws/config
+: 1607975193:0;cat ~/.aws/credentials
+: 1607975445:0;aws --profile=esharapov_ent lambda publish-layer-version --layer-name "momentjs-lambda-layer" \\
+--description "NodeJS module of MomentJS library"
+: 1607975516:0;aws --profile=esharapov_ent lambda publish-layer-version --layer-name "momentjs-lambda-layer" \\
+--description "NodeJS module of MomentJS library" \\
+--license-info "MIT" \\
+--compative-runtimes "nodejs10.x" \\
+--zip-file "fileb://momentjs-lambda-layer.zip"
+: 1607975588:0;aws --profile=esharapov_ent lambda list-layers
+: 1607975814:0;md curent-time-lambda
+: 1607975821:0;npm init -y
+: 1607975970:0;..
+: 1607975992:0;zip -r currentTimeLambda.js.zip curent-time-lambda/currentTimeLambda.js
+: 1607976067:0;aws --profile=esharapov_ent lambda create-function \\
+--region us-east-1
+: 1607976150:0;aws --profile=esharapov_ent lambda create-function \\
+--region us-east-1 \\
+--function-name currentTimeLambda \\
+--handler "currentTimeLambda.handler" \\
+--runtime nodejs10.x \\
+--zip-file 'fileb://currentTimeLambda.js.zip'
+: 1607976875:0;te curent-time-lambda
+: 1607977294:0;cd curent-time-lambda
+: 1607977308:0;mv currentTimeLambda.js current-time-lambda.js
+: 1607977360:0;zip -r currentTimeLambda.js.zip curent-time-lambda/current-time-lambda.js
+: 1607977388:0;aws --profile=esharapov_ent lambda create-function \\
+--region us-east-1 \\
+--function-name currentTimeLambda1 \\
+--handler "currentTimeLambda.handler" \\
+--runtime nodejs10.x \\
+--zip-file 'fileb://currentTimeLambda.js.zip' \\
+--role arn:aws:iam::778079405878:role/asap-lambda-dev-role
+: 1607977668:0;aws --profile=esharapov_ent lambda invoke
+: 1607977685:0;aws --profile=esharapov_ent lambda help invoke
+: 1607977693:0;aws --profile=esharapov_ent lambda invoke --help
+: 1607977703:0;aws --profile=esharapov_ent lambda invoke help
+: 1607977726:0;aws --profile=esharapov_ent lambda invoke --function-name currentTimeLambda1
+: 1607977765:0;aws --profile=esharapov_ent lambda invoke --function-name currentTimeLambda1 --invocation-type RequestResponse --payload '{}'
+: 1607977876:0;mv curent-time-lambda current-time-lambda
+: 1607977924:0;rm currentTimeLambda.js.zip
+: 1607977927:0;zip -r currentTimeLambda.js.zip current-time-lambda/current-time-lambda.js
+: 1607977936:0;aws --profile=esharapov_ent lambda ivoke help
+: 1607977971:0;aws --profile=esharapov_ent lambda create-function \\
+--region us-east-1 \\
+--function-name currentTimeLambda \\
+--handler "currentTimeLambda.handler" \\
+--runtime nodejs10.x \\
+--zip-file 'fileb://currentTimeLambda.js.zip' \\
+--role arn:aws:iam::778079405878:role/asap-lambda-dev-role
+: 1607977981:0;aws --profile=esharapov_ent lambda invoke --function-name currentTimeLambda1 --invocation-type RequestResponse --payload '{}' output.txt
+: 1607979503:0;aws --profile=esharapov_ent lambda help
+: 1607979675:0;zip -r momentjs-lambda-layer.zip momentjs-lambda-layer/*
+: 1607979693:0;zip --help
+: 1607979727:0;zip momentjs-lambda-layer.zip lia
+: 1607979732:0;zip momentjs-lambda-layer.zip list
+: 1607979919:0;rm momentjs-lambda-layer.zip
+: 1607979923:0;cd momentjs-lambda-layer
+: 1607979940:0;zip -r ../momentjs-lambda-layer.zip .
+: 1607979949:0;cd ..
+: 1607979985:0;unzip -l momentjs-lambda-layer
+: 1607979988:0;unzip -l momentjs-lambda-layer.zip
+: 1607980019:0;aws --profile=esharapov_ent lambda publish-layer-version --layer-name "momentjs-lambda-layer" \\
+--description "NodeJS module of MomentJS library" \\
+--license-info "MIT" \\
+--compatible-runtimes "nodejs10.x" \\
+--zip-file "fileb://momentjs-lambda-layer.zip"
+: 1607980114:0;aws --profile=esharapov_ent lambda invoke --function-name currentTimeLambda --invocation-type RequestResponse --payload '{}' output.txt
+: 1607980124:0;cat output.txt
+: 1607980155:0;aws --profile=esharapov_ent lambda get-function-configuration --function-name currentTimeLambda
+: 1607980643:0;docker ps
+: 1607980737:0;docker images
+: 1607980910:0;pip3
+: 1607980921:0;pip3 list | grep aws
+: 1607980933:0;which aws
+: 1607980945:0;hgrep aws
+: 1607980965:0;pip3 search sam
+: 1607980983:0;pip3 search aws-sam
+: 1607980992:0;pip3 --version
+: 1607980995:0;which pip3
+: 1607981001:0;pip3 upgrade
+: 1607981093:0;pip3 list
+: 1607981098:0;pip3 search
+: 1607981104:0;pip3 search q
+: 1607981178:0;python -m pip search 
+: 1607981325:0;python -m pip --version
+: 1607981353:0;python -m pip install -U pip
+: 1607981363:0;python -m pip search q
+: 1607981440:0;python -m pip help
+: 1607981475:0;python -m pip list
+: 1607981502:0;python -m pip search peppercorn
+: 1607981674:0;pip3 install aws-sam-cli
+: 1607981695:0;rehash
+: 1607981700:0;sam help
+: 1607981704:0;sam --help
+: 1607998424:0;e . NUL &
+: 1608002386:0;q
+: 1608042686:0;g lga
+: 1608042728:0;te .
+: 1608058710:0;gst
+: 1608058713:0;g st
+: 1608058721:0;l
+: 1608058725:0;hg st
+: 1608058727:0;hg d
+: 1608059175:0;l
+: 1608059201:0;cd ~/.emacs.d
+: 1608059202:0;gst
+: 1608059205:0;gd
+: 1608059215:0;echo .dap-breakpoints >> .gitignore
+: 1608059222:0;echo .lsp-session-v1 >> .gitignore
+: 1608059225:0;gt
+: 1608059226:0;gst
+: 1608059241:0;vim .gitignore
+: 1608059270:0;echo data/.emacs.desktop.wsl >> .gitignore
+: 1608059277:0;echo transient >> .gitignore
+: 1608059279:0;gst
+: 1608059302:0;gcmsg "ignore lsp and data files transitionary files"
+: 1608059310:0;gau
+: 1608059311:0;gcmsg "ignore lsp and data files transitionary files"
+: 1608059313:0;g lga
+: 1608059316:0;g push
+: 1608059321:0;l
+: 1608059333:0;PULSE
+: 1608059334:0;l
+: 1608060037:0;cd lambda
+: 1608060039:0;l
+: 1608060046:0;unzip -l currentTimeLambda.js.zip
+: 1608060057:0;unzip -l momentjs-lambda-layer.zip
+: 1608061662:0;l
+: 1608061663:0;cd ..
+: 1608061665:0;l
+: 1608061671:0;cd ainq-aod-service
+: 1608061672:0;l
+: 1608061685:0;md modules
+: 1608063694:0;dotnet fsi "/home/esharapov/Projects/FSharp/LearnFSharp/ElegantFSharp/HtmlData.fsx"
+: 1608063719:0;dotnet fs i --language:preview HtmlData.fsx
+: 1608063731:0;dotnet fsi --language:preview HtmlData.fsx
+: 1608063749:0;dotnet fsi /language:preview HtmlData.fsx
+: 1608063756:0;dotnet fsi  HtmlData.fsx
+: 1608063771:0;dotnet fsi /languageversion:preview HtmlData.fsx
+: 1608063777:0;dotnet fsi --languageversion:preview HtmlData.fsx
+: 1608063801:0;dotnet fsi HtmlData.fsx
+: 1608063831:0;dotnet fsi --langversion:preview HtmlData.fsx
+: 1608065595:0;md modules/{database,data-sign,aod-service-lambda}
+: 1608065609:0;enterprise-audit-terraform
+: 1608065611:0;l
+: 1608065615:0;l modules
+: 1608065633:0;code .
+: 1608065789:0;tree
+: 1608065798:0;which tree
+: 1608065803:0;man tree
+: 1608066301:0;node
+: 1608084456:0;l
+: 1608084471:0;touch README.md
+: 1608084473:0;l
+: 1608092279:0;docker ps
+: 1608092316:0;docker
+: 1608092339:0;docker run -d -p 80:80 docker/getting-started
+: 1608092356:0;docker ps
+: 1608092360:0;docker run -d -p 80:80 docker/getting-started
+: 1608092384:0;docker run -v $PWD:/notebooks -p 8888:8888 fsprojects/ifsharp
+: 1608093119:0;docker ps
+: 1608093122:0;docker ps -a
+: 1608093127:0;docker images
+: 1608095116:0;l
+: 1608095124:0;rm -rf .ipynb_checkpoints
+: 1608095128:0;rm shell.log
+: 1608095130:0;rm Untitled.ipynb
+: 1608095131:0;l
+: 1608095141:0;FSharp
+: 1608095143:0;l
+: 1608095153:0;l ../Ocaml/LearnOcaml/Kattis
+: 1608095186:0;l ../Ocaml/LearnOcaml/Kattis/kleptography.ml
+: 1608095190:0;cat ../Ocaml/LearnOcaml/Kattis/kleptography.ml
+: 1608131847:0;l
+: 1608133606:0;docker pull mysql
+: 1608133663:0;docker images
+: 1608133914:0;l
+: 1608133923:0;cd ..
+: 1608133924:0;l
+: 1608133934:0;md lambda-sam
+: 1608133937:0;cd lambda-sam
+: 1608133940:0;sam init
+: 1608134002:0;l
+: 1608134006:0;l sam-app
+: 1608134014:0;cd sam-app
+: 1608134016:0;code .
+: 1608134168:0;sam build
+: 1608135294:0;l
+: 1608135309:0;sam local invoke
+: 1608136074:0;docker images
+: 1608137305:0;# install terraform
+: 1608137310:0;sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+: 1608137332:0;curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+: 1608137335:0;sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+: 1608137376:0;sudo apt-get update && sudo apt-get install terraform
+: 1608137673:0;rehash
+: 1608137677:0;terraform -help
+: 1608137698:0;terraform -help plan
+: 1608137747:0;terraform -install-autocomplete
+: 1608142497:0;l
+: 1608142878:0;te .
+: 1608142896:0;apt-get update emacs
+: 1608142905:0;sudo apt-get update
+: 1608142915:0;sudo apt-get upgrade
+: 1608153139:0;npm run test
+: 1608153230:0;sam local invoke SNSPayloadLogger
+: 1608153258:0;sam local invoke SNSPayloadLogger events/event-sns.json
+: 1608153274:0;sam local invoke --help
+: 1608153619:0;l
+: 1608153624:0;..
+: 1608153625:0;l
+: 1608153630:0;l PULSE
+: 1608153681:0;ag lambda
+: 1608153754:0;l ~/.emacs.d/data
+: 1608153758:0;l ~/.emacs.d/data/history
+: 1608153771:0;less ~/.emacs.d/data/.recentf
+: 1608153874:0;less ~/.emacs.d/data/backups/\!mnt\!c\!Users\!esharapov\!Dropbox\!Notes\!AOD_Service.org.\~1\~
+: 1608154010:0;cat ~/.emacs.d/data/backups/\!mnt\!c\!Users\!esharapov\!Dropbox\!Notes\!AOD_Service.org.\~1\~ > /mnt/c/Users/esharapov.INTRANET/Dropbox/Notes/AOD_Service.org
+: 1608154912:0;PULSE
+: 1608154914:0;l
+: 1608154926:0;cd ainq-aod-service
+: 1608154927:0;l
+: 1608154990:0;docker run --name aod-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql
+: 1608154999:0;docker ps -a
+: 1608155017:0;docker kill aod-mysql
+: 1608155024:0;docker rm aod-mysql
+: 1608155037:0;docker kill zealous_nightingale
+: 1608155044:0;docker rm zealous_nightingale
+: 1608155045:0;l
+: 1608155074:0;docker run --name aod-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password -d mysql
+: 1608157169:0;docker run -t -i localstack/localstack
+: 1608157453:0;docker ps -a
+: 1608157469:0;docker rm quizzical_montalcini
+: 1608157489:0;docker ps
+: 1608172977:0;l
+: 1608172985:0;te docker-compose.yml
+: 1608173051:0;docker-compose --version
+: 1608173068:0;docker versions
+: 1608173090:0;docker --version
+: 1608173103:0;te docker-compose.yml
+: 1608173215:0;l
+: 1608173220:0;docker-compose up
+: 1608173233:0;docker-compose down
+: 1608173307:0;docker ps
+: 1608173314:0;docker kill aod-mysql
+: 1608173322:0;docker rm aod-mysql
+: 1608173327:0;docker-compose up
+: 1608173383:0;docker ps
+: 1608173389:0;ainq-aod-service
+: 1608173390:0;;
+: 1608173392:0;l
+: 1608173413:0;terraform init
+: 1608175715:0;l
+: 1608175857:0;code .
+: 1608175995:0;terraform plan
+: 1608176000:0;terraform init
+: 1608176006:0;terraform plan
+: 1608176024:0;docker ps
+: 1608176279:0;ag provider
+: 1608181522:0;tree
+: 1608181528:0;md environments/dev
+: 1608181530:0;tree
+: 1608181536:0;l
+: 1608181545:0;rm .terraform
+: 1608181573:0;which rd
+: 1608181581:0;rd .terraform
+: 1608181586:0;rd .terraform.lock.hcl
+: 1608181588:0;l
+: 1608182915:0;apt-cache search dropbox
+: 1608182986:0;hg st
+: 1608182988:0;hg d
+: 1608183019:0;hg cm "added terraform completions"

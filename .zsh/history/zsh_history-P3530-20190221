@@ -8,7 +8,6 @@
 : 1603394359:0;man tmux
 : 1603394482:0;service list
 : 1603394500:0;which docker
-: 1603394715:0;docker
 : 1603394804:0;wsl.exe -l -v
 : 1603394841:0;wsl --set-version Ubuntu-20.04 2
 : 1603394946:0;docker  sss
@@ -331,7 +330,6 @@
 : 1603993040:0;apt-cache search ^tree
 : 1603993059:0;apt-cache show tree
 : 1603993076:0;sudo apt-get install tree
-: 1603993089:0;tree
 : 1603993092:0;tree -L 2
 : 1603993100:0;tree -L 3
 : 1603993163:0;clip.exe
@@ -362,7 +360,6 @@
 : 1604330959:0;hg co default
 : 1604332473:0;cd ~/Projects/PULSE/adt-dispatch-service
 : 1604332518:0;g push --set-upstream origin OPEB-1414-metrics
-: 1604333528:0;docker ps -a
 : 1604336053:0;gcmsg "OPEB-1414: lowered some of the levels of information printed to the logs (avoiding clutter)" 
 : 1604345949:0;rg
 : 1604348513:0;which java
@@ -537,7 +534,6 @@
 : 1604525101:0;dotnet new console -lang "F#"  FSTestApp
 : 1604525118:0;dotnet new console -lang "F#" -o FSTestApp
 : 1604525357:0;dotnet run FSTestApp
-: 1604525445:0;dotnet run
 : 1604525456:0;dotnet build --help
 : 1604525564:0;dotnet
 : 1604525653:0;dotnet list reference
@@ -601,7 +597,6 @@
 : 1604628652:0;g log -S session
 : 1604628692:0;g log -S accessToken
 : 1604628707:0;g log -p  a8c689575278e13dc0e841ffe50b693059ebe640
-: 1604628737:0;cat README.md
 : 1604628767:0;l src/__tests__
 : 1604628771:0;l src/__tests__/services
 : 1604628775:0;l src/__tests__/utils
@@ -623,7 +618,6 @@
 : 1604677186:0;ln -s ~/.dotfiles/.npmrc ~/.npmrc
 : 1604677358:0;rm -rf ~/.npm
 : 1604677370:0;node --version
-: 1604677378:0;sudo apt-get update
 : 1604677415:0;sudo apt-get install build-essentials libffi-dev
 : 1604677423:0;sudo apt-get install build-essential libffi-dev
 : 1604677440:0;apt search nodejs
@@ -648,7 +642,6 @@
 : 1604679278:0;./node_modules/mocha/bin/mocha ./src/**/*.test.js --require @babel/register -u tdd --timeout 999999 --colors
 : 1604679350:0;./node_modules/mocha/bin/mocha ./src/**/*.test.js --require @babel/register --colors
 : 1604679403:0;node_modules/.bin/mocha src/__tests__/services/password-service.test.js --grep="should have clickOnResetPasswordLink action" 
-: 1604679650:0;cat .gitignore
 : 1604679736:0;node_modules/.bin/mocha src/__tests__/services/password-service.test.js --grep="password service test" 
 : 1604680059:0;node_modules/.bin/mocha src/__tests__/services/password-service.test.js --grep="should have clickOnResetPasswordLink action" --require @babel/register
 : 1604690238:0;ag service.actions.clickOnResetPasswordLink
@@ -721,7 +714,6 @@
 : 1605107394:0;gcmsg "OPEB-1668: add extra action SET_EXPIRED_MESSAGE to avoid need for knowledge of a specific localized string for expired password link message"
 : 1605110232:0;cat .hg/hgrc
 : 1605110291:0;te ~/.emacs.d
-: 1605110410:0;cd ~/.emacs.d
 : 1605110439:0;kill -9 7177
 : 1605110471:0;emacs --debug-init &
 : 1605110516:0;cat data/.emacs.desktop.wsl
@@ -753,7 +745,6 @@
 : 1605211352:0;aws --profile=pulse sns publish --help
 : 1605211357:0;aws --profile=pulse sns publish help
 : 1605211474:0;export AWS_PAGER=""
-: 1605217519:0;npm run test
 : 1605217674:0;gcmsg "OPEB-1668: fixed test and changed name of the link for expired password link message"
 : 1605217855:0;gcmsg "OPEB-1668: shorten url for initializing state to /i"
 : 1605218384:0;gcmsg "OPEB-1668: updated version of framework to 0.2.22"
@@ -769,7 +760,6 @@
 : 1605234253:0;cat cat .hg/hgrc
 : 1605234296:0;hg commit -m "style and programming changes in publishing. added more content"
 : 1605279051:0;cd ainq-web-client-framework
-: 1605281246:0;te package.json
 : 1605281292:0;gcmsg "OPEB-1668: added 8 sec delay for messages on login page"
 : 1605298696:0;cd /mnt/c/Users/esharapov/Personal/website
 : 1605300110:0;l src/site.org
@@ -856,7 +846,6 @@ EOF
 : 1605652795:0;cd Kattis
 : 1605652801:0;dotnet build Program.fs
 : 1605652833:0;dotnet restore
-: 1605652842:0;dotnet new --help
 : 1605652884:0;mv Program.fs K.fs
 : 1605652905:0;dotnet new console -lang 'F#' -o . -n Kattis
 : 1605652933:0;mv K.fs Program.fs
@@ -904,7 +893,6 @@ EOF
 : 1605715191:0;cd ~/Projects/Exp
 : 1605715199:0;Projects
 : 1605715244:0;cd ../Personal
-: 1605715245:0;;
 : 1605715250:0;cd narendraj9.github.io
 : 1605750185:0;hg add .
 : 1605750220:0;hg commit -m "updated structure and added html inclusiopns and css"
@@ -952,7 +940,6 @@ EOF
 : 1606105444:0;l src/blog
 : 1606140418:0;cd ~/Projects/PULSE
 : 1606140440:0;cd ainq-prompt-service
-: 1606145109:0;g co master
 : 1606145167:0;g co -b filter-api
 : 1606145175:0;g merge master
 : 1606148139:0;hg commit -m "moved images and created tags from keywords for a blog index page"
@@ -986,7 +973,6 @@ EOF
 : 1606184537:0;g push --set-upstream origin filter-api
 : 1606184934:0;npm install openapi2schema
 : 1606184994:0;gcmsg "OPEB-1599: updated combined schema and OpenAPI spec"
-: 1606186141:0;npm install
 : 1606186256:0;npm install nodemon
 : 1606187872:0;ag region
 : 1606190214:0;gm
@@ -1056,7 +1042,6 @@ EOF
 : 1606245891:0;gd --stat feature/notification-list
 : 1606245950:0;gcmsg "OPEB-1599: modification to service configuration for a whole prompt"
 : 1606246051:0;gcmsg "OPEB-1599: modification to service configuration for a whole prompt" --no-verify
-: 1606246248:0;rm package-lock.json
 : 1606246339:0;rm openapi/readme.md
 : 1606246345:0;rm src/db/index.js
 : 1606246360:0;g remove .
@@ -1204,7 +1189,6 @@ EOF
 : 1606974672:0;ainq-microservice-framework
 : 1607008375:0;npm link
 : 1607008410:0;npm link ainq-microservice-framework
-: 1607008413:0;npm i
 : 1607014090:0;emacsclient -e '(kill-emacs)'
 : 1607014102:0;emacs --daemon
 : 1607014244:0;emacsclient --help
@@ -1382,7 +1366,6 @@ EOF
 : 1607316644:0;gcmsg "OPEB-1599: basic CRUD API works"
 : 1607353282:0;npm i json-schema-to-jsdoc --save-dev
 : 1607353303:0;npx json-schema-to-jsdoc
-: 1607353321:0;node
 : 1607361300:0;node_modules/.bin/mocha src/domain-layer/mongo-query-builder.test.js --grep="handles OP = null" --require @babel/register
 : 1607361417:0;node_modules/.bin/mocha src/domain-layer/mongo-query-builder.test.js --grep="one expression in a group" --require @babel/register
 : 1607361501:0;node_modules/.bin/mocha src/domain-layer/mongo-query-builder.test.js --grep="handles NOT operator" --require @babel/register
@@ -1405,7 +1388,6 @@ EOF
 : 1607373800:0;gcmsg "OPEB-1599: added conversion of the filter expression into a Mongo Query"
 : 1607373868:0;g co filter-api
 : 1607374095:0;g merge --continue
-: 1607377097:0;ga .
 : 1607377689:0;gcmsg "OPEB-1600: changed name of the FilterModel test to integration test"
 : 1607378344:0;ga src
 : 1607378368:0;gcmsg "OPEB-1599: moved the classes related to Mongoose schema to their own module"
@@ -1437,7 +1419,6 @@ EOF
 : 1607546897:0;echo $OSTYPE
 : 1607546912:0;echo $(hostname)
 : 1607546948:0;ainq-prompt-service
-: 1607546953:0;npm build
 : 1607547072:0;curl --location --request POST 'api.dev-ainqapps.com/common/v1/authorize' \\
 --header 'Content-Type: application/json' \\
 --data-raw '{\
@@ -1446,12 +1427,9 @@ EOF
     "password": "Password11!"\
 }\
 '
-: 1607547866:0;gd
 : 1607547893:0;g co -b filter-api-tweaks
 : 1607547922:0;gcmsg "OPEB-1575: added userId to the filter docs in mongoose"
-: 1607548136:0;ga -u
 : 1607548166:0;gcmsg "OPEB-1575: removed versionkey property from Mongoose docs"
-: 1607548211:0;gcm
 : 1607548231:0;g co develop
 : 1607548244:0;g co filter-api-tweaks
 : 1607548248:0;g merge develop
@@ -1476,7 +1454,6 @@ EOF
 : 1607622351:0;hg llga
 : 1607626434:0;which npx
 : 1607627856:0;te .dotfiles
-: 1607628661:0;FSharp
 : 1607628666:0;cd LearnFSharp
 : 1607628696:0;dotnet new console -lang 'F#' -o ElegantFSharp
 : 1607628708:0;cd ElegantFSharp
@@ -1571,7 +1548,6 @@ EOF
 : 1607744349:0;which ll
 : 1607744405:0;which gradlew
 : 1607744410:0;which l
-: 1607744536:0;cd ~/.dotfiles
 : 1607744573:0;ls --color=auto
 : 1607744586:0;cd 
 : 1607744588:0;ls -al --color=auto
@@ -1596,12 +1572,9 @@ EOF
 : 1607918637:0;hg cm "added git status alias gst"
 : 1607918657:0;cd ../.emacs.d
 : 1607918666:0;g d
-: 1607918734:0;grhh
 : 1607918757:0;te ../.dotfiles/.zshrc
 : 1607918991:0;g reset --hard HEAD
-: 1607919009:0;g push
 : 1607919016:0;g pull
-: 1607919042:0;PULSE
 : 1607919047:0;cd .
 : 1607958666:0;cd Ocaml
 : 1607958670:0;dc LearnOcaml
@@ -1611,9 +1584,7 @@ EOF
 : 1607959958:0;cd FSharp
 : 1607959968:0;dotnet --version
 : 1607959973:0;dotnet --help
-: 1607960416:0;cd PULSE
 : 1607960420:0;cd enterprise-audit-terraform
-: 1607960422:0;code .
 : 1607963168:0;aws lambda help
 : 1607969962:0;aws lambda list-layers --compatible-runtime python3.8
 : 1607969968:0;aws lambda list-layers --compatible-runtime nodejs
@@ -1623,14 +1594,10 @@ EOF
 : 1607970643:0;echo $WORDCHARS
 : 1607970713:0;echo ${WORDCHARS:s/\///}
 : 1607970739:0;export WORDCHARS=${WORDCHARS:s/\///}
-: 1607970766:0;te ~/.dotfiles/.zshrc
 : 1607970931:0;.dotfiles
 : 1607971362:0;hg cm "added few git aliases and changed WORDCHARS"
-: 1607971364:0;hg push
 : 1607974790:0;mkdir ainq-aod-service
-: 1607974794:0;cd ainq-aod-service
 : 1607974885:0;md lambda
-: 1607974887:0;cd lambda
 : 1607974921:0;md momentjs-lambda-layer
 : 1607974937:0;npm i -s momentjs
 : 1607974947:0;rm -rf *
@@ -1638,7 +1605,6 @@ EOF
 : 1607974964:0;cat package.json
 : 1607975053:0;cd momentjs-lambda-layer/
 : 1607975058:0;npm prune --production
-: 1607975062:0;l node_modules
 : 1607975064:0;cd..
 : 1607975113:0;sudo apt-get install zip
 : 1607975126:0;zip -r momentjs-lambda-layer.zip momentjs-lambda-layer
@@ -1653,8 +1619,6 @@ EOF
 --zip-file "fileb://momentjs-lambda-layer.zip"
 : 1607975588:0;aws --profile=esharapov_ent lambda list-layers
 : 1607975814:0;md curent-time-lambda
-: 1607975821:0;npm init -y
-: 1607975970:0;..
 : 1607975992:0;zip -r currentTimeLambda.js.zip curent-time-lambda/currentTimeLambda.js
 : 1607976067:0;aws --profile=esharapov_ent lambda create-function \\
 --region us-east-1
@@ -1701,9 +1665,7 @@ EOF
 : 1607979919:0;rm momentjs-lambda-layer.zip
 : 1607979923:0;cd momentjs-lambda-layer
 : 1607979940:0;zip -r ../momentjs-lambda-layer.zip .
-: 1607979949:0;cd ..
 : 1607979985:0;unzip -l momentjs-lambda-layer
-: 1607979988:0;unzip -l momentjs-lambda-layer.zip
 : 1607980019:0;aws --profile=esharapov_ent lambda publish-layer-version --layer-name "momentjs-lambda-layer" \\
 --description "NodeJS module of MomentJS library" \\
 --license-info "MIT" \\
@@ -1712,8 +1674,6 @@ EOF
 : 1607980114:0;aws --profile=esharapov_ent lambda invoke --function-name currentTimeLambda --invocation-type RequestResponse --payload '{}' output.txt
 : 1607980124:0;cat output.txt
 : 1607980155:0;aws --profile=esharapov_ent lambda get-function-configuration --function-name currentTimeLambda
-: 1607980643:0;docker ps
-: 1607980737:0;docker images
 : 1607980910:0;pip3
 : 1607980921:0;pip3 list | grep aws
 : 1607980933:0;which aws
@@ -1734,107 +1694,50 @@ EOF
 : 1607981475:0;python -m pip list
 : 1607981502:0;python -m pip search peppercorn
 : 1607981674:0;pip3 install aws-sam-cli
-: 1607981695:0;rehash
 : 1607981700:0;sam help
-: 1607981704:0;sam --help
 : 1607998424:0;e . NUL &
 : 1608002386:0;q
-: 1608042686:0;g lga
-: 1608042728:0;te .
-: 1608058710:0;gst
 : 1608058713:0;g st
-: 1608058721:0;l
-: 1608058725:0;hg st
-: 1608058727:0;hg d
-: 1608059175:0;l
 : 1608059201:0;cd ~/.emacs.d
-: 1608059202:0;gst
-: 1608059205:0;gd
 : 1608059215:0;echo .dap-breakpoints >> .gitignore
 : 1608059222:0;echo .lsp-session-v1 >> .gitignore
-: 1608059225:0;gt
-: 1608059226:0;gst
 : 1608059241:0;vim .gitignore
 : 1608059270:0;echo data/.emacs.desktop.wsl >> .gitignore
 : 1608059277:0;echo transient >> .gitignore
-: 1608059279:0;gst
-: 1608059302:0;gcmsg "ignore lsp and data files transitionary files"
 : 1608059310:0;gau
 : 1608059311:0;gcmsg "ignore lsp and data files transitionary files"
-: 1608059313:0;g lga
 : 1608059316:0;g push
-: 1608059321:0;l
-: 1608059333:0;PULSE
-: 1608059334:0;l
 : 1608060037:0;cd lambda
-: 1608060039:0;l
 : 1608060046:0;unzip -l currentTimeLambda.js.zip
 : 1608060057:0;unzip -l momentjs-lambda-layer.zip
-: 1608061662:0;l
-: 1608061663:0;cd ..
-: 1608061665:0;l
-: 1608061671:0;cd ainq-aod-service
-: 1608061672:0;l
 : 1608061685:0;md modules
 : 1608063694:0;dotnet fsi "/home/esharapov/Projects/FSharp/LearnFSharp/ElegantFSharp/HtmlData.fsx"
 : 1608063719:0;dotnet fs i --language:preview HtmlData.fsx
 : 1608063731:0;dotnet fsi --language:preview HtmlData.fsx
 : 1608063749:0;dotnet fsi /language:preview HtmlData.fsx
-: 1608063756:0;dotnet fsi  HtmlData.fsx
 : 1608063771:0;dotnet fsi /languageversion:preview HtmlData.fsx
 : 1608063777:0;dotnet fsi --languageversion:preview HtmlData.fsx
 : 1608063801:0;dotnet fsi HtmlData.fsx
 : 1608063831:0;dotnet fsi --langversion:preview HtmlData.fsx
 : 1608065595:0;md modules/{database,data-sign,aod-service-lambda}
-: 1608065609:0;enterprise-audit-terraform
-: 1608065611:0;l
 : 1608065615:0;l modules
-: 1608065633:0;code .
-: 1608065789:0;tree
 : 1608065798:0;which tree
 : 1608065803:0;man tree
-: 1608066301:0;node
-: 1608084456:0;l
 : 1608084471:0;touch README.md
-: 1608084473:0;l
-: 1608092279:0;docker ps
 : 1608092316:0;docker
-: 1608092339:0;docker run -d -p 80:80 docker/getting-started
-: 1608092356:0;docker ps
 : 1608092360:0;docker run -d -p 80:80 docker/getting-started
 : 1608092384:0;docker run -v $PWD:/notebooks -p 8888:8888 fsprojects/ifsharp
-: 1608093119:0;docker ps
-: 1608093122:0;docker ps -a
-: 1608093127:0;docker images
-: 1608095116:0;l
 : 1608095124:0;rm -rf .ipynb_checkpoints
 : 1608095128:0;rm shell.log
 : 1608095130:0;rm Untitled.ipynb
-: 1608095131:0;l
-: 1608095141:0;FSharp
-: 1608095143:0;l
 : 1608095153:0;l ../Ocaml/LearnOcaml/Kattis
 : 1608095186:0;l ../Ocaml/LearnOcaml/Kattis/kleptography.ml
 : 1608095190:0;cat ../Ocaml/LearnOcaml/Kattis/kleptography.ml
-: 1608131847:0;l
 : 1608133606:0;docker pull mysql
-: 1608133663:0;docker images
-: 1608133914:0;l
-: 1608133923:0;cd ..
-: 1608133924:0;l
 : 1608133934:0;md lambda-sam
 : 1608133937:0;cd lambda-sam
-: 1608133940:0;sam init
-: 1608134002:0;l
-: 1608134006:0;l sam-app
-: 1608134014:0;cd sam-app
-: 1608134016:0;code .
-: 1608134168:0;sam build
-: 1608135294:0;l
-: 1608135309:0;sam local invoke
 : 1608136074:0;docker images
 : 1608137305:0;# install terraform
-: 1608137310:0;sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
 : 1608137332:0;curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
 : 1608137335:0;sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
 : 1608137376:0;sudo apt-get update && sudo apt-get install terraform
@@ -1842,18 +1745,12 @@ EOF
 : 1608137677:0;terraform -help
 : 1608137698:0;terraform -help plan
 : 1608137747:0;terraform -install-autocomplete
-: 1608142497:0;l
-: 1608142878:0;te .
 : 1608142896:0;apt-get update emacs
 : 1608142905:0;sudo apt-get update
 : 1608142915:0;sudo apt-get upgrade
-: 1608153139:0;npm run test
 : 1608153230:0;sam local invoke SNSPayloadLogger
 : 1608153258:0;sam local invoke SNSPayloadLogger events/event-sns.json
 : 1608153274:0;sam local invoke --help
-: 1608153619:0;l
-: 1608153624:0;..
-: 1608153625:0;l
 : 1608153630:0;l PULSE
 : 1608153681:0;ag lambda
 : 1608153754:0;l ~/.emacs.d/data
@@ -1861,57 +1758,196 @@ EOF
 : 1608153771:0;less ~/.emacs.d/data/.recentf
 : 1608153874:0;less ~/.emacs.d/data/backups/\!mnt\!c\!Users\!esharapov\!Dropbox\!Notes\!AOD_Service.org.\~1\~
 : 1608154010:0;cat ~/.emacs.d/data/backups/\!mnt\!c\!Users\!esharapov\!Dropbox\!Notes\!AOD_Service.org.\~1\~ > /mnt/c/Users/esharapov.INTRANET/Dropbox/Notes/AOD_Service.org
-: 1608154912:0;PULSE
-: 1608154914:0;l
-: 1608154926:0;cd ainq-aod-service
-: 1608154927:0;l
 : 1608154990:0;docker run --name aod-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql
-: 1608154999:0;docker ps -a
-: 1608155017:0;docker kill aod-mysql
-: 1608155024:0;docker rm aod-mysql
 : 1608155037:0;docker kill zealous_nightingale
 : 1608155044:0;docker rm zealous_nightingale
-: 1608155045:0;l
 : 1608155074:0;docker run --name aod-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password -d mysql
 : 1608157169:0;docker run -t -i localstack/localstack
 : 1608157453:0;docker ps -a
 : 1608157469:0;docker rm quizzical_montalcini
-: 1608157489:0;docker ps
-: 1608172977:0;l
-: 1608172985:0;te docker-compose.yml
 : 1608173051:0;docker-compose --version
 : 1608173068:0;docker versions
 : 1608173090:0;docker --version
 : 1608173103:0;te docker-compose.yml
-: 1608173215:0;l
-: 1608173220:0;docker-compose up
 : 1608173233:0;docker-compose down
-: 1608173307:0;docker ps
 : 1608173314:0;docker kill aod-mysql
 : 1608173322:0;docker rm aod-mysql
 : 1608173327:0;docker-compose up
-: 1608173383:0;docker ps
-: 1608173389:0;ainq-aod-service
-: 1608173390:0;;
-: 1608173392:0;l
-: 1608173413:0;terraform init
-: 1608175715:0;l
-: 1608175857:0;code .
-: 1608175995:0;terraform plan
 : 1608176000:0;terraform init
 : 1608176006:0;terraform plan
-: 1608176024:0;docker ps
 : 1608176279:0;ag provider
-: 1608181522:0;tree
 : 1608181528:0;md environments/dev
-: 1608181530:0;tree
-: 1608181536:0;l
 : 1608181545:0;rm .terraform
 : 1608181573:0;which rd
 : 1608181581:0;rd .terraform
 : 1608181586:0;rd .terraform.lock.hcl
-: 1608181588:0;l
 : 1608182915:0;apt-cache search dropbox
-: 1608182986:0;hg st
-: 1608182988:0;hg d
 : 1608183019:0;hg cm "added terraform completions"
+: 1608183022:0;hg push
+: 1608183753:0;FSharp
+: 1608183775:0;dotnet new --help
+: 1608183844:0;dotnet new classlib -lang 'F#' -o Faker
+: 1608183862:0;cd Faker
+: 1608183868:0;cat Library.fs
+: 1608183878:0;dotnet run
+: 1608184015:0;dotnet add package Fare --version 2.1.2
+: 1608214374:0;ainq-aod-service
+: 1608225103:0;g clone https://git.ainq.com/enterprise-components/utility-services/aod-service.git
+: 1608225125:0;enterprise-audit-terraform
+: 1608225405:0;g reset HEAD@{1}
+: 1608225511:0;rm environments/dev/providers.tf
+: 1608225526:0;g co HEAD^1
+: 1608225554:0;g co 471bdcb
+: 1608225576:0;g co cfd7400
+: 1608225629:0;l ../ainq-aod-service
+: 1608226111:0;cd tree
+: 1608233303:0;lambda-sam
+: 1608233308:0;l sam-app
+: 1608233323:0;cd sam-app
+: 1608233330:0;l .aws-sam/build
+: 1608233334:0;l .aws-sam/build/SNSPayloadLogger
+: 1608233359:0;l src/handlers/sns-payload-logger.js
+: 1608233364:0;cat template.yml
+: 1608233366:0;te .
+: 1608234921:0;echo *~ >> .gitignore
+: 1608235151:0;npm test
+: 1608266156:0;grhh
+: 1608266163:0;gcm
+: 1608266168:0;g co HEAD
+: 1608266177:0;g co master
+: 1608266187:0;ag backend
+: 1608318276:0;PULSE
+: 1608318282:0;cd ainq-aod-service
+: 1608319001:0;te main.tf
+: 1608346665:0;;
+: 1608346701:0;sam validate
+: 1608346930:0;npm i
+: 1608347010:0;docker ps
+: 1608347138:0;sam local invoke SNSPayloadLogger --event events/event-sns.json
+: 1608347164:0;gt
+: 1608348295:0;sam init
+: 1608348355:0;cd aod-service
+: 1608348404:0;sam --help
+: 1608348559:0;sam local invoke sqsPayloadLoggerHandler --event events/event-sns.json
+: 1608348571:0;sam local invoke SQSPayloadLoggerHandler --event events/event-sns.json
+: 1608348580:0;sam local invoke SQSPayloadLoggerHandler --event events/event-sqs.json
+: 1608348619:0;sam local invoke SQSPayloadLogger --event events/event-sqs.json
+: 1608349011:0;cd PULSE
+: 1608349016:0;g clone ssh://git@git.ainq.com/hies-terraform/lambda-layer-mysql
+: 1608349047:0;g clone ssh://esharapov@git.ainq.com/hies-terraform/lambda-layer-mysql
+: 1608349069:0;g clone ssh://esharapov@ainq.com@git.ainq.com/hies-terraform/lambda-layer-mysql
+: 1608349902:0;cat .gitignore
+: 1608349939:0;cp -R * ../../aod-service/.
+: 1608349981:0;gd
+: 1608350145:0;rd .ionide
+: 1608350165:0;gcmsg "
+: 1608350178:0;gcmsg "OPEB-1641: added a SAM base for the code"
+: 1608350211:0;tre
+: 1608350228:0;rd src/handlers/mysql-layert
+: 1608350243:0;md src/mysql-layer
+: 1608350258:0;md src/digisign-layer
+: 1608350487:0;cd src/mysql-layer
+: 1608350766:0;mkdir nodejs
+: 1608350781:0;packagecd ..
+: 1608350789:0;..
+: 1608350792:0;rd nodejs
+: 1608351218:0;fa .
+: 1608351239:0;gcan
+: 1608351256:0;sam buid
+: 1608351297:0;sam local invoke
+: 1608351608:0;mv src/mysql-layer .
+: 1608351617:0;mv src/digisign-layer .
+: 1608351791:0;npm i --save-dev mysql2
+: 1608351827:0;echo '' > Makefile 
+: 1608352058:0;md nodejs
+: 1608352071:0;npm i mysql2 --prefix=.
+: 1608352098:0;npm i mysql2 --save
+: 1608352137:0;du -hs nodejs
+: 1608352225:0;sam local invoke --event events/event-sqs.json
+: 1608352486:0;cd mysql-layer
+: 1608352542:0;npm i --save mysql2
+: 1608352557:0;sam build && sam local invoke --event events/event-sqs.json
+: 1608353155:0;echo node_modules  >> .gitignore
+: 1608353172:0;echo mysql-layer/nodejs/node_modules >> .gitignore
+: 1608353178:0;ga -u
+: 1608353186:0;l .aws-sam
+: 1608353198:0;echo .aws-sam >> .gitignore
+: 1608353281:0;ga .
+: 1608353295:0;gcmsg "OPEB-1641: added mysql-layer"
+: 1608353299:0;g lga
+: 1608566497:0;cat README.md
+: 1608566510:0;npm install
+: 1608577687:0;tree
+: 1608577712:0;node digisign-layer/index.js
+: 1608577768:0;npm --help
+: 1608577788:0;npm run-script digisign-layer/index.js
+: 1608582184:0;code .
+: 1608582735:0;cd digisign-layer
+: 1608582752:0;cd nodejs
+: 1608582757:0;npm init -y
+: 1608582766:0;mv ../index.js .
+: 1608582860:0;npm i --save @aws-cdk/aws-kms
+: 1608582953:0;l node_modules
+: 1608582958:0;l node_modules/@aws-cdk
+: 1608583117:0;rd node_modules
+: 1608583128:0;rm package-lock.json
+: 1608583132:0;te package.json
+: 1608583166:0;npm i --save aws-sdk
+: 1608583198:0;node
+: 1608586646:0;aws kms help
+: 1608586667:0;aws --profile=esharapov_end kms list-keys
+: 1608586672:0;aws --profile=esharapov_ent kms list-keys
+: 1608586683:0;aws --profile=esharapov_ent kms help
+: 1608586794:0;aws --profile=esharapov_ent kms create-key --customer-master-key-spec ECC_NIST_P521 --key-usage SIGN_VERIFY --description "AOD Sample Key for Sign/Verify"
+: 1608587070:0;aws --profile=esharapov_ent kms sign --key-id 3da69918-91b8-467e-acdb-5b7129479417 --message-type=RAW --signing-algorithm ECDSA_SHA-512 --message 'Hello, world' --output text --query Signature
+: 1608587085:0;aws --profile=esharapov_ent kms sign --key-id 3da69918-91b8-467e-acdb-5b7129479417 --message-type=RAW --signing-algorithm ECDSA_SHA-512 --message 'Hello, world' --output text
+: 1608587104:0;aws --profile=esharapov_ent kms sign --key-id 3da69918-91b8-467e-acdb-5b7129479417 --message-type=RAW --signing-algorithm ECDSA_SHA-512 --message fileb://index.js --output text
+: 1608587124:0;aws --profile=esharapov_ent kms sign --key-id 3da69918-91b8-467e-acdb-5b7129479417 --message-type=RAW --signing-algorithm ECDSA_SHA_512 --message fileb://index.js --output text
+: 1608587152:0;aws --profile=esharapov_ent kms sign --key-id 3da69918-91b8-467e-acdb-5b7129479417 --message-type=RAW --signing-algorithm ECDSA_SHA_512 --message fileb://index.js --output text --query Signature
+: 1608587164:0;aws --profile=esharapov_ent kms sign --key-id 3da69918-91b8-467e-acdb-5b7129479417 --message-type=RAW --signing-algorithm ECDSA_SHA_512 --message fileb://index.js --output text --query Signature | base64 --decode
+: 1608587841:0;npm build
+: 1608587858:0;sam build
+: 1608587884:0;npm run test
+: 1608607754:0;npm deps
+: 1608607771:0;npm help t
+: 1608607791:0;npm help ddp
+: 1608608509:0;npm list
+: 1608608649:0;~/.dotfiles
+: 1608608661:0;te .zshrc
+: 1608608896:0;// Import all functions from sqs-payload-logger.js
+: 1608608896:0;const service = require('../../../src/handlers/service.js');
+: 1608608896:0;describe('Test for AOD Service', function () {\
+    // This test invokes the Lambda function and verifies that the received payload is logged\
+    it('Verifies the payload is logged', async () => {\
+        // Mock console.log statements so we can verify them. For more information, see\
+        // https://jestjs.io/docs/en/mock-functions.html\
+        console.info = jest.fn()\
+\
+        // Create a sample payload with SQS message format\
+        var payload = {\
+            DelaySeconds: 10,\
+            MessageAttributes: {\
+                "Sender": {\
+                    DataType: "String",\
+                    StringValue: "AOD Service"\
+                }
+: 1608609212:0;cd ~/.zsh
+: 1608609248:0;md plugins
+: 1608609250:0;cd plugins
+: 1608609257:0;curl -O https://raw.githubusercontent.com/zsh-users/zsh-history-substring-search/master/zsh-history-substring-search.zsh
+: 1608609258:0;l
+: 1608609264:0;cd ..
+: 1608609970:0;cd ~/.dotfiles
+: 1608609971:0;gst
+: 1608609973:0;hg st
+: 1608609974:0;hg d
+: 1608610063:0;cat -v
+: 1608610212:0;bindkey "$terminfo[kcuu1]" history-substring-search-up
+: 1608610388:0;te ~/.dotfiles/.zshrc
+: 1608615353:0;te /etc/zsh/zshrc
+: 1608616312:0;.dotfiles
+: 1608616313:0;hg st
+: 1608616315:0;hg d
+: 1608616349:0;hg add .
+: 1608616350:0;hg  st
+: 1608616363:0;hg cm "added history search and completion on up/down"

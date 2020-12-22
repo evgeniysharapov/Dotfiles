@@ -11,6 +11,11 @@ ZSH=${HOME}/.zsh
 # caching 
 ZSH_CACHE_DIR=${ZSH}/cache
 
+# load plugins and other stuff
+for zsh_file ($ZSH/plugins/*.zsh); do
+    source $zsh_file
+done
+
 # * Figure OS/Host
 Z_OS=$(( cat /etc/*-release 2>/dev/null | sed -n 's/^ID=\(.*\)/\1/p' ))
 
@@ -41,6 +46,33 @@ setopt auto_pushd
 setopt pushd_ignore_dups
 setopt pushdminus
 
+# * Keybindings
+
+# Use emacs key bindings
+bindkey -e
+
+# / is not part of the word. This works with word delete functionality
+export WORDCHARS=${WORDCHARS:s/\///}
+
+# <Up> will search history back 
+if [[ -n "${terminfo[kcuu1]}" ]]; then
+    autoload -U up-line-or-beginning-search
+    zle -N up-line-or-beginning-search
+    bindkey "${terminfo[kcuu1]}" up-line-or-beginning-search
+    #bindkey "$terminfo[kcuu1]" history-substring-search-up
+
+fi
+
+# <Down> will search history forward
+if [[ -n "${terminfo[kcud1]}" ]]; then
+    autoload -U down-line-or-beginning-search
+    zle -N down-line-or-beginning-search    
+    bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
+    #bindkey "$terminfo[kcud1]" history-substring-search-down
+fi
+
+
+
 # * History
 if [ -z "$HISTFILE" ]; then
     HISTFILE=${ZSH}/history/zsh_history-${Z_HOST}
@@ -66,12 +98,37 @@ alias history='fc -il 1'
 
 # ignore following command (see http://zsh.sourceforge.net/Doc/Release/Parameters.html#Parameters-Used-By-The-Shell)
 
-# * Keybindings
+# searching history
 
-bindkey -e                                            # Use emacs key bindings
+# This is a global variable that defines how the query should be highlighted
+# inside a matching command. Its default value causes this script to
+# highlight using bold, white text on a magenta background. See the
+# "Character Highlighting" section in the zshzle(1) man page to learn
+# about the kinds of values you may assign to this variable.
+# HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND
 
-# / is not part of the word. This works with word delete functionality
-export WORDCHARS=${WORDCHARS:s/\///}
+# HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND is a global variable
+# that defines how the query should be highlighted when no commands in
+# the history match it. Its default value causes this script to
+# highlight using bold, white text on a red background. See the
+# "Character Highlighting" section in the zshzle(1) man page to learn
+# about the kinds of values you may assign to this variable.
+
+# HISTORY_SUBSTRING_SEARCH_GLOBBING_FLAGS is a global variable that
+# defines how the command history will be searched for your query. Its
+# default value causes this script to perform a case-insensitive
+# search. See the "Globbing Flags" section in the zshexpn(1) man page
+# to learn about the kinds of values you may assign to this variable.
+
+# HISTORY_SUBSTRING_SEARCH_FUZZY is a global variable that defines how
+# the command history will be searched for your query. If set to a
+# non-empty value, causes this script to perform a fuzzy search by
+# words, matching in given order e.g. ab c will match *ab*c*#
+# searching history
+HISTORY_SUBSTRING_SEARCH_FUZZY=true
+
+
+
 
 # * Completions
 unsetopt menu_complete   # do not autoselect the first completion entry

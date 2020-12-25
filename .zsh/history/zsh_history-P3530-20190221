@@ -1,0 +1,1953 @@
+: 1603392647:0;tmux new -s wsl2
+: 1603392696:0;vim .tmux.wsl.conf
+: 1603392802:0;cat .vim/vimrc
+: 1603392824:0;apt-cache show emacs
+: 1603393083:0;tmux kill-session main
+: 1603393091:0;tmux kill-session -t main
+: 1603393213:0;tmux new -As wsl2
+: 1603394359:0;man tmux
+: 1603394482:0;service list
+: 1603394500:0;which docker
+: 1603394804:0;wsl.exe -l -v
+: 1603394841:0;wsl --set-version Ubuntu-20.04 2
+: 1603394946:0;docker  sss
+: 1603394950:0;docker pps
+: 1603395037:0;vim ~/.tmux.wsl.conf
+: 1603395056:0;tmux list-sessions
+: 1603395066:0;tmux kill-session -t wsl2
+: 1603395545:0;vim ~/.tmux.conf
+: 1603395587:0;vim ~/.zshenv
+: 1603395610:0;vim ~/.zshrc
+: 1603395685:0;vim ~/.tmux.linux.conf
+: 1603395713:0;docker info
+: 1603395770:0;sudo apt-get install emacs
+: 1603395991:0;pwsh.exe -c ipconfig | grep -A 3 lan | grep IPv4 | head -1 | awk '{ print $NF }'
+: 1603396009:0;powershell.exe -c ipconfig | grep -A 3 lan | grep IPv4 | head -1 | awk '{ print $NF }'
+: 1603396098:0;export DISPLAY=127.0.0.1:0.0
+: 1603396522:0;sudo apt install xeyes
+: 1603396529:0;sudo apt install x11-apps
+: 1603396539:0;rehahs
+: 1603396548:0;xeyes&
+: 1603396728:0;curl
+: 1603396741:0;wget 192.168.41.97
+: 1603396780:0;wget 0.0.0.0:8000
+: 1603396817:0;export DISPLAY=192.168.41.97:0
+: 1603396872:0;export DISPLAY=P3530-20190221:0
+: 1603396968:0;export DISPLAY=192.168.41.97:0.0
+: 1603396971:0;xeyes &
+: 1603397043:0;ping 192.168.41.9
+: 1603397059:0;wget 192.168.41.9:8000
+: 1603397080:0;wget 192.168.41.97:8000
+: 1603397264:0;sudo apt-get install curl cacerts
+: 1603397268:0;sudo apt-get install curl
+: 1603397293:0;curl -vvv -X GET 192.168.41.97:8000
+: 1603397506:0;which wsl.exe
+: 1603398231:0;echo $DISPLAY
+: 1603398266:0;export DISPLAY=192.168.176.225:0.0
+: 1603401448:0;pip3 search hggit
+: 1603401452:0;pip3 search git
+: 1603401474:0;pip3 search hg-git
+: 1603401485:0;pip3 search git | grep hg-git
+: 1603401490:0;pip3 search git | grep hg
+: 1603401640:0;pip3 install hg-git
+: 1603401649:0;hg --version
+: 1603402205:0;apt list --installed >> /mnt/c/Users/esharapov/wsl2-installed-packages.txt
+: 1603402425:0;apt list --installed | sed /\(.+\)\//\1/p
+: 1603402433:0;apt list --installed | sed '/\(.+\)\//\1/p'
+: 1603402473:0;apt list --installed | sed 's#\(.+\)\/#\1#p'
+: 1603402487:0;apt list --installed | sed  -n 's#\(.+\)\/#\1#p'
+: 1603402501:0;apt list --installed | sed  -r 's#\(.+\)\/#\1#p'
+: 1603402527:0;apt list --installed | sed  -r 's#\([^/]+\)\/#\1#p'
+: 1603402538:0;apt list --installed | sed  -r 's#\([^/]+\)\/#\1#'
+: 1603402579:0;apt list --installed | awk '{print $1}'
+: 1603402630:0;apt list --installed | awk 'BEGIN{FS="/"};{print $1}'
+: 1603402670:0;apt list --installed | awk 'BEGIN{FS="/ "};{print $1}'
+: 1603402712:0;apt list --installed | awk -F'[/ ]' '{print $1}'
+: 1603402721:0;apt list --installed | awk -F'[/ ]' '{print $1 print $3}'
+: 1603402725:0;apt list --installed | awk -F'[/ ]' '{print $1 $3}'
+: 1603402737:0;apt list --installed | awk -F'[/ ]' '{print $1 " " $3 }'
+: 1603403045:0;apt list --installed | awk -F'[/ ]' '{print $1 " " $3 }' > /mnt/c/Users/esharapov/wsl2-installed-packages.txt
+: 1603403050:0;diff /mnt/c/Users/esharapov/wsl2-installed-packages.txt /mnt/c/Users/esharapov/wsl1-installed-packages.txt
+: 1603403284:0;diff -y /mnt/c/Users/esharapov/wsl2-installed-packages.txt /mnt/c/Users/esharapov/wsl1-installed-packages.txt
+: 1603403493:0;apt search opam
+: 1603403655:0;apt search erlang
+: 1603403662:0;apt search elixir
+: 1603403809:0;mkdir Projects
+: 1603403820:0;mkdir ULP
+: 1603403847:0;g clone https://git.ainq.com/ulp-development/ulp-management-reports-client-portlet.git
+: 1603474143:0;apt search java
+: 1603474192:0;which gradle.bat 
+: 1603474198:0;which gradle
+: 1603474205:0;java --version
+: 1603474255:0;cat /etc/resolv.conf
+: 1603474272:0;cat /etc/resolv.conf | awk '{print $2}'
+: 1603474290:0;cat /etc/resolv.conf | grep nameserver | awk '{print $2}'
+: 1603474366:0;vim ~/.dotfiles/.zshrc.P3530-20190221
+: 1603474486:0;hg commit -m "corrections to tmux config and DISPLAY variable related to WSL2"
+: 1603474889:0;apt-cache  show java
+: 1603474894:0;apt-cache search java
+: 1603474986:0;apt-cache show default-jdk
+: 1603475092:0;update-alternatives --help
+: 1603475098:0;update-alternatives java
+: 1603475106:0;update-alternatives --list java
+: 1603475124:0;sudo apt-get install openjdk-8-jdk
+: 1603475224:0;apt-cache apache-maven
+: 1603475229:0;apt-cache search apache-maven
+: 1603475234:0;apt-cache search maven
+: 1603475274:0;sudo apt-get install maven
+: 1603475336:0;apt-cache show maven
+: 1603475349:0;sudo apt install maven
+: 1603475354:0;mvn -version
+: 1603475396:0;which mvn
+: 1603475417:0;echo $PATH | grep `which mvn`
+: 1603475435:0;/usr/local/bin/mvn
+: 1603475447:0;/usr/bin/mvn
+: 1603475453:0;/usr/bin/mvn -version
+: 1603475800:0;hg d tip
+: 1603475804:0;hg show tip
+: 1603475808:0;hg show -p tip
+: 1603475824:0;hg show --help
+: 1603475834:0;hg diff --help
+: 1603475856:0;hg diff 188
+: 1603475859:0;hg diff -r 188
+: 1603476069:0;apt-cache show gradle
+: 1603476131:0;cat /etc/profile.d/apps-bin-path.sh
+: 1603476278:0;wget https://downloads.gradle-dn.com/distributions/gradle-6.5.1-bin.zip
+: 1603476387:0;sudo apt-get install zs
+: 1603476391:0;sudo apt-get install xz
+: 1603476406:0;apt-cache show unzip
+: 1603476414:0;sudo apt-get install unzip
+: 1603476427:0;unzip gradle-6.5.1-bin.zip
+: 1603476439:0;sudo mkdir /opt
+: 1603476456:0;mv gradle-6.5.1 /opt/.
+: 1603476465:0;sudo mv gradle-6.5.1 /opt
+: 1603476504:0;vim /etc/profile.d/gradle.sh
+: 1603476537:0;ls /opt
+: 1603476540:0;ls /opt/gradle-6.5.1
+: 1603476543:0;ls /opt/gradle-6.5.1/init.d
+: 1603476548:0;less /opt/gradle-6.5.1/init.d/readme.txt
+: 1603476556:0;less /opt/gradle-6.5.1/bin
+: 1603476560:0;l /opt/gradle-6.5.1/bin/
+: 1603476566:0;l /opt/gradle-6.5.1/lib
+: 1603476628:0;sudo vim /etc/profile.d/gradle.sh
+: 1603476662:0;sudo chmod +x /etc/profile.d/gradle.sh
+: 1603476671:0;source /etc/profile.d/gradle.sh
+: 1603476674:0;gradle -v
+: 1603476759:0;opam
+: 1603476769:0;apt-cache search opam
+: 1603476775:0;apt-cache show opam
+: 1603476792:0;sudo apt install opam
+: 1603476940:0;opam init
+: 1603476973:0;eval opam env
+: 1603477008:0;ocaml
+: 1603477073:0;opam install -y utop ocamlformat ounit qtest yojson lwt menhir ansiterminal lambda-term merlin ocp-indent
+: 1603477146:0;cd Projects/ULP/ulp-management-reports-client-portlet
+: 1603477159:0;g co release_1.3
+: 1603477356:0;git clone ssh://git@github.com:evgeniysharapov/DotEmacs.git .emacs.d
+: 1603477375:0;l .emacs.d
+: 1603477378:0;rm -rf .emacs.d
+: 1603477394:0;g clone https://github.com/evgeniysharapov/DotEmacs.git .emacs.d
+: 1603477415:0;kill -9 27883
+: 1603478458:0;cd /mnt/c/Program\ Files/VcXsrv/fonts/MyF
+: 1603478472:0;apt search mkfont
+: 1603478487:0;sudo apt install xfonts-utils
+: 1603478517:0;sudo mkfontdir .
+: 1603478611:0;cp MyF ~/.
+: 1603478616:0;cp -r MyF ~/.
+: 1603478621:0;cd ~/MyF
+: 1603478628:0;mkfontdir .
+: 1603478631:0;mkfontdir -- .
+: 1603478765:0;rm -rf MyF
+: 1603478772:0;sudo rm -rf MyF
+: 1603478916:0;l .config
+: 1603479000:0;apt search xterm
+: 1603479013:0;sudo apt install xterm
+: 1603479026:0;xterm &
+: 1603479089:0;which fc-cache.exe
+: 1603479095:0;which fc-cache
+: 1603479099:0;fc-cache
+: 1603479124:0;fc-list
+: 1603479138:0;ls /usr/share/fonts/opentype
+: 1603479215:0;less /etc/fonts/fonts.conf
+: 1603479221:0;cat /etc/fonts/fonts.conf
+: 1603479240:0;cat /etc/fonts/conf.d/README
+: 1603479301:0;ls /usr/local/share/fonts
+: 1603479307:0;ls -al /usr/local/share/fonts
+: 1603479361:0;sudo cp /mnt/c/Program\ Files/VcXsrv/fonts/MyF/* /usr/local/share/fonts
+: 1603479367:0;fc-cache -f -v
+: 1603480078:0;go
+: 1603480358:0;vim ~/.zshrc.P3530-20190221
+: 1603480524:0;ulp-management-reports-client-portlet
+: 1603480597:0;cat /mnt/c/Users/esharapov/.gradle/gradle.properties
+: 1603480615:0;cp /mnt/c/Users/esharapov/.gradle/gradle.properties ~/.gradle/.
+: 1603480751:0;apt list --installed
+: 1603480829:0;dpkg-query -L nodejs
+: 1603480839:0;apt search npm
+: 1603480847:0;sudo apt install npm
+: 1603480952:0;python -m http.server
+: 1603480995:0;cat ci-cd.sh
+: 1603481099:0;sudo mv /mnt/c/Users/esharapov/Downloads/ideaIC-2020.2.3.tar.gz /opt/.
+: 1603481123:0;l /opt
+: 1603481126:0;l /
+: 1603481147:0;cd /opt
+: 1603481158:0;sudo tar xzvd ideaIC-2020.2.3.tar.gz
+: 1603481168:0;sudo tar xzvf ideaIC-2020.2.3.tar.gz
+: 1603481201:0;idea-IC-202.7660.26/bin/idea.sh
+: 1603482263:0;./gradlew clean npm_run_build war
+: 1603719915:0;sudo rm /opt/ideaIC-2020.2.3.tar.gz
+: 1603740939:0;docker_login
+: 1603740963:0;docker login registry.ainq.com
+: 1603741036:0;docker images ls
+: 1603741064:0;l ~/.local/bin
+: 1603741222:0;cd ulp-management-reports-client-portlet
+: 1603741572:0;gradle --version
+: 1603741578:0;mvn --version
+: 1603741591:0;ocaml --version
+: 1603767256:0;ghci
+: 1603767425:0;eval $(opam env)
+: 1603810163:0;l source/repos/ConsoleApp1
+: 1603810166:0;l source/repos/ConsoleApp1/ConsoleApp1
+: 1603810175:0;less source/repos/ConsoleApp1/ConsoleApp1/Program.cs
+: 1603810225:0;mkdir ~/Projects/Ocaml
+: 1603810235:0;Ocaml
+: 1603810250:0;cp /mnt/
+: 1603810278:0;cp -R /mnt/c/Users/esharapov/Personal/LearnOcaml .
+: 1603810297:0;cd Algs
+: 1603810328:0;l ~/.emacs.d
+: 1603810694:0;find . -name 'help*'
+: 1603810719:0;cat /site-lisp/help-fns-plus
+: 1603810735:0;cat ./site-lisp/help-fns-plus
+: 1603810765:0;l /mnt/c/Users/esharapov/.emacs.d/site-lisp
+: 1603810773:0;l /mnt/c/Users/esharapov/.emacs.d/site-lisp/help-mode-plus
+: 1603810788:0;l /mnt/c/Users/esharapov/.emacs.d/
+: 1603810798:0;les /mnt/c/Users/esharapov/.emacs.d/.gitmodules
+: 1603810801:0;less /mnt/c/Users/esharapov/.emacs.d/.gitmodules
+: 1603810990:0;cp -R /mnt/c/Users/esharapov/Projects/AWS ~/Projects/.
+: 1603811040:0;g submodule init
+: 1603811045:0;g submodule update
+: 1603816138:0;sudo apt-get install silversearcher-ag
+: 1603816160:0;ag -g help
+: 1603816265:0;apt-cache search ripgrep
+: 1603816277:0;sudo apt-get install ripgrep
+: 1603816289:0;rg help
+: 1603816437:0;sudo apt-get install stack
+: 1603816475:0;apt-cache search stack
+: 1603816483:0;apt-cache search haskellstack
+: 1603816489:0;apt-cache search haskell
+: 1603816544:0;apt-cache search haskell-stack
+: 1603816585:0;sudo apt-get install haskell-stack
+: 1603816629:0;stack upgrade --binary-only
+: 1603816858:0;stack new helloworld new-template
+: 1603816871:0;cd helloworld
+: 1603816875:0;stack build
+: 1603816885:0;l app
+: 1603816905:0;stack exec
+: 1603816916:0;stack test
+: 1603816940:0;l .stack-work/dist/x86_64-linux-tinfo6/Cabal-3.0.1.0/build/libHShelloworld-0.1.0.0-2wHIHc5ZDuIEVxyRHl5v8K-ghc8.8.4.so
+: 1603816948:0;cat src/Lib.hs 
+: 1603816954:0;cat app
+: 1603816956:0;cat app/Main.hs
+: 1603816968:0;vim stack.yaml
+: 1603817036:0;stack ghci
+: 1603817097:0;rm -rf helloworld
+: 1603820091:0;cd /mnt/c/Users/esharapov/liferay-ide-workspace-3/ulp-liferay-workspace
+: 1603822401:0;ls /usr/share/themes/Emacs/gtk-3.0/gtk-keys.css
+: 1603822407:0;less /usr/share/themes/Emacs/gtk-3.0/gtk-keys.css
+: 1603822437:0;less /usr/share/themes/Default/gtk-3.0/gtk-keys.css
+: 1603822449:0;less /usr/share/themes/Raleigh/gtk-2.0/gtkrc 
+: 1603823569:0;cd ~/Projects/Ocaml/LearnOcaml
+: 1603823578:0;mkdir UI
+: 1603823580:0;cd UI
+: 1603823585:0;mkdir gtk
+: 1603823587:0;cd gtk
+: 1603823597:0;echo main.ml
+: 1603823607:0;emacsclient main.ml *
+: 1603823668:0;opam search lablgtk2
+: 1603823735:0;opam search lablgtk
+: 1603823769:0;opam install lablgtk3
+: 1603824339:0;opam search labltk
+: 1603824351:0;opam instll labltk
+: 1603824392:0;apt-cache search pkg-config
+: 1603824435:0;sudo apt-get install pkgconf
+: 1603824453:0;opam install labltk
+: 1603824503:0;sudo apt-get install libexpat1-dev libgtk2.0-dev
+: 1603824554:0;ocamlfind ocamlc -g -package lablgtk2 -linkpkg simple.ml -o simple
+: 1603824590:0;opam install lablgtk
+: 1603824625:0;ocamlfind ocamlc -g -package lablgtk -linkpkg main.ml -o main
+: 1603824640:0;ocamlfind ocamlc -g -package lablgtk2 -linkpkg main.ml -o main
+: 1603824648:0;./main
+: 1603826059:0;vim .tmux.theme
+: 1603826073:0;vim .tmux.conf
+: 1603826649:0;echo $PROMPT
+: 1603826654:0;echo $PROMPT2
+: 1603826663:0;echo $PROMPT3
+: 1603826788:0;cat main.ml
+: 1603826888:0;g co -b AD-4706-final-issues
+: 1603827370:0;ga modules
+: 1603827396:0;gcmsg "AD-4706: Provider NPI doesn't need User anymore"
+: 1603827756:0;gcmsg "AD-4706: updated NPI provider query"
+: 1603828540:0;gcmsg "AD-4706: updated CCD Activity Report"
+: 1603828865:0;gcmsg "AD-4706: updated Patient Chart Access report"
+: 1603829225:0;gcmsg "AD-4706: updated Breakglass Report"
+: 1603829402:0;gcmsg "AD-4706: updated Login History Report"
+: 1603830354:0;gcmsg "AD-4706: updated logic for the  case when wrong user is requested and we  should get nothing in the report"
+: 1603830368:0;g push --set-upstream origin AD-4706-final-issues
+: 1603847693:0;apt-cache search racket
+: 1603847713:0;which node
+: 1603847734:0;apt-cache search yarn
+: 1603847747:0;rg --help
+: 1603847783:0;cat .git/config
+: 1603847805:0;cd Projects
+: 1603847811:0;cd ULP
+: 1603847815:0;g clone https://git.ainq.com/ulp-development/ulp-management-reports.git
+: 1603858823:0;rm UI/gtk/main
+: 1603858860:0;opam install ppx_jane
+: 1603859329:0;opam list
+: 1603895810:0;mkdir PULSE
+: 1603895847:0;cat /mnt/c/Users/esharapov/Projects/PULSE/adt-dispatch-service/.git/config
+: 1603895922:0;g clone https://git.ainq.com/enterprise-components/utility-services/adt-dispatch-service.git
+: 1603896000:0;g clone https://git.ainq.com/ulp-development/ulp-core.git
+: 1603896246:0;type -f precmd
+: 1603896249:0;which precmd
+: 1603896373:0;getopt --help
+: 1603896385:0;setopt --help
+: 1603896388:0;man setopt
+: 1603896393:0;man 7 setopt
+: 1603896496:0;unsetopt
+: 1603896928:0;setopt
+: 1603899426:0;echo $EDITOR
+: 1603907136:0;cd ulp-core
+: 1603981433:0;nano
+: 1603986627:0;g co -b OPEB-1414-metrics
+: 1603987052:0;./gradlew test
+: 1603987065:0;gradle test
+: 1603987584:0;g clean -f
+: 1603987602:0;gcmsg "OPEB-1414: updated version of Quarkus platform"
+: 1603987673:0;g         Event e
+: 1603991724:0;apt-cache search qualculate
+: 1603991728:0;apt-cache search qualc
+: 1603993035:0;apt-cache search tree
+: 1603993040:0;apt-cache search ^tree
+: 1603993059:0;apt-cache show tree
+: 1603993076:0;sudo apt-get install tree
+: 1603993092:0;tree -L 2
+: 1603993100:0;tree -L 3
+: 1603993163:0;clip.exe
+: 1603993166:0;clip.exe /?
+: 1603993222:0;uname -r
+: 1603993261:0;uname -r | grep -q Microsoft
+: 1603993266:0;uname -r | grep -q microsoft
+: 1603993279:0;uname -r | grep microsoft
+: 1603993282:0;uname -r | grep Microsoft
+: 1603993329:0;uname -r | grep -i Microsoft
+: 1603993331:0;uname -r | grep -iq Microsoft
+: 1603993801:0;uname -a
+: 1603993947:0;hg commit -m "corected paths aliases and tmux env based config to work on WSL2"
+: 1604004331:0;./gradlew -T
+: 1604004337:0;./gradlew tasks
+: 1604005579:0;gcmsg "OPEB-1414: added plaintext metrics (prometheus) added injected registry, configuration for dev and test and ran in quarkusDev mode"
+: 1604026919:0;cd adt-dispatch-service
+: 1604330084:0;hg commit -m "changed default user name for HG"
+: 1604330205:0;hg st -S
+: 1604330216:0;hg pull --help
+: 1604330233:0;hg help submodule
+: 1604330239:0;hg help subrepo
+: 1604330250:0;hg in -S
+: 1604330260:0;hg out -S
+: 1604330275:0;hg update -S
+: 1604330859:0;l .git-extras
+: 1604330864:0;l .git-extras/bin
+: 1604330959:0;hg co default
+: 1604332473:0;cd ~/Projects/PULSE/adt-dispatch-service
+: 1604332518:0;g push --set-upstream origin OPEB-1414-metrics
+: 1604336053:0;gcmsg "OPEB-1414: lowered some of the levels of information printed to the logs (avoiding clutter)" 
+: 1604345949:0;rg
+: 1604348513:0;which java
+: 1604348521:0;apt-cache search jdk
+: 1604348525:0;apt-cache search 11-jdk
+: 1604348545:0;sudo apt-get install openjdk-11-jdk
+: 1604348668:0;sudo apt-get install openjdk-11-jdk --fix-missing
+: 1604348780:0;java -version
+: 1604350388:0;./gradlew clean build
+: 1604350506:0;ag mergeRegistry.counter
+: 1604350564:0;gcmsg "OPEB-1414: added counter metrics with tags surrounding process of dispatching ADT messages" 
+: 1604373234:0;hg book use-outline-zshrc
+: 1604373768:0;dotnet.exe fsi
+: 1604374314:0;cd Projects/Ocaml
+: 1604374320:0;hg put
+: 1604374330:0;hg int
+: 1604374345:0;hg merge tip
+: 1604374545:0;hg commit -m "autokey shift cipher breaking added"
+: 1604374683:0;hg add UI
+: 1604374699:0;hg commit -m "Added simple Gtk UI code for Ocaml"
+: 1604374716:0;rm Algs/\#sorts.ml\#
+: 1604374730:0;hg add Algs/fun.ml
+: 1604374757:0;hg commit -m "Some functions useful for generic functional programming"
+: 1604374779:0;hg add Modules/fraction.ml
+: 1604374798:0;hg commit -m "learning module system - create a fraction type"
+: 1604376872:0;ocaml kleptography.ml
+: 1604376925:0;cat .merlin
+: 1604376963:0;ocaml -package str kleptography.ml
+: 1604377022:0;ocaml unix.cmxa str.cmxa bigarray.cmxa kleptography.ml
+: 1604377030:0;ocamlfind ocaml unix.cmxa str.cmxa bigarray.cmxa kleptography.ml
+: 1604377045:0;ocamlfind ocamlc -package unix.cmxa str.cmxa bigarray.cmxa kleptography.ml
+: 1604377055:0;ocamlfind ocamlc -package unix str bigarray kleptography.ml
+: 1604377089:0;ocamlc unix.cmxa str.cmxa bigarray.cmxa kleptography.ml
+: 1604377179:0;ocamlopt unix.cmxa str.cmxa bigarray.cmxa kleptography.ml
+: 1604377183:0;./a.out
+: 1604377298:0;rm a.out
+: 1604377325:0;hg add kleptography.ml
+: 1604377338:0;hg commit -m "solution to kleptography"
+: 1604418366:0;hg merge main
+: 1604418374:0;hg commit -m "merged main"
+: 1604418450:0;thg.exe
+: 1604418454:0;which thg
+: 1604418691:0;apt-cache search tortoise
+: 1604418696:0;apt-cache search hg
+: 1604419040:0;# test comment in the history
+: 1604419153:0;kill -9 22854
+: 1604419649:0;rm gradle-6.5.1-bin.zip
+: 1604419707:0;top
+: 1604420688:0;dotnet.exe new -l
+: 1604421421:0;apt search emacs
+: 1604421429:0;apt search ^emacs
+: 1604421438:0;apt-cache search ^emacs
+: 1604421464:0;apt show emacs
+: 1604421512:0;kill -9 900
+: 1604421529:0;sudo apt remove --autoremove emacs
+: 1604421537:0;sudo apt install emacs
+: 1604421581:0;which emacs
+: 1604421590:0;emacs --help
+: 1604421692:0;cd .emacs.d
+: 1604421951:0;g co origin/master
+: 1604421967:0;g co -b new-master
+: 1604421990:0;g co -b hooks-and-colors
+: 1604422003:0;g co new-master
+: 1604422012:0;g br -d master
+: 1604422017:0;g br -D master
+: 1604422021:0;g co -b master
+: 1604422029:0;g br -d new-master
+: 1604422051:0;kill -9 7247
+: 1604422056:0;l data
+: 1604422070:0;rm data/.emacs.desktop.wsl
+: 1604422083:0;less P3530-20190221.el
+: 1604423169:0;cate /etc/fonts/fonts.conf
+: 1604423418:0;kill -9 10332
+: 1604428849:0;g cherry-pick a4c97ec
+: 1604428863:0;g log -p f0449dd
+: 1604428879:0;g cherry-pick f0449dd
+: 1604429211:0;kill -9 17857
+: 1604432804:0;emacs &
+: 1604433900:0;emacs -nw
+: 1604433991:0;emacs 
+: 1604434105:0;gcmsg "removed font heigh manipulation and different region face based on terminal vs gui"
+: 1604434121:0;g push --set-upstream origin master
+: 1604438379:0;cd ../Projects/Ocaml
+: 1604438396:0;hg book main
+: 1604438906:0;cat ~/.ssh/id_rsa.pub
+: 1604439074:0;te .hg/hgrc
+: 1604439519:0;opam list | grep json
+: 1604439595:0;opam install ppx_deriving_yojson
+: 1604439612:0;utop
+: 1604496551:0;cd ~/Projects/ULP/ulp-management-reports
+: 1604496663:0;g co -b npi-report-remove-date
+: 1604497149:0;gcmsg "AD-4260: removed Date from NPI report"
+: 1604497161:0;g push --set-upstream origin npi-report-remove-date
+: 1604504688:0;cd Projects/PULSE
+: 1604504694:0;g clone https://git.ainq.com/ai-platform-development/business-web-services/ainq-pulse-service.git
+: 1604504882:0;g clone https://git.ainq.com/ai-platform-development/business-web-services/ainq-common-service.git
+: 1604504892:0;npm ci
+: 1604505132:0;cd ainq-pulse-service
+: 1604508161:0;g clone https://git.ainq.com/ai-platform-development/ainq-admin-portal-application
+: 1604509843:0;curl --location --request DELETE 'https://api.dev-ainqapps.com/common/v1/users/jgregory' \\
+--header 'Accept: application/json' \\
+--header 'Content-Type: application/json' \\
+--header 'x-tenant-id: TESTTENANT' \\
+--header 'x-tenant-code: TESTTENANT' \\
+--header 'x-application-id: PULSE' \\
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoTWV0aG9kIjoiTE9DQUwiLCJzZXNzaW9uSWQiOiI4ZThhMjVlYS00NzM5LTQ5NDMtYWZhMi1jZWU3Y2M1ZWFkOGUiLCJyZXF1aXJlbWVudHMiOltdLCJwZXJtaXNzaW9ucyI6eyJwb3J0YWwiOlsicG9ydGFsOmFsbCJdLCJtZWRpY2F0aW9ucyI6WyJtZWRpY2F0aW9uczphbGwiXSwicHVsc2UiOlsicHVsc2U6YWxsIiwicHVsc2U6bWVkaWNhdGlvbnMiXSwiYWRtaW4iOlsiYWRtaW46YWxsIl0sImVjIjpbImVjOmFsbCJdfSwidXNlciI6eyJpZCI6IjRkMmYyYzhjLTNmZTgtNGJlNy1hZjI2LTgzMjk5NDllMTFmMiIsInVzZXJuYW1lIjoic3lzYWRtaW4iLCJ0aXRsZSI6IiIsImZpcnN0TmFtZSI6InN5c2FkbWluIiwibWlkZGxlTmFtZSI6IiIsImxhc3ROYW1lIjoic3lzYWRtaW4iLCJjb250YWN0Ijp7ImVtYWlsIjoic3lzYWRtaW5Ac3lzYWRtaW4uY29tIiwicGhvbmUiOiI1NTUtNTU1LTU1NTUifX0sInRlbmFudCI6eyJpZCI6IlRFU1RURU5BTlQiLCJjb2RlIjoidGVzdHRlbmFudCIsIm5hbWUiOiJUZXN0aW5nIE9ubHkiLCJjb250YWN0Ijp7ImVtYWlsIjoiIiwicGhvbmUiOiIifX0sIm9yZ2FuaXphdGlvbiI6eyJpZCI6ImFpbnEiLCJjb2RlIjoiYWlucSIsIm5hbWUiOiJEZWZhdWx0IE9yZ2luaXphdGlvbiIsImNvbnRhY3QiOnsiZW1haWwiOiIiLCJwaG9uZSI6IiJ9fSwiaWF0IjoxNjA0NTAyODkwLCJuYmYiOjE2MDQ1MDI4OTAsImV4cCI6MTYwNDUwNDY5MH0.MjjwIlLbGZrzUloOIIznDm2vwTStFCH0TJ2Eml1DNFM' \\
+--header 'Cookie: token=eyJhY2Nlc3NfdG9rZW4iOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKaGRYUm9UV1YwYUc5a0lqb2lURTlEUVV3aUxDSnpaWE56YVc5dVNXUWlPaUk0WlRoaE1qVmxZUzAwTnpNNUxUUTVORE10WVdaaE1pMWpaV1UzWTJNMVpXRmtPR1VpTENKeVpYRjFhWEpsYldWdWRITWlPbHRkTENKd1pYSnRhWE56YVc5dWN5STZleUp3YjNKMFlXd2lPbHNpY0c5eWRHRnNPbUZzYkNKZExDSnRaV1JwWTJGMGFXOXVjeUk2V3lKdFpXUnBZMkYwYVc5dWN6cGhiR3dpWFN3aWNIVnNjMlVpT2xzaWNIVnNjMlU2WVd4c0lpd2ljSFZzYzJVNmJXVmthV05oZEdsdmJuTWlYU3dpWVdSdGFXNGlPbHNpWVdSdGFXNDZZV3hzSWwwc0ltVmpJanBiSW1Wak9tRnNiQ0pkZlN3aWRYTmxjaUk2ZXlKcFpDSTZJalJrTW1ZeVl6aGpMVE5tWlRndE5HSmxOeTFoWmpJMkxUZ3pNams1TkRsbE1URm1NaUlzSW5WelpYSnVZVzFsSWpvaWMzbHpZV1J0YVc0aUxDSjBhWFJzWlNJNklpSXNJbVpwY25OMFRtRnRaU0k2SW5ONWMyRmtiV2x1SWl3aWJXbGtaR3hsVG1GdFpTSTZJaUlzSW14aGMzUk9ZVzFsSWpvaWMzbHpZV1J0YVc0aUxDSmpiMjUwWVdOMElqcDdJbVZ0WVdsc0lqb2ljM2x6WVdSdGFXNUFjM2x6WVdSdGFXNHVZMjl0SWl3aWNHaHZibVVpT2lJMU5UVXROVFUxTFRVMU5UVWlmWDBzSW5SbGJtRnVkQ0k2ZXlKcFpDSTZJbFJGVTFSVVJVNUJUbFFpTENKamIyUmxJam9pZEdWemRIUmxibUZ1ZENJc0ltNWhiV1VpT2lKVVpYTjBhVzVuSUU5dWJIa2lMQ0pqYjI1MFlXTjBJanA3SW1WdFlXbHNJam9pSWl3aWNHaHZibVVpT2lJaWZYMHNJbTl5WjJGdWFYcGhkR2x2YmlJNmV5SnBaQ0k2SW1GcGJuRWlMQ0pqYjJSbElqb2lZV2x1Y1NJc0ltNWhiV1VpT2lKRVpXWmhkV3gwSUU5eVoybHVhWHBoZEdsdmJpSXNJbU52Ym5SaFkzUWlPbnNpWlcxaGFXd2lPaUlpTENKd2FHOXVaU0k2SWlKOWZTd2lhV0YwSWpveE5qQTBOVEF5T0Rrd0xDSnVZbVlpT2pFMk1EUTFNREk0T1RBc0ltVjRjQ0k2TVRZd05EVXdORFk1TUgwLk1qandJbExiR1pyelVsb09JSXpuRG0ydndUU3RGQ0gwVEoyRW1sMURORk0iLCJ0b2tlbl90eXBlIjoiQmVhcmVyIiwicmVmcmVzaF90b2tlbiI6IjZiNzMyYWMxOWZhMzI0M2Y4NjI1Mjc1N2EyMDM5ZDk5Y2I5YzdiM2RiZDgyOTBkOGI4OWQ1MDFhMTI0MzgxNmMxMWJjNzAyYTNkNjg5YmU1In0%3D' \\
+--data-raw ''
+: 1604510033:0;curl --location --request DELETE 'https://api.dev-ainqapps.com/common/v1/users/esharapov' \ \
+--header 'Accept: application/json' \\
+--header 'Content-Type: application/json' \\
+--header 'x-tenant-id: TESTTENANT' \\
+--header 'x-tenant-code: TESTTENANT' \\
+--header 'x-application-id: PULSE' \\
+--header 'Authorization: curl --location --request DELETE 'https://api.dev-ainqapps.com/common/v1/users/jgregory' \ ' \\
+--header 'Cookie: token=' \\
+--data-raw ''
+: 1604510052:0;--header 'Accept: application/json' \\
+--header 'Content-Type: application/json' \\
+--header 'x-tenant-id: TESTTENANT' \\
+--header 'x-tenant-code: TESTTENANT' \\
+--header 'x-application-id: PULSE' \\
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoTWV0aG9kIjoiTE9DQUwiLCJzZXNzaW9uSWQiOiI4ZThhMjVlYS00NzM5LTQ5NDMtYWZhMi1jZWU3Y2M1ZWFkOGUiLCJyZXF1aXJlbWVudHMiOltdLCJwZXJtaXNzaW9ucyI6eyJwb3J0YWwiOlsicG9ydGFsOmFsbCJdLCJtZWRpY2F0aW9ucyI6WyJtZWRpY2F0aW9uczphbGwiXSwicHVsc2UiOlsicHVsc2U6YWxsIiwicHVsc2U6bWVkaWNhdGlvbnMiXSwiYWRtaW4iOlsiYWRtaW46YWxsIl0sImVjIjpbImVjOmFsbCJdfSwidXNlciI6eyJpZCI6IjRkMmYyYzhjLTNmZTgtNGJlNy1hZjI2LTgzMjk5NDllMTFmMiIsInVzZXJuYW1lIjoic3lzYWRtaW4iLCJ0aXRsZSI6IiIsImZpcnN0TmFtZSI6InN5c2FkbWluIiwibWlkZGxlTmFtZSI6IiIsImxhc3ROYW1lIjoic3lzYWRtaW4iLCJjb250YWN0Ijp7ImVtYWlsIjoic3lzYWRtaW5Ac3lzYWRtaW4uY29tIiwicGhvbmUiOiI1NTUtNTU1LTU1NTUifX0sInRlbmFudCI6eyJpZCI6IlRFU1RURU5BTlQiLCJjb2RlIjoidGVzdHRlbmFudCIsIm5hbWUiOiJUZXN0aW5nIE9ubHkiLCJjb250YWN0Ijp7ImVtYWlsIjoiIiwicGhvbmUiOiIifX0sIm9yZ2FuaXphdGlvbiI6eyJpZCI6ImFpbnEiLCJjb2RlIjoiYWlucSIsIm5hbWUiOiJEZWZhdWx0IE9yZ2luaXphdGlvbiIsImNvbnRhY3QiOnsiZW1haWwiOiIiLCJwaG9uZSI6IiJ9fSwiaWF0IjoxNjA0NTAyODkwLCJuYmYiOjE2MDQ1MDI4OTAsImV4cCI6MTYwNDUwNDY5MH0.MjjwIlLbGZrzUloOIIznDm2vwTStFCH0TJ2Eml1DNFM' \\
+--header 'Cookie: token=eyJhY2Nlc3NfdG9rZW4iOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKaGRYUm9UV1YwYUc5a0lqb2lURTlEUVV3aUxDSnpaWE56YVc5dVNXUWlPaUk0WlRoaE1qVmxZUzAwTnpNNUxUUTVORE10WVdaaE1pMWpaV1UzWTJNMVpXRmtPR1VpTENKeVpYRjFhWEpsYldWdWRITWlPbHRkTENKd1pYSnRhWE56YVc5dWN5STZleUp3YjNKMFlXd2lPbHNpY0c5eWRHRnNPbUZzYkNKZExDSnRaV1JwWTJGMGFXOXVjeUk2V3lKdFpXUnBZMkYwYVc5dWN6cGhiR3dpWFN3aWNIVnNjMlVpT2xzaWNIVnNjMlU2WVd4c0lpd2ljSFZzYzJVNmJXVmthV05oZEdsdmJuTWlYU3dpWVdSdGFXNGlPbHNpWVdSdGFXNDZZV3hzSWwwc0ltVmpJanBiSW1Wak9tRnNiQ0pkZlN3aWRYTmxjaUk2ZXlKcFpDSTZJalJrTW1ZeVl6aGpMVE5tWlRndE5HSmxOeTFoWmpJMkxUZ3pNams1TkRsbE1URm1NaUlzSW5WelpYSnVZVzFsSWpvaWMzbHpZV1J0YVc0aUxDSjBhWFJzWlNJNklpSXNJbVpwY25OMFRtRnRaU0k2SW5ONWMyRmtiV2x1SWl3aWJXbGtaR3hsVG1GdFpTSTZJaUlzSW14aGMzUk9ZVzFsSWpvaWMzbHpZV1J0YVc0aUxDSmpiMjUwWVdOMElqcDdJbVZ0WVdsc0lqb2ljM2x6WVdSdGFXNUFjM2x6WVdSdGFXNHVZMjl0SWl3aWNHaHZibVVpT2lJMU5UVXROVFUxTFRVMU5UVWlmWDBzSW5SbGJtRnVkQ0k2ZXlKcFpDSTZJbFJGVTFSVVJVNUJUbFFpTENKamIyUmxJam9pZEdWemRIUmxibUZ1ZENJc0ltNWhiV1VpT2lKVVpYTjBhVzVuSUU5dWJIa2lMQ0pqYjI1MFlXTjBJanA3SW1WdFlXbHNJam9pSWl3aWNHaHZibVVpT2lJaWZYMHNJbTl5WjJGdWFYcGhkR2x2YmlJNmV5SnBaQ0k2SW1GcGJuRWlMQ0pqYjJSbElqb2lZV2x1Y1NJc0ltNWhiV1VpT2lKRVpXWmhkV3gwSUU5eVoybHVhWHBoZEdsdmJpSXNJbU52Ym5SaFkzUWlPbnNpWlcxaGFXd2lPaUlpTENKd2FHOXVaU0k2SWlKOWZTd2lhV0YwSWpveE5qQTBOVEF5T0Rrd0xDSnVZbVlpT2pFMk1EUTFNREk0T1RBc0ltVjRjQ0k2TVRZd05EVXdORFk1TUgwLk1qandJbExiR1pyelVsb09JSXpuRG0ydndUU3RGQ0gwVEoyRW1sMURORk0iLCJ0b2tlbl90eXBlIjoiQmVhcmVyIiwicmVmcmVzaF90b2tlbiI6IjZiNzMyYWMxOWZhMzI0M2Y4NjI1Mjc1N2EyMDM5ZDk5Y2I5YzdiM2RiZDgyOTBkOGI4OWQ1MDFhMTI0MzgxNmMxMWJjNzAyYTNkNjg5YmU1In0%3D' \
+: 1604510066:0;fc -e
+: 1604510083:0;fc -e
+: 1604510089:0;--header 'Accept: application/json' \\
+--header 'Content-Type: application/json' \\
+--header 'x-tenant-id: TESTTENANT' \\
+--header 'x-tenant-code: TESTTENANT' \\
+--header 'x-application-id: PULSE' \\
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoTWV0aG9kIjoiTE9DQUwiLCJzZXNzaW9uSWQiOiI4ZThhMjVlYS00NzM5LTQ5NDMtYWZhMi1jZWU3Y2M1ZWFkOGUiLCJyZXF1aXJlbWVudHMiOltdLCJwZXJtaXNzaW9ucyI6eyJwb3J0YWwiOlsicG9ydGFsOmFsbCJdLCJtZWRpY2F0aW9ucyI6WyJtZWRpY2F0aW9uczphbGwiXSwicHVsc2UiOlsicHVsc2U6YWxsIiwicHVsc2U6bWVkaWNhdGlvbnMiXSwiYWRtaW4iOlsiYWRtaW46YWxsIl0sImVjIjpbImVjOmFsbCJdfSwidXNlciI6eyJpZCI6IjRkMmYyYzhjLTNmZTgtNGJlNy1hZjI2LTgzMjk5NDllMTFmMiIsInVzZXJuYW1lIjoic3lzYWRtaW4iLCJ0aXRsZSI6IiIsImZpcnN0TmFtZSI6InN5c2FkbWluIiwibWlkZGxlTmFtZSI6IiIsImxhc3ROYW1lIjoic3lzYWRtaW4iLCJjb250YWN0Ijp7ImVtYWlsIjoic3lzYWRtaW5Ac3lzYWRtaW4uY29tIiwicGhvbmUiOiI1NTUtNTU1LTU1NTUifX0sInRlbmFudCI6eyJpZCI6IlRFU1RURU5BTlQiLCJjb2RlIjoidGVzdHRlbmFudCIsIm5hbWUiOiJUZXN0aW5nIE9ubHkiLCJjb250YWN0Ijp7ImVtYWlsIjoiIiwicGhvbmUiOiIifX0sIm9yZ2FuaXphdGlvbiI6eyJpZCI6ImFpbnEiLCJjb2RlIjoiYWlucSIsIm5hbWUiOiJEZWZhdWx0IE9yZ2luaXphdGlvbiIsImNvbnRhY3QiOnsiZW1haWwiOiIiLCJwaG9uZSI6IiJ9fSwiaWF0IjoxNjA0NTAyODkwLCJuYmYiOjE2MDQ1MDI4OTAsImV4cCI6MTYwNDUwNDY5MH0.MjjwIlLbGZrzUloOIIznDm2vwTStFCH0TJ2Eml1DNFM' \\
+--header 'Cookie: token=eyJhY2Nlc3NfdG9rZW4iOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKaGRYUm9UV1YwYUc5a0lqb2lURTlEUVV3aUxDSnpaWE56YVc5dVNXUWlPaUk0WlRoaE1qVmxZUzAwTnpNNUxUUTVORE10WVdaaE1pMWpaV1UzWTJNMVpXRmtPR1VpTENKeVpYRjFhWEpsYldWdWRITWlPbHRkTENKd1pYSnRhWE56YVc5dWN5STZleUp3YjNKMFlXd2lPbHNpY0c5eWRHRnNPbUZzYkNKZExDSnRaV1JwWTJGMGFXOXVjeUk2V3lKdFpXUnBZMkYwYVc5dWN6cGhiR3dpWFN3aWNIVnNjMlVpT2xzaWNIVnNjMlU2WVd4c0lpd2ljSFZzYzJVNmJXVmthV05oZEdsdmJuTWlYU3dpWVdSdGFXNGlPbHNpWVdSdGFXNDZZV3hzSWwwc0ltVmpJanBiSW1Wak9tRnNiQ0pkZlN3aWRYTmxjaUk2ZXlKcFpDSTZJalJrTW1ZeVl6aGpMVE5tWlRndE5HSmxOeTFoWmpJMkxUZ3pNams1TkRsbE1URm1NaUlzSW5WelpYSnVZVzFsSWpvaWMzbHpZV1J0YVc0aUxDSjBhWFJzWlNJNklpSXNJbVpwY25OMFRtRnRaU0k2SW5ONWMyRmtiV2x1SWl3aWJXbGtaR3hsVG1GdFpTSTZJaUlzSW14aGMzUk9ZVzFsSWpvaWMzbHpZV1J0YVc0aUxDSmpiMjUwWVdOMElqcDdJbVZ0WVdsc0lqb2ljM2x6WVdSdGFXNUFjM2x6WVdSdGFXNHVZMjl0SWl3aWNHaHZibVVpT2lJMU5UVXROVFUxTFRVMU5UVWlmWDBzSW5SbGJtRnVkQ0k2ZXlKcFpDSTZJbFJGVTFSVVJVNUJUbFFpTENKamIyUmxJam9pZEdWemRIUmxibUZ1ZENJc0ltNWhiV1VpT2lKVVpYTjBhVzVuSUU5dWJIa2lMQ0pqYjI1MFlXTjBJanA3SW1WdFlXbHNJam9pSWl3aWNHaHZibVVpT2lJaWZYMHNJbTl5WjJGdWFYcGhkR2x2YmlJNmV5SnBaQ0k2SW1GcGJuRWlMQ0pqYjJSbElqb2lZV2x1Y1NJc0ltNWhiV1VpT2lKRVpXWmhkV3gwSUU5eVoybHVhWHBoZEdsdmJpSXNJbU52Ym5SaFkzUWlPbnNpWlcxaGFXd2lPaUlpTENKd2FHOXVaU0k2SWlKOWZTd2lhV0YwSWpveE5qQTBOVEF5T0Rrd0xDSnVZbVlpT2pFMk1EUTFNREk0T1RBc0ltVjRjQ0k2TVRZd05EVXdORFk1TUgwLk1qandJbExiR1pyelVsb09JSXpuRG0ydndUU3RGQ0gwVEoyRW1sMURORk0iLCJ0b2tlbl90eXBlIjoiQmVhcmVyIiwicmVmcmVzaF90b2tlbiI6IjZiNzMyYWMxOWZhMzI0M2Y4NjI1Mjc1N2EyMDM5ZDk5Y2I5YzdiM2RiZDgyOTBkOGI4OWQ1MDFhMTI0MzgxNmMxMWJjNzAyYTNkNjg5YmU1In0%3D' \\
+
+: 1604510234:0;curl --location --request DELETE 'https://api.dev-ainqapps.com/common/v1/users/esharapov' \\
+--header 'Accept: application/json' \\
+--header 'Content-Type: application/json' \\
+--header 'x-tenant-id: TESTTENANT' \\
+--header 'x-tenant-code: TESTTENANT' \\
+--header 'x-application-id: PULSE' \\
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoTWV0aG9kIjoiTE9DQUwiLCJzZXNzaW9uSWQiOiJkYjAyOTE5OC1lMzY0LTQ5MzMtOGQ3My01N2E1ZWY4ZWE1NzgiLCJyZXF1aXJlbWVudHMiOltdLCJwZXJtaXNzaW9ucyI6eyJwb3J0YWwiOlsicG9ydGFsOmFsbCJdLCJ0ZW5hbnRzdmNzIjpbImFwcGxpY2F0aW9uOmNyZWF0ZSIsImFwcGxpY2F0aW9uOmRlbGV0ZSIsImFwcGxpY2F0aW9uOnJlYWQiLCJhcHBsaWNhdGlvbjp1cGRhdGUiLCJlbnZpcm9ubWVudDpleHBvcnQiLCJlbnZpcm9ubWVudDppbXBvcnQiLCJwb29sOmNyZWF0ZSIsInBvb2w6ZGVsZXRlIiwicG9vbDpyZWFkIiwicG9vbDp1cGRhdGUiLCJwcm92aXNpb246Y3JlYXRlIiwicHJvdmlzaW9uOmRlbGV0ZSIsInByb3Zpc2lvbjpyZWFkIiwicHJvdmlzaW9uOnJ1biIsInByb3Zpc2lvbjp1cGRhdGUiLCJyZXNvdXJjZTpjcmVhdGUiLCJyZXNvdXJjZTpkZWxldGUiLCJyZXNvdXJjZTpyZWFkIiwicmVzb3VyY2U6dXBkYXRlIiwidGVuYW50OmNyZWF0ZSIsInRlbmFudDpkZWxldGUiLCJ0ZW5hbnQ6cmVhZCIsInRlbmFudDp1cGRhdGUiLCJhcHBsaWNhdGlvbjpyZWFkIiwiYXBwbGljYXRpb246dXBkYXRlIiwicG9vbDpyZWFkIiwicHJvdmlzaW9uOnJlYWQiLCJyZXNvdXJjZTpyZWFkIiwidGVuYW50OnJlYWQiLCJ0ZW5hbnQ6dXBkYXRlIiwiYXBwbGljYXRpb246cmVhZCIsImFwcGxpY2F0aW9uOnVwZGF0ZSIsImVudmlyb25tZW50OmV4cG9ydCIsImVudmlyb25tZW50OmltcG9ydCIsInBvb2w6Y3JlYXRlIiwicG9vbDpyZWFkIiwicG9vbDp1cGRhdGUiLCJwcm92aXNpb246cmVhZCIsInByb3Zpc2lvbjpydW4iLCJyZXNvdXJjZTpjcmVhdGUiLCJyZXNvdXJjZTpyZWFkIiwicmVzb3VyY2U6dXBkYXRlIiwidGVuYW50OmNyZWF0ZSIsInRlbmFudDpyZWFkIiwidGVuYW50OnVwZGF0ZSJdLCJtZWRpY2F0aW9ucyI6WyJtZWRpY2F0aW9uczphbGwiXSwicHVsc2UiOlsicHVsc2U6YWxsIiwicHVsc2U6bWVkaWNhdGlvbnMiXSwiYWRtaW4iOlsiYWRtaW46YWxsIl0sImVjIjpbImVjOmFsbCJdfSwidXNlciI6eyJpZCI6IjRkMmYyYzhjLTNmZTgtNGJlNy1hZjI2LTgzMjk5NDllMTFmMiIsInVzZXJuYW1lIjoic3lzYWRtaW4iLCJ0aXRsZSI6IiIsImZpcnN0TmFtZSI6InN5c2FkbWluIiwibWlkZGxlTmFtZSI6IiIsImxhc3ROYW1lIjoic3lzYWRtaW4iLCJjb250YWN0Ijp7ImVtYWlsIjoic3lzYWRtaW5Ac3lzYWRtaW4uY29tIiwicGhvbmUiOiI1NTUtNTU1LTU1NTUifX0sInRlbmFudCI6eyJpZCI6IkFJTlEiLCJjb2RlIjoiYWlucSIsIm5hbWUiOiJBdWRhY2lvdXMgSW5xdWlyeSBVcGRhdGVkIiwiY29udGFjdCI6eyJlbWFpbCI6IiIsInBob25lIjoiIn19LCJvcmdhbml6YXRpb24iOnsiaWQiOiJhaW5xIiwiY29kZSI6ImFpbnEiLCJuYW1lIjoiRGVmYXVsdCBPcmdpbml6YXRpb24iLCJjb250YWN0Ijp7ImVtYWlsIjoiIiwicGhvbmUiOiIifX0sImlhdCI6MTYwNDUwOTg4NywibmJmIjoxNjA0NTA5ODg3LCJleHAiOjE2MDQ1OTYyODd9.wHeZOoe760thTUlJ4QviCvuyIYDg6oIuVhlQCd5XbWk' \\
+--header 'Cookie: token=eyJhY2Nlc3NfdG9rZW4iOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKaGRYUm9UV1YwYUc5a0lqb2lURTlEUVV3aUxDSnpaWE56YVc5dVNXUWlPaUprWWpBeU9URTVPQzFsTXpZMExUUTVNek10T0dRM015MDFOMkUxWldZNFpXRTFOemdpTENKeVpYRjFhWEpsYldWdWRITWlPbHRkTENKd1pYSnRhWE56YVc5dWN5STZleUp3YjNKMFlXd2lPbHNpY0c5eWRHRnNPbUZzYkNKZExDSjBaVzVoYm5SemRtTnpJanBiSW1Gd2NHeHBZMkYwYVc5dU9tTnlaV0YwWlNJc0ltRndjR3hwWTJGMGFXOXVPbVJsYkdWMFpTSXNJbUZ3Y0d4cFkyRjBhVzl1T25KbFlXUWlMQ0poY0hCc2FXTmhkR2x2YmpwMWNHUmhkR1VpTENKbGJuWnBjbTl1YldWdWREcGxlSEJ2Y25RaUxDSmxiblpwY205dWJXVnVkRHBwYlhCdmNuUWlMQ0p3YjI5c09tTnlaV0YwWlNJc0luQnZiMnc2WkdWc1pYUmxJaXdpY0c5dmJEcHlaV0ZrSWl3aWNHOXZiRHAxY0dSaGRHVWlMQ0p3Y205MmFYTnBiMjQ2WTNKbFlYUmxJaXdpY0hKdmRtbHphVzl1T21SbGJHVjBaU0lzSW5CeWIzWnBjMmx2YmpweVpXRmtJaXdpY0hKdmRtbHphVzl1T25KMWJpSXNJbkJ5YjNacGMybHZianAxY0dSaGRHVWlMQ0p5WlhOdmRYSmpaVHBqY21WaGRHVWlMQ0p5WlhOdmRYSmpaVHBrWld4bGRHVWlMQ0p5WlhOdmRYSmpaVHB5WldGa0lpd2ljbVZ6YjNWeVkyVTZkWEJrWVhSbElpd2lkR1Z1WVc1ME9tTnlaV0YwWlNJc0luUmxibUZ1ZERwa1pXeGxkR1VpTENKMFpXNWhiblE2Y21WaFpDSXNJblJsYm1GdWREcDFjR1JoZEdVaUxDSmhjSEJzYVdOaGRHbHZianB5WldGa0lpd2lZWEJ3YkdsallYUnBiMjQ2ZFhCa1lYUmxJaXdpY0c5dmJEcHlaV0ZrSWl3aWNISnZkbWx6YVc5dU9uSmxZV1FpTENKeVpYTnZkWEpqWlRweVpXRmtJaXdpZEdWdVlXNTBPbkpsWVdRaUxDSjBaVzVoYm5RNmRYQmtZWFJsSWl3aVlYQndiR2xqWVhScGIyNDZjbVZoWkNJc0ltRndjR3hwWTJGMGFXOXVPblZ3WkdGMFpTSXNJbVZ1ZG1seWIyNXRaVzUwT21WNGNHOXlkQ0lzSW1WdWRtbHliMjV0Wlc1ME9tbHRjRzl5ZENJc0luQnZiMnc2WTNKbFlYUmxJaXdpY0c5dmJEcHlaV0ZrSWl3aWNHOXZiRHAxY0dSaGRHVWlMQ0p3Y205MmFYTnBiMjQ2Y21WaFpDSXNJbkJ5YjNacGMybHZianB5ZFc0aUxDSnlaWE52ZFhKalpUcGpjbVZoZEdVaUxDSnlaWE52ZFhKalpUcHlaV0ZrSWl3aWNtVnpiM1Z5WTJVNmRYQmtZWFJsSWl3aWRHVnVZVzUwT21OeVpXRjBaU0lzSW5SbGJtRnVkRHB5WldGa0lpd2lkR1Z1WVc1ME9uVndaR0YwWlNKZExDSnRaV1JwWTJGMGFXOXVjeUk2V3lKdFpXUnBZMkYwYVc5dWN6cGhiR3dpWFN3aWNIVnNjMlVpT2xzaWNIVnNjMlU2WVd4c0lpd2ljSFZzYzJVNmJXVmthV05oZEdsdmJuTWlYU3dpWVdSdGFXNGlPbHNpWVdSdGFXNDZZV3hzSWwwc0ltVmpJanBiSW1Wak9tRnNiQ0pkZlN3aWRYTmxjaUk2ZXlKcFpDSTZJalJrTW1ZeVl6aGpMVE5tWlRndE5HSmxOeTFoWmpJMkxUZ3pNams1TkRsbE1URm1NaUlzSW5WelpYSnVZVzFsSWpvaWMzbHpZV1J0YVc0aUxDSjBhWFJzWlNJNklpSXNJbVpwY25OMFRtRnRaU0k2SW5ONWMyRmtiV2x1SWl3aWJXbGtaR3hsVG1GdFpTSTZJaUlzSW14aGMzUk9ZVzFsSWpvaWMzbHpZV1J0YVc0aUxDSmpiMjUwWVdOMElqcDdJbVZ0WVdsc0lqb2ljM2x6WVdSdGFXNUFjM2x6WVdSdGFXNHVZMjl0SWl3aWNHaHZibVVpT2lJMU5UVXROVFUxTFRVMU5UVWlmWDBzSW5SbGJtRnVkQ0k2ZXlKcFpDSTZJa0ZKVGxFaUxDSmpiMlJsSWpvaVlXbHVjU0lzSW01aGJXVWlPaUpCZFdSaFkybHZkWE1nU1c1eGRXbHllU0JWY0dSaGRHVmtJaXdpWTI5dWRHRmpkQ0k2ZXlKbGJXRnBiQ0k2SWlJc0luQm9iMjVsSWpvaUluMTlMQ0p2Y21kaGJtbDZZWFJwYjI0aU9uc2lhV1FpT2lKaGFXNXhJaXdpWTI5a1pTSTZJbUZwYm5FaUxDSnVZVzFsSWpvaVJHVm1ZWFZzZENCUGNtZHBibWw2WVhScGIyNGlMQ0pqYjI1MFlXTjBJanA3SW1WdFlXbHNJam9pSWl3aWNHaHZibVVpT2lJaWZYMHNJbWxoZENJNk1UWXdORFV3T1RnNE55d2libUptSWpveE5qQTBOVEE1T0RnM0xDSmxlSEFpT2pFMk1EUTFPVFl5T0RkOS53SGVaT29lNzYwdGhUVWxKNFF2aUN2dXlJWURnNm9JdVZobFFDZDVYYldrIiwidG9rZW5fdHlwZSI6IkJlYXJlciIsInJlZnJlc2hfdG9rZW4iOiJmOWQ1MjQ4ZjQzNjY1YjE4ZjM5Mjk0YmZmOWY1YjMxYmRlMjBiNTE2MzIxYzg2ZDFiMTZkODk5YWE4NDBlYjQyZTJjMDMwOWI5NjhhMTdjYyJ9'\
+
+: 1604515395:0;l;
+: 1604515537:0;g clone https://git.ainq.com/ai-platform-development/client-applications/ainq-portal-web-application.git
+: 1604515723:0;less src/apis/auth-api.js
+: 1604515745:0;less src/services/auth-service.js
+: 1604515789:0;ag resetPassword
+: 1604520618:0;ag expir
+: 1604524516:0;# Adding Microsoft signing key to the APT
+: 1604524526:0;wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+: 1604524538:0;sudo dpkg -i packages-microsoft-prod.deb
+: 1604524562:0;l packages-microsoft-prod.deb
+: 1604524565:0;rm packages-microsoft-prod.deb
+: 1604524630:0;# Install SDK
+: 1604524649:0;sudo apt-get update; \\
+  sudo apt-get install -y apt-transport-https && \\
+  sudo apt-get update && \\
+  sudo apt-get install -y dotnet-sdk-3.1
+: 1604524725:0;# Install Runtime
+: 1604524741:0;sudo apt-get update; \\
+  sudo apt-get install -y apt-transport-https && \\
+  sudo apt-get update && \\
+  sudo apt-get install -y aspnetcore-runtime-3.1
+: 1604524841:0;mkdir -p .FsAutoComplete/netcore
+: 1604524875:0;mv /mnt/c/Users/esharapov/Downloads/fsautocomplete.netcore.zip ~/.FsAutoComplete/netcore/.
+: 1604524884:0;cd ~/.FsAutoComplete/netcore
+: 1604524889:0;unzip fsautocomplete.netcore.zip
+: 1604524898:0;rm -rf fsautocomplete.netcore.zip
+: 1604525005:0;cd ~/Projects/FSharp
+: 1604525055:0;dotnet new -lang=F# console FSTestApp
+: 1604525101:0;dotnet new console -lang "F#"  FSTestApp
+: 1604525118:0;dotnet new console -lang "F#" -o FSTestApp
+: 1604525357:0;dotnet run FSTestApp
+: 1604525456:0;dotnet build --help
+: 1604525564:0;dotnet
+: 1604525653:0;dotnet list reference
+: 1604525658:0;dotnet list package
+: 1604588529:0;dotnet publish --self-contained
+: 1604590767:0;cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+: 1604590828:0;l .dropbox-dist
+: 1604590871:0;l .dropbox-dist/dropbox-lnx.x86_64-109.4.517
+: 1604590912:0;l .tooling
+: 1604592735:0;npm --version
+: 1604592804:0;# Installing AWS CLI Tool
+: 1604592808:0;curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+: 1604592840:0;mkdir ~/aws
+: 1604592846:0;mv awscliv2.zip ~/aws/.
+: 1604592851:0;cd ~/aws
+: 1604592854:0;$ unzip awscliv2.zip
+: 1604592860:0;unzip awscliv2.zip
+: 1604592873:0;sudo ./aws/install
+: 1604592909:0;rm -rf aws
+: 1604592950:0;l /mnt/c/Users/esharapov/
+: 1604592954:0;l /mnt/c/Users/esharapov/.aws/
+: 1604592963:0;l ~/.aws
+: 1604593020:0;l /mnt/c/Users/esharapov/.bin
+: 1604593046:0;l /mnt/c/Users/esharapov/Tools/Bin
+: 1604593068:0;l ~/.bin
+: 1604593073:0;mkdir ~/.bin
+: 1604593138:0;cp /mnt/c/Users/esharapov/Tools/Bin/cfr-0.148.jar /mnt/c/Users/esharapov/Tools/Bin/ditaa0_9.jar /mnt/c/Users/esharapov/Tools/Bin/plantuml.jar ~/.bin/.
+: 1604593259:0;dotnet tool
+: 1604593265:0;dotnet tool list -f
+: 1604593268:0;dotnet tool list -g
+: 1604604927:0;cd Projects/FSharp
+: 1604604934:0;dotnet publish -c Release -r linux-x64 --self-contained
+: 1604605008:0;l bin/Release/netcoreapp3.1/linux-x64/FSTestApp
+: 1604605012:0;l bin/Release/netcoreapp3.1/linux-x64/
+: 1604605024:0;du -hs bin/Release/netcoreapp3.1/linux-x64/
+: 1604605034:0;du -hs bin/Release/netcoreapp3.1/linux-x64/publish
+: 1604605038:0;l bin/Release/netcoreapp3.1/linux-x64/publish
+: 1604605183:0;dotnet publish -c Release -r linux-x64 --self-contained -p:PublishReadyToRun=true
+: 1604605195:0;dotnet publish -c Release -r linux-x64 --self-contained true -p:PublishReadyToRun=true
+: 1604605203:0;l bin
+: 1604605206:0;l bin/Release
+: 1604605225:0;./bin/Release/netcoreapp3.1/linux-x64/FSTestApp
+: 1604605230:0;l ./bin/Release/netcoreapp3.1/linux-x64/FSTestApp
+: 1604605272:0;dotnet publish -c Release -r win-x64 --self-contained=true -p:PublishReadyToRun=true
+: 1604605353:0;dotnet publish -c Release -r win-x64 --self-contained=true -p:PublishReadyToRun=false
+: 1604605371:0;l ./bin/Release/netcoreapp3.1/win-x64/FSTestApp.exe
+: 1604605375:0;/bin/Release/netcoreapp3.1/win-x64/FSTestApp.exe
+: 1604605401:0;cp ./bin/Release/netcoreapp3.1/win-x64/FSTestApp.exe /mnt/c/Users/esharapov/.
+: 1604605443:0;dotnet publish -c Release -r win-x64 --self-contained=true -p:PublishSingleFile=true
+: 1604605460:0;l bin/Release/netcoreapp3.1/win-x64/FSTestApp.exe
+: 1604605486:0;cp bin/Release/netcoreapp3.1/win-x64/FSTestApp.exe /mnt/c/Users/esharapov/.
+: 1604605519:0;rm -rf bin/Release
+: 1604605576:0;dotnet publish -c Release -r win-x64 -p:PublishSingleFile=true -p:PublishReadyToRun=true --self-contained true
+: 1604610110:0;hg ls
+: 1604610116:0;hg ll
+: 1604611009:0;cd ../Projects/Ocaml/LearnOcaml
+: 1604611012:0;hg log --style  changelog
+: 1604611675:0;hg l
+: 1604611680:0;hg nlog
+: 1604627405:0;cd ../.dotfiles
+: 1604628652:0;g log -S session
+: 1604628692:0;g log -S accessToken
+: 1604628707:0;g log -p  a8c689575278e13dc0e841ffe50b693059ebe640
+: 1604628767:0;l src/__tests__
+: 1604628771:0;l src/__tests__/services
+: 1604628775:0;l src/__tests__/utils
+: 1604628778:0;l src/
+: 1604628782:0;l src/db
+: 1604628787:0;l src/db/index.js
+: 1604628789:0;less src/db/index.js
+: 1604628802:0;less src/mock/payload.mock.js
+: 1604628816:0;less src/plugins
+: 1604628820:0;l src/plugins
+: 1604628824:0;l src/plugins/DataInitPlugin.js
+: 1604628829:0;less src/plugins/DataInitPlugin.js
+: 1604675090:0;ainq-common-service
+: 1604675162:0;g co -b OPEB-1668-expired-password-link
+: 1604676500:0;node-gyp rebuild
+: 1604676807:0;l ~/.npmrc
+: 1604676813:0;rm ~/.npmrc
+: 1604676928:0;ln -s ~/.npmrc ~/.dotfiles/.npmrc
+: 1604677186:0;ln -s ~/.dotfiles/.npmrc ~/.npmrc
+: 1604677358:0;rm -rf ~/.npm
+: 1604677370:0;node --version
+: 1604677415:0;sudo apt-get install build-essentials libffi-dev
+: 1604677423:0;sudo apt-get install build-essential libffi-dev
+: 1604677440:0;apt search nodejs
+: 1604677470:0;sudo apt-get install nodejs
+: 1604677478:0;sudo apt-get remove nodejs
+: 1604677612:0;sudo apt-get install -y nodejs
+: 1604677623:0;sudo apt-get install -y npm
+: 1604677686:0;l ~/.node_repl_history
+: 1604677699:0;apt-cache search gyp
+: 1604677743:0;sudo apt-get install -y gyp node-gyp node-pre-gyp
+: 1604678047:0;pip list
+: 1604678057:0;pip3 list | grep gyp
+: 1604678066:0;pip3 search gyp
+: 1604678364:0;pip install https://github.com/nodejs/node-gyp\#subdirectory\=gyp
+: 1604678367:0;pip3 install https://github.com/nodejs/node-gyp\#subdirectory\=gyp
+: 1604678405:0;pip3 install git+https://chromium.googlesource.com/external/gyp
+: 1604679172:0;ls ./node_modules/mocha/bin/mocha
+: 1604679175:0;l ./node_modules/mocha/bin/mocha
+: 1604679177:0;l ./node_modules/mocha/bin
+: 1604679246:0;./node_modules/mocha/bin/_mocha ./{,!(node_modules)/**/}*.test.js --require @babel/register -u tdd --timeout 999999 --colors
+: 1604679265:0;./node_modules/mocha/bin/mocha ./{,!(node_modules)/**/}*.test.js --require @babel/register -u tdd --timeout 999999 --colors
+: 1604679278:0;./node_modules/mocha/bin/mocha ./src/**/*.test.js --require @babel/register -u tdd --timeout 999999 --colors
+: 1604679350:0;./node_modules/mocha/bin/mocha ./src/**/*.test.js --require @babel/register --colors
+: 1604679403:0;node_modules/.bin/mocha src/__tests__/services/password-service.test.js --grep="should have clickOnResetPasswordLink action" 
+: 1604679736:0;node_modules/.bin/mocha src/__tests__/services/password-service.test.js --grep="password service test" 
+: 1604680059:0;node_modules/.bin/mocha src/__tests__/services/password-service.test.js --grep="should have clickOnResetPasswordLink action" --require @babel/register
+: 1604690238:0;ag service.actions.clickOnResetPasswordLink
+: 1604690244:0;ag getDatabaseClient
+: 1604690957:0;g pull https://git.ainq.com/ai-platform-development/javascript-modules/ainq-microservice-framework.git
+: 1604690963:0;g clone https://git.ainq.com/ai-platform-development/javascript-modules/ainq-microservice-framework.git
+: 1604691019:0;l ainq-portal-web-application/__tests__
+: 1604691023:0;l ainq-portal-web-application/__scripts__
+: 1604691067:0;cd ainq-pulse-service/'
+: 1604691069:0;cd ainq-pulse-service/
+: 1604691080:0;cat src/index.test.js
+: 1604691084:0;cat src/index.js
+: 1604691303:0;l schema
+: 1604691307:0;l schema/common
+: 1604691315:0;l schema/facility/facility-update.schema.json
+: 1604691552:0;cd ainq-common-service
+: 1604691602:0;npm install --save-dev sinon
+: 1604691644:0;gcmsg "OPEB-1668: added sinon for mocking"
+: 1604692550:0;cd src/plugins/enterprise-tenant-services-plugin/database/clients/PLATFORM/models
+: 1604692557:0;less session.js
+: 1604693054:0;node_modules/.bin/mocha src/__tests__/services/password-service.test.js --grep="should return not null" --require @babel/register
+: 1604694238:0;node_modules/.bin/mocha src/__tests__/services/password-service.test.js --grep="password service test" --require @babel/register
+: 1604717116:0;node "/home/esharapov/Projects/PULSE/ainq-common-service/src/__tests__/services/password-service.test.js"
+: 1604943218:0;node_modules/.bin/mocha src/__tests__/services/password-service.test.js --grep="should show message when link is expired" --require @babel/register
+: 1604943387:0;node_modules/.bin/mocha src/__tests__/services/password-service.test.js --grep="should redirect when link is good" --require @babel/register
+: 1604953382:0;node_modules/.bin/mocha src/__tests__/services/password-service.test.js --grep="should return 201 and return token cookie when link is good" --require @babel/register
+: 1604953558:0;node_modules/.bin/mocha src/__tests__/services/password-service.test.js --grep="clickOnResetPasswordLink" --require @babel/register
+: 1604954855:0;node_modules/.bin/mocha src/__tests__/services/password-service.test.js --grep="should redirect with token cookie when link is good" --require @babel/register
+: 1604954879:0;ApiSigningKey cd /home/esharapov/Projects/PULSE/ainq-common-service ; /usr/bin/env NODE_ENV=test 'NODE_OPTIONS=--require /home/esharapov/.vscode-server/bin/fcac248b077b55bae4ba5bab613fd6e9156c2f0c/extensions/ms-vscode.js-debug/src/bootloader.bundle.js' 'VSCODE_INSPECTOR_OPTIONS={"inspectorIpc":"/tmp/node-cdp.16176-15.sock","deferredMode":false,"waitForDebugger":"","execPath":"/usr/bin/node","onlyEntrypoint":false,"autoAttachMode":"always","fileCallback":"/tmp/node-debug-callback-24e766249a1741fb"}' /usr/bin/node ./node_modules/mocha/bin/_mocha src/__tests__/services/password-service.test.js --grep "should redirect and show message when link is expired" --no-timeout --require @babel/register 
+: 1604955338:0;qgst
+: 1604955386:0;ga  src/services/common/utils/jwt.js
+: 1604955706:0;gcmsg "OPEB-1668: session expiration could be 0m"
+: 1604955723:0;ga .eslintignore
+: 1604955741:0;gcmsg "OPEB-1668: exclude test files from ESlint"
+: 1604955758:0;ga src/__test__
+: 1604955764:0;ga src/__tests__
+: 1604955792:0;gcmsg "OPEB-1668: unit tests for password service"
+: 1604955854:0;gcmsg "OPEB-1668: changing password service to ensure that expired links cannot be worked through"
+: 1604956029:0;cd ainq-portal-web-application
+: 1604956042:0;ag "Forget"
+: 1604956046:0;ag forget
+: 1604956050:0;ag password
+: 1604956112:0;code &
+: 1604956571:0;ag LoginContent
+: 1604956671:0;g clone https://git.ainq.com/ai-platform-development/ainq-admin-portal-application.git
+: 1604956683:0;cd ainq-admin-portal-application
+: 1604958145:0;g clone https://git.ainq.com/ai-platform-development/javascript-modules/ainq-web-client-framework.git
+: 1604958158:0;ag
+: 1604958163:0;ag loginState
+: 1604958193:0;code . &
+: 1604960569:0;g co -b OPEB-1668-add-message-to-login-page
+: 1604960599:0;gcmsg "OPEB-1668: added extra route to set an initial state for the store"
+: 1604974088:0;cd /home/esharapov/Projects/PULSE/ainq-web-client-framework
+: 1604974088:0;node_modules/.bin/jest __tests__/acceptance-tests/test/loginpage-test.js --testNamePattern="Login button is not available when username is blank and password field is blank" --require @babel/register
+: 1605030919:0;gcmsg "OPEB-1668: workable version of state initializer redirector component"
+: 1605036031:0;gcmsg "OPEB-1668: making initialize state component"
+: 1605037532:0;g co 78025c6b8522a5b45631ad8542db08773e460657 -- src/components/common/page/header/user-menu/user-menu.jsx
+: 1605037559:0;gcmsg "OPEB-1668: return missing module"
+: 1605040305:0;gcmsg "OPEB-1668: added flash message action along with a localizable string and decoding URI component passed in a string"
+: 1605043024:0;gcmsg "OPEB-1668: removed superfluous code"
+: 1605043675:0;g push --set-upstream origin OPEB-1668-add-message-to-login-page
+: 1605043919:0;cd ../ainq-common-service
+: 1605044209:0;gcmsg "OPEB-1668: corrected message for expired password reset link"
+: 1605044331:0;cd /home/esharapov/Projects/PULSE/ainq-common-service
+: 1605044331:0;node_modules/.bin/mocha src/__tests__/services/password-service.test.js --grep="should redirect and show message when link is expired" --require @babel/register
+: 1605044405:0;gcmsg "OPEB-1668: service redirects to a correct link that flashes the message about expired password link"
+: 1605044428:0;g push --set-upstream origin OPEB-1668-expired-password-link
+: 1605046080:0;gcmsg "OPEB-1668: code review on organizing code and removing reduntant code"
+: 1605105954:0;gcmsg "OPEB-1668: updated code according to the comments in code review"
+: 1605107394:0;gcmsg "OPEB-1668: add extra action SET_EXPIRED_MESSAGE to avoid need for knowledge of a specific localized string for expired password link message"
+: 1605110232:0;cat .hg/hgrc
+: 1605110291:0;te ~/.emacs.d
+: 1605110439:0;kill -9 7177
+: 1605110471:0;emacs --debug-init &
+: 1605110516:0;cat data/.emacs.desktop.wsl
+: 1605113915:0;gcmsg "OPEB-1668: made initialize state component more generic in where it  can redirect to and fixed an issue with missing state"
+: 1605120364:0;make --version
+: 1605120391:0;man version
+: 1605122687:0;rm -rf ~/.org-timestamp
+: 1605126091:0;ide &
+: 1605126409:0;./gradlew quarkusDev
+: 1605126488:0;gcmsg "OPEB-1414: added a DataDog API key to the configuration"
+: 1605126704:0;g clone https://github.com/narendraj9/narendraj9.github.io.git
+: 1605126711:0;k
+: 1605195954:0;gcmsg "OPEB-1668: updated version of the artifact to 0.2.21"
+: 1605206983:0;aws --help
+: 1605207082:0;cd /mnt/c/Users/esharapov
+: 1605207091:0;aws --profile=esharapov_ent sqs help --queue-url https://sqs.us-east-1.amazonaws.com/778079405878/adt-processing-queue  
+: 1605207106:0;aws --profile=esharapov_ent sqs --queue-url https://sqs.us-east-1.amazonaws.com/778079405878/adt-processing-queue 
+: 1605207127:0;aws --profile=esharapov_ent sqs --queue-url https://sqs.us-east-1.amazonaws.com/778079405878/adt-processing-queue receive-message
+: 1605207148:0;aws --profile=esharapov_ent sqs receive-message --queue-url https://sqs.us-east-1.amazonaws.com/778079405878/adt-processing-queue 
+: 1605207174:0;aws --profile=esharapov_ent sqs send-message help --queue-url https://sqs.us-east-1.amazonaws.com/778079405878/adt-processing-queue 
+: 1605207184:0;aws --profile=esharapov_ent sqs send-message --help --queue-url https://sqs.us-east-1.amazonaws.com/778079405878/adt-processing-queue 
+: 1605207339:0;aws --profile=esharapov_ent sqs send-message --queue-url https://sqs.us-east-1.amazonaws.com/778079405878/adt-processing-queue --message-attributes file://samples/Inpatient,Audo.json
+: 1605207356:0;aws --profile=esharapov_ent sqs send-message --queue-url https://sqs.us-east-1.amazonaws.com/778079405878/adt-processing-queue --message-body file://samples/Inpatient,Audo.json
+: 1605210891:0;cat ~/.aws/credentials | grep AKIAVZHYF7QETLQYQMFZ
+: 1605210952:0;aws --profile=pulse sns list-topics
+: 1605211326:0;aws --profile=pulse sns --help
+: 1605211335:0;aws --profile=pulse sns
+: 1605211340:0;aws --profile=pulse sns help
+: 1605211352:0;aws --profile=pulse sns publish --help
+: 1605211357:0;aws --profile=pulse sns publish help
+: 1605211474:0;export AWS_PAGER=""
+: 1605217674:0;gcmsg "OPEB-1668: fixed test and changed name of the link for expired password link message"
+: 1605217855:0;gcmsg "OPEB-1668: shorten url for initializing state to /i"
+: 1605218384:0;gcmsg "OPEB-1668: updated version of framework to 0.2.22"
+: 1605232298:0;l source
+: 1605232301:0;l source/repos
+: 1605232308:0;l source/repos/WindowsFormsApp1
+: 1605232312:0;l source/repos/WindowsFormsApp1/WindowsFormsApp1
+: 1605232317:0;l source/repos/WindowsFormsApp1/WindowsFormsApp1/Program.cs
+: 1605232320:0;cat source/repos/WindowsFormsApp1/WindowsFormsApp1/Program.cs
+: 1605232335:0;cat source/repos/ConsoleApp2/ConsoleApp2/Program.fs
+: 1605232346:0;cat source/repos/ConsoleApp1/ConsoleApp1/Program.cs
+: 1605234193:0;cd Personal/website
+: 1605234253:0;cat cat .hg/hgrc
+: 1605234296:0;hg commit -m "style and programming changes in publishing. added more content"
+: 1605279051:0;cd ainq-web-client-framework
+: 1605281292:0;gcmsg "OPEB-1668: added 8 sec delay for messages on login page"
+: 1605298696:0;cd /mnt/c/Users/esharapov/Personal/website
+: 1605300110:0;l src/site.org
+: 1605300113:0;cat src/site.org
+: 1605300276:0;LearnOcaml
+: 1605300285:0;emacsclient -c &
+: 1605319193:0;hg commit -m "changes to the publishing code"
+: 1605540461:0;cd ~/Projects
+: 1605540488:0;mkdir Exp
+: 1605540491:0;cd Exp
+: 1605540495:0;g clone https://github.com/ckelner/datadog-java-apm-example.git
+: 1605540501:0;cd datadog-java-apm-example
+: 1605540519:0;mv datadog-java-apm-example datadog-java-apm
+: 1605540523:0;cd datadog-java-apm
+: 1605540997:0;g clone https://github.com/dkublik/micrometer-aws-example.git  micrometer-aws
+: 1605547167:0;rm -rf micrometer-aws
+: 1605547182:0;mkdir dd-test
+: 1605547184:0;cd dd-test
+: 1605547205:0;gradle init
+: 1605552483:0;curl -X GET "https://api.datadoghq.com/api/v1/events/${event_id}" \\
+-H "Content-Type: application/json" \\
+-H "DD-API-KEY: ${DD_CLIENT_API_KEY}" \
+: 1605552503:0;export DD_CLIENT_API_KEY=898cebd8908f13dd398a4bc47e42f092
+: 1605552516:0;export DD_CLIENT_APP_KEY=589bad9ee35283a5d02439a6af5ad2eaec695e61
+: 1605552544:0;curl -X GET "https://api.datadoghq.com/api/v1/events/${event_id}" \\
+-H "Content-Type: application/json" \\
+-H "DD-API-KEY: ${DD_CLIENT_API_KEY}" \
+: 1605552557:0;export event_id=12341234123412341234
+: 1605552561:0;curl -X GET "https://api.datadoghq.com/api/v1/events/${event_id}" \\
+-H "Content-Type: application/json" \\
+-H "DD-API-KEY: ${DD_CLIENT_API_KEY}" \\
+
+: 1605552574:0;curl -X GET "https://api.datadoghq.com/api/v1/events/${event_id}" \\
+-H "Content-Type: application/json" \\
+-H "DD-API-KEY: ${DD_CLIENT_API_KEY}" \\
+-H "DD-APPLICATION-KEY: ${DD_CLIENT_APP_KEY}"
+: 1605552611:0;curl -X POST "https://api.datadoghq.com/api/v1/events?api_key=${DD_CLIENT_API_KEY}" \\
+-H "Content-Type: application/json" \\
+-d @- << EOF\
+{\
+  "text": "Oh boy!",\
+  "title": "Did you hear the news today?"\
+}\
+EOF
+: 1605556986:0;g init .
+: 1605557019:0;g reset .idea
+: 1605557052:0;gcmsg "Initial SpringBoot app with connection to DataDog, sending custom metrics" 
+: 1605557139:0;g remote add origin https://git.ainq.com/esharapov/datadogapp.git
+: 1605557154:0;git push -u origin master
+: 1605558613:0;dotnet tool --help
+: 1605558619:0;dotnet tool list
+: 1605558630:0;dotnet fsi help
+: 1605558636:0;dotnet fsi --help
+: 1605558874:0;cd FSTestApp
+: 1605593467:0;l samples
+: 1605593480:0;em id_file
+: 1605593483:0;rm id_file
+: 1605593542:0;aws --profile=pulse sns publish --topic-arn=arn:aws:sns:us-east-1:397804960777:pulse-dev-emergency-census-checkin --message=file://samples/Inpatient,Auto.json
+: 1605622233:0;mkdir dd-samples
+: 1605622251:0;cp samples/Inpatient,Auto.json dd-samples/Good.json
+: 1605622387:0;echo 'aws --profile=pulse sns publish --topic-arn=arn:aws:sns:us-east-1:397804960777:pulse-dev-emergency-census-checkin --message=file://samples/Inpatient,Auto.json ' > dd-run.sh
+: 1605622640:0;sh dd-run.sh
+: 1605623036:0;chmod +x dd-run.sh
+: 1605623107:0;echo {1..10}
+: 1605623201:0;echo {1..15}
+: 1605624453:0;./dd-run.sh
+: 1605634324:0;mkdir LearnFSharp
+: 1605634588:0;dotnet new help
+: 1605634970:0;dotnet new console -lang="F#" Kattis
+: 1605634989:0;dotnet new console -lang "F#" -n Kattis
+: 1605635050:0;fsi "/home/esharapov/Projects/FSharp/LearnFSharp/Kattis/Program.fs"
+: 1605635171:0;dotnet fsi "/home/esharapov/Projects/FSharp/LearnFSharp/Kattis/Program.fs"
+: 1605637098:0;ls
+: 1605652414:0;rm -rf Kattis.fsproj
+: 1605652419:0;rm -rf bin
+: 1605652423:0;rm -rf coverage
+: 1605652426:0;rm -rf obj
+: 1605652432:0;cat Program.fs
+: 1605652574:0;te Program.fs
+: 1605652590:0;dotnet fsi
+: 1605652765:0;dotnet build\
+: 1605652768:0;dotnet build --help
+: 1605652784:0;dotnet run Program.fs
+: 1605652795:0;cd Kattis
+: 1605652801:0;dotnet build Program.fs
+: 1605652833:0;dotnet restore
+: 1605652884:0;mv Program.fs K.fs
+: 1605652905:0;dotnet new console -lang 'F#' -o . -n Kattis
+: 1605652933:0;mv K.fs Program.fs
+: 1605652940:0;dotnet build
+: 1605652950:0;dotnet publish
+: 1605652955:0;dotnet publish --help
+: 1605652978:0;dotnet publish --self-container -r linux
+: 1605652990:0;dotnet help
+: 1605652996:0;dotnet list
+: 1605653064:0;dotnet publish --self-container -p:PublishReadyToRun=true
+: 1605653068:0;dotnet publish --self-contained -p:PublishReadyToRun=true
+: 1605653080:0;dotnet publish -p:PublishReadyToRun=true
+: 1605653114:0;dotnet publish --self-contained true -p:PublishReadyToRun=true -p:PublishSingleFile=true
+: 1605653121:0;dotnet publish --self-contained=true -p:PublishReadyToRun=true -p:PublishSingleFile=true
+: 1605653145:0;dotnet publish --self-contained=true -p:PublishReadyToRun=true -p:PublishSingleFile=true -r linux-x64
+: 1605653164:0;l bin/Debug/netcoreapp3.1/Kattis
+: 1605653171:0;./bin/Debug/netcoreapp3.1/Kattis
+: 1605653180:0;l ./bin/Debug/netcoreapp3.1
+: 1605653220:0;cp /bin/Debug/netcoreapp3.1/Kattis .
+: 1605653246:0;cp ./bin/Debug/netcoreapp3.1/Kattis .
+: 1605653265:0;cp ./bin/Debug/netcoreapp3.1/Kattis.dll .
+: 1605653267:0;./Kattis
+: 1605653342:0;dotnet publish --self-contained true -p:PublishReadyToRun=true -p:PublishSingleFile=true -r linux-x64
+: 1605653352:0;rm Kattis
+: 1605653355:0;rm Kattis.dll
+: 1605653463:0;dotnet publish --self-contained true -p:PublishReadyToRun=true -p:PublishSingleFile=true -r win
+: 1605653537:0;dotnet publish --self-contained true -p:PublishReadyToRun=true -p:PublishSingleFile=true -r win-x64
+: 1605653551:0;dotnet publish --self-contained true -p:PublishReadyToRun=false -p:PublishSingleFile=true -r win-x64
+: 1605653557:0;l bin/Debug/netcoreapp3.1/
+: 1605662094:0;dotnet publish -r win-x64 -p:PublishSingleFile=true --self-contained true
+: 1605662106:0;dotnet publish -r win-x64 -p:PublishSingleFile=true --self-contained true -c Release
+: 1605662132:0;./bin/Release/netcoreapp3.1/win-x64/FSTestApp.exe
+: 1605662140:0;bin/Release/netcoreapp3.1/win-x64/FSTestApp.exe
+: 1605662155:0;./bin/Release/netcoreapp3.1/win-x64/Kattis.exe
+: 1605662204:0;dotnet publish -r linux-x64 -p:PublishSingleFile=true --self-contained true
+: 1605662254:0;dotnet publish -r win-x64 -p:PublishSingleFile=true --self-contained true -c Release  -p:PublishReadyToRun=true
+: 1605662268:0;dotnet publish -r linux-x64 -p:PublishSingleFile=true --self-contained true -c Release  -p:PublishReadyToRun=true
+: 1605662429:0;rm -rf bin/Release/netcoreapp3.1/linux-x64/
+: 1605662431:0;dotnet publish -r linux-x64 -p:PublishSingleFile=true --self-contained true -c Release  -p:PublishReadyToRun=true -p:PublishTrimmed=true
+: 1605662451:0;./bin/Release/netcoreapp3.1/linux-x64/Kattis
+: 1605662457:0;ls -al ./bin/Release/netcoreapp3.1/linux-x64/Kattis
+: 1605663250:0;Personal
+: 1605663268:0;hg commit -m "updates"
+: 1605715179:0;projects
+: 1605715191:0;cd ~/Projects/Exp
+: 1605715199:0;Projects
+: 1605715244:0;cd ../Personal
+: 1605715250:0;cd narendraj9.github.io
+: 1605750185:0;hg add .
+: 1605750220:0;hg commit -m "updated structure and added html inclusiopns and css"
+: 1605797992:0;hg pull
+: 1605798002:0;hg up
+: 1605798138:0;ainq-web-client-framework
+: 1605798189:0;gd  475df6e
+: 1605799002:0;cat package.json | grep framewo
+: 1605804568:0;g clone https://git.ainq.com/ai-platform-development/business-web-services/ainq-prompt-service.git
+: 1605810119:0;python --versio
+: 1605815335:0;hg commit -m "switched to HTML5"
+: 1605816756:0;l public
+: 1605818387:0;emacs --version
+: 1605818412:0;emacs --not-init --load publish.el
+: 1605818433:0;emacs --no-init --load publish.el
+: 1605837129:0;l ainq-microservice-framework
+: 1605837144:0;l ainq-microservice-framework/examples/db
+: 1605837156:0;less ainq-microservice-framework/examples/services/users-service.js
+: 1605837178:0;less ainq-microservice-framework/examples/index.js
+: 1605837226:0;less ainq-microservice-framework/examples/db/index.js
+: 1605837247:0;less ainq-microservice-framework/examples/config/index.js
+: 1605840777:0;rm public/*
+: 1605841074:0;hg commit -m "Previews for blogs working"
+: 1605841635:0;l public/assets/
+: 1605841696:0;touch publish.el
+: 1605886268:0;cat prompt-service-workspace.code-workspace
+: 1605886309:0;cat docker-compose.yml
+: 1605886352:0;l src/index.
+: 1605886354:0;l src/index.js
+: 1605886357:0;less src/index.js
+: 1605886403:0;cd ../ainq-microservice-framework
+: 1605886428:0;g log -p HEAD
+: 1605886453:0;g log
+: 1605886457:0;g log HEAD
+: 1605886463:0;g log --stat HEAD
+: 1605890052:0;hg commit -m "added iosevka fonts"
+: 1605895557:0;hg commit -m "updated navigation menu"
+: 1605933220:0;cp public/assets/css/site.css assets/css/.
+: 1605934283:0;hg commit -m "fixing CSS and adding some blockquote for testing"
+: 1606018762:0;hg commit -m "adjust css and previews"
+: 1606102960:0;hg book back-to-org
+: 1606103684:0;hg "moves content images to under /src"
+: 1606103692:0;hg commit "moves content images to under /src"
+: 1606103708:0;hg commit -m "moves content images to under /src"
+: 1606105444:0;l src/blog
+: 1606140418:0;cd ~/Projects/PULSE
+: 1606140440:0;cd ainq-prompt-service
+: 1606145167:0;g co -b filter-api
+: 1606145175:0;g merge master
+: 1606148139:0;hg commit -m "moved images and created tags from keywords for a blog index page"
+: 1606148175:0;apt-cache search scss
+: 1606148234:0;apt-cache search sass
+: 1606148539:0;cd ~/.bin
+: 1606148550:0;echo $PATH
+: 1606148562:0;curl -O https://github.com/sass/dart-sass/releases/download/1.29.0/dart-sass-1.29.0-linux-x64.tar.gz
+: 1606148572:0;tar xzvf dart-sass-1.29.0-linux-x64.tar.gz
+: 1606148610:0;wget https://github.com/sass/dart-sass/releases/download/1.29.0/dart-sass-1.29.0-linux-x64.tar.gz
+: 1606148627:0;rm dart-sass-1.29.0-linux-x64.tar.gz
+: 1606148636:0;tar xzvf dart-sass-1.29.0-linux-x64.tar.gz.1
+: 1606148647:0;l dart-sass/src
+: 1606148661:0;l dart-sass
+: 1606148667:0;l dart-sass/sass 
+: 1606148673:0;cat dart-sass/sass 
+: 1606148721:0;rm dart-sass-1.29.0-linux-x64.tar.gz.1
+: 1606148728:0;cd dar
+: 1606148731:0;cd dart-sass
+: 1606148744:0;mv sass ../.
+: 1606148754:0;mv src/dart ../.
+: 1606148762:0;mv src/sass.snapshot ../.
+: 1606148777:0;rm -rf dart-sass
+: 1606148785:0;vim sass
+: 1606148811:0;sass
+: 1606152425:0;sass assets/css/site.scss assets/css/site.css
+: 1606160063:0;cp -R openapi /mnt/c/Users/esharapov/Projects/PULSE/.
+: 1606184437:0;rm -rf openapi
+: 1606184463:0;cp -R /mnt/c/Users/esharapov/Projects/PULSE/openapi .
+: 1606184518:0;gcmsg "OPEB-1599: change OpenAPI specs for filter API"
+: 1606184537:0;g push --set-upstream origin filter-api
+: 1606184934:0;npm install openapi2schema
+: 1606184994:0;gcmsg "OPEB-1599: updated combined schema and OpenAPI spec"
+: 1606186256:0;npm install nodemon
+: 1606187872:0;ag region
+: 1606190214:0;gm
+: 1606190328:0;cat /mnt/c/Users/esharapov/.zsh_history | grep white
+: 1606190338:0;cat /mnt/c/Users/esharapov/.zsh_history | grep convert
+: 1606190343:0;cat /mnt/c/Users/esharapov/.zsh_history | grep mog
+: 1606190378:0;apt-cache search imagemagick
+: 1606190410:0;sudo apt-get install imagemagick
+: 1606190462:0;mv ../Downloads/whiteboard .
+: 1606190468:0;chmod u+x whiteboard
+: 1606190471:0;./whiteboard
+: 1606190640:0;cp ../Downloads/image0.jpeg .
+: 1606190646:0;rm ../Downloads/image0.jpeg
+: 1606190649:0;rm ../Downloads/image0\ \(1\).jpeg
+: 1606190699:0;./whiteboard -e none -f 12 -o 3 image0.jpeg image0.pdf
+: 1606190722:0;./whiteboard -e none -f 12 -o 3 image0.jpeg image_0.jpeg
+: 1606191821:0;cp ../Downloads/PXL_20201124_042025799.jpg w2_2018.jpeg
+: 1606191848:0;./whiteboard -e none -f 12 -o 3 w2_2018.jpeg w2_2018_c.jpeg
+: 1606193048:0;cp .env ../ainq-prompt-service/.
+: 1606193852:0;gcmsg "OPEB-1599: added filters API and service"
+: 1606193930:0;gcmsg "OPEB-1599: trying to start the service"
+: 1606194126:0;cat linux-install-1.10.1.536.sh
+: 1606194141:0;rm -rf w2_2018.jpeg
+: 1606194145:0;rm w2_2018_c.jpeg
+: 1606194148:0;cd website
+: 1606235721:0;g co feature/promptDocdbClient
+: 1606235995:0;vim package.json
+: 1606236015:0;npm link .
+: 1606236062:0;cat /mnt/c/Users/esharapov/.zsh_history | grep npm
+: 1606236068:0;cat /mnt/c/Users/esharapov/.zsh_history | grep npm | grep link
+: 1606236167:0;cat ~/npm
+: 1606236172:0;cat ~/.npm
+: 1606236174:0;l ~/.npm
+: 1606236269:0;export NPM_PACKAGES=$HOME/.npm
+: 1606236363:0;vim ~/.npmrc
+: 1606236393:0;npm link ../ainq-microservice-framework
+: 1606236483:0;npm i nodemon
+: 1606236541:0;ag BaseModel
+: 1606236814:0;npm run build:link
+: 1606237049:0;less /home/esharapov/.npm/_logs/2020-11-24T16_56_24_299Z-debug.log
+: 1606237089:0;npm run buil;d
+: 1606237117:0;npm link /home/esharapov/Projects/PULSE/ainq-microservice-framework
+: 1606237351:0;node run test
+: 1606237370:0;npm run integration:test 
+: 1606237459:0;curl --location --request GET 'http://localhost:3000/prompt/v1/users' \\
+
+: 1606237525:0;curl -x GET -H 'x-tenant-id: AINQ' http://localhost:3000/prompt/v1/users 
+: 1606237599:0;cp ../ainq-microservice-framework/.env .
+: 1606237622:0;curl -H 'x-tenant-id: AINQ' http://localhost:3000/prompt/v1/users 
+: 1606237680:0;cat .env
+: 1606245021:0;npm i --save-dev nodemon
+: 1606245056:0;gf
+: 1606245077:0;gcmsg "OPEB-1599: updated deps"
+: 1606245122:0;rm -rf node_modeules
+: 1606245133:0;g lag
+: 1606245143:0;npm link --help
+: 1606245338:0;gcmsg "OPEB-1599: updates to package*"
+: 1606245408:0;gcmsg "OPEB-1599: updated package files"
+: 1606245433:0;gcmsg "OPEB-1599: updated package lock file"
+: 1606245509:0;gd feature/notification-list
+: 1606245587:0;g cat --help
+: 1606245601:0;g cat-file --help
+: 1606245656:0;g cat-file feature/notification-list -- src/index.js
+: 1606245688:0;g cat-file --path=src/index.js feature/notification-list
+: 1606245740:0;g co feature/notification-list -- src/index.js
+: 1606245746:0;gd --cached
+: 1606245891:0;gd --stat feature/notification-list
+: 1606245950:0;gcmsg "OPEB-1599: modification to service configuration for a whole prompt"
+: 1606246051:0;gcmsg "OPEB-1599: modification to service configuration for a whole prompt" --no-verify
+: 1606246339:0;rm openapi/readme.md
+: 1606246345:0;rm src/db/index.js
+: 1606246360:0;g remove .
+: 1606249066:0;curl -H 'x-tenant-id: AINQ' http://localhost:3000/prompt/v1/filters 
+: 1606249570:0;curl -X POST -H 'Content-Type: application/json' https://api.dev-ainqapps.com/common/v1/authorize -d '{'
+: 1606249621:0;curl -X POST -H 'Content-Type: application/json' https://api.dev-ainqapps.com/common/v1/authorize -d '{ "tenantCode" : "AINQ", "username": "sysadmin", "password": "Password1"}'
+: 1606249635:0;curl -X POST -H 'Content-Type: application/json' https://api.dev-ainqapps.com/common/v1/authorize -d '{ "tenantCode" : "TESTTENANT", "username": "sysadmin", "password": "Password1"}'
+: 1606249827:0;gdy
+: 1606250258:0;vim .env
+: 1606250716:0;curl -X POST -H 'Content-Type: application/json' https://api.dev-ainqapps.com/common/v1/authorize -d '{ "tenantCode" : "AINQ", "username": "esharapov", "password": "Password1"}'
+: 1606250729:0;curl -X POST -H 'Content-Type: application/json' https://api.dev-ainqapps.com/common/v1/authorize -d '{ "tenantCode" : "TESTTENANT", "username": "esharapov", "password": "Password1"}'
+: 1606250842:0;curl -H 'x-tenant-code: AINQ' -H 'x-tenant-id: AINQ' -H 'x-application-id: PROMPT' http://localhost:3000/prompt/v1/filters 
+: 1606250856:0;curl -H 'x-tenant-code: TESTTENANT' -H 'x-tenant-id: TESTTENANT' -H 'x-application-id: PROMPT' http://localhost:3000/prompt/v1/filters 
+: 1606271911:0;ag 7220
+: 1606272818:0;apt-cache search optipng
+: 1606272840:0;sudo apt-get install optipng
+: 1606272875:0;convert --help
+: 1606272879:0;ql
+: 1606272888:0;l src
+: 1606272914:0;mkdir assets/img
+: 1606272933:0;cp /mnt/c/Users/esharapov/Dropbox/face-small.png assets/img/.
+: 1606272937:0;cd assets/img
+: 1606272948:0;man optipng
+: 1606272999:0;optipng face-small.png -out face-small-opt.png
+: 1606273071:0;identify face-small.png
+: 1606273078:0;identify face-small-opt.png
+: 1606273222:0;convert -resize face-small.png face-smaller.png
+: 1606273229:0;convert -resize 50% face-small.png face-smaller.png
+: 1606273255:0;convert -resize 25% face-small.png face-smallest.png
+: 1606273273:0;optipng --help
+: 1606273316:0;optipng -o7 face-smallest.png -out face-smallest-opt.png
+: 1606273380:0;rm face-smallest-opt.png
+: 1606273383:0;optipng -o7 -zm1-9 face-smallest.png -out face-smallest-opt.png
+: 1606273582:0;gcmsg "OPEB-1599: removed security around API"
+: 1606273597:0;gcmsg "OPEB-1599: removed security around API" --no-verify
+: 1606273664:0;g log -p
+: 1606275935:0;cd ../..
+: 1606278038:0;rm -rf ~/.org-timestamps && make
+: 1606317764:0;curl --location --request POST 'http://localhost:3000/prompt/v1/notifications?page=19&pagesize=20&to=1606248155' \\
+--header 'x-tenant-id: AINQ' \\
+--header 'Content-Type: application/json' \\
+--data-raw '{\
+  "include": {\
+    "total": true,\
+    "since": true,\
+    "params": false,\
+    "dbQuery": true\
+  },\
+  "nameMrn": "John Doe"\
+}'
+: 1606317785:0;curl --location --request POST 'http://localhost:3000/prompt/v1/notifications?page=1&pagesize=20&to=1606248155' \\
+--header 'x-tenant-id: AINQ' \\
+--header 'Content-Type: application/json' \\
+--data-raw '{\
+  "include": {\
+    "total": true,\
+    "since": true,\
+    "params": false,\
+    "dbQuery": true\
+  },\
+  "nameMrn": "John Doe"\
+}'
+: 1606333480:0;gcmsg "OPEB-1599: added console logging"
+: 1606333639:0;gcmsg "OPEB-1599: added console logging" --no-verify
+: 1606334037:0;curl --location --request POST 'http://localhost:3000/prompt/v1/filters' \\
+--header 'x-tenant-id: AINQ' \\
+--header 'Content-Type: application/json' \\
+--data-raw '{\
+  "include": {\
+    "total": true,\
+    "since": true,\
+    "params": false,\
+    "dbQuery": true\
+  },\
+  "nameMrn": "John Doe"\
+}'
+: 1606334207:0;gcmsg "OPEB-1599: available endpoint for filters"
+: 1606335202:0;npm run spec2jss 
+: 1606335217:0;less package.json
+: 1606361522:0;gcmsg "OPEB-1599: amended the prompt API yaml file importing schemas explicitly"
+: 1606361730:0;te
+: 1606361764:0;te ~/.dotfiles
+: 1606361791:0;hg s t
+: 1606361815:0;hg help cm
+: 1606361861:0;hg cm "added prefix for 'npm link' that would put packages into HOME/.npm-packages"
+: 1606362068:0;npx
+: 1606362084:0;cat ~/.oh-my-zsh/plugins/npx/README.md
+: 1606362092:0;cat ~/.oh-my-zsh/plugins/npx/npx.plugin.zsh
+: 1606362104:0;cat ~/.oh-my-zsh/plugins/npm/npm.plugin.zsh
+: 1606362239:0;cat ~/.oh-my-zsh/plugins/git/git.plugin.zsh
+: 1606362367:0;cat ~/.oh-my-zsh/plugins/git-extras/README.md
+: 1606362393:0;cat ~/.oh-my-zsh/plugins/git-extras/git-extras.plugin.zsh
+: 1606362796:0;cd ~/Projects/PULSE/ainq-prompt-service
+: 1606363511:0;gcmsg "OPEB-1599: updated combined OpenAPI spec"
+: 1606363523:0;npm run spec2jss
+: 1606363737:0;npx openapi
+: 1606363751:0;npx openapi2schema
+: 1606364309:0;npx openapi2schema -i openapi/schema/filter.base.v1.yaml
+: 1606364319:0;npx openapi2schema -i openapi/combined/prompt.yaml -p
+: 1606763976:0;g pushj
+: 1606764873:0;hg add ,
+: 1606764894:0;hg commit "going back to org style roots"
+: 1606764902:0;hg commit -m "going back to org style roots"
+: 1606765138:0;sass assets/css/styles.scss assets/css/styles.css
+: 1606765144:0;make
+: 1606765379:0;man watch
+: 1606765464:0;watch -n 0.5 sass assets/css/styles.scss assets/css/styles.css && make
+: 1606789327:0;watch -n 1 sass assets/css/styles.scss assets/css/styles.css && rm -rf ~/.org-timestamps && make
+: 1606844426:0;npm run build
+: 1606844482:0;gcmsg "OPEB-1600: updated api"
+: 1606844493:0;gcmsg "OPEB-1600: updated api" --no-verify
+: 1606844604:0;rm -rf node_modules
+: 1606844680:0;gcmsg "OPEB-1600: updated version of the ainq-microservice-framework"
+: 1606851165:0;curl --location --request GET 'http://localhost:3000/prompt/v1/filters' \\
+--header 'x-tenant-id: AINQ' \\
+--header 'Content-Type: application/json'
+: 1606851225:0;ag api-
+: 1606851245:0;gitk.exe --all
+: 1606852384:0;gcmsg "OPEB-1600: updated with /api-docs url pointing to prompt API spec YAML file"
+: 1606852397:0;gcmsg "OPEB-1600: updated with /api-docs url pointing to prompt API spec YAML file" --no-verify
+: 1606860408:0;hg commit -m "added svg icons"
+: 1606877476:0;hg commit -m "moved out default org-mode css"
+: 1606879635:0;hg cm "ok styles in blog list"
+: 1606882524:0;hg add
+: 1606882564:0;hg cm "styles are mostly done, only top navigation left. Also links to social stuff needs to be fixed"
+: 1606885656:0;g co feature/notification-list
+: 1606885701:0;g merge feature/notification-list
+: 1606886016:0;ga openapi
+: 1606886027:0;ga src/index.js
+: 1606886285:0;ga package-lock.json
+: 1606890291:0;sass assets/css/styles.scss assets/css/styles.css && make
+: 1606893159:0;hg cm "updated menu styles and structure"
+: 1606927405:0;hg cm "added styles for inline text and kbd elements"
+: 1606933059:0;gcmsg "OPEB-1414: updates and tests of dispatch and datadg connection"
+: 1606933394:0;ag meterRegistry.counter
+: 1606942396:0;hg cm "styled footnotes"
+: 1606943279:0;hg revert -Ca
+: 1606962996:0;rm public
+: 1606963000:0;rm -rf public
+: 1606963005:0;rm -rf public/*
+: 1606968987:0;hg cm "finally have clickable SVG objects into bottom links"
+: 1606969315:0;sass assets/css/styles.scss assets/css/styles.css && rm -rf ~/.org-timestamps && make
+: 1606970137:0;hg cm "corrected styles for the main element"
+: 1606972711:0;hg cm "add plugins for npx and npm"
+: 1606974672:0;ainq-microservice-framework
+: 1607008375:0;npm link
+: 1607008410:0;npm link ainq-microservice-framework
+: 1607014090:0;emacsclient -e '(kill-emacs)'
+: 1607014102:0;emacs --daemon
+: 1607014244:0;emacsclient --help
+: 1607014277:0;which e
+: 1607014357:0;e -e '(kill-emacs)'
+: 1607014967:0;.dotfile
+: 1607014978:0;hg ou
+: 1607014995:0;ghc
+: 1607015003:0;stack
+: 1607015036:0;which te
+: 1607016459:0;rm -rf .ionide
+: 1607016501:0;gcmsg "OPEB-1600: updated filter service and api files"
+: 1607017702:0;ag readNotification
+: 1607018089:0;npm run build:spec
+: 1607018159:0;echo '{}' >> .test.db.config.json
+: 1607019728:0;curl --location --request POST 'http://localhost:3000/prompt/v1/notifications?page=19&to=1606248155&pagesize=2000' \\
+--header 'x-tenant-id: AINQ' \\
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoTWV0aG9kIjoiTE9DQUwiLCJzZXNzaW9uSWQiOiI3YTRkY2UxYS1iMWNhLTQ0NTUtYTk4YS1jMjkxYzRjNzVkOTciLCJyZXF1aXJlbWVudHMiOltdLCJwZXJtaXNzaW9ucyI6eyJwb3J0YWwiOlsicG9ydGFsOmFsbCJdLCJ0ZW5hbnRzdmNzIjpbImFwcGxpY2F0aW9uOmNyZWF0ZSIsImFwcGxpY2F0aW9uOmRlbGV0ZSIsImFwcGxpY2F0aW9uOnJlYWQiLCJhcHBsaWNhdGlvbjp1cGRhdGUiLCJlbnZpcm9ubWVudDpleHBvcnQiLCJlbnZpcm9ubWVudDppbXBvcnQiLCJwb29sOmNyZWF0ZSIsInBvb2w6ZGVsZXRlIiwicG9vbDpyZWFkIiwicG9vbDp1cGRhdGUiLCJwcm92aXNpb246Y3JlYXRlIiwicHJvdmlzaW9uOmRlbGV0ZSIsInByb3Zpc2lvbjpyZWFkIiwicHJvdmlzaW9uOnJ1biIsInByb3Zpc2lvbjp1cGRhdGUiLCJyZXNvdXJjZTpjcmVhdGUiLCJyZXNvdXJjZTpkZWxldGUiLCJyZXNvdXJjZTpyZWFkIiwicmVzb3VyY2U6dXBkYXRlIiwidGVuYW50OmNyZWF0ZSIsInRlbmFudDpkZWxldGUiLCJ0ZW5hbnQ6cmVhZCIsInRlbmFudDp1cGRhdGUiLCJhcHBsaWNhdGlvbjpyZWFkIiwiYXBwbGljYXRpb246dXBkYXRlIiwicG9vbDpyZWFkIiwicHJvdmlzaW9uOnJlYWQiLCJyZXNvdXJjZTpyZWFkIiwidGVuYW50OnJlYWQiLCJ0ZW5hbnQ6dXBkYXRlIiwiYXBwbGljYXRpb246cmVhZCIsImFwcGxpY2F0aW9uOnVwZGF0ZSIsImVudmlyb25tZW50OmV4cG9ydCIsImVudmlyb25tZW50OmltcG9ydCIsInBvb2w6Y3JlYXRlIiwicG9vbDpyZWFkIiwicG9vbDp1cGRhdGUiLCJwcm92aXNpb246cmVhZCIsInByb3Zpc2lvbjpydW4iLCJyZXNvdXJjZTpjcmVhdGUiLCJyZXNvdXJjZTpyZWFkIiwicmVzb3VyY2U6dXBkYXRlIiwidGVuYW50OmNyZWF0ZSIsInRlbmFudDpyZWFkIiwidGVuYW50OnVwZGF0ZSJdLCJwdWxzZSI6WyJwdWxzZTphbGwiLCJwdWxzZTptZWRpY2F0aW9ucyIsInB1bHNlOmFsbCIsInB1bHNlOm1lZGljYXRpb25zIl0sImFkbWluIjpbImFkbWluOmFsbCIsImFkbWluOmFsbCJdLCJtZWRpY2F0aW9ucyI6WyJtZWRpY2F0aW9uczphbGwiXSwiZWMiOlsiZWM6YWxsIl19LCJ1c2VyIjp7ImlkIjoiNGQyZjJjOGMtM2ZlOC00YmU3LWFmMjYtODMyOTk0OWUxMWYyIiwidXNlcm5hbWUiOiJzeXNhZG1pbiIsInRpdGxlIjoiIiwiZmlyc3ROYW1lIjoic3lzYWRtaW4iLCJtaWRkbGVOYW1lIjoiIiwibGFzdE5hbWUiOiJzeXNhZG1pbiIsImNvbnRhY3QiOnsiZW1haWwiOiJzeXNhZG1pbkBzeXNhZG1pbi5jb20iLCJwaG9uZSI6IjU1NS01NTUtNTU1NSJ9fSwidGVuYW50Ijp7ImlkIjoiQUlOUSIsImNvZGUiOiJhaW5xIiwibmFtZSI6IkF1ZGFjaW91cyBJbnF1aXJ5IFVwZGF0ZWQiLCJjb250YWN0Ijp7ImVtYWlsIjoiIiwicGhvbmUiOiIifX0sIm9yZ2FuaXphdGlvbiI6eyJpZCI6ImFpbnEiLCJjb2RlIjoiYWlucSIsIm5hbWUiOiJEZWZhdWx0IE9yZ2luaXphdGlvbiIsImNvbnRhY3QiOnsiZW1haWwiOiIiLCJwaG9uZSI6IiJ9fSwiaWF0IjoxNjA2MzMxMTAxLCJuYmYiOjE2MDYzMzExMDEsImV4cCI6MTYwNjMzNDcwMX0.joHfdTINpFzSDu3Oho5U27i4pBcZIvBCEZx69Zn2GXU' \\
+--header 'Content-Type: application/json' \\
+--data-raw '{\
+  "include": {\
+    "total": true,\
+    "since": true,\
+    "params": true,\
+    "dbQuery": true\
+  },\
+  "nameMrn": "John Doe"\
+}'
+: 1607019764:0;fc --help
+: 1607019778:0;fc -h
+: 1607019782:0;man fc
+: 1607019822:0;fc 1265
+: 1607019877:0;curl --location --request POST 'http://localhost:3000/prompt/v1/notifications?page=19&to=1606248155&pagesize=2000' \\
+--header 'x-tenant-id: AINQ' \\
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoTWV0aG9kIjoiTE9DQUwiLCJzZXNzaW9uSWQiOiIzZTBmMjAzZS04ZWIyLTQ0MzktOGVlNi01MzVhNmQ0ZGFiYzciLCJyZXF1aXJlbWVudHMiOltdLCJwZXJtaXNzaW9ucyI6eyJwb3J0YWwiOlsicG9ydGFsOmFsbCJdLCJ0ZW5hbnRzdmNzIjpbImFwcGxpY2F0aW9uOmNyZWF0ZSIsImFwcGxpY2F0aW9uOmRlbGV0ZSIsImFwcGxpY2F0aW9uOnJlYWQiLCJhcHBsaWNhdGlvbjp1cGRhdGUiLCJlbnZpcm9ubWVudDpleHBvcnQiLCJlbnZpcm9ubWVudDppbXBvcnQiLCJwb29sOmNyZWF0ZSIsInBvb2w6ZGVsZXRlIiwicG9vbDpyZWFkIiwicG9vbDp1cGRhdGUiLCJwcm92aXNpb246Y3JlYXRlIiwicHJvdmlzaW9uOmRlbGV0ZSIsInByb3Zpc2lvbjpyZWFkIiwicHJvdmlzaW9uOnJ1biIsInByb3Zpc2lvbjp1cGRhdGUiLCJyZXNvdXJjZTpjcmVhdGUiLCJyZXNvdXJjZTpkZWxldGUiLCJyZXNvdXJjZTpyZWFkIiwicmVzb3VyY2U6dXBkYXRlIiwidGVuYW50OmNyZWF0ZSIsInRlbmFudDpkZWxldGUiLCJ0ZW5hbnQ6cmVhZCIsInRlbmFudDp1cGRhdGUiLCJhcHBsaWNhdGlvbjpyZWFkIiwiYXBwbGljYXRpb246dXBkYXRlIiwicG9vbDpyZWFkIiwicHJvdmlzaW9uOnJlYWQiLCJyZXNvdXJjZTpyZWFkIiwidGVuYW50OnJlYWQiLCJ0ZW5hbnQ6dXBkYXRlIiwiYXBwbGljYXRpb246cmVhZCIsImFwcGxpY2F0aW9uOnVwZGF0ZSIsImVudmlyb25tZW50OmV4cG9ydCIsImVudmlyb25tZW50OmltcG9ydCIsInBvb2w6Y3JlYXRlIiwicG9vbDpyZWFkIiwicG9vbDp1cGRhdGUiLCJwcm92aXNpb246cmVhZCIsInByb3Zpc2lvbjpydW4iLCJyZXNvdXJjZTpjcmVhdGUiLCJyZXNvdXJjZTpyZWFkIiwicmVzb3VyY2U6dXBkYXRlIiwidGVuYW50OmNyZWF0ZSIsInRlbmFudDpyZWFkIiwidGVuYW50OnVwZGF0ZSJdLCJwdWxzZSI6WyJwdWxzZTphbGwiLCJwdWxzZTptZWRpY2F0aW9ucyIsInB1bHNlOmFsbCIsInB1bHNlOm1lZGljYXRpb25zIl0sImFkbWluIjpbImFkbWluOmFsbCIsImFkbWluOmFsbCJdLCJwcm9tcHQiOlsicHJvbXB0OmFsbCJdLCJtZWRpY2F0aW9ucyI6WyJtZWRpY2F0aW9uczphbGwiXSwiZWMiOlsiZWM6YWxsIl19LCJ1c2VyIjp7ImlkIjoiNGQyZjJjOGMtM2ZlOC00YmU3LWFmMjYtODMyOTk0OWUxMWYyIiwidXNlcm5hbWUiOiJzeXNhZG1pbiIsInRpdGxlIjoiIiwiZmlyc3ROYW1lIjoic3lzYWRtaW4iLCJtaWRkbGVOYW1lIjoiIiwibGFzdE5hbWUiOiJzeXNhZG1pbiIsImNvbnRhY3QiOnsiZW1haWwiOiJzeXNhZG1pbkBzeXNhZG1pbi5jb20iLCJwaG9uZSI6IjU1NS01NTUtNTU1NSJ9fSwidGVuYW50Ijp7ImlkIjoiQUlOUSIsImNvZGUiOiJhaW5xIiwibmFtZSI6IkF1ZGFjaW91cyBJbnF1aXJ5IFVwZGF0ZWQiLCJjb250YWN0Ijp7ImVtYWlsIjoiIiwicGhvbmUiOiIifX0sIm9yZ2FuaXphdGlvbiI6eyJpZCI6ImFpbnEiLCJjb2RlIjoiYWlucSIsIm5hbWUiOiJEZWZhdWx0IE9yZ2luaXphdGlvbiIsImNvbnRhY3QiOnsiZW1haWwiOiIiLCJwaG9uZSI6IiJ9fSwiaWF0IjoxNjA3MDE5NjI5LCJuYmYiOjE2MDcwMTk2MjksImV4cCI6MTYwNzAyMzIyOX0.nwLiYiCGV7oYNU-8iWBrsiprnYqAzJZNm_lcF8vOP14' \\
+--header 'Content-Type: application/json' \\
+--data-raw '{\
+  "include": {\
+    "total": true,\
+    "since": true,\
+    "params": true,\
+    "dbQuery": true\
+  },\
+  "nameMrn": "John Doe"\
+}'
+: 1607023181:0;node_modules/.bin/mocha src/data-layer/db-client.integrationtest.js --grep="Should return all the notifications associated with PCP names, " --require @babel/register
+: 1607024129:0;ag registerMongooseMOdel
+: 1607024133:0;ag registerMongooseModel
+: 1607024146:0;te src/plugins/enterprise-tenant-services-plugin/database/odm/base-model.js
+: 1607026711:0;ga build/data-layer/schema/user-filter.schema.js
+: 1607026720:0;g delete build/data-layer/schema/user-filter.schema.js
+: 1607026730:0;g add --help
+: 1607026754:0;g remove --help
+: 1607026760:0;g delete --help
+: 1607026804:0;git add src/data-layer/schema/user-filter.schema.js
+: 1607026825:0;gcmsg "OPEB-1599: specified filter type in TS instead of schema"
+: 1607026884:0;npm i --save-dev typescript-json-schema
+: 1607026963:0;./node_modules/.bin/typescript-json-schema
+: 1607026979:0;./node_modules/.bin/typescript-json-schema src/data-layer/schema/filter-types.ts
+: 1607027028:0;./node_modules/.bin/typescript-json-schema src/data-layer/schema/filter-types.ts *
+: 1607027813:0;ga package*
+: 1607027847:0;ga src/data-layer/schema/filter-types.ts
+: 1607028061:0;gcmsg "OPEB-1599: added typescript to JSON schema conversion"
+: 1607049550:0;which gts
+: 1607049577:0;./node_modules/.bin/typescript-json-schema src/data-layer/schema/filter-types.ts Filter
+: 1607049587:0;l openapi
+: 1607049591:0;l openapi/json-schema
+: 1607049600:0;l openapi/schema
+: 1607049617:0;./node_modules/.bin/typescript-json-schema src/data-layer/schema/filter-types.ts Filter > openapi/json-schema/filter.v1.json
+: 1607049657:0;npm i mongoosify
+: 1607049794:0;l tool
+: 1607049809:0;te tool/mongoosify.js
+: 1607050024:0;node tool/mongoosify.js
+: 1607050120:0;te node_modules/mongoosify/mongoosify.js
+: 1607050193:0;te node_modules/mongoosify/README.md
+: 1607050693:0;npm i json-schema-to-mongoose-5 -S
+: 1607050768:0;npm i json-schema-to-mongoose
+: 1607052595:0;te node_modules/json-schema-to-mongoose/README.md
+: 1607052621:0;te node_modules/json-schema-to-mongoose/index.js
+: 1607055048:0;ga openapi/json-schema/filter.v1.json
+: 1607055064:0;gcmsg "OPEB-1599: added filter jSON schema"
+: 1607055075:0;gcmsg "OPEB-1599: added filter jSON schema" --no-verify
+: 1607055087:0;rm tool/mongoosify.js
+: 1607055117:0;gcmsg "OPEB-1599: modified user-filter-model" --no-verify
+: 1607055159:0;gcmsg "OPEB-1599: renamed user-filter-model to filter-model"
+: 1607055168:0;gcmsg "OPEB-1599: renamed user-filter-model to filter-model" --no-verify
+: 1607057065:0;node_modules/.bin/mocha src/data-layer/filter-mode.test.js --grep="FilterModel" --require @babel/register
+: 1607057483:0;node_modules/.bin/mocha src/data-layer/filter-mode.test.js --grep="Create and Find Methods" --require @babel/register
+: 1607057915:0;node_modules/.bin/mocha src/data-layer/filter-mode.test.js --grep="should create filter in DB. " --require @babel/register
+: 1607058067:0;node_modules/.bin/mocha src/data-layer/filter-mode.test.js --grep="should find filter in DB" --require @babel/register
+: 1607058278:0;node_modules/.bin/mocha src/data-layer/filter-model.test.js --grep="Create and Find Methods" --require @babel/register
+: 1607059116:0;gcmsg "OPEB-1600: working filter-model and its integration test"
+: 1607059222:0;cat .git/hooks/husky.sh
+: 1607059306:0;gcmsg "OPEB-1601: added test to pre commit hook"
+: 1607059376:0;gcmsg "OPEB-1601: prettifier changed code slighlty"
+: 1607100765:0;npm run build:jss
+: 1607113263:0;gcmsg "OPEB-1600: moved JSON-Schema for filter to src/schema, added generating JSON schema from TS" 
+: 1607113375:0;gcan!
+: 1607113478:0;gcmsg "OPEB-1600: removed superfluos files"
+: 1607113807:0;./node_modules/.bin/typescript-json-schema src/data-layer/schema/filter-types.ts FilterBase > src/schema/filter-base.schema.json
+: 1607114050:0;gcmsg "OPEB-1600: added json schema validation to the API code"
+: 1607114480:0;gcmsg "OPEB-1599: updated scripts generating json schema from TS"
+: 1607114996:0;cat  /home/esharapov/.npm/_logs/2020-12-04T20_48_03_970Z-debug.log 
+: 1607115286:0;cat ~/.npmrc
+: 1607115308:0;mv ~/.npmrc ~/.npmrc.bak
+: 1607115312:0;npm i ts-to-openapi --save-dev 
+: 1607115338:0;mv ~/.npmrc.bak ~/.npmrc
+: 1607115430:0;./node_modules/.bin/ts-to-openapi -f src/data-layer/schema/filter-types.ts -t Filter
+: 1607115612:0;./node_modules/.bin/ts-to-openapi -f src/data-layer/schema/filter-types.ts -t FilterBase --no-as-comments
+: 1607115615:0;./node_modules/.bin/ts-to-openapi -f src/data-layer/schema/filter-types.ts -t FilterBase --no-as-comment
+: 1607115993:0;./node_modules/.bin/ts-to-openapi -f src/data-layer/schema/filter-types.ts -t Expression --no-as-comment
+: 1607116778:0;./node_modules/.bin/ts-to-openapi -f src/data-layer/schema/filter-types.ts -t Filter --no-as-comment
+: 1607117185:0;g co openapi/*
+: 1607117197:0;gd -- src
+: 1607117224:0;gcmsg "OPEB-1600: updated TS with types of expressions in an expression group"
+: 1607117265:0;gd src
+: 1607117457:0;g co src
+: 1607117522:0;gd -- package.json
+: 1607117530:0;ga package.json
+: 1607117563:0;gcmsg "OPEB-1599: added typescript to openapi converter" 
+: 1607117652:0;gcmsg "OPEB-1599: added changes to generated json schema files for filter and filter-base"
+: 1607142055:0;popd
+: 1607142081:0;.dotfiles/
+: 1607142876:0;website
+: 1607142886:0;l svg
+: 1607142894:0;l assets
+: 1607142902:0;rm -rf svg
+: 1607142925:0;hg cm "removed superfluous SVGs"
+: 1607142950:0;python --version
+: 1607142956:0;cd public
+: 1607142969:0;python -m http.server 5000 &
+: 1607227769:0;thg
+: 1607310441:0;gcmsg "OPEB-1599: updated API specs with x-tenant-id header"
+: 1607311453:0;curl --location --request POST 'api.dev-ainqapps.com/common/v1/authorize' \\
+--header 'Content-Type: application/json' \\
+--data-raw '{\
+    "tenantCode": "AINQ",\
+    "username": "sysadmin",\
+    "password": "Password11!"\
+}\
+'
+: 1607311579:0;curl --location --request GET 'http://localhost:3000/prompt/v1/filters' \\
+--header 'x-tenant-id: AINQ' \\
+--header 'Content-Type: application/json' \\
+--data-raw '{\
+  "include": {\
+    "total": true,\
+    "since": true,\
+    "params": false,\
+    "dbQuery": true\
+  },\
+  "nameMrn": "John Doe"\
+}'
+: 1607311586:0;fc
+: 1607312244:0;curl --location --request GET 'http://localhost:3000/prompt/v1/filters' \\
+--header 'x-tenant-id: AINQ' \\
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoTWV0aG9kIjoiTE9DQUwiLCJzZXNzaW9uSWQiOiI4ZTkzZGM1OC0wNzliLTQ4N2QtODM4Zi1hMmZmZjE5MTNmNzciLCJyZXF1aXJlbWVudHMiOltdLCJwZXJtaXNzaW9ucyI6eyJwb3J0YWwiOlsicG9ydGFsOmFsbCJdLCJ0ZW5hbnRzdmNzIjpbImFwcGxpY2F0aW9uOmNyZWF0ZSIsImFwcGxpY2F0aW9uOmRlbGV0ZSIsImFwcGxpY2F0aW9uOnJlYWQiLCJhcHBsaWNhdGlvbjp1cGRhdGUiLCJlbnZpcm9ubWVudDpleHBvcnQiLCJlbnZpcm9ubWVudDppbXBvcnQiLCJwb29sOmNyZWF0ZSIsInBvb2w6ZGVsZXRlIiwicG9vbDpyZWFkIiwicG9vbDp1cGRhdGUiLCJwcm92aXNpb246Y3JlYXRlIiwicHJvdmlzaW9uOmRlbGV0ZSIsInByb3Zpc2lvbjpyZWFkIiwicHJvdmlzaW9uOnJ1biIsInByb3Zpc2lvbjp1cGRhdGUiLCJyZXNvdXJjZTpjcmVhdGUiLCJyZXNvdXJjZTpkZWxldGUiLCJyZXNvdXJjZTpyZWFkIiwicmVzb3VyY2U6dXBkYXRlIiwidGVuYW50OmNyZWF0ZSIsInRlbmFudDpkZWxldGUiLCJ0ZW5hbnQ6cmVhZCIsInRlbmFudDp1cGRhdGUiLCJhcHBsaWNhdGlvbjpyZWFkIiwiYXBwbGljYXRpb246dXBkYXRlIiwicG9vbDpyZWFkIiwicHJvdmlzaW9uOnJlYWQiLCJyZXNvdXJjZTpyZWFkIiwidGVuYW50OnJlYWQiLCJ0ZW5hbnQ6dXBkYXRlIiwiYXBwbGljYXRpb246cmVhZCIsImFwcGxpY2F0aW9uOnVwZGF0ZSIsImVudmlyb25tZW50OmV4cG9ydCIsImVudmlyb25tZW50OmltcG9ydCIsInBvb2w6Y3JlYXRlIiwicG9vbDpyZWFkIiwicG9vbDp1cGRhdGUiLCJwcm92aXNpb246cmVhZCIsInByb3Zpc2lvbjpydW4iLCJyZXNvdXJjZTpjcmVhdGUiLCJyZXNvdXJjZTpyZWFkIiwicmVzb3VyY2U6dXBkYXRlIiwidGVuYW50OmNyZWF0ZSIsInRlbmFudDpyZWFkIiwidGVuYW50OnVwZGF0ZSJdLCJwdWxzZSI6WyJwdWxzZTphbGwiLCJwdWxzZTptZWRpY2F0aW9ucyIsInB1bHNlOmFsbCIsInB1bHNlOm1lZGljYXRpb25zIl0sImFkbWluIjpbImFkbWluOmFsbCIsImFkbWluOmFsbCJdLCJwcm9tcHQiOlsicHJvbXB0OmFsbCJdLCJtZWRpY2F0aW9ucyI6WyJtZWRpY2F0aW9uczphbGwiXSwiZWMiOlsiZWM6YWxsIl19LCJ1c2VyIjp7ImlkIjoiNGQyZjJjOGMtM2ZlOC00YmU3LWFmMjYtODMyOTk0OWUxMWYyIiwidXNlcm5hbWUiOiJzeXNhZG1pbiIsInRpdGxlIjoiIiwiZmlyc3ROYW1lIjoic3lzYWRtaW4iLCJtaWRkbGVOYW1lIjoiIiwibGFzdE5hbWUiOiJzeXNhZG1pbiIsImNvbnRhY3QiOnsiZW1haWwiOiJzeXNhZG1pbkBzeXNhZG1pbi5jb20iLCJwaG9uZSI6IjU1NS01NTUtNTU1NSJ9fSwidGVuYW50Ijp7ImlkIjoiQUlOUSIsImNvZGUiOiJhaW5xIiwibmFtZSI6IkF1ZGFjaW91cyBJbnF1aXJ5IFVwZGF0ZWQiLCJjb250YWN0Ijp7ImVtYWlsIjoiIiwicGhvbmUiOiIifX0sIm9yZ2FuaXphdGlvbiI6eyJpZCI6ImFpbnEiLCJjb2RlIjoiYWlucSIsIm5hbWUiOiJEZWZhdWx0IE9yZ2luaXphdGlvbiIsImNvbnRhY3QiOnsiZW1haWwiOiIiLCJwaG9uZSI6IiJ9fSwiaWF0IjoxNjA3MzExNDI1LCJuYmYiOjE2MDczMTE0MjUsImV4cCI6MTYwNzMxNTAyNX0.qfZFZeK3xd0CY7rKZGewa-4mQR0R2gIURKvoL1xcgbw' \\
+--header 'Content-Type: application/json'
+: 1607312721:0;gcmsg "OPEB-1599: corrected issues with getting user id"
+: 1607313143:0;./node_modules/.bin/ts-to-openapi -f src/data-layer/schema/filter-types.ts -t Filter -t FilterBase --no-as-comment
+: 1607313409:0;./node_modules/.bin/ts-to-openapi -f src/data-layer/schema/filter-types.ts -t Filter,FilterBase --no-as-comment
+: 1607313426:0;./node_modules/.bin/ts-to-openapi -f src/data-layer/schema/filter-types.ts -t * --no-as-comment
+: 1607313440:0;./node_modules/.bin/ts-to-openapi -f src/data-layer/schema/filter-types.ts -t '*' --no-as-comment
+: 1607313607:0;npx ts-to-openapi -f src/data-layer/schema/filter-types.ts -t '*' --no-as-comment
+: 1607314182:0;./node_modules/.bin/ts-to-openapi -f src/data-layer/schema/filter-types.ts -t '*' --no-as-comment > openapi/schema/filterTypes.v1.yaml
+: 1607315752:0;npm run build:oas:bundle
+: 1607315836:0;ga openapi/schema/filterTypes.v1.yaml
+: 1607315849:0;rm src/schema/filter-.base-.v-1.schema.json
+: 1607315856:0;rm src/schema/response---3.schema.json
+: 1607315863:0;rm src/schema/response---4.schema.json
+: 1607315938:0;gcmsg "OPEB-1599:  fairly big refurbishment - put all filter related spec types into one file filterTypes.v1.yaml and change all necessary files/specs accordingly; added docs to README related to generating JSON schema and specs"
+: 1607316087:0;npx typescript-json-schema src/data-layer/schema/filter-types.ts Filter > src/schema/filter.schema.json
+: 1607316102:0;npx typescript-json-schema src/data-layer/schema/filter-types.ts FilterBase > src/schema/filter-base.schema.json
+: 1607316127:0;gcmsg "OPEB-1599: updated TS file and JSON schema"
+: 1607316644:0;gcmsg "OPEB-1599: basic CRUD API works"
+: 1607353282:0;npm i json-schema-to-jsdoc --save-dev
+: 1607353303:0;npx json-schema-to-jsdoc
+: 1607361300:0;node_modules/.bin/mocha src/domain-layer/mongo-query-builder.test.js --grep="handles OP = null" --require @babel/register
+: 1607361417:0;node_modules/.bin/mocha src/domain-layer/mongo-query-builder.test.js --grep="one expression in a group" --require @babel/register
+: 1607361501:0;node_modules/.bin/mocha src/domain-layer/mongo-query-builder.test.js --grep="handles NOT operator" --require @babel/register
+: 1607361797:0;node_modules/.bin/mocha src/domain-layer/mongo-query-builder.test.js --grep="handles null group operators" --require @babel/register
+: 1607367894:0;npx typescript-json-schema src/data-layer/schema/filter-types.ts ExpressionGroup > src/schema/expression-group.schema.json
+: 1607368184:0;npx typescript-json-schema --required src/data-layer/schema/filter-types.ts ExpressionGroup > src/schema/expression-group.schema.json
+: 1607370305:0;node_modules/.bin/mocha src/domain-layer/mongo-query-builder.test.js --grep="one expression group in a group" --require @babel/register
+: 1607370361:0;node_modules/.bin/mocha src/domain-layer/mongo-query-builder.test.js --grep="handles missing group operators" --require @babel/register
+: 1607371131:0;node_modules/.bin/mocha src/domain-layer/mongo-query-builder.test.js --grep="handles nested NOT operators" --require @babel/register
+: 1607372512:0;node_modules/.bin/mocha src/domain-layer/mongo-query-builder.test.js --grep="handles AND operators" --require @babel/register
+: 1607372565:0;node_modules/.bin/mocha src/domain-layer/mongo-query-builder.test.js --grep="handles OR operators" --require @babel/register
+: 1607372670:0;node_modules/.bin/mocha src/domain-layer/mongo-query-builder.test.js --grep="handles NOT operators" --require @babel/register
+: 1607372790:0;node_modules/.bin/mocha src/domain-layer/mongo-query-builder.test.js --grep="handles AND/OR operators" --require @babel/register
+: 1607372954:0;node_modules/.bin/mocha src/domain-layer/mongo-query-builder.test.js --grep="handles crazy combination 1" --require @babel/register
+: 1607372964:0;cd /home/esharapov/Projects/PULSE/ainq-prompt-service
+: 1607372964:0;node_modules/.bin/mocha src/domain-layer/mongo-query-builder.test.js --grep="Mongo Query Builder" --require @babel/register
+: 1607373658:0;g co package.json
+: 1607373662:0;g co package-lock.json
+: 1607373727:0;npm i ajv
+: 1607373800:0;gcmsg "OPEB-1599: added conversion of the filter expression into a Mongo Query"
+: 1607373868:0;g co filter-api
+: 1607374095:0;g merge --continue
+: 1607377689:0;gcmsg "OPEB-1600: changed name of the FilterModel test to integration test"
+: 1607378344:0;ga src
+: 1607378368:0;gcmsg "OPEB-1599: moved the classes related to Mongoose schema to their own module"
+: 1607457235:0;hg commit -m "start daemon on call to editor"
+: 1607457283:0;hg in
+: 1607488452:0;l Projects
+: 1607488464:0;code prompt-service-workspace.code-workspace
+: 1607488689:0;e .&
+: 1607531232:0;aws --version
+: 1607538736:0;adt-dispatch-service
+: 1607538756:0;idea &
+: 1607540442:0;cp samples/Inpatient,Auto.json samples/Inpatient,Auto-WrongIP.json
+: 1607540453:0;te samples/Inpatient,Auto-WrongIP.json
+: 1607540485:0;te samples/Inpatient,Auto.json
+: 1607541330:0;aws --profile=esharapov_ent sqs send-message --queue-url https://sqs.us-east-1.amazonaws.com/778079405878/adt-processing-queue --message-body file://samples/Inpatient,Auto.json
+: 1607542483:0;./gradlew dependencies
+: 1607542514:0;./gradlew dependencies > dependencies.txt
+: 1607542531:0;te dependencies.txt
+: 1607542977:0;aws --profile=esharapov_ent sns list-tpoics
+: 1607543002:0;l ~/.aws/credentials
+: 1607543055:0;aws --profile=enterprise-dev sns list-topics
+: 1607543454:0;aws --profile=esharapov_ent sns list-topics
+: 1607546432:0;l ~/.local/lib/python3.8/site-packages/mercurial/templates
+: 1607546442:0;l ~/.local/lib/python3.8/site-packages/mercurial/templates/map-cmdline.show
+: 1607546445:0;less ~/.local/lib/python3.8/site-packages/mercurial/templates/map-cmdline.show
+: 1607546461:0;less ~/.local/lib/python3.8/site-packages/mercurial/templates/map-cmdline.compact
+: 1607546491:0;te .hgrc.P3530-20190221
+: 1607546500:0;te .hgrc
+: 1607546897:0;echo $OSTYPE
+: 1607546912:0;echo $(hostname)
+: 1607546948:0;ainq-prompt-service
+: 1607547072:0;curl --location --request POST 'api.dev-ainqapps.com/common/v1/authorize' \\
+--header 'Content-Type: application/json' \\
+--data-raw '{\
+    "tenantCode": "TESTTENANT",\
+    "username": "sysadmin",\
+    "password": "Password11!"\
+}\
+'
+: 1607547893:0;g co -b filter-api-tweaks
+: 1607547922:0;gcmsg "OPEB-1575: added userId to the filter docs in mongoose"
+: 1607548166:0;gcmsg "OPEB-1575: removed versionkey property from Mongoose docs"
+: 1607548231:0;g co develop
+: 1607548244:0;g co filter-api-tweaks
+: 1607548248:0;g merge develop
+: 1607548316:0;npm run start
+: 1607548678:0;g push --set-upstream origin filter-api-tweaks
+: 1607614478:0;env
+: 1607614615:0;hg log --style=compact
+: 1607614652:0;hg config
+: 1607614658:0;hg config | grep user
+: 1607618373:0;hg book --help
+: 1607618379:0;hg book -d
+: 1607618393:0;hg book -d use-outline-zshrc
+: 1607619594:0;hg book remove-omz
+: 1607619982:0;te .oh-my-zsh/oh-my-zsh.sh
+: 1607620989:0;ag add-zsh-hook
+: 1607620995:0;rg add-zsh-hook
+: 1607621006:0;ag add-zsh
+: 1607621924:0;echo $ZDOTDIR
+: 1607622247:0;hg commit -m "moving things to zshrc\
+"
+: 1607622338:0;hg up -r 196
+: 1607622351:0;hg llga
+: 1607626434:0;which npx
+: 1607627856:0;te .dotfiles
+: 1607628666:0;cd LearnFSharp
+: 1607628696:0;dotnet new console -lang 'F#' -o ElegantFSharp
+: 1607628708:0;cd ElegantFSharp
+: 1607629121:0;dotnet fsi Mutation.fs
+: 1607629164:0;cp Mutation.fs Mutation.fsx
+: 1607629173:0;dotnet fsi Mutation.fsx
+: 1607629291:0;ldotnet fsi "/home/esharapov/Projects/FSharp/LearnFSharp/ElegantFSharp/Mutation.fsx"
+: 1607629298:0;dotnet fsi "/home/esharapov/Projects/FSharp/LearnFSharp/ElegantFSharp/Mutation.fsx"
+: 1607652781:0;pa aux | grep emacs
+: 1607652785:0;ps aux | grep emacs
+: 1607652802:0;man grep
+: 1607654397:0;hg book working
+: 1607654408:0;hg book
+: 1607654418:0;hg up remove-omz
+: 1607655519:0;ls -d ${^~*:-*}(/)
+: 1607655572:0;histgrep () { fc -fl -m "*(#i)$1*" 1 | grep -i --color $1 }
+: 1607655579:0;histgrep fc
+: 1607655588:0;histgrep grep
+: 1607655594:0;fc -fl
+: 1607655606:0;fc -fl -m
+: 1607655645:0;beep -f 466.2 -l 250 -D 20 -n -f 415.3 -l 250 -D 20 -n -f 370.0 -l 250 -D 20 -n -f 415.3 -l 250 -D 20 -n -f 466.2 -l 250 -r 2 -d 0 -D 20 -n -f 466.2 -l 500 -n -f 10 -l 20
+: 1607655711:0;man zshoptions
+: 1607655735:0;man zshcompwid
+: 1607656041:0;aliases
+: 1607656047:0;alias_value grep
+: 1607656336:0;echo $fpath
+: 1607656440:0;less .zcompdump-P3530-20190221-5.8
+: 1607656649:0;mkdir .zsh
+: 1607656721:0;dirs -v
+: 1607656861:0;echo $HIST_STAMPS
+: 1607656868:0;fc -l
+: 1607656873:0;fc -l -1
+: 1607657028:0;which history
+: 1607709490:0;hs
+: 1607709501:0;hgd
+: 1607710788:0;which hash
+: 1607710792:0;man hash
+: 1607710803:0;man zshbuiltins
+: 1607710958:0;e . > /dev/null &2 > 1 & 
+: 1607711484:0;which grep
+: 1607712859:0;which --
+: 1607712862:0;--
+: 1607712883:0;cd -
+: 1607712891:0;cd -2
+: 1607712894:0;dirs
+: 1607712900:0;cd -1
+: 1607713219:0;pulse
+: 1607713231:0;g clone https://git.ainq.com/enterprise-components/enterprise-audit-terraform.git
+: 1607715645:0;which rmdir
+: 1607715649:0;man rmdir
+: 1607716693:0;echo $terminfo
+: 1607717919:0;compinit
+: 1607738785:0;ls /usr/local/share/zsh/site-functions
+: 1607738789:0;l /usr/local/share/zsh/site-functions
+: 1607738792:0;l /usr/local/share/zsh/
+: 1607738807:0;l /usr/share/zsh/vendor-completions/
+: 1607738831:0;l /usr/share/zsh/functions
+: 1607738854:0;cat /usr/share/zsh/functions/Zle/down-case-word-match
+: 1607738932:0;asdfg asdf aasdfa s
+: 1607738936:0;fg asdf aasdfa 
+: 1607739002:0;l .zcom*
+: 1607739175:0;return 2
+: 1607739179:0;return 1234
+: 1607739679:0;hg add .zsh
+: 1607739709:0;hg remove .zsh_custom
+: 1607739742:0;hg remove .zshrc.*
+: 1607739763:0;hg remove -A
+: 1607739806:0;hg remove .oh-my-zsh
+: 1607739817:0;hg remove -S .oh-my-zsh
+: 1607739827:0;hg remove --help
+: 1607739864:0;hg cm "removed dependency on OMZ"
+: 1607740219:0;printenv
+: 1607740416:0;cd
+: 1607743414:0;man ln
+: 1607743433:0;ln -s .dotfiles/.zsh .zsh
+: 1607743464:0;rm .oh-my-zsh
+: 1607743472:0;rm .zshrc.Evgeniys-MBP
+: 1607743477:0;rm .zshrc.P3530-20190221
+: 1607743480:0;rm .zshrc.amac02vg2gwg8wl
+: 1607743486:0;rm .zshrc.senmb
+: 1607743491:0;rm .zshrc.osx
+: 1607743506:0;rm .zsh_custom
+: 1607743555:0;cp .zsh_history .zsh/history/.zsh_history-P3530-20190221
+: 1607743986:0;history
+: 1607744094:0;hg addremove
+: 1607744122:0;hg cm "history file for wsl2 on Ai laptop"
+: 1607744130:0;hg out
+: 1607744157:0;e . &
+: 1607744265:0;rm -rf .oh-my-zsh
+: 1607744283:0;hg cm "removed OMZ subrepo"
+: 1607744336:0;which ' l'
+: 1607744349:0;which ll
+: 1607744405:0;which gradlew
+: 1607744410:0;which l
+: 1607744573:0;ls --color=auto
+: 1607744586:0;cd 
+: 1607744588:0;ls -al --color=auto
+: 1607744619:0;code .dotfiles
+: 1607744956:0;autoload zsh_stats
+: 1607744969:0;autoload -U zsh_stats
+: 1607744978:0;zsh_stats
+: 1607745502:0;hg cm "added colors to ls and menu selection"
+: 1607831259:0;ll
+: 1607831359:0;hgs
+: 1607917666:0;hg cm "added few useful aliases"
+: 1607917714:0;hg server
+: 1607917717:0;hg serve
+: 1607917794:0;cd .dotfiles
+: 1607917801:0;hg serve NUL
+: 1607917829:0;hg lga
+: 1607918377:0;/mnt/c/Users/esharapov/.emacs.d
+: 1607918396:0;which g
+: 1607918399:0;which gst
+: 1607918408:0;alias gst='git status'
+: 1607918614:0;gts
+: 1607918637:0;hg cm "added git status alias gst"
+: 1607918657:0;cd ../.emacs.d
+: 1607918666:0;g d
+: 1607918757:0;te ../.dotfiles/.zshrc
+: 1607918991:0;g reset --hard HEAD
+: 1607919016:0;g pull
+: 1607919047:0;cd .
+: 1607958666:0;cd Ocaml
+: 1607958670:0;dc LearnOcaml
+: 1607958676:0;cd LearnOcaml
+: 1607958694:0;hg lg
+: 1607958704:0;hg glog --style=compact
+: 1607959958:0;cd FSharp
+: 1607959968:0;dotnet --version
+: 1607959973:0;dotnet --help
+: 1607960420:0;cd enterprise-audit-terraform
+: 1607963168:0;aws lambda help
+: 1607969962:0;aws lambda list-layers --compatible-runtime python3.8
+: 1607969968:0;aws lambda list-layers --compatible-runtime nodejs
+: 1607969974:0;aws lambda list-layers
+: 1607970586:0;aws
+: 1607970589:0;aws help
+: 1607970643:0;echo $WORDCHARS
+: 1607970713:0;echo ${WORDCHARS:s/\///}
+: 1607970739:0;export WORDCHARS=${WORDCHARS:s/\///}
+: 1607970931:0;.dotfiles
+: 1607971362:0;hg cm "added few git aliases and changed WORDCHARS"
+: 1607974790:0;mkdir ainq-aod-service
+: 1607974885:0;md lambda
+: 1607974921:0;md momentjs-lambda-layer
+: 1607974937:0;npm i -s momentjs
+: 1607974947:0;rm -rf *
+: 1607974958:0;npm i moment
+: 1607974964:0;cat package.json
+: 1607975053:0;cd momentjs-lambda-layer/
+: 1607975058:0;npm prune --production
+: 1607975064:0;cd..
+: 1607975113:0;sudo apt-get install zip
+: 1607975126:0;zip -r momentjs-lambda-layer.zip momentjs-lambda-layer
+: 1607975182:0;cat ~/.aws/config
+: 1607975193:0;cat ~/.aws/credentials
+: 1607975445:0;aws --profile=esharapov_ent lambda publish-layer-version --layer-name "momentjs-lambda-layer" \\
+--description "NodeJS module of MomentJS library"
+: 1607975516:0;aws --profile=esharapov_ent lambda publish-layer-version --layer-name "momentjs-lambda-layer" \\
+--description "NodeJS module of MomentJS library" \\
+--license-info "MIT" \\
+--compative-runtimes "nodejs10.x" \\
+--zip-file "fileb://momentjs-lambda-layer.zip"
+: 1607975588:0;aws --profile=esharapov_ent lambda list-layers
+: 1607975814:0;md curent-time-lambda
+: 1607975992:0;zip -r currentTimeLambda.js.zip curent-time-lambda/currentTimeLambda.js
+: 1607976067:0;aws --profile=esharapov_ent lambda create-function \\
+--region us-east-1
+: 1607976150:0;aws --profile=esharapov_ent lambda create-function \\
+--region us-east-1 \\
+--function-name currentTimeLambda \\
+--handler "currentTimeLambda.handler" \\
+--runtime nodejs10.x \\
+--zip-file 'fileb://currentTimeLambda.js.zip'
+: 1607976875:0;te curent-time-lambda
+: 1607977294:0;cd curent-time-lambda
+: 1607977308:0;mv currentTimeLambda.js current-time-lambda.js
+: 1607977360:0;zip -r currentTimeLambda.js.zip curent-time-lambda/current-time-lambda.js
+: 1607977388:0;aws --profile=esharapov_ent lambda create-function \\
+--region us-east-1 \\
+--function-name currentTimeLambda1 \\
+--handler "currentTimeLambda.handler" \\
+--runtime nodejs10.x \\
+--zip-file 'fileb://currentTimeLambda.js.zip' \\
+--role arn:aws:iam::778079405878:role/asap-lambda-dev-role
+: 1607977668:0;aws --profile=esharapov_ent lambda invoke
+: 1607977685:0;aws --profile=esharapov_ent lambda help invoke
+: 1607977693:0;aws --profile=esharapov_ent lambda invoke --help
+: 1607977703:0;aws --profile=esharapov_ent lambda invoke help
+: 1607977726:0;aws --profile=esharapov_ent lambda invoke --function-name currentTimeLambda1
+: 1607977765:0;aws --profile=esharapov_ent lambda invoke --function-name currentTimeLambda1 --invocation-type RequestResponse --payload '{}'
+: 1607977876:0;mv curent-time-lambda current-time-lambda
+: 1607977924:0;rm currentTimeLambda.js.zip
+: 1607977927:0;zip -r currentTimeLambda.js.zip current-time-lambda/current-time-lambda.js
+: 1607977936:0;aws --profile=esharapov_ent lambda ivoke help
+: 1607977971:0;aws --profile=esharapov_ent lambda create-function \\
+--region us-east-1 \\
+--function-name currentTimeLambda \\
+--handler "currentTimeLambda.handler" \\
+--runtime nodejs10.x \\
+--zip-file 'fileb://currentTimeLambda.js.zip' \\
+--role arn:aws:iam::778079405878:role/asap-lambda-dev-role
+: 1607977981:0;aws --profile=esharapov_ent lambda invoke --function-name currentTimeLambda1 --invocation-type RequestResponse --payload '{}' output.txt
+: 1607979503:0;aws --profile=esharapov_ent lambda help
+: 1607979675:0;zip -r momentjs-lambda-layer.zip momentjs-lambda-layer/*
+: 1607979693:0;zip --help
+: 1607979727:0;zip momentjs-lambda-layer.zip lia
+: 1607979732:0;zip momentjs-lambda-layer.zip list
+: 1607979919:0;rm momentjs-lambda-layer.zip
+: 1607979923:0;cd momentjs-lambda-layer
+: 1607979940:0;zip -r ../momentjs-lambda-layer.zip .
+: 1607979985:0;unzip -l momentjs-lambda-layer
+: 1607980019:0;aws --profile=esharapov_ent lambda publish-layer-version --layer-name "momentjs-lambda-layer" \\
+--description "NodeJS module of MomentJS library" \\
+--license-info "MIT" \\
+--compatible-runtimes "nodejs10.x" \\
+--zip-file "fileb://momentjs-lambda-layer.zip"
+: 1607980114:0;aws --profile=esharapov_ent lambda invoke --function-name currentTimeLambda --invocation-type RequestResponse --payload '{}' output.txt
+: 1607980124:0;cat output.txt
+: 1607980155:0;aws --profile=esharapov_ent lambda get-function-configuration --function-name currentTimeLambda
+: 1607980910:0;pip3
+: 1607980921:0;pip3 list | grep aws
+: 1607980933:0;which aws
+: 1607980945:0;hgrep aws
+: 1607980965:0;pip3 search sam
+: 1607980983:0;pip3 search aws-sam
+: 1607980992:0;pip3 --version
+: 1607980995:0;which pip3
+: 1607981001:0;pip3 upgrade
+: 1607981093:0;pip3 list
+: 1607981098:0;pip3 search
+: 1607981104:0;pip3 search q
+: 1607981178:0;python -m pip search 
+: 1607981325:0;python -m pip --version
+: 1607981353:0;python -m pip install -U pip
+: 1607981363:0;python -m pip search q
+: 1607981440:0;python -m pip help
+: 1607981475:0;python -m pip list
+: 1607981502:0;python -m pip search peppercorn
+: 1607981674:0;pip3 install aws-sam-cli
+: 1607981700:0;sam help
+: 1607998424:0;e . NUL &
+: 1608002386:0;q
+: 1608058713:0;g st
+: 1608059201:0;cd ~/.emacs.d
+: 1608059215:0;echo .dap-breakpoints >> .gitignore
+: 1608059222:0;echo .lsp-session-v1 >> .gitignore
+: 1608059241:0;vim .gitignore
+: 1608059270:0;echo data/.emacs.desktop.wsl >> .gitignore
+: 1608059277:0;echo transient >> .gitignore
+: 1608059310:0;gau
+: 1608059311:0;gcmsg "ignore lsp and data files transitionary files"
+: 1608059316:0;g push
+: 1608060037:0;cd lambda
+: 1608060046:0;unzip -l currentTimeLambda.js.zip
+: 1608060057:0;unzip -l momentjs-lambda-layer.zip
+: 1608061685:0;md modules
+: 1608063694:0;dotnet fsi "/home/esharapov/Projects/FSharp/LearnFSharp/ElegantFSharp/HtmlData.fsx"
+: 1608063719:0;dotnet fs i --language:preview HtmlData.fsx
+: 1608063731:0;dotnet fsi --language:preview HtmlData.fsx
+: 1608063749:0;dotnet fsi /language:preview HtmlData.fsx
+: 1608063771:0;dotnet fsi /languageversion:preview HtmlData.fsx
+: 1608063777:0;dotnet fsi --languageversion:preview HtmlData.fsx
+: 1608063801:0;dotnet fsi HtmlData.fsx
+: 1608063831:0;dotnet fsi --langversion:preview HtmlData.fsx
+: 1608065595:0;md modules/{database,data-sign,aod-service-lambda}
+: 1608065615:0;l modules
+: 1608065798:0;which tree
+: 1608065803:0;man tree
+: 1608084471:0;touch README.md
+: 1608092316:0;docker
+: 1608092360:0;docker run -d -p 80:80 docker/getting-started
+: 1608092384:0;docker run -v $PWD:/notebooks -p 8888:8888 fsprojects/ifsharp
+: 1608095124:0;rm -rf .ipynb_checkpoints
+: 1608095128:0;rm shell.log
+: 1608095130:0;rm Untitled.ipynb
+: 1608095153:0;l ../Ocaml/LearnOcaml/Kattis
+: 1608095186:0;l ../Ocaml/LearnOcaml/Kattis/kleptography.ml
+: 1608095190:0;cat ../Ocaml/LearnOcaml/Kattis/kleptography.ml
+: 1608133606:0;docker pull mysql
+: 1608133934:0;md lambda-sam
+: 1608133937:0;cd lambda-sam
+: 1608136074:0;docker images
+: 1608137305:0;# install terraform
+: 1608137332:0;curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+: 1608137335:0;sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+: 1608137376:0;sudo apt-get update && sudo apt-get install terraform
+: 1608137673:0;rehash
+: 1608137677:0;terraform -help
+: 1608137698:0;terraform -help plan
+: 1608137747:0;terraform -install-autocomplete
+: 1608142896:0;apt-get update emacs
+: 1608142905:0;sudo apt-get update
+: 1608142915:0;sudo apt-get upgrade
+: 1608153230:0;sam local invoke SNSPayloadLogger
+: 1608153258:0;sam local invoke SNSPayloadLogger events/event-sns.json
+: 1608153274:0;sam local invoke --help
+: 1608153630:0;l PULSE
+: 1608153681:0;ag lambda
+: 1608153754:0;l ~/.emacs.d/data
+: 1608153758:0;l ~/.emacs.d/data/history
+: 1608153771:0;less ~/.emacs.d/data/.recentf
+: 1608153874:0;less ~/.emacs.d/data/backups/\!mnt\!c\!Users\!esharapov\!Dropbox\!Notes\!AOD_Service.org.\~1\~
+: 1608154010:0;cat ~/.emacs.d/data/backups/\!mnt\!c\!Users\!esharapov\!Dropbox\!Notes\!AOD_Service.org.\~1\~ > /mnt/c/Users/esharapov.INTRANET/Dropbox/Notes/AOD_Service.org
+: 1608154990:0;docker run --name aod-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql
+: 1608155037:0;docker kill zealous_nightingale
+: 1608155044:0;docker rm zealous_nightingale
+: 1608155074:0;docker run --name aod-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password -d mysql
+: 1608157169:0;docker run -t -i localstack/localstack
+: 1608157453:0;docker ps -a
+: 1608157469:0;docker rm quizzical_montalcini
+: 1608173051:0;docker-compose --version
+: 1608173068:0;docker versions
+: 1608173090:0;docker --version
+: 1608173103:0;te docker-compose.yml
+: 1608173233:0;docker-compose down
+: 1608173314:0;docker kill aod-mysql
+: 1608173322:0;docker rm aod-mysql
+: 1608173327:0;docker-compose up
+: 1608176000:0;terraform init
+: 1608176006:0;terraform plan
+: 1608176279:0;ag provider
+: 1608181528:0;md environments/dev
+: 1608181545:0;rm .terraform
+: 1608181573:0;which rd
+: 1608181581:0;rd .terraform
+: 1608181586:0;rd .terraform.lock.hcl
+: 1608182915:0;apt-cache search dropbox
+: 1608183019:0;hg cm "added terraform completions"
+: 1608183022:0;hg push
+: 1608183753:0;FSharp
+: 1608183775:0;dotnet new --help
+: 1608183844:0;dotnet new classlib -lang 'F#' -o Faker
+: 1608183862:0;cd Faker
+: 1608183868:0;cat Library.fs
+: 1608183878:0;dotnet run
+: 1608184015:0;dotnet add package Fare --version 2.1.2
+: 1608214374:0;ainq-aod-service
+: 1608225103:0;g clone https://git.ainq.com/enterprise-components/utility-services/aod-service.git
+: 1608225125:0;enterprise-audit-terraform
+: 1608225405:0;g reset HEAD@{1}
+: 1608225511:0;rm environments/dev/providers.tf
+: 1608225526:0;g co HEAD^1
+: 1608225554:0;g co 471bdcb
+: 1608225576:0;g co cfd7400
+: 1608225629:0;l ../ainq-aod-service
+: 1608226111:0;cd tree
+: 1608233303:0;lambda-sam
+: 1608233308:0;l sam-app
+: 1608233323:0;cd sam-app
+: 1608233330:0;l .aws-sam/build
+: 1608233334:0;l .aws-sam/build/SNSPayloadLogger
+: 1608233359:0;l src/handlers/sns-payload-logger.js
+: 1608233364:0;cat template.yml
+: 1608233366:0;te .
+: 1608234921:0;echo *~ >> .gitignore
+: 1608235151:0;npm test
+: 1608266156:0;grhh
+: 1608266163:0;gcm
+: 1608266168:0;g co HEAD
+: 1608266177:0;g co master
+: 1608266187:0;ag backend
+: 1608318276:0;PULSE
+: 1608318282:0;cd ainq-aod-service
+: 1608319001:0;te main.tf
+: 1608346665:0;;
+: 1608346701:0;sam validate
+: 1608346930:0;npm i
+: 1608347010:0;docker ps
+: 1608347138:0;sam local invoke SNSPayloadLogger --event events/event-sns.json
+: 1608347164:0;gt
+: 1608348295:0;sam init
+: 1608348355:0;cd aod-service
+: 1608348404:0;sam --help
+: 1608348559:0;sam local invoke sqsPayloadLoggerHandler --event events/event-sns.json
+: 1608348571:0;sam local invoke SQSPayloadLoggerHandler --event events/event-sns.json
+: 1608348580:0;sam local invoke SQSPayloadLoggerHandler --event events/event-sqs.json
+: 1608348619:0;sam local invoke SQSPayloadLogger --event events/event-sqs.json
+: 1608349011:0;cd PULSE
+: 1608349016:0;g clone ssh://git@git.ainq.com/hies-terraform/lambda-layer-mysql
+: 1608349047:0;g clone ssh://esharapov@git.ainq.com/hies-terraform/lambda-layer-mysql
+: 1608349069:0;g clone ssh://esharapov@ainq.com@git.ainq.com/hies-terraform/lambda-layer-mysql
+: 1608349902:0;cat .gitignore
+: 1608349939:0;cp -R * ../../aod-service/.
+: 1608349981:0;gd
+: 1608350145:0;rd .ionide
+: 1608350165:0;gcmsg "
+: 1608350178:0;gcmsg "OPEB-1641: added a SAM base for the code"
+: 1608350211:0;tre
+: 1608350228:0;rd src/handlers/mysql-layert
+: 1608350243:0;md src/mysql-layer
+: 1608350258:0;md src/digisign-layer
+: 1608350487:0;cd src/mysql-layer
+: 1608350766:0;mkdir nodejs
+: 1608350781:0;packagecd ..
+: 1608350789:0;..
+: 1608350792:0;rd nodejs
+: 1608351218:0;fa .
+: 1608351239:0;gcan
+: 1608351256:0;sam buid
+: 1608351297:0;sam local invoke
+: 1608351608:0;mv src/mysql-layer .
+: 1608351617:0;mv src/digisign-layer .
+: 1608351791:0;npm i --save-dev mysql2
+: 1608351827:0;echo '' > Makefile 
+: 1608352058:0;md nodejs
+: 1608352071:0;npm i mysql2 --prefix=.
+: 1608352098:0;npm i mysql2 --save
+: 1608352137:0;du -hs nodejs
+: 1608352225:0;sam local invoke --event events/event-sqs.json
+: 1608352486:0;cd mysql-layer
+: 1608352542:0;npm i --save mysql2
+: 1608352557:0;sam build && sam local invoke --event events/event-sqs.json
+: 1608353155:0;echo node_modules  >> .gitignore
+: 1608353172:0;echo mysql-layer/nodejs/node_modules >> .gitignore
+: 1608353178:0;ga -u
+: 1608353186:0;l .aws-sam
+: 1608353198:0;echo .aws-sam >> .gitignore
+: 1608353281:0;ga .
+: 1608353295:0;gcmsg "OPEB-1641: added mysql-layer"
+: 1608353299:0;g lga
+: 1608566497:0;cat README.md
+: 1608566510:0;npm install
+: 1608577687:0;tree
+: 1608577712:0;node digisign-layer/index.js
+: 1608577768:0;npm --help
+: 1608577788:0;npm run-script digisign-layer/index.js
+: 1608582184:0;code .
+: 1608582735:0;cd digisign-layer
+: 1608582752:0;cd nodejs
+: 1608582757:0;npm init -y
+: 1608582766:0;mv ../index.js .
+: 1608582860:0;npm i --save @aws-cdk/aws-kms
+: 1608582953:0;l node_modules
+: 1608582958:0;l node_modules/@aws-cdk
+: 1608583117:0;rd node_modules
+: 1608583128:0;rm package-lock.json
+: 1608583132:0;te package.json
+: 1608583166:0;npm i --save aws-sdk
+: 1608583198:0;node
+: 1608586646:0;aws kms help
+: 1608586667:0;aws --profile=esharapov_end kms list-keys
+: 1608586672:0;aws --profile=esharapov_ent kms list-keys
+: 1608586683:0;aws --profile=esharapov_ent kms help
+: 1608586794:0;aws --profile=esharapov_ent kms create-key --customer-master-key-spec ECC_NIST_P521 --key-usage SIGN_VERIFY --description "AOD Sample Key for Sign/Verify"
+: 1608587070:0;aws --profile=esharapov_ent kms sign --key-id 3da69918-91b8-467e-acdb-5b7129479417 --message-type=RAW --signing-algorithm ECDSA_SHA-512 --message 'Hello, world' --output text --query Signature
+: 1608587085:0;aws --profile=esharapov_ent kms sign --key-id 3da69918-91b8-467e-acdb-5b7129479417 --message-type=RAW --signing-algorithm ECDSA_SHA-512 --message 'Hello, world' --output text
+: 1608587104:0;aws --profile=esharapov_ent kms sign --key-id 3da69918-91b8-467e-acdb-5b7129479417 --message-type=RAW --signing-algorithm ECDSA_SHA-512 --message fileb://index.js --output text
+: 1608587124:0;aws --profile=esharapov_ent kms sign --key-id 3da69918-91b8-467e-acdb-5b7129479417 --message-type=RAW --signing-algorithm ECDSA_SHA_512 --message fileb://index.js --output text
+: 1608587152:0;aws --profile=esharapov_ent kms sign --key-id 3da69918-91b8-467e-acdb-5b7129479417 --message-type=RAW --signing-algorithm ECDSA_SHA_512 --message fileb://index.js --output text --query Signature
+: 1608587164:0;aws --profile=esharapov_ent kms sign --key-id 3da69918-91b8-467e-acdb-5b7129479417 --message-type=RAW --signing-algorithm ECDSA_SHA_512 --message fileb://index.js --output text --query Signature | base64 --decode
+: 1608587841:0;npm build
+: 1608587858:0;sam build
+: 1608587884:0;npm run test
+: 1608607754:0;npm deps
+: 1608607771:0;npm help t
+: 1608607791:0;npm help ddp
+: 1608608509:0;npm list
+: 1608608649:0;~/.dotfiles
+: 1608608661:0;te .zshrc
+: 1608608896:0;// Import all functions from sqs-payload-logger.js
+: 1608608896:0;const service = require('../../../src/handlers/service.js');
+: 1608608896:0;describe('Test for AOD Service', function () {\
+    // This test invokes the Lambda function and verifies that the received payload is logged\
+    it('Verifies the payload is logged', async () => {\
+        // Mock console.log statements so we can verify them. For more information, see\
+        // https://jestjs.io/docs/en/mock-functions.html\
+        console.info = jest.fn()\
+\
+        // Create a sample payload with SQS message format\
+        var payload = {\
+            DelaySeconds: 10,\
+            MessageAttributes: {\
+                "Sender": {\
+                    DataType: "String",\
+                    StringValue: "AOD Service"\
+                }
+: 1608609212:0;cd ~/.zsh
+: 1608609248:0;md plugins
+: 1608609250:0;cd plugins
+: 1608609257:0;curl -O https://raw.githubusercontent.com/zsh-users/zsh-history-substring-search/master/zsh-history-substring-search.zsh
+: 1608609258:0;l
+: 1608609264:0;cd ..
+: 1608609970:0;cd ~/.dotfiles
+: 1608609971:0;gst
+: 1608609973:0;hg st
+: 1608609974:0;hg d
+: 1608610063:0;cat -v
+: 1608610212:0;bindkey "$terminfo[kcuu1]" history-substring-search-up
+: 1608610388:0;te ~/.dotfiles/.zshrc
+: 1608615353:0;te /etc/zsh/zshrc
+: 1608616312:0;.dotfiles
+: 1608616313:0;hg st
+: 1608616315:0;hg d
+: 1608616349:0;hg add .
+: 1608616350:0;hg  st
+: 1608616363:0;hg cm "added history search and completion on up/down"

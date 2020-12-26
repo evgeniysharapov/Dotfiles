@@ -291,7 +291,11 @@ alias -g ......='../../../../..'
 alias md='mkdir -p'
 alias rd='rm -rf'
 # List directory contents
-alias ls='ls --color'
+if [[ $Z_OS = "osx" ]]; then
+    alias ls='ls -G'
+else
+    alias ls='ls --color'
+fi
 alias lsa='ls -lah'
 alias l='ls -lah'
 alias ll='ls -lh'

@@ -181,7 +181,6 @@
 : 1559961982:0;tmux list-keys
 : 1559961998:0;e deploy.sh&
 : 1559962039:0;ls -a
-: 1559962150:0;man ln
 : 1559962200:0;cd Library
 : 1559962853:0;pip install --user keyring
 : 1559962865:0;pip install upgrade pip
@@ -468,7 +467,6 @@
 : 1566708595:0;rm capital1.csv
 : 1566708606:0;hg cm "added capital one expenses"
 : 1566708614:0;mv capitalone_20190101_20190823.csv processed/.
-: 1566708618:0;hg addremove
 : 1566708632:0;hg cm "moved capital one dump to processed"
 : 1566781258:0;hg cm "categorized and sorted transactions"
 : 1566781340:0;ledger -f journal.ledger register income
@@ -546,7 +544,6 @@
 : 1571506772:0;ls /Volumes
 : 1571626848:0;cd ~/Documents/evgeniysharapov.com
 : 1571635389:0;/usr/bin/python
-: 1571635410:0;pyenv install list
 : 1571635494:0;cd ~
 : 1572061272:0;pyenv install --list | grep pypy3
 : 1572061297:0;pyenv install pypy3.5-6.0.0
@@ -564,7 +561,6 @@
 : 1574135133:0;rbenv
 : 1574135156:0;brew info aom
 : 1574135168:0;brew info leptonica
-: 1574135244:0;pyenv install --list
 : 1574135387:0;pyenv install 3.7.2
 : 1574135843:0;brew prefix zlib
 : 1574135908:0;CPPFLAGS="-I$(brew --prefix zlib)/include" pyenv install 3.7.2 
@@ -669,7 +665,6 @@
 : 1581998708:0;which node
 : 1581998749:0;pyenv local system
 : 1581998854:0;pyenv local 3
-: 1581998961:0;pip upgrade
 : 1581998965:0;pip ghelp
 : 1581998969:0;pip help
 : 1581999021:0;which pip3 
@@ -695,7 +690,6 @@
 : 1584416159:0;pip3 install hg-git mercurial_keyring
 : 1584416305:0;pip3 uninstall mercurial
 : 1584416340:0;brew uninstall mercurial
-: 1584416345:0;brew list
 : 1584416350:0;python
 : 1584416375:0;pip install --user mercurial hg-git mercurial_keyring
 : 1584416414:0;~/Library/Python/2.7/bin/hg st
@@ -745,21 +739,13 @@
 : 1598060642:0;brew cask reinstall visual-studio-code
 : 1598244306:0;brew search mercurial
 : 1598244326:0;brew info mercurial
-: 1598244386:0;pyenv
-: 1598244398:0;pyenv version
-: 1598244408:0;pyenv versions
 : 1598244527:0;pyenv 
-: 1598244637:0;pyenv local 3.7.2
 : 1598244658:0;pyenv local 2.7.15
 : 1598244734:0;pip2 list
-: 1598244741:0;pip3 list
 : 1598244771:0;pyenv local
-: 1598330060:0;brew cask list
 : 1598330116:0;pyenv global
 : 1598330133:0;ls ~/.pyenv/versions/3.7.2/bin
-: 1598330216:0;pip
 : 1598330240:0;pyenv list
-: 1598333871:0;pip install mercurial
 : 1598333911:0;l /Users/evgeniysharapov/Library/Python/2.7/bin/hg
 : 1598333931:0;/Users/evgeniysharapov/Library/Python/2.7/bin/hg --version
 : 1598333950:0;which pip3
@@ -770,7 +756,6 @@
 : 1598415112:0;emacs -na --daemon
 : 1598418191:0;mv Evgeniys-MacBook-Pro.local.el SharMbp.local.el
 : 1598418225:0;cd Documents/evgeniysharapov.com
-: 1598418252:0;pip search hg-git
 : 1598584111:0;docker ps
 : 1598584114:0;docker images
 : 1598584129:0;docker rmi evgeniysharapov
@@ -786,7 +771,6 @@
 : 1598586724:0;hg add "ignore files and some build versions"
 : 1598586741:0;hg commit -m "ignore files and some build versions"
 : 1599362090:0;hg --version
-: 1599362096:0;pip list
 : 1599362107:0;pip install --upgrade hg-git
 : 1599447480:0;mkdir Projects
 : 1599447493:0;mv FSharpTest Projects/.
@@ -840,7 +824,6 @@
 : 1602559301:0;code .
 : 1602560553:0;brew search clojure
 : 1602561178:0;brew install clojure
-: 1602561305:0;rehash
 : 1602561307:0;clj
 : 1602561385:0;clojure
 : 1603160573:0;brew search ocaml
@@ -884,15 +867,11 @@
 : 1603508223:0;l aoc2019
 : 1603508859:0;ocaml aoc2019/day1.ml
 : 1603936864:0;q
-: 1603936895:0;hg add .
 : 1603936920:0;hg commit -m "Added AOC 2019 solutions"
 : 1603936989:0;hg up main
-: 1603937005:0;hg merge tip
-: 1603937059:0;hg push
 : 1603937090:0;hg put
 : 1603943091:0;cd 
 : 1603943096:0;mkdir .Archives
-: 1603947918:0;cd .dotfiles
 : 1604200282:0;cd ../.dotfiles
 : 1604200370:0;cat ~/.tmux.
 : 1604200373:0;cat ~/.tmux.conf
@@ -903,11 +882,9 @@
 : 1604200673:0;tmux -v
 : 1604200677:0;man tmux
 : 1604200687:0;tmux -V 
-: 1604200692:0;brew update
 : 1604202128:0;iex --version
 : 1604202146:0;ledger -version
 : 1604202150:0;ledger -h
-: 1604202200:0;python --version
 : 1604202482:0;rustup --version
 : 1604202487:0;rustc
 : 1604202493:0;rustup update stable
@@ -948,7 +925,6 @@
 : 1604458354:0;gcmsg "updated calculating color of the region based on highlight face"
 : 1604458434:0;cd Documents/Projects
 : 1604458439:0;cd LearnOcaml
-: 1604458445:0;hg in
 : 1604458456:0;hg lg
 : 1604459148:0;unzip FsAutoComplete/netcore/fsautocomplete.zip
 : 1604459236:0;rm -rf FsAutoComplete
@@ -969,16 +945,12 @@
 : 1604459619:0;unzip fsautocomplete.netcore.zip
 : 1604459630:0;l runtimes
 : 1604459789:0;fsautocomplete
-: 1604459864:0;dotnet
 : 1604459881:0;dotnet fsautocomplete.dll
-: 1604459897:0;which dotnet
 : 1604459915:0;l /usr/local/share/dotnet/shared
-: 1604461473:0;l ~
 : 1604462464:0;cd ~/Downloads
 : 1604462494:0;mv 142050-1590969254-782.mp4 220759-1604428536-730.mp4 243553-1604433999-589.mp4 589482-1604417523-794.mp4 680633-1604359168-666.mp4 855823-1604363035-578.mp4 ~/.Archives/Archive2/.
 : 1604462502:0;mv 142050-1590969254-782.mp4 220759-1604428536-730.mp4 243553-1604433999-589.mp4 589482-1604417523-794.mp4 680633-1604359168-666.mp4 855823-1604363035-578.mp4 ~/.Archives/Archive2
 : 1604462512:0;mv 142050-1590969254-782.mp4 220759-1604428536-730.mp4 243553-1604433999-589.mp4 589482-1604417523-794.mp4 680633-1604359168-666.mp4 855823-1604363035-578.mp4 ~/.Archives/Archive\ 2
-: 1604462744:0;cd
 : 1604462757:0;mkdir .FsAutoComplete
 : 1604462778:0;mv ~/.bin/fsautocomplete/* ~/.FsAutoComplete/.
 : 1604462793:0;rm -rf ~/.bin/fsautocomplete
@@ -993,145 +965,88 @@
 : 1604463866:0;mv ~/netcore .
 : 1604464323:0;g co custom.el
 : 1604464326:0;gd
-: 1604464476:0;gst
 : 1604464483:0;ga -u
 : 1604464573:0;gcmsg "updated F# setup"
 : 1604464576:0;g push
-: 1604894327:0;hg st
-: 1604894328:0;hg d
-: 1604894335:0;hg revert -Ca
-: 1604894342:0;hg pull
-: 1604894344:0;hg up
 : 1604894378:0;ps aux | grep -i emacs
 : 1604894404:0;cd ~/.emacs.d
-: 1604894407:0;g pull
 : 1604894788:0;cd ~/.dotfiles
 : 1604896520:0;cd ~/.FsAutoComplete
 : 1604896533:0;cd ~/Documents
 : 1604896539:0;cd Projects
 : 1604896552:0;cd PNG
 : 1604896564:0;cd pngjs
-: 1604896596:0;ll
 : 1604896600:0;g lga
 : 1604896620:0;cd hiragana-katakana
 : 1604896635:0;cat README.md
 : 1604896650:0;cat karma.conf.js
-: 1604896701:0;open index.html
-: 1604896811:0;cd ..
 : 1604896828:0;cd Kattis
-: 1604896845:0;hg lga
 : 1604896883:0;cat .hg/hgrc
 : 1604896974:0;cd ~/Documents/Projects
-: 1604896979:0;cd FSharpTest
 : 1604897598:0;dotnet fsi --readline+
 : 1604900122:0;cd ../LearnOcaml
 : 1604900198:0;opam install angstrom
-: 1604900227:0;utop
 : 1604900288:0;opam list
-: 1605064435:0;dotnet --version
 : 1605064440:0;dotnet --help
 : 1605064488:0;dotnet tool --help
 : 1605152416:0;cd ~/Projects/FSApp
 : 1605152422:0;cd FSApp
-: 1605152423:0;l
 : 1605152428:0;dotnet run Script1.fsx
 : 1605152486:0;dotnet fsi Script1.fsx
-: 1605152847:0;dotnet fsi
 : 1605154990:0;opam install incr_dom
-: 1605155289:0;rehash
-: 1605155295:0;utop
 : 1605155595:0;opam install core
 : 1605155665:0;utop
-: 1605319884:0;cd ..
 : 1605319901:0;cd Documents/Projects/evgeniysharapov.com
-: 1605319903:0;hg lga
-: 1605319906:0;hg st
 : 1605319926:0;pyenv
 : 1605319940:0;pyenv version
 : 1605319965:0;pip3 list
-: 1605319976:0;pip list
-: 1605327841:0;pyenv versions
 : 1605327856:0;pyenv local 3.7.2
 : 1605327860:0;pip liasr
 : 1605327865:0;pip lst
-: 1605327870:0;pip list
 : 1605327885:0;pip install mercurial dulwich hggit
 : 1605328209:0;pip update
 : 1605328213:0;pip upgrade
-: 1605328215:0;pip
 : 1605328226:0;pip install --help
 : 1605328286:0;pip install -U
 : 1605328374:0;pyenv versions --list
 : 1605328381:0;pyenv install list
 : 1605328385:0;pyenv install --list
-: 1605328414:0;pyenv versions
-: 1605328445:0;python --version
 : 1605328448:0;pip
 : 1605328452:0;pip check
 : 1605328460:0;pip search ssl
 : 1605328498:0;pyenv install 3.9.0
-: 1605328651:0;rehash
 : 1605328654:0;pyenv versions
 : 1605328665:0;pyenv local 3.9.0
-: 1605328673:0;python --version
-: 1605328677:0;pip list
 : 1605328692:0;pip install pip
 : 1605328717:0;python -m pip install --upgrade pip
 : 1605328726:0;pip list
 : 1605328734:0;pip search mercurial
 : 1605328746:0;pip search hg-git
 : 1605328770:0;pip install mercurial
-: 1605328821:0;hg st
 : 1605328828:0;pip install hg-git
-: 1605328836:0;hg st
-: 1605328838:0;hg d
 : 1605328864:0;hg in
-: 1605328874:0;l
-: 1605328878:0;cd ..
-: 1605328879:0;l
 : 1605329041:0;hg clone ssh://hg@hg.sr.ht/~evgeniysharapov/Website
 : 1605329046:0;cd Website
-: 1605329047:0;l
-: 1605329052:0;make
-: 1605329074:0;l
-: 1605329084:0;cd public
 : 1605329086:0;open index.html
-: 1605411214:0;cd ..
 : 1605411235:0;cd ~/Documents/Projects/Website
 : 1605411238:0;cd public
-: 1605411240:0;l
 : 1605411250:0;python --version
 : 1605411260:0;python -m SimpleHTTPServer
 : 1605411267:0;python -m SimpleHTTPServer 5000
-: 1605666330:0;hg pull
-: 1605666334:0;hg up
-: 1605666336:0;hg st
-: 1605666338:0;hg d
 : 1605666353:0;hg revert -Ca
-: 1605666355:0;hg up
-: 1605666359:0;hg lga
-: 1605666368:0;dotnet --version
 : 1605666382:0;dotnet fsi
-: 1605666393:0;cd ..
-: 1605666393:0;l
-: 1605666402:0;cd FSharpTest
-: 1605666403:0;l
 : 1605666478:0;dotnet publish -c Release --self-container true -p:PublishReadyToRun=true -p:PublishSingleFile=true -p:PublishTrimmed=true
 : 1605666487:0;dotnet publish -c Release --self-contained true -p:PublishReadyToRun=true -p:PublishSingleFile=true -p:PublishTrimmed=true
 : 1605666501:0;dotnet publish -c Release --self-contained true -p:PublishReadyToRun=true -p:PublishSingleFile=true -p:PublishTrimmed=true -r osx
-: 1605666543:0;dotnet publish -c Release --self-contained true -p:PublishReadyToRun=true -p:PublishSingleFile=true -p:PublishTrimmed=true -r osx-x64
 : 1605666605:0;l ./bin/Release/netcoreapp3.1/osx-x64/FSharpTest
-: 1605666609:0;./bin/Release/netcoreapp3.1/osx-x64/FSharpTest
 : 1605666651:0;brew update
 : 1605666870:0;brew cask list
 : 1605666880:0;brew list
 : 1605666891:0;brew list --cask
-: 1605666901:0;which dotnet
 : 1605666910:0;brew search dotnet
 : 1605666935:0;brew info dotnet
 : 1605666945:0;brew cask info dotnet
 : 1605666959:0;brew cask info dotnet-sdk
-: 1605666989:0;l
 : 1605666992:0;cd ..
 : 1605667095:0;which dotnet
 : 1605667106:0;ls /usr/local/share/dotnet
@@ -1140,7 +1055,6 @@
 
 : 1605667289:0;chmod u+x dotnet-uninstall-pkgs.sh
 : 1605667297:0;sudo ./dotnet-uninstall-pkgs.sh	
-: 1605667316:0;rehash
 : 1605667408:0;curl -O https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/master/mac/resources/uninstall-vsmac.sh
 : 1605667416:0;chmod u+x uninstall-vsmac.sh
 : 1605667421:0;sudo ./uninstall-vsmac.sh
@@ -1148,85 +1062,44 @@
 : 1605668576:0;dotnet
 : 1605668580:0;dotnet --version
 : 1605668586:0;cd FSharpTest
-: 1605668587:0;l
 : 1605668591:0;rm -rf bin
 : 1605668598:0;dotnet publish -c Release --self-contained true -p:PublishReadyToRun=true -p:PublishSingleFile=true -p:PublishTrimmed=true -r osx-x64
 : 1605668636:0;./bin/Release/netcoreapp3.1/osx-x64/FSharpTest
 : 1605668649:0;du -hs ./bin/Release/netcoreapp3.1/osx-x64
 : 1605668704:0;cd website
 : 1605668708:0;cd ../Website
-: 1605668709:0;l
 : 1605668720:0;rm ~/.org-timestamps
-: 1605668727:0;rm -rf ~/.org-timestamps
-: 1605672089:0;hg st
-: 1605672095:0;make
-: 1605750309:0;hg st
 : 1605750350:0;hg addremove src
-: 1605750352:0;hg st
 : 1605750358:0;hg addremove static
-: 1605750360:0;hg st
 : 1605750376:0;hg commit -m "updated - added some content for testing\
 "
-: 1605750382:0;hg pull
-: 1605750387:0;hg lga
 : 1605750405:0;hg merge tip
-: 1605750573:0;hg st
 : 1605750592:0;hg commit -m "merged"
-: 1605750595:0;hg lga
-: 1605750601:0;hg push
-: 1605753533:0;rm -rf ~/.org-timestamps
 : 1605753535:0;make
 : 1605756075:0;gst
-: 1605756077:0;hg st
 : 1605756104:0;echo *.elc >> .hgignore
-: 1605756107:0;hg st
-: 1605756120:0;hg add .
-: 1605756122:0;hg st
 : 1605756142:0;hg commit -m "changes to ignore compile Elisp files and styles included html"
-: 1605756144:0;l
 : 1605756153:0;hg branch simple
-: 1605756165:0;hg book simple
 : 1605756171:0;hg branch --help
 : 1605756181:0;hg branch -C
 : 1605756188:0;hg book simple
-: 1605756194:0;hg lga
-: 1605756754:0;rm -rf ~/.org-timestamps && make
-: 1605759335:0;l public
 : 1605759356:0;cat public/site.html
-: 1605759371:0;l
-: 1605759450:0;rm -rf ~/.org-timestamps && make
 : 1605759512:0;l public
 : 1605759516:0;l public/assets
 : 1605759520:0;l public/assets/css
-: 1605759697:0;rm -rf ~/.org-timestamps && make
-: 1605760159:0;hg st
 : 1605760161:0;hg add .
-: 1605760165:0;hg st
 : 1605760177:0;hg commit -m "somewhat workable simple version"
-: 1605760879:0;rm -rf ~/.org-timestamps && make
-: 1605760964:0;hg st
 : 1605760969:0;hg addremove
-: 1605760970:0;hg st
 : 1605760984:0;hg commit -m "working version with HTML includes"
-: 1605760987:0;hg lga
-: 1605761074:0;rm -rf ~/.org-timestamps && make
 : 1605761093:0;rm -rf ~/.org-timestamps
 : 1605761330:0;rm -rf ~/.org-timestamps && make
 : 1605765355:0;hg push
-: 1605765362:0;hg lga
-: 1608866631:0;l
 : 1608866636:0;cd .dotfiles
 : 1608866640:0;g pull
-: 1608866643:0;hg pull
-: 1608866654:0;hg lga
-: 1608866661:0;hg up
-: 1608866664:0;hg st
 : 1608866665:0;hg d
 : 1608866686:0;hg cm "remove issue line from tmux mac os x config"
 : 1608866695:0;hg pull
 : 1608866731:0;hg up
-: 1608866739:0;hg lga
-: 1608866761:0;hg glog --style=compact
 : 1608867258:0;hg book
 : 1608867266:0;hg bookmarks
 : 1608867270:0;hg branches
@@ -1234,10 +1107,30 @@
 : 1608867286:0;hg merge 206
 : 1608867319:0;hg cm "merged two branches"
 : 1608867322:0;hg lga
-: 1608867327:0;l
 : 1608867357:0;l ~
 : 1608867375:0;which rd
 : 1608867386:0;which rmdir
 : 1608867392:0;man rmdir
 : 1608867446:0;man ln
 : 1608867565:0;ln -s .zsh ~/.zsh
+: 1608955641:0;hg st
+: 1608955647:0;cd
+: 1608955650:0;l
+: 1608955658:0;which l
+: 1608955671:0;ls -lah
+: 1608955697:0;ll
+: 1608955718:0;which ls
+: 1608955771:0;/usr/bin/ls
+: 1608955777:0;/bin/ls
+: 1608955782:0;/bin/ls --color
+: 1608955794:0;/bin/ls -h
+: 1608955798:0;man ls
+: 1608955836:0;/bin/ls -G
+: 1608955993:0;l
+: 1608955994:0;ll
+: 1608955997:0;l
+: 1608955999:0;ll
+: 1608956006:0;cd .dotfiles
+: 1608956007:0;l
+: 1608956010:0;hg d
+: 1608956030:0;hg cm "on mac ls uses -G for colors"

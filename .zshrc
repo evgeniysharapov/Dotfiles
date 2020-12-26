@@ -6,6 +6,7 @@
 #  Author: Evgeniy Sharapov
 #
 
+
 # * Extra Scripts Directory
 ZSH=${HOME}/.zsh
 # caching 
@@ -17,7 +18,9 @@ for zsh_file ($ZSH/plugins/*.zsh); do
 done
 
 # * Figure OS/Host
-Z_OS=$(( cat /etc/*-release 2>/dev/null | sed -n 's/^ID=\(.*\)/\1/p' ))
+# avoid "no match" message 
+setopt no_nomatch
+Z_OS=$(cat /etc/*-release 2>/dev/null | sed -n 's/^ID=\(.*\)/\1/p')
 
 if [ -z $Z_OS ]; then
     # could be MacOSX or Windows
@@ -27,13 +30,15 @@ if [ -z $Z_OS ]; then
         Z_OS=win
     fi
 fi
-# short name -s option is not always supported
-Z_HOST=${$(hostname)//.*/}
-
+# on mac the most reliable way is to use 'scutil'
+if [[ $Z_OS = "osx" ]]; then
+    Z_HOST=$(scutil --get ComputerName)    
+else
+    # short name -s option is not always supported
+    Z_HOST=${$(hostname)//.*/}
+fi
 
 # * Options
-# avoid "no match" message 
-setopt no_nomatch
 # recognize comments
 setopt interactivecomments
 # jobs
@@ -234,15 +239,16 @@ ${vcs_info_msg_0_}"
     fi
 }
 
+
 # check whether terminal supports colors and other belss and whistles
 if [[ "$TERM" != "dumb" ]] && [[ "$DISABLE_LS_COLORS" != "true" ]]; then
-    PROMPT='[%{$fg[red]%}%n%{$reset_color%}@%{$fg[magenta]%}%m%{$reset_color%}:%{$fg[blue]%}%~%{$reset_color%}]$(prompt_repo_line)
+    PROMPT='[%{$fg[red]%}%n%{$reset_color%}@%{$fg[magenta]%}${Z_HOST}%{$reset_color%}:%{$fg[blue]%}%~%{$reset_color%}]$(prompt_repo_line)
 %# '
     # display exitcode on the right when >0
     return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
     RPROMPT='${return_code}%{$reset_color%}'
 else
-    PROMPT='[%n@%m:%~]%(prompt_repo_line)
+    PROMPT='[%n@${Z_HOST}:%~]%(prompt_repo_line)
 %# '
     # display exitcode on the right when >0
     return_code="%(?..%? ↵)"

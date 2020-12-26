@@ -1,0 +1,1243 @@
+: 1550388934:0;echo $HISTSIZE
+: 1550389443:0;cat .zshrc
+: 1550389458:0;echo $Z_HOST
+: 1550389494:0;cp .zshrc.amac02vg2gwg8wl .zshrc.$Z_HOST
+: 1550389695:0;ln -s .zshrc.Evgeniys-MBP ~/.zshrc.$Z_HOST
+: 1550389752:0;pyenv env
+: 1550389792:0;la .dotfiles
+: 1550389824:0;less .zshrc.Evgeniys-MBP
+: 1550389832:0;less .zshrc.amac02vg2gwg8wl
+: 1550389856:0;rm .zshrc.Evgeniys-MBP
+: 1550390028:0;ln -s /Users/evgeniysharapov/.dotfiles/.zshrc.Evgeniys-MBP /Users/evgeniysharapov/.zshrc.Evgeniys-MBP
+: 1550437925:0;vim ~/.hgrc
+: 1550437977:0;vim ~/.hgrc.AMAC02VG2GWG8WL
+: 1550459626:0;c++ --versoin
+: 1550459630:0;c++ --version
+: 1550462013:0;brew cask search
+: 1550462029:0;brew search
+: 1550468222:0;brew search google-
+: 1550469547:0;brew cask install  google-photos-backup-and-sync
+: 1550470310:0;brew info google-featured-photos
+: 1550470328:0;brew cask info google-featured-photos
+: 1550729843:0;echo $HISTFILE
+: 1550729872:0;vim .zshrc.Evgeniys-MBP
+: 1550730015:0;setopt
+: 1550730223:0;brew search hammer
+: 1551327409:0;pyenv versions --help
+: 1551327423:0;pyenv install --help
+: 1551327507:0;pip search git
+: 1551327523:0;hg help git
+: 1551327583:0;brew cask info emcs
+: 1551327595:0;brew cask info emacs
+: 1551327614:0;cat ~/Dropbox/brew_cask_list.txt
+: 1551328702:0;brew cask install virtualbox
+: 1551328984:0;brew cask search ''
+: 1551328999:0;brew search ''
+: 1551332102:0;brew info yy
+: 1551332111:0;brew cask info yy
+: 1551332239:0;brew search visual-studio-code
+: 1551332958:0;brew search hammerspoon
+: 1551333771:0;brew cask install hammerspoon
+: 1551334842:0;cat Dropbox/gmail.txt
+: 1551585677:0;brew search emacs
+: 1551585749:0;brew cask install emacs
+: 1551585850:0;la .emacs.d/
+: 1551585855:0;rm -rf .emacs.d
+: 1551585974:0;git clone https://github.com/evgeniysharapov/DotEmacs.git .emacs.d
+: 1551586000:0;git co using-outline
+: 1551588836:0;shasum
+: 1551588875:0;where curl
+: 1551588882:0;curl --version
+: 1551588973:0;brew cask info rocket
+: 1551589032:0;brew search virtualbox
+: 1551589050:0;brew cask install virtualbox-extension-pack
+: 1551589076:0;brew cask info tunnelblick
+: 1551589159:0;brew cask search whatsapp
+: 1551589183:0;brew earch whatsapp
+: 1551589188:0;brew search whatsapp
+: 1551589203:0;brew cask install whatsapp
+: 1551589238:0;brew cask install telegram
+: 1551589258:0;brew cask install viber
+: 1551589291:0;brew cask install skype
+: 1551589547:0;dscl
+: 1551589599:0;brew search ql
+: 1551753687:0;defaults read com.apple
+: 1551753698:0;defaults read com.apple.screencapture
+: 1551753712:0;default --help
+: 1551753720:0;man defaults
+: 1551753746:0;defaults read com.apple.screencapture tyoe
+: 1551753750:0;defaults read com.apple.screencapture type
+: 1551753799:0;defaults write com.apple.finder ShowStatusBar -bool true
+: 1551753849:0;default read com.apple.finder SHowStatusBar
+: 1551753858:0;default read com.apple.finder ShowStatusBar
+: 1551753864:0;default read com.apple.finder
+: 1551753882:0;defaults read com.apple.finder ShowStatusBar
+: 1552530096:0;brew search karabiner
+: 1552530892:0;brew cask install karabiner-elements
+: 1552621683:0;cd .config
+: 1552795920:0;mkdir OksanaPhone
+: 1552796116:0;ssh -p 8022 u0_a1@192.168.1.163 -c "find /storage/0000-0000/DCIM -mtime 14 -type f -exec basename {} \;\
+"
+: 1552796345:0;ssh-keygen
+: 1552796660:0;ssh -p 8022 u0_a1@192.168.1.163 "find /storage/0000-0000/DCIM -mtime 14 -type f -exec basename {} \;"
+: 1552796727:0;ssh -p 8022 u0_a1@192.168.1.163 "find /storage/emulated/0000-0000/DCIM -mtime 14 -type f -exec basename {} \;"
+: 1552796846:0;ssh -p 8022 u0_a1@192.168.1.163 "find ~/storage/dcim/Camera -mtime 14 -type f -exec basename {} \;"
+: 1552796867:0;ssh -p 8022 u0_a1@192.168.1.163 "find ~/storage/dcim/Camera -mtime 14 -type f -print"
+: 1552797064:0;ssh -p 8022 u0_a1@192.168.1.163 "find ~/storage/dcim/Camera -mtime -30 -type f -print"
+: 1552797081:0;ssh -p 8022 u0_a1@192.168.1.163 "find ~/storage/dcim/Camera -mtime -30 -type f -print" > savelist.txt
+: 1552797228:0;rsync -avzzh --progress --update --files-from=list-of-files  -e "ssh -p 8022" u0_a1@192.168.1.163 .
+: 1552797242:0;rsync -avzzh --progress --update --files-from=list-of-files l -e "ssh -p 8022" u0_a1@192.168.1.163 .
+: 1552797259:0;rsync -avzzh --progress --update --files-from=savelist.txt l -e "ssh -p 8022" u0_a1@192.168.1.163 .
+: 1552797323:0;rsync -avzzh --progress --update --files-from=savelist.txt -e "ssh -p 8022 u0_a1@192.168.1.163:/" .
+: 1552797338:0;rsync --help
+: 1552797354:0;brew search rsync
+: 1552797377:0;brew info rsync
+: 1552797386:0;brew install rsync
+: 1552797417:0;rsync --version
+: 1552797421:0;rsync -avzzh --progress --update --files-from=savelist.txt -e "ssh -p 8022 u0_a1@192.168.1.163" .
+: 1552797577:0;rsync -avzzh --progress --update -e "ssh -p 8022 u0_a1@192.168.1.163:/data/data/com.termux/files/home/storage/dcim/Camera/20190315_121759.jpg" .
+: 1552797606:0;cat ~/Dropbox/zsh_history.2.txt | grep rsync
+: 1552797637:0;rsync -avzzh --progress --update -e "ssh -p 8022" u0_a1@192.168.1.163 .
+: 1552797658:0;rsync -avzzh --progress --update -e "ssh -p 8022" u0_a1@192.168.1.163:/data/data/com.termux/home .
+: 1552797717:0;rsync -avzzh --progress --update -e "ssh -p 8022" u0_a1@192.168.1.163:/storage/emulated/0/Snapshat .
+: 1552802307:0;rsync -avzzh --progress --update --files-from=savelist.txt -e "ssh -p 8022" u0_a1@192.168.1.163 .
+: 1552802317:0;rsync -avzzh --progress --update --files-from=savelist.txt -e "ssh -p 8022" u0_a1@192.168.1.163:/ .
+: 1552883719:0;brew lisart
+: 1552884009:0;ls ~/Library/Keyboard
+: 1552884016:0;ls ~/Library/KeyboardServices
+: 1552884034:0;ls /Library/Keyboard\ Layouts
+: 1553054635:0;brew cask uninstall karabiner-elements
+: 1553227287:0;brew cask update
+: 1553307648:0;cat /System/Library/Frameworks/AppKit.framework/Resources/StandardKeyBinding.dict
+: 1553567352:0;vim ~/Dropbox/gmail.txt
+: 1554787954:0;cat ~/Dropbox/gmail.txt
+: 1555277265:0;brew search etcher
+: 1555277282:0;brew info balenaetcher
+: 1555277318:0;brew cask info balenaetcher
+: 1555277332:0;brew cask install balenaetcher
+: 1555301930:0;ls /mnt
+: 1556159688:0;cd OksanaPhone
+: 1556159733:0;cd Documents/OksanaPhone
+: 1556159737:0;cat savelist.txt
+: 1556159822:0;mkdir backup_20190424
+: 1556159826:0;cd backup_20190424
+: 1556159889:0;rsync -avzzh --progress --update -e "ssh -p 8022" u0_a1@192.168.1.163:/data/data/com.termux/files/home/storage/dcim .
+: 1556168627:0;brew search handbrake
+: 1556168645:0;brew cask install handbrake
+: 1557020292:0;brew search ffnoeg'
+: 1557020299:0;bew search ffnmpeg
+: 1557020307:0;brew search ffmpeg
+: 1557020340:0;brew install ffmpeg
+: 1557021408:0;vi --version
+: 1557021487:0;la site-lisp
+: 1557021495:0;la site-lisp/help-plus
+: 1557021511:0;cat .gitmodules
+: 1557021520:0;git submodule init
+: 1557021539:0;git submodule update
+: 1557023066:0;git co custom.el
+: 1557023155:0;e README.md
+: 1557023166:0;et README.md
+: 1557023198:0;ls transient
+: 1557023203:0;ls transient/history.el
+: 1557023217:0;echo "transient/" >> .gitignore
+: 1557023221:0;cat .git
+: 1557023224:0;cat .gitignore
+: 1557023236:0;git add -u
+: 1557023244:0;git help cm
+: 1557023263:0;cat ~/.gitconfig
+: 1557023270:0;cat ~/.gitconfig | grep comm
+: 1557551597:0;cd Documents/OksanaPhone/backup_20190424
+: 1557551805:0;ssh -p 8022 u0_a1@192.168.1.163
+: 1557551848:0;rsync -avzzh --progress --update -e "ssh -p 8022" u0_a1@192.168.1.163:/storage/emulated/0/DCIM .
+: 1557553289:0;cd DCIM
+: 1557553298:0;cd Camera
+: 1557553300:0;ffmpeg -i 20190508_145054.mp4 -filter:v scale=720:-1 -c:a copy 20190508_145054_small.mp4
+: 1557553414:0;ffmpeg -i 20190509_175056.mp4 -filter:v scale=720:-1 -c:a copy 20190509_175056_small.mp4
+: 1557628155:0;git d
+: 1557631611:0;cd /Volumes/
+: 1557631612:0;llrsync -avzzh --progress --update -e "ssh -p 8022" u0_a1@192.168.1.163:/storage/emulated/0/DCIM .
+: 1557631686:0;cd Seagate\ Backup\ Plus\ Drive/Devices_Backup/Evgeniy_20181008/
+: 1557633172:0;vim ~/.ssh/known_hosts
+: 1557633688:0;ls DCIM
+: 1557641377:0;ssh -p 8022 u0_a63@192.168.1.172
+: 1557641393:0;rsync -avzzh --progress --update -e "ssh -p 8022" u0_a63@192.168.1.64:/storage/emulated/0/DCIM .
+: 1557641407:0;cd SamsungS7Active
+: 1557641463:0;rsync -avzzh --progress --update -e "ssh -p 8022" u0_a63@192.168.1.172:/storage/emulated/0/viber .
+: 1557641913:0;rsync -avzzh --progress --update -e "ssh -p 8022" u0_a63@192.168.1.172:/storage/emulated/0/WhatsApp .
+: 1559186205:0;cd Downloads
+: 1559186257:0;ffmpeg -i IMG_0891.MOV -filter:v scale=720:-1 -c:a copy IMG_0891_small.mp4
+: 1559961429:0;where python
+: 1559961474:0;pyenv help versions
+: 1559961483:0;pyenv help install
+: 1559961491:0;pyenv install -l
+: 1559961533:0;et .hgrc
+: 1559961623:0;brew search tmux
+: 1559961642:0;brew install tmux
+: 1559961884:0;./ll
+: 1559961891:0;cat deploy.sh
+: 1559961895:0;et deploy.sh
+: 1559961967:0;tmux list-sessions
+: 1559961977:0;tmux list-windows
+: 1559961982:0;tmux list-keys
+: 1559961998:0;e deploy.sh&
+: 1559962039:0;ls -a
+: 1559962150:0;man ln
+: 1559962200:0;cd Library
+: 1559962853:0;pip install --user keyring
+: 1559962865:0;pip install upgrade pip
+: 1560042393:0;pip list --usr
+: 1560042455:0;pip show keyring
+: 1560043174:0;pip install --user mercurial_extension_utils
+: 1560043186:0;pip install --upgrade pip
+: 1560043195:0;pip list --user
+: 1560043216:0;pip install --user mercurial_keyring
+: 1560044571:0;hg cm "safely deploy symbolic links to the directories"
+: 1560044586:0;e .zshrc.Evgeniys-MBP &
+: 1560044621:0;rm .zshrc.swp
+: 1560044650:0;hg cmn "added zsh specific config for personal Macbook"
+: 1560044662:0;hg cm "added zsh specific config for personal Macbook"
+: 1560044705:0;rm deploy.sh\~
+: 1560044714:0;sh showcolors.sh
+: 1560044720:0;./showcolors.sh
+: 1560044724:0;cat showcolors.sh
+: 1560044741:0;bash showcolors.sh
+: 1560044782:0;rm showcolors.sh
+: 1560044791:0;ls Documents
+: 1560045544:0;$ curl https://sh.rustup.rs -sSf | sh\
+
+: 1560045554:0;curl https://sh.rustup.rs -sSf | sh\
+
+: 1560045881:0;cat .profile
+: 1560045887:0;cat .bash_profile
+: 1560046051:0;cat .zprofile
+: 1560046063:0;cat .zprofile >> .zshenv
+: 1560046067:0;cat .zshenv
+: 1560046077:0;rm .zprofile
+: 1560046082:0;rm .profile
+: 1560046359:0;ls ~/.cargo/env
+: 1560046362:0;less ~/.cargo/env
+: 1560046384:0;cat ~/.cargo/env
+: 1560046451:0;cat ~/.zshenv
+: 1560046536:0;mkdir RustBook
+: 1560046538:0;cd RustBook
+: 1560046574:0;mkdir helloworld
+: 1560046576:0;cd helloworld
+: 1560046586:0;code main.rs &
+: 1560046652:0;rustc main.rs
+: 1560046656:0;./main
+: 1560046708:0;cargo new hello_cargo
+: 1560046882:0;cd hello_cargo
+: 1560046964:0;ls -R
+: 1560047125:0;cargo help
+: 1560047128:0;cargo run
+: 1560047145:0;cargo test
+: 1560047188:0;rustup help
+: 1560047196:0;rustup show
+: 1560047217:0;rustup component help
+: 1560047222:0;rustup component list
+: 1560048630:0;code . &
+: 1560567732:0;ls /
+: 1560567740:0;la /Users
+: 1560567762:0;la /Users/Shared
+: 1560567787:0;la /Users/evgeniysharapov
+: 1563252635:0;ip addr
+: 1563252639:0;ifconfig
+: 1563599552:0;vim --version
+: 1563599671:0;vim
+: 1564710096:0;g c o master
+: 1564710099:0;g co master
+: 1564710151:0;cat Evgeniys-MBP.el
+: 1564710179:0;g merge using-outline
+: 1564710234:0;g at
+: 1564710242:0;vim custom.el
+: 1564710356:0;g add -u
+: 1564710391:0;g commit -m "resolved merge conflict"
+: 1564710399:0;g add Evgeniys-MBP.el
+: 1564710401:0;gts
+: 1564710424:0;g commit -m "added new macbook specific config"
+: 1564969265:0;cd .
+: 1564969277:0;ls -l
+: 1564969295:0;la RustBook
+: 1564969308:0;mkdir 11ty
+: 1564969314:0;cd 11ty
+: 1564969326:0;et Dockerfile
+: 1564969438:0;e Dockerfile&
+: 1564974425:0;cd Phone\ Backup
+: 1564974460:0;mkdir MyPhoneBackup
+: 1564974463:0;cd MyPhoneBackup
+: 1564974480:0;ssh -p 8022 u0_a63@192.168.1.64
+: 1564974737:0;cd Documents/MyPhoneBackup
+: 1564974769:0;rsync -avzzh --progress --update -e "ssh -p 8022" u0_a63@192.168.1.64:/storage/emulated/0/WhatsApp .
+: 1564974849:0;rsync -avzzh --progress --update -e "ssh -p 8022" u0_a63@192.168.1.64:/storage/emulated/0/SnoteData .
+: 1564974858:0;rsync -avzzh --progress --update -e "ssh -p 8022" u0_a63@192.168.1.64:/storage/emulated/0/viber .
+: 1564975536:0;rsync -avzzh --progress --update -e "ssh -p 8022" u0_a63@192.168.1.64:/storage/emulated/0/{Android,Application,BeyondPod_Backup_2019-08-04.bpbak,Books,DCIM,Documents,Expensify,MovieMakerLib,Movies,Music,OfficeLens,Pictues,Podcasts,Samsung,SamsungMusic,ShareMemo,Telegram,data} .
+: 1564975720:0;cd Documents/11ty
+: 1564976029:0;brew cask info docke3r
+: 1564976037:0;brew cask info docker
+: 1564976202:0;brew info docker
+: 1564976273:0;mv 11ty evgeniysharapov.com
+: 1564976337:0;hg init
+: 1564976533:0;hg commit -m "initial commit of the personal page content"
+: 1564976541:0;hg push https://evgeniysharapov@bitbucket.org/evgeniysharapov/evgeniysharapov.com
+: 1564976557:0;vim  .hg/hgrc
+: 1564976731:0;rsync -avzzh --progress --update -e "ssh -p 8022" u0_a63@192.168.1.64:/storage/emulated/0/data .
+: 1564976788:0;rsync -avzzh --progress --update -e "ssh -p 8022" u0_a63@192.168.1.64:/storage/emulated/0/My\ Documents .
+: 1564976836:0;rsync -avzzh --progress --update -e "ssh -p 8022" u0_a63@192.168.1.64:'/storage/emulated/0/My Documents' .
+: 1564976956:0;rsync -avzzh --protect-args --progress --update -e "ssh -p 8022" u0_a63@192.168.1.64:/storage/emulated/0/My\ Documents .
+: 1564976979:0;rsync -avzzh --protect-args --progress --update -e "ssh -p 8022" u0_a63@192.168.1.64:/storage/emulated/0/Voice\ Recorder .
+: 1564977013:0;rsync -avzzh --protect-args --progress --update -e "ssh -p 8022" u0_a63@192.168.1.64:/storage/emulated/0/S\ Note\ Export .
+: 1564977054:0;la DCIM
+: 1564977059:0;la DCIM/100ANDRO
+: 1564977066:0;la DCIM/Camera
+: 1564977540:0;mkdir S7Active
+: 1564977548:0;mv MyPhoneBackup S7Active/.
+: 1564977551:0;cd S7Active
+: 1564977557:0;mv MyPhoneBackup internal
+: 1564977564:0;mkdir card
+: 1564977566:0;cd card
+: 1564977661:0;rsync -avzzh --protect-args --progress --update -e "ssh -p 8022" u0_a63@192.168.1.64:/storage/0000-0000/{Android,DCIM,Download,WineScans} .
+: 1564977677:0;rsync -avzzh --progress --update -e "ssh -p 8022" u0_a63@192.168.1.64:/storage/0000-0000/{Android,DCIM,Download,WineScans} .
+: 1564978002:0;brew search spotify
+: 1564978013:0;brew cask install spotify
+: 1564980630:0;brew cask uninstall spotify
+: 1565035672:0;cd /Volumes/Untitled
+: 1565035683:0;rm -fr *
+: 1565035701:0;rm -rf .*
+: 1565035710:0;rm .Trashes
+: 1565035779:0;rm -rf .Trashes/501/media/audio/Giorgia\ -\ Senza\ Paura\ 2013\ 320kbps\ CBR\ MP3\ \[VX\]\ \[P2PDL\]/03\ -\ Giorgia\ -\ I\ Will\ Pray\ \(Pregherò\)\ \[feat.\ Alicia\ Keys\].mp3
+: 1565035791:0;rm -rf .Trashes/501/media/audio/Giorgia\ -\ Senza\ Paura\ 2013\ 320kbps\ CBR\ MP3\ \[VX\]\ \[P2PDL\]/07\ -\ Giorgia\ -\ Avrò\ cura\ di\ te.mp3
+: 1565035796:0;rm -rf .Trashes
+: 1565035810:0;sudo rm -rf Trashes
+: 1565035823:0;la .Trashes
+: 1565035831:0;la .Trashes/501/media/audio/Giorgia\ -\ Senza\ Paura\ 2013\ 320kbps\ CBR\ MP3\ \[VX\]\ \[P2PDL\]/
+: 1565053845:0;brew tap caskroom/cask
+: 1565053885:0;brew search iosevka
+: 1565055048:0;brew tap caskroom/fonts
+: 1565055058:0;brew tap caskroom/versions
+: 1565055090:0;brew cask install qlmarkdown
+: 1565055125:0;brew cask install quicklook-json
+: 1565055151:0;brew cask install quicklook-csv
+: 1565055205:0;brew cask info qlcolorcode
+: 1565055336:0;brew cask info ql-ansilove
+: 1565055419:0;brew cask info qlab
+: 1565055774:0;brew cask info qlfits 
+: 1565055831:0;brew cask info qlgradle
+: 1565055935:0;brew cask info qladdict
+: 1565056018:0;brew search docker
+: 1565056152:0;brew case info docker-toolbox
+: 1565056160:0;brew cask info docker-toolbox
+: 1565056465:0;brew cask install docker-toolbox
+: 1565056577:0;bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
+: 1565056727:0;brew cask uninstall docker-toolbox
+: 1565056956:0;la ~/.docker
+: 1565056960:0;la ~/.docker/machine
+: 1565056970:0;rm -rf  ~/.docker/machine/
+: 1565056973:0;rm -rf  ~/.docker
+: 1565056984:0;ls ~/VirtualBox\ VMs
+: 1565057272:0;docker run hello-world
+: 1565058908:0;docker build -t evgeniysharapov .
+: 1565059024:0;docker run --rm -p 8082:8080 evgeniysharapov
+: 1565059094:0;docler ps -a
+: 1565059114:0;docker rm quizzical_jang
+: 1565059117:0;docker ps -a
+: 1565060146:0;tmxu
+: 1565060158:0;brew search mypaint
+: 1565143581:0;cat ~/.zshrc.amac02vg2gwg8wl
+: 1565143598:0;cat ~/.zshrc.Evgeniys-MBP
+: 1565143624:0;brew search nodenv
+: 1565143635:0;brew install nodenv
+: 1565143724:0;nodenv
+: 1565143731:0;nodenv install -0-lsit
+: 1565143736:0;nodenv install --list
+: 1565143765:0;nodenv install 10
+: 1565143799:0;nodenv install 10.16.1
+: 1565143818:0;eval "$(nodenv init -)"
+: 1565143820:0;noed
+: 1565143846:0;nodenv global --help
+: 1565143855:0;nodenv global 10.16.1
+: 1565143866:0;npm
+: 1565143885:0;mkdir ReactN
+: 1565143888:0;cd ReactN
+: 1565143897:0;mkdir Wordy
+: 1565143937:0;brew search jdk
+: 1565143990:0;brew cask info oracle-jdk
+: 1565144063:0;brew cask install oracle-jdk
+: 1565145214:0;cd ../evgeniysharapov.com
+: 1565145228:0;npm install @11ty/eleventy
+: 1565145286:0;npx eleventy
+: 1565145297:0;npx eleventy --serve
+: 1565145333:0;npx eleventy --help
+: 1566610614:0;brew search ledger
+: 1566610640:0;brew install ledger
+: 1566610736:0;cd ~/Dropbox/Documents/Money
+: 1566613229:0;ledger convert ~/Downloads/activity.csv
+: 1566613252:0;ledger convert ~/Downloads/activity.csv -f journal.ledger
+: 1566613314:0;ledger convert ~/Downloads/activity.csv --input-date-format "%m/%d/%y" -f journal.ledger
+: 1566613398:0;ledger convert ~/Downloads/activity.csv --input-date-format "%m/%d/%y" -f journal.ledger >> journal.ledger
+: 1566613556:0;ledger
+: 1566613583:0;where ledger
+: 1566614301:0;ledger -f journal.ledger
+: 1566614426:0;mv ~/Downloads/activity\ \(1\).csv amex_20190517.csv
+: 1566614458:0;mv ~/Downloads/activity.csv amex_20190617.csv
+: 1566614535:0;mv ~/Downloads/activity.csv amex_20190417.csv
+: 1566614687:0;mv ~/Downloads/activity\ \(1\).csv amex_20190318.csv
+: 1566614730:0;mv ~/Downloads/activity\ \(1\).csv amex_20190215.csv
+: 1566615076:0;mv ~/Downloads/Checking1.csv wf_chk_20190201_20190823.csv
+: 1566615363:0;mv ~/Downloads/CreditCard3.csv wf_visa3417_20190426_20190823.csv
+: 1566615409:0;mv ~/Downloads/CreditCard4.csv wf_visacashwise_20190426_20190823.csv
+: 1566615744:0;mv ~/Downloads/Suntrust_History.csv suntrust_chk_20190525_20190823.csv
+: 1566615781:0;mv ~/Downloads/Suntrust_History\ \(1\).csv suntrust_chk_20190225_20190524.csv
+: 1566615806:0;mv ~/Downloads/Suntrust_History\ \(2\).csv suntrust_chk_20181127_20190224.csv
+: 1566616157:0;mv ~/Downloads/Year\ to\ date.CSV citi_costco_20190130_20190823.csv
+: 1566616317:0;mv ~/Downloads/2019-08-23_transaction_download.csv capitalone_20190101_20190823.csv
+: 1566618392:0;mkdir processed
+: 1566618406:0;mv amex_20190617.csv processed/.
+: 1566618415:0;hg init .
+: 1566618467:0;hg commit -m "initial revision - processed Amex Jun-Jul"
+: 1566619034:0;hg commit -m "added readme"
+: 1566619093:0;ledger convert amex_20190517.csv --input-date-format "%m/%d/%y" -f journal.ledger >> journal.ledger
+: 1566619238:0;ledger convert amex_20190417.csv --input-date-format "%m/%d/%y" -f journal.ledger >> journal.ledger
+: 1566619287:0;ledger convert amex_20190318.csv --input-date-format "%m/%d/%y" -f journal.ledger >> journal.ledger
+: 1566619568:0;ledger convert amex_20190215.csv --input-date-format "%m/%d/%y" -f journal.ledger >> journal.ledger
+: 1566619728:0;hg commit -m "added all amex transactions"
+: 1566619746:0;mv amex_20190* processed/.
+: 1566619768:0;hg commit -m "moved amex transactions"
+: 1566619789:0;hg commit --no-edit --amend
+: 1566620360:0;ledger convert wf_chk_20190201_20190823.csv --input-date-format "%m/%d/%Y" --invert --account Assets:WellsFargo --rich-data -f journal.ledger
+: 1566620677:0;cat wf_chk_20190201_20190823.csv
+: 1566620684:0;cat wf_visa3417_20190426_20190823.csv
+: 1566620706:0;cat wf_visa3417_20190426_20190823.csv | awk '{print $0}'
+: 1566620710:0;cat wf_visa3417_20190426_20190823.csv | awk '{print $1}'
+: 1566620727:0;cat wf_visa3417_20190426_20190823.csv | awk -FS , '{print $1}'
+: 1566620735:0;cat wf_visa3417_20190426_20190823.csv | awk -FS=, '{print $1}'
+: 1566620772:0;cat wf_visa3417_20190426_20190823.csv | awk  'BEGIN {FS=","} {print $1}'
+: 1566620791:0;cat wf_visa3417_20190426_20190823.csv | awk  'BEGIN {FS=","} {print $1, $2}'
+: 1566620887:0;cat wf_visa3417_20190426_20190823.csv | awk  'BEGIN {FS=","} {gsub(/"/,"",$2); print $1, $2}'
+: 1566620909:0;cat wf_visa3417_20190426_20190823.csv | awk  'BEGIN {FS=","} {gsub(/"/,"",$2); print $1, $2, $3, $4, $5}'
+: 1566621052:0;cat wf_visa3417_20190426_20190823.csv | awk  'BEGIN {FS=","} {gsub(/"/,"",$2); print $1,",",$2,",", $3,",", $4,",", $5}'
+: 1566621221:0;cat wf_chk_20190201_20190823.csv | awk  'BEGIN {FS=",";print "date,amount,,note,desc" } {gsub(/"/,"",$2); print $1,",",$2,",", $3,",", $4,",", $5}' > wf.chk
+: 1566621225:0;cat wf.chk
+: 1566621260:0;cat wf_chk_20190201_20190823.csv | awk  'BEGIN {FS=",";print "date,amount,,note,desc" } {gsub(/"/,"",$2); print $1,",",$2,",", $3,",", $4,",", $5}' > wf.csv
+: 1566621301:0;cat wf.csv
+: 1566621494:0;cat wf_chk_20190201_20190823.csv | awk  'BEGIN {FS=",";print "date,amount,,note,desc" } {gsub(/"/,"",$2); print "$1,$2,$3,$4,$5"}'
+: 1566621513:0;cat wf_chk_20190201_20190823.csv | awk  'BEGIN {FS=",";print "date,amount,,note,desc" } {gsub(/"/,"",$2); print $1,",",$2,",", $3,",", $4,",", $5}'
+: 1566621642:0;cat wf_chk_20190201_20190823.csv | awk  'BEGIN {FS=",";print "date,amount,,note,desc";OFS=","} {gsub(/"/,"",$2); print $1$2$3$4$5}'
+: 1566621680:0;rm wf.c*
+: 1566621689:0;cat wf_chk_20190201_20190823.csv | awk  'BEGIN {FS=",";print "date,amount,,note,desc";OFS=","} {gsub(/"/,"",$2); print $1,$2,$3,$4,$5}'
+: 1566621867:0;cat wf_chk_20190201_20190823.csv | awk  'BEGIN {FS=",";print "date,amount,,note,desc";OFS=","} {gsub(/"/,"",$2); print $1,$2,$3,$4,$5}' > wf.csv
+: 1566621870:0;ledger convert wf.csv --input-date-format "%m/%d/%Y" --invert --account Assets:WellsFargo --rich-data -f journal.ledger
+: 1566621965:0;ledger convert wf.csv --input-date-format "%m/%d/%Y" --invert --account Assets:WellsFargo --rich-data -f journal.ledger >> journal.ledger
+: 1566622122:0;hg satr
+: 1566622383:0;hg s
+: 1566622403:0;hg commit -m "added wells fargo checking"
+: 1566623829:0;ledger -f journal.ledger reg salary
+: 1566680158:0;mv wf_chk_20190201_20190823.csv processed/.
+: 1566680180:0;hg cm "processed WF checking dump"
+: 1566680192:0;hg commit --amend
+: 1566703798:0;hg cm "assigned transactions to various accounts"
+: 1566704211:0;lga
+: 1566704832:0;cat wf_visacashwise_20190426_20190823.csv | awk  'BEGIN {FS=",";print "date,amount,,note,desc";OFS=","} {gsub(/"/,"",$2); print $1,$2,$3,$4,$5}' > wf.csv
+: 1566704898:0;ledger convert wf.csv --input-date-format "%m/%d/%Y" --invert --account 'Liabilities:WF Cash Wise' --rich-data -f journal.ledger
+: 1566704959:0;ledger convert wf.csv --input-date-format "%m/%d/%Y" --invert --account 'Liabilities:WF Cash Wise' --rich-data -f journal.ledger >> journal.ledger
+: 1566705045:0;cat wf_visa3417_20190426_20190823.csv | awk  'BEGIN {FS=",";print "date,amount,,note,desc";OFS=","} {gsub(/"/,"",$2); print $1,$2,$3,$4,$5}' > wf.csv
+: 1566705109:0;ledger convert wf.csv --input-date-format "%m/%d/%Y" --invert --account 'Liabilities:WF Visa' --rich-data -f journal.ledger
+: 1566705142:0;ledger convert wf.csv --input-date-format "%m/%d/%Y" --invert --account 'Liabilities:WF Visa' --rich-data -f journal.ledger >> journal.ledger
+: 1566705163:0;rm wf.csv
+: 1566705183:0;mb wf_visa3417_20190426_20190823.csv wf_visacashwise_20190426_20190823.csv processed/.
+: 1566705188:0;mv wf_visa3417_20190426_20190823.csv wf_visacashwise_20190426_20190823.csv processed/.
+: 1566705212:0;hg cm "processed WF credit cards dumps"
+: 1566705501:0;hg cm "assigned transactions to accounts"
+: 1566706152:0;ledger convert capitalone_20190101_20190823.csv --input-date-format "%m/%d/%Y" --invert --account 'Liabilities:CapitalOne' --rich-data -f journal.ledger
+: 1566706665:0;cat capitalone_20190101_20190823.csv| awk  'BEGIN {FS=",";print "date,amount,,note,desc";OFS=","} {print $1,$2,$3,$4,$5}'
+: 1566706676:0;cat capitalone_20190101_20190823.csv| awk  'BEGIN {FS=",";print "date,amount,,note,desc";OFS=","} {print $2,$3,$4,$5}'
+: 1566706699:0;cat capitalone_20190101_20190823.csv| awk  'BEGIN {FS=",";OFS=","} {print $2,,$4,$5}'
+: 1566706702:0;cat capitalone_20190101_20190823.csv| awk  'BEGIN {FS=",";OFS=","} {print $2,$4,$5}'
+: 1566706828:0;cat capitalone_20190101_20190823.csv| awk  'BEGIN {FS=",";OFS=","} {print $2,$4,$5,$6 || 0,$7 || 0}'
+: 1566706845:0;cat capitalone_20190101_20190823.csv| awk  'BEGIN {FS=",";OFS=","} {print $2,$4,$5,$6,$7}'
+: 1566706879:0;cat capitalone_20190101_20190823.csv| awk  'BEGIN {FS=",";OFS=","} {print $2,$4,$5,$6-$7}'
+: 1566707013:0;hg checkout capitalone_20190101_20190823.csv
+: 1566707021:0;hg reset capitalone_20190101_20190823.csv
+: 1566707109:0;tail -n +2 capitalone_20190101_20190823.csv
+: 1566707215:0;cat capitalone_20190101_20190823.csv| awk  'BEGIN {FS=",";OFS=","} {print $2,$4,$5,$6-$7} 1'
+: 1566707221:0;tail -n +2 capitalone_20190101_20190823.csv | awk  'BEGIN {FS=",";print "date,desc,note,amount"; OFS=","} {print $2,$4,$5,$6-$7}'
+: 1566707283:0;tail -n +2 capitalone_20190101_20190823.csv | awk  'BEGIN {FS=",";print "date,desc,note,amount"; OFS=","} {print $2,$4,$5,$6-$7}' > capital1.csv
+: 1566707329:0;ledger convert capital1.csv --input-date-format "%m/%d/%Y" --invert --account 'Liabilities:CapitalOne' --rich-data -f journal.ledger
+: 1566707358:0;ledger convert capital1.csv --input-date-format "%m/%d/%Y" --account 'Liabilities:CapitalOne' --rich-data -f journal.ledger
+: 1566707541:0;ledger convert capital1.csv --input-date-format "%m/%d/%Y" --account 'Liabilities:CapitalOne' --rich-data -f journal.ledger >> journal.ledger
+: 1566708544:0;ledger -f journal.ledger bal
+: 1566708595:0;rm capital1.csv
+: 1566708606:0;hg cm "added capital one expenses"
+: 1566708614:0;mv capitalone_20190101_20190823.csv processed/.
+: 1566708618:0;hg addremove
+: 1566708632:0;hg cm "moved capital one dump to processed"
+: 1566781258:0;hg cm "categorized and sorted transactions"
+: 1566781340:0;ledger -f journal.ledger register income
+: 1566781456:0;ledger -f journal.ledger register 'cash rewards'
+: 1566782065:0;tail -n +2 suntrust_chk_20181127_20190224.csv | awk 'BEGIN {FS=",";print "date,description,amount";OFS=","} {print $1,$3,$4-$5}\
+'
+: 1566782072:0;tail -n +2 suntrust_chk_20181127_20190224.csv | awk 'BEGIN {FS=",";print "date,description,amount";OFS=","} {print $1,$3,$4-$5}'\
+'
+: 1566782080:0;tail -n +2 suntrust_chk_20181127_20190224.csv | awk 'BEGIN {FS=",";print "date,description,amount";OFS=","} {print $1,$3,$4-$5}'
+: 1571103976:0;emacsclient -t
+: 1571104388:0;kill 7531
+: 1571104399:0;kill -9 7531
+: 1571104414:0;la ~/.emacs.d
+: 1571104439:0;la ~/.emacs.d/data
+: 1571104469:0;glga
+: 1571104499:0;sudo xcodebuild -license
+: 1571104546:0;git
+: 1571104549:0;git --version
+: 1571104555:0;which git
+: 1571104578:0;g d
+: 1571104607:0;g st
+: 1571104613:0;git gui
+: 1571105207:0;la .
+: 1571105211:0;la \.
+: 1571108745:0;java
+: 1571108804:0;ls ~/.bin
+: 1571108809:0;la ~
+: 1571108843:0;ls ~/.vscode
+: 1571108847:0;ls ~/.vscode/extensions
+: 1571108853:0;ls ~/.cargo
+: 1571108858:0;ls ~/.cargo/bin
+: 1571108908:0;echo $PATH | cut -d ':'
+: 1571108930:0;echo $PATH | tr ':' '\n'
+: 1571108961:0;rg
+: 1571108976:0;brew search ag
+: 1571109040:0;brew search the_silver
+: 1571109059:0;brew install the_silver_searcher
+: 1571111873:0;ag
+: 1571111891:0;ag evgeniy.sharapov
+: 1571111899:0;ag evgeniy\.sharapov
+: 1571111934:0;ag --hidden evgeniy.sharapov
+: 1571111953:0;ag --hidden evgeniy\.sharapov
+: 1571111973:0;ag --hidden "evgeniy\\.sharapov"
+: 1571112005:0;go
+: 1571112020:0;e .zshenv
+: 1571112104:0;git st
+: 1571112129:0;hg commit "made PATH more universal across systems"
+: 1571112140:0;hg commit -m "made PATH more universal across systems"
+: 1571112146:0;hg lga'\
+'
+: 1571194646:0;ls ~/.bash
+: 1571194651:0;mkdir ~/.bin
+: 1571194663:0;mv ~/Downloads/plantuml.jar ~/.bin/.
+: 1571195932:0;la data
+: 1571196661:0;ls ~/Documents
+: 1571196762:0;g add custom.el
+: 1571196777:0;g commit -m "added plantuml-mode package"
+: 1571196784:0;git push
+: 1571197333:0;la ~/Dropbox
+: 1571197353:0;history | grep oksana
+: 1571197360:0;history | grep -i oksana
+: 1571197368:0;history | grep -i evgeniy
+: 1571197414:0;history | grep -i ftp
+: 1571197418:0;history | grep -i dream
+: 1571197421:0;history | grep -i ssh
+: 1571282121:0;git clone git@bitbucket.org:evgeniysharapov/evgeniyandoksana.com.git
+: 1571282147:0;git clone https://evgeniysharapov@bitbucket.org/evgeniysharapov/evgeniyandoksana.com.git
+: 1571282175:0;cd evgeniyandoksana.com
+: 1571282611:0;gem
+: 1571282616:0;which gem
+: 1571282619:0;rvm
+: 1571282633:0;brew list rbenv
+: 1571282643:0;brew search rbenv
+: 1571506221:0;ls /Volumes/Untitled
+: 1571506772:0;ls /Volumes
+: 1571626848:0;cd ~/Documents/evgeniysharapov.com
+: 1571635389:0;/usr/bin/python
+: 1571635410:0;pyenv install list
+: 1571635494:0;cd ~
+: 1572061272:0;pyenv install --list | grep pypy3
+: 1572061297:0;pyenv install pypy3.5-6.0.0
+: 1572312628:0;git lga
+: 1572312641:0;which gke
+: 1572312657:0;gke
+: 1572312672:0;which gk
+: 1572318258:0;sudo installer -i /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
+: 1572318280:0;sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
+: 1573705807:0;mkdir BitBucket
+: 1573705810:0;cd BitBucket
+: 1573705815:0;hg clone ssh://hg@bitbucket.org/evgeniysharapov/icpcinfusion.hg
+: 1573705841:0;hg clone https://evgeniysharapov@bitbucket.org/evgeniysharapov/icpcinfusion.hg
+: 1574134930:0;la
+: 1574135133:0;rbenv
+: 1574135156:0;brew info aom
+: 1574135168:0;brew info leptonica
+: 1574135244:0;pyenv install --list
+: 1574135387:0;pyenv install 3.7.2
+: 1574135843:0;brew prefix zlib
+: 1574135908:0;CPPFLAGS="-I$(brew --prefix zlib)/include" pyenv install 3.7.2 
+: 1574136204:0;brew install zlib
+: 1574136472:0;brew search zlib
+: 1574136508:0;brew --prefix zlib
+: 1574136528:0;ls $(brew --prefix zlib)
+: 1574136584:0;pyenv install 3.7.2 
+: 1574136936:0;CPPFLAGS="-I$(brew --prefix zlib)/include" pyenv install 3.7.
+: 1574304805:0;CPPFLAGS="-I$(brew --prefix zlib)/include" pyenv install 3.7.2
+: 1574307333:0;brew search sqlite
+: 1574307697:0;pip versions
+: 1574308457:0;pyenv help shell
+: 1574915184:0;ls /Users
+: 1574915211:0;l /Users
+: 1574916560:0;l /Users/Shared
+: 1576381923:0;brew search core
+: 1576382051:0;l /
+: 1576382084:0;/Library/
+: 1576382098:0;l Frameworks
+: 1576382202:0;find / -name Microsoft
+: 1576382250:0;l /usr/local/bin
+: 1576382292:0;l /usr/local/share/dotnet/host
+: 1576382295:0;l /usr/local/share/dotnet/
+: 1576382308:0;l /usr/local/share/dotnet/templates
+: 1576382312:0;l /usr/local/share/dotnet/templates/3.1.0
+: 1576382328:0;l /usr/local/share/dotnet
+: 1576382335:0;/usr/local/share/dotnet/dotnet
+: 1576382345:0;/usr/local/share/dotnet/dotnet --list-sdks
+: 1576382351:0;/usr/local/share/dotnet/dotnet --list-runtimes
+: 1576382526:0;dotnet new console -lang F\#-o  FSharpTest 
+: 1576382536:0;dotnet new console -lang F\# -o  FSharpTest 
+: 1576382725:0;brew search fsautocomplete
+: 1576467476:0;tmux att
+: 1576468137:0;env
+: 1576468163:0;ps aux | grep tmux
+: 1576468175:0;kill 52062
+: 1576468212:0;dotnet -h
+: 1576470093:0;ls /Volumes/Samsung_T5/Backups.backupdb
+: 1576470098:0;ls /Volumes/Samsung_T5/
+: 1577414882:0;echo $LC_CTYPE
+: 1577414892:0;echo $LANG
+: 1577414915:0;/Applications/darktable.app/Contents/MacOS/darktable &
+: 1577416253:0;l /Volumes/Seagate\ Backup\ Plus\ Drive
+: 1577416258:0;sudo l /Volumes/Seagate\ Backup\ Plus\ Drive
+: 1577416269:0;sudo ls /Volumes/Seagate\ Backup\ Plus\ Drive
+: 1577416299:0;sudo ls /Volumes/Seagate\ Backup\ Plus\ Drive/Backup_Avanade
+: 1577416305:0;sudo ls /Volumes/Seagate\ Backup\ Plus\ Drive/Backup_Avanade/Applications
+: 1577416332:0;rm -fr /Volumes/Seagate\ Backup\ Plus\ Drive
+: 1577416336:0;sudo rm -fr /Volumes/Seagate\ Backup\ Plus\ Drive
+: 1577416340:0;l /Volumes
+: 1577850072:0;find /Library -name *darktable*
+: 1577850085:0;find ~/Library -name *darktable*
+: 1577850113:0;brew cask search darktable
+: 1577850402:0;cat .config/darktable/darktablerc
+: 1577850412:0;cat .config/darktable/darktablerc | grep lang
+: 1577850431:0;cat .config/darktable/keyboardrc
+: 1577850443:0;cat .config/
+: 1577850455:0;ls ~/.config/configstore
+: 1577850478:0;brew cask help
+: 1577850489:0;brew cask outdated
+: 1577850508:0;brew cask upgrade
+: 1577853827:0;brew search darktable
+: 1577853849:0;brew cask info darktable
+: 1577853943:0;brew untap caskroom/versions
+: 1577854020:0;brew tap
+: 1577854050:0;brew cask install darktable
+: 1577931878:0;rm -rf ~/.config/darktable
+: 1577931929:0;ls ~/.config
+: 1577931952:0;cat  ~/.config/darktable/darktablerc | grep language
+: 1577931968:0;vim  ~/.config/darktable/darktablerc
+: 1579375682:0;which hg
+: 1579376110:0;/usr/bin/python 
+: 1579376122:0;/usr/bin/python -m "pip" list
+: 1579407225:0;/Library/Python/2.7/site-packages
+: 1579407264:0;cat Extras.pth
+: 1579407315:0;cat Extras.pth | head -n 1
+: 1579407322:0;l $(cat Extras.pth | head -n 1)
+: 1579407340:0;l $(cat Extras.pth | head -n 2)
+: 1579407481:0;pyenv global system
+: 1579407516:0;cat
+: 1579407570:0;bash
+: 1579407675:0;vim ~/.zshrc.Evgeniys-MBP
+: 1581990991:0;tmux ls
+: 1581991269:0;brew search reattach
+: 1581991847:0;history | grep brew
+: 1581991886:0;history | grep brew cask install
+: 1581991892:0;history | grep 'brew cask install'
+: 1581992216:0;history | grep 'brew install'
+: 1581992374:0;history | grep pyenv
+: 1581992682:0;history
+: 1581992826:0;tmux
+: 1581998292:0;ledger --help
+: 1581998387:0;cd .dotfiles/]
+: 1581998390:0;cd .dotfiles/
+: 1581998420:0;/usr/bin/python --version
+: 1581998451:0;pyenv global 
+: 1581998464:0;pyenv help local
+: 1581998625:0;which openssl
+: 1581998635:0;brew link openssl
+: 1581998704:0;node --version
+: 1581998708:0;which node
+: 1581998749:0;pyenv local system
+: 1581998854:0;pyenv local 3
+: 1581998961:0;pip upgrade
+: 1581998965:0;pip ghelp
+: 1581998969:0;pip help
+: 1581999021:0;which pip3 
+: 1581999026:0;which pip3.5
+: 1584412788:0;brew search cad
+: 1584412826:0;brew cask install librecad
+: 1584413970:0;which tmux
+: 1584414072:0;which python
+: 1584414380:0;which pip
+: 1584415080:0;rm .python-version
+: 1584415101:0;l ~/.pyenv/versions/2.7.15
+: 1584415106:0;l ~/.pyenv/versions/2.7.15/lib
+: 1584415111:0;l ~/.pyenv/versions/2.7.15/lib/python2.7
+: 1584415225:0;l ~/.local/bin/keyring
+: 1584415230:0;l ~/.local/lib
+: 1584415266:0;pip liar
+: 1584415296:0;pip install --user mercurial
+: 1584415365:0;l ~/.local/bin
+: 1584415558:0;rm -rf ~/.local
+: 1584415666:0;brew install mercurial
+: 1584415961:0;pip uninstall mercurial
+: 1584416034:0;pip install --user hg-git mercurial-keyring
+: 1584416159:0;pip3 install hg-git mercurial_keyring
+: 1584416305:0;pip3 uninstall mercurial
+: 1584416340:0;brew uninstall mercurial
+: 1584416345:0;brew list
+: 1584416350:0;python
+: 1584416375:0;pip install --user mercurial hg-git mercurial_keyring
+: 1584416414:0;~/Library/Python/2.7/bin/hg st
+: 1584416420:0;~/Library/Python/2.7/bin/hg lga
+: 1584416643:0;python -V
+: 1584416648:0;python2 -V
+: 1584416652:0;python3 -V
+: 1584416754:0;python -c 'import sys; print(sys.path)'
+: 1584416866:0;l /usr/local/Cellar
+: 1584416876:0;l /usr/local/Cellar/python
+: 1584416884:0;l /usr/local/Cellar/python@2
+: 1584416888:0;l /usr/local/Cellar/python@2/2.7.17_1
+: 1584416895:0;l /usr/local/Cellar/python@2/2.7.17_1/Frameworks
+: 1584416898:0;l /usr/local/Cellar/python@2/2.7.17_1/Frameworks/Python.framework
+: 1584416905:0;l /usr/local/Cellar/python@2/2.7.17_1/Frameworks/Python.framework/Versions/2.7/
+: 1584416915:0;l /usr/local/Cellar/python@2/2.7.17_1/Frameworks/Python.framework/Versions/2.7/bin
+: 1584500093:0;brew search inkscape
+: 1584500119:0;brew cask install inkscape
+: 1584500164:0;brew cask uninstall inkscape
+: 1584887921:0;brew search qcad
+: 1584887942:0;brew cask install qcad
+: 1585761685:0;mv ~/Documents/Archive.zip .
+: 1585963368:0;tmux set -g mouse on
+: 1588547240:0;brew cask info zoom
+: 1589684239:0;l Documents
+: 1589770806:0;pandoc
+: 1592932878:0;brew search zoom
+: 1592932902:0;brew info zoom
+: 1592932910:0;brew info zoomus
+: 1592932923:0;brew cask info zoomus
+: 1592932933:0;brew cask install zoomus
+: 1597942329:0;brew search elixir
+: 1597942350:0;brew install elixir
+: 1597942589:0;ps aux
+: 1597942607:0;ps aux | grep erlang
+: 1597942612:0;ps aux | grep iex
+: 1597942624:0;kill -9 36861
+: 1597942632:0;kill -9 86861
+: 1597972362:0;l BitBucket
+: 1597972537:0;mkdir AiFitness
+: 1597972540:0;cd AiFitness
+: 1597972552:0;rm -rf AiFitness
+: 1598060476:0;which code 
+: 1598060511:0;cat /usr/local/bin/code
+: 1598060611:0;brew install visual-studio-code
+: 1598060634:0;brew cask install visual-studio-code
+: 1598060642:0;brew cask reinstall visual-studio-code
+: 1598244306:0;brew search mercurial
+: 1598244326:0;brew info mercurial
+: 1598244386:0;pyenv
+: 1598244398:0;pyenv version
+: 1598244408:0;pyenv versions
+: 1598244527:0;pyenv 
+: 1598244637:0;pyenv local 3.7.2
+: 1598244658:0;pyenv local 2.7.15
+: 1598244734:0;pip2 list
+: 1598244741:0;pip3 list
+: 1598244771:0;pyenv local
+: 1598330060:0;brew cask list
+: 1598330116:0;pyenv global
+: 1598330133:0;ls ~/.pyenv/versions/3.7.2/bin
+: 1598330216:0;pip
+: 1598330240:0;pyenv list
+: 1598333871:0;pip install mercurial
+: 1598333911:0;l /Users/evgeniysharapov/Library/Python/2.7/bin/hg
+: 1598333931:0;/Users/evgeniysharapov/Library/Python/2.7/bin/hg --version
+: 1598333950:0;which pip3
+: 1598333994:0;pip install --upgrade mercurial
+: 1598334044:0;hg
+: 1598334161:0;cat ~/.hgrc
+: 1598334206:0;pip install --upgrade dulwich
+: 1598415112:0;emacs -na --daemon
+: 1598418191:0;mv Evgeniys-MacBook-Pro.local.el SharMbp.local.el
+: 1598418225:0;cd Documents/evgeniysharapov.com
+: 1598418252:0;pip search hg-git
+: 1598584111:0;docker ps
+: 1598584114:0;docker images
+: 1598584129:0;docker rmi evgeniysharapov
+: 1598584135:0;docker image prune
+: 1598585535:0;	iex
+: 1598586573:0;cd evgeniysharapov.com
+: 1598586630:0;echo "node_modules" >> .hgignore
+: 1598586638:0;echo "node_modules" >> .gitignore
+: 1598586653:0;cat .python-version
+: 1598586685:0;l _site
+: 1598586696:0;l web
+: 1598586720:0;hg add
+: 1598586724:0;hg add "ignore files and some build versions"
+: 1598586741:0;hg commit -m "ignore files and some build versions"
+: 1599362090:0;hg --version
+: 1599362096:0;pip list
+: 1599362107:0;pip install --upgrade hg-git
+: 1599447480:0;mkdir Projects
+: 1599447493:0;mv FSharpTest Projects/.
+: 1599447519:0;mv evgeniy* Projects/.
+: 1599447548:0;mv ReactN Projects/.
+: 1599447555:0;l RustBook
+: 1599447567:0;mv RustBook Projects/.
+: 1599970489:0;mkdir ElixirLearning
+: 1599970498:0;cd ElixirLearning
+: 1599970656:0;mix --version
+: 1599970716:0;mix phoenix.new teacher
+: 1599970820:0;mix local.hex
+: 1599970849:0;mix archive.install --help
+: 1599970948:0;mix hex.search phoenix
+: 1599970958:0;mix hepl
+: 1599970985:0;mix help hex.search
+: 1599971010:0;mix hex.search "^phoenix$"
+: 1599971047:0;mix help 
+: 1599971089:0;mix hex.search phx
+: 1599971114:0;mix help archive.install
+: 1599971162:0;mix archive.install phx_new
+: 1599971168:0;mix archive.install hex phx_new
+: 1599971182:0;mix help
+: 1599971196:0;mix help phx.new
+: 1599971241:0;mix phx.new start_blog
+: 1599971253:0;cd start_blog
+: 1599971361:0;brew search node
+: 1599971401:0;nodenv 
+: 1599971411:0;nodenv versions
+: 1599971424:0;node
+: 1599971542:0;cd assets && npm install && node node_modules/webpack/bin/webpack.js --mode development
+: 1599972251:0;mkdir NinetyNineProblems
+: 1599972253:0;cd NinetyNineProblems
+: 1599972332:0;Documents/Projects/NinetyNineProblems
+: 1599972340:0;te README.md
+: 1599972727:0;nodenv global
+: 1599972895:0;code README.md
+: 1599973525:0;mix help new
+: 1599973568:0;mix new ninety_nine
+: 1599973576:0;cd ninety_nine
+: 1599974005:0;l lib
+: 1599974011:0;l lib/ninety_nine.ex
+: 1599974401:0;mix test
+: 1600047383:0;cd ../..
+: 1602557472:0;gcmsg "commented out tern"
+: 1602557482:0;ga SharMbp.home.el
+: 1602557494:0;gcmsg "added configuration for my MBP"
+: 1602558372:0;dotnet list
+: 1602558383:0;dotnet new --help
+: 1602558682:0;brew upgrade
+: 1602559301:0;code .
+: 1602560553:0;brew search clojure
+: 1602561178:0;brew install clojure
+: 1602561305:0;rehash
+: 1602561307:0;clj
+: 1602561385:0;clojure
+: 1603160573:0;brew search ocaml
+: 1603160631:0;brew search opam
+: 1603160643:0;brew install opam
+: 1603160706:0;opam init
+: 1603160873:0;eval `opam env`
+: 1603161026:0;opam install utop ounit ocp-indent merlin ocamlformat lwt yojson qtest ansiterminal lambda-term menhir
+: 1603161187:0;opam install ocp-index
+: 1603418409:0;te .hg/hgrc
+: 1603418424:0;emacs .hg/hgrc
+: 1603418448:0;emacsclient .hg/hgrc
+: 1603419721:0;l -al
+: 1603419860:0;mv Archive.zip ~/Documents/Archive2.zip
+: 1603421749:0;l .oh-my-zsh
+: 1603421757:0;ls
+: 1603421764:0;ag eshar
+: 1603421778:0;find . -name "eshar*"
+: 1603421909:0;cat .zshrc.Evgeniys-MBP
+: 1603421929:0;cp .zshrc.Evgeniys-MBP .zshrc.SharMbp
+: 1603421936:0;./deploy.sh
+: 1603421951:0;which te
+: 1603421997:0;opam switch 4.11
+: 1603422008:0;opam switch default
+: 1603422017:0;eval $(opam env)
+: 1603422020:0;ocaml
+: 1603422962:0;l Library
+: 1603422976:0;l .cargo
+: 1603422985:0;rust --version
+: 1603423501:0;gd opam-user-setup.el
+: 1603423573:0;ga opam-user-setup.el
+: 1603423594:0;gcmsg "use HOME in paths to .opam configuration"
+: 1603424247:0;cd Documents
+: 1603424312:0;cat ~/.ssh/id_rsa.pub
+: 1603424363:0;hg clone git+ssh://git@github.com:evgeniysharapov/LearnOcaml.git
+: 1603424370:0;l LearnOcaml
+: 1603506608:0;l -R
+: 1603506699:0;hg commit -m "added new config for MBP because name has changed and used HOME env var for OPAM config"
+: 1603506745:0;hg commit -m "merged upstream changes"
+: 1603506773:0;cd ../.emacs.d
+: 1603508223:0;l aoc2019
+: 1603508859:0;ocaml aoc2019/day1.ml
+: 1603936864:0;q
+: 1603936895:0;hg add .
+: 1603936920:0;hg commit -m "Added AOC 2019 solutions"
+: 1603936989:0;hg up main
+: 1603937005:0;hg merge tip
+: 1603937059:0;hg push
+: 1603937090:0;hg put
+: 1603943091:0;cd 
+: 1603943096:0;mkdir .Archives
+: 1603947918:0;cd .dotfiles
+: 1604200282:0;cd ../.dotfiles
+: 1604200370:0;cat ~/.tmux.
+: 1604200373:0;cat ~/.tmux.conf
+: 1604200420:0;cat ~/.tmux.wsl.conf
+: 1604200471:0;cat ~/.tmux.macos.conf
+: 1604200479:0;cat ~/.tmux.conf 
+: 1604200669:0;tmux --version
+: 1604200673:0;tmux -v
+: 1604200677:0;man tmux
+: 1604200687:0;tmux -V 
+: 1604200692:0;brew update
+: 1604202128:0;iex --version
+: 1604202146:0;ledger -version
+: 1604202150:0;ledger -h
+: 1604202200:0;python --version
+: 1604202482:0;rustup --version
+: 1604202487:0;rustc
+: 1604202493:0;rustup update stable
+: 1604202505:0;rustc --version
+: 1604286519:0;l ~/.opam
+: 1604286544:0;opam install user-setup
+: 1604286562:0;cd .emacs.d
+: 1604286566:0;gsdt
+: 1604286586:0;opam user-setup install
+: 1604286852:0;opam switch
+: 1604286865:0;opam config env
+: 1604286881:0;utop -emacs
+: 1604287268:0;grhh
+: 1604287280:0;l elpa
+: 1604287302:0;rm -rf elpa/utop-20190715.1836
+: 1604287709:0;dune
+: 1604288691:0;kill -9 33334
+: 1604288713:0;ls -al  emacs
+: 1604288717:0;which emacs
+: 1604288724:0;ls -al $(which emacs)
+: 1604288768:0;e &
+: 1604288779:0;e -na . &
+: 1604288803:0;emacsclient . &
+: 1604288845:0;which emacsclient 
+: 1604288862:0;emacsclient --help
+: 1604288892:0;emacsclient -n &
+: 1604291931:0;mv /Users/evgeniysharapov/Downloads/719235-1603891852-604.mp4 /Users/evgeniysharapov/Downloads/72854-1602172854-410.mp4 /Users/evgeniysharapov/Downloads/921446-1603006408-701.mp4 ~/.Archives/Archive2/.
+: 1604291938:0;mv /Users/evgeniysharapov/Downloads/719235-1603891852-604.mp4 /Users/evgeniysharapov/Downloads/72854-1602172854-410.mp4 /Users/evgeniysharapov/Downloads/921446-1603006408-701.mp4 ~/.Archives/.
+: 1604456578:0;\cd .dotfiles
+: 1604456585:0;hg out
+: 1604456696:0;ps aux | grep emacs
+: 1604456746:0;kill -9 35965
+: 1604456756:0;emacs --daemon
+: 1604456782:0;emacsclient -c &
+: 1604456854:0;ledger --version
+: 1604456946:0;te .
+: 1604457514:0;kill -9 41308
+: 1604458354:0;gcmsg "updated calculating color of the region based on highlight face"
+: 1604458434:0;cd Documents/Projects
+: 1604458439:0;cd LearnOcaml
+: 1604458445:0;hg in
+: 1604458456:0;hg lg
+: 1604459148:0;unzip FsAutoComplete/netcore/fsautocomplete.zip
+: 1604459236:0;rm -rf FsAutoComplete
+: 1604459245:0;echo $PATH
+: 1604459266:0;l ~/.local
+: 1604459276:0;l ~/.bin
+: 1604459295:0;mv ~/Downloads/fsautocomplete.* ~/.bin/.
+: 1604459300:0;cd ~/.bin
+: 1604459414:0;rm !(plantuml.jar)
+: 1604459427:0;rm -- !(plantuml.jar)
+: 1604459473:0;setopt extended_glob
+: 1604459476:0;rm -- ^*.jar
+: 1604459501:0;rm -rf -- ^*.jar
+: 1604459593:0;mv ~/Downloads/fsautocomplete.netcore.zip .
+: 1604459604:0;mkdir fsautocomplete
+: 1604459611:0;mv fsautocomplete.netcore.zip fsautocomplete/.
+: 1604459613:0;cd fsautocomplete
+: 1604459619:0;unzip fsautocomplete.netcore.zip
+: 1604459630:0;l runtimes
+: 1604459789:0;fsautocomplete
+: 1604459864:0;dotnet
+: 1604459881:0;dotnet fsautocomplete.dll
+: 1604459897:0;which dotnet
+: 1604459915:0;l /usr/local/share/dotnet/shared
+: 1604461473:0;l ~
+: 1604462464:0;cd ~/Downloads
+: 1604462494:0;mv 142050-1590969254-782.mp4 220759-1604428536-730.mp4 243553-1604433999-589.mp4 589482-1604417523-794.mp4 680633-1604359168-666.mp4 855823-1604363035-578.mp4 ~/.Archives/Archive2/.
+: 1604462502:0;mv 142050-1590969254-782.mp4 220759-1604428536-730.mp4 243553-1604433999-589.mp4 589482-1604417523-794.mp4 680633-1604359168-666.mp4 855823-1604363035-578.mp4 ~/.Archives/Archive2
+: 1604462512:0;mv 142050-1590969254-782.mp4 220759-1604428536-730.mp4 243553-1604433999-589.mp4 589482-1604417523-794.mp4 680633-1604359168-666.mp4 855823-1604363035-578.mp4 ~/.Archives/Archive\ 2
+: 1604462744:0;cd
+: 1604462757:0;mkdir .FsAutoComplete
+: 1604462778:0;mv ~/.bin/fsautocomplete/* ~/.FsAutoComplete/.
+: 1604462793:0;rm -rf ~/.bin/fsautocomplete
+: 1604462903:0;ls ~/.FsAutoComplete
+: 1604463017:0;gd -- init.el
+: 1604463036:0;vim init.el
+: 1604463526:0;ag FsAutoComplete
+: 1604463548:0;cd elpa
+: 1604463560:0;ag eglot-fsharp-server-install-dir
+: 1604463834:0;mkdir ~/netcore
+: 1604463846:0;mv * ~/netcore
+: 1604463866:0;mv ~/netcore .
+: 1604464323:0;g co custom.el
+: 1604464326:0;gd
+: 1604464476:0;gst
+: 1604464483:0;ga -u
+: 1604464573:0;gcmsg "updated F# setup"
+: 1604464576:0;g push
+: 1604894327:0;hg st
+: 1604894328:0;hg d
+: 1604894335:0;hg revert -Ca
+: 1604894342:0;hg pull
+: 1604894344:0;hg up
+: 1604894378:0;ps aux | grep -i emacs
+: 1604894404:0;cd ~/.emacs.d
+: 1604894407:0;g pull
+: 1604894788:0;cd ~/.dotfiles
+: 1604896520:0;cd ~/.FsAutoComplete
+: 1604896533:0;cd ~/Documents
+: 1604896539:0;cd Projects
+: 1604896552:0;cd PNG
+: 1604896564:0;cd pngjs
+: 1604896596:0;ll
+: 1604896600:0;g lga
+: 1604896620:0;cd hiragana-katakana
+: 1604896635:0;cat README.md
+: 1604896650:0;cat karma.conf.js
+: 1604896701:0;open index.html
+: 1604896811:0;cd ..
+: 1604896828:0;cd Kattis
+: 1604896845:0;hg lga
+: 1604896883:0;cat .hg/hgrc
+: 1604896974:0;cd ~/Documents/Projects
+: 1604896979:0;cd FSharpTest
+: 1604897598:0;dotnet fsi --readline+
+: 1604900122:0;cd ../LearnOcaml
+: 1604900198:0;opam install angstrom
+: 1604900227:0;utop
+: 1604900288:0;opam list
+: 1605064435:0;dotnet --version
+: 1605064440:0;dotnet --help
+: 1605064488:0;dotnet tool --help
+: 1605152416:0;cd ~/Projects/FSApp
+: 1605152422:0;cd FSApp
+: 1605152423:0;l
+: 1605152428:0;dotnet run Script1.fsx
+: 1605152486:0;dotnet fsi Script1.fsx
+: 1605152847:0;dotnet fsi
+: 1605154990:0;opam install incr_dom
+: 1605155289:0;rehash
+: 1605155295:0;utop
+: 1605155595:0;opam install core
+: 1605155665:0;utop
+: 1605319884:0;cd ..
+: 1605319901:0;cd Documents/Projects/evgeniysharapov.com
+: 1605319903:0;hg lga
+: 1605319906:0;hg st
+: 1605319926:0;pyenv
+: 1605319940:0;pyenv version
+: 1605319965:0;pip3 list
+: 1605319976:0;pip list
+: 1605327841:0;pyenv versions
+: 1605327856:0;pyenv local 3.7.2
+: 1605327860:0;pip liasr
+: 1605327865:0;pip lst
+: 1605327870:0;pip list
+: 1605327885:0;pip install mercurial dulwich hggit
+: 1605328209:0;pip update
+: 1605328213:0;pip upgrade
+: 1605328215:0;pip
+: 1605328226:0;pip install --help
+: 1605328286:0;pip install -U
+: 1605328374:0;pyenv versions --list
+: 1605328381:0;pyenv install list
+: 1605328385:0;pyenv install --list
+: 1605328414:0;pyenv versions
+: 1605328445:0;python --version
+: 1605328448:0;pip
+: 1605328452:0;pip check
+: 1605328460:0;pip search ssl
+: 1605328498:0;pyenv install 3.9.0
+: 1605328651:0;rehash
+: 1605328654:0;pyenv versions
+: 1605328665:0;pyenv local 3.9.0
+: 1605328673:0;python --version
+: 1605328677:0;pip list
+: 1605328692:0;pip install pip
+: 1605328717:0;python -m pip install --upgrade pip
+: 1605328726:0;pip list
+: 1605328734:0;pip search mercurial
+: 1605328746:0;pip search hg-git
+: 1605328770:0;pip install mercurial
+: 1605328821:0;hg st
+: 1605328828:0;pip install hg-git
+: 1605328836:0;hg st
+: 1605328838:0;hg d
+: 1605328864:0;hg in
+: 1605328874:0;l
+: 1605328878:0;cd ..
+: 1605328879:0;l
+: 1605329041:0;hg clone ssh://hg@hg.sr.ht/~evgeniysharapov/Website
+: 1605329046:0;cd Website
+: 1605329047:0;l
+: 1605329052:0;make
+: 1605329074:0;l
+: 1605329084:0;cd public
+: 1605329086:0;open index.html
+: 1605411214:0;cd ..
+: 1605411235:0;cd ~/Documents/Projects/Website
+: 1605411238:0;cd public
+: 1605411240:0;l
+: 1605411250:0;python --version
+: 1605411260:0;python -m SimpleHTTPServer
+: 1605411267:0;python -m SimpleHTTPServer 5000
+: 1605666330:0;hg pull
+: 1605666334:0;hg up
+: 1605666336:0;hg st
+: 1605666338:0;hg d
+: 1605666353:0;hg revert -Ca
+: 1605666355:0;hg up
+: 1605666359:0;hg lga
+: 1605666368:0;dotnet --version
+: 1605666382:0;dotnet fsi
+: 1605666393:0;cd ..
+: 1605666393:0;l
+: 1605666402:0;cd FSharpTest
+: 1605666403:0;l
+: 1605666478:0;dotnet publish -c Release --self-container true -p:PublishReadyToRun=true -p:PublishSingleFile=true -p:PublishTrimmed=true
+: 1605666487:0;dotnet publish -c Release --self-contained true -p:PublishReadyToRun=true -p:PublishSingleFile=true -p:PublishTrimmed=true
+: 1605666501:0;dotnet publish -c Release --self-contained true -p:PublishReadyToRun=true -p:PublishSingleFile=true -p:PublishTrimmed=true -r osx
+: 1605666543:0;dotnet publish -c Release --self-contained true -p:PublishReadyToRun=true -p:PublishSingleFile=true -p:PublishTrimmed=true -r osx-x64
+: 1605666605:0;l ./bin/Release/netcoreapp3.1/osx-x64/FSharpTest
+: 1605666609:0;./bin/Release/netcoreapp3.1/osx-x64/FSharpTest
+: 1605666651:0;brew update
+: 1605666870:0;brew cask list
+: 1605666880:0;brew list
+: 1605666891:0;brew list --cask
+: 1605666901:0;which dotnet
+: 1605666910:0;brew search dotnet
+: 1605666935:0;brew info dotnet
+: 1605666945:0;brew cask info dotnet
+: 1605666959:0;brew cask info dotnet-sdk
+: 1605666989:0;l
+: 1605666992:0;cd ..
+: 1605667095:0;which dotnet
+: 1605667106:0;ls /usr/local/share/dotnet
+: 1605667120:0;l ~/Downloads
+: 1605667281:0;curl -O https://raw.githubusercontent.com/dotnet/cli/master/scripts/obtain/uninstall/dotnet-uninstall-pkgs.sh\
+
+: 1605667289:0;chmod u+x dotnet-uninstall-pkgs.sh
+: 1605667297:0;sudo ./dotnet-uninstall-pkgs.sh	
+: 1605667316:0;rehash
+: 1605667408:0;curl -O https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/master/mac/resources/uninstall-vsmac.sh
+: 1605667416:0;chmod u+x uninstall-vsmac.sh
+: 1605667421:0;sudo ./uninstall-vsmac.sh
+: 1605668572:0;rehash
+: 1605668576:0;dotnet
+: 1605668580:0;dotnet --version
+: 1605668586:0;cd FSharpTest
+: 1605668587:0;l
+: 1605668591:0;rm -rf bin
+: 1605668598:0;dotnet publish -c Release --self-contained true -p:PublishReadyToRun=true -p:PublishSingleFile=true -p:PublishTrimmed=true -r osx-x64
+: 1605668636:0;./bin/Release/netcoreapp3.1/osx-x64/FSharpTest
+: 1605668649:0;du -hs ./bin/Release/netcoreapp3.1/osx-x64
+: 1605668704:0;cd website
+: 1605668708:0;cd ../Website
+: 1605668709:0;l
+: 1605668720:0;rm ~/.org-timestamps
+: 1605668727:0;rm -rf ~/.org-timestamps
+: 1605672089:0;hg st
+: 1605672095:0;make
+: 1605750309:0;hg st
+: 1605750350:0;hg addremove src
+: 1605750352:0;hg st
+: 1605750358:0;hg addremove static
+: 1605750360:0;hg st
+: 1605750376:0;hg commit -m "updated - added some content for testing\
+"
+: 1605750382:0;hg pull
+: 1605750387:0;hg lga
+: 1605750405:0;hg merge tip
+: 1605750573:0;hg st
+: 1605750592:0;hg commit -m "merged"
+: 1605750595:0;hg lga
+: 1605750601:0;hg push
+: 1605753533:0;rm -rf ~/.org-timestamps
+: 1605753535:0;make
+: 1605756075:0;gst
+: 1605756077:0;hg st
+: 1605756104:0;echo *.elc >> .hgignore
+: 1605756107:0;hg st
+: 1605756120:0;hg add .
+: 1605756122:0;hg st
+: 1605756142:0;hg commit -m "changes to ignore compile Elisp files and styles included html"
+: 1605756144:0;l
+: 1605756153:0;hg branch simple
+: 1605756165:0;hg book simple
+: 1605756171:0;hg branch --help
+: 1605756181:0;hg branch -C
+: 1605756188:0;hg book simple
+: 1605756194:0;hg lga
+: 1605756754:0;rm -rf ~/.org-timestamps && make
+: 1605759335:0;l public
+: 1605759356:0;cat public/site.html
+: 1605759371:0;l
+: 1605759450:0;rm -rf ~/.org-timestamps && make
+: 1605759512:0;l public
+: 1605759516:0;l public/assets
+: 1605759520:0;l public/assets/css
+: 1605759697:0;rm -rf ~/.org-timestamps && make
+: 1605760159:0;hg st
+: 1605760161:0;hg add .
+: 1605760165:0;hg st
+: 1605760177:0;hg commit -m "somewhat workable simple version"
+: 1605760879:0;rm -rf ~/.org-timestamps && make
+: 1605760964:0;hg st
+: 1605760969:0;hg addremove
+: 1605760970:0;hg st
+: 1605760984:0;hg commit -m "working version with HTML includes"
+: 1605760987:0;hg lga
+: 1605761074:0;rm -rf ~/.org-timestamps && make
+: 1605761093:0;rm -rf ~/.org-timestamps
+: 1605761330:0;rm -rf ~/.org-timestamps && make
+: 1605765355:0;hg push
+: 1605765362:0;hg lga
+: 1608866631:0;l
+: 1608866636:0;cd .dotfiles
+: 1608866640:0;g pull
+: 1608866643:0;hg pull
+: 1608866654:0;hg lga
+: 1608866661:0;hg up
+: 1608866664:0;hg st
+: 1608866665:0;hg d
+: 1608866686:0;hg cm "remove issue line from tmux mac os x config"
+: 1608866695:0;hg pull
+: 1608866731:0;hg up
+: 1608866739:0;hg lga
+: 1608866761:0;hg glog --style=compact
+: 1608867258:0;hg book
+: 1608867266:0;hg bookmarks
+: 1608867270:0;hg branches
+: 1608867278:0;hg glog --style=compact
+: 1608867286:0;hg merge 206
+: 1608867319:0;hg cm "merged two branches"
+: 1608867322:0;hg lga
+: 1608867327:0;l
+: 1608867357:0;l ~
+: 1608867375:0;which rd
+: 1608867386:0;which rmdir
+: 1608867392:0;man rmdir
+: 1608867446:0;man ln
+: 1608867565:0;ln -s .zsh ~/.zsh

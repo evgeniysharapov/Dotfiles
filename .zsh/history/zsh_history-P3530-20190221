@@ -1951,3 +1951,280 @@ EOF
 : 1608616349:0;hg add .
 : 1608616350:0;hg  st
 : 1608616363:0;hg cm "added history search and completion on up/down"
+: 1608616366:0;hg push
+: 1608616375:0;hg lga
+: 1608616458:0;aod-service
+: 1608616461:0;cd..
+: 1608616463:0;l
+: 1608616466:0;cd ..
+: 1608616467:0;l
+: 1608616485:0;aod-service
+: 1608616486:0;l
+: 1608616490:0;gst
+: 1608616494:0;ga .
+: 1608616495:0;gst
+: 1608616498:0;npm run test
+: 1608616518:0;npm i aws-sdk --save-dev
+: 1608616532:0;npm run test
+: 1608616538:0;gst
+: 1608616540:0;ga .
+: 1608616541:0;gst
+: 1608616564:0;gcmsg "OPEB-1641: running tests works and signing layers is done"
+: 1608616569:0;g push
+: 1608616575:0;g lga
+: 1608616580:0;cd ..
+: 1608616581:0;l
+: 1608616591:0;rd ainq-aod-service
+: 1608616598:0;rd lambda
+: 1608616602:0;rd lambda-sam
+: 1608616605:0;l
+: 1608616649:0;cd ..
+: 1608616650:0;l
+: 1608616655:0;cd PULSE/aod-service
+: 1608616656:0;l
+: 1608616665:0;g co -b tf-localstack-testing
+: 1608616695:0;l
+: 1608616711:0;mkdir __integration__
+: 1608616712:0;l
+: 1608616720:0;l __tests__
+: 1608616749:0;rd __integration__
+: 1608616764:0;md __tests__/it
+: 1608616768:0;cd enterprise-audit-terraform
+: 1608616774:0;popd
+: 1608616780:0;cd __tests__/it
+: 1608616781:0;l
+: 1608616795:0;te resources.tf
+: 1608616923:0;docker run -d \\
+   -p 4567-4578:4567-4578 -p 8080:8080 \\
+   localstack/localstack
+: 1608616933:0;terraform init
+: 1608616967:0;l
+: 1608617001:0;terraform -f resources.tf apply --auto-approve
+: 1608617014:0;terraform apply -f resources.tf --auto-approve
+: 1608617037:0;terraform apply -f resources.tf -auto-approve
+: 1608617046:0;terraform apply -auto-approve
+: 1608617111:0;aws dynamodb list-tables \\
+--endpoint-url http://localhost:4569
+: 1608617127:0;docker ps
+: 1608617162:0;aws dynamodb list-tables \\
+--endpoint-url http://localhost:4567
+: 1608617220:0;node
+: 1608617884:0;cat ~/.aws/config
+: 1608617900:0;cat ~/.aws/credentials
+: 1608617927:0;terraform apply -auto-approve
+: 1608617944:0;docker kill admiring_edison
+: 1608617951:0;docker rm admiring_edison
+: 1608618186:0;docker run -d -p 4567-4578:4567-4578 -p 8080:8080 localstack/localstack
+: 1608618196:0;terraform apply -auto-approve
+: 1608618224:0;aws --endpoint-url=http://localhost:4572 s3 help
+: 1608618233:0;aws --endpoint-url=http://localhost:4572 s3 ls
+: 1608618285:0;aws --endpoint-url http://localhost:4572 s3 ls
+: 1608618300:0;aws --profile=locastack --endpoint-url http://localhost:4572 s3 ls
+: 1608618311:0;aws --profile=localstack --endpoint-url http://localhost:4572 s3 ls
+: 1608618340:0;aws --endpoint-url http://localhost:4572 --region us-east-1 s3 ls
+: 1608618402:0;aws --endpoint-url http://localhost:4566 --region us-east-1 s3 ls
+: 1608618453:0;l
+: 1608618460:0;rd .terraform
+: 1608618465:0;rm .terraform.lock.hcl
+: 1608618468:0;cd..
+: 1608618469:0;cd ..
+: 1608618473:0;..
+: 1608618474:0;;
+: 1608618477:0;l
+: 1608618487:0;te docker-compose.yml
+: 1608618561:0;docker ps
+: 1608618565:0;docker kill sweet_ramanujan
+: 1608618570:0;docker rm sweet_ramanujan
+: 1608618572:0;docker ps
+: 1608618578:0;docker rm ainq-aod-service_localstack_1
+: 1608618582:0;docker rm ainq-aod-service_mysql_1
+: 1608618583:0;l
+: 1608618602:0;docker-compose up
+: 1608618616:0;aod-service
+: 1608618633:0;aws --endpoint-url http://localhost:4566 --region us-east-1 s3 ls
+: 1608618649:0;aws --endpoint-url http://localhost:4566 --region us-east-1 kms list-keys
+: 1608618817:0;l
+: 1608620791:0;cd /home/esharapov/Projects/PULSE/aod-service
+: 1608620791:0;node_modules/.bin/jest __tests__/digisign-layer/index.test.js --testNamePattern="Signing Data" --require @babel/register
+: 1608620812:0;npm run test
+: 1608620853:0;node --version
+: 1608620866:0;which node
+: 1608620875:0;apt-cache search nodejs
+: 1608620902:0;apt-cache info nodejs
+: 1608620907:0;apt-get info nodejs
+: 1608620911:0;apt info nodejs
+: 1608620946:0;sudo apt update
+: 1608621000:0;node --version
+: 1608621007:0;npm --version
+: 1608621123:0;curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+: 1608621183:0;sudo apt-get install -y nodejs
+: 1608621212:0;curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+: 1608621225:0;echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+: 1608621238:0;sudo apt-get update && sudo apt-get install yarn
+: 1608621246:0;rehash
+: 1608621249:0;node --version
+: 1608621256:0;npm run test
+: 1608621576:0;gst
+: 1608621577:0;ga .
+: 1608621578:0;gst
+: 1608621599:0;gcmsg "OPEB-1641: added local testing capabilities"
+: 1608621898:0;npm run test
+: 1608622271:0;sam build
+: 1608622298:0;npm run test
+: 1608622377:0;sam build
+: 1608622406:0;npm run test
+: 1608622538:0;sam build
+: 1608622568:0;npm run test
+: 1608648287:0;gst
+: 1608648416:0;npm run test
+: 1608649555:0;hg st
+: 1608649556:0;gst
+: 1608649558:0;gd
+: 1608654430:0;l
+: 1608654895:0;gst
+: 1608654901:0;gd
+: 1608655054:0;npm run test
+: 1608655101:0;sam build
+: 1608655143:0;npm run test
+: 1608666898:0;sam build && npm run test
+: 1608668231:0;node "/home/esharapov/Projects/PULSE/aod-service/__tests__/digisign-layer/index.test.js"
+: 1608668720:0;Projects
+: 1608668721:0;l
+: 1608668751:0;l PULSE
+: 1608668774:0;cat PULSE/ainq-prompt-service
+: 1608668785:0;l PULSE/ainq-prompt-service/
+: 1608668795:0;l PULSE/ainq-prompt-service/.vscode
+: 1608668798:0;l PULSE/ainq-prompt-service/.vscode/launch.json
+: 1608668801:0;cat PULSE/ainq-prompt-service/.vscode/launch.json
+: 1608669381:0;sam build && npm run test
+: 1608671304:0;gst
+: 1608671305:0;gd
+: 1608671327:0;gcmsg "OPEB-1641: running tests against localstack"
+: 1608671330:0;ga .
+: 1608671332:0;gcmsg "OPEB-1641: running tests against localstack"
+: 1608671335:0;g lga
+: 1608671336:0;q
+: 1608672000:0;node
+: 1608672110:0;sam build && npm run test
+: 1608673133:0;gst
+: 1608673135:0;ga -u
+: 1608673136:0;gst
+: 1608673159:0;gcmsg "OPEB-1641: finally passing tests for digital signature"
+: 1608673161:0;g lga
+: 1608673163:0;g push
+: 1608673189:0;gcm
+: 1608673194:0;g co master
+: 1608673201:0;g merge tf-localstack-testing
+: 1608673204:0;g lga
+: 1608673208:0;g push
+: 1608673214:0;g lga
+: 1608673600:0;docker ps
+: 1608673756:0;gst
+: 1608673759:0;ga -u
+: 1608673770:0;gcmsg "OPEB-1641: updated documentation"
+: 1608673916:0;gst
+: 1608673921:0;sam build
+: 1608674076:0;sam local invoike
+: 1608674083:0;sam local invoke
+: 1608674271:0;sam build && sam local invoke
+: 1608674454:0;aws --endpoint-url http://localhost:4566 --region us-east-1 kms list-keys
+: 1608674510:0;sam build && sam local invoke
+: 1608674723:0;sam local invoke --event events/event-sqs.json
+: 1608674904:0;sam
+: 1608674908:0;sam validate
+: 1608674923:0;sam local invoke --help
+: 1608674928:0;sam local
+: 1608675318:0;sam local invoke --help
+: 1608675404:0;sam local invoke --profile esharapov_ent -e events/event-sqs.json
+: 1608675591:0;gst
+: 1608675594:0;gd
+: 1608675600:0;ga -u
+: 1608675617:0;gcmsg "OPEB-1641: adding all the layers together"
+: 1608675619:0;l
+: 1608694316:0;gst
+: 1608694318:0;g lga
+: 1608695663:0;sam build && sam local invoke --profile esharapov_ent -e events/event-sqs.json
+: 1608695970:0;sam build && sam local invoke -e events/event-sqs.json
+: 1608696196:0;gst
+: 1608696201:0;gd
+: 1608696204:0;gst
+: 1608696211:0;ga .vscode
+: 1608696213:0;gst
+: 1608696225:0;gcmsg "OPEB-1641: added VS code debug configuration"
+: 1608696476:0;l
+: 1608696821:0;gst
+: 1608696836:0;sam build
+: 1608701024:0;gst
+: 1608701297:0;l /home/esharapov/Projects/PULSE/aod-service/template.yml
+: 1608701531:0;sam build
+: 1608701606:0;sam local invoke -e events/event-sqs.json
+: 1608701650:0;sam build && sam local invoke -e events/event-sqs.json
+: 1608745756:0;g lga
+: 1608745823:0;g push
+: 1608745834:0;g remote add srht git@git.sr.ht:~evgeniysharapov/AODService
+: 1608745839:0;g push srht
+: 1609564079:0;g lga
+: 1609564101:0;sam build && sam local invoke -e events/event-sqs.json
+: 1609567019:0;sam build && sam local --profile localstack invoke -e events/event-sqs.json
+: 1609567067:0;sam build && sam local invoke  --profile localstack -e events/event-sqs.json
+: 1609567197:0;docker-compose up
+: 1609567298:0;aws kms list-keys
+: 1609567314:0;aws kms --help
+: 1609567347:0;aws kms help
+: 1609567415:0;aws kms describe-key 98cb42da-20f9-427a-a827-e5a819fa2347
+: 1609567421:0;aws kms describe-key help
+: 1609567432:0;aws kms describe-key --key-id 98cb42da-20f9-427a-a827-e5a819fa2347
+: 1609567454:0;aws kms list-keys help
+: 1609567509:0;aws kms help
+: 1609567551:0;aws kms create-key --customer-master-key-spec \\
+          ECC_NIST_P521  \\
+          --key-usage SIGN_VERIFY \\
+          --description "Sample Digital Signature Key Pair"
+: 1609567619:0;sam build && sam local invoke -e events/event-sqs.json
+: 1609569575:0;aws help
+: 1609569590:0;aws rds help
+: 1609569620:0;aws help
+: 1609569634:0;aws rds-data help
+: 1609569814:0;aws rds create-db-cluster \\
+        --db-cluster-identifier aod-db-cluster \\
+        --enable-http-endpoint
+: 1609569836:0;aws rds create-db-cluster help
+: 1609569869:0;aws rds create-db-cluster \\
+        --db-cluster-identifier aod-db-cluster \\
+        --enable-http-endpoint
+: 1609569897:0;aws rds create-db-cluster  --   --db-cluster-identifier aod-db-cluster \\
+        --enable-http-endpoint
+: 1609569943:0;autoload -z edit-command-line
+: 1609569956:0;zle -N edit-command-line
+: 1609569964:0;bindkey "^X^E" edit-command-line
+: 1609570142:0;export VISUAL=te
+: 1609570158:0;te
+: 1609570194:0;export EDITOR=te
+: 1609570309:0;which te
+: 1609570337:0;export EDITOR='emacsclient -t'
+: 1609570346:0;export EDITOR='emacsclient -t -a ""'
+: 1609570375:0;export VISUAL=$EDITOR
+: 1609570377:0;export EDITOR='emacsclient -t -a ""'
+: 1609570382:0;export VISUAL=$EDITOR
+: 1609570416:0;aws rds create-db-cluster \\
+        --engine aurora-mysql \\
+        --db-cluster-identifier aod-db-cluster \\
+        --enable-http-endpoint
+: 1609570546:0;aws rds create-db-cluster \\
+        --master-username root \\
+        --engine aurora-mysql \\
+        --db-cluster-identifier aod-db-cluster \\
+        --enable-http-endpoint
+: 1609570577:0;aws rds create-db-cluster \\
+        --master-username root \\
+        --master-user-password password \\
+        --engine aurora-mysql \\
+        --db-cluster-identifier aod-db-cluster \\
+        --enable-http-endpoint
+: 1609570682:0;cd ~/.dotfiles
+: 1609570684:0;hg st
+: 1609570685:0;hg d
+: 1609570701:0;te .zshrc
+: 1609571004:0;hg st
+: 1609571006:0;hg d
+: 1609571027:0;hg cm "added ^X^E editing of command line in terminal emacs"

@@ -1134,3 +1134,57 @@
 : 1608956007:0;l
 : 1608956010:0;hg d
 : 1608956030:0;hg cm "on mac ls uses -G for colors"
+: 1608956033:0;hg push
+: 1608956040:0;l
+: 1608956042:0;cd
+: 1608956044:0;l
+: 1608956056:0;rm .zsh_custom
+: 1608956064:0;rm .zshrc.Evgeniys-MBP
+: 1608956071:0;rm .zshrc.P3530-20190221
+: 1608956077:0;rm .zshrc.SharMbp
+: 1608956083:0;rm .zshrc.amac02vg2gwg8wl
+: 1608956091:0;rm .zshrc.osx
+: 1608956096:0;rm .zshrc.senmb
+: 1608956101:0;rm .zshrc.swp
+: 1608956104:0;l
+: 1608956122:0;rm .zcompdump-Evgeniyâ€ƒ¹s\ MacBook\ Pro-5.7.1
+: 1608956134:0;rm .zcompdump-SharMbp-5.7.1
+: 1608956141:0;rm .zcompdump-Unknown-5.8
+: 1608956143:0;l
+: 1608956165:0;cd ~/Documents
+: 1608956166:0;l
+: 1608956169:0;l Projects
+: 1608956170:0;l
+: 1608956180:0;l Projects
+: 1608956209:0;brew upgrade
+: 1609467058:0;l
+: 1609467069:0;cd Documents
+: 1609467070:0;l
+: 1609467075:0;cd ../Downloads
+: 1609467076:0;l
+: 1609467090:0;brew install youtube-dl
+: 1609467215:0;rehash
+: 1609467220:0;youtube-dl --help
+: 1609467272:0;youtube-dl https://www.youtube.com/watch?v=CqT9_yfUfXI
+: 1609467574:0;l
+: 1609467614:0;md "Mozart - Magic Flute"
+: 1609467617:0;cd Mozart\ -\ Magic\ Flute
+: 1609467618:0;l
+: 1609467632:0;youtube-dl --all-subs https://www.youtube.com/watch?v=CqT9_yfUfXI
+: 1609467678:0;youtube-dl --lst-subs https://www.youtube.com/watch?v=CqT9_yfUfXI
+: 1609467687:0;youtube-dl --list-subs https://www.youtube.com/watch?v=CqT9_yfUfXI
+: 1609467718:0;youtube-dl --help
+: 1609467740:0;youtube-dl --write-auto-sub https://www.youtube.com/watch?v=CqT9_yfUfXI
+: 1609468397:0;brew search vlc
+: 1609468428:0;brew cask install vlc
+: 1609468442:0;brew install --cask vlc
+: 1610937546:0;cd
+: 1610939456:0;l
+: 1610939469:0;brew update
+: 1610940167:0;cd .dotfiles
+: 1610940170:0;hg pull
+: 1610940185:0;hg up
+: 1610940188:0;hg st
+: 1610940190:0;hg d
+: 1610940202:0;hg st
+: 1610940298:0;hg commit -m "history for SharMbp"

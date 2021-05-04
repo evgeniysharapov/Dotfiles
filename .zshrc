@@ -55,7 +55,7 @@ setopt pushdminus
 autoload -z edit-command-line
 zle -N edit-command-line
 bindkey "^X^E" edit-command-line
-export EDITOR="emacsclient -t -a''"
+export EDITOR="emacsclient -t -a ''"
 export VISUAL=$EDITOR
 
 # * Keybindings

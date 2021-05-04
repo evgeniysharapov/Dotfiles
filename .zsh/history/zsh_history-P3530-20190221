@@ -5433,3 +5433,9 @@ EOF
 : 1620154925:0;.dotfiles
 : 1620154926:0;hg st
 : 1620155075:0;hg commit --interactive
+: 1620155344:0;hg lga
+: 1620155348:0;hg st
+: 1620155352:0;hg d
+: 1620155387:0;hg add .zsh/completions
+: 1620155389:0;gst
+: 1620155391:0;hg commit

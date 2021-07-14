@@ -1,0 +1,275 @@
+: 1625631939:0;hg --version
+: 1625632035:0;docker --version
+: 1625632356:0;docker images
+: 1625632359:0;docker ps -a
+: 1625632405:0;docker-compose -v
+: 1625632639:0;xeyes&
+: 1625632700:0;xeyes &
+: 1625632724:0;cat /etc/hosts
+: 1625632773:0;cd .emacs.d
+: 1625632812:0;l ~/.zsh
+: 1625632826:0;l ~/.zsh/spec/P3530-20190221.zsh
+: 1625632837:0;cat ~/.zsh/spec/P3530-20190221.zsh
+: 1625632969:0;l
+: 1625633599:0;cp P3530-20190221.el DESKTOP-OU44UDR.el
+: 1625633654:0;cp ~/.zsh/spec/P3530-20190221.zsh ~/.zsh/spec/DESKTOP-OU44UDR.zsh
+: 1625633680:0;xeyes &
+: 1625633707:0;gst
+: 1625633709:0;l
+: 1625633869:0;e . &
+: 1625698200:0;l
+: 1625698203:0;ll
+: 1625698253:0;l
+: 1625698262:0;Projects
+: 1625698263:0;l
+: 1625703795:0;cd ~/.emacs.d
+: 1625703798:0;l
+: 1625703811:0;cd ..
+: 1625703812:0;l
+: 1625703817:0;cd ai-worklog
+: 1625704243:0;gst
+: 1625704246:0;grhh
+: 1625704249:0;g pull
+: 1625704279:0;e . &
+: 1625707962:0;htop
+: 1625801589:0;e Worklog.org &
+: 1626065136:0;l
+: 1626068607:0;cd ai-worklog
+: 1626068610:0;g lga
+: 1626068619:0;gst
+: 1626068623:0;e . &
+: 1626068679:0;pgrep emacs
+: 1626068686:0;pgrep emacs | xargs kill
+: 1626068696:0;e Worklog.org &
+: 1626068723:0;htop
+: 1626074162:0;gd
+: 1626075074:0;grhh
+: 1626075310:0;g pull
+: 1626075321:0;e Worklog.org &
+: 1626099269:0;cd ..
+: 1626099273:0;cd PULSE
+: 1626099275:0;l
+: 1626099285:0;cd xml-transform
+: 1626099288:0;g pull
+: 1626099292:0;g lga
+: 1626099307:0;g co r2021-10
+: 1626099310:0;g lga
+: 1626099313:0;l
+: 1626099319:0;./gradlew clean build
+: 1626099347:0;PULSE
+: 1626099349:0;l
+: 1626099355:0;cd pulse-nodejs-service
+: 1626099358:0;g pull
+: 1626099364:0;g lga
+: 1626099376:0;g co r2021-07
+: 1626099378:0;g pull
+: 1626099381:0;gd
+: 1626099396:0;grhh
+: 1626099400:0;g co r2021-07
+: 1626099402:0;g pull
+: 1626099406:0;l
+: 1626099417:0;e . &
+: 1626100338:0;cd ainq-common-service
+: 1626100345:0;ag cookie
+: 1626100434:0;e . &
+: 1626105547:0;cd ULP
+: 1626105548:0;l
+: 1626105565:0;g clone https://git.ainq.com/ulp-development/java-libraries/ulp-immunizations-ws-api.git
+: 1626105573:0;cd ulp-immunizations-ws-api
+: 1626105575:0;l
+: 1626105580:0;g lga
+: 1626105595:0;g co -b CEN-1507-update-wsdl-location
+: 1626105603:0;cat README.md
+: 1626105634:0;wsimport -keep -extension https://www.mdimmunet.org/mdws/client_Service?wsdl
+: 1626105638:0;gst
+: 1626105656:0;e . &
+: 1626105774:0;curl https://www.mdimmunet.org/mdws/client_Service?wsdl >> src/main/resources/org/mdimmunet/WSDL.wsdl
+: 1626105785:0;curl https://www.mdimmunet.org/mdws/client_Service?wsdl
+: 1626105804:0;curl https://www.mdimmunet.org/mdws/client_Service?wsdl > ./src/main/resources/org/mdimmunet/WSDL.wsdl
+: 1626105831:0;md src/main/resources/org/mdimmunet
+: 1626105833:0;curl https://www.mdimmunet.org/mdws/client_Service?wsdl > ./src/main/resources/org/mdimmunet/WSDL.wsdl
+: 1626105835:0;gst
+: 1626105910:0;gd
+: 1626105929:0;gst
+: 1626105948:0;ga -u
+: 1626105962:0;ga src/main/resources/org
+: 1626105963:0;gst
+: 1626105987:0;gcmsg "CEN-1507: updated wsdl for MD immunization SOAP endpoint"
+: 1626105989:0;g lga
+: 1626106002:0;./gradlew clean build
+: 1626106010:0;chmod +x gradlew 
+: 1626106012:0;./gradlew clean build
+: 1626106025:0;gst
+: 1626106028:0;g clean -f
+: 1626106029:0;gst
+: 1626106032:0;./gradlew clean build
+: 1626106233:0;./gradlew goJF
+: 1626106239:0;gst
+: 1626106242:0;ga -u
+: 1626106251:0;gcmsg "CEN-1507: updated formatting"
+: 1626106257:0;./gradlew clean build
+: 1626106271:0;g push
+: 1626106284:0;g push -u origin CEN-1507-update-wsdl-location
+: 1626106400:0;cat ../dhin-initiate-ws-api/.gitlab-ci.yml
+: 1626106417:0;cat ../ulp-breakglass-portlet/.gitlab-ci.yml
+: 1626106437:0;gst
+: 1626106440:0;ga -u
+: 1626106460:0;gcmsg "CEN-1507: updated gitlab pipeline (this project is very old)"
+: 1626106461:0;g push
+: 1626139980:0;gst
+: 1626139981:0;g lga
+: 1626141047:0;.emacs.d
+: 1626141052:0;g pull
+: 1626141057:0;e . &
+: 1626184184:0;which e
+: 1626184250:0;e . &
+: 1626184499:0;pgrep emacs
+: 1626184509:0;pgrep emacs | xargs kill 
+: 1626185447:0;e . &
+: 1626194529:0;.emacs.d
+: 1626194534:0;e . &
+: 1626194611:0;ULP
+: 1626194615:0;ls -ltr
+: 1626194622:0;ls -lt
+: 1626194628:0;ll
+: 1626194635:0;which ll
+: 1626194652:0;man ls
+: 1626194664:0;which l
+: 1626194672:0;l
+: 1626194679:0;which lt
+: 1626194683:0;lt
+: 1626200847:0;e . &
+: 1626200862:0;htop
+: 1626200882:0;pgrep emacs | xargs kill 
+: 1626200886:0;e . &
+: 1626200934:0;t
+: 1626200938:0;e . &
+: 1626200946:0;l
+: 1626200950:0;pgrep emacs
+: 1626200957:0;pgrep emacs | xargs kill
+: 1626200960:0;e . &
+: 1626201102:0;gst
+: 1626201105:0;gd
+: 1626201963:0;gst
+: 1626201967:0;rm t
+: 1626201979:0;e . &
+: 1626204209:0;powershell
+: 1626204212:0;powershell.exe
+: 1626204240:0;powershell.exe --help
+: 1626204705:0;e . &
+: 1626204711:0;l
+: 1626204715:0;e . &
+: 1626204718:0;pgrep emacs
+: 1626204719:0;e . &
+: 1626204721:0;pgrep emacs
+: 1626204736:0;kill 23736
+: 1626204751:0;kill 23782
+: 1626204759:0;kill 23818
+: 1626204762:0;e . &
+: 1626204765:0;pgrep emacs
+: 1626204772:0;kill 23964
+: 1626204781:0;htop
+: 1626204793:0;pgrep emacs
+: 1626204801:0;kill 15524
+: 1626204806:0;e . &
+: 1626204809:0;pgrep emacs
+: 1626204823:0;pgrep emacs | xargs kill
+: 1626204825:0;e . &
+: 1626207322:0;powershell.exe scripts/clipboard-to-file.ps1 test.png
+: 1626207332:0;explorer .
+: 1626207335:0;explorer.exe
+: 1626207341:0;explorer.exe .
+: 1626208476:0;pgrep emacs | xargs kill
+: 1626208482:0;e . &
+: 1626209254:0;ULP
+: 1626209257:0;lt
+: 1626209298:0;g clone https://git.ainq.com/CRISP_Unified_Landing_Page/service-immunizations.git
+: 1626209306:0;cd service-immunizations
+: 1626209309:0;g lga
+: 1626209358:0;g co -b CEN-1507-mdm-endpoint-change
+: 1626209364:0;./gradlew clean build
+: 1626209373:0;chmod +x gradlew
+: 1626209374:0;./gradlew clean build
+: 1626209452:0;cat ~/.zsh/history/zsh_history-P3530-20190221 | grep ssh
+: 1626209460:0;ssh pi@192.168.1.51
+: 1626209617:0;gst
+: 1626209620:0;te .
+: 1626209723:0;gst
+: 1626209726:0;ga -u
+: 1626209748:0;gcmsg "CEN-1507: updated deps for immunization ws lib (MDM endpoint WSDL)"
+: 1626209755:0;./gradlew clean build
+: 1626209779:0;g push
+: 1626209785:0;g push -u origin CEN-1507-mdm-endpoint-change
+: 1626209836:0;./gradlew goJF
+: 1626209843:0;gst
+: 1626209844:0;gd
+: 1626209854:0;te .gitlab-ci.yml
+: 1626209874:0;ga -u
+: 1626209887:0;gcmsg "CEN-1507: updated DinD for Gitlab pipeline"
+: 1626209890:0;g push
+: 1626210059:0;gst
+: 1626238504:0;pgrep emacs 
+: 1626238515:0;pgrep emacs | xargs kill
+: 1626238526:0;.emacs.d
+: 1626238528:0;g lga
+: 1626238531:0;l
+: 1626238559:0;htop
+: 1626238571:0;idea &
+: 1626272329:0;htop
+: 1626272505:0;.emacs.d 
+: 1626272508:0;e . &
+: 1626274045:0;htop
+: 1626274095:0;e . &
+: 1626274100:0;htop
+: 1626274132:0;e . &
+: 1626274226:0;htop
+: 1626274251:0;cd ..
+: 1626274260:0;cd ~/Projects
+: 1626274261:0;l
+: 1626274266:0;cd EmacsOrg
+: 1626274267:0;l
+: 1626274270:0;cd emacs
+: 1626274276:0;l
+: 1626274293:0;g lga
+: 1626274302:0;g pull
+: 1626274324:0;g lga
+: 1626274470:0;l
+: 1626274478:0;make uninstall
+: 1626274486:0;sudo make uninstall
+: 1626274499:0;rehash
+: 1626274501:0;cd ..
+: 1626274513:0;e . &
+: 1626274553:0;htop
+: 1626274648:0;cd ~/.emacs.d
+: 1626274649:0;l
+: 1626274660:0;rd eln-cache
+: 1626274665:0;cd elpa
+: 1626274666:0;l
+: 1626274669:0;l undo-tree-0.7.5
+: 1626274695:0;find . -name *.elc
+: 1626274707:0;find . -name *.elc | xargs rm
+: 1626274710:0;find . -name *.elc
+: 1626274716:0;cd ..
+: 1626274717:0;l
+: 1626274727:0;l .cache
+: 1626274731:0;l .cache/lsp
+: 1626274734:0;l .cache/lsp/npm
+: 1626274739:0;l .cache/lsp/npm/javascript-typescript-langserver
+: 1626274761:0;l
+: 1626274821:0;find site-lisp -name *.elc
+: 1626274826:0;e . &
+: 1626275307:0;l
+: 1626281778:0;e . &
+: 1626281839:0;te . &
+: 1626281899:0;htop
+: 1626282274:0;te .
+: 1626282588:0;e . &
+: 1626284758:0;e .emacs.d &
+: 1626284817:0;htop
+: 1626289360:0;l
+: 1626289366:0;cd ~/.dotfiles
+: 1626289368:0;hg st
+: 1626289369:0;hg d
+: 1626289373:0;hg st
+: 1626289385:0;hg add .
+: 1626289404:0;hg commit -m "moved to a new laptop DESKTOP-OU44UDR"

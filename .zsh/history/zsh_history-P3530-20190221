@@ -7,7 +7,6 @@
 : 1603393213:0;tmux new -As wsl2
 : 1603394359:0;man tmux
 : 1603394482:0;service list
-: 1603394500:0;which docker
 : 1603394804:0;wsl.exe -l -v
 : 1603394841:0;wsl --set-version Ubuntu-20.04 2
 : 1603394946:0;docker  sss
@@ -68,11 +67,9 @@
 : 1603403284:0;diff -y /mnt/c/Users/esharapov/wsl2-installed-packages.txt /mnt/c/Users/esharapov/wsl1-installed-packages.txt
 : 1603403493:0;apt search opam
 : 1603403655:0;apt search erlang
-: 1603403662:0;apt search elixir
 : 1603403809:0;mkdir Projects
 : 1603403820:0;mkdir ULP
 : 1603403847:0;g clone https://git.ainq.com/ulp-development/ulp-management-reports-client-portlet.git
-: 1603474143:0;apt search java
 : 1603474192:0;which gradle.bat 
 : 1603474198:0;which gradle
 : 1603474205:0;java --version
@@ -175,13 +172,11 @@
 : 1603480524:0;ulp-management-reports-client-portlet
 : 1603480597:0;cat /mnt/c/Users/esharapov/.gradle/gradle.properties
 : 1603480615:0;cp /mnt/c/Users/esharapov/.gradle/gradle.properties ~/.gradle/.
-: 1603480751:0;apt list --installed
 : 1603480829:0;dpkg-query -L nodejs
 : 1603480839:0;apt search npm
 : 1603480847:0;sudo apt install npm
 : 1603480952:0;python -m http.server
 : 1603481099:0;sudo mv /mnt/c/Users/esharapov/Downloads/ideaIC-2020.2.3.tar.gz /opt/.
-: 1603481123:0;l /opt
 : 1603481126:0;l /
 : 1603481147:0;cd /opt
 : 1603481158:0;sudo tar xzvd ideaIC-2020.2.3.tar.gz
@@ -193,7 +188,6 @@
 : 1603741222:0;cd ulp-management-reports-client-portlet
 : 1603741572:0;gradle --version
 : 1603741578:0;mvn --version
-: 1603741591:0;ocaml --version
 : 1603767256:0;ghci
 : 1603767425:0;eval $(opam env)
 : 1603810163:0;l source/repos/ConsoleApp1
@@ -214,7 +208,6 @@
 : 1603810801:0;less /mnt/c/Users/esharapov/.emacs.d/.gitmodules
 : 1603810990:0;cp -R /mnt/c/Users/esharapov/Projects/AWS ~/Projects/.
 : 1603811040:0;g submodule init
-: 1603811045:0;g submodule update
 : 1603816138:0;sudo apt-get install silversearcher-ag
 : 1603816160:0;ag -g help
 : 1603816265:0;apt-cache search ripgrep
@@ -316,7 +309,6 @@
 : 1603993092:0;tree -L 2
 : 1603993100:0;tree -L 3
 : 1603993163:0;clip.exe
-: 1603993166:0;clip.exe /?
 : 1603993222:0;uname -r
 : 1603993261:0;uname -r | grep -q Microsoft
 : 1603993266:0;uname -r | grep -q microsoft
@@ -392,7 +384,6 @@
 : 1604421512:0;kill -9 900
 : 1604421529:0;sudo apt remove --autoremove emacs
 : 1604421537:0;sudo apt install emacs
-: 1604421581:0;which emacs
 : 1604421590:0;emacs --help
 : 1604421951:0;g co origin/master
 : 1604421967:0;g co -b new-master
@@ -496,7 +487,6 @@
 : 1604524841:0;mkdir -p .FsAutoComplete/netcore
 : 1604524875:0;mv /mnt/c/Users/esharapov/Downloads/fsautocomplete.netcore.zip ~/.FsAutoComplete/netcore/.
 : 1604524884:0;cd ~/.FsAutoComplete/netcore
-: 1604524889:0;unzip fsautocomplete.netcore.zip
 : 1604524898:0;rm -rf fsautocomplete.netcore.zip
 : 1604525005:0;cd ~/Projects/FSharp
 : 1604525055:0;dotnet new -lang=F# console FSTestApp
@@ -510,7 +500,6 @@
 : 1604590767:0;cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 : 1604590828:0;l .dropbox-dist
 : 1604590871:0;l .dropbox-dist/dropbox-lnx.x86_64-109.4.517
-: 1604590912:0;l .tooling
 : 1604592804:0;# Installing AWS CLI Tool
 : 1604592808:0;curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 : 1604592840:0;mkdir ~/aws
@@ -525,7 +514,6 @@
 : 1604592963:0;l ~/.aws
 : 1604593020:0;l /mnt/c/Users/esharapov/.bin
 : 1604593046:0;l /mnt/c/Users/esharapov/Tools/Bin
-: 1604593068:0;l ~/.bin
 : 1604593073:0;mkdir ~/.bin
 : 1604593138:0;cp /mnt/c/Users/esharapov/Tools/Bin/cfr-0.148.jar /mnt/c/Users/esharapov/Tools/Bin/ditaa0_9.jar /mnt/c/Users/esharapov/Tools/Bin/plantuml.jar ~/.bin/.
 : 1604593265:0;dotnet tool list -f
@@ -614,8 +602,6 @@
 : 1604691069:0;cd ainq-pulse-service/
 : 1604691080:0;cat src/index.test.js
 : 1604691084:0;cat src/index.js
-: 1604691303:0;l schema
-: 1604691307:0;l schema/common
 : 1604691315:0;l schema/facility/facility-update.schema.json
 : 1604691602:0;npm install --save-dev sinon
 : 1604691644:0;gcmsg "OPEB-1668: added sinon for mocking"
@@ -639,14 +625,12 @@
 : 1604955764:0;ga src/__tests__
 : 1604955792:0;gcmsg "OPEB-1668: unit tests for password service"
 : 1604955854:0;gcmsg "OPEB-1668: changing password service to ensure that expired links cannot be worked through"
-: 1604956029:0;cd ainq-portal-web-application
 : 1604956042:0;ag "Forget"
 : 1604956046:0;ag forget
 : 1604956050:0;ag password
 : 1604956112:0;code &
 : 1604956571:0;ag LoginContent
 : 1604956671:0;g clone https://git.ainq.com/ai-platform-development/ainq-admin-portal-application.git
-: 1604956683:0;cd ainq-admin-portal-application
 : 1604958145:0;g clone https://git.ainq.com/ai-platform-development/javascript-modules/ainq-web-client-framework.git
 : 1604958158:0;ag
 : 1604958163:0;ag loginState
@@ -671,7 +655,6 @@
 : 1605046080:0;gcmsg "OPEB-1668: code review on organizing code and removing reduntant code"
 : 1605105954:0;gcmsg "OPEB-1668: updated code according to the comments in code review"
 : 1605107394:0;gcmsg "OPEB-1668: add extra action SET_EXPIRED_MESSAGE to avoid need for knowledge of a specific localized string for expired password link message"
-: 1605110291:0;te ~/.emacs.d
 : 1605110439:0;kill -9 7177
 : 1605110471:0;emacs --debug-init &
 : 1605110516:0;cat data/.emacs.desktop.wsl
@@ -714,7 +697,6 @@
 : 1605234193:0;cd Personal/website
 : 1605234253:0;cat cat .hg/hgrc
 : 1605234296:0;hg commit -m "style and programming changes in publishing. added more content"
-: 1605279051:0;cd ainq-web-client-framework
 : 1605281292:0;gcmsg "OPEB-1668: added 8 sec delay for messages on login page"
 : 1605298696:0;cd /mnt/c/Users/esharapov/Personal/website
 : 1605300110:0;l src/site.org
@@ -763,9 +745,7 @@ EOF
 : 1605557154:0;git push -u origin master
 : 1605558613:0;dotnet tool --help
 : 1605558630:0;dotnet fsi help
-: 1605558636:0;dotnet fsi --help
 : 1605558874:0;cd FSTestApp
-: 1605593467:0;l samples
 : 1605593480:0;em id_file
 : 1605593483:0;rm id_file
 : 1605593542:0;aws --profile=pulse sns publish --topic-arn=arn:aws:sns:us-east-1:397804960777:pulse-dev-emergency-census-checkin --message=file://samples/Inpatient,Auto.json
@@ -783,18 +763,15 @@ EOF
 : 1605634989:0;dotnet new console -lang "F#" -n Kattis
 : 1605635050:0;fsi "/home/esharapov/Projects/FSharp/LearnFSharp/Kattis/Program.fs"
 : 1605635171:0;dotnet fsi "/home/esharapov/Projects/FSharp/LearnFSharp/Kattis/Program.fs"
-: 1605637098:0;ls
 : 1605652414:0;rm -rf Kattis.fsproj
 : 1605652419:0;rm -rf bin
 : 1605652423:0;rm -rf coverage
 : 1605652426:0;rm -rf obj
 : 1605652432:0;cat Program.fs
 : 1605652574:0;te Program.fs
-: 1605652590:0;dotnet fsi
 : 1605652765:0;dotnet build\
 : 1605652768:0;dotnet build --help
 : 1605652784:0;dotnet run Program.fs
-: 1605652795:0;cd Kattis
 : 1605652801:0;dotnet build Program.fs
 : 1605652884:0;mv Program.fs K.fs
 : 1605652905:0;dotnet new console -lang 'F#' -o . -n Kattis
@@ -850,7 +827,6 @@ EOF
 : 1605810119:0;python --versio
 : 1605815335:0;hg commit -m "switched to HTML5"
 : 1605816756:0;l public
-: 1605818387:0;emacs --version
 : 1605818412:0;emacs --not-init --load publish.el
 : 1605818433:0;emacs --no-init --load publish.el
 : 1605837129:0;l ainq-microservice-framework
@@ -889,7 +865,6 @@ EOF
 : 1606148175:0;apt-cache search scss
 : 1606148234:0;apt-cache search sass
 : 1606148539:0;cd ~/.bin
-: 1606148550:0;echo $PATH
 : 1606148562:0;curl -O https://github.com/sass/dart-sass/releases/download/1.29.0/dart-sass-1.29.0-linux-x64.tar.gz
 : 1606148572:0;tar xzvf dart-sass-1.29.0-linux-x64.tar.gz
 : 1606148610:0;wget https://github.com/sass/dart-sass/releases/download/1.29.0/dart-sass-1.29.0-linux-x64.tar.gz
@@ -952,7 +927,6 @@ EOF
 : 1606236269:0;export NPM_PACKAGES=$HOME/.npm
 : 1606236363:0;vim ~/.npmrc
 : 1606236393:0;npm link ../ainq-microservice-framework
-: 1606236483:0;npm i nodemon
 : 1606236541:0;ag BaseModel
 : 1606236814:0;npm run build:link
 : 1606237049:0;less /home/esharapov/.npm/_logs/2020-11-24T16_56_24_299Z-debug.log
@@ -965,7 +939,6 @@ EOF
 : 1606237525:0;curl -x GET -H 'x-tenant-id: AINQ' http://localhost:3000/prompt/v1/users 
 : 1606237599:0;cp ../ainq-microservice-framework/.env .
 : 1606237622:0;curl -H 'x-tenant-id: AINQ' http://localhost:3000/prompt/v1/users 
-: 1606237680:0;cat .env
 : 1606245021:0;npm i --save-dev nodemon
 : 1606245077:0;gcmsg "OPEB-1599: updated deps"
 : 1606245122:0;rm -rf node_modeules
@@ -1092,7 +1065,6 @@ EOF
 --header 'x-tenant-id: AINQ' \\
 --header 'Content-Type: application/json'
 : 1606851225:0;ag api-
-: 1606851245:0;gitk.exe --all
 : 1606852384:0;gcmsg "OPEB-1600: updated with /api-docs url pointing to prompt API spec YAML file"
 : 1606852397:0;gcmsg "OPEB-1600: updated with /api-docs url pointing to prompt API spec YAML file" --no-verify
 : 1606860408:0;hg commit -m "added svg icons"
@@ -1124,7 +1096,6 @@ EOF
 : 1607014090:0;emacsclient -e '(kill-emacs)'
 : 1607014102:0;emacs --daemon
 : 1607014244:0;emacsclient --help
-: 1607014277:0;which e
 : 1607014357:0;e -e '(kill-emacs)'
 : 1607014967:0;.dotfile
 : 1607014978:0;hg ou
@@ -1180,7 +1151,6 @@ EOF
 : 1607026963:0;./node_modules/.bin/typescript-json-schema
 : 1607026979:0;./node_modules/.bin/typescript-json-schema src/data-layer/schema/filter-types.ts
 : 1607027028:0;./node_modules/.bin/typescript-json-schema src/data-layer/schema/filter-types.ts *
-: 1607027813:0;ga package*
 : 1607027847:0;ga src/data-layer/schema/filter-types.ts
 : 1607028061:0;gcmsg "OPEB-1599: added typescript to JSON schema conversion"
 : 1607049550:0;which gts
@@ -1314,11 +1284,9 @@ EOF
 : 1607457283:0;hg in
 : 1607488464:0;code prompt-service-workspace.code-workspace
 : 1607488689:0;e .&
-: 1607538736:0;adt-dispatch-service
 : 1607540442:0;cp samples/Inpatient,Auto.json samples/Inpatient,Auto-WrongIP.json
 : 1607540453:0;te samples/Inpatient,Auto-WrongIP.json
 : 1607540485:0;te samples/Inpatient,Auto.json
-: 1607542483:0;./gradlew dependencies
 : 1607542514:0;./gradlew dependencies > dependencies.txt
 : 1607542531:0;te dependencies.txt
 : 1607542977:0;aws --profile=esharapov_ent sns list-tpoics
@@ -1348,7 +1316,6 @@ EOF
 : 1607548231:0;g co develop
 : 1607548244:0;g co filter-api-tweaks
 : 1607548248:0;g merge develop
-: 1607548316:0;npm run start
 : 1607548678:0;g push --set-upstream origin filter-api-tweaks
 : 1607614615:0;hg log --style=compact
 : 1607614652:0;hg config
@@ -1368,7 +1335,6 @@ EOF
 : 1607622351:0;hg llga
 : 1607626434:0;which npx
 : 1607627856:0;te .dotfiles
-: 1607628666:0;cd LearnFSharp
 : 1607628696:0;dotnet new console -lang 'F#' -o ElegantFSharp
 : 1607628708:0;cd ElegantFSharp
 : 1607629121:0;dotnet fsi Mutation.fs
@@ -1420,7 +1386,6 @@ EOF
 : 1607716693:0;echo $terminfo
 : 1607717919:0;compinit
 : 1607738785:0;ls /usr/local/share/zsh/site-functions
-: 1607738789:0;l /usr/local/share/zsh/site-functions
 : 1607738792:0;l /usr/local/share/zsh/
 : 1607738807:0;l /usr/share/zsh/vendor-completions/
 : 1607738831:0;l /usr/share/zsh/functions
@@ -1483,7 +1448,6 @@ EOF
 : 1607958670:0;dc LearnOcaml
 : 1607958676:0;cd LearnOcaml
 : 1607958704:0;hg glog --style=compact
-: 1607959973:0;dotnet --help
 : 1607963168:0;aws lambda help
 : 1607969962:0;aws lambda list-layers --compatible-runtime python3.8
 : 1607969968:0;aws lambda list-layers --compatible-runtime nodejs
@@ -1551,7 +1515,6 @@ EOF
 : 1607977981:0;aws --profile=esharapov_ent lambda invoke --function-name currentTimeLambda1 --invocation-type RequestResponse --payload '{}' output.txt
 : 1607979503:0;aws --profile=esharapov_ent lambda help
 : 1607979675:0;zip -r momentjs-lambda-layer.zip momentjs-lambda-layer/*
-: 1607979693:0;zip --help
 : 1607979727:0;zip momentjs-lambda-layer.zip lia
 : 1607979732:0;zip momentjs-lambda-layer.zip list
 : 1607979919:0;rm momentjs-lambda-layer.zip
@@ -1608,7 +1571,6 @@ EOF
 : 1608063801:0;dotnet fsi HtmlData.fsx
 : 1608063831:0;dotnet fsi --langversion:preview HtmlData.fsx
 : 1608065595:0;md modules/{database,data-sign,aod-service-lambda}
-: 1608065615:0;l modules
 : 1608065798:0;which tree
 : 1608065803:0;man tree
 : 1608084471:0;touch README.md
@@ -1660,10 +1622,7 @@ EOF
 : 1608181586:0;rd .terraform.lock.hcl
 : 1608182915:0;apt-cache search dropbox
 : 1608183019:0;hg cm "added terraform completions"
-: 1608183753:0;FSharp
-: 1608183775:0;dotnet new --help
 : 1608183844:0;dotnet new classlib -lang 'F#' -o Faker
-: 1608183862:0;cd Faker
 : 1608183868:0;cat Library.fs
 : 1608184015:0;dotnet add package Fare --version 2.1.2
 : 1608214374:0;ainq-aod-service
@@ -1723,7 +1682,6 @@ EOF
 : 1608353172:0;echo mysql-layer/nodejs/node_modules >> .gitignore
 : 1608353198:0;echo .aws-sam >> .gitignore
 : 1608353295:0;gcmsg "OPEB-1641: added mysql-layer"
-: 1608566510:0;npm install
 : 1608577712:0;node digisign-layer/index.js
 : 1608577768:0;npm --help
 : 1608577788:0;npm run-script digisign-layer/index.js
@@ -1735,7 +1693,6 @@ EOF
 : 1608582953:0;l node_modules
 : 1608582958:0;l node_modules/@aws-cdk
 : 1608583128:0;rm package-lock.json
-: 1608583132:0;te package.json
 : 1608583166:0;npm i --save aws-sdk
 : 1608586667:0;aws --profile=esharapov_end kms list-keys
 : 1608586672:0;aws --profile=esharapov_ent kms list-keys
@@ -1747,7 +1704,6 @@ EOF
 : 1608587124:0;aws --profile=esharapov_ent kms sign --key-id 3da69918-91b8-467e-acdb-5b7129479417 --message-type=RAW --signing-algorithm ECDSA_SHA_512 --message fileb://index.js --output text
 : 1608587152:0;aws --profile=esharapov_ent kms sign --key-id 3da69918-91b8-467e-acdb-5b7129479417 --message-type=RAW --signing-algorithm ECDSA_SHA_512 --message fileb://index.js --output text --query Signature
 : 1608587164:0;aws --profile=esharapov_ent kms sign --key-id 3da69918-91b8-467e-acdb-5b7129479417 --message-type=RAW --signing-algorithm ECDSA_SHA_512 --message fileb://index.js --output text --query Signature | base64 --decode
-: 1608587841:0;npm build
 : 1608607754:0;npm deps
 : 1608607771:0;npm help t
 : 1608607791:0;npm help ddp
@@ -1786,7 +1742,6 @@ EOF
 : 1608616655:0;cd PULSE/aod-service
 : 1608616665:0;g co -b tf-localstack-testing
 : 1608616711:0;mkdir __integration__
-: 1608616720:0;l __tests__
 : 1608616749:0;rd __integration__
 : 1608616764:0;md __tests__/it
 : 1608616780:0;cd __tests__/it
@@ -1840,7 +1795,6 @@ EOF
 : 1608668798:0;l PULSE/ainq-prompt-service/.vscode/launch.json
 : 1608668801:0;cat PULSE/ainq-prompt-service/.vscode/launch.json
 : 1608671332:0;gcmsg "OPEB-1641: running tests against localstack"
-: 1608671336:0;q
 : 1608672110:0;sam build && npm run test
 : 1608673159:0;gcmsg "OPEB-1641: finally passing tests for digital signature"
 : 1608673201:0;g merge tf-localstack-testing
@@ -1883,7 +1837,6 @@ EOF
 : 1609569956:0;zle -N edit-command-line
 : 1609569964:0;bindkey "^X^E" edit-command-line
 : 1609570142:0;export VISUAL=te
-: 1609570158:0;te
 : 1609570194:0;export EDITOR=te
 : 1609570309:0;which te
 : 1609570337:0;export EDITOR='emacsclient -t'
@@ -2068,7 +2021,6 @@ EOF
 : 1610515543:0;aws --endpoint-url=http://localhost:4566 kms create-key --customer-master-key-spec ECC_NIST_P256 --key-usage SIGN_VERIFY --description "AOD Sample Key for Sign/Verify"
 : 1610515565:0;sam build && sam local invoke --env-vars test-env.json -e events/event-sqs.json --docker-network aod-service_aod --container-env-vars test-env.json
 : 1610515587:0;docker exec -it aod-service_mysql_1 mysql -u root -p
-: 1610564765:0;e &
 : 1610564799:0;uname -a
 : 1610571548:0;gcmsg "OPEB-1641: working locally with docker-compose and localstack operating AWS mock and MySQL container"
 : 1610571555:0;gh lga
@@ -2112,7 +2064,6 @@ EOF
 : 1610678927:0;ga package.json
 : 1610678946:0;gcmsg "OPEB-1641: specirfy directory for Jest tests"
 : 1610679199:0;npm i -D jest-runner-groups
-: 1610679365:0;npm run test
 : 1610679900:0;gcmsg "OPEB-1641: updated documentation, tests and the way we run it"
 : 1610680039:0;sam buidl
 : 1610680725:0;sam build --parameter-overrides 'ParameterKey=AodCodeUri,ParameterValue=./ ParameterKey=AodHandler,ParameterValue=src/handlers/service.aodService'
@@ -2182,9 +2133,7 @@ EOF
 : 1610770447:0;sam package --profile esharapov_ent --s3-bucket ent-aod-dev-lambda-deployments --s3-prefix aod-writer/builds
 : 1610770855:0;rm template-output.yml
 : 1610770974:0;gcmsg "OPEB-1641: updates to Gitlab CI pipeline with sed hack"
-: 1610853169:0;g lag
 : 1610853176:0;which grhh
-: 1611070551:0;l PULSE
 : 1611072777:0;cd enterprise-audit-terraform
 : 1611087190:0;cd ../ULP
 : 1611087208:0;less /mnt/c/Files/Projects/Notes.md
@@ -2253,9 +2202,6 @@ EOF
 : 1611681720:0;aws --endpoint=http://localhost:4566 ssm get-parameters-by-path --name /DeploymentConfig/Prod/FleetHealth
 : 1611681730:0;aws --endpoint=http://localhost:4566 ssm help
 : 1611688698:0;apt info emacs
-: 1611688746:0;apt search emacs
-: 1611688754:0;apt search ^emacs
-: 1611688759:0;apt search ^emacs$
 : 1611688767:0;apt search ^ledger$
 : 1611688778:0;apt search ^sass
 : 1611690773:0;ping google.com
@@ -2281,7 +2227,6 @@ EOF
 : 1611722409:0;hg --version
 : 1611722493:0;apt search ptpython
 : 1611803413:0;racket
-: 1611803429:0;apt search racket
 : 1611803434:0;apt search scheme
 : 1611803503:0;apt search chez
 : 1611803546:0;sudo apt install chezscheme
@@ -2348,9 +2293,7 @@ EOF
 : 1612284989:0;docker exec -it 7ebdaec2c496 bash
 : 1612285703:0;npm run docker:stop
 : 1612289916:0;docker exec -it 4216f6a bash
-: 1612293599:0;l datadog
 : 1612293626:0;md ainq-datadog-docker
-: 1612293753:0;te README.org
 : 1612294751:0;md node-datadog-alpine
 : 1612294757:0;md node-datadog-debian
 : 1612296652:0;cp node-datadog-debian/datadog.yaml node-datadog-alpine/.
@@ -2368,7 +2311,6 @@ EOF
 : 1612331844:0;gcmsg "OPEB-1963: using argument for a base image"
 : 1612331859:0;less package.json
 : 1612332283:0;cat ~/.aws/config
-: 1612332296:0;cat ~/.aws/credentials
 : 1612332380:0;docker-compose build --build-arg BASE_IMAGE=397804960777.dkr.ecr.us-east-1.amazonaws.com/node-dd-12:buster-latest
 : 1612332621:0;gs
 : 1612332880:0;gcmsg "OPEB-1963: updated documentation for building using Datadog prepared images from AWS registry."
@@ -2378,7 +2320,6 @@ EOF
 : 1612334593:0;gcmsg "OPEB-1963: using ref to refer to a different building ws-deploy.gitlab-ci.yml"
 : 1612335030:0;gcmsg "OPEB-1963: using ref to refer to a different building ws-deploy.gitlab-ci.yml in ai-platform-development group"
 : 1612455480:0;cd ../pipeline-common
-: 1612455491:0;gd master
 : 1612455506:0;g co maser
 : 1612455542:0;g co dd-agent
 : 1612458856:0;gcmsg 
@@ -2432,7 +2373,6 @@ EOF
 : 1612502028:0;docker rm a3b8ae
 : 1612502429:0;docker rmi 0140bf65309b
 : 1612502463:0;docker image node-buser-slim
-: 1612502478:0;docker image ls
 : 1612502492:0;docker image 0140bf
 : 1612502496:0;docker image rm 0140bf
 : 1612502530:0;docker build --help
@@ -2460,7 +2400,6 @@ EOF
 : 1612507342:0;node -r ~/.npm-packages/lib/node_modules/dd-trace
 : 1612507438:0;npm root
 : 1612507446:0;npm root --quiet -g
-: 1612507478:0;node
 : 1612508150:0;docker run -d -v /var/run/docker.sock:/var/run/docker.sock:ro -e DD_AGENT_HOST="evgeniy" \\
               -v /proc/:/host/proc/:ro \\
               -v /sys/fs/cgroup/:/host/sys/fs/cgroup:ro \\
@@ -2550,10 +2489,8 @@ EOF
 : 1612805800:0;zsh ./showcolors.sh
 : 1612805807:0;cat showcolors.sh
 : 1612805825:0;echo $LS_COLORS
-: 1612811040:0;ll
 : 1612811061:0;cd ainq-datadog-docker/
 : 1612811070:0;cate .gitlab-ci.yml
-: 1612811105:0;cd DataDog
 : 1612811111:0;cd trace-examples
 : 1612811118:0;cat javascript
 : 1612811124:0;cd javascript
@@ -2595,7 +2532,6 @@ EOF
 : 1612927804:0;gcmsg "OPEB-1987: using different task definition with DD Fargate type"
 : 1612927817:0;g push -u origin dd-agent-fargate
 : 1612935074:0;g -C pipeline-common checkout master
-: 1612935080:0;cd pipeline-common
 : 1612935547:0;g -C pipeline-common branches
 : 1612935554:0;g -C pipeline-common branch
 : 1612937777:0;g clone https://git.ainq.com/ai-platform-development/cicd/pipeline-common.git pc
@@ -2626,13 +2562,9 @@ EOF
 : 1613082001:0;aws ecs run-task --cluster pulse-dev-pulse-ui --task-definition pulse-dev-ainq-pulse-service:36 --launch-type FARGATE --network-configuration "awsvpcConfiguration={subnets=[subnet-03675b6ec9bb35e65,subnet-002f0d9f3e7bdc5f9],securityGroups=[sg-01f12d094cb8e41af]}"  --platform-version 1.4.0
 : 1613100993:0;gcmsg "OPEB-1987: adding more task definitions templates"
 : 1613101020:0;cat taskdef.json
-: 1613160039:0;ainq-microservice-framework
 : 1613160044:0;cd..
 : 1613160063:0;DataDog/trace-examples/javascript/node/microservices/
-: 1613278642:0;.dotfiles
 : 1613278651:0;hg out
-: 1613278777:0;hg br
-: 1613278780:0;hg branches
 : 1613279554:0;cd ../.emacs.d
 : 1613280472:0;cd ML
 : 1613280480:0;cd CollabFilt
@@ -2642,7 +2574,6 @@ EOF
 : 1613280526:0;rd CollabFilt
 : 1613280530:0;rd tutorial-env
 : 1613281257:0;pip list
-: 1613281271:0;l ~/.local/bin
 : 1613281351:0;stack --version
 : 1613409072:0;gcmsg "OPEB-1987: updates to the running tasks and task definition var replacements"
 : 1613415544:0;cat dd-ecs-auto
@@ -2652,7 +2583,6 @@ EOF
 : 1613491726:0;g commit --amend --edit
 : 1613491750:0;g commit --amend --no-edit
 : 1613491860:0;export VISUAL="emacsclient -t -a ''"
-: 1613491862:0;g commit --amend
 : 1613496207:0;gcmsg "OPEB-1987: fixed typo in deploy script."
 : 1613499914:0;aws ecs list-tasks
 : 1613499944:0;aws ecs list-clusters
@@ -2702,12 +2632,10 @@ EOF
 : 1613504898:0;gcmsg "OPEB-1987: added network-config explicitly"
 : 1613506013:0;aws ecs list-services --cluster pulse-dev-pulse-ui
 : 1613506081:0;aws ecs update-service --cluster pulse-dev-pulse-ui --service pulse-dev-ainq-pulse-service  --task-definition pulse-dev-ainq-pulse-service:39 --desired-count 1
-: 1613507024:0;cat Dockerfile
 : 1613510091:0;g co -b node-alpine-dd
 : 1613510113:0;gcmsg "OPEB-1987: prepared NodeJS Alpine based image"
 : 1613510126:0;g push -u origin node-alpine-dd
 : 1613579763:0;ainq-datadog-docker
-: 1613579820:0;l scripts
 : 1613580003:0;docker search --help
 : 1613580007:0;docker search node
 : 1613580021:0;docker search ainq
@@ -2724,7 +2652,6 @@ EOF
 : 1613593584:0;aws ecr get-login-password help
 : 1613664801:0;gcmsg "OPEB-1987: updates to the task definition template and deploy pipeline - using update-service instead of run-task."
 : 1613665681:0;l dd-ecs-auto
-: 1613665690:0;l coverage
 : 1613665935:0;g clone https://git.ainq.com/pulse-development/web-services/pulse-socket-io-service.git
 : 1613666414:0;g clone https://git.ainq.com/pulse-development/web-services/xml-transform.git
 : 1613674856:0;te ...
@@ -2842,12 +2769,9 @@ EOF
 : 1614065119:0;gcmsg "OPEB-1987: make curl follow redirects to get dd agent"
 : 1614092275:0;pulse-socket-io-service
 : 1614092346:0;cd ../ainq-pulse-service
-: 1614092353:0;cat .git/config
 : 1614099661:0;g remote add neworigin https://git.ainq.com/pulse-platform/pulse-nodejs-service.git
 : 1614099692:0;g push -u neworigin r2021-04
 : 1614099855:0;g push -u neworigin dd-agent
-: 1614099864:0;g br
-: 1614099866:0;g br -a
 : 1614099927:0;g pull neworigin
 : 1614100032:0;g push --tags neworigin
 : 1614100059:0;g br --help
@@ -2858,7 +2782,6 @@ EOF
 : 1614100256:0;g br -m master origin-master
 : 1614100261:0;g co -b master
 : 1614100270:0;g push -u neworigin master
-: 1614100323:0;g merge master
 : 1614100423:0;g remote rename origin old-origin
 : 1614100430:0;g remote rename neworigin orgin
 : 1614100440:0;g remote rename orgin origin
@@ -2873,10 +2796,8 @@ EOF
 : 1614354070:0;cd aod-service
 : 1614354086:0;g co -b db-changes
 : 1614354117:0;g br -m db-changes OPEB-1971-db-changes
-: 1614354328:0;ps aux | grep emacs
 : 1614354336:0;kill -9 9557
 : 1614365250:0;npm list
-: 1614366756:0;cat ~/.npmrc
 : 1614366777:0;mv ~/.npmrc ~/.npmrc.bak
 : 1614366801:0;cat /usr/lib/node_modules
 : 1614366804:0;l /usr/lib/node_modules
@@ -2887,9 +2808,7 @@ EOF
 : 1614366906:0;npm config list
 : 1614366937:0;npm config get prefix
 : 1614367058:0;npm i -g typescript-language-server
-: 1614367715:0;pgrep emacs | xargs kill -9
 : 1614375268:0;cat docker-compose.yml
-: 1614630823:0;ga custom.el
 : 1614630874:0;l .cache/lsp
 : 1614630877:0;l .cache/lsp/npm
 : 1614632440:0;g push -u origin OPEB-1971-db-changes
@@ -2899,7 +2818,6 @@ EOF
 : 1614632797:0;md sql/int-test
 : 1614632863:0;cp sql/AOD_Init2.sql sql/int-test/init_tenant_TEST.sql
 : 1614632983:0;docker-compose up
-: 1614633531:0;npm test
 : 1614633663:0;gcmsg "OPEB-1971: modified docker-compose file and SQL scripts for local integration tests"
 : 1614639373:0;cat test-env.json
 : 1614639729:0;aws ecr get-login --no-include-email
@@ -2912,7 +2830,6 @@ EOF
 : 1614720101:0;gcmsg "OPEB-2002: added a function to map users orgs into subscriber codes"
 : 1614720365:0;ag power
 : 1614721115:0;g co src/test/java/com/ainq/ulp/iam/transform/MappingExpressionProcessorTest.java
-: 1614721696:0;./gradlew dependencies --write-locks
 : 1614738193:0;gcmsg "OPEB-2002: working unit test"
 : 1614738218:0;g push -u origin OPEB-2002-iam-subscrition-in-saml
 : 1614784772:0;ag "/faci\
@@ -2924,10 +2841,8 @@ EOF
 : 1614791434:0;find . -name ulp-iam
 : 1614791436:0;find . -name ulp-iam*
 : 1614791445:0;cat $(find . -name ulp-iam*)
-: 1614791496:0;sudo idea &
 : 1614791504:0;sudo idea 
 : 1614791520:0;cd /opt/idea-IC-202.7660.26
-: 1614791525:0;l bin
 : 1614791534:0;sudo ./bin/idea.sh
 : 1614791562:0;chown esharapov idea-IC-202.7660.26
 : 1614791565:0;sudo chown esharapov idea-IC-202.7660.26
@@ -2944,10 +2859,8 @@ EOF
 : 1614960994:0;cd .zsh/completions
 : 1614961115:0;curl -L https://raw.githubusercontent.com/lukechilds/zsh-better-npm-completion/master/zsh-better-npm-completion.plugin.zsh -o zsh-better-npm-completion.plugin.zsh
 : 1614961125:0;source zsh-better-npm-completion.plugin.zsh
-: 1614961168:0;npm run docker:launch
 : 1614961223:0;l /mnt/c/Files/Projects/ULP
 : 1614961257:0;cp -R /mnt/c/Files/Projects/ULP/ulp-mock-idp .
-: 1614961270:0;cd ulp-mock-idp
 : 1614961313:0;cat scripts
 : 1614961318:0;cat scripts/mockIdP-insert.sql
 : 1614961352:0;cat scripts/addRoleMapping.sql
@@ -2958,15 +2871,12 @@ EOF
 : 1614962055:0;gradle -v
 : 1614962113:0;update-java-alternatives --list
 : 1614962140:0;sudo update-java-alternatives --set /usr/lib/jvm/java-1.8.0-openjdk-amd64
-: 1614962157:0;java -version
 : 1614962476:0;gcmsg "OPEB-2002: corrected failing test"
 : 1614962963:0;gcmsg "OPEB-2002: formatting new files and adding simplelogger for tests"
 : 1614977938:0;gcmsg "OPEB-2002: using JUnit testcases for SAML Response samples"
 : 1614980668:0;l tooling/template
 : 1614980673:0;l tooling/template/idp.mysql.sql
-: 1615173662:0;./gradlew bootRun
 : 1615174370:0;hg clone ssh://hg@hg.sr.ht/~evgeniysharapov/Website
-: 1615174378:0;cd Website
 : 1615174386:0;make
 : 1615174489:0;cd public
 : 1615174494:0;python -m http.server 
@@ -2987,7 +2897,6 @@ EOF
 : 1615186866:0;rd Blender
 : 1615221087:0;nslookup dhinphr.com
 : 1615221094:0;nslookup nxt.dhinphr.com
-: 1615224283:0;cd ULP
 : 1615224296:0;ag job-runner
 : 1615224458:0;g clone https://git.ainq.com/ulp-development/java-libraries/ulp-job-runner.git
 : 1615225568:0;pgrep -i idea
@@ -3063,20 +2972,17 @@ EOF
 : 1615498514:0;cd Documents/Money/processed
 : 1615498549:0;cat .hg/hgrc
 : 1615498611:0;hg commit -m "added suntrust checking processing and changes to the ledger"
-: 1615498693:0;hg lga
 : 1615499606:0;l docker-compose.local.yml
 : 1615499608:0;less docker-compose.local.yml
 : 1615499656:0;less package.json 
 : 1615564828:0;pprep java
 : 1615564840:0;pgrep --help
 : 1615564998:0;pgrep -f java
-: 1615567150:0;top
 : 1615581640:0;gcmsg "OPEB-2032: return subscriber ids instead of subscriber codes"
 : 1615582007:0;gcmsg "OPEB-2032: subscriber ids as integers not strings"
 : 1615583019:0;Money
 : 1615583116:0;cd /mnt/c/Users/esharapov.INTRANET/Dropbox/Documents/Money/
 : 1615583200:0;pgrep -a java
-: 1615583209:0;pgrep java
 : 1615583221:0;pgrep java | xargs kill -9
 : 1615584237:0;gcmsg "OPEB-2032: added tests and changed the types to int"
 : 1615584658:0;g co OPEB-2002-iam-subscrition-in-saml
@@ -3095,7 +3001,6 @@ EOF
 : 1615834939:0;cat /usr/lib/node_modules/npm/bin/npm
 : 1615834958:0;cat /usr/lib/node_modules/npm/bin/npm-cli.js
 : 1615837525:0;./gradlew clean build check
-: 1615839049:0;docker logs -f ulp-core_liferay-portal_1
 : 1615839139:0;docker rmi  26557a75e6be
 : 1615839410:0;docker run --name ulp-snapshot-lib-test -e MYSQL_ROOT_PASSWORD=password -d mysql:latest 
 : 1615839663:0;g co release_4.1.0
@@ -3116,16 +3021,13 @@ EOF
 : 1615915276:0;gcmsg "OPEB-2026: updated version of ulp-snapshot-lib"
 : 1615916132:0;cd /mnt/c/Files/Projects/AWS
 : 1615916149:0;ssh -i bastion_host.pem ubuntu@ec2-54-152-64-133.compute-1.amazonaws.com
-: 1615928314:0;gcm
 : 1615928918:0;cd node_modules
 : 1615928929:0;l | cheap
 : 1615928937:0;l | grep cheap
 : 1615928941:0;l | grep eval
 : 1615929539:0;npm i npm-install-peers
-: 1615929621:0;g co package.json
 : 1615929663:0;npm i -g npm-install-peers
 : 1615929744:0;cat ~/.npm-packages/bin
-: 1615929747:0;l ~/.npm-packages/bin
 : 1615929784:0;export PATH="~/.npm-packages/bin:${PATH}"
 : 1615929913:0;env
 : 1615929932:0;export PATH="$HOME/.npm-packages/bin:${PATH}"
@@ -3142,12 +3044,10 @@ EOF
 : 1615943427:0;gcmsg "OPEB-2026: simplified gradle build"
 : 1615944683:0;~/.npm-packages/bin/npm-install-peers 
 : 1615944866:0;./gradlew clean npm_run_build war
-: 1615945905:0;g co package-lock.json
 : 1615945942:0;gcmsg "OPEB-2026: pin the versions of NPM packages to prevent breaking the build"
 : 1615997217:0;g reset --hard HEAD
 : 1615997222:0;ga src
 : 1615997246:0;gcmsg "added retry using completablefuture"
-: 1616011320:0;npm run docker:down
 : 1616011621:0;cd ../../PULSE/pulse-audit-service
 : 1616013400:0;ps aux | grep -i java
 : 1616013408:0;ps aux | grep -i idea
@@ -3158,14 +3058,10 @@ EOF
 : 1616088961:0;l /mnt/c/Files/Projects
 : 1616088985:0;l /mnt/c/Files/Misc
 : 1616089000:0;l /mnt/c/Users/esharapov
-: 1616089086:0;l ULP
 : 1616089099:0;cd ULP/ulp-management-reports
-: 1616089104:0;ag -i debug
-: 1616089126:0;te 
 : 1616090296:0;ag --lang xml -i debug
 : 1616090300:0;ag --lang=xml -i debug
 : 1616090359:0;g co release_3.10
-: 1616090364:0;g clean
 : 1616090378:0;ag --xml -i DEBUG
 : 1616090398:0;te modules/mare-audit-report-producer/src/main/resources/META-INF/module-log4j.xml
 : 1616096527:0;gcmsg "OPEN-2023: DHIN production issues - remove DEBUG logging setup"
@@ -3191,7 +3087,6 @@ EOF
 : 1616428613:0;gcmsg "OPEB-1987: updates to the DD configuration for java run service"
 : 1616428641:0;which dotnet 
 : 1616428646:0;dotnet version
-: 1616428651:0;dotnet --version
 : 1616428659:0;dotnet.exe --version
 : 1616434384:0;apt search sqlite
 : 1616434584:0;apt install sqlite3
@@ -3199,7 +3094,6 @@ EOF
 : 1616434681:0;sqlite3
 : 1616442365:0;./garadlew build
 : 1616443073:0;docker run --name pulse-audit-service pulse-audit-service:latest 
-: 1616443190:0;cd pulse-audit-service
 : 1616443202:0;curl /
 : 1616443212:0;curl http://localhost:80/
 : 1616443267:0;docker kill pulse-audit-service
@@ -3207,7 +3101,6 @@ EOF
 : 1616444806:0;docker run -p 80:80 --name pulse-audit-service pulse-audit-service:latest 
 : 1616445445:0;curl -X GET http://localhost:80/metric
 : 1616446037:0;./gradle build
-: 1616470967:15;./gradlew build
 : 1616470989:0;docker build --build-arg BASE_IMAGE=test --build-arg APP_ENV=pulse-dev --build-arg APP_NAME=pulse-audit-service  -f src/main/docker/Dockerfile.jvm -t pulse-audit-service:latest .
 : 1616471006:0;docker rm pulse-audit-service
 : 1616471008:0;docker run -p 80:80 -p 8126:8126 --name pulse-audit-service pulse-audit-service:latest 
@@ -3224,7 +3117,6 @@ EOF
 : 1616530861:0;cat pipeline-common/ws-deploy.gitlab-ci.yml
 : 1616534104:0;l openapi
 : 1616534153:0;ag facility
-: 1616615537:0;ainq-common-service
 : 1616615946:0;aod-service/
 : 1616619480:0;cat openapi/common/common.yaml
 : 1616619546:0;cd ainq-pulse-service
@@ -3238,9 +3130,6 @@ EOF
 : 1617740819:0;cd ../
 : 1617740987:0;te ~/.dotfiles/.zshrc
 : 1617741035:0;echo $VISUAL
-: 1617741136:0;g la
-: 1617743863:0;g clone https://git.ainq.com/esharapov/ai-worklog.git
-: 1617743869:0;cd ai-worklog
 : 1617743919:0;mv ../Dropbox/Notes/PULSE.org .
 : 1617743925:0;mv ../Dropbox/Notes/ULP.org .
 : 1617743978:0;mv ../Dropbox/Notes/AOD_Service.org .
@@ -3292,11 +3181,8 @@ EOF
 : 1617805468:0;g clone https://git.ainq.com/ulp-custom-components/dhin/dhin-initiate-ws-api.git
 : 1617805640:0;ag ws-api
 : 1617805956:0;ag initiate-ws-api
-: 1617809866:0;xeyes&
-: 1617809899:0;e . &
 : 1617812464:0;ag initiate
 : 1617817718:0;g co wsdl-changes
-: 1617817925:0;ag --list-file-types
 : 1617817946:0;ag --help
 : 1617817986:0;ag dhin-initiate
 : 1617818011:0;ag initiate --ignore *.html
@@ -3315,9 +3201,7 @@ EOF
 : 1617819089:0;sh ./ci-cd.sh provision
 : 1617819111:0;bash ./ci-cd.sh
 : 1617819118:0;bash ./ci-cd.sh provision
-: 1617820159:0;g st
 : 1617820336:0;bash ./ci-cd.sh lint
-: 1617822018:0;te ,
 : 1617822043:0;ga gradle.properties
 : 1617822054:0;gcmsg "OPEB-2074: updated version"
 : 1617822207:0;cd ulp-patientfinder-lib
@@ -3332,8 +3216,6 @@ EOF
 : 1617851546:0;g co -b OPEB-2074-dhin-initiate-wsdl-update
 : 1617851568:0;gcmsg "OPEB-2074: updated patientfinder librarary version"
 : 1617851586:0;g push -u origin OPEB-2074-dhin-initiate-wsdl-update
-: 1617856823:0;npm i
-: 1617856892:0;rd node_modules
 : 1617856993:0;l /home/esharapov/Projects/ULP/ulp-results-viewer-portlet/src/main/webapp/dist/a66e4b32eb214fb072b8.worker.js
 : 1617856998:0;l /home/esharapov/Projects/ULP/ulp-results-viewer-portlet/src/main/webapp/
 : 1617857006:0;rd /home/esharapov/Projects/ULP/ulp-results-viewer-portlet/src/main/webapp/dist
@@ -3351,7 +3233,6 @@ EOF
 : 1617886897:0;ag patien --groovy
 : 1617886924:0;g co -b OPEB-2740-dhin-initiate-update
 : 1617887197:0;cp build/libs/ulp-patient-search-portlet.war /mnt/c/Users/esharapov.INTRANET/OneDrive\ -\ Audacious\ Inquiry\ LLC/.
-: 1617904432:0;cd Safe
 : 1617906425:0;ag -g wsdl
 : 1617906600:0;cp /mnt/c/Users/esharapov.INTRANET/OneDrive\ -\ Audacious\ Inquiry\ LLC/mds.wsdl ./src/main/resources/com/initiate/client/.
 : 1617906629:0;l src/test/
@@ -3376,7 +3257,6 @@ EOF
 : 1617908237:0;./gradlew javadoc
 : 1617908303:0;cat ci-cd.sh
 : 1617908327:0;./gradlew assemble sourcesJar javadocJar findbugsZip -x lint
-: 1617908636:0;ga -a
 : 1617908709:0;gcmsg "OPEB-2074: updated build script to not fail on Javadoc generation"
 : 1617909307:0;ulp-results-viewer-portlet
 : 1617909617:0;cd ulp-iam-portlet
@@ -3387,16 +3267,13 @@ EOF
 : 1617975568:0;ag BEFORE_NAVIGATION
 : 1617996570:0;cat gradle.properties
 : 1617997488:0;gcmsg "OPEB-2074: updated version of artifact"
-: 1617997490:0;g pus
 : 1618003926:0;gcmsg "OPEB-2074: updated version of dhin-initiate"
-: 1618244189:0;g show HEAD
 : 1618244237:0;gcmsg "OPEB-2074: updated verson of ulp-patientfinder-lib\
 "
 : 1618244264:0;g push -u origin OPEB-2740-dhin-initiate-update
 : 1618244313:0;gcmsg "OPEB-2074: updated verson of ulp-patientfinder-lib"\
 "
 : 1618244317:0;gcmsg "OPEB-2074: updated verson of ulp-patientfinder-lib"
-: 1618245108:0;npm ls --depth=0
 : 1618249350:0;cat package.json
 : 1618249354:0;cat package.json | latest
 : 1618249389:0;sudo apt-get install jq
@@ -3408,7 +3285,6 @@ EOF
 : 1618249577:0;cat package.json | grep latest
 : 1618249612:0;for i,j in $(cat package.json | grep latest); do echo "$i => $j"; done
 : 1618249618:0;for i j in $(cat package.json | grep latest); do echo "$i => $j"; done
-: 1618249667:0;te package-lock.json
 : 1618249679:0;jq 
 : 1618249706:0;cat package-lock.json| jq dependencies["@babel/preset-env"] 
 : 1618249715:0;cat package-lock.json| jq .dependencies["@babel/preset-env"] 
@@ -3440,7 +3316,6 @@ EOF
 : 1618255917:0;ls -al ulp-*
 : 1618340506:0;apt search minikube
 : 1618340971:0;docker prune
-: 1618340975:0;docker image prune
 : 1618340982:0;docker container
 : 1618341233:0;l src
 : 1618341236:0;l src/test
@@ -3478,7 +3353,6 @@ EOF
 : 1618350068:0;l build/libs/DhinMpiClient.jar
 : 1618350310:0;./gradlew clean build uberJar
 : 1618351016:0;cp build/libs/DhinMpiClient.jar /mnt/c/Files/.
-: 1618351093:0;./gradlew clean build shadowJar
 : 1618351289:0;cp build/libs/DhinMpiClient-all.jar /mnt/c/Files/.
 : 1618351324:0;./gradlew publishMavenLocal
 : 1618351338:0;./gradlew tasks
@@ -3489,7 +3363,6 @@ EOF
 : 1618352800:0;gcmsg "OPEB-2074: additional changes"
 : 1618352814:0;g tag 1.0.3
 : 1618353250:0;l build/libs/ulp-patient-search-portlet.war
-: 1618363703:0;g ;ga
 : 1618363761:0;apt search cxf
 : 1618364613:0;npm run dhin:staging:up
 : 1618364674:0;cp build/libs/ainq-ulp-patientfinder-lib-master-SNAPSHOT.jar /mnt/c/Files/.
@@ -3501,7 +3374,6 @@ EOF
 : 1618367186:0;ag ulp-patient
 : 1618367240:0;te src/main/resources/ulp-patient-search-portlet-config-provider.hjson
 : 1618367251:0;te src/main/resources/result-viewer-provider.hjson
-: 1618367306:0;g prune
 : 1618367407:0;cat src/main/resources/ulp-patient-search-portlet-config-provider.hjson
 : 1618367417:0;cp src/main/resources/ulp-patientfinder-lib.properties src/main/resources/ulp-patient-search.properties 
 : 1618367949:0;g co 3.3.0
@@ -3518,15 +3390,12 @@ EOF
 : 1618370967:0;./gradlew publishToMavenLocal
 : 1618371686:0;gitk.exe
 : 1618407841:0;dhin-initiate-ws-api
-: 1618407855:0;ulp-patientfinder-lib
-: 1618412595:0;l build
 : 1618412610:0;l build/generated/cxf/com/ibm/mdm/esoa/client/
 : 1618412941:0;g stash pop
 : 1618413354:0;./gradlew wsdl2java
 : 1618413528:0;diff src/main/java/com/initiate/client build/generated/cxf/com/initiate/client
 : 1618413681:0;rd build/generated
 : 1618413694:0;./gradlew clean wsdl2java
-: 1618413800:0;./gradlew goJF
 : 1618413974:0;./gradlew clean wsdl2java goJF
 : 1618414095:0;ga build.gradle
 : 1618414124:0;gcmsg "OPEB-2074: modified gradle build script added wsdl2java command"
@@ -3537,12 +3406,9 @@ EOF
 : 1618414542:0;l src/main/java/com/initiate/client/
 : 1618414576:0;l build/libs/ainq-dhin-initiate-ws-api-lib-1.0.3_master-SNAPSHOT.jar
 : 1618414593:0;cp build/libs/ainq-dhin-initiate-ws-api-lib-1.0.3_master-SNAPSHOT.jar /mnt/c/Files/.
-: 1618414854:0;gts
-: 1618414862:0;gcan
 : 1618415152:0;gcmsg "OPEB-2074: updated documentation"
 : 1618415186:0;./gradlew clean build jara publishToMavenLocal
 : 1618420381:0;ainq-pulse-service
-: 1618424922:0;l Exp
 : 1618424927:0;l Docker
 : 1618428142:0;./gradlew clean wsdl2java jar publishToMavenLocal
 : 1618428894:0;git-gui.exe
@@ -3562,8 +3428,6 @@ EOF
 : 1618435552:0;scp -i ~/Projects/AWS/bastion_host.pem app.properties ubuntu@ec2-54-204-89-13.compute-1.amazonaws.com:/home/ubuntu/.
 : 1618435830:0;ls -al build/libs/ainq-ulp-patientfinder-lib-OPEB-2074-dhin-update-for-patient-search-SNAPSHOT*
 : 1618435865:0;./gradlew clean goJF build jar publishToMavenLocal
-: 1618435953:0;./gradlew clean build
-: 1618436011:0;npm run build
 : 1618436021:0;./gradlew war
 : 1618449780:0;scp -i ~/Projects/AWS/bastion_host.pem ./build/libs/ainq-ulp-patientfinder-lib-OPEB-2074-dhin-update-for-patient-search-SNAPSHOT-all.jar ubuntu@ec2-54-204-89-13.compute-1.amazonaws.com:/home/ubuntu/.
 : 1618449913:0;ag implementation.mpi
@@ -3571,7 +3435,6 @@ EOF
 : 1618452307:0;gcmsg "OPEB-2074: added test app" 
 : 1618452318:0;g push -u origin OPEB-2074-dhin-update-for-patient-search
 : 1618452385:0;gcmsg "OPEB-2074: corrected args for WSDL2Java task" 
-: 1618452468:0;te build.gradle
 : 1618452738:0;gcmsg "OPEB-2074: updated docs"
 : 1618453718:0;ag -g package-info.java
 : 1618453743:0;cat ulp-patientfinder-lib/src/main/java/org/hl7/v3/package-info.java
@@ -3585,7 +3448,6 @@ EOF
 : 1618455364:0;./gradlew clean wsdl2java goJF build jar shadowJar
 : 1618456624:0;./gradlew build jar shadowJar
 : 1618457515:0;gcmsg "OPEB-2074: experimenting with props (works as standalone doesn't work in portlet)"
-: 1618458161:0;te app.properties
 : 1618458178:0;java -Dapp.properties=file:app.properties -jar build/libs/ainq-ulp-patientfinder-lib-OPEB-2074-dhin-update-for-patient-search-SNAPSHOT-all.jar
 : 1618458336:0;gcmsg "OPEB-2074: experimenting with props (works as standalone doesn't work in portlet) of wsdl java generation"
 : 1618459199:0;./gradlew clean wsdl2java goJF build jar shadowJar publishToMavenLocal
@@ -3600,7 +3462,6 @@ EOF
 : 1618461211:0;cp mds-*.wsdl /mnt/c/Users/esharapov.INTRANET/Downloads/.
 : 1618461815:0;gcmsg "OPEB-2074: experimenting with package/namespace of wsdl java generation (standalone version works and portlet doesn't)"
 : 1618461879:0;cp build/libs/ulp-patient-search-portlet.war /mnt/c/Files/.
-: 1618461918:0;l build/libs
 : 1618461924:0;ls -al build/libs
 : 1618462114:0;cp build/libs/ainq-ulp-patientfinder-lib-OPEB-2074-dhin-update-for-patient-search-SNAPSHOT-all.jar /mnt/c/Files/.
 : 1618462355:0;cp ../dhin-initiate-ws-api/mds-old.wsdl src/main/resources/wsdl/.
@@ -3631,8 +3492,6 @@ EOF
 : 1618468580:0;./gradlew clean wsdl2java goJF build jar publishToMavenLocal
 : 1618468694:0;./gradlew clean build && npm run build && ./gradlew war
 : 1618469043:0;scp -i ~/Projects/AWS/bastion_host.pem ./build/libs/ulp-patient-search-portlet.war ubuntu@ec2-54-204-89-13.compute-1.amazonaws.com:/home/ubuntu/.
-: 1618431050:61147;ssh -i ~/Projects/AWS/bastion_host.pem ubuntu@ec2-54-204-89-13.compute-1.amazonaws.com
-: 1618497784:0;ULP
 : 1618498439:0;dotnet sln
 : 1618498450:0;dotnet sln PULSE.Middleware.sln list
 : 1618498467:0;dotnet sln PULSE.Middleware.sln --help
@@ -3644,37 +3503,29 @@ EOF
 : 1618511298:0;dotnet nuget add source
 : 1618511309:0;dotnet nuget add source http://nuget.enssandbox-ainq.com:5000
 : 1618511453:0;g co OPEB-2074-dhin-update-for-patient-search
-: 1618511465:0;g co dhin-mpi-update
 : 1618511480:0;g push -u origin dhin-mpi-update
 : 1618511570:60;te README.md
 : 1618511781:0;gcmsg "OPEB-2074: updated docs and pipeline building script"
 : 1618511938:0;gd 3.6.3
-: 1618512458:0;g co release_3.12.0
 : 1618512826:0;gcmsg "OPEB-2074: updated test stage of pipeline"
 : 1618513468:0;gcmsg "OPEB-2074: updated version of patientfinder-lib to work with new DHIN endpoint"g lga
 : 1618513498:0;gcmsg "OPEB-2074: updated version of patientfinder-lib to work with new DHIN endpoint"
 : 1618520017:0;gcmsg "saved custom.el"
 : 1618520102:0;g merge continue
 : 1618520119:0;g commit
-: 1618520207:0;l data
 : 1618520211:0;l site-lisp
 : 1618521310:0;dotnet --list-sdks
 : 1618521319:0;dotnet --listinfo
-: 1618521532:0;dotnet nuget list
 : 1618521538:0;dotnet nuget source
 : 1618521542:0;dotnet nuget source list
-: 1618521703:0;dotnet nuget list source
 : 1618521764:0;dotnet --list-runtimes
 : 1618522002:0;ifconfig
 : 1618522009:0;ip addr
-: 1618582475:0;ulp-patient-search-portlet
 : 1618585369:0;ag CreateAppHost
 : 1618586586:0;g clen -f
-: 1618586590:0;g clean -f
 : 1618590191:0;g clone https://git.ainq.com/pulse-development/pulse.middleware.ee.git
 : 1618590409:0;export CopyRetryCount=100
 : 1618594405:0;dotnet build --verbosity quiet -c Debug
-: 1618594416:0;grhh
 : 1618594785:0;dotnet tools
 : 1618594791:0;dotnet --info
 : 1618594891:0;dotnet.exe --info
@@ -3693,11 +3544,7 @@ EOF
 : 1618596097:0;cat /etc/apt/sources.list
 : 1618596212:0;cat /etc/apt/sources.list | grep yarn
 : 1618596244:0;sudo apt-get install -y apt-transport-https
-: 1618596257:0;sudo apt-get update
 : 1618596271:0;sudo apt-get install -y dotnet-sdk-5.0
-: 1618596354:0;dotnet restore
-: 1618596360:0;rehash
-: 1618596485:0;tree
 : 1618596514:0;dotnet publish
 : 1618596575:0;ag -g Docker
 : 1618596614:0;l PULSE.Middleware.Api.Activation/libman.json
@@ -3714,31 +3561,17 @@ EOF
 : 1618597050:0;docker run -p 5000:5000 --name pulse.mw.api.activation pulse.mw.api.activation 
 : 1618597130:0;docker run -p 80:80 --name pulse.mw.api.activation pulse.mw.api.activation 
 : 1618602882:0;dotnet
-: 1618602886:0;dotnet -h
 : 1618602895:0;totnet run -h
 : 1618602899:0;dotnet run -h
 : 1618603141:0;cat appsettings.json
-: 1618856116:0;ulp-iam
-: 1618856118:0;ulp-iam-portlet
-: 1618856120:0;g lg
-: 1618856264:0;l tooling
-: 1618856270:0;l tooling/sso-regression-tool
 : 1618856278:0;l tooling/sso-regression-tool/WV
 : 1618856282:0;l tooling/sso-regression-tool/WV/INCONTEXTWHIN
-: 1618857551:0;idea &
-: 1618861191:0;g co release_3.3
 : 1618861215:0;g co -b crisp-logonce-roles
-: 1618926264:0;cat .git
 : 1618926266:0;cat .gitignore
-: 1618926412:0;g stash
-: 1618926556:0;g co OPEB-2093-middleware-api-transition
 : 1618950225:0;ga .gitlab-ci.yml
 : 1618950229:0;ga README.md
 : 1618950308:0;gcmsg "OPEB-2077: updated documentation and added Gitlab CI/CD pipeline"
 : 1619034102:0;aod-service
-: 1619034119:0;g co r2021-04
-: 1619034137:0;cat README.md
-: 1619034161:0;npm ci
 : 1619034179:0;docker-compose up -d
 : 1619034210:0;docker logs c71e97612838
 : 1619034327:0;sam local invoke --env-vars test-env.json -e events/TEST-tenant-sqs-event.json --docker-network aod-service_aod --parameter-overrides 'ParameterKey=SigningKeyId,ParameterValue=f23b4e33-5e88-4b8f-a6b4-e1826716782a'
@@ -3756,10 +3589,8 @@ EOF
 : 1619117343:0;gcmsg "OPEB-2077: updated gitlab pipelien config"
 : 1619118756:0;gcmsg "OPEB-2077: updated gitlab pipelien with aws configs"
 : 1619118924:0;te .gitlab-ci.yml
-: 1619189252:0;PULSE
 : 1619189262:0;ag extraClaims
 : 1619189297:0;te ainq-common-service/src/gateway/services/common/utils/jwt.js
-: 1619189358:0;cd ainq-common-service
 : 1619189369:0;g -s log extraClaims
 : 1619189380:0;g log -s extraClaims
 : 1619189411:0;g log -S extraClaims --source --all
@@ -3768,18 +3599,11 @@ EOF
 : 1619189452:0;g log -S 'extraClaims' --source --all
 : 1619189464:0;g show 188c8e9f4c84c399c575bbbe7778bd91980f2053
 : 1619192098:0;gcmsg "OPEB-2077: changes to pipelines related to deployment"
-: 1619192117:0;cd ~/Projects
-: 1619192242:0;l ML
-: 1619192251:0;l Ocaml
-: 1619192255:0;l Ocaml/LearnOcaml
 : 1619192264:0;cd Ocaml/LearnOcaml
 : 1619192267:0;hg lg
 : 1619192271:0;hg pull
 : 1619192273:0;hg push
-: 1619192280:0;hg st
-: 1619192283:0;hg d
 : 1619192291:0;cat Kattis/dicecup.ml
-: 1619192319:0;l Website
 : 1619193872:0;version=1.23.5
 : 1619193897:0;echo "$version" | awk 'BEGIN{FS=OFS="."} {$3+=1;if($3>9){$2+=1;$3=0}} 1'
 : 1619193922:0;version=1.23.9
@@ -3787,7 +3611,6 @@ EOF
 : 1619193951:0;echo "$version" | awk 'BEGIN{FS=OFS="."} {$3+=1} 1'
 : 1619203042:0;aws ecs describe-task-definition --cluster pulse-dev-pulse --task-definition pulse-dev-pulse-activ --region us-east-1
 : 1619203053:0;aws ecs describe-task-definition --task-definition pulse-dev-pulse-activ --region us-east-1
-: 1619204701:0;l FSharp
 : 1619204709:0;l FSharp/Faker
 : 1619204719:0;cat FSharp/Faker/Xeger.fsx
 : 1619204735:0;dotnet fsi FSharp/Faker/Xeger.fsx
@@ -5124,7 +4947,6 @@ EOF
 : 1619235589:0;g describe parent
 : 1619235604:0;g tag -l\\
 
-: 1619235791:0;g tag -l --sort
 : 1619235797:0;g tag -l --sort=rever
 : 1619235837:0;git describe --tags --abbrev=0~
 : 1619235857:0;git describe --tags --abbrev=0 --all
@@ -5140,8 +4962,6 @@ EOF
 : 1619449969:0;apropos extract
 : 1619449980:0;man man
 : 1619450012:0;man 3 modf
-: 1619460741:0;python --version
-: 1619460751:0;cd ~/.emacs.d
 : 1619466155:0;aws ecr describe-repositories --repository-names ainq-pulse-service 
 : 1619466174:0;aws ecr help
 : 1619466234:0;aws ecr describe-images --repository-names ainq-pulse-service 
@@ -5152,52 +4972,38 @@ EOF
 : 1619466312:0;aws ecr describe-images --repository-name ainq-pulse-service | jq 'imageDetails[0].imageTags'
 : 1619466332:0;aws ecr describe-images --repository-name ainq-pulse-service | jq '.imageDetails.imageTags'
 : 1619466338:0;aws ecr describe-images --repository-name ainq-pulse-service | jq '.imageDetails[].imageTags'
-: 1619469769:0;te custom.el
-: 1619469867:0;g merge --continue
 : 1619470157:0;gcmsg "updated custom.el after merge"
 : 1619471367:0;te /mnt/c/Users/esharapov.INTRANET/.emacs.d/custom.el
 : 1619471680:0;gcmsg "corrected paths to org files"
-: 1619471748:0;.emacs.d
-: 1619471753:0;~/.emacs.d
 : 1619471776:0;g gst
 : 1619471783:0;ul
 : 1619471805:0;psgrep emacs
-: 1619471808:0;pgrep emacs
 : 1619471814:0;kill -9 18481
 : 1619472057:0;cd /mnt/c/Users/esharapov.INTRANET/.emacs.d
 : 1619472082:0;gcmsg "corrected org files paths"
 : 1619472120:0;cat custom.el
-: 1619535995:0;cd ....
 : 1619536002:0;cd Users
 : 1619536006:0;cd esharapov
 : 1619536031:0;l evgeniy
 : 1619536115:0;cd esharapov.INTRANET
-: 1619536117:0;cd .emacs.d
 : 1619537594:0;gl
-: 1619537605:0;g stash --help
 : 1619537632:0;g stash -m "OPEB-2093: adding complete flag"
 : 1619537641:0;g stash push -m "OPEB-2093: adding complete flag"
-: 1619538990:0;ulp-core
 : 1619539012:0;git describe --tags --abbrev=2
 : 1619539044:0;git describe --tags --abbrev=1
 : 1619539094:0;g tag 3.11.3
 : 1619539102:0;g tag 3.11.4
 : 1619539155:0;g describe --help
 : 1619539232:0;g describe --tags --candidates=5
-: 1619539240:0;g tag -l
-: 1619539244:0;g tag --help
 : 1619539254:0;g tag -d 3.11.3
 : 1619539257:0;g tag -d 3.11.4
 : 1619539267:0;g describe --tags
-: 1619539272:0;g describe --tags --abbrev=0
 : 1619539620:0;echo "1.0.100" | awk 'BEGIN{FS=OFS="."} {$3+=1}'
 : 1619539623:0;echo "1.0.100" | awk 'BEGIN{FS=OFS="."} {$3+=1} 1'
 : 1619540602:0;T=""
 : 1619540603:0;echo T
 : 1619540611:0;echo ${T:-1.0.0}
-: 1619540731:0;docker login registry.ainq.com
 : 1619540738:0;docker pull registry.ainq.com/ai-platform-development/cicd/cicd-images/devrunner:v0.4
-: 1619541135:0;pulse.middleware.ee
 : 1619541204:0;git describe --help
 : 1619541919:0;echo $1
 : 1619541935:0;echo $!
@@ -5210,7 +5016,6 @@ EOF
 : 1619642917:0;hgrep dotnet
 : 1619645383:0;cp Pulse.Common/Api/Activation/ToggleActivationResponse.cs Pulse.Common/Api/Activation/CompleteActivationResponse.fs
 : 1619662498:0;gcmsg "OPEB-2093: using complete flag"
-: 1619662548:0;cd /mnt/c/Users/esharapov.INTRANET
 : 1619662596:0;cd /mnt/c/Users/esharapov.INTRANET/Documents
 : 1619663996:0;hgrep ssh
 : 1619664012:0;ssh pi@192.168.1.51
@@ -5231,56 +5036,40 @@ EOF
 : 1619709402:0;l cxf/com/ibm/mdm
 : 1619709406:0;l cxf/com/ibm/mdm/esoa
 : 1619709408:0;l cxf/com/ibm/mdm/esoa/client
-: 1619709430:0;l Projects
-: 1619709453:0;rd pulse.middleware.ee
 : 1619709525:0;g clone /home/esharapov/Projects/ULP/pulse.middleware.ee 
 : 1619711447:0;dotnet test
-: 1619711695:0;ga .
-: 1619718054:0;gd --cached
 : 1619720882:0;gcmsg "OPEB-2093: added complete flag and funtionality"
 : 1619721193:0;gcmsg "OPEB-2093: changed starting profile from pulse-sandbox to pulse"
-: 1619722667:0;g co OPEB-2093-complete-flag
 : 1619722679:0;g push -u origin OPEB-2093-complete-flag
-: 1619723573:0;cd FSharp
 : 1619723598:0;dotnet new webapi -o MyWebApi -lang F#
-: 1619723607:0;cd MyWebApi
-: 1619723688:0;code .
 : 1619723881:0;dotnet run bin/Debug/net5.0/MyWebApi.dll
 : 1619723911:0;curl -k https://localhost:5001/
 : 1619725097:0;curl -k https://localhost:5001/weatherforecast
-: 1619725107:0;dotnet build
 : 1619725152:0;curl -k https://localhost:5001/value
 : 1619725153:0;curl -k https://localhost:5001/values
 : 1619726090:0;dotnet run --help
-: 1619726099:0;dotnet run
-: 1619807670:0;cd
 : 1619807719:0;aws ecr login
 : 1619807762:0;hgrep get-login
 : 1619807772:0;aws ecr get-login-password | docker login --username AWS --password-stdin 397804960777.dkr.ecr.us-east-1.amazonaws.com
 : 1619807779:0;docker run --rm -p 80:80 397804960777.dkr.ecr.us-east-1.amazonaws.com/pulse_middleware_api_activation:1.0.6
 : 1619807855:0;hgrep docker run
-: 1619807885:0;docker ps -a
 : 1619807901:0;docker ps -aq
 : 1619807909:0;docker container prune
 : 1619808652:0;docker run --rm -p 80:80 -v ~/.aws:/root/.aws 397804960777.dkr.ecr.us-east-1.amazonaws.com/pulse_middleware_api_activation:1.0.6
-: 1619808661:0;docker ps
 : 1619808671:0;docker exec -it 1c6a bash
 : 1619808736:0;docker cp 1c6a /app/appsettings.json .
 : 1619808746:0;ls -al
 : 1619808753:0;rm appsettings.json
-: 1619808758:0;pwd
 : 1619808766:0;cd Projects/PULSE
 : 1619808769:0;docker cp 1c6a:/app/appsettings.json .
 : 1619808773:0;te appsettings.json
 : 1619808831:0;te Dockerfile
-: 1619808851:0;docker images
 : 1619808921:0;docker run --rm -p 80:80 -v ~/.aws:/root/.aws -v $PWD/appsettings.json:/app/appsettings.json 397804960777.dkr.ecr.us-east-1.amazonaws.com/pulse_middleware_api_activation:1.0.6
 : 1619810649:0;docker run --rm -p 44346:80 -v ~/.aws:/root/.aws -v $PWD/appsettings.json:/app/appsettings.json 397804960777.dkr.ecr.us-east-1.amazonaws.com/pulse_middleware_api_activation:1.0.6
 : 1619810788:0;docker run --rm -p 44346:80 -v ~/.aws:/root/.aws 397804960777.dkr.ecr.us-east-1.amazonaws.com/pulse_middleware_api_activation:1.0.6
 : 1619811049:0;te pulse_active_task_def_93.json
 : 1619811061:0;te pulse_active_task_def_112.json
 : 1619811117:0;diff pulse_active_task_def_93.json pulse_active_task_def_112.json
-: 1619811559:0;g co master
 : 1619811780:0;aws ecs register-task-definition help
 : 1619811897:0;echo $TASK_DEF
 : 1619811938:0;echo $TASK_DEF | jq 'taskDefinion.executionRoleArn'
@@ -5324,7 +5113,6 @@ EOF
 : 1619816556:0;hgrep docuer
 : 1619816565:0;hgrep 'docker run'
 : 1619816618:0;docker run -it registry.ainq.com/ai-platform-development/cicd/cicd-images/devrunner:v0.4
-: 1619816677:0;history
 : 1619816725:0;docker run -it -v ~/.aws:/root/aws registry.ainq.com/ai-platform-development/cicd/cicd-images/devrunner:v0.4
 : 1619816890:0;docker run -it -v ~/.aws:/root/.aws registry.ainq.com/ai-platform-development/cicd/cicd-images/devrunner:v0.4
 : 1619817394:0;gcmsg "OPEB-2077: fixing task and exec roles jq return/exit status."
@@ -5332,12 +5120,8 @@ EOF
 : 1620059097:0;psgrep ecs
 : 1620059102:0;hgrep ecs
 : 1620059161:0;aws ecs register-task-definition
-: 1620059205:0;cd pulse.middleware.ee
-: 1620059208:0;cd ..
-: 1620059211:0;cd PULSE
 : 1620059310:0;hgrep register-task
 : 1620059340:0;l 
-: 1620059483:0;Projects
 : 1620059507:0;aws ecs register-task-definition --cli-input-json file://pulse_active_task_def_93_ammended.json
 : 1620059934:0;aws ecs update-service --region us-east-1 --cluster pulse-dev-pulse --service pulse-dev-pulse-api-activ --task-definition pulse-dev-pulse-api-activ:114
 : 1620065991:0;curl ipinfo.info
@@ -5357,7 +5141,6 @@ EOF
 : 1620072106:0;curl -X GET -H "x-tenant-id: AINQ" -H "x-session-id: AINQ:8a881e5c-42cd-4f6c-84e6-2bbb57dd6c5c:a1d43570-5fd2-41b4-9a0c-c88096a756c0" -H "cookie: io=db4Qkba3KE1XQUoOAABe; token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJBSU5ROjhhODgxZTVjLTQyY2QtNGY2Yy04NGU2LTJiYmI1N2RkNmM1YzphMWQ0MzU3MC01ZmQyLTQxYjQtOWEwYy1jODgwOTZhNzU2YzAiLCJpYXQiOjE2MjAwNzEwOTd9.udFInDK_hobdsH6ArF8M6V_RsDKR7_74nWMdBU0_N5A; expiration=1620074697" -H "authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJBSU5ROjhhODgxZTVjLTQyY2QtNGY2Yy04NGU2LTJiYmI1N2RkNmM1YzphMWQ0MzU3MC01ZmQyLTQxYjQtOWEwYy1jODgwOTZhNzU2YzAiLCJpYXQiOjE2MjAwNzExMDB9.6qAjPockHkplXE7VvLpVFrHC7dA6XPGWKVF1jL1rR_g" https://api.dev-ainqapps.com/pulse/v1/events/e4ebc1ff-b43a-48b4-897d-c917ea11e041
 : 1620072113:0;curl -X GET -H "x-tenant-id: AINQ" -H "x-session-id: AINQ:8a881e5c-42cd-4f6c-84e6-2bbb57dd6c5c:a1d43570-5fd2-41b4-9a0c-c88096a756c0" -H "cookie: io=db4Qkba3KE1XQUoOAABe; token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJBSU5ROjhhODgxZTVjLTQyY2QtNGY2Yy04NGU2LTJiYmI1N2RkNmM1YzphMWQ0MzU3MC01ZmQyLTQxYjQtOWEwYy1jODgwOTZhNzU2YzAiLCJpYXQiOjE2MjAwNzEwOTd9.udFInDK_hobdsH6ArF8M6V_RsDKR7_74nWMdBU0_N5A; expiration=1620074697" -H "authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJBSU5ROjhhODgxZTVjLTQyY2QtNGY2Yy04NGU2LTJiYmI1N2RkNmM1YzphMWQ0MzU3MC01ZmQyLTQxYjQtOWEwYy1jODgwOTZhNzU2YzAiLCJpYXQiOjE2MjAwNzExMDB9.6qAjPockHkplXE7VvLpVFrHC7dA6XPGWKVF1jL1rR_g" https://api.dev-ainqapps.com/pulse/v1/events/e4ebc1ff-b43a-48b4-897d-c917ea11e041 | jq length
 : 1620072121:0;curl -X GET -H "x-tenant-id: AINQ" -H "x-session-id: AINQ:8a881e5c-42cd-4f6c-84e6-2bbb57dd6c5c:a1d43570-5fd2-41b4-9a0c-c88096a756c0" -H "cookie: io=db4Qkba3KE1XQUoOAABe; token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJBSU5ROjhhODgxZTVjLTQyY2QtNGY2Yy04NGU2LTJiYmI1N2RkNmM1YzphMWQ0MzU3MC01ZmQyLTQxYjQtOWEwYy1jODgwOTZhNzU2YzAiLCJpYXQiOjE2MjAwNzEwOTd9.udFInDK_hobdsH6ArF8M6V_RsDKR7_74nWMdBU0_N5A; expiration=1620074697" -H "authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJBSU5ROjhhODgxZTVjLTQyY2QtNGY2Yy04NGU2LTJiYmI1N2RkNmM1YzphMWQ0MzU3MC01ZmQyLTQxYjQtOWEwYy1jODgwOTZhNzU2YzAiLCJpYXQiOjE2MjAwNzExMDB9.6qAjPockHkplXE7VvLpVFrHC7dA6XPGWKVF1jL1rR_g" https://api.dev-ainqapps.com/pulse/v1/events | jq length
-: 1620092376:0;aws ecs
 : 1620092380:0;aws ecs help
 : 1620092482:0;aws ecs describe-services --region us-east-1 --cluster pulse-dev-pulse --services pulse-dev-pulse-api-activ
 : 1620092536:0;aws ecs describe-services --region us-east-1 --cluster pulse-dev-pulse --services pulse-dev-pulse-api-activ | jq '.services[0].deployments[0].taskDefinition'
@@ -5391,51 +5174,2184 @@ EOF
 : 1620098027:0;aws ecs register-task-definition --cli-input-json file://new_task_def.json
 : 1620098237:0;aws ecs update-service help
 : 1620098842:0;cd ../ULP/pulse.middleware.ee
-: 1620098845:0;gd
-: 1620098901:0;ga -u
 : 1620098927:0;gcmsg "OPEB-2077: fixing deployment step with updating task definition"
-: 1620098929:0;g pull
-: 1620098939:0;g push
 : 1620136158:0;l .FsAutoComplete
 : 1620136215:0;l .FsAutoComplete/netcore/runtimes
 : 1620136220:0;l .FsAutoComplete/netcore
-: 1620136240:0;cd Projects
 : 1620136262:0;Ocaml
 : 1620136267:0;LearnOcaml
-: 1620136271:0;te .
-: 1620136339:0;..
-: 1620150353:0;g lga
-: 1620150356:0;gst
 : 1620150360:0;rm t
-: 1620150361:0;l
-: 1620151865:0;cd Projects
-: 1620151878:0;l
-: 1620151887:0;l ULP
-: 1620151893:0;l PULSE
 : 1620151918:0;mv ULP/pulse.middleware.ee PULSE/.
-: 1620151920:0;l
 : 1620151922:0;l PULSE
 : 1620151956:0;cat PULSE/pipeline-common/.git/config
-: 1620152355:0;l
-: 1620152370:0;l Website
 : 1620152386:0;python --version
-: 1620152754:0;cd Website
-: 1620152758:0;hg lga
-: 1620152761:0;l
 : 1620152786:0;python -m http.server 8000 --directory public
 : 1620154750:0;cd pulSE
-: 1620154754:0;..
-: 1620154759:0;.dotfiles
-: 1620154761:0;hg st
-: 1620154762:0;hg lga
-: 1620154767:0;hg st
-: 1620154794:0;te .
 : 1620154925:0;.dotfiles
-: 1620154926:0;hg st
 : 1620155075:0;hg commit --interactive
-: 1620155344:0;hg lga
 : 1620155348:0;hg st
 : 1620155352:0;hg d
 : 1620155387:0;hg add .zsh/completions
-: 1620155389:0;gst
 : 1620155391:0;hg commit
+: 1620155669:0;l ULP
+: 1620160031:0;rm pulse_active_task_def_*
+: 1620160037:0;rm new_task_def.json
+: 1620160044:0;less appsettings.json
+: 1620160073:0;cat xml-transform/.gitlab-ci.yml
+: 1620160115:0;l coverage
+: 1620160120:0;rd coverage
+: 1620160139:0;mkdir AiPlatform
+: 1620160152:0;mv PULSE/cicd-images AiPlatform/.
+: 1620160163:0;mv PULSE/pipeline-common AiPlatform/.
+: 1620160177:0;gcm
+: 1620160272:0;l cicd-images/sonarqubedotnetrunner
+: 1620160275:0;l cicd-images/sonarqubedotnetrunner/Dockerfile
+: 1620160323:0;cd Safe
+: 1620160352:0;dotnet build -t run
+: 1620160361:0;dotnet build fake -t run
+: 1620160373:0;dotnet fake --help
+: 1620160383:0;dotnet fake build -t run
+: 1620184772:0;cat ../../PULSE/EmergencyEventsAPI_Testing.http
+: 1620242116:0;g clone https://git.ainq.com/ulp-development/ulp-breakglass-portlet.git
+: 1620242120:0;ag "patient data does not match given signature token"
+: 1620242163:0;cd ulp-breakglass-portlet
+: 1620242392:0;parseSignatureToken
+: 1620243091:0;ag parseSignatureToken
+: 1620243095:0;g clone https://git.ainq.com/ulp-development/ulp-crypto-lib.git
+: 1620403396:0;g clone https://git.ainq.com/pulse-platform/pulse-nodejs-service.git
+: 1620403612:0;cat ~/.npmrc
+: 1620403649:0;cat Dockerfile
+: 1620403756:0;ag SecretId
+: 1620409270:0;node build/index.js
+: 1620409384:0;node -r dotenv/config build/index.js
+: 1620409400:0;node -r build/config/index.js build/index.js
+: 1620409444:0;npm install
+: 1620410184:0;curl https://localhost:8080/events
+: 1620410188:0;curl http://localhost:8080/events
+: 1620410201:0;curl http://localhost:8080/api/events
+: 1620410221:0;curl http://localhost:3000
+: 1620410225:0;curl http://localhost:3000/pulse/events
+: 1620410229:0;curl http://localhost:3000/pulse/api/events
+: 1620410236:0;curl http://localhost:3000/api/pulse/events
+: 1620410323:0;ag postman
+: 1620410327:0;ag json
+: 1620410387:0;l schema
+: 1620410395:0;l schema/common
+: 1620410431:0;l schema/events
+: 1620410436:0;l schema/events/event.schema.json
+: 1620410439:0;te schema/events/event.schema.json
+: 1620410799:0;curl http://localhost:3000/pulse/v1/events
+: 1620413129:0;g clone https://git.ainq.com/pulse-platform/pulse-application.git
+: 1620413491:0;g clone https://git.ainq.com/pulse-platform/pulse-admin-module.git
+: 1620413525:0;g clone https://git.ainq.com/pulse-platform/pulse-emergency-census-application.git
+: 1620413536:0;l s
+: 1620413543:0;l -st
+: 1620416534:0;Safge
+: 1620416536:0;Safe
+: 1620416539:0;FS
+: 1620416549:0;.
+: 1620418847:0;rd ~/Docs\ Authoring
+: 1620418858:0;l ~/vsdbg
+: 1620418868:0;rd ~/vsdbg
+: 1620418897:0;l ~/.vscode-server
+: 1620418901:0;l ~/.vscode-server/data
+: 1620418903:0;l ~/.vscode-server/extensions
+: 1620418963:0;l ~
+: 1620418972:0;rm ~/.vscode-server
+: 1620418976:0;rd ~/.vscode-server
+: 1620419631:0;cd pulse-application
+: 1620419647:0;g co -b OPEB-2107-pulse-to-eplus
+: 1620420378:0;../PULSE
+: 1620420380:0;ag checkInHeading
+: 1620673684:0;which elif
+: 1620673700:0;apt search elixir
+: 1620702571:0;sudo apt install elixir
+: 1620702811:0;hgrep ag
+: 1620703100:0;gcmsg "OPEB-2107: updated name of the section from PULSE Administration to Emergency Administration"
+: 1620703298:0;te src/localization/login.js
+: 1620703416:0;te src/localization/images.js
+: 1620703678:0;ag AppBar
+: 1620703909:0;te src/components/pages/portal-admin-page/tenant-fields.js
+: 1620703985:0;te src/components/pages/reset-password-page/reset-password-page.jsx
+: 1620704071:0;te src/components/pages/user-config-page/user-config-header/user-config-header.jsx
+: 1620704094:0;te src/components/pages/portal-admin-page/portal-header/portal-header.jsx
+: 1620704269:0;ag 'pulse\
+'
+: 1620704272:0;ag 'pulse'
+: 1620704359:0;cd ainq-web-client-framework
+: 1620704423:0;ag \'pulse\'
+: 1620704442:0;te src/index.jsx
+: 1620704463:0;ag Pulse
+: 1620704469:0;ag PULSE
+: 1620704510:0;te src/models/enums/entitlements.js
+: 1620704552:0;ag "application-menu"
+: 1620704572:0;te ainq-web-client-framework/src/components/common/page/header/application-menu/application-menu.jsx
+: 1620704740:0;ag ApplicationMenu
+: 1620704761:0;te ainq-web-client-framework/src/components/common/page/header/application-menu/index.js
+: 1620704781:0;ag Dashboard
+: 1620705599:0;ag dashboard
+: 1620705666:0;ag 'Emergency Census'
+: 1620705707:0;gd webpack/template.html
+: 1620705718:0;te webpack/template.html
+: 1620705802:0;ag "name.*pulse"
+: 1620705813:0;ag --javascript "name.*pulse"
+: 1620705826:0;ag --list-file-types
+: 1620705838:0;ag --js "name.*pulse"
+: 1620705867:0;ag "{ name, " 
+: 1620705885:0;te ainq-web-client-framework/src/components/common/page/header/header.jsx
+: 1620705987:0;te pulse-nodejs-service/src/utils/initialize-databases.js
+: 1620706016:0;te ainq-portal-web-application/src/components/pages/home-page.jsx
+: 1620706287:0;te ainq-web-client-framework
+: 1620706427:0;ag "{ name, "
+: 1620706489:0;ag "name:.*pulse"
+: 1620706544:0;ag "Emergency Census"
+: 1620706662:0;ag "name:"
+: 1620706709:0;ag applicationId
+: 1620706809:0;te ainq-web-client-framework/src/components/common/page/header/header.jsx 
+: 1620706975:0;ag tenantSub
+: 1620707042:0;gcmsg "OPEB-2107: replaced refences to PULSE"
+: 1620707052:0;g push -u origin OPEB-2107-pulse-to-eplus
+: 1620707064:0;ag "'pulse'"
+: 1620707074:0;te src/utils/initialize-databases.js
+: 1620759362:0;ag "{ name:"
+: 1620759367:0;ag "{ name: "
+: 1620759394:0;ag "{name:.+url"
+: 1620759414:0;ag "{.*name:.*url"
+: 1620759431:0;ag "{.*name:.*tenant
+: 1620759433:0;ag "{.*name:.*tenant"
+: 1620759448:0;ag tenantSubscription
+: 1620759536:0;ag getTenantSubscriptions()\
+
+: 1620759538:0;ag getTenantSubscriptions\
+
+: 1620759573:0;te ainq-common-service/src/gateway/services/common/enterpriseTenantService.js
+: 1620759737:0;curl https://api.dev-ainqapps.com/common/v1/api/application/definition
+: 1620759766:0;curl https://api.dev-ainqapps.com/common/v1/tenants/AINQ/api/application/definition
+: 1620759785:0;curl https://api.dev-ainqapps.com/common/v1/tenants/AINQ/settings
+: 1620759816:0;curl -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJBSU5ROjhhODgxZTVjLTQyY2QtNGY2Yy04NGU2LTJiYmI1N2RkNmM1YzoyMTUwMjY3ZS0yYWQwLTQ5YzAtOWJkNi0wNjI4NGI5MjU2ZGYiLCJpYXQiOjE2MjA3NTk2OTR9.GhDqiE1j4gLsdU0SQfu2JG3psdT7YW9MlTlHDORKmGU" https://api.dev-ainqapps.com/common/v1/tenants/AINQ/settings
+: 1620759837:0;curl -H "cookie: io=Inz_5Y-Uuo5jJgHIAAA5; token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJBSU5ROjhhODgxZTVjLTQyY2QtNGY2Yy04NGU2LTJiYmI1N2RkNmM1YzoyMTUwMjY3ZS0yYWQwLTQ5YzAtOWJkNi0wNjI4NGI5MjU2ZGYiLCJpYXQiOjE2MjA3NTkyOTh9.fWekL9T7MhmldNxJ7bBA99_0NJF-KHDEkFRzBiYGlvc; expiration=162076289" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJBSU5ROjhhODgxZTVjLTQyY2QtNGY2Yy04NGU2LTJiYmI1N2RkNmM1YzoyMTUwMjY3ZS0yYWQwLTQ5YzAtOWJkNi0wNjI4NGI5MjU2ZGYiLCJpYXQiOjE2MjA3NTk2OTR9.GhDqiE1j4gLsdU0SQfu2JG3psdT7YW9MlTlHDORKmGU" https://api.dev-ainqapps.com/common/v1/tenants/AINQ/settings
+: 1620759846:0;curl -H "cookie: io=Inz_5Y-Uuo5jJgHIAAA5; token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJBSU5ROjhhODgxZTVjLTQyY2QtNGY2Yy04NGU2LTJiYmI1N2RkNmM1YzoyMTUwMjY3ZS0yYWQwLTQ5YzAtOWJkNi0wNjI4NGI5MjU2ZGYiLCJpYXQiOjE2MjA3NTkyOTh9.fWekL9T7MhmldNxJ7bBA99_0NJF-KHDEkFRzBiYGlvc; expiration=162076289" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJBSU5ROjhhODgxZTVjLTQyY2QtNGY2Yy04NGU2LTJiYmI1N2RkNmM1YzoyMTUwMjY3ZS0yYWQwLTQ5YzAtOWJkNi0wNjI4NGI5MjU2ZGYiLCJpYXQiOjE2MjA3NTk2OTR9.GhDqiE1j4gLsdU0SQfu2JG3psdT7YW9MlTlHDORKmGU" https://api.dev-ainqapps.com/common/v1/tenants/ainq/settings
+: 1620759869:0;curl -H "x-tenant-id: AINQ" -H "cookie: io=Inz_5Y-Uuo5jJgHIAAA5; token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJBSU5ROjhhODgxZTVjLTQyY2QtNGY2Yy04NGU2LTJiYmI1N2RkNmM1YzoyMTUwMjY3ZS0yYWQwLTQ5YzAtOWJkNi0wNjI4NGI5MjU2ZGYiLCJpYXQiOjE2MjA3NTkyOTh9.fWekL9T7MhmldNxJ7bBA99_0NJF-KHDEkFRzBiYGlvc; expiration=162076289" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJBSU5ROjhhODgxZTVjLTQyY2QtNGY2Yy04NGU2LTJiYmI1N2RkNmM1YzoyMTUwMjY3ZS0yYWQwLTQ5YzAtOWJkNi0wNjI4NGI5MjU2ZGYiLCJpYXQiOjE2MjA3NTk2OTR9.GhDqiE1j4gLsdU0SQfu2JG3psdT7YW9MlTlHDORKmGU" https://api.dev-ainqapps.com/common/v1/tenants/ainq/settings
+: 1620759892:0;curl -H "x-tenant-id: AINQ" -H "cookie: io=Inz_5Y-Uuo5jJgHIAAA5; token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJBSU5ROjhhODgxZTVjLTQyY2QtNGY2Yy04NGU2LTJiYmI1N2RkNmM1YzoyMTUwMjY3ZS0yYWQwLTQ5YzAtOWJkNi0wNjI4NGI5MjU2ZGYiLCJpYXQiOjE2MjA3NTkyOTh9.fWekL9T7MhmldNxJ7bBA99_0NJF-KHDEkFRzBiYGlvc; expiration=162076289" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJBSU5ROjhhODgxZTVjLTQyY2QtNGY2Yy04NGU2LTJiYmI1N2RkNmM1YzoyMTUwMjY3ZS0yYWQwLTQ5YzAtOWJkNi0wNjI4NGI5MjU2ZGYiLCJpYXQiOjE2MjA3NTk2OTR9.GhDqiE1j4gLsdU0SQfu2JG3psdT7YW9MlTlHDORKmGU" https://api.dev-ainqapps.com/common/v1/tenants/ainq/api/application/definition
+: 1620760126:0;curl -H "x-tenant-id: AINQ" -H "cookie: io=Inz_5Y-Uuo5jJgHIAAA5; token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJBSU5ROjhhODgxZTVjLTQyY2QtNGY2Yy04NGU2LTJiYmI1N2RkNmM1YzoyMTUwMjY3ZS0yYWQwLTQ5YzAtOWJkNi0wNjI4NGI5MjU2ZGYiLCJpYXQiOjE2MjA3NTkyOTh9.fWekL9T7MhmldNxJ7bBA99_0NJF-KHDEkFRzBiYGlvc; expiration=162076289" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJBSU5ROjhhODgxZTVjLTQyY2QtNGY2Yy04NGU2LTJiYmI1N2RkNmM1YzoyMTUwMjY3ZS0yYWQwLTQ5YzAtOWJkNi0wNjI4NGI5MjU2ZGYiLCJpYXQiOjE2MjA3NTk2OTR9.GhDqiE1j4gLsdU0SQfu2JG3psdT7YW9MlTlHDORKmGU" https://api.dev-ainqapps.com/common/v1
+: 1620760183:0;curl -H "x-tenant-id: AINQ" -H "cookie: io=Inz_5Y-Uuo5jJgHIAAA5; token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJBSU5ROjhhODgxZTVjLTQyY2QtNGY2Yy04NGU2LTJiYmI1N2RkNmM1YzoyMTUwMjY3ZS0yYWQwLTQ5YzAtOWJkNi0wNjI4NGI5MjU2ZGYiLCJpYXQiOjE2MjA3NTkyOTh9.fWekL9T7MhmldNxJ7bBA99_0NJF-KHDEkFRzBiYGlvc; expiration=162076289" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJBSU5ROjhhODgxZTVjLTQyY2QtNGY2Yy04NGU2LTJiYmI1N2RkNmM1YzoyMTUwMjY3ZS0yYWQwLTQ5YzAtOWJkNi0wNjI4NGI5MjU2ZGYiLCJpYXQiOjE2MjA3NTk2OTR9.GhDqiE1j4gLsdU0SQfu2JG3psdT7YW9MlTlHDORKmGU" https://api.dev-ainqapps.com/common/v1/tenantapp/tenants/ainq
+: 1620760192:0;curl -H "x-tenant-id: AINQ" -H "cookie: io=Inz_5Y-Uuo5jJgHIAAA5; token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJBSU5ROjhhODgxZTVjLTQyY2QtNGY2Yy04NGU2LTJiYmI1N2RkNmM1YzoyMTUwMjY3ZS0yYWQwLTQ5YzAtOWJkNi0wNjI4NGI5MjU2ZGYiLCJpYXQiOjE2MjA3NTkyOTh9.fWekL9T7MhmldNxJ7bBA99_0NJF-KHDEkFRzBiYGlvc; expiration=162076289" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJBSU5ROjhhODgxZTVjLTQyY2QtNGY2Yy04NGU2LTJiYmI1N2RkNmM1YzoyMTUwMjY3ZS0yYWQwLTQ5YzAtOWJkNi0wNjI4NGI5MjU2ZGYiLCJpYXQiOjE2MjA3NTk2OTR9.GhDqiE1j4gLsdU0SQfu2JG3psdT7YW9MlTlHDORKmGU" https://api.dev-ainqapps.com/common/v1/tenants/ainq
+: 1620760196:0;curl -H "x-tenant-id: AINQ" -H "cookie: io=Inz_5Y-Uuo5jJgHIAAA5; token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJBSU5ROjhhODgxZTVjLTQyY2QtNGY2Yy04NGU2LTJiYmI1N2RkNmM1YzoyMTUwMjY3ZS0yYWQwLTQ5YzAtOWJkNi0wNjI4NGI5MjU2ZGYiLCJpYXQiOjE2MjA3NTkyOTh9.fWekL9T7MhmldNxJ7bBA99_0NJF-KHDEkFRzBiYGlvc; expiration=162076289" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJBSU5ROjhhODgxZTVjLTQyY2QtNGY2Yy04NGU2LTJiYmI1N2RkNmM1YzoyMTUwMjY3ZS0yYWQwLTQ5YzAtOWJkNi0wNjI4NGI5MjU2ZGYiLCJpYXQiOjE2MjA3NTk2OTR9.GhDqiE1j4gLsdU0SQfu2JG3psdT7YW9MlTlHDORKmGU" https://api.dev-ainqapps.com/common/v1/tenants/AINQ
+: 1620760395:0;te src/config/index.js
+: 1620762248:0;l -s
+: 1620762255:0;ll s
+: 1620762257:0;ll -s
+: 1620762291:0;cd ainq-portal-web-application
+: 1620763258:0;ag pulse-admin-module
+: 1620763311:0;te ainq-admin-portal-application/webpack/entrypoint.jsx
+: 1620763376:0;cd ainq-admin-portal-application
+: 1620763618:0;grep pulse-admin-module
+: 1620763635:0;cat package.json| grep pulse-admin
+: 1620763814:0;gd --stat OPEB-2107-pulse-to-eplus
+: 1620763829:0;g show --stat OPEB-2107-pulse-to-eplus
+: 1620763844:0;g show OPEB-2107-pulse-to-eplus
+: 1620844267:0;hgrep .jar
+: 1620844751:0;cd ~/Projects/ULP
+: 1620844773:0;l build
+: 1620844906:0;g show a5a3706
+: 1620844940:0;g show 343e47b
+: 1620844965:0;g co -b test-app
+: 1620844983:0;g cherry-pick 343e47b
+: 1620845066:0;g cherry-pick --continue
+: 1620846146:0;gcmsg "OPEB-2107: updated version of pulse-admin-module"
+: 1620847435:0;gcmsg "reconfigured google verify java format plugin"
+: 1620847657:0;./gradlew build
+: 1620847732:0;mv build/libs/ainq-ulp-patientfinder-lib-test-app-SNAPSHOT.jar patientfinder.jar
+: 1620847909:0;./gradlew shadowJar
+: 1620847939:0;st
+: 1620847964:0;gcmsg "OPEB-2107: updated version of the PULSE Admin Module"
+: 1620848029:0;cat app.properties
+: 1620848040:0;te app.properties
+: 1620848128:0;java -jar patientfinder.jar --spring.config.name=app
+: 1620848195:0;gcmsg "updated build gradle and sample application properties file"
+: 1620848202:0;g push -u origin test-app
+: 1620848737:0;echo $PWD
+: 1620848902:0;java -jar patientfinder.jar --spring.config.name=app --spring.config.location=file://${PWD}
+: 1620849369:0;java -jar patientfinder.jar -Dapp.properties=file://${PWD}/app.properties
+: 1620872182:0;java -jar patientfinder.jar -Dapp.properties=file:app.properties
+: 1620872195:0;java -jar patientfinder.jar --spring.config.name=app --spring.config.location=file://${PWD}/app.properties
+: 1620872329:0;echo ${PWD}/app.properties
+: 1620873018:0;mv app.properties application.properties
+: 1620873021:0;java -jar patientfinder.jar  -Dspring.config.location=file://${PWD}/app.properties
+: 1620873518:0;kill -9 2894
+: 1620873704:0;pgrep idea
+: 1620873708:0;pgrep java
+: 1620873721:0;ps aux | java
+: 1620873745:0;kill -9 2950
+: 1620873750:0;ps aux |grep  java
+: 1620874339:0;ag implementation.mpi.type
+: 1620874965:0;ga application.properties
+: 1620874982:0;gcmsg "updated command line patient finder"
+: 1620876522:0;g co origin/r2021-04
+: 1620876563:0;g tags --help
+: 1620876575:0;g tag -d r2021-04
+: 1620876607:0;g co -b r2021-04-p1
+: 1620876626:0;g cherry-pick OPEB-2107-pulse-to-eplus
+: 1620918747:0;iex --version
+: 1620918763:0;iex
+: 1620919017:0;./gradlew clean build shadowJar
+: 1620919149:0;mv build/libs/ainq-ulp-patientfinder-lib-test-app-SNAPSHOT-all.jar patientfinder.jar
+: 1620919153:0;java -jar patientfinder.jar peter shiff
+: 1620919194:0;cat application.properties
+: 1620919203:0;java -jar patientfinder.jar
+: 1620919222:0;scp -i ~/Projects/AWS/bastion_host.pem ./patientfinder.jar ubuntu@ec2-54-204-89-13.compute-1.amazonaws.com:/home/ubuntu/.
+: 1620919236:0;ssh -i ~/Projects/AWS/bastion_host.pem ubuntu@ec2-54-204-89-13.compute-1.amazonaws.com
+: 1620929658:0;l Exp
+: 1620929665:0;l DataDog
+: 1620929677:0;mv Exp/* DataDog/.
+: 1620929683:0;rd Exp
+: 1620929701:0;l Ocaml/LearnOcaml
+: 1620929706:0;l Ocaml/LearnOcaml/Algs/cipher.ml
+: 1620929710:0;less Ocaml/LearnOcaml/Algs/cipher.ml
+: 1620929722:0;l Website
+: 1620930066:0;l Faker
+: 1620930074:0;cd Faker
+: 1620930251:0;cd ~/.FsAutoComplete
+: 1620930368:0;mv /mnt/c/Users/esharapov.INTRANET/Downloads/fsautocomplete.netcore.zip .
+: 1620930392:0;zip --help
+: 1620930407:0;zip fsautocomplete.netcore.zip list
+: 1620930464:0;md fsautocomplete
+: 1620930471:0;mv fsautocomplete.netcore.zip fsautocomplete/.
+: 1620930474:0;cd fsautocomplete
+: 1620930481:0;unzip fsautocomplete.netcore.zip
+: 1620930503:0;l runtimes
+: 1620930538:0;mv fsautocomplete.netcore.zip ../.
+: 1620930641:0;cat fsautocomplete/fsautocomplete.dll.config
+: 1620930715:0;chmod -R a+r fsautocomplete/*
+: 1620930718:0;l fsautocomplete/
+: 1620930726:0;cp -R fsautocomplete/* netframework/.
+: 1620930935:0;2l
+: 1620930940:0;l netframework
+: 1620930965:0;cat netframework/fsautocomplete.zip
+: 1620930971:0;rm netframework/fsautocomplete.zip
+: 1620931404:0;rd netframework
+: 1620931409:0;rd netcore
+: 1620931420:0;mv fsautocomplete netcore
+: 1620934205:0;l netcore
+: 1620934742:0;l tooling/sso-regression-tool
+: 1620934749:0;l tooling/sso-regression-tool/CRISP
+: 1620934887:0;docker rm flamboyant_buck
+: 1620934893:0;docker rm upbeat_gagarin
+: 1620934900:0;docker rm eager_curie
+: 1620934937:0;ps
+: 1620935392:0;g clone https://github.com/evgeniysharapov/emacs-fsharp-mode.git
+: 1620935430:0;git remote add upstream https://github.com/fsharp/emacs-fsharp-mode.git
+: 1620935433:0;g remote -v
+: 1620935465:0;g merge upstream/master
+: 1620935786:0;kill -9 3505
+: 1620935806:0;kill -9 23938
+: 1620936255:0;te 
+: 1620937048:0;dotnet fsi --readline+
+: 1620938389:0;docker logs ulp-core_liferay-portal_1
+: 1620960525:0;npm run local:restart
+: 1620961011:0;cd pulse
+: 1620961016:0;cd ../PULSE
+: 1620961024:0;te adt-dispatch-service
+: 1620965191:0;kill -9 18803
+: 1620965312:0;kill -9 28839
+: 1620965470:0;kill -9 10953
+: 1620965925:0;kill -9 22069
+: 1620965945:0;ulp-iam-portlet/tooling
+: 1620966525:0;te tooling/sso-regression-tool/LOCAL/4-ROLEMAP
+: 1620966544:0;l tooling/sso-regression-tool/LOCAL/1-BASIC
+: 1620966573:0;cd tooling/sso-regression-tool/CRISP
+: 1620966595:0;md LOGONCE
+: 1620966605:0;te LOGONCE/test01-saml.xml
+: 1620966789:0;l ../LOCAL/1-BASIC/ulp-core-local-dev-saml-sample.xml
+: 1620966793:0;te ../LOCAL/1-BASIC/ulp-core-local-dev-saml-sample.xml
+: 1620967502:0;cd ....
+: 1620968148:0;rd tooling/sso-regression-tool/CRISP/LOGONCE
+: 1620968187:0;g co src/main/java/com/ainq/ulp/iam/saml/util/LiferayHelper.java
+: 1620969290:0;ps aux | grep idea
+: 1620973259:0;./gradlew goJF
+: 1620973461:0;ag RolesList
+: 1620975072:0;./gradlew goJF clean build
+: 1620976076:0;gcmsg "OPEB-2127: added test files and code for role mapping from IdP"
+: 1620976117:0;g push -u origin crisp-logonce-roles
+: 1620986163:0;cd Projects
+: 1620986167:0;md Org
+: 1620986169:0;cd Org
+: 1620986216:0;apt search ruby
+: 1621037545:0;mv Org EmacsOrg
+: 1621037589:0;g clone git://git.savannah.gnu.org/emacs.git
+: 1621112062:0;g co 3.3.5
+: 1621112096:0;cd ULP
+: 1621112107:0;ag "Failed to lookup"
+: 1621112182:0;g lag
+: 1621112304:0;ulp-patient-search-portlet
+: 1621112535:0;gcmsg "DHIN-3583: issues finding patients for CCHS is fixed by using correct version of patientfinder lib"
+: 1621112587:0;te build.gradle
+: 1621112648:0;g co 9ae492f
+: 1621112657:0;g co -b release_3.3-DHIN
+: 1621112688:0;ulp-patientfinder-lib
+: 1621113036:0;g co 3.2.5
+: 1621113051:0;g co -b release_3.2.5
+: 1621113078:0;g cherry-pick 9ae492f
+: 1621113123:0;g br -m release_3.2
+: 1621113131:0;g push -u origin release_3.2
+: 1621119474:0;./gradlew dependencies
+: 1621119635:0;gcmsg "DHIN-3583: updated dependency locks for changed patient finder version"
+: 1621126504:0;rm patientfinder.jar
+: 1621126545:0;g co dhin-mpi-update
+: 1621126573:0;ag -g properties
+: 1621126652:0;cp /mnt/c/Users/esharapov.INTRANET/Downloads/3.2.6-extra/ulp-patientfinder-lib.properties src/main/resources/.
+: 1621126687:0;gcmsg "DHIN-3583: added properties file for fixing hot loading issue for ulp-iam module in DHIN prod"
+: 1621135527:0;gcmsg "DHIN-3583: fixing hot loading issue for ulp-iam module in DHIN prod"
+: 1621137130:0;./gradlew dependencies --write-locks
+: 1621137223:0;gcmsg "DHIN-3583: updated gradle deps lock files"
+: 1621137657:0;g clone https://git.ainq.com/esharapov/ai-worklog.git
+: 1621139362:0;apt-cache list --installed
+: 1621139694:0;sudo add-apt-repository ppa:kelleyk/emacs
+: 1621139857:0;curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+: 1621139861:0;sudo apt-get update
+: 1621139917:0;apt list --installed | grep emacs
+: 1621139924:0;apt search emacs
+: 1621139929:0;apt search ^emacs
+: 1621139932:0;apt search ^emacs$
+: 1621139939:0;apt search emacs27
+: 1621139955:0;sudo apt install emacs27
+: 1621140124:0;which emacs27
+: 1621140142:0;emacsclient27 -a '' . &
+: 1621140172:0;kill -9 2087
+: 1621140178:0;kill -9 2089
+: 1621140186:0;kill -9 8630
+: 1621140200:0;sudo apt autoremove
+: 1621140206:0;sudo apt remove emacs
+: 1621140249:0;which emacs 
+: 1621140254:0;ls -al emacs 
+: 1621140262:0;ls -al $(which emacs)
+: 1621140285:0;update-alternatives --list emacs
+: 1621258746:0;cd ai-worklog
+: 1621258780:0;gcmsg "added Saturday 5/15 work on DHIN MPI release with Srini fixing ulp-iam"
+: 1621274452:0;cd ulp-mock-idp
+: 1621275249:0;ps aux | grep dotnet
+: 1621275482:0;top
+: 1621276052:0;free
+: 1621276889:0;ulp-iam
+: 1621278147:0;pulse-admin-module
+: 1621278225:0;gd OPEB-2107-pulse-to-eplus
+: 1621279080:0;./gradlew bootRun
+: 1621281013:0;g co OPEB-2107-pulse-to-eplus
+: 1621281062:0;gcmsg "OPEB-2107: bumped the version"
+: 1621281896:0;ainq-admin-portal-application
+: 1621282777:0;g co -b OPEB-2107-pulse-eplus
+: 1621282793:0;gcmsg "OPEB-2107: updated pulse admin module"
+: 1621282809:0;g push -u origin OPEB-2107-pulse-eplus
+: 1621282934:0;./gradlew clean build bootRun
+: 1621283127:0;ulp-mock-idp
+: 1621283168:0;cd tooling
+: 1621283171:0;cd sso-regression-tool
+: 1621283175:0;python -m http.server 8000
+: 1621283247:0;l tooling
+: 1621283274:0;ag -gi crisptest
+: 1621283281:0;ag -g CRISP
+: 1621283285:0;ag -g CRISPTEST
+: 1621283309:0;cd tooling/sso-regression-tool/LOCAL
+: 1621283331:0;cd 1-BASIC
+: 1621283357:0;cp ulp-core-local-dev-saml-sample.xml LOCAL.DEV.CRISPTEST.05122021.xml
+: 1621284133:0;./gradlew clean build
+: 1621303509:0;java -version
+: 1621303519:0;apt search java
+: 1621303524:0;apt search jdk
+: 1621303548:0;sudo idea &
+: 1621303570:0;ps aux | grep java
+: 1621303717:0;l /opt
+: 1621303802:0;l build/libs
+: 1621305916:0;ULP
+: 1621305936:0;g clone https://github.com/onelogin/java-saml.git
+: 1621305956:0;cd toolkit
+: 1621305963:0;cd java-saml
+: 1621306099:0;cd samples
+: 1621306103:0;l java-saml-tookit-jspsample
+: 1621306111:0;cd l
+: 1621306145:0;cd java-saml-tookit-jspsample
+: 1621306659:0;curl http://localhost:8081
+: 1621311235:0;hgrep python
+: 1621311272:0;te tooling/sso-regression-tool
+: 1621361270:0;ga tooling
+: 1621361294:0;gcmsg "OPEB-2107: updated test test responses with mapping"
+: 1621361301:0;g co release_3.2
+: 1621361359:0;g co release_3.12.0
+: 1621361451:0;g lga -- .ulp-config.yml
+: 1621361465:0;g lga -p -- .ulp-config.yml
+: 1621361626:0;gcmsg "DHIN-3583: hotfix for DHIN MPI is added and version rolled back because of the issues in DHIN PROD"
+: 1621362152:0;ps aux |  grep python
+: 1621362168:0;g co release_3.3
+: 1621369118:0;cd ~/ai-worklog
+: 1621523059:0;/mnt/c/Files/Projects/pulse.middleware.ee
+: 1621523090:0;q
+: 1621523172:0;te .git/config
+: 1621523911:0;gcmsg "OPEB-2077: fixed a bug with activating when completing found by David Byers."
+: 1621523973:0;g co OPEB-2093-complete-flag
+: 1621523993:0;g commit --amend
+: 1621540513:0;l ai-worklog
+: 1621540682:0;ulp-core\\
+
+: 1621609855:0;ls /mnt/wsl/docker-desktop/
+: 1621609865:0;ls /mnt/wsl/docker-desktop-data
+: 1621609868:0;l /mnt/wsl/docker-desktop-data
+: 1621609874:0;l /mnt/wsl/docker-desktop-bind-mounts
+: 1621609903:0;which docker
+: 1621609926:0;l $(which docker)
+: 1621609942:0;apt list --installed | grep docker
+: 1621609994:0;apt autoremove -Y
+: 1621609997:0;apt autoremove -y
+: 1621610018:0;apt info yelp
+: 1621610027:0;apt info yelp-xsl
+: 1621610034:0;sudo apt autoremove -y
+: 1621610037:0;apt list --installed
+: 1621610051:0;apt info xxd
+: 1621611483:0;te .wslconfig
+: 1621612394:0;ps aux | grep xeyes
+: 1621612407:0;kill -9 17953
+: 1621612420:0;xeyes&
+: 1621619243:0;sudo echo 1 > /proc/sys/vm/drop_caches
+: 1621619280:0;echo 1 > /proc/sys/vm/drop_caches
+: 1621619286:0;su
+: 1621619371:0;sudo sh
+: 1621620720:0;tooling
+: 1621620730:0;sso-regression-tool
+: 1621620749:0;python -m http.server 8000 --directory tooling/sso-regression-tool &
+: 1621621370:0;Projects/EmacsOrg
+: 1621621383:0;cd EmacsOrg
+: 1621621424:0;git clone git://git.savannah.gnu.org/emacs.git -b feature/native-comp
+: 1621621438:0;git clone https://savannah.gnu.org/emacs.git -b feature/native-comp
+: 1621621487:0;git clone https://sv.gnu.org/emacs.git -b feature/native-comp
+: 1621621518:0;git clone https://git.savannah.gnu.org/git/emacs.git
+: 1621621870:0;cd emacs
+: 1621621874:0;g br -a
+: 1621621961:0;./configure --with-native-compilation --with-x-toolkit=lucid --with-png --with-rsvg --with-tiff --with-wide-int --with-xft --with-xml2 --with-xpm
+: 1621621990:0;apt search makeinfo
+: 1621622144:0;sudo apt install texinfo
+: 1621740232:0;apt search xaw
+: 1621740243:0;apt search x11
+: 1621740348:0;apt search libxaw
+: 1621740380:0;sudo apt install libxaw7-dev
+: 1621740548:0;sudo apt install libgccjit-10-dev
+: 1621740563:0;./configure --with-native-compilation --with-x-toolkit=lucid
+: 1621740678:0;apt search libgccjit
+: 1621741055:0;export CC=/usr/bin/gcc-10 CXX=/usr/bin/gcc-10
+: 1621741097:0;sudo apt install libxpm-dev libgif-dev libjpeg-dev libtiff-dev libgnutls28-dev
+: 1621741177:0;gcc --version
+: 1621741192:0;apt search gcc-10
+: 1621741244:0;export CC=/usr/bin/gcc-9 CXX=/usr/bin/gcc-9
+: 1621741248:0;./autogen.sh
+: 1621741300:0;apt uninstall libgccjit-10
+: 1621741308:0;sudo apt remove libgccjit-10
+: 1621741315:0;sudo apt remove libgccjit-10-dev:amd64
+: 1621741337:0;sudo apt install libgccjit-9-dev
+: 1621741404:0;apt search libjansson
+: 1621741428:0;sudo apt install libjansson-dev libjansson4
+: 1621741443:0;./configure --with-native-compilation --with-x-toolkit=lucid --with-json CFLAGS="-O3 -mtune=native -march=native -fomit-frame-pointer" 
+: 1621741583:0;nproc
+: 1621741744:0;gcmsg "OPEB-2107: updates to the test data/tooling"
+: 1621823584:0;cd EmacsOrg/emacs
+: 1621823601:0;l build-aux
+: 1621823618:0;l native-lisp
+: 1621823621:0;l native-lisp/28.0.50-2ea60f0d
+: 1621823646:0;l modules
+: 1621823977:0;l /usr/local/share
+: 1621823995:0;l /usr/local/share/zsh
+: 1621823998:0;l /usr/local/share/zsh/site-functions
+: 1621824236:0;apt-cache search wand
+: 1621824274:0;sudo apt install libmagickwand-dev
+: 1621824298:0;./configure --with-native-compilation --with-x-toolkit=lucid --with-json --with-cairo --with-modules --without-compress-install --with-gnutls --with-mailutils --with-harfbuzz --with-imagemagick --with-jpeg --with-png --with-rsvg --with-tiff --with-wide-int --with-xft --with-xml2 --with-xpm  CFLAGS="-O3 -mtune=native -march=native -fomit-frame-pointer" prefix=/usr/local
+: 1621824633:0;./configure --with-native-compilation --with-x-toolkit=lucid --with-json --with-cairo --with-modules --without-compress-install --with-gnutls --with-mailutils --with-harfbuzz --with-imagemagick --with-jpeg --with-png --with-rsvg --with-tiff --with-wide-int --with-xft -with-otf --with-xml2 --with-xpm  CFLAGS="-O3 -mtune=native -march=native -fomit-frame-pointer" prefix=/usr/local
+: 1621824816:0;apt-cache search xft
+: 1621824861:0;sudo apt install libxft-dev
+: 1621825333:0;l /usr
+: 1621825561:0;sudo checkinstall
+: 1621825597:0;g co -b feature/native-comp
+: 1621825611:0;./configure --with-native-compilation --with-x-toolkit=lucid --with-json --with-cairo --with-modules --without-compress-install --without-gsettings --with-gnutls --with-mailutils --with-harfbuzz --with-imagemagick --with-jpeg --with-png --with-rsvg --with-tiff --with-wide-int --with-xft -with-otf --with-xml2 --with-xpm  CFLAGS="-O3 -mtune=native -march=native -fomit-frame-pointer" prefix=/usr/local
+: 1621825848:0;l /usr/local
+: 1621825851:0;l /usr/local/lib
+: 1621825856:0;l /usr/local/lib/ocaml
+: 1621825926:0;ag native-lisp
+: 1621825981:0;l /usr/local/bin/
+: 1621826366:0;te ~/.emacs.d
+: 1621826377:0;/usr/local/bin/emacs
+: 1621826464:0;cat GNUmakefile
+: 1621826483:0;sudo make uninstall
+: 1621873031:0;ls Pulse.Middleware.Shared/Services/GatewayApiBase/GatewayApiBase.cs
+: 1621873039:0;te Pulse.Middleware.Shared/Services/GatewayApiBase/GatewayApiBase.cs
+: 1621873048:0;core .
+: 1621886054:0;cd DataDog
+: 1621886062:0;tree
+: 1621886069:0;l datadog
+: 1621886077:0;l datadog-java-apm
+: 1621886231:0;cd pulse-audit-service
+: 1621886235:0;ag -g OkC
+: 1621888760:0;cp /mnt/c/Users/esharapov.INTRANET/Documents/CRISP_Logonce_SSO.sql ./tooling/sso-regression-tool/.
+: 1621952441:0;free -h
+: 1621958345:0;ga data/.personal.dict
+: 1621958357:0;gcmsg "added few entries to personal dictionary"
+: 1621958379:0;echo eln-cache >> .gitignore
+: 1621958386:0;ga .gitignore
+: 1621958394:0;gcmsg "updated ignored paths list"
+: 1621958463:0;ga custom.el
+: 1621958480:0;gcmsg "updated versions of eglot fsharp language server"
+: 1621958482:0;g lg
+: 1621959299:0;kill -9 17836
+: 1621967988:0;ag "Welcome to PULSE"
+: 1621968850:0;g clone https://git.ainq.com/ai-platform-development/cicd/aiweb-stage.git
+: 1621970643:0;apt search xophos
+: 1621970647:0;apt search xiphos
+: 1621970728:0;sudo apt install diatheke
+: 1621970775:0;diatheke -b KJV -o fmnx -k jn 3:16
+: 1621970797:0;diatheke -b KJV -k jn 3:16
+: 1621970933:0;apt search sword-
+: 1621971056:0;sudo apt install sword-text-kjv sword-text-tr sword-text-web
+: 1621971074:0;diatheke -b system -k modulelist
+: 1621971078:0;diatheke -b KJV -k Jn 3:16
+: 1621971106:0;diatheke --help
+: 1621971121:0;diatheke -b KJV -k Jn 3:16 -f plain
+: 1621971131:0;diatheke -b KJV -f plain -k Jn 3:16
+: 1621971153:0;diatheke -b KJV -f plain -k Jn 3:17
+: 1621971157:0;diatheke -b KJV -f plain -k Jn 3:18
+: 1621971161:0;diatheke -b KJV -f plain -k jn 3:18
+: 1621971167:0;diatheke -b KJV -f plain -k 1Tim 3:18
+: 1621971173:0;diatheke -b KJV -f plain -k 1Tim 4:1
+: 1621971177:0;diatheke -b KJV -f plain -k 2Tim 4:1
+: 1621971186:0;diatheke -f plain -k 2Tim 4:1
+: 1621971195:0;diatheke -b TR -f plain -k 2Tim 4:1
+: 1621971208:0;apt-cache file
+: 1621971224:0;ls /usr/share/sword/
+: 1621971229:0;ls /usr/share/sword/mods.d
+: 1621971236:0;l /usr/share/sword/mods.d
+: 1621971245:0;l /usr/share/sword/modules/
+: 1621971247:0;l /usr/share/sword/modules/texts
+: 1621971250:0;l /usr/share/sword/modules/texts/ztext
+: 1621971253:0;l /usr/share/sword/modules/texts/ztext/tr
+: 1621971283:0;cat /usr/share/sword/mods.d/globals.conf
+: 1621971290:0;cat /usr/share/sword/mods.d/kjv.conf
+: 1621971297:0;cat /usr/share/sword/mods.d/web.conf
+: 1621971747:0;diatheke -b KJV -m 5 -k "Acts 10"
+: 1621971756:0;diatheke -b KJV -f plain -m 5 -k "Acts 10"
+: 1621971762:0;diatheke -b KJV -f plain -k "Acts 10"
+: 1621971768:0;diatheke -b KJV -f plain -k "Acts 1"
+: 1621971781:0;diatheke -b KJV -f plain -k "Acts 3"
+: 1621974781:0;ag SES
+: 1621974787:0;ag SES.
+: 1621974791:0;ag SES\.
+: 1621974797:0;ag aws.SES
+: 1621974800:0;ag aws
+: 1621974814:0;ag "Forgot password"
+: 1621974818:0;ag "Forgot"
+: 1621974823:0;ag "Forgot Password"
+: 1621974847:0;te ainq-common-service
+: 1621974895:0;ag -g email
+: 1621977441:0;g co r2021-04-p1
+: 1621977455:0;g push -u origin r2021-04-p1
+: 1621977711:0;npm i @ai/email
+: 1621977878:0;gts
+: 1621978332:0;g cherry-pick b876760
+: 1621978338:0;qd
+: 1621978341:0;gd master
+: 1621978452:0;gcmsg "OPEB-2147: added email service "
+: 1622000746:0;npm run db:up
+: 1622001494:0;npm run docker:down
+: 1622002897:0;docker logs -f ulp-core_liferay-portal_1
+: 1622039918:0;docker logs
+: 1622046183:0;idea &
+: 1622046762:0;g la
+: 1622047166:0;gg lga
+: 1622047199:0;g co r2021-04
+: 1622049035:0;te ~/.aws/config
+: 1622049146:0;aws --profile=esharapov_entprod sqs help
+: 1622049154:0;aws --profile=esharapov_entprod sqs list-queues
+: 1622049275:0;te samples/Inpatient,Manual.json
+: 1622055387:0;ag @ai/email
+: 1622055401:0;te src/gateway/plugins/email-plugin.js
+: 1622055572:0;te src/gateway/plugins/index.js
+: 1622120123:0;cd pulse-admin-module
+: 1622120153:0;g show HEAD
+: 1622120158:0;g show HEAD~1
+: 1622132940:0;cat README.md
+: 1622134090:0;l ~/.local/bin
+: 1622134111:0;l ~/.bin
+: 1622134146:0;l ~/.npm-packages/bin
+: 1622134913:0;curl http://localhost:3000/pulse/v1/locations/getAllForFacilitySelection
+: 1622134957:0;curl -H 'Autorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJBSU5ROjhhODgxZTVjLTQyY2QtNGY2Yy04NGU2LTJiYmI1N2RkNmM1YzpiZTFkYWIyNC0xNjE0LTQ4ODEtOGJhNS1kY2EyNjJlZmJhNjkiLCJpYXQiOjE2MjIxMzQ4MDR9.qus4tRX2qJFD1C8fNMBeXwVn0AgxGeiu6WVqf2ejw60' http://localhost:3000/pulse/v1/locations/getAllForFacilitySelection
+: 1622134976:0;curl -H 'Autorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJBSU5ROjhhODgxZTVjLTQyY2QtNGY2Yy04NGU2LTJiYmI1N2RkNmM1YzpiZTFkYWIyNC0xNjE0LTQ4ODEtOGJhNS1kY2EyNjJlZmJhNjkiLCJpYXQiOjE2MjIxMzQ4MDR9.qus4tRX2qJFD1C8fNMBeXwVn0AgxGeiu6WVqf2ejw60' -H 'cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJBSU5ROjhhODgxZTVjLTQyY2QtNGY2Yy04NGU2LTJiYmI1N2RkNmM1YzpiZTFkYWIyNC0xNjE0LTQ4ODEtOGJhNS1kY2EyNjJlZmJhNjkiLCJpYXQiOjE2MjIxMzQ4MDR9.qus4tRX2qJFD1C8fNMBeXwVn0AgxGeiu6WVqf2ejw60; expiration=1622138404' http://localhost:3000/pulse/v1/locations/getAllForFacilitySelection
+: 1622135018:0;curl -H 'Autorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJBSU5ROjhhODgxZTVjLTQyY2QtNGY2Yy04NGU2LTJiYmI1N2RkNmM1YzpiZTFkYWIyNC0xNjE0LTQ4ODEtOGJhNS1kY2EyNjJlZmJhNjkiLCJpYXQiOjE2MjIxMzQ4MDR9.qus4tRX2qJFD1C8fNMBeXwVn0AgxGeiu6WVqf2ejw60' -H 'cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJBSU5ROjhhODgxZTVjLTQyY2QtNGY2Yy04NGU2LTJiYmI1N2RkNmM1YzpiZTFkYWIyNC0xNjE0LTQ4ODEtOGJhNS1kY2EyNjJlZmJhNjkiLCJpYXQiOjE2MjIxMzQ4MDR9.qus4tRX2qJFD1C8fNMBeXwVn0AgxGeiu6WVqf2ejw60; expiration=1622138404' -H 'x-session-id: AINQ:8a881e5c-42cd-4f6c-84e6-2bbb57dd6c5c:be1dab24-1614-4881-8ba5-dca262efba69' http://localhost:3000/pulse/v1/locations/getAllForFacilitySelection
+: 1622141230:0;mkdir tests
+: 1622141232:0;cd tests
+: 1622144500:0;npm run build && npm run start
+: 1622144871:0;cd ainq-microservice-framework
+: 1622144874:0;ag action:
+: 1622146254:0;ag -g EmailPl
+: 1622146262:0;ag EmailPlugin
+: 1622146393:0;te ai-email-plugin
+: 1622147016:0;cd PULSE
+: 1622147021:0;cd ainq-common-service
+: 1622147038:0;ag senderEmail
+: 1622147068:0;ag sender_email
+: 1622147092:0;te ainq-common-service/src/gateway/config/index.js
+: 1622148140:0;g co package.json
+: 1622148166:0;gcmsg "OPEB-2147: sending emails when events are created or updated"
+: 1622148194:0;l tests
+: 1622148214:0;rm tests/\#EmergencyEvents.txt\#
+: 1622148225:0;gcan
+: 1622148481:0;gcmsg "OPEB-2147: fixing pipeline wtf"
+: 1622148779:0;rm tests/.\#EmergencyEvents.txt
+: 1622148942:0;gcmsg "OPEB-2147: implementing MR suggestions"
+: 1622149044:0;gcmsg "OPEB-2147: retrieve service desk email from param store"
+: 1622149101:0;cd ../AiPlatform
+: 1622149107:0;cd pipeline-common
+: 1622149112:0;l scripts
+: 1622149130:0;g co -b OPEB-2147-eem-email-notifications
+: 1622149142:0;te scripts/aiweb-saas.config
+: 1622149205:0;gcmsg "OPEB-2147: added service desk email to the paramstore"
+: 1622149214:0;g push -u origin OPEB-2147-eem-email-notifications
+: 1622216592:0;Projects/PULSE
+: 1622223485:0;aws ecs
+: 1622223489:0;aws ecs list-service
+: 1622223491:0;aws ecs list-services
+: 1622223502:0;aws ecs list-services --cluster=pulse-dev-pulseui
+: 1622223524:0;aws ecs list-services --cluster=pulse-dev-pulse-ui
+: 1622223596:0;aws ecs update-service --force-new-deployment --cluster-name=pulse-dev-pulse-ui --service pulse-dev-ainq-pulse-service
+: 1622223605:0;aws ecs update-service --force-new-deployment --cluster=pulse-dev-pulse-ui --service pulse-dev-ainq-pulse-service
+: 1622224348:0;ai-worklog
+: 1622224350:0;ll
+: 1622225476:0;gcmsg "OPEB-2147: added a notification onto activate action and fixed property name typo for completed state"
+: 1622226405:0;cd .em
+: 1622226507:0;vim custom.el
+: 1622226583:0;kill -9 $(pgrep emacs)
+: 1622227902:0;~/Projects
+: 1622227948:0;l Ocaml
+: 1622230639:0;g clone https://github.com/ezra-bible-app/ezra-bible-app.git
+: 1622230644:0;cd ezra-bible-app
+: 1622230787:0;sudo apt-get install build-essential npm nodejs libsqlite3-0 libcurl4-gnutls-dev libicu-dev pkg-config git cmake
+: 1622230847:0;sudo apt install libsqlite3-0 libcurl4-gnutls-dev libicu-dev 
+: 1622230890:0;sudo apt install cmake
+: 1622231059:0;npm i -g electron
+: 1622231130:0;export PATH=~/.npm-packages/bin:$PATH
+: 1622231142:0;electron
+: 1622231151:0;electron .
+: 1622231757:0;diatheke -b SAOA -k "Lion"
+: 1622231763:0;diatheke -b KJV -f plain -k "Acts 2"
+: 1622231782:0;diatheke -b KJV -f plain -k "Psalms 107:20"
+: 1622232017:0;aws ecs update-service --force-new-deployment --cluster=pulse-integ-pulse-ui --service pulse-integ-ainq-pulse-service
+: 1622232843:0;cd Website
+: 1622232853:0;hg br
+: 1622232884:0;hg lga
+: 1622232962:0;hg branches
+: 1622233882:0;~/Projects/FSharp
+: 1622233886:0;g clone https://github.com/ChrisMarinos/FSharpKoans.git
+: 1622233908:0;docker build
+: 1622233940:0;dotnet run .
+: 1622235502:0;l ~/.vscode-server/
+: 1622235505:0;l ~/.vscode-server/bin
+: 1622235525:0;rd ~/.vscode-server/
+: 1622561903:0;npm run docker:launch
+: 1622561913:0;ulp-iam-portlet
+: 1622573563:0;cp build/libs/ulp-iam-portlet.war ../ulp-core/liferay-portal/deploy/.
+: 1622574764:0;docker login registry.ainq.com
+: 1622574868:0;l .tooling
+: 1622575008:0;rd /mnt/c/Users/esharapov.INTRANET/.vscode
+: 1622575548:0;cd emacs-fsharp-mode
+: 1622575574:0;g pull upstream/master
+: 1622575583:0;cat .git/config
+: 1622575597:0;g fetch upstream
+: 1622575745:0;cd ~/.emacs.d/elpa/tuareg-20200518.1820
+: 1622575950:0;cd emacs-fsharp-mode/
+: 1622576348:0;FSharp/FSharpKoans
+: 1622578924:0;l .vscode
+: 1622578928:0;l .vscode/launch.json
+: 1622578931:0;less .vscode/launch.json
+: 1622578951:0;dotnet run -p FSharpKoans/FSharpKoans.fsproj
+: 1622581114:0;rd FSharpKoans
+: 1622581133:0;g clone https://github.com/evgeniysharapov/FSharpKoans.git
+: 1622581141:0;code
+: 1622581200:0;gcmsg "Added entries into ignore list"
+: 1622581916:0;g co -b learning
+: 1622582039:0;gcmsg "added .Net5 build command to VSCode config"
+: 1622582047:0;g push -u origin learning
+: 1622582106:0;gcmsg "solving first koan"
+: 1622582194:0;gcmsg "solving second koan"
+: 1622582257:0;g commit help
+: 1622582261:0;g commit --help
+: 1622582295:0;which gcmsg
+: 1622582318:0;alias gcam='git commit -a -m'
+: 1622582326:0;gcam "solving third koan"
+: 1622582391:0;gcam "solving fourth koan"
+: 1622582461:0;gcam "solving fifth koan"
+: 1622643824:0;gcmsg "OPEB-2147: updated email notifications test script"
+: 1622643938:0;g co OPEB-2207-unit-tests
+: 1622643942:0;g co -b OPEB-2207-unit-tests
+: 1622643957:0;g merge OPEB-2147-eem-email-notifications
+: 1622644001:0;te
+: 1622644113:0;npm i sinon
+: 1622647981:0;npm test
+: 1622648027:0;ainq-microservice-framework
+: 1622648830:0;npm run test:unit
+: 1622648889:0;npm i --save-dev chai
+: 1622650049:0;npm i --save-dev chai-http
+: 1622650054:0;npm run test
+: 1622650267:0;ga package*
+: 1622650305:0;gcmsg "OPEB-2207: updated packages - added chai and chai-http, added few test script running commands"
+: 1622650326:0;gcmsg "OPEB-2207: added test for names module"
+: 1622657481:0;lcd ..
+: 1622657512:0;l ../ElegantFSharp
+: 1622657549:0;dotnet new webapi -o . -lang F#
+: 1622657562:0;rd Misc
+: 1622657577:0;md Misc
+: 1622657653:0;dotnet new -i -o Misc
+: 1622657718:0;dotnet new --interactive -o Misc
+: 1622662049:0;dotnet new --interactive
+: 1622662694:0;cd Misc
+: 1622662710:0;dotnet new console -o . -lang F#
+: 1622662719:0;dotnet run
+: 1622662768:0;dotnet --help
+: 1622662776:0;dotnet add --help
+: 1622662792:0;dotnet add package FSharp.Data
+: 1622663082:0;dotnet add package FSharp.Data.TypeProviders
+: 1622663349:0;dotnet build
+: 1622663387:0;l bin
+: 1622663390:0;l bin/Debug
+: 1622663393:0;l bin/Debug/net5.0
+: 1622734535:0;g push -u origin OPEB-2207-unit-tests
+: 1622734628:0;g co -b OPEB-2174-pipeline-update
+: 1622734639:0;e , &
+: 1622740046:0;ulp-core
+: 1622815650:0;pulse-emergency-census-application
+: 1622815655:0;l data-mock
+: 1622815666:0;l __tests__
+: 1622815680:0;less data-mock/address/city.js
+: 1622815707:0;l samples
+: 1622815723:0;less samples/Inpatient,Auto.json
+: 1622820131:0;cd Projects/EmacsOrg/emacs
+: 1622820214:0;history
+: 1622820676:0;./configure --with-native-compilation --with-x-toolkit=lucid --with-json --with-cairo --with-modules --with-file-notification=inotify -with-x=yes --with-lcms2 --with-gnutls=yes --with-mailutils --with-harfbuzz --with-imagemagick --with-gif=yes --with-jpeg=yes --with-png=yes --with-rsvg --with-tiff=yes --with-wide-int --with-xft -with-otf --with-xml2 --with-xpm=yes --with-xwidgets CFLAGS="-O3 -mtune=native -march=native -fomit-frame-pointer -no-pie" LDFLAGS=='-Wl,-Bsymbolic-functions -Wl,-z,relro -no-pie' --prefix=/usr/local
+: 1622820708:0;./configure --with-native-compilation --with-x-toolkit=lucid --with-json --with-cairo --with-modules --with-file-notification=inotify -with-x=yes --with-lcms2 --with-gnutls=yes --with-mailutils --with-harfbuzz --with-imagemagick --with-gif=yes --with-jpeg=yes --with-png=yes --with-rsvg --with-tiff=yes --with-wide-int --with-xft --with-otf --with-xml2 --with-xpm=yes --with-xwidgets CFLAGS="-O3 -mtune=native -march=native -fomit-frame-pointer -no-pie" LDFLAGS=='-Wl,-Bsymbolic-functions -Wl,-z,relro -no-pie' --prefix=/usr/local
+: 1622820851:0;./configure --help | less
+: 1622821043:0;make clean
+: 1622821113:0;less config.log
+: 1622831051:0;te ,
+: 1622832389:0;./configure --with-native-compilation --with-x-toolkit=lucid --with-json --with-cairo --with-modules --with-file-notification=inotify -with-x=yes --with-lcms2 --with-gnutls=yes --with-mailutils --with-harfbuzz --with-imagemagick --with-gif=yes --with-jpeg=yes --with-png=yes --with-rsvg --with-tiff=yes --with-wide-int --with-xft --with-libotf --with-xml2 --with-xpm=yes CFLAGS="-O3 -mtune=native -march=native -fomit-frame-pointer -no-pie" LDFLAGS=='-Wl,-Bsymbolic-functions -Wl,-z,relro -no-pie' --prefix=/usr/local
+: 1622832401:0;gcc
+: 1622832442:0;CFLAGS="-O3 -mtune=native -march=native -fomit-frame-pointer -no-pie"
+: 1622832480:0;./configure --prefix=/usr/local --with-native-compilation --with-x-toolkit=lucid --with-json --with-cairo --with-modules --with-file-notification=inotify -with-x=yes --with-lcms2 --with-gnutls=yes --with-mailutils --with-harfbuzz --with-imagemagick --with-gif=yes --with-jpeg=yes --with-png=yes --with-rsvg --with-tiff=yes --with-wide-int --with-xft --with-libotf --with-xml2 --with-xpm=yes CFLAGS="-O3 -mtune=native -march=native -fomit-frame-pointer -no-pie" LDFLAGS='-Wl,-Bsymbolic-functions -Wl,-z,relro -no-pie'
+: 1622832564:0;make -j$(nproc)
+: 1622832626:0;make install
+: 1622832638:0;sudo make install
+: 1622832691:0;l $(which emacs)
+: 1622832731:0;l /usr/local/bin
+: 1622832778:0;emacs --version
+: 1622832873:0;pgrep emacs | xargs kill -9
+: 1622832922:0;emacs --debug-init . 
+: 1622833257:0;ag define-obs
+: 1622833296:0;cd elpa
+: 1622833298:0;ag obsolete
+: 1622833314:0;ag obsolete.*merlin
+: 1623034965:0;gcmsg "updated height of default typeface"
+: 1623035012:0;cat .gitmodules
+: 1623035027:0;g submodule update site-lisp/ag
+: 1623035035:0;g submodule update site-lisp/browse-kill-ring-plus
+: 1623035039:0;g submodule update
+: 1623035108:0;cd site-lisp/ag
+: 1623035165:0;cd site-lisp/browse-kill-ring-plus
+: 1623035199:0;cat .git
+: 1623035238:0;cd site-lisp/crosshairs
+: 1623035255:0;cd ../help-fns-plus
+: 1623035268:0;cd ...
+: 1623035270:0;...
+: 1623035306:0;cd site-lisp/help-mode-plus
+: 1623035323:0;g submodule status
+: 1623035333:0;cd site-lisp/help-plus
+: 1623035345:0;cd ../imenu-plus
+: 1623035353:0;co master
+: 1623035367:0;..
+: 1623036980:0;opam config var share --safe
+: 1623038082:0;ps aux | grep emacs
+: 1623038211:0;te init.el
+: 1623038861:0;gcmsg "use emacs packages rather than the ones installed by OPAM"
+: 1623039159:0;opam config
+: 1623039175:0;opam config exec -- utop -emacs
+: 1623039259:0;opam config var share
+: 1623079401:0;ga init.el
+: 1623079436:0;gcmsg "using ELPA ocaml modules rather than ones provided by OPAM (too old)"
+: 1623080995:0;ls ~/.opam/default/bin
+: 1623089547:0;/mnt/c/Users/esharapov.INTRANET/Downloads
+: 1623089635:0;te Kattio.fs
+: 1623090028:0;te grep4a.sh
+: 1623090059:0;te dot.zshfunctions
+: 1623094850:0;adt-dispatch-service
+: 1623094853:0;te README.org
+: 1623119001:0;dotnet --version
+: 1623119217:0;e ~/.emacs.d &
+: 1623120527:0;~/.emacs.d
+: 1623120551:0;gcmsg "added merlin mode binding to Ocaml config"
+: 1623120591:0;cd MyWebApi
+: 1623123350:0;e &
+: 1623124888:0;dotnet run --watch
+: 1623124898:0;dotnet run -p .  --watch
+: 1623125137:0;dotnet watch --help
+: 1623125187:0;ls
+: 1623125192:0;cd FSharpKoans
+: 1623125201:0;dotnet watch --list
+: 1623125348:0;dotnet watch run
+: 1623125400:0;cd FSharpKoans/FSharpKoans
+: 1623126569:0;ga -a
+: 1623126581:0;gcmsg "updated lets asserts"
+: 1623126868:0;gcmsg "updated asserts on function"
+: 1623182662:0;gcmsg "OPEB-2222: performant GET facilities ids API call is implemented"
+: 1623183093:0;g reset PULSE.Middleware.Api.Activation/Properties/launchSettings.json
+: 1623183120:0;gcmsg "OPEB-2222: Implemented GET for a single activation"
+: 1623185716:0;ga **/*/FacilityController.cs
+: 1623185744:0;gcmsg "OPEB-2222: added POST API to add multiple facilities to activation"
+: 1623185758:0;pulse.middleware.
+: 1623185824:0;g co -b OPEB-2093-middleware-api-transition-1
+: 1623185864:0;g co OPEB-2093-middleware-api-transition
+: 1623185894:0;g br -D OPEB-2222-additional-api
+: 1623185933:0;g co -b OPEB-2222-additional-api
+: 1623185948:0;g co -b OPEB-2222-additional-api-1
+: 1623185952:0;g merge OPEB-2222-additional-api
+: 1623186192:0;ga PULSE*
+: 1623186215:0;g ;ga
+: 1623186258:0;g br -d OPEB-2222-additional-api
+: 1623186283:0;g br -d OPEB-2093-middleware-api-transition
+: 1623186301:0;g br -D OPEB-2093-middleware-api-transition
+: 1623186324:0;g push -u origin OPEB-2222-additional-api-1
+: 1623248956:0;dotnet 
+: 1623248960:0;dotnet -h
+: 1623248976:0;dotnet nuget --help
+: 1623248981:0;dotnet nuget list
+: 1623249001:0;dotnet nuget list source
+: 1623349159:0;ag redis
+: 1623349272:0;te PULSE.Middleware.Api.Activation/appsettings.json
+: 1623350546:0;g describe --tags --abbrev=1
+: 1623350606:0;g describe --tags --all --abbrev=0
+: 1623350782:0;g describe --tags --abbrev=0 --match [:digit:].[:digit:]
+: 1623350831:0;g describe --tags --abbrev=0 --match [:digit:].[:digit:].[:digit:]
+: 1623350837:0;g describe --tags --abbrev=0 --match [:digit:].[:digit:].[:digit:]-31
+: 1623350860:0;g describe --tags --abbrev=0 --match '[0-9].[0-9].[0-9]-31\
+'
+: 1623350866:0;g describe --tags --abbrev=0 --match '[0-9].[0-9].[0-9]-31'\
+'
+: 1623350871:0;g describe --tags --abbrev=0 --match '[0-9].[0-9].[0-9]-31'
+: 1623350884:0;g describe --tags --abbrev=0 --match '[0-9].[0-9].[0-9]-[0-9]'
+: 1623350941:0;g describe --tags --abbrev=0 --match '[0-9][0-9].[0-9][0-9].[0-9][0-9]-[0-9][0-9][0-9][0-9]'
+: 1623350944:0;g describe --tags --abbrev=0 --match '[0-9][0-9].[0-9][0-9].[0-9][0-9]-[0-9][0-9][0-9]'
+: 1623350947:0;g describe --tags --abbrev=0 --match '[0-9][0-9].[0-9][0-9].[0-9][0-9]-[0-9][0-9]'
+: 1623350995:0;g tag -l
+: 1623351000:0;g tag -l --sort
+: 1623351006:0;g tag --help
+: 1623351061:0;g tag -l --sort=refname
+: 1623351066:0;g tag -l --sort=date
+: 1623351069:0;g tag -l --sort=time
+: 1623351092:0;g tag -l --sort=v:refname
+: 1623351100:0;g tag -l --sort=v:refname | tail -1
+: 1623351130:0;g show-ref --tag
+: 1623351177:0;g show $(g describe --tags --abbrev=0)
+: 1623351263:0;g tag -l $(g describe --tags --abbrev=0)
+: 1623351268:0;g tag -n $(g describe --tags --abbrev=0)
+: 1623351280:0;g describe --tags --abbrev=0
+: 1623351406:0;g describe --tags --abbrev=0 | awk 'BEGIN{FS=OFS=.-} 1'
+: 1623351425:0;g describe --tags --abbrev=0 | awk 'BEGIN{FS=OFS=".-"} 1'
+: 1623351438:0;g describe --tags --abbrev=0 | awk 'BEGIN{FS=OFS=".-"} {$4} 1'
+: 1623351442:0;g describe --tags --abbrev=0 | awk 'BEGIN{FS=OFS=".-"} {$4}'
+: 1623351446:0;g describe --tags --abbrev=0 | awk 'BEGIN{FS=OFS=".-"} {print $4}'
+: 1623351448:0;g describe --tags --abbrev=0 | awk 'BEGIN{FS=OFS=".-"} {print $3}'
+: 1623351451:0;g describe --tags --abbrev=0 | awk 'BEGIN{FS=OFS=".-"} {print $1}'
+: 1623351454:0;g describe --tags --abbrev=0 | awk 'BEGIN{FS=OFS=".-"} {print $2}'
+: 1623351492:0;g describe --tags --abbrev=0 | awk 'BEGIN{FS=OFS="[.-]"} {print $2}'
+: 1623351494:0;g describe --tags --abbrev=0 | awk 'BEGIN{FS=OFS="[.-]"} {print $4}'
+: 1623351497:0;g describe --tags --abbrev=0 | awk 'BEGIN{FS=OFS="[.-]"} {print $4} 1'
+: 1623351609:0;g describe --tags --abbrev=0 | awk 'BEGIN{FS=OFS="[.-]"} {if($4=="") $3+=1 else $4+=1} 1'
+: 1623351636:0;g describe --tags --abbrev=0 | awk 'BEGIN{FS=OFS="[.-]"} {if($4=="") $3+=1; else $4+=1} 1'
+: 1623351668:0;g describe --tags --abbrev=0 | awk -F='[.-]' '{if($4=="") $3+=1; else $4+=1}'
+: 1623351670:0;g describe --tags --abbrev=0 | awk -F='[.-]' '{if($4=="") $3+=1; else $4+=1} 1'
+: 1623351748:0;g describe --tags --abbrev=0 | awk 'BEGIN{FS="[.-]"}{if($4=="") $3+=1; else $4+=1}'
+: 1623351751:0;g describe --tags --abbrev=0 | awk 'BEGIN{FS="[.-]"}{if($4=="") $3+=1; else $4+=1} 1'
+: 1623351929:0;g describe --tags --abbrev=0 | awk 'BEGIN{FS="[.-]"}/-/{$4+=1}/^-/{$3+=1} 1'
+: 1623351952:0;echo "1.1.3" | awk 'BEGIN{FS="[.-]"}/-/{$4+=1}/^-/{$3+=1} 1'
+: 1623351977:0;echo "1.1.3" | awk 'BEGIN{FS="[.-]"}/$4/{$4+=1}/^-/{$3+=1} 1'
+: 1623351982:0;echo "1.1.3-31" | awk 'BEGIN{FS="[.-]"}/$4/{$4+=1}/^-/{$3+=1} 1'
+: 1623351989:0;echo "1.1.3-31" | awk 'BEGIN{FS="[.-]"}/-/{$4+=1}/^-/{$3+=1} 1'
+: 1623352005:0;echo "1.1.3-31" | awk 'BEGIN{FS="[.-]"}/-/{$4+=1;OFS="-"}/^-/{$3+=1} 1'
+: 1623352107:0;echo "1.1.3-31" | awk 'BEGIN{FS="[.-]"} NR=4{$4+=1} /-/{$3+=1} 1'
+: 1623352290:0;echo "1.1.3-31" | awk 'BEGIN{FS="[.-]"} NR=4{$4+=1} NR=3{$3+=1} 1'
+: 1623352297:0;echo "1.1.3-31" | awk 'BEGIN{FS="[.-]"} NR=4{$4+=1}; NR=3{$3+=1} 1'
+: 1623352351:0;echo "1.1.3-31" | awk 'BEGIN{FS="[.-]"} NR=4{$4+=1}; !/.*-.*/{$3+=1} 1'
+: 1623352357:0;echo "1.1.3-32" | awk 'BEGIN{FS="[.-]"} NR=4{$4+=1}; !/.*-.*/{$3+=1} 1'
+: 1623352371:0;echo "1.1.3-32" | awk 'BEGIN{FS="[.-]"} /-/{$4+=1}; !/.*-.*/{$3+=1} 1'
+: 1623352423:0;echo "1.1.3-32" | awk 'BEGIN{FS="[.-]"} /NR=4/{$4+=1; print; exit}; !/.*-.*/{$3+=1} 1'
+: 1623352441:0;echo "1.1.3-32" | awk 'BEGIN{FS="[.-]"} /NR=4/{$4+=1; print; exit}; NR=3{$3+=1;print;exit}'
+: 1623352472:0;echo "1.1.3-32" | awk 'BEGIN{FS="[.-]"} NR=4 {$4+=1; print; exit}; NR=3 {$3+=1;print;exit}'
+: 1623352551:0;echo "1.1.3-32" | awk 'BEGIN{FS="-"} NR=4 {$2+=1; print; exit}; NR=3 {$3+=1;print;exit}'
+: 1623352566:0;echo "1.1.3-32" | awk 'BEGIN{FS=OFS="-"} NR=4 {$2+=1; print; exit}; NR=3 {$3+=1;print;exit}'
+: 1623352576:0;echo "1.1.3-32" | awk 'BEGIN{FS=OFS="-"} {$2+=1; print; exit}; NR=3 {$3+=1;print;exit}'
+: 1623352603:0;echo "1.1.3-32" | awk 'BEGIN{FS=OFS="-"} NR>1 {$2+=1; print; exit}; {$3+=1;print;exit}'
+: 1623352620:0;echo "1.1.3-32" | awk 'BEGIN{FS=OFS="-"} NR>1 {$2+=1} {$3+=1;print;exit} 1'
+: 1623352630:0;echo "1.1.3-32" | awk 'BEGIN{FS=OFS="-"} NR>1 {$2+=1} 1'
+: 1623352637:0;echo "1.1.3-32" | awk 'BEGIN{FS=OFS="-"} {$2+=1} 1'
+: 1623352716:0;echo "1.1.3-32" | awk 'BEGIN{FS=OFS="-"} NF>3{$2+=1} 1'
+: 1623352726:0;echo "1.1.3-32" | awk 'BEGIN{FS=OFS=".-"} NF>3{$2+=1} 1'
+: 1623352735:0;echo "1.1.3-32" | awk 'BEGIN{FS=OFS=".-"} $NF>3{$2+=1} 1'
+: 1623352752:0;echo "1.1.3-32" | awk 'BEGIN{FS=OFS=".-"} $NF>3 {$4+=1} 1'
+: 1623352760:0;echo "1.1.3-32" | awk 'BEGIN{FS=".-"} $NF>3{$4+=1} 1'
+: 1623352780:0;echo "1.1.3-32" | awk 'BEGIN{FS="-"} $NF>1{$4+=1} 1'
+: 1623352793:0;echo "1.1.3-32" | awk 'BEGIN{FS="-"} $NF>1{$2+=1} 1'
+: 1623352805:0;echo "1.1.3-32" | awk 'BEGIN{FS="-"} $NF>1{$2+=1;OFS="-"} 1'
+: 1623352826:0;echo "1.1.3-32" | awk 'BEGIN{FS="-"} $NF>1{$2+=1; print}'
+: 1623353043:0;echo "1.1.3-32" | awk 'BEGIN{FS=".-"}; $NF>3 { $4+=1}; $NF=3 {$3+=1}; END{ printf "$1.$2.$3-$4}}'
+: 1623353050:0;echo "1.1.3-32" | awk 'BEGIN{FS=".-"}; $NF>3 { $4+=1}; $NF=3 {$3+=1}; END{ printf "$1.$2.$3-$4"}}'
+: 1623353054:0;echo "1.1.3-32" | awk 'BEGIN{FS=".-"}; $NF>3 { $4+=1}; $NF=3 {$3+=1}; END{ printf "$1.$2.$3-$4"}'
+: 1623353060:0;echo "1.1.3-32" | awk 'BEGIN{FS=".-"}; $NF>3 { $4+=1}; $NF=3 {$3+=1}; END{ print "$1.$2.$3-$4"}'
+: 1623353114:0;echo "1.1.3-32" | awk 'BEGIN{FS=".-"}; $NF>3 { $4+=1}; $NF=3 {$3+=1}; END{ print $1.$2.$3-$4 }'
+: 1623353175:0;echo "1.1.3-32" | awk 'BEGIN{FS=".-"}; /-/{ $4+=1}; !/-/{$3+=1}; END{ print $1.$2.$3-$4 }'
+: 1623353188:0;echo "1.1.3-32" | awk 'BEGIN{FS=".-"}; /-/{ $4+=1}; !/-/{$3+=1}; END{ print }'
+: 1623353200:0;echo "1.1.3-32" | awk 'BEGIN{FS=".-"}; /-/{$4+=1}; !/-/{$3+=1}; END{ print }'
+: 1623353308:0;echo "1.1.3-32" | awk -f v.awk
+: 1623353601:0;echo "1.2.3-32" | awk -f v.awk
+: 1623354251:0;echo "1.2.3-45" | awk -f v.awk
+: 1623354720:0;echo "1.2.3" | awk -f v.awk
+: 1623354767:0;echo "1.2.3-123" | awk -f v.awk
+: 1623354784:0;echo "1.2.3-123" | awk 'BEGIN{FS="[.-]"};NF==4 {$4+=1; b="-" $4;};NF==3 {$3+=1;};END{printf("%d.%d.%d%s\n", $1, $2, $3, b)}'
+: 1623375110:0;gcmsg "OPEB-2174: updated pipelines with publishing to stage and using CI/CD vars from PULSE group"
+: 1623375123:0;g push -u origin OPEB-2174-pipeline-update
+: 1623686064:0;e .emacs.d &
+: 1623686631:0;g merge master
+: 1623686658:0;g prune
+: 1623686663:0;g prune -f
+: 1623686679:0;g clean -h
+: 1623686693:0;g clean -i
+: 1623695029:0;ag Redis
+: 1623696099:0;cd /mnt/c/Files/Projects/pulse.middleware.ee
+: 1623698953:0;te package.json
+: 1623699019:0;nodemon --exec babel-node --preserve-symlinks -r dotenv/config src/index.js
+: 1623699031:0;l node_modules/.bin
+: 1623699247:0;curl https://localhost:3000/api/searchhistory/APPTEST/1b28633c-ec90-4b8c-a13f-717c51f70119
+: 1623699332:0;curl http://localhost:3000/api/searchhistory/APPTEST/1b28633c-ec90-4b8c-a13f-717c51f70119
+: 1623699702:0;curl http://localhost:3000/api/searchhistory/APPTTEST
+: 1623699707:0;curl http://localhost:3000/api/
+: 1623699709:0;curl http://localhost:3000/
+: 1623699749:0;te ../EmergencyEventsAPI_Testing.http
+: 1623699795:0;curl http://localhost:3000/pulse/v1/searchhistory/APPTEST/1b28633c-ec90-4b8c-a13f-717c51f70119
+: 1623699900:0;curl 'https://apptest.pulse.dev-ainqapps.com/search/history' \\
+  -H 'authority: apptest.pulse.dev-ainqapps.com' \\
+  -H 'cache-control: max-age=0' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'dnt: 1' \\
+  -H 'upgrade-insecure-requests: 1' \\
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \\
+  -H 'sec-fetch-site: same-origin' \\
+  -H 'sec-fetch-mode: navigate' \\
+  -H 'sec-fetch-user: ?1' \\
+  -H 'sec-fetch-dest: document' \\
+  -H 'referer: https://apptest.dev-ainqapps.com/' \\
+  -H 'accept-language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  -H 'cookie: session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3Aa6bee011-6872-4906-8031-983c942d2eb2.NLtRfMnM8jMkTPSEKAo2TjG4QabiRuINaVZPRXfSZ5w; expiration=1623700514' \\
+  -H 'if-none-match: W/"cc478795ab54e06d4e936aa68b0dca85"' \\
+  -H 'if-modified-since: Mon, 14 Jun 2021 18:42:24 GMT' \\
+  --compressed ;\
+curl 'https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.11.1/tachyons.min.css' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'Referer: https://apptest.pulse.dev-ainqapps.com/' \\
+  -H 'Origin: https://apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'DNT: 1' \\
+  --compressed ;\
+curl 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'Referer: https://apptest.pulse.dev-ainqapps.com/' \\
+  -H 'Origin: https://apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'DNT: 1' \\
+  --compressed ;\
+curl 'https://apptest.pulse.dev-ainqapps.com/css/vendors.422a0228b3901f811d56.css' \\
+  -H 'authority: apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'dnt: 1' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'accept: text/css,*/*;q=0.1' \\
+  -H 'sec-fetch-site: same-origin' \\
+  -H 'sec-fetch-mode: no-cors' \\
+  -H 'sec-fetch-dest: style' \\
+  -H 'referer: https://apptest.pulse.dev-ainqapps.com/search/history' \\
+  -H 'accept-language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  -H 'cookie: session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3Aa6bee011-6872-4906-8031-983c942d2eb2.NLtRfMnM8jMkTPSEKAo2TjG4QabiRuINaVZPRXfSZ5w; expiration=1623700514' \\
+  -H 'if-none-match: W/"20204407a5cfc62719cda86bcfc890b7"' \\
+  -H 'if-modified-since: Mon, 14 Jun 2021 18:42:24 GMT' \\
+  --compressed ;\
+curl 'https://apptest.pulse.dev-ainqapps.com/css/main.422a0228b3901f811d56.css' \\
+  -H 'authority: apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'dnt: 1' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'accept: text/css,*/*;q=0.1' \\
+  -H 'sec-fetch-site: same-origin' \\
+  -H 'sec-fetch-mode: no-cors' \\
+  -H 'sec-fetch-dest: style' \\
+  -H 'referer: https://apptest.pulse.dev-ainqapps.com/search/history' \\
+  -H 'accept-language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  -H 'cookie: session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3Aa6bee011-6872-4906-8031-983c942d2eb2.NLtRfMnM8jMkTPSEKAo2TjG4QabiRuINaVZPRXfSZ5w; expiration=1623700514' \\
+  -H 'if-none-match: W/"4a4200f277ae0afa85da36a64af9b8b5"' \\
+  -H 'if-modified-since: Mon, 14 Jun 2021 18:42:24 GMT' \\
+  --compressed ;\
+curl 'https://apptest.pulse.dev-ainqapps.com/js/runtime~main.422a0228b3901f811d56.js' \\
+  -H 'authority: apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'dnt: 1' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'accept: */*' \\
+  -H 'sec-fetch-site: same-origin' \\
+  -H 'sec-fetch-mode: no-cors' \\
+  -H 'sec-fetch-dest: script' \\
+  -H 'referer: https://apptest.pulse.dev-ainqapps.com/search/history' \\
+  -H 'accept-language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  -H 'cookie: session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3Aa6bee011-6872-4906-8031-983c942d2eb2.NLtRfMnM8jMkTPSEKAo2TjG4QabiRuINaVZPRXfSZ5w; expiration=1623700514' \\
+  -H 'if-none-match: W/"21d22f69fdf6824009c669dfe65a9246"' \\
+  -H 'if-modified-since: Mon, 14 Jun 2021 18:42:25 GMT' \\
+  --compressed ;\
+curl 'https://apptest.pulse.dev-ainqapps.com/js/vendors.e5d9917e5aa5638f0ba7.js' \\
+  -H 'authority: apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'dnt: 1' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'accept: */*' \\
+  -H 'sec-fetch-site: same-origin' \\
+  -H 'sec-fetch-mode: no-cors' \\
+  -H 'sec-fetch-dest: script' \\
+  -H 'referer: https://apptest.pulse.dev-ainqapps.com/search/history' \\
+  -H 'accept-language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  -H 'cookie: session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3Aa6bee011-6872-4906-8031-983c942d2eb2.NLtRfMnM8jMkTPSEKAo2TjG4QabiRuINaVZPRXfSZ5w; expiration=1623700514' \\
+  -H 'if-none-match: W/"000c5a7a17a7d0ba13241cb7c7e56fb9"' \\
+  -H 'if-modified-since: Mon, 14 Jun 2021 18:42:25 GMT' \\
+  --compressed ;\
+curl 'https://apptest.pulse.dev-ainqapps.com/js/main.97a2e2127a507824a0d0.js' \\
+  -H 'authority: apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'dnt: 1' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'accept: */*' \\
+  -H 'sec-fetch-site: same-origin' \\
+  -H 'sec-fetch-mode: no-cors' \\
+  -H 'sec-fetch-dest: script' \\
+  -H 'referer: https://apptest.pulse.dev-ainqapps.com/search/history' \\
+  -H 'accept-language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  -H 'cookie: session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3Aa6bee011-6872-4906-8031-983c942d2eb2.NLtRfMnM8jMkTPSEKAo2TjG4QabiRuINaVZPRXfSZ5w; expiration=1623700514' \\
+  -H 'if-none-match: W/"a4b25af824b54e733ff228b3d620d9e3"' \\
+  -H 'if-modified-since: Mon, 14 Jun 2021 18:42:24 GMT' \\
+  --compressed ;\
+curl 'chrome-extension://fmkadmapgofadopljbjfkapdkoienihi/build/react_devtools_backend.js' \\
+  -H 'Referer: ' \\
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'DNT: 1' \\
+  --compressed ;\
+curl 'https://edge.fullstory.com/s/fs.js' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'Referer: https://apptest.pulse.dev-ainqapps.com/' \\
+  -H 'Origin: https://apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'DNT: 1' \\
+  --compressed ;\
+curl 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/webfonts/fa-regular-400.woff2' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'Referer: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css' \\
+  -H 'Origin: https://apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'DNT: 1' \\
+  --compressed ;\
+curl 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/webfonts/fa-solid-900.woff2' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'Referer: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css' \\
+  -H 'Origin: https://apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'DNT: 1' \\
+  --compressed ;\
+curl 'https://rsms.me/inter/inter.css' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'Referer: https://apptest.pulse.dev-ainqapps.com/' \\
+  -H 'DNT: 1' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  --compressed ;\
+curl 'https://rsms.me/inter/font-files/Inter-roman.var.woff2?v=3.18' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'Referer: https://rsms.me/inter/inter.css' \\
+  -H 'Origin: https://apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'DNT: 1' \\
+  --compressed ;\
+curl 'https://rsms.me/inter/font-files/Inter-italic.var.woff2?v=3.18' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'Referer: https://rsms.me/inter/inter.css' \\
+  -H 'Origin: https://apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'DNT: 1' \\
+  --compressed ;\
+curl 'https://apptest.pulse.dev-ainqapps.com/favicon.ico' \\
+  -H 'authority: apptest.pulse.dev-ainqapps.com' \\
+  -H 'pragma: no-cache' \\
+  -H 'cache-control: no-cache' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'dnt: 1' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8' \\
+  -H 'sec-fetch-site: same-origin' \\
+  -H 'sec-fetch-mode: no-cors' \\
+  -H 'sec-fetch-dest: image' \\
+  -H 'referer: https://apptest.pulse.dev-ainqapps.com/search/history' \\
+  -H 'accept-language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  -H 'cookie: session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3Aa6bee011-6872-4906-8031-983c942d2eb2.NLtRfMnM8jMkTPSEKAo2TjG4QabiRuINaVZPRXfSZ5w; expiration=1623700514' \\
+  --compressed ;\
+curl 'https://api.dev-ainqapps.com/common/v1/application/context?defaultTenantCode=apptest' \\
+  -H 'authority: api.dev-ainqapps.com' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'x-correlation-id: ef9f535f-9462-45c9-a1f4-d56d5dc976ab' \\
+  -H 'x-tenant-code: apptest' \\
+  -H 'x-tenant-id: ' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'x-facility-id: ' \\
+  -H 'accept: application/json' \\
+  -H 'x-session-id: ' \\
+  -H 'x-application-id: pulse' \\
+  -H 'dnt: 1' \\
+  -H 'origin: https://apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-fetch-site: same-site' \\
+  -H 'sec-fetch-mode: cors' \\
+  -H 'sec-fetch-dest: empty' \\
+  -H 'referer: https://apptest.pulse.dev-ainqapps.com/' \\
+  -H 'accept-language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  -H 'cookie: session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3Aa6bee011-6872-4906-8031-983c942d2eb2.NLtRfMnM8jMkTPSEKAo2TjG4QabiRuINaVZPRXfSZ5w; io=mQHiRGaw1B7pjaISAABw; expiration=1623700514' \\
+  -H 'if-none-match: W/"782-IjV4lIBXEF4MeOktKr817azPhLY"' \\
+  --compressed ;\
+curl 'https://api.dev-ainqapps.com/common/v1/application/context?defaultTenantCode=apptest' \\
+  -X 'OPTIONS' \\
+  -H 'authority: api.dev-ainqapps.com' \\
+  -H 'accept: */*' \\
+  -H 'access-control-request-method: GET' \\
+  -H 'access-control-request-headers: x-application-id,x-correlation-id,x-facility-id,x-session-id,x-tenant-code,x-tenant-id' \\
+  -H 'origin: https://apptest.pulse.dev-ainqapps.com' \\
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'sec-fetch-mode: cors' \\
+  -H 'sec-fetch-site: same-site' \\
+  -H 'sec-fetch-dest: empty' \\
+  -H 'referer: https://apptest.pulse.dev-ainqapps.com/' \\
+  -H 'accept-language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  --compressed ;\
+curl 'https://api.dev-ainqapps.com/common/v1/session' \\
+  -H 'authority: api.dev-ainqapps.com' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'x-correlation-id: ab1a4ca6-e251-46d6-95e6-112b3418df6a' \\
+  -H 'x-tenant-code: apptest' \\
+  -H 'x-tenant-id: APPTEST' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'x-facility-id: ' \\
+  -H 'accept: application/json' \\
+  -H 'x-session-id: ' \\
+  -H 'x-application-id: pulse' \\
+  -H 'dnt: 1' \\
+  -H 'origin: https://apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-fetch-site: same-site' \\
+  -H 'sec-fetch-mode: cors' \\
+  -H 'sec-fetch-dest: empty' \\
+  -H 'referer: https://apptest.pulse.dev-ainqapps.com/' \\
+  -H 'accept-language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  -H 'cookie: session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3Aa6bee011-6872-4906-8031-983c942d2eb2.NLtRfMnM8jMkTPSEKAo2TjG4QabiRuINaVZPRXfSZ5w; io=mQHiRGaw1B7pjaISAABw; expiration=1623700514' \\
+  -H 'if-none-match: W/"2864-yU7lRh4PZgNIZAiw35gffv1II5Q"' \\
+  --compressed ;\
+curl 'https://api.dev-ainqapps.com/common/v1/session' \\
+  -X 'OPTIONS' \\
+  -H 'authority: api.dev-ainqapps.com' \\
+  -H 'accept: */*' \\
+  -H 'access-control-request-method: GET' \\
+  -H 'access-control-request-headers: x-application-id,x-correlation-id,x-facility-id,x-session-id,x-tenant-code,x-tenant-id' \\
+  -H 'origin: https://apptest.pulse.dev-ainqapps.com' \\
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'sec-fetch-mode: cors' \\
+  -H 'sec-fetch-site: same-site' \\
+  -H 'sec-fetch-dest: empty' \\
+  -H 'referer: https://apptest.pulse.dev-ainqapps.com/' \\
+  -H 'accept-language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  --compressed ;\
+curl 'https://ainq-platform-tenant-branding.s3.amazonaws.com/44196a23-4eae-4d9c-98c5-b68ac673a02f/957df858-d108-4079-815c-5f93fa198c77.png' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'Referer: https://apptest.pulse.dev-ainqapps.com/' \\
+  -H 'DNT: 1' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  --compressed ;\
+curl 'https://ainq-platform-tenant-branding.s3.amazonaws.com/44196a23-4eae-4d9c-98c5-b68ac673a02f/12db8c67-55a5-4857-a808-b0779b4a7612.png' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'Referer: https://apptest.pulse.dev-ainqapps.com/' \\
+  -H 'DNT: 1' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  --compressed ;\
+curl 'https://api.dev-ainqapps.com/pulse/v1/searchhistory/APPTEST/e59b464e-13ed-48a9-8d9e-43588c72e5fc' \\
+  -H 'authority: api.dev-ainqapps.com' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'x-correlation-id: d8af5f1c-0acb-4c19-a8c0-6f28ff8cd425' \\
+  -H 'x-tenant-code: apptest' \\
+  -H 'x-tenant-id: APPTEST' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'x-facility-id: a6bee011-6872-4906-8031-983c942d2eb2' \\
+  -H 'accept: application/json, text/plain, */*' \\
+  -H 'x-session-id: a6bee011-6872-4906-8031-983c942d2eb2' \\
+  -H 'x-application-id: pulse' \\
+  -H 'dnt: 1' \\
+  -H 'origin: https://apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-fetch-site: same-site' \\
+  -H 'sec-fetch-mode: cors' \\
+  -H 'sec-fetch-dest: empty' \\
+  -H 'referer: https://apptest.pulse.dev-ainqapps.com/' \\
+  -H 'accept-language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  -H 'cookie: session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3Aa6bee011-6872-4906-8031-983c942d2eb2.NLtRfMnM8jMkTPSEKAo2TjG4QabiRuINaVZPRXfSZ5w; io=mQHiRGaw1B7pjaISAABw; expiration=1623700514' \\
+  --compressed ;\
+curl 'https://api.dev-ainqapps.com/pulse/v1/searchhistory/APPTEST/e59b464e-13ed-48a9-8d9e-43588c72e5fc' \\
+  -X 'OPTIONS' \\
+  -H 'authority: api.dev-ainqapps.com' \\
+  -H 'accept: */*' \\
+  -H 'access-control-request-method: GET' \\
+  -H 'access-control-request-headers: x-application-id,x-correlation-id,x-facility-id,x-session-id,x-tenant-code,x-tenant-id' \\
+  -H 'origin: https://apptest.pulse.dev-ainqapps.com' \\
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'sec-fetch-mode: cors' \\
+  -H 'sec-fetch-site: same-site' \\
+  -H 'sec-fetch-dest: empty' \\
+  -H 'referer: https://apptest.pulse.dev-ainqapps.com/' \\
+  -H 'accept-language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  --compressed ;\
+curl 'https://api.dev-ainqapps.com/pulse/v1/directory' \\
+  -H 'authority: api.dev-ainqapps.com' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'x-correlation-id: 70e4c32b-bc41-4864-ab8d-ecc1a126d571' \\
+  -H 'x-tenant-code: apptest' \\
+  -H 'x-tenant-id: APPTEST' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'x-facility-id: a6bee011-6872-4906-8031-983c942d2eb2' \\
+  -H 'accept: application/json' \\
+  -H 'x-session-id: a6bee011-6872-4906-8031-983c942d2eb2' \\
+  -H 'x-application-id: pulse' \\
+  -H 'dnt: 1' \\
+  -H 'origin: https://apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-fetch-site: same-site' \\
+  -H 'sec-fetch-mode: cors' \\
+  -H 'sec-fetch-dest: empty' \\
+  -H 'referer: https://apptest.pulse.dev-ainqapps.com/' \\
+  -H 'accept-language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  -H 'cookie: session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3Aa6bee011-6872-4906-8031-983c942d2eb2.NLtRfMnM8jMkTPSEKAo2TjG4QabiRuINaVZPRXfSZ5w; io=mQHiRGaw1B7pjaISAABw; expiration=1623700514' \\
+  -H 'if-none-match: W/"23fe2f-mo1zerh/8zK3JX8Ghfe7o6+AMNM"' \\
+  --compressed ;\
+curl 'https://api.dev-ainqapps.com/pulse/v1/directory' \\
+  -X 'OPTIONS' \\
+  -H 'authority: api.dev-ainqapps.com' \\
+  -H 'accept: */*' \\
+  -H 'access-control-request-method: GET' \\
+  -H 'access-control-request-headers: x-application-id,x-correlation-id,x-facility-id,x-session-id,x-tenant-code,x-tenant-id' \\
+  -H 'origin: https://apptest.pulse.dev-ainqapps.com' \\
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'sec-fetch-mode: cors' \\
+  -H 'sec-fetch-site: same-site' \\
+  -H 'sec-fetch-dest: empty' \\
+  -H 'referer: https://apptest.pulse.dev-ainqapps.com/' \\
+  -H 'accept-language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  --compressed
+: 1623699933:0;curl 'http://localhost:3000/search/history' \\
+  -H 'authority: apptest.pulse.dev-ainqapps.com' \\
+  -H 'cache-control: max-age=0' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'dnt: 1' \\
+  -H 'upgrade-insecure-requests: 1' \\
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \\
+  -H 'sec-fetch-site: same-origin' \\
+  -H 'sec-fetch-mode: navigate' \\
+  -H 'sec-fetch-user: ?1' \\
+  -H 'sec-fetch-dest: document' \\
+  -H 'referer: https://apptest.dev-ainqapps.com/' \\
+  -H 'accept-language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  -H 'cookie: session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3Aa6bee011-6872-4906-8031-983c942d2eb2.NLtRfMnM8jMkTPSEKAo2TjG4QabiRuINaVZPRXfSZ5w; expiration=1623700514' \\
+  -H 'if-none-match: W/"cc478795ab54e06d4e936aa68b0dca85"' \\
+  -H 'if-modified-since: Mon, 14 Jun 2021 18:42:24 GMT' \\
+  --compressed ;\
+curl 'https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.11.1/tachyons.min.css' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'Referer: https://apptest.pulse.dev-ainqapps.com/' \\
+  -H 'Origin: https://apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'DNT: 1' \\
+  --compressed ;\
+curl 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'Referer: https://apptest.pulse.dev-ainqapps.com/' \\
+  -H 'Origin: https://apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'DNT: 1' \\
+  --compressed ;\
+curl 'https://apptest.pulse.dev-ainqapps.com/css/vendors.422a0228b3901f811d56.css' \\
+  -H 'authority: apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'dnt: 1' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'accept: text/css,*/*;q=0.1' \\
+  -H 'sec-fetch-site: same-origin' \\
+  -H 'sec-fetch-mode: no-cors' \\
+  -H 'sec-fetch-dest: style' \\
+  -H 'referer: https://apptest.pulse.dev-ainqapps.com/search/history' \\
+  -H 'accept-language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  -H 'cookie: session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3Aa6bee011-6872-4906-8031-983c942d2eb2.NLtRfMnM8jMkTPSEKAo2TjG4QabiRuINaVZPRXfSZ5w; expiration=1623700514' \\
+  -H 'if-none-match: W/"20204407a5cfc62719cda86bcfc890b7"' \\
+  -H 'if-modified-since: Mon, 14 Jun 2021 18:42:24 GMT' \\
+  --compressed ;\
+curl 'https://apptest.pulse.dev-ainqapps.com/css/main.422a0228b3901f811d56.css' \\
+  -H 'authority: apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'dnt: 1' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'accept: text/css,*/*;q=0.1' \\
+  -H 'sec-fetch-site: same-origin' \\
+  -H 'sec-fetch-mode: no-cors' \\
+  -H 'sec-fetch-dest: style' \\
+  -H 'referer: https://apptest.pulse.dev-ainqapps.com/search/history' \\
+  -H 'accept-language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  -H 'cookie: session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3Aa6bee011-6872-4906-8031-983c942d2eb2.NLtRfMnM8jMkTPSEKAo2TjG4QabiRuINaVZPRXfSZ5w; expiration=1623700514' \\
+  -H 'if-none-match: W/"4a4200f277ae0afa85da36a64af9b8b5"' \\
+  -H 'if-modified-since: Mon, 14 Jun 2021 18:42:24 GMT' \\
+  --compressed ;\
+curl 'https://apptest.pulse.dev-ainqapps.com/js/runtime~main.422a0228b3901f811d56.js' \\
+  -H 'authority: apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'dnt: 1' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'accept: */*' \\
+  -H 'sec-fetch-site: same-origin' \\
+  -H 'sec-fetch-mode: no-cors' \\
+  -H 'sec-fetch-dest: script' \\
+  -H 'referer: https://apptest.pulse.dev-ainqapps.com/search/history' \\
+  -H 'accept-language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  -H 'cookie: session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3Aa6bee011-6872-4906-8031-983c942d2eb2.NLtRfMnM8jMkTPSEKAo2TjG4QabiRuINaVZPRXfSZ5w; expiration=1623700514' \\
+  -H 'if-none-match: W/"21d22f69fdf6824009c669dfe65a9246"' \\
+  -H 'if-modified-since: Mon, 14 Jun 2021 18:42:25 GMT' \\
+  --compressed ;\
+curl 'https://apptest.pulse.dev-ainqapps.com/js/vendors.e5d9917e5aa5638f0ba7.js' \\
+  -H 'authority: apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'dnt: 1' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'accept: */*' \\
+  -H 'sec-fetch-site: same-origin' \\
+  -H 'sec-fetch-mode: no-cors' \\
+  -H 'sec-fetch-dest: script' \\
+  -H 'referer: https://apptest.pulse.dev-ainqapps.com/search/history' \\
+  -H 'accept-language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  -H 'cookie: session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3Aa6bee011-6872-4906-8031-983c942d2eb2.NLtRfMnM8jMkTPSEKAo2TjG4QabiRuINaVZPRXfSZ5w; expiration=1623700514' \\
+  -H 'if-none-match: W/"000c5a7a17a7d0ba13241cb7c7e56fb9"' \\
+  -H 'if-modified-since: Mon, 14 Jun 2021 18:42:25 GMT' \\
+  --compressed ;\
+curl 'https://apptest.pulse.dev-ainqapps.com/js/main.97a2e2127a507824a0d0.js' \\
+  -H 'authority: apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'dnt: 1' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'accept: */*' \\
+  -H 'sec-fetch-site: same-origin' \\
+  -H 'sec-fetch-mode: no-cors' \\
+  -H 'sec-fetch-dest: script' \\
+  -H 'referer: https://apptest.pulse.dev-ainqapps.com/search/history' \\
+  -H 'accept-language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  -H 'cookie: session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3Aa6bee011-6872-4906-8031-983c942d2eb2.NLtRfMnM8jMkTPSEKAo2TjG4QabiRuINaVZPRXfSZ5w; expiration=1623700514' \\
+  -H 'if-none-match: W/"a4b25af824b54e733ff228b3d620d9e3"' \\
+  -H 'if-modified-since: Mon, 14 Jun 2021 18:42:24 GMT' \\
+  --compressed ;\
+curl 'chrome-extension://fmkadmapgofadopljbjfkapdkoienihi/build/react_devtools_backend.js' \\
+  -H 'Referer: ' \\
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'DNT: 1' \\
+  --compressed ;\
+curl 'https://edge.fullstory.com/s/fs.js' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'Referer: https://apptest.pulse.dev-ainqapps.com/' \\
+  -H 'Origin: https://apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'DNT: 1' \\
+  --compressed ;\
+curl 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/webfonts/fa-regular-400.woff2' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'Referer: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css' \\
+  -H 'Origin: https://apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'DNT: 1' \\
+  --compressed ;\
+curl 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/webfonts/fa-solid-900.woff2' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'Referer: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css' \\
+  -H 'Origin: https://apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'DNT: 1' \\
+  --compressed ;\
+curl 'https://rsms.me/inter/inter.css' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'Referer: https://apptest.pulse.dev-ainqapps.com/' \\
+  -H 'DNT: 1' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  --compressed ;\
+curl 'https://rsms.me/inter/font-files/Inter-roman.var.woff2?v=3.18' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'Referer: https://rsms.me/inter/inter.css' \\
+  -H 'Origin: https://apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'DNT: 1' \\
+  --compressed ;\
+curl 'https://rsms.me/inter/font-files/Inter-italic.var.woff2?v=3.18' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'Referer: https://rsms.me/inter/inter.css' \\
+  -H 'Origin: https://apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'DNT: 1' \\
+  --compressed ;\
+curl 'https://apptest.pulse.dev-ainqapps.com/favicon.ico' \\
+  -H 'authority: apptest.pulse.dev-ainqapps.com' \\
+  -H 'pragma: no-cache' \\
+  -H 'cache-control: no-cache' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'dnt: 1' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8' \\
+  -H 'sec-fetch-site: same-origin' \\
+  -H 'sec-fetch-mode: no-cors' \\
+  -H 'sec-fetch-dest: image' \\
+  -H 'referer: https://apptest.pulse.dev-ainqapps.com/search/history' \\
+  -H 'accept-language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  -H 'cookie: session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3Aa6bee011-6872-4906-8031-983c942d2eb2.NLtRfMnM8jMkTPSEKAo2TjG4QabiRuINaVZPRXfSZ5w; expiration=1623700514' \\
+  --compressed ;\
+curl 'https://api.dev-ainqapps.com/common/v1/application/context?defaultTenantCode=apptest' \\
+  -H 'authority: api.dev-ainqapps.com' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'x-correlation-id: ef9f535f-9462-45c9-a1f4-d56d5dc976ab' \\
+  -H 'x-tenant-code: apptest' \\
+  -H 'x-tenant-id: ' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'x-facility-id: ' \\
+  -H 'accept: application/json' \\
+  -H 'x-session-id: ' \\
+  -H 'x-application-id: pulse' \\
+  -H 'dnt: 1' \\
+  -H 'origin: https://apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-fetch-site: same-site' \\
+  -H 'sec-fetch-mode: cors' \\
+  -H 'sec-fetch-dest: empty' \\
+  -H 'referer: https://apptest.pulse.dev-ainqapps.com/' \\
+  -H 'accept-language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  -H 'cookie: session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3Aa6bee011-6872-4906-8031-983c942d2eb2.NLtRfMnM8jMkTPSEKAo2TjG4QabiRuINaVZPRXfSZ5w; io=mQHiRGaw1B7pjaISAABw; expiration=1623700514' \\
+  -H 'if-none-match: W/"782-IjV4lIBXEF4MeOktKr817azPhLY"' \\
+  --compressed ;\
+curl 'https://api.dev-ainqapps.com/common/v1/application/context?defaultTenantCode=apptest' \\
+  -X 'OPTIONS' \\
+  -H 'authority: api.dev-ainqapps.com' \\
+  -H 'accept: */*' \\
+  -H 'access-control-request-method: GET' \\
+  -H 'access-control-request-headers: x-application-id,x-correlation-id,x-facility-id,x-session-id,x-tenant-code,x-tenant-id' \\
+  -H 'origin: https://apptest.pulse.dev-ainqapps.com' \\
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'sec-fetch-mode: cors' \\
+  -H 'sec-fetch-site: same-site' \\
+  -H 'sec-fetch-dest: empty' \\
+  -H 'referer: https://apptest.pulse.dev-ainqapps.com/' \\
+  -H 'accept-language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  --compressed ;\
+curl 'https://api.dev-ainqapps.com/common/v1/session' \\
+  -H 'authority: api.dev-ainqapps.com' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'x-correlation-id: ab1a4ca6-e251-46d6-95e6-112b3418df6a' \\
+  -H 'x-tenant-code: apptest' \\
+  -H 'x-tenant-id: APPTEST' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'x-facility-id: ' \\
+  -H 'accept: application/json' \\
+  -H 'x-session-id: ' \\
+  -H 'x-application-id: pulse' \\
+  -H 'dnt: 1' \\
+  -H 'origin: https://apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-fetch-site: same-site' \\
+  -H 'sec-fetch-mode: cors' \\
+  -H 'sec-fetch-dest: empty' \\
+  -H 'referer: https://apptest.pulse.dev-ainqapps.com/' \\
+  -H 'accept-language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  -H 'cookie: session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3Aa6bee011-6872-4906-8031-983c942d2eb2.NLtRfMnM8jMkTPSEKAo2TjG4QabiRuINaVZPRXfSZ5w; io=mQHiRGaw1B7pjaISAABw; expiration=1623700514' \\
+  -H 'if-none-match: W/"2864-yU7lRh4PZgNIZAiw35gffv1II5Q"' \\
+  --compressed ;\
+curl 'https://api.dev-ainqapps.com/common/v1/session' \\
+  -X 'OPTIONS' \\
+  -H 'authority: api.dev-ainqapps.com' \\
+  -H 'accept: */*' \\
+  -H 'access-control-request-method: GET' \\
+  -H 'access-control-request-headers: x-application-id,x-correlation-id,x-facility-id,x-session-id,x-tenant-code,x-tenant-id' \\
+  -H 'origin: https://apptest.pulse.dev-ainqapps.com' \\
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'sec-fetch-mode: cors' \\
+  -H 'sec-fetch-site: same-site' \\
+  -H 'sec-fetch-dest: empty' \\
+  -H 'referer: https://apptest.pulse.dev-ainqapps.com/' \\
+  -H 'accept-language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  --compressed ;\
+curl 'https://ainq-platform-tenant-branding.s3.amazonaws.com/44196a23-4eae-4d9c-98c5-b68ac673a02f/957df858-d108-4079-815c-5f93fa198c77.png' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'Referer: https://apptest.pulse.dev-ainqapps.com/' \\
+  -H 'DNT: 1' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  --compressed ;\
+curl 'https://ainq-platform-tenant-branding.s3.amazonaws.com/44196a23-4eae-4d9c-98c5-b68ac673a02f/12db8c67-55a5-4857-a808-b0779b4a7612.png' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'Referer: https://apptest.pulse.dev-ainqapps.com/' \\
+  -H 'DNT: 1' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  --compressed ;\
+curl 'https://api.dev-ainqapps.com/pulse/v1/searchhistory/APPTEST/e59b464e-13ed-48a9-8d9e-43588c72e5fc' \\
+  -H 'authority: api.dev-ainqapps.com' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'x-correlation-id: d8af5f1c-0acb-4c19-a8c0-6f28ff8cd425' \\
+  -H 'x-tenant-code: apptest' \\
+  -H 'x-tenant-id: APPTEST' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'x-facility-id: a6bee011-6872-4906-8031-983c942d2eb2' \\
+  -H 'accept: application/json, text/plain, */*' \\
+  -H 'x-session-id: a6bee011-6872-4906-8031-983c942d2eb2' \\
+  -H 'x-application-id: pulse' \\
+  -H 'dnt: 1' \\
+  -H 'origin: https://apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-fetch-site: same-site' \\
+  -H 'sec-fetch-mode: cors' \\
+  -H 'sec-fetch-dest: empty' \\
+  -H 'referer: https://apptest.pulse.dev-ainqapps.com/' \\
+  -H 'accept-language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  -H 'cookie: session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3Aa6bee011-6872-4906-8031-983c942d2eb2.NLtRfMnM8jMkTPSEKAo2TjG4QabiRuINaVZPRXfSZ5w; io=mQHiRGaw1B7pjaISAABw; expiration=1623700514' \\
+  --compressed ;\
+curl 'https://api.dev-ainqapps.com/pulse/v1/searchhistory/APPTEST/e59b464e-13ed-48a9-8d9e-43588c72e5fc' \\
+  -X 'OPTIONS' \\
+  -H 'authority: api.dev-ainqapps.com' \\
+  -H 'accept: */*' \\
+  -H 'access-control-request-method: GET' \\
+  -H 'access-control-request-headers: x-application-id,x-correlation-id,x-facility-id,x-session-id,x-tenant-code,x-tenant-id' \\
+  -H 'origin: https://apptest.pulse.dev-ainqapps.com' \\
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'sec-fetch-mode: cors' \\
+  -H 'sec-fetch-site: same-site' \\
+  -H 'sec-fetch-dest: empty' \\
+  -H 'referer: https://apptest.pulse.dev-ainqapps.com/' \\
+  -H 'accept-language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  --compressed ;\
+curl 'https://api.dev-ainqapps.com/pulse/v1/directory' \\
+  -H 'authority: api.dev-ainqapps.com' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'x-correlation-id: 70e4c32b-bc41-4864-ab8d-ecc1a126d571' \\
+  -H 'x-tenant-code: apptest' \\
+  -H 'x-tenant-id: APPTEST' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'x-facility-id: a6bee011-6872-4906-8031-983c942d2eb2' \\
+  -H 'accept: application/json' \\
+  -H 'x-session-id: a6bee011-6872-4906-8031-983c942d2eb2' \\
+  -H 'x-application-id: pulse' \\
+  -H 'dnt: 1' \\
+  -H 'origin: https://apptest.pulse.dev-ainqapps.com' \\
+  -H 'sec-fetch-site: same-site' \\
+  -H 'sec-fetch-mode: cors' \\
+  -H 'sec-fetch-dest: empty' \\
+  -H 'referer: https://apptest.pulse.dev-ainqapps.com/' \\
+  -H 'accept-language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  -H 'cookie: session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3Aa6bee011-6872-4906-8031-983c942d2eb2.NLtRfMnM8jMkTPSEKAo2TjG4QabiRuINaVZPRXfSZ5w; io=mQHiRGaw1B7pjaISAABw; expiration=1623700514' \\
+  -H 'if-none-match: W/"23fe2f-mo1zerh/8zK3JX8Ghfe7o6+AMNM"' \\
+  --compressed ;\
+curl 'https://api.dev-ainqapps.com/pulse/v1/directory' \\
+  -X 'OPTIONS' \\
+  -H 'authority: api.dev-ainqapps.com' \\
+  -H 'accept: */*' \\
+  -H 'access-control-request-method: GET' \\
+  -H 'access-control-request-headers: x-application-id,x-correlation-id,x-facility-id,x-session-id,x-tenant-code,x-tenant-id' \\
+  -H 'origin: https://apptest.pulse.dev-ainqapps.com' \\
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36' \\
+  -H 'sec-fetch-mode: cors' \\
+  -H 'sec-fetch-site: same-site' \\
+  -H 'sec-fetch-dest: empty' \\
+  -H 'referer: https://apptest.pulse.dev-ainqapps.com/' \\
+  -H 'accept-language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  --compressed
+: 1623700096:0;curl -H "cookie: session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3Aa6bee011-6872-4906-8031-983c942d2eb2.NLtRfMnM8jMkTPSEKAo2TjG4QabiRuINaVZPRXfSZ5w; io=mQHiRGaw1B7pjaISAABw; expiration=1623700514" http://localhost:3000/pulse/v1/searchhistory/APPTEST/1b28633c-ec90-4b8c-a13f-717c51f70119
+: 1623700124:0;curl -H "cookie: session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3Aa6bee011-6872-4906-8031-983c942d2eb2.NLtRfMnM8jMkTPSEKAo2TjG4QabiRuINaVZPRXfSZ5w; io=mQHiRGaw1B7pjaISAABw; expiration=1623700514" -H "x-session-id: a6bee011-6872-4906-8031-983c942d2eb2" http://localhost:3000/pulse/v1/searchhistory/APPTEST/1b28633c-ec90-4b8c-a13f-717c51f70119
+: 1623700142:0;curl -H "cookie: session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3Aa6bee011-6872-4906-8031-983c942d2eb2.NLtRfMnM8jMkTPSEKAo2TjG4QabiRuINaVZPRXfSZ5w; io=mQHiRGaw1B7pjaISAABw; expiration=1623700514" -H "x-tenant-id: APPTEST" http://localhost:3000/pulse/v1/searchhistory/APPTEST/1b28633c-ec90-4b8c-a13f-717c51f70119
+: 1623700157:0;curl -H "cookie: session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3Aa6bee011-6872-4906-8031-983c942d2eb2.NLtRfMnM8jMkTPSEKAo2TjG4QabiRuINaVZPRXfSZ5w; io=mQHiRGaw1B7pjaISAABw; expiration=1623700514" -H "x-tenant-code: apptest" http://localhost:3000/pulse/v1/searchhistory/APPTEST/1b28633c-ec90-4b8c-a13f-717c51f70119
+: 1623700187:0;curl -H "cookie: session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3Aa6bee011-6872-4906-8031-983c942d2eb2.NLtRfMnM8jMkTPSEKAo2TjG4QabiRuINaVZPRXfSZ5w; io=mQHiRGaw1B7pjaISAABw; expiration=1623700514" -H "x-tenant-code: apptest" -H "x-application-id: pulse" http://localhost:3000/pulse/v1/searchhistory/APPTEST/1b28633c-ec90-4b8c-a13f-717c51f70119
+: 1623700207:0;curl -H "cookie: session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3Aa6bee011-6872-4906-8031-983c942d2eb2.NLtRfMnM8jMkTPSEKAo2TjG4QabiRuINaVZPRXfSZ5w; io=mQHiRGaw1B7pjaISAABw; expiration=1623700514" -H "x-tenant-code: apptest" -H "x-application-id: pulse" -H "x-correlation-id: d8af5f1c-0acb-4c19-a8c0-6f28ff8cd425" http://localhost:3000/pulse/v1/searchhistory/APPTEST/1b28633c-ec90-4b8c-a13f-717c51f70119
+: 1623700233:0;curl -H "cookie: session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3Aa6bee011-6872-4906-8031-983c942d2eb2.NLtRfMnM8jMkTPSEKAo2TjG4QabiRuINaVZPRXfSZ5w; io=mQHiRGaw1B7pjaISAABw; expiration=1623700514" -H "x-tenant-code: apptest" -H "x-application-id: pulse" -H "x-correlation-id: d8af5f1c-0acb-4c19-a8c0-6f28ff8cd425" -H "x-session-id: a6bee011-6872-4906-8031-983c942d2eb2" http://localhost:3000/pulse/v1/searchhistory/APPTEST/1b28633c-ec90-4b8c-a13f-717c51f70119
+: 1623700750:0;npm i nodemon
+: 1623700790:0;curl -H "cookie: session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3Aa6bee011-6872-4906-8031-983c942d2eb2.NLtRfMnM8jMkTPSEKAo2TjG4QabiRuINaVZPRXfSZ5w; io=mQHiRGaw1B7pjaISAABw; expiration=1623700514" -H "x-tenant-code: apptest" -H "x-application-id: pulse" -H "x-correlation-id: d8af5f1c-0acb-4c19-a8c0-6f28ff8cd425" -H "x-session-id: a6bee011-6872-4906-8031-983c942d2eb2" -H "x-tenant-id: APPTEST" http://localhost:3000/pulse/v1/searchhistory/APPTEST/1b28633c-ec90-4b8c-a13f-717c51f70119
+: 1623701194:0;curl https://pulse.pulsedev-ainq.com:9602/api/searchhistory/APPTEST/1b28633c-ec90-4b8c-a13f-717c51f70119
+: 1623701215:0;curl -v https://pulse.pulsedev-ainq.com:9602/api/searchhistory/APPTEST/1b28633c-ec90-4b8c-a13f-717c51f70119
+: 1623722566:0;g st
+: 1623722736:0;g stash create "experimenting with issues with api and inactive tenants working with Chris Micle"
+: 1623722818:0;rm q
+: 1623724540:0;g stash save "experimenting with issues with api and inactive tenants working with Chris Micle"
+: 1623724586:0;g co OPEB-2248-tenant-name-id-email-notification
+: 1623724593:0;g co -b OPEB-2248-tenant-name-id-email-notification
+: 1623724916:0;npm ls --depth=0
+: 1623724937:0;find ~/.npm -name nodemon
+: 1623724998:0;htop
+: 1623725310:0;npm i -g nodemon
+: 1623725377:0;export PATH="~/.npm-packages/bin:$PATH"
+: 1623725388:0;echo debug
+: 1623725392:0;ag -i debug
+: 1623725402:0;l .env
+: 1623725429:0;nodemon
+: 1623725438:0;echo $PATH
+: 1623725454:0;~/.npm-packages/bin/nodemon 
+: 1623725475:0;export PATH="/home/esharapov/.npm-packages/bin:$PATH"
+: 1623765274:0;/usr/bin/emacsclient -a '' . &
+: 1623765308:0;which e
+: 1623765316:0;/usr/bin/emacsclient -c -a '' . &
+: 1623765357:0;/usr/bin/emacs 
+: 1623765427:0;kill $(pgrep emacs)
+: 1623765452:0;ag make-closure
+: 1623765461:0;which emacs
+: 1623765470:0;ag ido
+: 1623765551:0;/usr/bin/emacs -q
+: 1623767431:0;gd -- package-lock.json
+: 1623781152:0;cat pulse-nodejs-service/.git/config
+: 1623781168:0;g clone https://git.ainq.com/pulse-platform/pulse-nodejs-service.git pns
+: 1623781172:0;cd pns
+: 1623781218:0;g co f16eacf
+: 1623781261:0;rd node_modules
+: 1623781263:0;npm ci
+: 1623781330:0;cp ../pulse-nodejs-service/.env .
+: 1623781484:0;te package-lock.json
+: 1623781626:0;diff package-lock.json ../pulse-nodejs-service/package-lock.json
+: 1623781660:0;WinMergeU.exe /?
+: 1623781703:0;WinMergeU.exe package-lock.json ../pulse-nodejs-service/package-lock.json
+: 1623784320:0;ga tests/EmergencyEvents.txt
+: 1623784405:0;gcmsg "OPEB-2248: updated tests for RestClient"
+: 1623784436:0;[3:13 PM] Joe Chromo\
+    Here just run it against dev:\
+\
+\
+curl 'https://api.dev-ainqapps.com/pulse/v1/events/d75e13e7-a165-4a3f-8889-1e6552fac2e7/activate' \\
+  -X 'PUT' \\
+  -H 'authority: api.dev-ainqapps.com' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'x-correlation-id: c62c9bf9-58af-4f04-be70-68882eb3e851' \\
+  -H 'x-tenant-code: apptest' \\
+  -H 'x-tenant-id: APPTEST' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36' \\
+  -H 'content-type: application/json;charset=UTF-8' \\
+  -H 'x-facility-id: ' \\
+  -H 'accept: application/json, text/plain, */*' \\
+  -H 'x-session-id: 9f7b039f-4b7b-4c19-8664-b9d6280590bb' \\
+  -H 'x-application-id: admin' \\
+  -H 'dnt: 1' \\
+  -H 'origin: https://apptest.admin.dev-ainqapps.com' \\
+  -H 'sec-fetch-site: same-site' \\
+  -H 'sec-fetch-mode: cors' \\
+  -H 'sec-fetch-dest: empty' \\
+  -H 'referer: https://apptest.admin.dev-ainqapps.com/' \\
+  -H 'accept-language: en-US,en;q=0.9' \\
+  -H 'cookie: io=vk7kRFlFBFK0YGVOAACO; fs_uid=rs.fullstory.com#WA417#5390317555793920:6088847096356864/1644062385; session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3A9f7b039f-4b7b-4c19-8664-b9d6280590bb.iLuGw0Ye2F45cvQG69HBHE%2BlIreCxebyj%2Fr1w3yq0Q0; expiration=1623785601'\
+
+: 1623784450:0;curl 'https://api.dev-ainqapps.com/pulse/v1/events/d75e13e7-a165-4a3f-8889-1e6552fac2e7/activate' \\
+  -X 'PUT' \\
+  -H 'authority: api.dev-ainqapps.com' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'x-correlation-id: c62c9bf9-58af-4f04-be70-68882eb3e851' \\
+  -H 'x-tenant-code: apptest' \\
+  -H 'x-tenant-id: APPTEST' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36' \\
+  -H 'content-type: application/json;charset=UTF-8' \\
+  -H 'x-facility-id: ' \\
+  -H 'accept: application/json, text/plain, */*' \\
+  -H 'x-session-id: 9f7b039f-4b7b-4c19-8664-b9d6280590bb' \\
+  -H 'x-application-id: admin' \\
+  -H 'dnt: 1' \\
+  -H 'origin: https://apptest.admin.dev-ainqapps.com' \\
+  -H 'sec-fetch-site: same-site' \\
+  -H 'sec-fetch-mode: cors' \\
+  -H 'sec-fetch-dest: empty' \\
+  -H 'referer: https://apptest.admin.dev-ainqapps.com/' \\
+  -H 'accept-language: en-US,en;q=0.9' \\
+  -H 'cookie: io=vk7kRFlFBFK0YGVOAACO; fs_uid=rs.fullstory.com#WA417#5390317555793920:6088847096356864/1644062385; session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3A9f7b039f-4b7b-4c19-8664-b9d6280590bb.iLuGw0Ye2F45cvQG69HBHE%2BlIreCxebyj%2Fr1w3yq0Q0; expiration=1623785601'\
+
+: 1623784727:0;te tests/EmergencyEvents.txt
+: 1623787484:0;cat .env | powershell.exe -command Set-Clipboard
+: 1623787522:0;cat .env | powershell.exe -command Set-Clipboard -Value
+: 1623787542:0;powershell.exe -command Set-Clipboard -Value $(cat .env)
+: 1623787597:0;xclipboard --help
+: 1623787606:0;which xclipboard
+: 1623787612:0;xclipboard .env
+: 1623787620:0;cat .env
+: 1623787628:0;man xclipboard
+: 1623788004:0;clip.exe /?
+: 1623788152:0;cat .env| clip.exe
+: 1623790687:0;g co src/services/middleware-service.js
+: 1623790734:0;g push -u origin OPEB-2248-tenant-name-id-email-notification
+: 1623792016:0;g stash --help
+: 1623792095:0;g stash push -m "Email/Requests 404 updates"
+: 1623864073:0;l FSharp
+: 1623864081:0;cd FSharp
+: 1623864090:0;l LearnFSharp/Kattis
+: 1623864098:0;cat LearnFSharp/Kattis/Program.fs
+: 1623864108:0;l LearnFSharp/ElegantFSharp
+: 1623864123:0;cat LearnFSharp/ElegantFSharp/Mutation.fs
+: 1623864129:0;cat LearnFSharp/ElegantFSharp/Mutation.fsx
+: 1623864136:0;cat LearnFSharp/ElegantFSharp/HtmlData.fsx
+: 1623864203:0;l LearnFSharp
+: 1623864206:0;l LearnFSharp/Misc
+: 1623864211:0;l LearnFSharp/Misc/FSData.fsx
+: 1623864214:0;less LearnFSharp/Misc/FSData.fsx
+: 1623864230:0;less LearnFSharp/Kattis/Kattis.fsproj
+: 1623864235:0;less LearnFSharp/Kattis/Program.fs
+: 1623864257:0;mv LearnFSharp/ElegantFSharp .
+: 1623864263:0;rd LearnFSharp
+: 1623864267:0;g clone https://github.com/evgeniysharapov/LearnFSharp.git
+: 1623867551:0;gcmsg "OPEB-2212: added timeout for storing tenant's facilities"
+: 1623867841:0;g br
+: 1623867851:0;g br r2021-07
+: 1623873494:0;OA
+: 1623873516:0;g co OPEB-2174-pipeline-update
+: 1623873524:0;g cherry-pick f0a2f76
+: 1623873561:0;g br -d r2021-07
+: 1623873567:0;g br -D r2021-07
+: 1623897763:0;gcmsg "updated aliennumbers task"
+: 1623900756:0;cd /mnt/c/Users/esharapov.INTRANET/ai-worklog
+: 1623900830:0;gcmsg "added more entries to worklog"
+: 1623900999:0;pwd
+: 1623905033:0;apt search fsharpc
+: 1623905079:0;dotnet fsi
+: 1623905085:0;dotnet fsi --help
+: 1623905118:0;cd Kattis
+: 1623905132:0;dotnet fsi --optimize+ -r:System.Numerics aliennumbers.fsx
+: 1623905245:0;apt search mono
+: 1623905251:0;apt search fsharp
+: 1623905265:0;sudo apt install fsharp
+: 1623905497:0;te . aliennumbers.txt
+: 1623905565:0;./aliennumbers.exe
+: 1623905585:0;fsharpc aliennumbers.exe
+: 1623905607:0;cat aliennumbers.txt
+: 1623905626:0;cat aliennumbers.txt | aliennumbers.exe
+: 1623905837:0;fsharpc --optimize+ -r:System.Numerics aliennumbers.fsx
+: 1623905845:0;chmod +x aliennumbers.exe
+: 1623905848:0;cat aliennumbers.txt | ./aliennumbers.exe
+: 1623905983:0;rm aliennumbers.exe
+: 1623906005:0;gcmsg "kattis: solved aliennumbers"
+: 1623906007:0;g pus
+: 1623943212:0;cd pulse-nodejs-service
+: 1623943357:0;pint git.ainq.com
+: 1623943361:0;ping git.ainq.com
+: 1623943379:0;traceroute6 git.ainq.com
+: 1623943391:0;iproute git.ainq.com
+: 1623943604:0;dotnet restore
+: 1623943630:0;dotnet run -p PULSE.Middleware.Api.Activation
+: 1623944703:0;code .
+: 1623945037:0;gd 78387402d0f93e03b7880b46c5278db432c7375c
+: 1623945064:0;gd 78387402d0f93e03b7880b46c5278db432c7375c -- PULSE.Middleware.Api.Activation/Controllers/ActivationController.cs
+: 1623945070:0;gd HEAD 78387402d0f93e03b7880b46c5278db432c7375c -- PULSE.Middleware.Api.Activation/Controllers/ActivationController.cs
+: 1623945075:0;gd HEAD..78387402d0f93e03b7880b46c5278db432c7375c -- PULSE.Middleware.Api.Activation/Controllers/ActivationController.cs
+: 1623945229:0;gd a9fd99c -- PULSE.Middleware.Api.Activation/Controllers/ActivationController.cs
+: 1623945293:0;gd 7838740..a9fd99c -- PULSE.Middleware.Api.Activation/Controllers/ActivationController.cs
+: 1623945377:0;g log -p 
+: 1623945482:0;gstr
+: 1623945542:0;g co 7838740 -- PULSE.Middleware.Api.Activation/Controllers/ActivationController.cs
+: 1623945553:0;g log -p -- PULSE.Middleware.Api.Activation/Controllers/ActivationController.cs
+: 1623945581:0;g co 94150d90e8128d61868f5586fa352f89381bd94f -- PULSE.Middleware.Api.Activation/Controllers/ActivationController.cs
+: 1623945937:0;g co 94150d90e8128d61868f5586fa352f89381bd94f~1 -- PULSE.Middleware.Api.Activation/Controllers/ActivationController.cs
+: 1623945982:0;te PULSE.Middleware.Api.Activation/Controllers/ActivationController.cs
+: 1623946067:0;git st
+: 1623946290:0;g log -S "Complete" --source --all
+: 1623946402:0;gd a9fd99c
+: 1623946594:0;gitk.exe --all
+: 1623946935:0;g co -b OPEB-2174-fix-bad-merge
+: 1623946972:0;g co 1.0.13 -- PULSE.Middleware.Api.Activation/Controllers/ActivationController.cs
+: 1623947121:0;gcmsg "OPEB-2174: bad merge: bring activation controller from 1.0.13"
+: 1623947161:0;g cherry-pick 94150d90e8128d61868f5586fa352f89381bd94f
+: 1623947582:0;gd --ignore-cr-at-eol --cached
+: 1623947650:0;gcmsg "OPEB-2174: bad merge: cherry-pick change from OPEB-2222 branch"
+: 1623947681:0;g push -u origin OPEB-2174-fix-bad-merge
+: 1623952917:0;g co -b OPEB-2174-pipeline-changes
+: 1623953172:0;gcmsg "OPEB-2174: updated build/patch increment part of versioning"
+: 1623953188:0;g push -u origin OPEB-2174-pipeline-changes
+: 1623957316:0;g co P3530-20190221.el
+: 1623957380:0;gcmsg "updated submodules"
+: 1624077213:0;ga .
+: 1624077224:0;gcmsg "updated ui to using modus theme"
+: 1624295899:0;docker image prune
+: 1624295905:0;docker image ls
+: 1624295921:0;docker ps
+: 1624295924:0;docker ps -a
+: 1624295974:0;/mnt/c/Users/esharapov.INTRANET
+: 1624295977:0;cd .emacs.d
+: 1624296024:0;gcmsg "different work task capture for w and W"
+: 1624296067:0;te custom.el
+: 1624296184:0;e custom.el&
+: 1624296266:0;g merge --continue
+: 1624296546:0;gcmsg "updated modules"
+: 1624296558:0;pgrep emacs
+: 1624296595:0;te .
+: 1624372327:0;g clean
+: 1624372331:0;g clean -f
+: 1624372480:0;npm build
+: 1624372485:0;npm run build
+: 1624372513:0;rehash
+: 1624373270:0;curl 'http://localhost:3000/pulse/v1/events' \\
+  -X 'GET' \\
+  -H 'authority: api.dev-ainqapps.com' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'x-correlation-id: c62c9bf9-58af-4f04-be70-68882eb3e851' \\
+  -H 'x-tenant-code: apptest' \\
+  -H 'x-tenant-id: APPTEST' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36' \\
+  -H 'content-type: application/json;charset=UTF-8' \\
+  -H 'x-facility-id: ' \\
+  -H 'accept: application/json, text/plain, */*' \\
+  -H 'x-session-id: 9f7b039f-4b7b-4c19-8664-b9d6280590bb' \\
+  -H 'x-application-id: admin' \\
+  -H 'dnt: 1' \\
+  -H 'origin: https://apptest.admin.dev-ainqapps.com' \\
+  -H 'sec-fetch-site: same-site' \\
+  -H 'sec-fetch-mode: cors' \\
+  -H 'sec-fetch-dest: empty' \\
+  -H 'referer: https://apptest.admin.dev-ainqapps.com/' \\
+  -H 'accept-language: en-US,en;q=0.9' \\
+  -H 'cookie: io=wGSj735LIR-h46DmAACG; session=s:AINQ:70b0796f-1878-46f2-9053-e4be94d3866f:8a881e5c-42cd-4f6c-84e6-2bbb57dd6c5c:60e7e50d-e12d-467f-9b56-4b5aea0b75e7.1uPEy7uywpCN1eOTygE5Enw46G6vGQ/Jk+Eo7XW9Em0; expiration=1624376703'\
+
+: 1624373310:0;curl 'http://localhost:3000/pulse/v1/events/d75e13e7-a165-4a3f-8889-1e6552fac2e7/activate' \\
+  -X 'PUT' \\
+  -H 'authority: api.dev-ainqapps.com' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'x-correlation-id: c62c9bf9-58af-4f04-be70-68882eb3e851' \\
+  -H 'x-tenant-code: apptest' \\
+  -H 'x-tenant-id: APPTEST' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36' \\
+  -H 'content-type: application/json;charset=UTF-8' \\
+  -H 'x-facility-id: ' \\
+  -H 'accept: application/json, text/plain, */*' \\
+  -H 'x-session-id: 9f7b039f-4b7b-4c19-8664-b9d6280590bb' \\
+  -H 'x-application-id: admin' \\
+  -H 'dnt: 1' \\
+  -H 'origin: https://apptest.admin.dev-ainqapps.com' \\
+  -H 'sec-fetch-site: same-site' \\
+  -H 'sec-fetch-mode: cors' \\
+  -H 'sec-fetch-dest: empty' \\
+  -H 'referer: https://apptest.admin.dev-ainqapps.com/' \\
+  -H 'accept-language: en-US,en;q=0.9' \\
+  -H 'cookie: io=vk7kRFlFBFK0YGVOAACO; fs_uid=rs.fullstory.com#WA417#5390317555793920:6088847096356864/1644062385; session=s%3AAPPTEST%3A70b0796f-1878-46f2-9053-e4be94d3866f%3A4d2f2c8c-3fe8-4be7-af26-8329949e11f2%3A9f7b039f-4b7b-4c19-8664-b9d6280590bb.iLuGw0Ye2F45cvQG69HBHE%2BlIreCxebyj%2Fr1w3yq0Q0; expiration=1623785601' \\
+  --data-raw '{"npi":"1003416984","tenantId":"APPTEST","supportInformation":"support@pulsedev-ainq.com","styleSheetToViewccDUrl":"https://sampleTenant.com/sample.xsl"}' \\
+  --compressed
+: 1624373341:0;curl 'http://localhost:3000/pulse/v1/events/d75e13e7-a165-4a3f-8889-1e6552fac2e7/activate' \\
+  -X 'PUT' \\
+  -H 'authority: api.dev-ainqapps.com' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'x-correlation-id: c62c9bf9-58af-4f04-be70-68882eb3e851' \\
+  -H 'x-tenant-code: apptest' \\
+  -H 'x-tenant-id: APPTEST' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36' \\
+  -H 'content-type: application/json;charset=UTF-8' \\
+  -H 'x-facility-id: ' \\
+  -H 'accept: application/json, text/plain, */*' \\
+  -H 'x-session-id: 9f7b039f-4b7b-4c19-8664-b9d6280590bb' \\
+  -H 'x-application-id: admin' \\
+  -H 'dnt: 1' \\
+  -H 'origin: https://apptest.admin.dev-ainqapps.com' \\
+  -H 'sec-fetch-site: same-site' \\
+  -H 'sec-fetch-mode: cors' \\
+  -H 'sec-fetch-dest: empty' \\
+  -H 'referer: https://apptest.admin.dev-ainqapps.com/' \\
+  -H 'accept-language: en-US,en;q=0.9' \\
+  -H 'cookie: io=wGSj735LIR-h46DmAACG; session=s:AINQ:70b0796f-1878-46f2-9053-e4be94d3866f:8a881e5c-42cd-4f6c-84e6-2bbb57dd6c5c:60e7e50d-e12d-467f-9b56-4b5aea0b75e7.1uPEy7uywpCN1eOTygE5Enw46G6vGQ/Jk+Eo7XW9Em0; expiration=1624376703' \\
+  --data-raw '{"npi":"1003416984","tenantId":"APPTEST","supportInformation":"support@pulsedev-ainq.com","styleSheetToViewccDUrl":"https://sampleTenant.com/sample.xsl"}' \\
+  --compressed
+: 1624373377:0;ainq-common-service
+: 1624373385:0;ag "tenant.*name"
+: 1624374876:0;node
+: 1624375379:0;g co -b OPEB-2248-use-tenant-name
+: 1624375457:0;gcmsg "OPEB-2248: using tenant name"
+: 1624375479:0;g push -u origin OPEB-2248-use-tenant-name
+: 1624376985:0;cd
+: 1624376990:0;apt search racket
+: 1624377051:0;fsharpi
+: 1624385489:0;which gcb 
+: 1624385500:0;which gco 
+: 1624385522:0;ocaml --version
+: 1624386369:0;hgrep huget
+: 1624386374:0;hgrep nuget
+: 1624388220:0;l Projects
+: 1624388225:0;Pro
+: 1624388228:0;Projects
+: 1624389014:0;g puull
+: 1624391635:0;pulse.middleware.ee
+: 1624391717:0;g co OPEB-2174-pipeline-changes
+: 1624391727:0;g merge r2021-07
+: 1624393698:0;cd aiweb-stage
+: 1624393785:0;g co -b r2021-07
+: 1624411272:0;pgrep emacs | xargs kill
+: 1624411278:0;cd ~/.emacs.d
+: 1624411283:0;du -hs elpa
+: 1624411290:0;l data
+: 1624411306:0;l elpa
+: 1624411314:0;rd elpa
+: 1624413917:0;AiPlatform
+: 1624413922:0;aiweb-stage
+: 1624413964:0;aws ecr describe-images --repository-name pulse_middleware_api_activation
+: 1624414569:0;cat ~/.aws/credentials
+: 1624414586:0;te ~/.aws/credentials
+: 1624414776:0;aws configure --profile pulse-stage
+: 1624414889:0;aws --profile pulse-stage ecs describe-task-definition --task-definition pulse-stage-pulse-api-activ
+: 1624459762:0;/mnt/c/Files/Projects
+: 1624459786:0;g remote 
+: 1624459797:0;rd pulse.middleware.ee
+: 1624459830:0;g clone https://git.ainq.com/pulse-platform/pulse.middleware.ee.git
+: 1624459841:0;cd pulse.middleware.ee
+: 1624459973:0;cd /mnt/c/Users/esharapov.INTRANET
+: 1624459978:0;l .aws
+: 1624459986:0;cat .aws/credentials
+: 1624461455:0;npm i -g redis-commander
+: 1624461520:0;redis-commander
+: 1624461631:0;gem
+: 1624477090:0;g co Pulse.Middleware.Shared/Services/RedisBaseFunctions.cs
+: 1624477101:0;g stash
+: 1624479733:0;FSh
+: 1624480165:0;dotnet new webapi -lang F# ToDo
+: 1624480177:0;dotnet new --template webapi -lang F# ToDo
+: 1624480187:0;dotnet new --help
+: 1624480217:0;dotnet new webapi -lang F# -o ToDo
+: 1624480225:0;code ToDo 
+: 1624508851:0;g co master
+: 1624508948:0;curl https://localhost:5001
+: 1624508964:0;curl http://localhost:5000
+: 1624508967:0;curl http://localhost:5000/
+: 1624509004:0;curl http://localhost:5000/weatherforecast
+: 1624509033:0;curl http://localhost:5000/api/weatherforecast
+: 1624509117:0;curl -X GET -v http://localhost:5000/api/
+: 1624509127:0;curl -X GET -v http://localhost:5000/api/weatherforecast
+: 1624509212:0;curl -X GET -v http://localhost:5000/api/weatherforecast/
+: 1624509268:0;curl -X GET -v http://localhost:5000/weatherforecast/
+: 1624509304:0;curl -X GET -v http://localhost:5000/weatherforecast
+: 1624509345:0;dotnet run -p ToDo/ToDo.fsproj
+: 1624509736:0;gco OPEB-2286-fix-facilities-cache
+: 1624509744:0;gcb OPEB-2286-fix-facilities-cache
+: 1624509758:0;g push -u origin OPEB-2286-fix-facilities-cache
+: 1624510321:0;.emacs.d
+: 1624908840:0;FSharp
+: 1624908851:0;dotnet new -i WebSharper.Template
+: 1624908876:0;dotnet new -i WebSharper.Templates
+: 1624908899:0;cd LearnFSharp
+: 1624908907:0;l ToDo
+: 1624908915:0;dotnet new -l
+: 1624909730:0;dotnet new -i "giraffe-template::*"
+: 1624932141:0;docker images
+: 1624979425:0;pulse-nodejs-service
+: 1624979659:0;cd ../pulse.middleware.ee
+: 1624979669:0;ag patient
+: 1624979680:0;ag "tenant.*active"
+: 1625024808:0;cd ~/Projects
+: 1625024835:0;l ML
+: 1625024844:0;l EmacsOrg
+: 1625024849:0;cat EmacsOrg/tangle.org
+: 1625024890:0;cat EmacsOrg/hello
+: 1625024923:0;l AiPlatform
+: 1625024944:0;cd AiPlatform
+: 1625024949:0;g clone https://git.ainq.com/platform-frameworks/service/ai-service-framework.git
+: 1625024967:0;g clone https://git.ainq.com/platform-frameworks/service/plugins/ai-enterprise-service-plugin.git
+: 1625024994:0;g clone https://git.ainq.com/platform-frameworks/service/plugins/ai-email-plugin.git
+: 1625025002:0;cd ai-email-plugin
+: 1625077774:0;cd ..
+: 1625077775:0;l
+: 1625166568:0;aws ses send-email --to "esharapov+test@ainq.com" --subject 
+: 1625166583:0;aws ses send-email --to "esharapov+test@ainq.com" --subject  test --text Test
+: 1625166601:0;aws ses send-email --to "esharapov+test@ainq.com" --subject  test --text Test --from test@ainq.com
+: 1625166620:0;cat email
+: 1625166622:0;ag email
+: 1625166661:0;aws ses send-email --to "esharapov+test@ainq.com" --subject  test --text Test --from support@pulsedev-ainq.com
+: 1625166816:0;aws ses send-email --to "esharapov@ainq.com" --subject  test --text Test --from support@pulsedev-ainq.com
+: 1625166894:0;aws ses send-email --to esharapov@ainq.com --subject  test --text Test --from support@pulsedev-ainq.com
+: 1625166913:0;aws ses send-email --to evgeniy.sharapov@gmail.com --subject  test --text Test --from support@pulsedev-ainq.com
+: 1625166952:0;aws ses send-email --to evgeniy.sharapov+test1@gmail.com --subject  test --text Test --from support@pulsedev-ainq.com
+: 1625171007:0;PULSE
+: 1625171011:0;pulse-nodejs-service/
+: 1625171081:0;grhh
+: 1625171090:0;g co r2021-07
+: 1625171093:0;g pull
+: 1625171097:0;g lga
+: 1625171109:0;e . &
+: 1625174859:0;npm i
+: 1625174896:0;export PATH=/home/esharapov/.npm-packages/bin:$PATH
+: 1625175934:0;g co package-lock.json
+: 1625175937:0;gsty
+: 1625175955:0;g co -b OPEB-2300-fix-complete-active-events
+: 1625175973:0;ga -u
+: 1625175976:0;gst
+: 1625175990:0;gd
+: 1625175994:0;gd --cached
+: 1625176028:0;gcmsg "OPEB-2300: do not get complete events when filter active facilities"
+: 1625176031:0;g push
+: 1625176042:0;g push -u origin OPEB-2300-fix-complete-active-events
+: 1625176121:0;npm run start
+: 1625176609:0;curl 'http://localhost:3000/pulse/v1/events/' \\
+  -X 'GET' \\
+  -H 'authority: api.dev-ainqapps.com' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'x-correlation-id: c62c9bf9-58af-4f04-be70-68882eb3e851' \\
+  -H 'x-tenant-code: apptest' \\
+  -H 'x-tenant-id: APPTEST' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36' \\
+  -H 'content-type: application/json;charset=UTF-8' \\
+  -H 'x-facility-id: ' \\
+  -H 'accept: application/json, text/plain, */*' \\
+  -H 'x-session-id: 9f7b039f-4b7b-4c19-8664-b9d6280590bb' \\
+  -H 'x-application-id: admin' \\
+  -H 'dnt: 1' \\
+  -H 'origin: https://apptest.admin.dev-ainqapps.com' \\
+  -H 'sec-fetch-site: same-site' \\
+  -H 'sec-fetch-mode: cors' \\
+  -H 'sec-fetch-dest: empty' \\
+  -H 'referer: https://apptest.admin.dev-ainqapps.com/' \\
+  -H 'accept-language: en-US,en;q=0.9' \\
+  -H 'cookie: fs_uid=rs.fullstory.com#WA417#4835247698812928:5856107167555584/1656705361; session=s:AINQ:04f8ccd6-14b5-4933-b578-8e1a084509d3:74d127a2-6b1c-44d3-9e2f-e4fe65555e50:05744bc0-c337-4ca3-b020-33598e2584fd.yeQVCU59J1dUxluRtBdAVS7w9wbFjdzqbGxl9ByG/SE; expiration=1625179872' \\
+  --data-raw '{"npi":"1003416984","tenantId":"APPTEST","supportInformation":"support@pulsedev-ainq.com","styleSheetToViewccDUrl":"https://sampleTenant.com/sample.xsl"}' \\
+  --compressed
+: 1625176616:0;curl 'http://localhost:3000/pulse/v1/events' \\
+  -X 'GET' \\
+  -H 'authority: api.dev-ainqapps.com' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'x-correlation-id: c62c9bf9-58af-4f04-be70-68882eb3e851' \\
+  -H 'x-tenant-code: apptest' \\
+  -H 'x-tenant-id: APPTEST' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36' \\
+  -H 'content-type: application/json;charset=UTF-8' \\
+  -H 'x-facility-id: ' \\
+  -H 'accept: application/json, text/plain, */*' \\
+  -H 'x-session-id: 9f7b039f-4b7b-4c19-8664-b9d6280590bb' \\
+  -H 'x-application-id: admin' \\
+  -H 'dnt: 1' \\
+  -H 'origin: https://apptest.admin.dev-ainqapps.com' \\
+  -H 'sec-fetch-site: same-site' \\
+  -H 'sec-fetch-mode: cors' \\
+  -H 'sec-fetch-dest: empty' \\
+  -H 'referer: https://apptest.admin.dev-ainqapps.com/' \\
+  -H 'accept-language: en-US,en;q=0.9' \\
+  -H 'cookie: fs_uid=rs.fullstory.com#WA417#4835247698812928:5856107167555584/1656705361; session=s:AINQ:04f8ccd6-14b5-4933-b578-8e1a084509d3:74d127a2-6b1c-44d3-9e2f-e4fe65555e50:05744bc0-c337-4ca3-b020-33598e2584fd.yeQVCU59J1dUxluRtBdAVS7w9wbFjdzqbGxl9ByG/SE; expiration=1625179872' \\
+  --data-raw '{"npi":"1003416984","tenantId":"APPTEST","supportInformation":"support@pulsedev-ainq.com","styleSheetToViewccDUrl":"https://sampleTenant.com/sample.xsl"}' \\
+  --compressed
+: 1625176673:0;curl 'http://localhost:3000/pulse/v1/events' \\
+  -X 'GET' \\
+  -H 'authority: api.dev-ainqapps.com' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'x-correlation-id: c62c9bf9-58af-4f04-be70-68882eb3e851' \\
+  -H 'x-tenant-code: apptest' \\
+  -H 'x-tenant-id: APPTEST' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36' \\
+  -H 'content-type: application/json;charset=UTF-8' \\
+  -H 'x-facility-id: ' \\
+  -H 'accept: application/json, text/plain, */*' \\
+  -H 'x-session-id: 9f7b039f-4b7b-4c19-8664-b9d6280590bb' \\
+  -H 'x-application-id: admin' \\
+  -H 'dnt: 1' \\
+  -H 'origin: https://apptest.admin.dev-ainqapps.com' \\
+  -H 'sec-fetch-site: same-site' \\
+  -H 'sec-fetch-mode: cors' \\
+  -H 'sec-fetch-dest: empty' \\
+  -H 'referer: https://apptest.admin.dev-ainqapps.com/' \\
+  -H 'accept-language: en-US,en;q=0.9' \\
+  -H 'cookie: io=MK56Y2LVPHgFnV8LAAEB; session=s:AINQ:70b0796f-1878-46f2-9053-e4be94d3866f:8a881e5c-42cd-4f6c-84e6-2bbb57dd6c5c:06069042-3c74-4349-82b5-b7963b71e534.90Ff1DCKp5NE+PD3ycEELB3ic8zxe3/fa434Ku0rlxc; expiration=1625179929' \\
+  --data-raw '{"npi":"1003416984","tenantId":"APPTEST","supportInformation":"support@pulsedev-ainq.com","styleSheetToViewccDUrl":"https://sampleTenant.com/sample.xsl"}' \\
+  --compressed
+: 1625176688:0;curl 'http://localhost:3000/pulse/v1/events' \\
+  -X 'GET' \\
+  -H 'authority: api.dev-ainqapps.com' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'x-correlation-id: c62c9bf9-58af-4f04-be70-68882eb3e851' \\
+  -H 'x-tenant-code: AQIN' \\
+  -H 'x-tenant-id: AINQ' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36' \\
+  -H 'content-type: application/json;charset=UTF-8' \\
+  -H 'x-facility-id: ' \\
+  -H 'accept: application/json, text/plain, */*' \\
+  -H 'x-session-id: 9f7b039f-4b7b-4c19-8664-b9d6280590bb' \\
+  -H 'x-application-id: admin' \\
+  -H 'dnt: 1' \\
+  -H 'origin: https://apptest.admin.dev-ainqapps.com' \\
+  -H 'sec-fetch-site: same-site' \\
+  -H 'sec-fetch-mode: cors' \\
+  -H 'sec-fetch-dest: empty' \\
+  -H 'referer: https://apptest.admin.dev-ainqapps.com/' \\
+  -H 'accept-language: en-US,en;q=0.9' \\
+  -H 'cookie: io=MK56Y2LVPHgFnV8LAAEB; session=s:AINQ:70b0796f-1878-46f2-9053-e4be94d3866f:8a881e5c-42cd-4f6c-84e6-2bbb57dd6c5c:06069042-3c74-4349-82b5-b7963b71e534.90Ff1DCKp5NE+PD3ycEELB3ic8zxe3/fa434Ku0rlxc; expiration=1625179929' \\
+  --data-raw '{"npi":"1003416984","tenantId":"APPTEST","supportInformation":"support@pulsedev-ainq.com","styleSheetToViewccDUrl":"https://sampleTenant.com/sample.xsl"}' \\
+  --compressed
+: 1625176703:0;curl 'http://localhost:3000/pulse/v1/facilities/active' \\
+  -X 'GET' \\
+  -H 'authority: api.dev-ainqapps.com' \\
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \\
+  -H 'x-correlation-id: c62c9bf9-58af-4f04-be70-68882eb3e851' \\
+  -H 'x-tenant-code: AQIN' \\
+  -H 'x-tenant-id: AINQ' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36' \\
+  -H 'content-type: application/json;charset=UTF-8' \\
+  -H 'x-facility-id: ' \\
+  -H 'accept: application/json, text/plain, */*' \\
+  -H 'x-session-id: 9f7b039f-4b7b-4c19-8664-b9d6280590bb' \\
+  -H 'x-application-id: admin' \\
+  -H 'dnt: 1' \\
+  -H 'origin: https://apptest.admin.dev-ainqapps.com' \\
+  -H 'sec-fetch-site: same-site' \\
+  -H 'sec-fetch-mode: cors' \\
+  -H 'sec-fetch-dest: empty' \\
+  -H 'referer: https://apptest.admin.dev-ainqapps.com/' \\
+  -H 'accept-language: en-US,en;q=0.9' \\
+  -H 'cookie: io=MK56Y2LVPHgFnV8LAAEB; session=s:AINQ:70b0796f-1878-46f2-9053-e4be94d3866f:8a881e5c-42cd-4f6c-84e6-2bbb57dd6c5c:06069042-3c74-4349-82b5-b7963b71e534.90Ff1DCKp5NE+PD3ycEELB3ic8zxe3/fa434Ku0rlxc; expiration=1625179929' \\
+  --data-raw '{"npi":"1003416984","tenantId":"APPTEST","supportInformation":"support@pulsedev-ainq.com","styleSheetToViewccDUrl":"https://sampleTenant.com/sample.xsl"}' \\
+  --compressed
+: 1625179915:0;gst
+: 1625179919:0;g lga

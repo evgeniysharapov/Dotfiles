@@ -273,3 +273,13 @@
 : 1626289373:0;hg st
 : 1626289385:0;hg add .
 : 1626289404:0;hg commit -m "moved to a new laptop DESKTOP-OU44UDR"
+: 1626289406:0;hg ;ga
+: 1626289410:0;hg lga
+: 1626289414:0;hg out
+: 1626289418:0;hg push
+: 1626289425:0;hg pull
+: 1626289428:0;hg push
+: 1626289433:0;hg heads
+: 1626289441:0;hg lga
+: 1626289457:0;hg merge tip
+: 1626289460:0;hg st

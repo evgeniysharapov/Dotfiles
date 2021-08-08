@@ -22,8 +22,9 @@ export LS_COLORS=$LS_COLORS:'ow=4;34'
 # for WSL1 this one
 #export DISPLAY=:0.0
 
-# f or WSL2 ip of the windows itself is different 
+# for WSL2 ip of the windows itself is different 
 export DISPLAY="$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0.0"
+export LIBGL_ALWAYS_INDIRECT=1
 
 # connect to Docker Daemon running on Windows (make sure it's exposed on tcp://localhost:2375
 #export DOCKER_HOST=localhost:2375
@@ -32,7 +33,7 @@ export DISPLAY="$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0.0
 plugins+=(docker docker-compose)
 
 setopt auto_cd
-cdpath=($HOME/Projects $HOME/Projects/PULSE $HOME/Projects/ULP /mnt/c/Users/esharapov /mnt/c/Users/esharapov/Personal)
+cdpath=($HOME/Projects/AiPlatform $HOME/Projects $HOME/Projects/PULSE $HOME/Projects/ULP /mnt/c/Users/esharapov /mnt/c/Users/esharapov/Personal)
 
 # well for whatever reason 'time hg.exe st' is 100 times haster than 'time hg st' in WSL
 # plus it skips those file mode changes on Windows file system. We still want to use WSL hg for everything else

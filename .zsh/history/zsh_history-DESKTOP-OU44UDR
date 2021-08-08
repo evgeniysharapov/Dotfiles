@@ -1,285 +1,938 @@
-: 1625631939:0;hg --version
 : 1625632035:0;docker --version
 : 1625632356:0;docker images
-: 1625632359:0;docker ps -a
 : 1625632405:0;docker-compose -v
 : 1625632639:0;xeyes&
-: 1625632700:0;xeyes &
 : 1625632724:0;cat /etc/hosts
-: 1625632773:0;cd .emacs.d
 : 1625632812:0;l ~/.zsh
 : 1625632826:0;l ~/.zsh/spec/P3530-20190221.zsh
 : 1625632837:0;cat ~/.zsh/spec/P3530-20190221.zsh
-: 1625632969:0;l
 : 1625633599:0;cp P3530-20190221.el DESKTOP-OU44UDR.el
 : 1625633654:0;cp ~/.zsh/spec/P3530-20190221.zsh ~/.zsh/spec/DESKTOP-OU44UDR.zsh
 : 1625633680:0;xeyes &
-: 1625633707:0;gst
-: 1625633709:0;l
-: 1625633869:0;e . &
-: 1625698200:0;l
-: 1625698203:0;ll
-: 1625698253:0;l
-: 1625698262:0;Projects
-: 1625698263:0;l
-: 1625703795:0;cd ~/.emacs.d
-: 1625703798:0;l
-: 1625703811:0;cd ..
-: 1625703812:0;l
-: 1625703817:0;cd ai-worklog
-: 1625704243:0;gst
-: 1625704246:0;grhh
-: 1625704249:0;g pull
-: 1625704279:0;e . &
-: 1625707962:0;htop
-: 1625801589:0;e Worklog.org &
-: 1626065136:0;l
-: 1626068607:0;cd ai-worklog
-: 1626068610:0;g lga
-: 1626068619:0;gst
-: 1626068623:0;e . &
-: 1626068679:0;pgrep emacs
-: 1626068686:0;pgrep emacs | xargs kill
-: 1626068696:0;e Worklog.org &
-: 1626068723:0;htop
-: 1626074162:0;gd
-: 1626075074:0;grhh
-: 1626075310:0;g pull
 : 1626075321:0;e Worklog.org &
-: 1626099269:0;cd ..
-: 1626099273:0;cd PULSE
-: 1626099275:0;l
 : 1626099285:0;cd xml-transform
-: 1626099288:0;g pull
-: 1626099292:0;g lga
-: 1626099307:0;g co r2021-10
-: 1626099310:0;g lga
-: 1626099313:0;l
-: 1626099319:0;./gradlew clean build
-: 1626099347:0;PULSE
-: 1626099349:0;l
-: 1626099355:0;cd pulse-nodejs-service
-: 1626099358:0;g pull
-: 1626099364:0;g lga
-: 1626099376:0;g co r2021-07
-: 1626099378:0;g pull
-: 1626099381:0;gd
-: 1626099396:0;grhh
 : 1626099400:0;g co r2021-07
-: 1626099402:0;g pull
-: 1626099406:0;l
-: 1626099417:0;e . &
 : 1626100338:0;cd ainq-common-service
 : 1626100345:0;ag cookie
-: 1626100434:0;e . &
-: 1626105547:0;cd ULP
-: 1626105548:0;l
 : 1626105565:0;g clone https://git.ainq.com/ulp-development/java-libraries/ulp-immunizations-ws-api.git
-: 1626105573:0;cd ulp-immunizations-ws-api
-: 1626105575:0;l
-: 1626105580:0;g lga
 : 1626105595:0;g co -b CEN-1507-update-wsdl-location
 : 1626105603:0;cat README.md
 : 1626105634:0;wsimport -keep -extension https://www.mdimmunet.org/mdws/client_Service?wsdl
-: 1626105638:0;gst
-: 1626105656:0;e . &
 : 1626105774:0;curl https://www.mdimmunet.org/mdws/client_Service?wsdl >> src/main/resources/org/mdimmunet/WSDL.wsdl
 : 1626105785:0;curl https://www.mdimmunet.org/mdws/client_Service?wsdl
-: 1626105804:0;curl https://www.mdimmunet.org/mdws/client_Service?wsdl > ./src/main/resources/org/mdimmunet/WSDL.wsdl
 : 1626105831:0;md src/main/resources/org/mdimmunet
 : 1626105833:0;curl https://www.mdimmunet.org/mdws/client_Service?wsdl > ./src/main/resources/org/mdimmunet/WSDL.wsdl
-: 1626105835:0;gst
-: 1626105910:0;gd
-: 1626105929:0;gst
-: 1626105948:0;ga -u
 : 1626105962:0;ga src/main/resources/org
-: 1626105963:0;gst
 : 1626105987:0;gcmsg "CEN-1507: updated wsdl for MD immunization SOAP endpoint"
-: 1626105989:0;g lga
-: 1626106002:0;./gradlew clean build
 : 1626106010:0;chmod +x gradlew 
-: 1626106012:0;./gradlew clean build
-: 1626106025:0;gst
 : 1626106028:0;g clean -f
-: 1626106029:0;gst
-: 1626106032:0;./gradlew clean build
-: 1626106233:0;./gradlew goJF
-: 1626106239:0;gst
-: 1626106242:0;ga -u
 : 1626106251:0;gcmsg "CEN-1507: updated formatting"
-: 1626106257:0;./gradlew clean build
-: 1626106271:0;g push
 : 1626106284:0;g push -u origin CEN-1507-update-wsdl-location
 : 1626106400:0;cat ../dhin-initiate-ws-api/.gitlab-ci.yml
 : 1626106417:0;cat ../ulp-breakglass-portlet/.gitlab-ci.yml
-: 1626106437:0;gst
-: 1626106440:0;ga -u
 : 1626106460:0;gcmsg "CEN-1507: updated gitlab pipeline (this project is very old)"
-: 1626106461:0;g push
-: 1626139980:0;gst
-: 1626139981:0;g lga
-: 1626141047:0;.emacs.d
-: 1626141052:0;g pull
-: 1626141057:0;e . &
 : 1626184184:0;which e
-: 1626184250:0;e . &
-: 1626184499:0;pgrep emacs
-: 1626184509:0;pgrep emacs | xargs kill 
-: 1626185447:0;e . &
-: 1626194529:0;.emacs.d
-: 1626194534:0;e . &
-: 1626194611:0;ULP
 : 1626194615:0;ls -ltr
 : 1626194622:0;ls -lt
-: 1626194628:0;ll
 : 1626194635:0;which ll
 : 1626194652:0;man ls
 : 1626194664:0;which l
-: 1626194672:0;l
 : 1626194679:0;which lt
-: 1626194683:0;lt
-: 1626200847:0;e . &
-: 1626200862:0;htop
-: 1626200882:0;pgrep emacs | xargs kill 
-: 1626200886:0;e . &
 : 1626200934:0;t
-: 1626200938:0;e . &
-: 1626200946:0;l
-: 1626200950:0;pgrep emacs
-: 1626200957:0;pgrep emacs | xargs kill
-: 1626200960:0;e . &
-: 1626201102:0;gst
-: 1626201105:0;gd
-: 1626201963:0;gst
 : 1626201967:0;rm t
-: 1626201979:0;e . &
 : 1626204209:0;powershell
 : 1626204212:0;powershell.exe
 : 1626204240:0;powershell.exe --help
-: 1626204705:0;e . &
-: 1626204711:0;l
-: 1626204715:0;e . &
-: 1626204718:0;pgrep emacs
-: 1626204719:0;e . &
-: 1626204721:0;pgrep emacs
 : 1626204736:0;kill 23736
 : 1626204751:0;kill 23782
 : 1626204759:0;kill 23818
-: 1626204762:0;e . &
-: 1626204765:0;pgrep emacs
 : 1626204772:0;kill 23964
-: 1626204781:0;htop
-: 1626204793:0;pgrep emacs
 : 1626204801:0;kill 15524
-: 1626204806:0;e . &
-: 1626204809:0;pgrep emacs
-: 1626204823:0;pgrep emacs | xargs kill
-: 1626204825:0;e . &
 : 1626207322:0;powershell.exe scripts/clipboard-to-file.ps1 test.png
-: 1626207332:0;explorer .
 : 1626207335:0;explorer.exe
-: 1626207341:0;explorer.exe .
-: 1626208476:0;pgrep emacs | xargs kill
-: 1626208482:0;e . &
-: 1626209254:0;ULP
-: 1626209257:0;lt
 : 1626209298:0;g clone https://git.ainq.com/CRISP_Unified_Landing_Page/service-immunizations.git
 : 1626209306:0;cd service-immunizations
-: 1626209309:0;g lga
 : 1626209358:0;g co -b CEN-1507-mdm-endpoint-change
-: 1626209364:0;./gradlew clean build
-: 1626209373:0;chmod +x gradlew
-: 1626209374:0;./gradlew clean build
 : 1626209452:0;cat ~/.zsh/history/zsh_history-P3530-20190221 | grep ssh
 : 1626209460:0;ssh pi@192.168.1.51
-: 1626209617:0;gst
-: 1626209620:0;te .
-: 1626209723:0;gst
-: 1626209726:0;ga -u
 : 1626209748:0;gcmsg "CEN-1507: updated deps for immunization ws lib (MDM endpoint WSDL)"
-: 1626209755:0;./gradlew clean build
-: 1626209779:0;g push
 : 1626209785:0;g push -u origin CEN-1507-mdm-endpoint-change
-: 1626209836:0;./gradlew goJF
-: 1626209843:0;gst
-: 1626209844:0;gd
 : 1626209854:0;te .gitlab-ci.yml
-: 1626209874:0;ga -u
 : 1626209887:0;gcmsg "CEN-1507: updated DinD for Gitlab pipeline"
-: 1626209890:0;g push
-: 1626210059:0;gst
-: 1626238504:0;pgrep emacs 
-: 1626238515:0;pgrep emacs | xargs kill
-: 1626238526:0;.emacs.d
-: 1626238528:0;g lga
-: 1626238531:0;l
-: 1626238559:0;htop
-: 1626238571:0;idea &
-: 1626272329:0;htop
 : 1626272505:0;.emacs.d 
-: 1626272508:0;e . &
-: 1626274045:0;htop
-: 1626274095:0;e . &
-: 1626274100:0;htop
-: 1626274132:0;e . &
-: 1626274226:0;htop
-: 1626274251:0;cd ..
 : 1626274260:0;cd ~/Projects
-: 1626274261:0;l
 : 1626274266:0;cd EmacsOrg
-: 1626274267:0;l
 : 1626274270:0;cd emacs
-: 1626274276:0;l
-: 1626274293:0;g lga
-: 1626274302:0;g pull
-: 1626274324:0;g lga
-: 1626274470:0;l
 : 1626274478:0;make uninstall
 : 1626274486:0;sudo make uninstall
-: 1626274499:0;rehash
-: 1626274501:0;cd ..
-: 1626274513:0;e . &
-: 1626274553:0;htop
 : 1626274648:0;cd ~/.emacs.d
-: 1626274649:0;l
 : 1626274660:0;rd eln-cache
 : 1626274665:0;cd elpa
-: 1626274666:0;l
 : 1626274669:0;l undo-tree-0.7.5
-: 1626274695:0;find . -name *.elc
 : 1626274707:0;find . -name *.elc | xargs rm
 : 1626274710:0;find . -name *.elc
-: 1626274716:0;cd ..
-: 1626274717:0;l
-: 1626274727:0;l .cache
 : 1626274731:0;l .cache/lsp
 : 1626274734:0;l .cache/lsp/npm
 : 1626274739:0;l .cache/lsp/npm/javascript-typescript-langserver
-: 1626274761:0;l
 : 1626274821:0;find site-lisp -name *.elc
-: 1626274826:0;e . &
-: 1626275307:0;l
-: 1626281778:0;e . &
 : 1626281839:0;te . &
-: 1626281899:0;htop
-: 1626282274:0;te .
-: 1626282588:0;e . &
-: 1626284758:0;e .emacs.d &
-: 1626284817:0;htop
-: 1626289360:0;l
 : 1626289366:0;cd ~/.dotfiles
-: 1626289368:0;hg st
-: 1626289369:0;hg d
-: 1626289373:0;hg st
-: 1626289385:0;hg add .
 : 1626289404:0;hg commit -m "moved to a new laptop DESKTOP-OU44UDR"
 : 1626289406:0;hg ;ga
-: 1626289410:0;hg lga
-: 1626289414:0;hg out
-: 1626289418:0;hg push
 : 1626289425:0;hg pull
-: 1626289428:0;hg push
 : 1626289433:0;hg heads
-: 1626289441:0;hg lga
 : 1626289457:0;hg merge tip
-: 1626289460:0;hg st
+: 1626291853:0;e .emacs.d &
+: 1626291953:0;cd .emacs.d
+: 1626291987:0;rd elpa
+: 1626291999:0;g co custom.el
+: 1626318723:0;rm .emacs.desktop.wsl
+: 1626326616:0;emacsclient -a '' org-protocol://capture?template=l&url=test&title=Title&body=Body
+: 1626326624:0;emacsclient -a '' "org-protocol://capture?template=l&url=test&title=Title&body=Body"
+: 1626327462:0;man ln
+: 1626327497:0;ln -s /mnt/c/Users/esharapov/Dropbox Dropbox
+: 1626327500:0;cd Dropbox
+: 1626379270:0;l ~/.npm-packages/bin
+: 1626379282:0;export PATH=~/.npm-packages/bin:$PATH
+: 1626383591:0;npm i dd-tracer
+: 1626383604:0;npm i dd-trace
+: 1626401806:0;l .tooling
+: 1626402038:0;l DataDog
+: 1626402056:0;DataDog/trace-examples
+: 1626402065:0;l javascript
+: 1626402072:0;l javascript/node
+: 1626402075:0;l javascript/node/microservices
+: 1626402079:0;l javascript/node/microservices/docker-compose.yml
+: 1626402082:0;less javascript/node/microservices/docker-compose.yml
+: 1626402183:0;te .env
+: 1626402823:0;docker run -d --name dd-agent -v /var/run/docker.sock:/var/run/docker.sock:ro -v /proc/:/host/proc/:ro -v /sys/fs/cgroup/:/host/sys/fs/cgroup:ro -e DD_API_KEY=DD_API_KEY=898cebd8908f13dd398a4bc47e42f092 gcr.io/datadoghq/agent:7
+: 1626402917:0;docker kill 27ba28cb8009
+: 1626402923:0;docker rm 27ba28cb8009
+: 1626402987:0;docker run -d --name dd-agent -v /var/run/docker.sock:/var/run/docker.sock:ro -v /proc/:/host/proc/:ro -v /sys/fs/cgroup/:/host/sys/fs/cgroup:ro -p 8125:8125 -p 8126:8126 -e DD_ENV=ai-pulse-test -e DD_HOSTNAME=evgeniy -e DD_API_KEY=DD_API_KEY=898cebd8908f13dd398a4bc47e42f092 gcr.io/datadoghq/agent:7
+: 1626403285:0;pyenv
+: 1626403483:0;l .local
+: 1626403486:0;l .local/lib
+: 1626403493:0;which python
+: 1626403603:0;apt-cache list --installed
+: 1626403607:0;apt-cache list installed
+: 1626403615:0;apt-cache installed
+: 1626403631:0;apt search pyenv
+: 1626403637:0;apt search nodenv
+: 1626403809:0;node --version
+: 1626412275:0;watch -n 1 sass assets/css/styles.scss assets/css/styles.css && rm -rf ~/.org-timestamps && make
+: 1626469426:0;lg
+: 1626469432:0;g lg
+: 1626499569:0;dotnet --version
+: 1626499576:0;dotnet new --help
+: 1626499581:0;dotnet new --list
+: 1626578318:0;sass assets/css/styles.scss assets/css/styles.css && make
+: 1626578409:0;man sass
+: 1626578414:0;sass --help
+: 1626578462:0;l public/assets/css
+: 1626579547:0;explorer .
+: 1626579556:0;explorer.exe .
+: 1626579973:0;hg d
+: 1626580016:0;rm assets/svg/Hamburger_icon.svg:Zone.Identifier
+: 1626580069:0;hg commit -m "made code/kbd font bigger, bg darker and added few notes in README. Added hamburger svg asset"
+: 1626582245:0;hg commit -m "added phone tablen desktop screen differentiations and modified styles of top navigation."
+: 1626582256:0;hg in
+: 1626582259:0;hg out
+: 1626582486:0;hg commit "fixed structure of site with links to about and articles"
+: 1626582491:0;hg commit -m "fixed structure of site with links to about and articles"
+: 1626582495:0;hg lga
+: 1626659910:0;cd Website
+: 1626661554:0;python -m http.server -p 8000 public/
+: 1626662404:0;cat ./src/articles/emacs-and-orgmode-website.org
+: 1626662411:0;cat ./src/about/index.org
+: 1626662443:0;vim ./src/about/index.org
+: 1626705035:0;e ai-worklog/Worklog.org&
+: 1626749204:0;cd ai-enterprise-service-plugin
+: 1626749233:0;docker run dd-agent
+: 1626749240:0;docker start dd-agent
+: 1626749259:0;docker inspect c1bd8eddb0a9
+: 1626749327:0;docker run -d --name dd-agent -v /var/run/docker.sock:/var/run/docker.sock:ro -v /proc/:/host/proc/:ro -v /sys/fs/cgroup/:/host/sys/fs/cgroup:ro -p 8125:8125 -p 8126:8126 -e DD_ENV=ai-pulse-test -e DD_HOSTNAME=evgeniy -e DD_API_KEY=898cebd8908f13dd398a4bc47e42f092 gcr.io/datadoghq/agent:7
+: 1626751390:0;l examples
+: 1626751564:0;PULSE
+: 1626751585:0;g co r2021-10
+: 1626751608:0;g co -b OPEB-1987-use-apm-plugin
+: 1626751780:0;e . *
+: 1626751986:0;npm unlink
+: 1626752019:0;l ~/.npm-packages/lib/node_modules/@ai/enterprise-service-plugin
+: 1626752073:0;cd node_modules
+: 1626752083:0;cd @ai/enterprise-service-plugin
+: 1626752115:0;npm build
+: 1626752121:0;npm run build
+: 1626752143:0;npm link
+: 1626752186:0;l node_modules/@ai/enterprise-service-plugin/lib
+: 1626752198:0;rd node_modules
+: 1626752206:0;npm link "@ai/enterprise-service-plugin"
+: 1626752218:0;l node_modules
+: 1626752351:0;docker ps
+: 1626752360:0;docker inspect 5a9e94439b3f
+: 1626758381:0;g co OPEB-1987-use-apm-plugin
+: 1626758395:0;g push 
+: 1626758405:0;g push -u origin OPEB-1987-use-apm-plugin
+: 1626758433:0;g push -u origin OPEB-1987-datadog-api
+: 1626758724:0;webserver
+: 1626758744:0;Website/
+: 1626760962:0;python -m http.server --directory public 8000
+: 1626761602:0;Website
+: 1626761614:0;hg add .
+: 1626761635:0;hg commit -m "added emacs article and renamed colophon to index"
+: 1626761637:0;hg push
+: 1626761819:0;sass assets/css/styles.scss assets/css/styles.css && cp assets/css/*.css public/assets/css/.
+: 1626762946:0;hg addremove
+: 1626762954:0;hg commit --amend
+: 1626762969:0;hg commit -m "added blockquote style"
+: 1626765638:0;hg st
+: 1626787612:0;docker kill dd-agent
+: 1626787998:0;e. &
+: 1626788546:0;emacs --daemon
+: 1626790157:0;pulse-nodejs-service
+: 1626790171:0;docker rm 2957a276d3a4
+: 1626790353:0;node run start
+: 1626791858:0;ai-enterprise-service-plugin
+: 1626791871:0;npm i
+: 1626803815:0;vim init.el
+: 1626803863:0;l elpa
+: 1626804581:0;gcmsg "updated packages in custom vars and use package-refresh"
+: 1626804643:0;Projects/EmacsOrg/emacs
+: 1626804672:0;make clean
+: 1626804680:0;make
+: 1626805070:0;sudo make install
+: 1626805115:0;less INSTALL
+: 1626805982:0;..
+: 1626805991:0;l PULSE
+: 1626807716:0;docker run -d --name dd-agent -v /var/run/docker.sock:/var/run/docker.sock:ro -v /proc/:/host/proc/:ro -v /sys/fs/cgroup/:/host/sys/fs/cgroup:ro -p 8125:8125 -p 8126:8126 -e DD_ENV=ainq-pulse-test-2 -e DD_HOSTNAME=evgeniy -e DD_API_KEY=898cebd8908f13dd398a4bc47e42f092 gcr.io/datadoghq/agent:7
+: 1626807728:0;cd AiPlatform/ai-enterprise-service-plugin
+: 1626807741:0;rm examples/using-apm/apis/README.md
+: 1626807760:0;te package.json
+: 1626807831:0;npm run start:apm
+: 1626814688:0;Projects/FSharp
+: 1626814694:0;ElegantFSharp
+: 1626815242:0;dotnet ~/.FsAutoComplete/netcore/fsautoComplete.dll --version
+: 1626815262:0;dotnet ~/.FsAutoComplete/netcore/fsautocomplete.dll --version
+: 1626833322:0;l ToDo
+: 1626833325:0;cd ToDo
+: 1626833951:0;pip search ptpython
+: 1626834391:0;gs
+: 1626834421:0;te custom.el
+: 1626834460:0;gcmsg "using lsp-mode for all the LSP functionality"
+: 1626836484:0;pgrep emacs 
+: 1626836491:0;te .
+: 1626838311:0;pip install python-lsp-server
+: 1626838443:0;pip install virtualenv
+: 1626838509:0;virtualenv
+: 1626838651:0;pip install python-lsp-server[all]
+: 1626838680:0;cd Projects
+: 1626838682:0;cd ML
+: 1626845203:0;pip install virtualenvwrapper
+: 1626845220:0;python -m pip install --upgrade pip
+: 1626845225:0;pip
+: 1626845384:0;echo $PATH
+: 1626845391:0;nodemon
+: 1626845394:0;which nodemon
+: 1626845464:0;rm one.py
+: 1626845474:0;md Py
+: 1626845481:0;rd ML
+: 1626845547:0;te ~/.dotfiles 
+: 1626845800:0;cd Py
+: 1626845845:0;python -m venv --help
+: 1626845867:0;python -m venv env
+: 1626845872:0;cd env
+: 1626845901:0;source env/bin/activate
+: 1626845909:0;pip list
+: 1626845925:0;deactivate
+: 1626883494:0;ag getMedicationHistory
+: 1626883510:0;te ulp-snapshot-portlet/src/main/java/com/ainq/ulp/snapshot/controller/SnapshotResourceMappings.java
+: 1626883596:0;ag getMedHistoryService
+: 1626883616:0;ag medHistoryService
+: 1626883626:0;ag MedicationHistoryService
+: 1626883692:0;ag ulp-snapshot-lib/src/main/java/com/ainq/ulp/snapshot/service/MedicationHistoryService.java
+: 1626883697:0;te ulp-snapshot-lib/src/main/java/com/ainq/ulp/snapshot/service/MedicationHistoryService.java
+: 1626883721:0;ag MedicationHistoryClientFactory
+: 1626883839:0;ag "Patient not found."
+: 1626887927:0;which java
+: 1626887983:0;java -version
+: 1626888076:0;ls /etc/alternatives/java
+: 1626888083:0;ls -l /etc/alternatives/java
+: 1626888380:0;cd ulp-snapshot-portlet
+: 1626888394:0;g co 4.3.3
+: 1626888858:0;update-alternatives --help
+: 1626888864:0;update-alternatives --list java
+: 1626889663:0;idea &
+: 1626889897:0;ag Redhat
+: 1626889900:0;ag -i Redhat
+: 1626889904:0;ag -i jdk
+: 1626890490:0;g co snapshot-simplified
+: 1626890511:0;g push -u origin snapshot-simplified
+: 1626890530:0;cat .git/config
+: 1626890548:0;rd ulp-snapshot-lib
+: 1626890567:0;g co https://git.ainq.com/ulp-development/java-libraries/ulp-snapshot-lib.git
+: 1626890581:0;g clone https://git.ainq.com/ulp-development/java-libraries/ulp-snapshot-lib.git
+: 1626890659:0;c
+: 1626890697:0;cd ulp-snapshot-lib
+: 1626890799:0;rd /home/esharapov/.gradle/wrapper/dists/gradle-4.10-bin/bg6py687nqv2mbe6e1hdtk57h
+: 1626890838:0;ag -i /mnt/
+: 1626890842:0;ag -i \/mnt\/
+: 1626890845:0;ag -i mnt
+: 1626890901:0;te /home/esharapov/.local/bin/idea
+: 1626892310:0;l ~/.gradle
+: 1626892360:0;cat jdks
+: 1626892365:0;l jdks
+: 1626892380:0;l native
+: 1626892411:0;l build-scan-data
+: 1626892416:0;rd build-scan-data
+: 1626892432:0;l notifications
+: 1626892435:0;rd notifications
+: 1626892439:0;l workers
+: 1626892443:0;l wrapper
+: 1626892454:0;l daemon
+: 1626892457:0;l daemon/4.10
+: 1626892472:0;pgrep gradlew
+: 1626892473:0;pgrep gradle
+: 1626892534:0;cd ~/.zsh
+: 1626892549:0;ag -i redhat
+: 1626892583:0;cat  spec/DESKTOP-OU44UDR.zsh
+: 1626892589:0;te spec/DESKTOP-OU44UDR.zsh
+: 1626892620:0;env | grep java
+: 1626892623:0;env | grep -i java
+: 1626893785:0;te build
+: 1626894030:0;rd build
+: 1626894045:0;rd caches
+: 1626894055:0;rd jdks
+: 1626894058:0;rd native
+: 1626894062:0;rd workers
+: 1626894066:0;rd wrapper
+: 1626894149:0;rd daemon
+: 1626894187:0;l .cache
+: 1626894209:0;rd .cache
+: 1626894223:0;l ~/.tooling
+: 1626894234:0;rd ~/.tooling/
+: 1626894254:0;rd .m2
+: 1626894267:0;l .liferay
+: 1626894273:0;l .liferay/bundles
+: 1626894278:0;cd esharapov
+: 1626894372:0;l gradle
+: 1626894378:0;less gradle/wrapper/gradle-wrapper.properties
+: 1626894397:0;env
+: 1626895535:0;which gradle 
+: 1626895545:0;gradlew --version
+: 1626895598:0;cd .gradle
+: 1626895601:0;ag mnt
+: 1626895609:0;lr
+: 1626895611:0;l -R
+: 1626895629:0;find .
+: 1626895637:0;find . | xargs grep mnt
+: 1626895645:0;find . -type f| xargs grep mnt
+: 1626895655:0;find . -type f | xargs grep mnt
+: 1626895690:0;cd ~/.gradle
+: 1626895692:0;find . -type f
+: 1626895698:0;find . -type f | xargs grep -i redhat 
+: 1626895742:0;cd /opt/gradle-6.5.1
+: 1626895753:0;l /opt/gradle-6.5.1
+: 1626895793:0;l /opt/gradle-6.5.1/
+: 1626895820:0;find . -type f | xargs grep -i mnt
+: 1626895831:0;find . -type f | xargs grep -i Redhat
+: 1626895918:0;cd /opt/idea-IC-202.7660.26
+: 1626895921:0;find . -type f | xargs grep -il Redhat
+: 1626896743:0;l gradle.properties
+: 1626896746:0;cat gradle.properties
+: 1626896919:0;rd .local/share/JetBrains/
+: 1626896933:0;rd .config/JetBrains
+: 1626962302:0;gcmsg "CEN-1610: changes related to 'patient not found' error in prem med history"
+: 1626962337:0;e ai-worklog &
+: 1626968578:0;g co -b CEN-1610-prem-med-history-patient-not-found
+: 1626969169:0;Projects
+: 1626969175:0;md Gate
+: 1626969179:0;rd Gate
+: 1626969182:0;md GATE
+: 1626969187:0;g clone https://git.ainq.com/ai-gateway/gateway-v2/gateway.netcore.services.git
+: 1626969222:0;gateway.netcore.services
+: 1626969237:0;cat *.Dot*
+: 1626969262:0;cat *.sl
+: 1626969264:0;cat *.sln
+: 1626970004:0;pulse.middleware.ee
+: 1626970015:0;l PULSE.Middleware.Api.Activation
+: 1626970029:0;cat  PULSE.Middleware.Api.Activation/DockerfileAWS
+: 1626975619:0;cat ci-cd.sh
+: 1626975727:0;./gradlew clean build npm_run_build war
+: 1626976093:0;ssh
+: 1626976109:0;ssh -i ~/Projects/AWS/bastion_host.pem ubuntu@ec2-54-152-64-133.compute-1.amazonaws.com
+: 1626976175:0;ssh -v -i ~/Projects/AWS/bastion_host.pem ubuntu@ec2-54-152-64-133.compute-1.amazonaws.com
+: 1626983231:0;l ./build/libs/ulp-snapshot-portlet.war
+: 1626983249:0;cat ~/Projects/AWS/bastion_host.pem
+: 1626984238:0;cat .gitlab-ci.yml
+: 1626984273:0;npm ci
+: 1626984699:0;./gradlew -T
+: 1626985203:0;l build/libs/ulp-snapshot-portlet.war
+: 1626985287:0;cp build/libs/ulp-snapshot-portlet.war /mnt/c/Users/esharapov/Documents/.
+: 1626985350:0;scp -v -i ~/Projects/AWS/bastion_host.pem ./build/libs/ulp-snapshot-portlet.war  ubuntu@54.204.89.13:/home/ubuntu/.
+: 1626987362:0;gcmsg "CEN-1610: updated delete query"
+: 1626987407:0;gcmsg "CEN-1610: changes related to 'patient not found' error in prem med history: using snapshot version of ulp-snapshot-lib"
+: 1626990055:0;g co -b hies-pipelines
+: 1626992920:0;pipeline-common/
+: 1626992956:0;gcmsg "OPEB-2219: re-usable steps for HIES software pipelines in Gitlab"
+: 1626992964:0;g push -u origin hies-pipelines
+: 1627004711:0;Projects/FSharp/LearnFSharp
+: 1627005026:0;cd Kattis
+: 1627005041:0;dotnet fsi abc.fsx
+: 1627008169:0;gcmsg "CEN-1610: prevent fallout on 504 Timeout from Medicasoft endpoint"
+: 1627009640:0;ULP
+: 1627009643:0;g clone https://git.ainq.com/CRISP_Unified_Landing_Page/snapshot-portlet.git
+: 1627009657:0;./gradlew clean buil
+: 1627009666:0;cd snapshot-portlet
+: 1627009887:0;GATE
+: 1627011044:0;gl
+: 1627047267:0;e ~/ai-worklog/Worklog &
+: 1627052934:0;rd /tmp/gradle*
+: 1627053790:0;code .
+: 1627054048:0;cat ../ulp-snapshot-lib/gradle/wrapper/gradle-wrapper.properties
+: 1627060508:0;gcmsg "CEN-1610: updated prem medical record DAO"
+: 1627062584:0;ls /opt
+: 1627062642:0;cp /mnt/c/Users/esharapov/Downloads/ideaIC-2021.1.3.tar.gz /opt/.
+: 1627062646:0;sudo cp /mnt/c/Users/esharapov/Downloads/ideaIC-2021.1.3.tar.gz /opt/.
+: 1627062695:0;cat /mnt/c/Users/esharapov/Downloads/Kattio.fs
+: 1627064286:0;cd /opt
+: 1627064288:0;ls -al
+: 1627064313:0;sudo tar xzvf ideaIC-2021.1.3.tar.gz
+: 1627064349:0;cd idea-IC-211.7628.21
+: 1627064365:0;less Install-Linux-tar.txt
+: 1627064427:0;rd ~/.config/JetBrains
+: 1627064438:0;rd ~/.local/share/JetBrains/
+: 1627064444:0;l bin
+: 1627064490:0;sudo chown -R esharapov idea-IC-211.7628.21
+: 1627064500:0;sudo chown -R esharapov:esharapov idea-IC-211.7628.21
+: 1627064509:0;cd idea-IC-211.7628.21/bin
+: 1627064513:0;./idea.sh
+: 1627064797:0;cat Install-Linux-tar.txt
+: 1627064844:0;export PATH=/opt/idea-IC-211.7628.21/bin:$PATH
+: 1627064848:0;rehash
+: 1627064866:0;which idea
+: 1627064879:0;less $(which idea)
+: 1627064931:0;/opt/idea-IC-211.7628.21/bin/idea.sh . &
+: 1627065756:0;gcmsg "CEN-1610: updated prem medical record DAO with better queries"
+: 1627065810:0;rm ideaIC-2021.1.3.tar.gz
+: 1627065817:0;sudo rm ideaIC-2021.1.3.tar.gz
+: 1627065833:0;l /mnt/c/Users/esharapov/Downloads
+: 1627065849:0;sudo cp /mnt/c/Users/esharapov/Downloads/spring-tool-suite-4-4.11.0.RELEASE-e4.20.0-linux.gtk.x86_64.tar.gz .
+: 1627065863:0;sudo tar xzvf spring-tool-suite-4-4.11.0.RELEASE-e4.20.0-linux.gtk.x86_64.tar.gz
+: 1627065910:0;sudo chown -R esharapov:esharapov sts-4.11.0.RELEASE
+: 1627065913:0;l sts-4.11.0.RELEASE
+: 1627065936:0;/opt/sts-4.11.0.RELEASE/SpringToolSuite4 &
+: 1627066181:0;rd .gradle
+: 1627066375:0;rd .idea
+: 1627066379:0;rd .settings
+: 1627066383:0;rd .project
+: 1627066394:0;rd .vscode
+: 1627066438:0;gcmsg "removed all ide settings files\
+"
+: 1627066450:0;chmod +x ./gradlew
+: 1627066507:0;./gradlew wrapper
+: 1627066533:0;cat gradle/wrapper/gradle-wrapper.properties
+: 1627066657:0;./gradlew wrapper --gradle-version 6.8
+: 1627066735:0;te settings.gradle
+: 1627066759:0;./gradlew wrapper --gradle-version 7.1.1
+: 1627066790:0;ag findbugs
+: 1627066820:0;./gradlew wrapper --gradle-version 6.8.3
+: 1627066869:0;./gradlew wrapper --gradle-version 6.5.1
+: 1627066958:0;te build.gradle
+: 1627067363:0;cat ../ulp-breakglass-portlet/build.gradle
+: 1627067378:0;cat ../ulp-breakglass-portlet/build.gradle | grep findbugs
+: 1627067404:0;cat ../ulp-breakglasstoken-lib/build.gradle| grep find
+: 1627067416:0;te ../ulp-breakglasstoken-lib/settings.gradle
+: 1627067424:0;te ../ulp-breakglasstoken-lib/build.gradle
+: 1627067436:0;te ../ulp-breakglasstoken-lib/gradle/wrapper/gradle-wrapper.properties
+: 1627067459:0;te ../ulp-patientfinder-lib/gradle/wrapper/gradle-wrapper.properties
+: 1627067472:0;grhh
+: 1627067481:0;chmod +x gradlew
+: 1627067492:0;te gradle
+: 1627069412:0;gcmsg "CEN-1610: reset various flag variables"
+: 1627069624:0;gcmsg "CEN-1610: added another error message for location from the FHIR endpoint"
+: 1627070122:0;which gcov
+: 1627071629:0;ga-u
+: 1627071653:0;gcmsg "CEN-1610: added more logging and debug information"
+: 1627071947:0;./gradlew clean build
+: 1627072013:0;./gradlew npm_run_build
+: 1627072086:0;./gradlew war
+: 1627072104:0;scp -i ~/Projects/AWS/bastion_host.pem ./build/libs/ulp-snapshot-portlet.war  ubuntu@54.204.89.13:/home/ubuntu/.
+: 1627308425:0;dotnet fsi --help
+: 1627316482:0;chmod +x medicasoft_probe.sh
+: 1627316677:0;./medicasoft_probe.sh -m 1234 asdfasdf
+: 1627317004:0;./medicasoft_probe.sh -m
+: 1627317180:0;./medicasoft_probe.sh -m 12341234
+: 1627325056:0;ulp-snapshot-portlet
+: 1627325059:0;./medicasoft_probe.sh
+: 1627325063:0;./medicasoft_probe.sh -m 1234
+: 1627325178:0;./medicasoft_probe.sh -t 1234
+: 1627325182:0;./medicasoft_probe.sh -l 1234
+: 1627327916:0;ga medicasoft_probe.sh
+: 1627327932:0;gcmsg "CEN-1610: added Medicasoft endpoint probing script"
+: 1627327979:0;g push -u origin CEN-1610-prem-med-history-patient-not-found
+: 1627331495:0;cd
+: 1627331497:0;.emacs.d
+: 1627331779:0;cd GATE/gateway.netcore.services
+: 1627331789:0;t . &
+: 1627410082:0;java -jar build/libs/ulp-snapshot-lib-all-CEN-1610-prem-med-history-patient-not-found-SNAPSHOT.jar
+: 1627410462:0;find . -name *properties -type f
+: 1627410565:0;java -Dulp.snapshot.properties=file:./build/resources/integrationTest/ulp_snapshot_integration_config_provider.hjson -jar build/libs/ulp-snapshot-lib-all-CEN-1610-prem-med-history-patient-not-found-SNAPSHOT.jar
+: 1627410631:0;find . -name *.hjson -type f
+: 1627410706:0;ls ./src/integration-test/resources/
+: 1627410726:0;touch ulp-snapshot-integration-ext.properties
+: 1627410729:0;cat ./src/integration-test/resources/ulp_snapshot_integration_config_provider.hjson
+: 1627411270:0;./gradlew build appJar
+: 1627412059:0;java -Dulp.snapshot.properties=file:./src/integration-test/resources/ulp_snapshot_integration_config_provider.hjson -jar build/libs/ulp-snapshot-lib-all-CEN-1610-prem-med-history-patient-not-found-SNAPSHOT.jar
+: 1627412613:0;g co -b CEN-1610-app
+: 1627412643:0;gcmsg "CEN-1610: added application to the Jar"
+: 1627412813:0;./gradlew build appJar && java -Dulp.snapshot.properties=file:./src/integration-test/resources/ulp_snapshot_integration_config_provider.hjson -jar build/libs/ulp-snapshot-lib-all-CEN-1610-prem-med-history-patient-not-found-SNAPSHOT.jar
+: 1627412914:0;./gradlew clean build appJar && java -Dulp.snapshot.properties=file:./src/integration-test/resources/ulp_snapshot_integration_config_provider.hjson -jar build/libs/ulp-snapshot-lib-all-CEN-1610-prem-med-history-patient-not-found-SNAPSHOT.jar
+: 1627413002:0;./gradlew clean build appJar && java -Dulp.snapshot.properties=file:./src/integration-test/resources/ulp_snapshot_integration_config_provider.hjson -jar build/libs/ulp-snapshot-lib-all-CEN-1610-app-SNAPSHOT.jar
+: 1627413515:0;./gradlew clean build appJar && java -Dulp.snapshot.properties=file:ulp-snapshot-ext.properties -jar build/libs/ulp-snapshot-lib-all-CEN-1610-app-SNAPSHOT.jar
+: 1627413917:0;l build/tmp
+: 1627413920:0;l build/tmp/jar
+: 1627413928:0;l build/classes
+: 1627413931:0;l build/classes/java
+: 1627413934:0;l 
+: 1627413939:0;l .gradle
+: 1627413953:0;l build
+: 1627413958:0;l build/resources
+: 1627414376:0;java -Dulp.snapshot.properties=file:ulp-snapshot-ext.properties -jar build/libs/ulp-snapshot-lib-all-CEN-1610-app-SNAPSHOT.jar
+: 1627414437:0;gcmsg "CEN-1610: working context in the application""
+: 1627414439:0;gcmsg "CEN-1610: working context in the application"
+: 1627417286:0;pgrep idea  | xargs kill
+: 1627417300:0;which pgrep
+: 1627417306:0;pgrep --help
+: 1627417318:0;pgrep -a java
+: 1627417343:0;pgrep java | xargs kill -9
+: 1627417350:0;htop
+: 1627423795:0;gcmsg "OPEB-2219: completed steps for Gitlap HIES pipeline"
+: 1627423807:0;AiPlatform
+: 1627423813:0;cd pipeline-common
+: 1627426473:0;cd PULSE
+: 1627426485:0;pwd
+: 1627426492:0;cd GATE
+: 1627426497:0;g clone https://git.ainq.com/ai-gateway/certificate-management-service.git
+: 1627426541:0;g clone https://git.ainq.com/ai-gateway/aigatewaydocker.git
+: 1627426599:0;g clone https://git.ainq.com/ai-gateway/CONNECT.git
+: 1627485173:0;g co src/integration-test/java/com/ainq/ulp/snapshot/client/TestPremMedicationHistoryClientIntegration.java
+: 1627489088:0;pgrep idea
+: 1627489100:0;pgrep idea | kill 12547
+: 1627489109:0;pgrep java
+: 1627490231:0;utop
+: 1627496068:0;gts
+: 1627496072:0;pgrep java | xargs kill
+: 1627498365:0;./gradlew build appJar && java -Dulp.snapshot.properties=file:ulp-snapshot-ext.properties -jar build/libs/ulp-snapshot-lib-all-CEN-1610-app-SNAPSHOT.jar
+: 1627500500:0;cd ULP
+: 1627500513:0;cd ulp-immunizations-ws-api
+: 1627500586:0;g br -d CEN-1507-localize-wsdl
+: 1627500603:0;g br -D CEN-1507-localize-wsdl
+: 1627500647:0;l src/
+: 1627500688:0;l src/main/resources
+: 1627500703:0;md src/main/resources/META-INF
+: 1627500747:0;curl https://www.mdimmunet.org/mdws/client_Service?wsdl -O ./src/main/resources/META-INF/WSDL.wsdl
+: 1627500781:0;mv client_Service\?wsdl ./src/main/resources/META-INF/WSDL.wsdl
+: 1627500870:0;wsimport -keep -extension -wsdllocation META-INF/WSDL.wsdl ./src/main/resources/META-INF/WSDL.wsdl
+: 1627500962:0;wsimport -keep -extension -d ./src/main/java -wsdllocation META-INF/WSDL.wsdl ./src/main/resources/META-INF/WSDL.wsdl
+: 1627500993:0;find . -name *.class -type f
+: 1627501000:0;find ./src -name *.class -type f
+: 1627501006:0;find ./src -name *.class -type f | xargs rm
+: 1627501020:0;rd cdc
+: 1627501036:0;gd --cached
+: 1627501077:0;g co -b CEN-1507-localize-wsdl
+: 1627501089:0;g co -b CEN-1507-localize-wsdl-2
+: 1627501112:0;gcmsg "CEN-1507: localizing WSDL into the JAR"
+: 1627501125:0;g push -u origin CEN-1507-localize-wsdl-2
+: 1627501141:0;ag version
+: 1627501236:0;./gradlew goJF
+: 1627501272:0;gcmsg "CEN-1507: fixed formatting"
+: 1627511701:0;l build/libs
+: 1627511755:0;ssh -v -i ~/Projects/AWS/bastion_host.pem ubuntu@54.204.89.13
+: 1627567993:0;cd ~/Projects/ULP
+: 1627567995:0;lt
+: 1627568003:0;cd ulp-iam-portlet
+: 1627568051:0;g log -p 17cfc03
+: 1627568156:0;tooling
+: 1627574747:0;e env2prop.sh &
+: 1627574786:0;cat test_env
+: 1627574795:0;cat test_env | grep ULP_
+: 1627574860:0;cat test_env | grep ULP_ | awk '{print tolower($0)}'
+: 1627574890:0;cat test_env | grep ULP_ | awk -FS= '{print tolower($0)}'
+: 1627574894:0;cat test_env | grep ULP_ | awk -FS= '{print tolower($1)}'
+: 1627574911:0;cat test_env | grep ULP_ | awk -FS'=' '{print $1}'
+: 1627574922:0;cat test_env | grep ULP_ | awk -FS '=' '{print $1}'
+: 1627574972:0;cat test_env | grep ULP_ | awk -FS='=' '{print $2}'
+: 1627574977:0;cat test_env | grep ULP_ | awk -FS='=' '{print $1}'
+: 1627574981:0;cat test_env | grep ULP_ | awk -FS='\=' '{print $1}'
+: 1627574985:0;cat test_env | grep ULP_ | awk -FS=\= '{print $1}'
+: 1627575023:0;cat test_env | grep ULP_ | awk -F '=' '{print $2}'
+: 1627579177:0;cat test_env | grep ULP_ | awk -F '=' '{print $1}'
+: 1627579412:0;cat test_env | grep ULP_ | awk -F '=' '{ p=gensub(/^ULP_/,"","g",$1) print tolower(p); }'
+: 1627579417:0;cat test_env | grep ULP_ | awk -F '=' '{ p=gensub(/^ULP_/,"","g",$1); print tolower(p); }'
+: 1627579472:0;cat test_env | grep ULP_ | awk -F '=' '{ p=gensub(/^ULP_/,"","g",$1);p=gensub(/_/,".","g",p);print tolower(p); }'
+: 1627579493:0;cat test_env | grep ULP_ | awk -F '=' '{ p=gensub(/^ULP_/,"","g",$1);p=gensub(/_/,".","g",p);print tolower(p)=$2; }'
+: 1627579507:0;cat test_env | grep ULP_ | awk -F '=' '{ p=gensub(/^ULP_/,"","g",$1);p=gensub(/_/,".","g",p);print tolower(p)+"="+$2; }'
+: 1627579536:0;cat test_env | grep ULP_ | awk -F '=' '{ p=gensub(/^ULP_/,"","g",$1);p=gensub(/_/,".","g",p);print tolower(p),"=",$2; }'
+: 1627669791:0;cd ../ulp-snapshot-portlet
+: 1627669818:0;cd ../ulp-snapshot-lib
+: 1627669826:0;ag FhirClient
+: 1627672023:0;ag -g sl4j
+: 1627672027:0;ag -g *.jar
+: 1627672035:0;ag -g .*\.jar
+: 1627672086:0;l tooling
+: 1627672094:0;cd tooling
+: 1627672100:0;wget https://repo1.maven.org/maven2/org/slf4j/slf4j-simple/1.7.32/slf4j-simple-1.7.32.jar
+: 1627672408:0;./gradlew build appJar && java -Dulp.snapshot.properties=file:ulp-snapshot-ext.properties -jar build/libs/ulp-snapshot-lib-all-CEN-1610-app-SNAPSHOT.jar --patient Amy Conroy --eid 123456
+: 1627672698:0;ll build
+: 1627672703:0;ll build/classes
+: 1627672706:0;ll build/classes/java
+: 1627672709:0;ll build/
+: 1627672714:0;ll build/tmp
+: 1627672717:0;ll build/tmp/appJar
+: 1627672720:0;ll build/tmp/jar
+: 1627672725:0;ll build/tmp/compileJava
+: 1627672740:0;ll
+: 1627672742:0;la
+: 1627675608:0;cd ../..
+: 1627675611:0;ag npi
+: 1627675625:0;ag \Wnpi\W
+: 1627675632:0;ag "\Wnpi\W"
+: 1627682849:0;./gradlew clean build appJar
+: 1627682912:0;scp -i ~/Projects/AWS/bastion_host.pem ./build/libs/ulp-snapshot-lib-all-CEN-1610-app-SNAPSHOT.jar  ubuntu@54.204.89.13:/home/ubuntu/.
+: 1627683443:0;cp build/libs/ulp-snapshot-lib-all-CEN-1610-app-SNAPSHOT.jar /mnt/c/Users/esharapov/OneDrive\ -\ Audacious\ Inquiry\ LLC/Files/Projects/CEN-1610/.
+: 1627683822:0;ssh -i ~/Projects/AWS/bastion_host.pem ubuntu@54.204.89.13
+: 1627697031:0;rm tooling/slf4j-simple-1.7.32.jar
+: 1627697034:0;ga . 
+: 1627697075:0;gcmsg "CEN-1610: modified app for snapshot CLI"
+: 1627697085:0;g push -u origin CEN-1610-app
+: 1627697694:0;FSharp
+: 1627697918:0;pgrep dotnet
+: 1627697926:0;pgrep dotnet -a
+: 1627697936:0;pgrep dotnet | xargs kill
+: 1627700098:0;pgrep e
+: 1627700103:0;pgrep emacs
+: 1627700172:0;kill 16767
+: 1627700184:0;e ~/ai-worklog
+: 1627701513:0;emacs --version
+: 1627701547:0;cd ~/Projects/EmacsOrg/emacs
+: 1627701552:0;g fetch
+: 1627701577:0;g co master
+: 1627701592:0;g br
+: 1627701608:0;g br -a | grep native
+: 1627701621:0;g co feature/native-comp
+: 1627701651:0;g pull origin feature/native-comp
+: 1627702330:0;pgrep emacs | xargs kill
+: 1627703105:0;pgrep emacs | xargs kill 
+: 1627703119:0;e ~/ai-worklog/Worklog.org&
+: 1627711964:0;gcm
+: 1627712019:0;cd FSharp
+: 1627712026:0;cd LearnFSharp
+: 1627712041:0;code Kattis
+: 1627712484:0;dotnet fsi
+: 1627791034:0;hg --version
+: 1627791046:0;which hg
+: 1627916527:0;pgrep emacs -a
+: 1627916544:0;e /home/esharapov/ai-worklog/Worklog.org
+: 1627916551:0;e /home/esharapov/ai-worklog/Worklog.org &
+: 1627921508:0;ulp-snapshot-lib
+: 1627922100:0;g co release_4.1.0)
+: 1627922102:0;g co release_4.1.0
+: 1627922441:0;gitk --all
+: 1627935789:0;cd ai-worklog
+: 1627935802:0;gcmsg "updated worklog"
+: 1627935921:0;l .gitlab-ci
+: 1627935945:0;mv .gitlab-ci/hies.gitlab-ci.yml .gitlab-ci/hies.gitlab-ci.yaml
+: 1627936025:0;gcmsg "OPEB-2219: updated re-usable steps file name"
+: 1627936088:0;mv .gitlab-ci/hies.gitlab-ci.yaml .gitlab-ci/hies.yaml
+: 1627936105:0;gcmsg "OPEB-2219: updated re-usable steps file name (removed .)"
+: 1627936176:0;gcmsg "OPEB-2219: updated re-usable steps file name extension"
+: 1627936578:0;gcmsg "OPEB-2219: updated pipeline from file to local inclusion"
+: 1627936673:0;ga -u "OPEB-2219: corrected typo"
+: 1627936688:0;gcmsg "OPEB-2219: corrected typo"
+: 1627997308:0;cd ../PULSE
+: 1627997325:0;cd pulse-nodejs-service
+: 1627998020:0;docker ps -a
+: 1627998038:0;docker rm dd-agent
+: 1627998065:0;docker run -d --name dd-agent -v /var/run/docker.sock:/var/run/docker.sock:ro -v /proc/:/host/proc/:ro -v /sys/fs/cgroup/:/host/sys/fs/cgroup:ro -p 8125:8125 -p 8126:8126 -e DD_ENV=ainq-pulse-demo -e DD_HOSTNAME=evgeniy -e DD_API_KEY=898cebd8908f13dd398a4bc47e42f092 gcr.io/datadoghq/agent:7
+: 1627998329:0;npm run start
+: 1628017167:0;g clone https://git.ainq.com/ai-gateway/gateway-v2/gateway.common.git
+: 1628017311:0;cat Gateway.Common/Gateway.Common.csproj
+: 1628017314:0;cat Gateway.Common/Gateway.Common.csproj.DotSettings
+: 1628017681:0;l Gateway.Common
+: 1628017723:0;cp -R Gateway.Common/* ../gateway.common/.
+: 1628017728:0;cd ../gateway.common
+: 1628017823:0;ga .
+: 1628017862:0;gcmsg "added a code from Gateway.Common of Gateway.NetCore.Services project"
+: 1628021808:0;cd ../../ULP/ulp-snapshot-lib
+: 1628021827:0;./gradlew tasks
+: 1628021843:0;./gradlew dependencies
+: 1628022831:0;idea . &
+: 1628024373:0;cd ../../ULP/ulp-snapshot-portlet
+: 1628024377:0;ag retry
+: 1628091938:0;g pull
+: 1628091941:0;g lga
+: 1628091953:0;dotnet pack
+: 1628100093:0;e . &
+: 1628102726:0;cd ..
+: 1628102844:0;cd gateway.netcore.services
+: 1628102848:0;gd
+: 1628102890:0;gcmsg "OPEB-2219: updates to the steps (localizing them to Gateway specific)"
+: 1628102904:0;gitlab-runner --help
+: 1628102940:0;gitlab-runner exec docker
+: 1628102948:0;gitlab-runner exec --help
+: 1628102953:0;gitlab-runner exec shell
+: 1628108096:0;ga -u
+: 1628108109:0;gcmsg "OPEB-2219: updated HIES update version step with image"
+: 1628108110:0;g push
+: 1628109406:0;l
+: 1628109441:0;cat abc.txt| dotnet fsi abc.fsx
+: 1628109654:0;git st
+: 1628109672:0;rm abc.txt
+: 1628109675:0;gst
+: 1628109725:0;cd ~/Projects/FSharp/LearnFSharp
+: 1628109728:0;l
+: 1628109728:0;gst
+: 1628109730:0;l
+: 1628109775:0;wget --no-check-certificate http://gist.githubusercontent.com/kmorcinek/2710267/raw/.gitignore
+: 1628109777:0;gst
+: 1628109780:0;ga .gitignore
+: 1628109786:0;gcmsg "added gitignore"
+: 1628109788:0;gst
+: 1628110310:0;code .
+: 1628111776:0;dotnet fsi
+: 1628112239:0;pgrep dotnet
+: 1628112268:0;cat 2018 | dotnet fsi marswindow.fsx
+: 1628112275:0;echo 2018 | dotnet fsi marswindow.fsx
+: 1628112281:0;echo 2019 | dotnet fsi marswindow.fsx
+: 1628112287:0;echo 2020 | dotnet fsi marswindow.fsx
+: 1628112302:0;echo 2021 | dotnet fsi marswindow.fsx
+: 1628112311:0;echo 2022 | dotnet fsi marswindow.fsx
+: 1628172427:0;ai-enterprise-service-plugin
+: 1628172430:0;g pull
+: 1628174498:0;pwd
+: 1628174993:0;g pull
+: 1628175030:0;g lga
+: 1628175039:0;g merge master
+: 1628175043:0;g lga
+: 1628175047:0;g co master
+: 1628175049:0;g pull
+: 1628175058:0;g co OPEB-1987-datadog-api
+: 1628175060:0;g lga
+: 1628175067:0;g merge master
+: 1628175088:0;gst
+: 1628175119:0;e . &
+: 1628175205:0;ga README.md
+: 1628175207:0;gst
+: 1628175334:0;ga ,
+: 1628175337:0;ga .
+: 1628175338:0;gst
+: 1628175347:0;npm run install
+: 1628175357:0;npm i
+: 1628175422:0;gst
+: 1628175426:0;ga package-lock.json
+: 1628175433:0;g merge --continue
+: 1628175439:0;gst
+: 1628175442:0;g push
+: 1628175471:0;cd ./examples/simple
+: 1628175474:0;l
+: 1628175477:0;cd ..
+: 1628175495:0;less package.json
+: 1628175510:0;npm build
+: 1628175515:0;npm run build
+: 1628175622:0;npm run start
+: 1628176715:0;npm run start:apm
+: 1628177998:0;gst
+: 1628178002:0;gd
+: 1628178006:0;ga -u
+: 1628178016:0;gcmsg "OPEB-1987: updated comments"
+: 1628178018:0;g push
+: 1628178023:0;gst
+: 1628178109:0;ga -u
+: 1628178122:0;gcmsg "OPEB-1987: updated version"
+: 1628178124:0;g push
+: 1628190228:0;which idea
+: 1628190234:0;l /opt
+: 1628190255:0;cat $(which idea)
+: 1628190297:0;cd /opt/idea-IC-211.7628.21
+: 1628190299:0;l
+: 1628190308:0;cat Install-Linux-tar.txt
+: 1628190432:0;cat bin/idea.sh
+: 1628190561:0;l
+: 1628190587:0;cd ~/Projects/ULP/ulp-snapshot-lib
+: 1628190601:0;/opt/idea-IC-211.7628.21/bin/idea.sh . &
+: 1628190653:0;l
+: 1628190659:0;cd /opt
+: 1628190660:0;l
+: 1628190666:0;rd idea-IC-211.7628.21
+: 1628190673:0;sudo rd idea-IC-211.7628.21
+: 1628190684:0;rm spring-tool-suite-4-4.11.0.RELEASE-e4.20.0-linux.gtk.x86_64.tar.gz
+: 1628190692:0;sudo rm spring-tool-suite-4-4.11.0.RELEASE-e4.20.0-linux.gtk.x86_64.tar.gz
+: 1628190724:0;ll
+: 1628190749:0;./sts-4.11.0.RELEASE/SpringToolSuite4 &
+: 1628190813:0;l
+: 1628190824:0;sudo rd idea-IC-211.7628.21
+: 1628190831:0;sudo rmdir idea-IC-211.7628.21
+: 1628190833:0;l
+: 1628190913:0;cd ~/Dropbox/
+: 1628190915:0;l
+: 1628190921:0;l Notes
+: 1628190949:0;less Notes/Money.org
+: 1628191148:0;l /mnt/c/
+: 1628191164:0;l /mnt/c/Users/esharapov/OneDrive\ -\ Audacious\ Inquiry\ LLC
+: 1628191167:0;cd /mnt/c/Users/esharapov/OneDrive\ -\ Audacious\ Inquiry\ LLC
+: 1628191177:0;l
+: 1628191185:0;l Files
+: 1628191189:0;l Files/Personal
+: 1628191201:0;l Files/
+: 1628191205:0;l Files/Projects
+: 1628191226:0;l Files
+: 1628191231:0;l Files/Misc
+: 1628191238:0;cd Files
+: 1628191239:0;l
+: 1628191241:0;cd Personal
+: 1628191242:0;l
+: 1628191248:0;l misc
+: 1628191274:0;ag -g *.csv
+: 1628191282:0;ag -g *\.csv
+: 1628191292:0;ag -g ".*.csv"
+: 1628191388:0;cd
+: 1628191391:0;cd ~/.emacs.d
+: 1628191395:0;ag ledger
+: 1628191401:0;l
+: 1628191404:0;cd data
+: 1628191405:0;l
+: 1628191407:0;ag ledger
+: 1628191442:0;e . &
+: 1628191716:0;ledger --version
+: 1628191720:0;which ledger
+: 1628192092:0;cd ~/Dropbox/Documents/Money/
+: 1628192095:0;hg st
+: 1628192105:0;hg add
+: 1628192116:0;hg addremove
+: 1628192120:0;hg t 
+: 1628192122:0;hg st
+: 1628192125:0;hg addremove
+: 1628192136:0;cd ..
+: 1628192331:0;mv Money ~/Projects/.
+: 1628192343:0;sudo mv Money ~/Projects/.
+: 1628192386:0;cd ~/Projects/Money
+: 1628192388:0;hg t
+: 1628192392:0;hg st
+: 1628192398:0;hg addremove
+: 1628192404:0;hg st
+: 1628192412:0;hg commit "added files"
+: 1628192417:0;hg commit -m "added files"
+: 1628192420:0;hg lga
+: 1628192423:0;hg out
+: 1628193651:0;ledger --help
+: 1628193684:0;apt search hledger
+: 1628193705:0;sudo apt install hledger
+: 1628193727:0;l
+: 1628193743:0;rehash
+: 1628193784:0;hledger --help
+: 1628195102:0;g pull
+: 1628195110:0;g lga
+: 1628195235:0;g co r2021-10
+: 1628195237:0;g pull
+: 1628195241:0;l
+: 1628195252:0;g lga
+: 1628195275:0;g co OPEB-1987-use-apm-plugin
+: 1628195285:0;g merge r2021-10
+: 1628195292:0;g lga
+: 1628195308:0;te .
+: 1628195341:0;gst
+: 1628195344:0;ga -u
+: 1628195422:0;gcmsg "OPEB-1987: updated version of enterprise plugins for pulse service"
+: 1628195486:0;g lga
+: 1628195492:0;g push
+: 1628195610:0;g pull
+: 1628195618:0;g lga
+: 1628195638:0;g co master
+: 1628195639:0;gst
+: 1628195642:0;g pull
+: 1628195735:0;g co OPEB-2219-gateway-pipelines
+: 1628195737:0;g lga
+: 1628195741:0;g merge master
+: 1628195753:0;g lga
+: 1628195785:0;g push
+: 1628196165:0;e . &
+: 1628273364:0;pwd
+: 1628273525:0;hg config
+: 1628273748:0;cat .hg/git/config
+: 1628273820:0;te .hg/hgrc
+: 1628273841:0;hg out
+: 1628273852:0;hg push
+: 1628273858:0;hg lga
+: 1628273861:0;hg in
+: 1628279605:0;aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION
+: 1628279634:0;AWS_DEFAULT_REGION=us-east-1 aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION
+: 1628284035:0;l
+: 1628284124:0;cat amex
+: 1628284369:0;mv /mnt/c/Users/esharapov/Downloads/activity\ \(1\).csv amex_20210312_20210806.csv
+: 1628284876:0;l
+: 1628284886:0;g lga
+: 1628285034:0;mv /mnt/c/Users/esharapov/Downloads/From\ 3_12_2021\ To\ 8_6_2021.CSV citi_costco_20210312_20210806.csv
+: 1628285189:0;mv /mnt/c/Users/esharapov/Downloads/2021-08-06_transaction_download.csv capitalone_20210312_20210806.csv
+: 1628285247:0;l
+: 1628285746:0;mv /mnt/c/Users/esharapov/Downloads/Suntrust_History.csv suntrust_chk_20210312_20210610.csv
+: 1628285800:0;mv /mnt/c/Users/esharapov/Downloads/Suntrust_History\ \(1\).csv suntrust_chk_20210611_20210806.csv
+: 1628299771:0;l
+: 1628301292:0;mv /mnt/c/Users/esharapov/Downloads/Checking1.csv wf_checking_20210312_20210806.csv
+: 1628301364:0;mv /mnt/c/Users/esharapov/Downloads/Checking1.csv wf_signature_cc_20210312_20210806.csv
+: 1628301374:0;mv /mnt/c/Users/esharapov/Downloads/CreditCard3.csv wf_signature_cc_20210312_20210806.csv
+: 1628301631:0;mv /mnt/c/Users/esharapov/Downloads/CreditCard4.csv wf_cashwise_cc_20210312_20210806.csv
+: 1628301633:0;l
+: 1628302327:0;less amex_20210312_20210806.csv
+: 1628302420:0;less amex_20210101_20210311.csv
+: 1628302593:0;mv /mnt/c/Users/esharapov/Downloads/activity\ \(1\).csv amex_20210101_20210311_f.csv
+: 1628302598:0;less amex_20210101_20210311_f.csv
+: 1628303020:0;ledger convert amex_20210101_20210311_f.csv --input-date-format "%m/%d/%y" -f journal.ledger >> journal.ledger 
+: 1628303188:0;ledger convert amex_20210101_20210311_f.csv --input-date-format "MM/DD/YYYY" -f journal.ledger >> journal.ledger 
+: 1628303326:0;less amex_20210101_20210311_f.csv
+: 1628303448:0;ledger convert amex_20210101_20210311.csv --input-date-format "%m/%d/%y" -f journal.ledger >> journal.ledger 
+: 1628303558:0;hledger import amex_20210101_20210311.csv
+: 1628303577:0;hledger import amex_20210101_20210311.csv --dry-run
+: 1628303596:0;hledger import amex_20210101_20210311.csv -f journal.ledger --dry-run
+: 1628304191:0;mv /mnt/c/Users/esharapov/Downloads/activity.xlsx amex_20210101_20210806.xlsx
+: 1628304212:0;less amex_20210101_20210806.xlsx
+: 1628304216:0;l
+: 1628304222:0;less amex_20210101_20210311.csv.rules
+: 1628304301:0;hledger import amex_20210101_20210806.xlsx -f journal.ledger --dry-run
+: 1628304332:0;less amex_20210101_20210311_f.csv
+: 1628304828:0;mv /mnt/c/Users/esharapov/Downloads/activity\ \(1\).csv amex_20210101_20210806.csv
+: 1628304865:0;mv /mnt/c/Users/esharapov/Downloads/activity\ \(2\).csv amex_20210101_20210806_f.csv
+: 1628304879:0;apt searc icsv2ledger
+: 1628304883:0;apt search icsv2ledger
+: 1628304945:0;less amex_20210101_20210806.csv
+: 1628305307:0;gst
+: 1628305310:0;l
+: 1628305315:0;rm journal.ledger
+: 1628305317:0;l
+: 1628307289:0;hledger import amex_20210101_20210806_f.csv -f journal.ledger --dry-run
+: 1628307319:0;touch journal.ledger
+: 1628307322:0;hledger import amex_20210101_20210806_f.csv -f journal.ledger --dry-run
+: 1628307461:0;l
+: 1628307483:0;cp amex.csv.rules amex_20210101_20210806_f.csv.rules
+: 1628307487:0;hledger import amex_20210101_20210806_f.csv -f journal.ledger --dry-run
+: 1628307726:0;hledger import amex_20210101_20210806_f.csv -f journal.ledger
+: 1628386846:0;gst
+: 1628386848:0;hg st
+: 1628386862:0;gem
+: 1628386866:0;ruby
+: 1628386871:0;apt search ruby
+: 1628387082:0;sudo apt update
+: 1628387109:0;apt list --upgradable
+: 1628387201:0;apt search ruby-full
+: 1628387229:0;sudo apt install ruby-full
+: 1628387261:0;gem
+: 1628387276:0;gem install --user reckon
+: 1628387309:0;export PATH=/home/esharapov/.gem/ruby/2.7.0/bin:$PATH
+: 1628387315:0;rechon
+: 1628387317:0;rehash
+: 1628387320:0;reckon
+: 1628387339:0;te ~/.dotfiles/
+: 1628387374:0;cd ~/.dotfiles
+: 1628387377:0;hg st 
+: 1628387382:0;hg addremove
+: 1628387383:0;hg st
+: 1628387391:0;hg commit "updated history and PATH"
+: 1628387396:0;hg commit -m "updated history and PATH"

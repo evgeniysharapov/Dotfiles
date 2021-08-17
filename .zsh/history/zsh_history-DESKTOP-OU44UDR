@@ -1195,3 +1195,412 @@ done\
 : 1628876897:0;~/.dotfiles
 : 1628876921:0;hg book
 : 1628876924:0;hg lga
+: 1628876977:0;e . &
+: 1628877122:0;ulp-snapshot-portlet
+: 1628877135:0;git-effort
+: 1628877158:0;~/.dotfiles/.git-extras/bin/git-effort
+: 1628878717:0;htop
+: 1628884739:0;scp -i ~/Projects/AWS/bastion_host.pem ./build/libs/ulp-snapshot-portlet.war  ubuntu@54.204.89.13:/home/ubuntu/.
+: 1628884761:0;ulp-snapshot-lib
+: 1628884764:0;idea . &
+: 1628885057:0;ssh -i ~/Projects/AWS/bastion_host.pem ubuntu@54.204.89.13
+: 1628885119:0;e . &
+: 1628885259:0;alias hgst='hg status'
+: 1628885269:0;alias hgcm='hg commit -m'~
+: 1628885272:0;alias hgcm='hg commit -m'
+: 1628885288:0;ssh -i ~/Projects/AWS/bastion_host.pem ubuntu@54.204.89.13
+: 1628888322:0;./gradlew clean build && ./gradlew npm_run_build && ./gradlew war && scp -i ~/Projects/AWS/bastion_host.pem ./build/libs/ulp-snapshot-portlet.war  ubuntu@54.204.89.13:/home/ubuntu/.
+: 1628888578:0;gst
+: 1628888582:0;gd
+: 1628888586:0;ga -u
+: 1628888606:0;gcmsg "CEN-1610: defensive programming and more logging"
+: 1628888608:0;g push
+: 1628905714:0;hg push
+: 1628905718:0;hg lga
+: 1628905721:0;hg in
+: 1628905725:0;hg out
+: 1628905758:0;gst
+: 1628905759:0;hgst
+: 1628905765:0;hgd
+: 1628905767:0;hg d
+: 1628905782:0;. ./csvimport.sh
+: 1628905807:0;hgcm "corrected citi costco prep function in csvimport shell file"
+: 1628905814:0;hg commit -m "corrected citi costco prep function in csvimport shell file"
+: 1628907383:0;l
+: 1628907389:0;mkdir tests
+: 1628907393:0;mv test.ledger
+: 1628907398:0;mv test.ledger tests/.
+: 1628907400:0;l
+: 1628907403:0;hg st
+: 1628907409:0;hg addremove
+: 1628907424:0;hg commit "added test file for expense reimbursement"
+: 1628907429:0;hg commit -m "added test file for expense reimbursement"
+: 1628910187:0;ledger -f journal.ledger reg
+: 1628910198:0;hg st
+: 1628910219:0;citi_prep 2021/processed/citi_costco_20210312_20210806.csv
+: 1628910222:0;hg st
+: 1628910239:0;ledger_import Liabilities:CitiCostco citi.csv
+: 1628910241:0;hg st
+: 1628910246:0;rm citi.csv
+: 1628910248:0;hg d
+: 1628910302:0;hg commit -m "imported citi costco from 03/12 to 08/06"
+: 1628910305:0;hg st
+: 1628910936:0;hg commit -m "corrected clear status on unknown transactions"
+: 1628911868:0;hg st
+: 1628911869:0;hg d
+: 1628911891:0;hg commit -m "sorted transactions and added paypal assets account"
+: 1628911950:0;l /mnt/c/Users/esharapov/Downloads
+: 1628911959:0;lt /mnt/c/Users/esharapov/Downloads
+: 1628912002:0;mv /mnt/c/Users/esharapov/Downloads/Download.CSV paypal_20210101_20210812.csv
+: 1628912018:0;less /mnt/c/Users/esharapov/Downloads/EXPORT.CSV
+: 1628912125:0;mv /mnt/c/Users/esharapov/Downloads/EXPORT.CSV fifththird_20210812.csv
+: 1628912132:0;lt /mnt/c/Users/esharapov/Downloads
+: 1628912254:0;mv /mnt/c/Users/esharapov/Downloads/hsa_20210101_20210806.csv .
+: 1628912255:0;l
+: 1628912264:0;chmod -x *.csv
+: 1628912266:0;l
+: 1628912306:0;hg st
+: 1629002318:0;ledger_import Assets:FifthThird fifththird_20210812.csv
+: 1629002343:0;hg revert -Ca 2021.ledger
+: 1629002345:0;hg st
+: 1629003049:0;ledger convert --help
+: 1629004161:0;hg st
+: 1629004308:0;l
+: 1629004311:0;hg st
+: 1629004316:0;hg lga
+: 1629004336:0;hg st
+: 1629004362:0;hg lg
+: 1629004366:0;hg d 38
+: 1629004373:0;hg log 38
+: 1629004375:0;hg st
+: 1629004413:0;hg log -r 38
+: 1629004425:0;hg diff -r 38
+: 1629004429:0;hg diff -r 37
+: 1629004782:0;csvcut -n paypal_20210101_20210812.csv
+: 1629004820:0;csvcut -c Note paypal_20210101_20210812.csv
+: 1629004851:0;csvcut -c "Item Title" paypal_20210101_20210812.csv
+: 1629004888:0;csvcut -c "Item Title","Item ID" paypal_20210101_20210812.csv
+: 1629004906:0;csvcut -n paypal_20210101_20210812.csv
+: 1629005414:0;. ./csvimport.sh
+: 1629005426:0;paypal_prep paypal_20210101_20210812.csv
+: 1629005450:0;. ./csvimport.sh
+: 1629005451:0;paypal_prep paypal_20210101_20210812.csv
+: 1629005522:0;. ./csvimport.sh
+: 1629005523:0;paypal_prep paypal_20210101_20210812.csv
+: 1629005599:0;l
+: 1629006819:0;ledger -f journal.ledger reg paypal
+: 1629006904:0;ledger -f journal.ledger bal paypal
+: 1629007221:0;ledger -R -f journal.ledger bal paypal
+: 1629007561:0;ledger -f journal.ledger bal paypal
+: 1629007603:0;ledger -f journal.ledger reg paypal
+: 1629007746:0;hg d
+: 1629007802:0;ledger -f journal.ledger reg paypal
+: 1629007869:0;ledger -f journal.ledger bal paypal
+: 1629007936:0;hg st
+: 1629008048:0;ledger -f journal.ledger bal paypal
+: 1629008264:0;ledger -f journal.ledger reg paypal
+: 1629008301:0;hg st
+: 1629008313:0;mv paypal_20210101_20210812.csv 2021/processed
+: 1629008316:0;hg st
+: 1629008325:0;hg addremove 2021
+: 1629008327:0;hg st
+: 1629008340:0;hg commit -m "added paypal transactions and opening balance"
+: 1629008343:0;hg lga
+: 1629008346:0;hg push
+: 1629008350:0;hg st
+: 1629008399:0;ledger_import fifththird_20210812.csv
+: 1629008419:0;hg st
+: 1629008440:0;ledger_import fifththird_20210812.csv
+: 1629008451:0;hg st
+: 1629008463:0;ledger_import Assets:FifthThird fifththird_20210812.csv
+: 1629008502:0;hg st
+: 1629008510:0;hg revert -Ca
+: 1629008512:0;hg s t
+: 1629008515:0;hg st
+: 1629008524:0;ledger_import_invert fifththird_20210812.csv
+: 1629008555:0;ledger_import_invert Assets:FifthThird fifththird_20210812.csv
+: 1629008584:0;ledger bal FifthThird
+: 1629008591:0;ledger -f journal.ledger bal FifthThird
+: 1629008613:0;ledger -f journal.ledger reg FifthThird
+: 1629008629:0;hg st
+: 1629008633:0;hg revert -Ca
+: 1629008636:0;hg st
+: 1629008639:0;ledger -f journal.ledger reg FifthThird
+: 1629008652:0;ledger -f journal.ledger bal FifthThird
+: 1629008663:0;ledger_import_invert Assets:FifthThird fifththird_20210812.csv
+: 1629008767:0;ledger -f journal.ledger bal FifthThird
+: 1629008772:0;ledger -f journal.ledger reg FifthThird
+: 1629008935:0;ledger_import_invert Assets:FifthThird fifththird_20210812.csv
+: 1629008939:0;hg st
+: 1629008945:0;hg revert -Ca
+: 1629008948:0;hg st
+: 1629009321:0;l
+: 1629010203:0;ledger -f t.ledger bal
+: 1629010255:0;ledger -f journal.ledger bal WellsFargo
+: 1629010262:0;ledger -f t.ledger bal WellsFargo
+: 1629010311:0;ledger -f t.ledger bal WF
+: 1629010810:0;ledger -f t.ledger bal
+: 1629010814:0;ledger -f t.ledger reg
+: 1629010833:0;ledger -f t.ledger bal
+: 1629011566:0;ledger -f t.ledger reg
+: 1629011965:0;ledger -f t.ledger bal
+: 1629012216:0;pip install beancount
+: 1629012261:0;rehash
+: 1629012275:0;bean-check journal.ledger
+: 1629012320:0;hg st
+: 1629012330:0;bean-check 2021.ledger
+: 1629012399:0;apt search beancount
+: 1629012419:0;sudo apt install ledger2beancount
+: 1629012508:0;rehash
+: 1629012549:0;ledger2beancount journal.ledger > test.beancount
+: 1629012557:0;bean-check test.beancount
+: 1629012597:0;ledger2beancount meta.ledger > meta.beancount
+: 1629012618:0;ledger2beancount 2021.ledger > 2021.beancount
+: 1629012816:0;ledger -f journal.ledger bal WellsFargo
+: 1629012834:0;ledger -f journal.ledger breg WellsFargo
+: 1629012837:0;ledger -f journal.ledger reg WellsFargo
+: 1629012986:0;hg st
+: 1629014117:0;ledger -f journal.ledger reg WellsFargo
+: 1629014124:0;ledger -f journal.ledger bal WellsFargo
+: 1629014142:0;ledger -f journal.ledger bal Transfer
+: 1629014150:0;ledger -f journal.ledger breg Transfer
+: 1629014153:0;ledger -f journal.ledger reg Transfer
+: 1629014165:0;ledger -f journal.ledger bal Transfer
+: 1629014198:0;ledger -f journal.ledger bal WellsFargo
+: 1629014254:0;ledger -f journal.ledger reg Assets:WellsFargo
+: 1629015120:0;ledger -f journal.ledger bal WellsFargo
+: 1629015128:0;ledger -f journal.ledger bal Transfer
+: 1629015405:0;ledger -f journal.ledger bal FifthThird
+: 1629015480:0;ledger -f journal.ledger bal Transfer
+: 1629015486:0;hg st
+: 1629015513:0;hg commit -m "added transfer account for money transitions"
+: 1629015539:0;hg st
+: 1629015550:0;ledger_import_invert Assets:FifthThird fifththird_20210812.csv
+: 1629015554:0;ledger -f journal.ledger bal Transfer
+: 1629015558:0;ledger -f journal.ledger bal FifthThird
+: 1629016960:0;ledger -f journal.ledger bal Transfer
+: 1629016963:0;ledger -f journal.ledger bal FifthThird
+: 1629016978:0;hg st
+: 1629016999:0;mv fifththird_20210812.csv 2021/processed/.
+: 1629017001:0;hg st
+: 1629017006:0;hg addremove 2021
+: 1629017008:0;hg st
+: 1629017046:0;hg commit -m "imported Fifth Third bank transactions"
+: 1629017052:0;hg st
+: 1629017065:0;ledger -f journal.ledger bal
+: 1629017635:0;hg d
+: 1629017671:0;hg commit -m "cleared some transactions from www.costco"
+: 1629017674:0;hg lga
+: 1629017677:0;hg st
+: 1629017764:0;hg commit -m "sorted transactions"
+: 1629019378:0;ledger -f journal.ledger bal
+: 1629019545:0;hg d
+: 1629019584:0;hg commit -m "cleared check transactions with accounts and things"
+: 1629019587:0;hg lga
+: 1629019825:0;hg st
+: 1629019836:0;npm i ledgerble
+: 1629020508:0;l
+: 1629020527:0;node_modules/.bin/ledgerble
+: 1629021641:0;l
+: 1629021678:0;ledger -M -f journal.ledger reg expenses
+: 1629021715:0;ledger -s -M -f journal.ledger reg expenses
+: 1629021771:0;ledger -M -f journal.ledger reg expenses
+: 1629021900:0;ledger -n -M -f journal.ledger reg expenses
+: 1629022004:0;ledger -n -M -f journal.ledger reg expenses or Mortgage
+: 1629022073:0;ledger  -M -f -C journal.ledger reg expenses or Mortgage
+: 1629022083:0;ledger  -M -C -f journal.ledger reg expenses or Mortgage
+: 1629022129:0;ledger -n -M -C -f journal.ledger reg expenses or Mortgage
+: 1629022223:0;ledger --period "feb" -M -C -f journal.ledger reg expenses or Mortgage
+: 1629022272:0;ledger --period "feb" -M -C -f journal.ledger reg "Expenses:Groceries"
+: 1629022282:0;ledger -M -C -f journal.ledger reg "Expenses:Groceries"
+: 1629022310:0;ledger -M -C -f journal.ledger reg entertainment
+: 1629022321:0;ledger -M -C -f journal.ledger reg house
+: 1629022338:0;ledger -n -M -C -f journal.ledger reg house
+: 1629022366:0;ledger -n -M -C -f journal.ledger reg income
+: 1629022412:0;ledger --period "jun" -M -C -f journal.ledger reg income
+: 1629022427:0;ledger --period "jul" -M -C -f journal.ledger reg income
+: 1629022435:0;ledger --period "may" -M -C -f journal.ledger reg income
+: 1629022453:0;ledger --period "apr" -M -C -f journal.ledger reg income
+: 1629022488:0;ledger --period "mar" -M -C -f journal.ledger reg income
+: 1629022513:0;ledger --period "feb" -M -C -f journal.ledger reg income
+: 1629022563:0;ledger -n -M -C -f journal.ledger reg expenses | income
+: 1629022567:0;ledger -n -M -C -f journal.ledger reg expenses or income
+: 1629022717:0;ledger -n -M -C -f journal.ledger bal ^expenses ^income
+: 1629023155:0;ledger -n -M -C -f journal.ledger bal ^expenses
+: 1629023170:0;ledger -n -M -C -f journal.ledger bal expenses
+: 1629023180:0;ledger -n -M -f journal.ledger bal expenses
+: 1629023187:0;ledger -n -M -f journal.ledger bal ^expenses ^income
+: 1629023201:0;ledger -n -M -f journal.ledger reg ^expenses ^income
+: 1629023208:0;ledger -n -M -f journal.ledger reg ^expenses
+: 1629023214:0;ledger -n -M -f journal.ledger reg ^income
+: 1629079799:0;l
+: 1629079805:0;hg st
+: 1629079823:0;echo node_modules >> .hgignore
+: 1629079825:0;hg st
+: 1629079840:0;echo package.json >> .hgignore
+: 1629079848:0;echo package-lock.json >> .hgignore
+: 1629079851:0;hg st
+: 1629079875:0;hg push
+: 1629079885:0;ledger -n -M -f journal.ledger reg ^income
+: 1629079898:0;ledger -n -M -f journal.ledger reg ^expense ^income
+: 1629081590:0;ledger  -M -f journal.ledger reg ^assets
+: 1629081602:0;ledger  -M -f journal.ledger reg WellsFargo
+: 1629081622:0;ledger  -M -f journal.ledger reg
+: 1629081634:0;ledger  -M -f journal.ledger reg Transfer
+: 1629082783:0;hg st
+: 1629082786:0;hg d
+: 1629082814:0;hg commit -m "added information about all www.costco transactions"
+: 1629082817:0;hg push
+: 1629082822:0;hg st
+: 1629082824:0;hg lga
+: 1629082832:0;rm t.ledger
+: 1629082834:0;hg st
+: 1629082842:0;l
+: 1629083423:0;hg st
+: 1629083428:0;hg add .hgignore
+: 1629083435:0;hg commit -m "added ignore files"
+: 1629083437:0;hg st
+: 1629083439:0;hg lga
+: 1629083446:0;less hsa_20210101_20210806.csv
+: 1629083583:0;ledger_import Assets:HSA hsa_20210101_20210806.csv
+: 1629083587:0;hg st
+: 1629083602:0;hg commit -m "added Assets:HSA account"
+: 1629083605:0;hg st
+: 1629083670:0;ledger_import Assets:HSA hsa_20210101_20210806.csv
+: 1629083740:0;. ./csvimport.sh
+: 1629083742:0;hg st
+: 1629083747:0;ledger_import Assets:HSA hsa_20210101_20210806.csv
+: 1629083760:0;ledger_import_hsa Assets:HSA hsa_20210101_20210806.csv
+: 1629083764:0;hg st
+: 1629083787:0;hg rever -Ca 2021.ledger
+: 1629083791:0;hg st
+: 1629083815:0;. ./csvimport.sh
+: 1629083818:0;ledger_import_hsa Assets:HSA hsa_20210101_20210806.csv
+: 1629083870:0;mv hsa_20210101_20210806.csv 2021/processed/.
+: 1629083873:0;hg st
+: 1629083876:0;hg addremove
+: 1629083889:0;hg commit -m "added HSA transactions (need cleanup)"
+: 1629083891:0;hg push
+: 1629127660:0;hg st
+: 1629127673:0;ledger -f journal.ledger print
+: 1629127691:0;ledger -f journal.ledger print | hledger -f- bal
+: 1629127980:0;ledger -f journal.ledger print | hledger -f- reg
+: 1629127990:0;ledger -f journal.ledger print | hledger -f- reg FifthThird
+: 1629128033:0;ledger -f journal.ledger reg FifthThird
+: 1629137767:0;cd PULSE
+: 1629137769:0;l
+: 1629137774:0;ag bulg
+: 1629137778:0;ag bulk
+: 1629137817:0;pulse-emergency-census-application/
+: 1629137821:0;ag csv
+: 1629137831:0;te src/actions/bulk-upload-actions.js
+: 1629138343:0;cd ..
+: 1629138349:0;ag dateValidator
+: 1629138354:0;cd ..
+: 1629138363:0;AiPlatform
+: 1629138364:0;l
+: 1629138457:0;popd
+: 1629138467:0;cd pulse-emergency-census-application
+: 1629138471:0;te src/actions/bulk-upload-actions.js
+: 1629139352:0;hg st
+: 1629139355:0;gst
+: 1629139357:0;gd
+: 1629139363:0;ga -u
+: 1629139377:0;gcmsg "CEN-1610: updated package-lock"
+: 1629139379:0;g push
+: 1629139384:0;g pull
+: 1629139397:0;g lga
+: 1629139407:0;g push
+: 1629139412:0;hg lga
+: 1629139414:0;g lga
+: 1629139767:0;hg st
+: 1629139769:0;hg d
+: 1629139793:0;hg commit -m "added missing transaction (it was skipped) because ledger thought it's a dup"
+: 1629139802:0;hg log tip
+: 1629139813:0;hg lg
+: 1629139820:0;hg log - r49
+: 1629139822:0;hg log - r 49
+: 1629139825:0;hg log -r 49
+: 1629139831:0;hg show -r 49
+: 1629139836:0;hg diff -r 49
+: 1629139838:0;hg diff -r 48
+: 1629142762:0;htop
+: 1629143348:0;ag Patient
+: 1629143367:0;ag "Patient.+Not.+Found"
+: 1629143373:0;ag -i "Patient.+Not.+Found"
+: 1629143956:0;gst
+: 1629143959:0;ga -u
+: 1629143978:0;gcmsg "CEN-1610: added error message from back-end shows up"
+: 1629143995:0;./gradlew clean build
+: 1629144086:0;./gradlew clean build && ./gradlew npm_run_build && ./gradlew war && scp -i ~/Projects/AWS/bastion_host.pem ./build/libs/ulp-snapshot-portlet.war  ubuntu@54.204.89.13:/home/ubuntu/.
+: 1629144523:0;hg st
+: 1629144526:0;hg d
+: 1629144542:0;hg commit -m "added bonus account"
+: 1629144735:0;hg st
+: 1629144743:0;hg commit -m "marked salary bonus"
+: 1629144745:0;hg lga
+: 1629144758:0;ledger2beancount --help
+: 1629144776:0;ledger2beancount meta.ledger
+: 1629144793:0;ledger2beancount meta.ledger > meta.beancount
+: 1629144974:0;ledger2beancount meta.ledger
+: 1629145011:0;ledger2beancount 2021.ledger 2021.beancount
+: 1629145046:0;te ledger2bean.yaml
+: 1629145123:0;ledger2beancount -C ledger2bean.yaml 2021.ledger
+: 1629145134:0;ledger2beancount -c ledger2bean.yaml 2021.ledger
+: 1629145182:0;ledger2beancount -c ledger2bean.yaml 2021.ledger > 2021.beancount
+: 1629145194:0;ledger2beancount journal.ledger
+: 1629145204:0;ledger2beancount journal.ledger > journal.beancount
+: 1629145211:0;apt search fava
+: 1629145250:0;sudo apt install python3-fava
+: 1629145303:0;ssh -i ~/Projects/AWS/bastion_host.pem ubuntu@54.204.89.13
+: 1629145892:0;g lga
+: 1629145895:0;g push
+: 1629146033:0;rehash
+: 1629146041:0;fava journal.beancount
+: 1629146108:0;pip search wekzeug
+: 1629146116:0;pip list installed
+: 1629146868:0;pip install Werkzeug==0.16.1
+: 1629146875:0;pip list installed
+: 1629146881:0;fava journal.beancount
+: 1629147427:0;l
+: 1629147594:0;ledger2beancount -c ledger2bean.yaml 2021.ledger > 2021.beancount
+: 1629147610:0;ledger2beancount -c ledger2bean.yaml 2021.ledger | less 
+: 1629147618:0;ledger2beancount -c ledger2bean.yaml 2021.ledger
+: 1629147628:0;hg st
+: 1629147785:0;ledger -f journal.ledger print
+: 1629147795:0;ledger print -h
+: 1629163819:0;e . &
+: 1629165116:0;hg st
+: 1629165117:0;hg d
+: 1629165121:0;hg st
+: 1629165135:0;hg commit -m "cleaned up HSA transactions"
+: 1629165163:0;ledger -f journal.ledger reg chase
+: 1629165211:0;ledger -f journal.ledger reg amazon
+: 1629165215:0;ledger -f journal.ledger reg chase
+: 1629165226:0;ledger -f journal.ledger reg transfer
+: 1629165764:0;hg st
+: 1629165766:0;hg d
+: 1629165788:0;hg commit -m "cleanup more transactions"
+: 1629168082:0;sudo apt search gnuplot
+: 1629168869:0;sudo apt update
+: 1629168977:0;apt list --upgradeable
+: 1629169117:0;curl https://packages.grafana.com/gpg.key | sudo apt-key add -
+: 1629169132:0;sudo add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
+: 1629171929:0;hg d
+: 1629171951:0;hg st
+: 1629172019:0;hg commit -m "did the payees for written checks and cleaned some unknown transactions"
+: 1629172022:0;hg lga
+: 1629172033:0;hg push
+: 1629172770:0;hg st
+: 1629172771:0;hg d
+: 1629172806:0;hg commit "added income unexpected account and cleaned up some unknown transactions"
+: 1629172811:0;hg commit -m "added income unexpected account and cleaned up some unknown transactions"
+: 1629172813:0;l
+: 1629207210:0;e . &
+: 1629207786:0;htop
+: 1629209337:0;ledger --strict -f journal.ledger reg transfer
+: 1629217817:0;cd ..
+: 1629217826:0;.dotfile
+: 1629217828:0;.dotfiles
+: 1629217832:0;~/.dotfiles
+: 1629217834:0;l

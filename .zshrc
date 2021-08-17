@@ -280,6 +280,11 @@ alias gco='git checkout'
 alias gd='git diff'
 alias gst='git status'
 alias grhh='git reset --hard HEAD'
+alias gcm='git checkout master'
+
+# ** Mercurial
+alias hgst='hg status'
+alias hgcm='hg commit -m'
 
 # ** Grep
 alias grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'

@@ -16,7 +16,6 @@
 : 1626100345:0;ag cookie
 : 1626105565:0;g clone https://git.ainq.com/ulp-development/java-libraries/ulp-immunizations-ws-api.git
 : 1626105595:0;g co -b CEN-1507-update-wsdl-location
-: 1626105603:0;cat README.md
 : 1626105634:0;wsimport -keep -extension https://www.mdimmunet.org/mdws/client_Service?wsdl
 : 1626105774:0;curl https://www.mdimmunet.org/mdws/client_Service?wsdl >> src/main/resources/org/mdimmunet/WSDL.wsdl
 : 1626105785:0;curl https://www.mdimmunet.org/mdws/client_Service?wsdl
@@ -126,7 +125,6 @@
 : 1626578414:0;sass --help
 : 1626578462:0;l public/assets/css
 : 1626579547:0;explorer .
-: 1626579556:0;explorer.exe .
 : 1626580016:0;rm assets/svg/Hamburger_icon.svg:Zone.Identifier
 : 1626580069:0;hg commit -m "made code/kbd font bigger, bg darker and added few notes in README. Added hamburger svg asset"
 : 1626582245:0;hg commit -m "added phone tablen desktop screen differentiations and modified styles of top navigation."
@@ -325,7 +323,6 @@
 : 1626969237:0;cat *.Dot*
 : 1626969262:0;cat *.sl
 : 1626969264:0;cat *.sln
-: 1626970004:0;pulse.middleware.ee
 : 1626970015:0;l PULSE.Middleware.Api.Activation
 : 1626970029:0;cat  PULSE.Middleware.Api.Activation/DockerfileAWS
 : 1626975619:0;cat ci-cd.sh
@@ -380,7 +377,6 @@
 : 1627065756:0;gcmsg "CEN-1610: updated prem medical record DAO with better queries"
 : 1627065810:0;rm ideaIC-2021.1.3.tar.gz
 : 1627065817:0;sudo rm ideaIC-2021.1.3.tar.gz
-: 1627065833:0;l /mnt/c/Users/esharapov/Downloads
 : 1627065849:0;sudo cp /mnt/c/Users/esharapov/Downloads/spring-tool-suite-4-4.11.0.RELEASE-e4.20.0-linux.gtk.x86_64.tar.gz .
 : 1627065863:0;sudo tar xzvf spring-tool-suite-4-4.11.0.RELEASE-e4.20.0-linux.gtk.x86_64.tar.gz
 : 1627065910:0;sudo chown -R esharapov:esharapov sts-4.11.0.RELEASE
@@ -402,7 +398,6 @@
 : 1627066790:0;ag findbugs
 : 1627066820:0;./gradlew wrapper --gradle-version 6.8.3
 : 1627066869:0;./gradlew wrapper --gradle-version 6.5.1
-: 1627066958:0;te build.gradle
 : 1627067363:0;cat ../ulp-breakglass-portlet/build.gradle
 : 1627067378:0;cat ../ulp-breakglass-portlet/build.gradle | grep findbugs
 : 1627067404:0;cat ../ulp-breakglasstoken-lib/build.gradle| grep find
@@ -417,15 +412,11 @@
 : 1627070122:0;which gcov
 : 1627071629:0;ga-u
 : 1627071653:0;gcmsg "CEN-1610: added more logging and debug information"
-: 1627072013:0;./gradlew npm_run_build
-: 1627072086:0;./gradlew war
-: 1627072104:0;scp -i ~/Projects/AWS/bastion_host.pem ./build/libs/ulp-snapshot-portlet.war  ubuntu@54.204.89.13:/home/ubuntu/.
 : 1627308425:0;dotnet fsi --help
 : 1627316482:0;chmod +x medicasoft_probe.sh
 : 1627316677:0;./medicasoft_probe.sh -m 1234 asdfasdf
 : 1627317004:0;./medicasoft_probe.sh -m
 : 1627317180:0;./medicasoft_probe.sh -m 12341234
-: 1627325056:0;ulp-snapshot-portlet
 : 1627325059:0;./medicasoft_probe.sh
 : 1627325063:0;./medicasoft_probe.sh -m 1234
 : 1627325178:0;./medicasoft_probe.sh -t 1234
@@ -467,10 +458,8 @@
 : 1627417306:0;pgrep --help
 : 1627417318:0;pgrep -a java
 : 1627417343:0;pgrep java | xargs kill -9
-: 1627417350:0;htop
 : 1627423795:0;gcmsg "OPEB-2219: completed steps for Gitlap HIES pipeline"
 : 1627423813:0;cd pipeline-common
-: 1627426473:0;cd PULSE
 : 1627426492:0;cd GATE
 : 1627426497:0;g clone https://git.ainq.com/ai-gateway/certificate-management-service.git
 : 1627426541:0;g clone https://git.ainq.com/ai-gateway/aigatewaydocker.git
@@ -589,7 +578,6 @@
 : 1627922102:0;g co release_4.1.0
 : 1627922441:0;gitk --all
 : 1627935789:0;cd ai-worklog
-: 1627935802:0;gcmsg "updated worklog"
 : 1627935921:0;l .gitlab-ci
 : 1627935945:0;mv .gitlab-ci/hies.gitlab-ci.yml .gitlab-ci/hies.gitlab-ci.yaml
 : 1627936025:0;gcmsg "OPEB-2219: updated re-usable steps file name"
@@ -701,7 +689,6 @@
 : 1628193684:0;apt search hledger
 : 1628193705:0;sudo apt install hledger
 : 1628193784:0;hledger --help
-: 1628195235:0;g co r2021-10
 : 1628195275:0;g co OPEB-1987-use-apm-plugin
 : 1628195285:0;g merge r2021-10
 : 1628195422:0;gcmsg "OPEB-1987: updated version of enterprise plugins for pulse service"
@@ -711,7 +698,6 @@
 : 1628273525:0;hg config
 : 1628273748:0;cat .hg/git/config
 : 1628273820:0;te .hg/hgrc
-: 1628273841:0;hg out
 : 1628279605:0;aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION
 : 1628279634:0;AWS_DEFAULT_REGION=us-east-1 aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION
 : 1628284124:0;cat amex
@@ -749,7 +735,6 @@
 : 1628307726:0;hledger import amex_20210101_20210806_f.csv -f journal.ledger
 : 1628386866:0;ruby
 : 1628386871:0;apt search ruby
-: 1628387082:0;sudo apt update
 : 1628387109:0;apt list --upgradable
 : 1628387201:0;apt search ruby-full
 : 1628387229:0;sudo apt install ruby-full
@@ -763,12 +748,9 @@
 : 1628387377:0;hg st 
 : 1628387391:0;hg commit "updated history and PATH"
 : 1628387396:0;hg commit -m "updated history and PATH"
-: 1628387405:0;hg in
 : 1628387417:0;hg merge default
-: 1628387421:0;hg book
 : 1628387431:0;hg branches
 : 1628388485:0;cd 2019
-: 1628388496:0;ledger -f journal.ledger bal
 : 1628388504:0;ledger -f journal.ledger accounts
 : 1628388555:0;ledger -f journal.ledger accounts >> ../accounts.txt
 : 1628388564:0;l;
@@ -795,7 +777,6 @@
 : 1628396679:0;csvcut -c Description, 'Extended Details' amex_20210101_20210311_f.csv | tail -1
 : 1628396685:0;csvcut -c Description,'Extended Details' amex_20210101_20210311_f.csv | tail -1
 : 1628397560:0;pip install ledger-autosync
-: 1628397577:0;rehash
 : 1628397628:0;mv /mnt/c/Users/esharapov/Downloads/activity.qfx amex_20210101_20210311.qfx
 : 1628397637:0;rm /mnt/c/Users/esharapov/Downloads/activity.csv
 : 1628398032:0;ledger-autosync amex_20210101_20210311.qfx
@@ -820,7 +801,6 @@
 : 1628401387:0;echo date,desc,person,amount,transid,note > amex.csv && csvcut -c 1,2,3,5,12,13 amex_20210101_20210311_f.csv | tail -n +1 >> amex.csv
 : 1628401402:0;echo date,desc,person,amount,transid,note > amex.csv && csvcut -c 1,2,3,5,12,13 amex_20210101_20210311_f.csv | tail -n +2 >> amex.csv
 : 1628401821:0;touch journal.ledger
-: 1628402116:0;ledger convert --help
 : 1628403580:0;touch 2021.ledger
 : 1628403619:0;rm payees.txt
 : 1628403626:0;rm accounts.txt
@@ -849,7 +829,6 @@
 : 1628485135:0;ledger convert capitalone.csv --input-date-format "%m/%d/%Y" \\
   --account Liabilities:CapitalOne --rich-data \\
   --file journal.ledger >> 2021.ledger
-: 1628521587:0;pgrep emacs | xargs kill
 : 1628531150:0;cd /home/esharapov/Projects/Money/
 : 1628532253:0;amex_prep amex_20210101_20210806_f.csv
 : 1628532368:0;less 2021.ledger
@@ -895,7 +874,6 @@ done\
 : 1628536558:0;seq 1 20 | cat
 : 1628536561:0;seq 1 20 | tac
 : 1628537781:0;less capitalone.csv
-: 1628538372:0;idea . &
 : 1628540792:0;g co CEN-1610-app
 : 1628541224:0;./gradlew dependencies
 : 1628563177:0;cd ulp-snapshot-lib
@@ -908,7 +886,6 @@ done\
 : 1628564356:0;mv amex_20210101_20210806_f.csv amex_20210101_20210806.csv
 : 1628564886:0;rm amex.csv
 : 1628565026:0;rm capitalone.csv
-: 1628565045:0;hg addremove
 : 1628565060:0;hg commit -m "renamed amex csv file"
 : 1628565125:0;amex_prep amex_20210101_20210806.csv
 : 1628565138:0;capitalone_prep capitalone_20210101_20210311.csv capitalone_20210312_20210806.csv
@@ -920,16 +897,11 @@ done\
 : 1628622613:0;cd examples
 : 1628622625:0;diff simple/index.js using-apm/index.js
 : 1628625081:0;gcm
-: 1628625085:0;g co master
-: 1628625129:0;gd
-: 1628625916:0;grhh
 : 1628625946:0;g clean -f
 : 1628626322:0;g co -b CEN-1610-refactor
 : 1628629224:0;l examples/
 : 1628629232:0;g co OPEB-1987-datadog-api
 : 1628629241:0;l examples
-: 1628631159:0;ssh -i ~/Projects/AWS/bastion_host.pem ubuntu@54.204.89.13
-: 1628631417:0;ulp-snapshot-lib
 : 1628631450:0;l /mnt/c/Users/esharapov/OneDrive\ -\ Audacious\ Inquiry\ LLC/
 : 1628631496:0;l /mnt/c/Users/esharapov/OneDrive\ -\ Audacious\ Inquiry\ LLC/Files
 : 1628631509:0;l /mnt/c/Users/esharapov/OneDrive\ -\ Audacious\ Inquiry\ LLC/Files/Projects
@@ -944,27 +916,22 @@ done\
 : 1628633173:0;ag --java Task
 : 1628633184:0;ag --java List
 : 1628633229:0;ag --java Patient
-: 1628634851:0;popd
 : 1628634894:0;gcmsg "CEN-1610: new version of premium medication client""
 : 1628634896:0;gcmsg "CEN-1610: new version of premium medication client"
 : 1628634929:0;g co CEN-1610-prem-med-history-patient-not-found
 : 1628651245:0;./gradlew goJF
-: 1628654359:0;./gradlew clean build
 : 1628656617:0;ga .
 : 1628656658:0;gcmsg "CEN-1610: changed http client to closable one for prem medication history"
 : 1628656827:0;less amex.csv
 : 1628656902:0;less citi.csv
-: 1628656931:0;rm citi.csv
 : 1628657371:0;citi_prep citi_costco_20210101_20210312.csv citi_costco_20210312_20210806.csv
 : 1628657474:0;hg commit -m "updated citi_prep to work with commas in quoted fields"
 : 1628657930:0;ledger_import 'Liabilities:WF Cash Wise' wf_chk.csv
 : 1628658355:0;hg commit "added inverted leger import so i can import wf credit cards csv"
 : 1628658361:0;hg commit -m "added inverted leger import so i can import wf credit cards csv"
 : 1628658369:0;rm 2021.ledger
-: 1628658390:0;. ./csvimport.sh
 : 1628658404:0;ledger_import Liabilities:AmEx amex.csv
 : 1628658412:0;ledger_import Liabilities:CapitalOne capitalone.csv
-: 1628658421:0;ledger_import Liabilities:CitiCostco citi.csv
 : 1628658443:0;ledger_import Assets:Suntrust suntrust.csv
 : 1628658454:0;rm wf_chk.csv
 : 1628658469:0;hg add 2021.ledger
@@ -978,7 +945,6 @@ done\
 : 1628658696:0;ledger_import_invert 'Liabilities:WF Cash Wise' wf_chk.csv
 : 1628658709:0;wf_prep wf_signature_cc_20210101_20210311.csv wf_signature_cc_20210312_20210806.csv 
 : 1628658749:0;ledger_import_invert 'Liabilities:WF Visa' wf_chk.csv
-: 1628658755:0;hg d
 : 1628658800:0;hg commit -m "imported trans from wf cashwise and wf visa"
 : 1628658834:0;rm amex.csv capitalone.csv citi.csv suntrust.csv wf_chk.csv
 : 1628658859:0;mkdir -p 2021/processed
@@ -986,21 +952,11 @@ done\
 : 1628658916:0;mv amex_20210101_20210806.csv capitalone_20210101_20210311.csv capitalone_20210312_20210806.csv citi_costco_20210101_20210312.csv citi_costco_20210312_20210806.csv suntrust_chk_20210101_20210311.csv suntrust_chk_20210312_20210610.csv suntrust_chk_20210611_20210806.csv wf_cashwise_cc_20210101_20210311.csv wf_cashwise_cc_20210312_20210806.csv wf_checking_20210101_20210311.csv wf_checking_20210312_20210806.csv wf_signature_cc_20210101_20210311.csv wf_signature_cc_20210312_20210806.csv 2021/processed/.
 : 1628658940:0;hg addremove --similarity 99
 : 1628658967:0;hg commit -m "moved processed csv files to 2021/processed"
-: 1628658969:0;hg st
-: 1628658971:0;hg push
-: 1628658976:0;hg lga
-: 1628704625:0;g pull
 : 1628704666:0;npm i
 : 1628704716:0;gcmsg "OPEB-1987: updated package lock file"
-: 1628707802:0;gst
-: 1628707809:0;ga -u
 : 1628707826:0;gcmsg "OPEB-1987: change node version to 12"
-: 1628707830:0;g push
-: 1628708273:0;g lga
 : 1628708304:0;cd gateway.netcore.services
-: 1628708801:0;pulse-nodejs-service
 : 1628708982:0;te ainq-microservice-framework/src/plugins/enterprise-aws-plugin/aws-sns-plugin.js
-: 1628709948:0;cat ~/.nuget/NuGet/NuGet.Config
 : 1628710119:0;nuget
 : 1628710418:0;dotnet nuget list source
 : 1628710496:0;dotnet nuget list
@@ -1015,7 +971,6 @@ done\
 : 1628710929:0;dotnet new -name EnsTest -lang F#
 : 1628710936:0;dotnet new -n EnsTest -lang F#
 : 1628710945:0;dotnet new console -n EnsTest -lang F#
-: 1628710951:0;cd EnsTest
 : 1628710976:0;dotnet package --help
 : 1628710984:0;dotnet package
 : 1628710994:0;dotnet
@@ -1025,384 +980,169 @@ done\
 : 1628711140:0;dotnet nuget add --help
 : 1628711152:0;dotnet nuget add source --help
 : 1628711310:0;dotnet nuget add source https://nexus.ainq.com/repository/nuget.enssandbox-ainq.proxy/  -n NexusNuget -u esharapov -p ENSharap1982//// --store-password-in-clear-text
-: 1628711502:0;te ~/.nuget/NuGet/NuGet.Config
-: 1628711525:0;dotnet add package Gateway.Common
-: 1628711947:0;e . &
 : 1628712631:0;GATE
 : 1628712635:0;gateway.netcore.services
-: 1628712637:0;te .
 : 1628715458:0;cd ../PULSE
 : 1628715464:0;ag TopicArn
 : 1628715510:0;sns
 : 1628715518:0;cd pulse-nodejs-service
 : 1628715521:0;ag sns
-: 1628731839:0;cd ..
 : 1628731903:0;te ainq-microservice-framework/src/managers/aws-param-store-config.js
-: 1628732089:0;AiPlatform
 : 1628732096:0;ag "Invalid parameter"
 : 1628732098:0;ag "InvalidParameter"
 : 1628732112:0;ainq-microservice-framework
 : 1628732117:0;cat .git/config
-: 1628780716:0;l
-: 1628783319:0;ai-worklog
-: 1628783324:0;e . &
 : 1628784331:0;pgrep emacs | xargs kill
 : 1628784343:0;ps aux emacs
-: 1628784353:0;ps aux | grep emacs
 : 1628784360:0;kill -9 444
 : 1628784363:0;ps aux | grep emacs
-: 1628784368:0;e . &
-: 1628788305:0;pulse-nodejs-service
 : 1628788309:0;te .
-: 1628795202:0;l
-: 1628795209:0;ulp-snapshot-lib
-: 1628795210:0;g lga
-: 1628795229:0;ulp-snapshot-portlet
 : 1628795239:0;te build.gradle
-: 1628795258:0;./gradlew clean build
-: 1628795342:0;./gradlew npm_run_build
-: 1628795418:0;./gradlew war
-: 1628796264:0;ssh -i ~/Projects/AWS/bastion_host.pem ubuntu@54.204.89.13
-: 1628796482:0;scp -i ~/Projects/AWS/bastion_host.pem ./build/libs/ulp-snapshot-portlet.war  ubuntu@54.204.89.13:/home/ubuntu/.
 : 1628797106:0;ping nexus.ainq.com
 : 1628797373:0;cd ~/Projects/FSharp
-: 1628797382:0;dotnet add package Gateway.Common
-: 1628797386:0;l
 : 1628797389:0;cd EnsTest
-: 1628797391:0;dotnet add package Gateway.Common
 : 1628797652:0;cat ~/.nuget/NuGet/NuGet.Config
 : 1628797816:0;dotnet nuget add source https://nexus.ainq.com/repository/nuget.org-proxy/  -n NexusOrgNuget -u esharapov -p ENSharap1982//// --store-password-in-clear-text
-: 1628797820:0;dotnet add package Gateway.Common
 : 1628797838:0;te ~/.nuget/NuGet/NuGet.Config
-: 1628797867:0;dotnet add package Gateway.Common
 : 1628797876:0;dotnet add package FSharp.Core
 : 1628797953:0;dotnet add package Moq
 : 1628797958:0;ls
 : 1628797964:0;less EnsTest.fsproj
 : 1628798113:0;dotnet add package Gateway.Common
-: 1628798826:0;ssh -i ~/Projects/AWS/bastion_host.pem ubuntu@54.204.89.13
-: 1628799169:0;ulp-snapshot-lib
-: 1628799203:0;idea . &
 : 1628799782:0;pulse.middleware.ee
 : 1628799791:0;explorer.exe .
-: 1628799832:0;gst
 : 1628799883:0;cat PULSE.Middleware.Api.Query/appsettings1.json
 : 1628799888:0;cat PULSE.Middleware.Api.Query/appsettings.json
-: 1628799917:0;gst
 : 1628799921:0;grhh
-: 1628799924:0;g co master
-: 1628799926:0;g pull
-: 1628800080:0;gst
-: 1628800083:0;ga -u
 : 1628800127:0;gcmsg "CEN-1610: added extra logging changes and super constructor call for prem med client"
-: 1628800129:0;g push
 : 1628800411:0;pipeline-common
-: 1628800414:0;g pull
-: 1628800418:0;g co master
-: 1628800419:0;g pull
-: 1628800422:0;g lga
 : 1628800459:0;gd dd-agent-fargate
-: 1628800710:0;./gradlew clean build
 : 1628801133:0;pulse-node-js
 : 1628801136:0;pulse-nodejs-service
 : 1628801146:0;g co master
-: 1628801149:0;g pull
 : 1628801159:0;g co r2021-10
-: 1628801161:0;g lga
-: 1628801172:0;g pull
-: 1628801175:0;g lga
 : 1628801184:0;echo trigger > README.md
-: 1628801187:0;ga -u
 : 1628801197:0;gcmsg "OPEB-1987: trigger re-build"
-: 1628801202:0;g push
 : 1628801212:0;./gradlew npm_run_build
 : 1628801311:0;./gradlew war
-: 1628801346:0;scp -i ~/Projects/AWS/bastion_host.pem ./build/libs/ulp-snapshot-portlet.war  ubuntu@54.204.89.13:/home/ubuntu/.
-: 1628802153:0;ssh -i ~/Projects/AWS/bastion_host.pem ubuntu@54.204.89.13
-: 1628803289:0;ga -u
 : 1628803333:0;gcmsg "CEN-1610: defensive programming (working around issues with initialization) for having http client builder available"
-: 1628803337:0;g push
 : 1628803626:0;history
-: 1628803670:0;./gradlew clean build && ./gradlew npm_run_build && ./gradlew war && scp -i ~/Projects/AWS/bastion_host.pem ./build/libs/ulp-snapshot-portlet.war  ubuntu@54.204.89.13:/home/ubuntu/.
-: 1628810410:0;ssh -i ~/Projects/AWS/bastion_host.pem ubuntu@54.204.89.13
 : 1628811116:0;te README.md
 : 1628811146:0;g co HEAD^2 -- README.md 
 : 1628811150:0;g co HEAD~2 -- README.md 
 : 1628811155:0;cat README.md
-: 1628811162:0;ga -u
 : 1628811178:0;gcmsg "OPEB-1987: trigger rebuild/redeploy"
-: 1628811180:0;g push
-: 1628811186:0;g lga
-: 1628822459:0;Money
-: 1628822462:0;hg st
-: 1628822487:0;l
-: 1628822690:0;e . &
-: 1628823090:0;hg st
-: 1628823092:0;hg d
-: 1628825470:0;hg st
-: 1628825472:0;hg d
 : 1628825552:0;hg commit -m "added new lines"
-: 1628831200:0;hgst
-: 1628831201:0;hg st
-: 1628831203:0;hg d
 : 1628831214:0;hg commit -m "cleared unknown transactions"
-: 1628831510:0;hg st
 : 1628834985:0;hg commit -m "added few accounts and cleared some of the transactions in the ledger"
-: 1628834988:0;hg lga
-: 1628834990:0;hg push
-: 1628834995:0;hg st
-: 1628835082:0;hg d
-: 1628835174:0;hg st
-: 1628835175:0;hg d
 : 1628835200:0;hg commit -m "paid amex from wf checking"
-: 1628835317:0;hg st
-: 1628835319:0;hg d
-: 1628835333:0;alias hgcm='hg commit -m'
 : 1628835345:0;hgcm "paid capitalone from wf"
-: 1628839200:0;hg st
-: 1628839202:0;hg d
 : 1628839221:0;hg d | less
-: 1628839238:0;l
 : 1628839302:0;hg commit -m "updated accounts in meta and did some transaction resolutions"
 : 1628861486:0;ai-worklog
-: 1628861488:0;gst
 : 1628861529:0;ga Worklog/*.png
-: 1628861531:0;gst
 : 1628861538:0;ga Worklog.org
 : 1628861545:0;gcmsg "updated worklog"
-: 1628861548:0;g push
 : 1628861659:0;ai-worklog/ 
-: 1628861665:0;e . &
-: 1628862508:0;l
-: 1628862512:0;gst
-: 1628862524:0;gd
 : 1628863311:0;Money
-: 1628863312:0;hg st
 : 1628869066:0;ledger tags -f journal.ledger
 : 1628869104:0;ledger stats -f journal.ledger
 : 1628869109:0;ledger bal -f journal.ledger
-: 1628870643:0;hg st
-: 1628870646:0;hg d
 : 1628870685:0;hg commit "added tax refund account and assigned some transactions there, sorted the transactions for 2021"
 : 1628870695:0;hg commit -m "added tax refund account and assigned some transactions there, sorted the transactions for 2021"
-: 1628870697:0;l
 : 1628871152:0;less 2021/processed/citi_costco_20210312_20210806.csv
-: 1628876813:0;. ./csvimport.sh
-: 1628876873:0;hgst
 : 1628876879:0;alias hgst='hg st'
-: 1628876881:0;hgst
 : 1628876885:0;hgcm
-: 1628876897:0;~/.dotfiles
 : 1628876921:0;hg book
-: 1628876924:0;hg lga
-: 1628876977:0;e . &
 : 1628877122:0;ulp-snapshot-portlet
 : 1628877135:0;git-effort
 : 1628877158:0;~/.dotfiles/.git-extras/bin/git-effort
-: 1628878717:0;htop
 : 1628884739:0;scp -i ~/Projects/AWS/bastion_host.pem ./build/libs/ulp-snapshot-portlet.war  ubuntu@54.204.89.13:/home/ubuntu/.
 : 1628884761:0;ulp-snapshot-lib
 : 1628884764:0;idea . &
-: 1628885057:0;ssh -i ~/Projects/AWS/bastion_host.pem ubuntu@54.204.89.13
-: 1628885119:0;e . &
 : 1628885259:0;alias hgst='hg status'
 : 1628885269:0;alias hgcm='hg commit -m'~
 : 1628885272:0;alias hgcm='hg commit -m'
-: 1628885288:0;ssh -i ~/Projects/AWS/bastion_host.pem ubuntu@54.204.89.13
-: 1628888322:0;./gradlew clean build && ./gradlew npm_run_build && ./gradlew war && scp -i ~/Projects/AWS/bastion_host.pem ./build/libs/ulp-snapshot-portlet.war  ubuntu@54.204.89.13:/home/ubuntu/.
-: 1628888578:0;gst
-: 1628888582:0;gd
-: 1628888586:0;ga -u
 : 1628888606:0;gcmsg "CEN-1610: defensive programming and more logging"
-: 1628888608:0;g push
-: 1628905714:0;hg push
-: 1628905718:0;hg lga
 : 1628905721:0;hg in
 : 1628905725:0;hg out
-: 1628905758:0;gst
 : 1628905759:0;hgst
 : 1628905765:0;hgd
-: 1628905767:0;hg d
-: 1628905782:0;. ./csvimport.sh
 : 1628905807:0;hgcm "corrected citi costco prep function in csvimport shell file"
 : 1628905814:0;hg commit -m "corrected citi costco prep function in csvimport shell file"
-: 1628907383:0;l
 : 1628907389:0;mkdir tests
 : 1628907393:0;mv test.ledger
 : 1628907398:0;mv test.ledger tests/.
-: 1628907400:0;l
-: 1628907403:0;hg st
-: 1628907409:0;hg addremove
 : 1628907424:0;hg commit "added test file for expense reimbursement"
 : 1628907429:0;hg commit -m "added test file for expense reimbursement"
 : 1628910187:0;ledger -f journal.ledger reg
-: 1628910198:0;hg st
 : 1628910219:0;citi_prep 2021/processed/citi_costco_20210312_20210806.csv
-: 1628910222:0;hg st
 : 1628910239:0;ledger_import Liabilities:CitiCostco citi.csv
-: 1628910241:0;hg st
 : 1628910246:0;rm citi.csv
-: 1628910248:0;hg d
 : 1628910302:0;hg commit -m "imported citi costco from 03/12 to 08/06"
-: 1628910305:0;hg st
 : 1628910936:0;hg commit -m "corrected clear status on unknown transactions"
-: 1628911868:0;hg st
-: 1628911869:0;hg d
 : 1628911891:0;hg commit -m "sorted transactions and added paypal assets account"
 : 1628911950:0;l /mnt/c/Users/esharapov/Downloads
-: 1628911959:0;lt /mnt/c/Users/esharapov/Downloads
 : 1628912002:0;mv /mnt/c/Users/esharapov/Downloads/Download.CSV paypal_20210101_20210812.csv
 : 1628912018:0;less /mnt/c/Users/esharapov/Downloads/EXPORT.CSV
 : 1628912125:0;mv /mnt/c/Users/esharapov/Downloads/EXPORT.CSV fifththird_20210812.csv
 : 1628912132:0;lt /mnt/c/Users/esharapov/Downloads
 : 1628912254:0;mv /mnt/c/Users/esharapov/Downloads/hsa_20210101_20210806.csv .
-: 1628912255:0;l
 : 1628912264:0;chmod -x *.csv
-: 1628912266:0;l
-: 1628912306:0;hg st
-: 1629002318:0;ledger_import Assets:FifthThird fifththird_20210812.csv
 : 1629002343:0;hg revert -Ca 2021.ledger
-: 1629002345:0;hg st
 : 1629003049:0;ledger convert --help
-: 1629004161:0;hg st
-: 1629004308:0;l
-: 1629004311:0;hg st
-: 1629004316:0;hg lga
-: 1629004336:0;hg st
-: 1629004362:0;hg lg
 : 1629004366:0;hg d 38
 : 1629004373:0;hg log 38
-: 1629004375:0;hg st
 : 1629004413:0;hg log -r 38
 : 1629004425:0;hg diff -r 38
 : 1629004429:0;hg diff -r 37
-: 1629004782:0;csvcut -n paypal_20210101_20210812.csv
 : 1629004820:0;csvcut -c Note paypal_20210101_20210812.csv
 : 1629004851:0;csvcut -c "Item Title" paypal_20210101_20210812.csv
 : 1629004888:0;csvcut -c "Item Title","Item ID" paypal_20210101_20210812.csv
 : 1629004906:0;csvcut -n paypal_20210101_20210812.csv
-: 1629005414:0;. ./csvimport.sh
-: 1629005426:0;paypal_prep paypal_20210101_20210812.csv
-: 1629005450:0;. ./csvimport.sh
-: 1629005451:0;paypal_prep paypal_20210101_20210812.csv
-: 1629005522:0;. ./csvimport.sh
 : 1629005523:0;paypal_prep paypal_20210101_20210812.csv
-: 1629005599:0;l
-: 1629006819:0;ledger -f journal.ledger reg paypal
-: 1629006904:0;ledger -f journal.ledger bal paypal
 : 1629007221:0;ledger -R -f journal.ledger bal paypal
-: 1629007561:0;ledger -f journal.ledger bal paypal
-: 1629007603:0;ledger -f journal.ledger reg paypal
-: 1629007746:0;hg d
-: 1629007802:0;ledger -f journal.ledger reg paypal
-: 1629007869:0;ledger -f journal.ledger bal paypal
-: 1629007936:0;hg st
 : 1629008048:0;ledger -f journal.ledger bal paypal
 : 1629008264:0;ledger -f journal.ledger reg paypal
-: 1629008301:0;hg st
 : 1629008313:0;mv paypal_20210101_20210812.csv 2021/processed
-: 1629008316:0;hg st
-: 1629008325:0;hg addremove 2021
-: 1629008327:0;hg st
 : 1629008340:0;hg commit -m "added paypal transactions and opening balance"
-: 1629008343:0;hg lga
-: 1629008346:0;hg push
-: 1629008350:0;hg st
-: 1629008399:0;ledger_import fifththird_20210812.csv
-: 1629008419:0;hg st
 : 1629008440:0;ledger_import fifththird_20210812.csv
-: 1629008451:0;hg st
 : 1629008463:0;ledger_import Assets:FifthThird fifththird_20210812.csv
-: 1629008502:0;hg st
-: 1629008510:0;hg revert -Ca
 : 1629008512:0;hg s t
-: 1629008515:0;hg st
 : 1629008524:0;ledger_import_invert fifththird_20210812.csv
-: 1629008555:0;ledger_import_invert Assets:FifthThird fifththird_20210812.csv
 : 1629008584:0;ledger bal FifthThird
-: 1629008591:0;ledger -f journal.ledger bal FifthThird
-: 1629008613:0;ledger -f journal.ledger reg FifthThird
-: 1629008629:0;hg st
-: 1629008633:0;hg revert -Ca
-: 1629008636:0;hg st
-: 1629008639:0;ledger -f journal.ledger reg FifthThird
-: 1629008652:0;ledger -f journal.ledger bal FifthThird
-: 1629008663:0;ledger_import_invert Assets:FifthThird fifththird_20210812.csv
-: 1629008767:0;ledger -f journal.ledger bal FifthThird
-: 1629008772:0;ledger -f journal.ledger reg FifthThird
-: 1629008935:0;ledger_import_invert Assets:FifthThird fifththird_20210812.csv
-: 1629008939:0;hg st
 : 1629008945:0;hg revert -Ca
-: 1629008948:0;hg st
-: 1629009321:0;l
-: 1629010203:0;ledger -f t.ledger bal
-: 1629010255:0;ledger -f journal.ledger bal WellsFargo
 : 1629010262:0;ledger -f t.ledger bal WellsFargo
 : 1629010311:0;ledger -f t.ledger bal WF
-: 1629010810:0;ledger -f t.ledger bal
-: 1629010814:0;ledger -f t.ledger reg
-: 1629010833:0;ledger -f t.ledger bal
 : 1629011566:0;ledger -f t.ledger reg
 : 1629011965:0;ledger -f t.ledger bal
 : 1629012216:0;pip install beancount
-: 1629012261:0;rehash
 : 1629012275:0;bean-check journal.ledger
-: 1629012320:0;hg st
 : 1629012330:0;bean-check 2021.ledger
 : 1629012399:0;apt search beancount
 : 1629012419:0;sudo apt install ledger2beancount
-: 1629012508:0;rehash
 : 1629012549:0;ledger2beancount journal.ledger > test.beancount
 : 1629012557:0;bean-check test.beancount
-: 1629012597:0;ledger2beancount meta.ledger > meta.beancount
 : 1629012618:0;ledger2beancount 2021.ledger > 2021.beancount
-: 1629012816:0;ledger -f journal.ledger bal WellsFargo
 : 1629012834:0;ledger -f journal.ledger breg WellsFargo
-: 1629012837:0;ledger -f journal.ledger reg WellsFargo
-: 1629012986:0;hg st
 : 1629014117:0;ledger -f journal.ledger reg WellsFargo
-: 1629014124:0;ledger -f journal.ledger bal WellsFargo
-: 1629014142:0;ledger -f journal.ledger bal Transfer
 : 1629014150:0;ledger -f journal.ledger breg Transfer
 : 1629014153:0;ledger -f journal.ledger reg Transfer
-: 1629014165:0;ledger -f journal.ledger bal Transfer
-: 1629014198:0;ledger -f journal.ledger bal WellsFargo
 : 1629014254:0;ledger -f journal.ledger reg Assets:WellsFargo
 : 1629015120:0;ledger -f journal.ledger bal WellsFargo
-: 1629015128:0;ledger -f journal.ledger bal Transfer
-: 1629015405:0;ledger -f journal.ledger bal FifthThird
-: 1629015480:0;ledger -f journal.ledger bal Transfer
-: 1629015486:0;hg st
 : 1629015513:0;hg commit -m "added transfer account for money transitions"
-: 1629015539:0;hg st
 : 1629015550:0;ledger_import_invert Assets:FifthThird fifththird_20210812.csv
-: 1629015554:0;ledger -f journal.ledger bal Transfer
-: 1629015558:0;ledger -f journal.ledger bal FifthThird
 : 1629016960:0;ledger -f journal.ledger bal Transfer
 : 1629016963:0;ledger -f journal.ledger bal FifthThird
-: 1629016978:0;hg st
 : 1629016999:0;mv fifththird_20210812.csv 2021/processed/.
-: 1629017001:0;hg st
 : 1629017006:0;hg addremove 2021
-: 1629017008:0;hg st
 : 1629017046:0;hg commit -m "imported Fifth Third bank transactions"
-: 1629017052:0;hg st
-: 1629017065:0;ledger -f journal.ledger bal
-: 1629017635:0;hg d
 : 1629017671:0;hg commit -m "cleared some transactions from www.costco"
-: 1629017674:0;hg lga
-: 1629017677:0;hg st
 : 1629017764:0;hg commit -m "sorted transactions"
 : 1629019378:0;ledger -f journal.ledger bal
-: 1629019545:0;hg d
 : 1629019584:0;hg commit -m "cleared check transactions with accounts and things"
-: 1629019587:0;hg lga
-: 1629019825:0;hg st
 : 1629019836:0;npm i ledgerble
-: 1629020508:0;l
 : 1629020527:0;node_modules/.bin/ledgerble
-: 1629021641:0;l
-: 1629021678:0;ledger -M -f journal.ledger reg expenses
 : 1629021715:0;ledger -s -M -f journal.ledger reg expenses
 : 1629021771:0;ledger -M -f journal.ledger reg expenses
 : 1629021900:0;ledger -n -M -f journal.ledger reg expenses
@@ -1432,89 +1172,45 @@ done\
 : 1629023187:0;ledger -n -M -f journal.ledger bal ^expenses ^income
 : 1629023201:0;ledger -n -M -f journal.ledger reg ^expenses ^income
 : 1629023208:0;ledger -n -M -f journal.ledger reg ^expenses
-: 1629023214:0;ledger -n -M -f journal.ledger reg ^income
-: 1629079799:0;l
-: 1629079805:0;hg st
 : 1629079823:0;echo node_modules >> .hgignore
-: 1629079825:0;hg st
 : 1629079840:0;echo package.json >> .hgignore
 : 1629079848:0;echo package-lock.json >> .hgignore
-: 1629079851:0;hg st
-: 1629079875:0;hg push
 : 1629079885:0;ledger -n -M -f journal.ledger reg ^income
 : 1629079898:0;ledger -n -M -f journal.ledger reg ^expense ^income
 : 1629081590:0;ledger  -M -f journal.ledger reg ^assets
 : 1629081602:0;ledger  -M -f journal.ledger reg WellsFargo
 : 1629081622:0;ledger  -M -f journal.ledger reg
 : 1629081634:0;ledger  -M -f journal.ledger reg Transfer
-: 1629082783:0;hg st
-: 1629082786:0;hg d
 : 1629082814:0;hg commit -m "added information about all www.costco transactions"
-: 1629082817:0;hg push
-: 1629082822:0;hg st
-: 1629082824:0;hg lga
 : 1629082832:0;rm t.ledger
-: 1629082834:0;hg st
-: 1629082842:0;l
-: 1629083423:0;hg st
 : 1629083428:0;hg add .hgignore
 : 1629083435:0;hg commit -m "added ignore files"
-: 1629083437:0;hg st
-: 1629083439:0;hg lga
 : 1629083446:0;less hsa_20210101_20210806.csv
-: 1629083583:0;ledger_import Assets:HSA hsa_20210101_20210806.csv
-: 1629083587:0;hg st
 : 1629083602:0;hg commit -m "added Assets:HSA account"
-: 1629083605:0;hg st
-: 1629083670:0;ledger_import Assets:HSA hsa_20210101_20210806.csv
-: 1629083740:0;. ./csvimport.sh
-: 1629083742:0;hg st
 : 1629083747:0;ledger_import Assets:HSA hsa_20210101_20210806.csv
-: 1629083760:0;ledger_import_hsa Assets:HSA hsa_20210101_20210806.csv
-: 1629083764:0;hg st
 : 1629083787:0;hg rever -Ca 2021.ledger
-: 1629083791:0;hg st
 : 1629083815:0;. ./csvimport.sh
 : 1629083818:0;ledger_import_hsa Assets:HSA hsa_20210101_20210806.csv
 : 1629083870:0;mv hsa_20210101_20210806.csv 2021/processed/.
-: 1629083873:0;hg st
 : 1629083876:0;hg addremove
 : 1629083889:0;hg commit -m "added HSA transactions (need cleanup)"
-: 1629083891:0;hg push
-: 1629127660:0;hg st
-: 1629127673:0;ledger -f journal.ledger print
 : 1629127691:0;ledger -f journal.ledger print | hledger -f- bal
 : 1629127980:0;ledger -f journal.ledger print | hledger -f- reg
 : 1629127990:0;ledger -f journal.ledger print | hledger -f- reg FifthThird
 : 1629128033:0;ledger -f journal.ledger reg FifthThird
 : 1629137767:0;cd PULSE
-: 1629137769:0;l
 : 1629137774:0;ag bulg
 : 1629137778:0;ag bulk
 : 1629137817:0;pulse-emergency-census-application/
 : 1629137821:0;ag csv
-: 1629137831:0;te src/actions/bulk-upload-actions.js
-: 1629138343:0;cd ..
 : 1629138349:0;ag dateValidator
-: 1629138354:0;cd ..
 : 1629138363:0;AiPlatform
-: 1629138364:0;l
 : 1629138457:0;popd
 : 1629138467:0;cd pulse-emergency-census-application
 : 1629138471:0;te src/actions/bulk-upload-actions.js
-: 1629139352:0;hg st
-: 1629139355:0;gst
 : 1629139357:0;gd
-: 1629139363:0;ga -u
 : 1629139377:0;gcmsg "CEN-1610: updated package-lock"
-: 1629139379:0;g push
 : 1629139384:0;g pull
-: 1629139397:0;g lga
-: 1629139407:0;g push
-: 1629139412:0;hg lga
-: 1629139414:0;g lga
-: 1629139767:0;hg st
-: 1629139769:0;hg d
 : 1629139793:0;hg commit -m "added missing transaction (it was skipped) because ledger thought it's a dup"
 : 1629139802:0;hg log tip
 : 1629139813:0;hg lg
@@ -1524,7 +1220,6 @@ done\
 : 1629139831:0;hg show -r 49
 : 1629139836:0;hg diff -r 49
 : 1629139838:0;hg diff -r 48
-: 1629142762:0;htop
 : 1629143348:0;ag Patient
 : 1629143367:0;ag "Patient.+Not.+Found"
 : 1629143373:0;ag -i "Patient.+Not.+Found"
@@ -1533,21 +1228,14 @@ done\
 : 1629143978:0;gcmsg "CEN-1610: added error message from back-end shows up"
 : 1629143995:0;./gradlew clean build
 : 1629144086:0;./gradlew clean build && ./gradlew npm_run_build && ./gradlew war && scp -i ~/Projects/AWS/bastion_host.pem ./build/libs/ulp-snapshot-portlet.war  ubuntu@54.204.89.13:/home/ubuntu/.
-: 1629144523:0;hg st
-: 1629144526:0;hg d
 : 1629144542:0;hg commit -m "added bonus account"
-: 1629144735:0;hg st
 : 1629144743:0;hg commit -m "marked salary bonus"
-: 1629144745:0;hg lga
 : 1629144758:0;ledger2beancount --help
-: 1629144776:0;ledger2beancount meta.ledger
 : 1629144793:0;ledger2beancount meta.ledger > meta.beancount
 : 1629144974:0;ledger2beancount meta.ledger
 : 1629145011:0;ledger2beancount 2021.ledger 2021.beancount
 : 1629145046:0;te ledger2bean.yaml
 : 1629145123:0;ledger2beancount -C ledger2bean.yaml 2021.ledger
-: 1629145134:0;ledger2beancount -c ledger2bean.yaml 2021.ledger
-: 1629145182:0;ledger2beancount -c ledger2bean.yaml 2021.ledger > 2021.beancount
 : 1629145194:0;ledger2beancount journal.ledger
 : 1629145204:0;ledger2beancount journal.ledger > journal.beancount
 : 1629145211:0;apt search fava
@@ -1556,38 +1244,25 @@ done\
 : 1629145892:0;g lga
 : 1629145895:0;g push
 : 1629146033:0;rehash
-: 1629146041:0;fava journal.beancount
 : 1629146108:0;pip search wekzeug
-: 1629146116:0;pip list installed
 : 1629146868:0;pip install Werkzeug==0.16.1
 : 1629146875:0;pip list installed
 : 1629146881:0;fava journal.beancount
-: 1629147427:0;l
 : 1629147594:0;ledger2beancount -c ledger2bean.yaml 2021.ledger > 2021.beancount
 : 1629147610:0;ledger2beancount -c ledger2bean.yaml 2021.ledger | less 
 : 1629147618:0;ledger2beancount -c ledger2bean.yaml 2021.ledger
-: 1629147628:0;hg st
 : 1629147785:0;ledger -f journal.ledger print
 : 1629147795:0;ledger print -h
-: 1629163819:0;e . &
-: 1629165116:0;hg st
-: 1629165117:0;hg d
-: 1629165121:0;hg st
 : 1629165135:0;hg commit -m "cleaned up HSA transactions"
-: 1629165163:0;ledger -f journal.ledger reg chase
 : 1629165211:0;ledger -f journal.ledger reg amazon
 : 1629165215:0;ledger -f journal.ledger reg chase
 : 1629165226:0;ledger -f journal.ledger reg transfer
-: 1629165764:0;hg st
-: 1629165766:0;hg d
 : 1629165788:0;hg commit -m "cleanup more transactions"
 : 1629168082:0;sudo apt search gnuplot
 : 1629168869:0;sudo apt update
 : 1629168977:0;apt list --upgradeable
 : 1629169117:0;curl https://packages.grafana.com/gpg.key | sudo apt-key add -
 : 1629169132:0;sudo add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
-: 1629171929:0;hg d
-: 1629171951:0;hg st
 : 1629172019:0;hg commit -m "did the payees for written checks and cleaned some unknown transactions"
 : 1629172022:0;hg lga
 : 1629172033:0;hg push
@@ -1595,7 +1270,6 @@ done\
 : 1629172771:0;hg d
 : 1629172806:0;hg commit "added income unexpected account and cleaned up some unknown transactions"
 : 1629172811:0;hg commit -m "added income unexpected account and cleaned up some unknown transactions"
-: 1629172813:0;l
 : 1629207210:0;e . &
 : 1629207786:0;htop
 : 1629209337:0;ledger --strict -f journal.ledger reg transfer
@@ -1604,3 +1278,192 @@ done\
 : 1629217828:0;.dotfiles
 : 1629217832:0;~/.dotfiles
 : 1629217834:0;l
+: 1629218003:0;/bin/env zsh
+: 1629218009:0;/bin/env bash
+: 1629225883:0;l
+: 1629226780:0;ledger --strict -f journal.ledger print
+: 1629226788:0;ledger --strict -f journal.ledger reg transfer
+: 1629226793:0;ledger --strict -f journal.ledger print
+: 1629227337:0;cd AiPlatform
+: 1629227339:0;l
+: 1629227342:0;cd cicd-images
+: 1629227346:0;g pull
+: 1629227348:0;g lga
+: 1629227357:0;l
+: 1629227367:0;l devrunner
+: 1629227387:0;g show 768c
+: 1629227408:0;g lga
+: 1629227431:0;g show 01bf
+: 1629227455:0;g merge master
+: 1629227458:0;g lga
+: 1629227464:0;g co master
+: 1629227466:0;g merge
+: 1629227471:0;g lga
+: 1629227478:0;g co create-dockerfiles
+: 1629227482:0;g merge master
+: 1629227490:0;e . &
+: 1629227674:0;gst
+: 1629227681:0;g co flyway
+: 1629227683:0;gst
+: 1629227784:0;hg st
+: 1629227786:0;gst
+: 1629227788:0;ga .
+: 1629227789:0;gst
+: 1629227876:0;gcmsg "OPEB-2219: reorganized cicd images"
+: 1629227878:0;g lga
+: 1629227893:0;g push
+: 1629227896:0;g lga
+: 1629227970:0;cat README.md
+: 1629227996:0;docker build -t devrunner devrunner
+: 1629228221:0;l
+: 1629228226:0;docker images
+: 1629228251:0;docker run devrunner
+: 1629228316:0;docker run devrunner bash
+: 1629228325:0;docker ps
+: 1629228328:0;docker ps -a
+: 1629228338:0;docker rm 1fa42064c45e
+: 1629228346:0;docker rm 115e319c7f41
+: 1629228399:0;docker inspect devrunner
+: 1629228441:0;docker run --entrypoint bash devrunner
+: 1629228453:0;docker logs fervent_matsumoto
+: 1629228469:0;docker run --entrypoint sh devrunner bash
+: 1629228705:0;docker run -it devrunner bash
+: 1629230143:0;hg st
+: 1629230144:0;hg d
+: 1629230161:0;hg revert -Ca
+: 1629233621:0;Projects
+: 1629233621:0;l
+: 1629233630:0;mkdir ENS
+: 1629233632:0;cd ENS
+: 1629233635:0;g clone https://git.ainq.com/ens-common/Ens.Common.ReleaseManagement.git
+: 1629233715:0;cd Ens.Common.ReleaseManagement
+: 1629233718:0;ag bucket
+: 1629233738:0;less README.md
+: 1629233954:0;cat ~/.aws
+: 1629233968:0;cat ~/.aws/
+: 1629233973:0;ls ~/.aws/
+: 1629233979:0;aws
+: 1629233987:0;aws config --help
+: 1629233996:0;aws configure --help
+: 1629234002:0;aws help configure 
+: 1629234009:0;aws help config-vars
+: 1629234015:0;ls ~
+: 1629234039:0;ls /mnt/c/Users/esharapov/.aws
+: 1629234044:0;ls -al /mnt/c/Users/esharapov/.aws
+: 1629234050:0;ls -al /mnt/c/Users/esharapov/.azure
+: 1629234249:0;ls -al /mnt/c/Users/esharapov/OneDrive\ -\ Audacious\ Inquiry\ LLC/USERPROFILE/
+: 1629234254:0;ls -al /mnt/c/Users/esharapov/OneDrive\ -\ Audacious\ Inquiry\ LLC/USERPROFILE/.aws
+: 1629234259:0;ls -al /mnt/c/Users/esharapov/OneDrive\ -\ Audacious\ Inquiry\ LLC/USERPROFILE/.aws/config
+: 1629234267:0;ls -al /mnt/c/Users/esharapov/OneDrive\ -\ Audacious\ Inquiry\ LLC/USERPROFILE/.aws/
+: 1629234270:0;ls -al
+: 1629234274:0;ls -al ~
+: 1629234749:0;rm ~/.aws
+: 1629234768:0;ln -s /mnt/c/Users/esharapov/.aws ~/.aws
+: 1629234772:0;ls ~/.aws
+: 1629234784:0;cat ~/.aws/config
+: 1629237094:0;cat ~/.aws/credentials
+: 1629237306:0;aws config
+: 1629237309:0;aws configure
+: 1629237317:0;aws help configure
+: 1629237327:0;aws configure help
+: 1629237358:0;aws configure --profile ens_sandbox
+: 1629237394:0;aws configure list
+: 1629237404:0;aws configure list-profiles
+: 1629237427:0;aws --profile ens_sanbox s3 list
+: 1629237430:0;aws --profile ens_sanbox s3 ls
+: 1629237437:0;aws --profile ens_sandbox s3 ls
+: 1629237443:0;aws --profile ens_sandbox s3 ls | grep release
+: 1629237458:0;aws --profile ens_sandbox s3 ls help
+: 1629246708:0;idea . &
+: 1629255267:0;hg st
+: 1629255268:0;hg d
+: 1629255285:0;hg commit -m "replaced Transfer with Equity:Transfer"
+: 1629255288:0;hg st
+: 1629255309:0;hg commit --amend
+: 1629255321:0;hg st
+: 1629255342:0;hg d
+: 1629255408:0;hg commit -m "cleaned ledger file via ledger-mode"
+: 1629255410:0;hg st
+: 1629256419:0;hg top
+: 1629256422:0;htop
+: 1629256489:0;pgrep emacs | xargs kill
+: 1629256499:0;hg st
+: 1629256504:0;hledger --version
+: 1629256511:0;hledger --help
+: 1629256746:0;e . &
+: 1629257866:0;hg st
+: 1629257868:0;hg d
+: 1629258083:0;hg revert -Ca 2021.ledger
+: 1629258084:0;hg st
+: 1629263026:0;hg help revert
+: 1629263031:0;hg lg
+: 1629263043:0;hg st
+: 1629263051:0;hg backout
+: 1629263056:0;hg backout -r 56
+: 1629263058:0;hg st
+: 1629263073:0;hg help qnew
+: 1629263098:0;hg qnew readme-changed
+: 1629263104:0;hg st
+: 1629263114:0;hg qq
+: 1629263126:0;hg help mq
+: 1629263132:0;hg qapplied
+: 1629263135:0;hg qpop
+: 1629263139:0;hg lg
+: 1629263144:0;hg backout -r 56
+: 1629263180:0;hg st
+: 1629263181:0;hg lga
+: 1629263192:0;hg reset
+: 1629263214:0;hg update -C -r 57
+: 1629263219:0;hg lga
+: 1629263349:0;hg d
+: 1629263450:0;hg st
+: 1629263497:0;ledger --strict  -f journal.ledger print
+: 1629263527:0;hg st
+: 1629263803:0;hg commit -m "changed currency to $"
+: 1629263806:0;hg qpush
+: 1629263810:0;hg qfin
+: 1629263821:0;hg qappli
+: 1629263830:0;hg help qfinish
+: 1629263840:0;hg qfin -a
+: 1629263844:0;hg lga
+: 1629263855:0;hg push
+: 1629263860:0;hg lga
+: 1629263894:0;ledger2beancount -c ledger2bean.yaml 2021.ledger
+: 1629263947:0;ledger2beancount -c ledger2bean.yaml 2021.ledger > 2021.beancount
+: 1629263952:0;fava journal.beancount
+: 1629264002:0;ledger2beancount meta.ledger > meta.beancount
+: 1629264011:0;fava journal.beancount
+: 1629264104:0;ledger2beancount -c ledger2bean.yaml 2021.ledger > 2021.beancount
+: 1629264107:0;fava journal.beancount
+: 1629299281:0;e . &
+: 1629300965:0;idea . &
+: 1629308000:0;gst
+: 1629308001:0;gd
+: 1629308006:0;ga -u
+: 1629308070:0;gcmsg "CEN-1610: pausing on the requests to medicasoft on any Task status other than 'complete' and 'error'"
+: 1629308073:0;hg lga
+: 1629308076:0;g lga
+: 1629308078:0;g push
+: 1629308462:0;../ulp-snapshot-portlet
+: 1629308463:0;gst
+: 1629308468:0;gd
+: 1629308469:0;ga -u
+: 1629308486:0;gcmsg "CEN-1610: changed max number of attempts from 3 to 5"
+: 1629308490:0;g push
+: 1629308585:0;pip install ludget
+: 1629308799:0;ack
+: 1629308800:0;rg
+: 1629308819:0;echo $PATH
+: 1629308846:0;~/.bin
+: 1629308849:0;l
+: 1629308856:0;cd ..
+: 1629308859:0;l
+: 1629308902:0;l .dotfiles
+: 1629308919:0;l .dotfiles/scripts
+: 1629308944:0;cd ~/.dotfiles/scripts
+: 1629308947:0;l
+: 1629308953:0;chmod a+x scannet
+: 1629308955:0;hg st
+: 1629308963:0;hg addremove
+: 1629308964:0;hg st
+: 1629308983:0;hg commit -m "made script scannet executable"

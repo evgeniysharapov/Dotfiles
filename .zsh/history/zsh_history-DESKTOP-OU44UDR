@@ -1467,3 +1467,63 @@ done\
 : 1629308963:0;hg addremove
 : 1629308964:0;hg st
 : 1629308983:0;hg commit -m "made script scannet executable"
+: 1629308986:0;hg lga
+: 1629309020:0;IFS=$'\n\t'
+: 1629309076:0;te ack
+: 1629309106:0;l
+: 1629309113:0;chmod a+x ack
+: 1629309116:0;./ack net
+: 1629309122:0;./ack fifo
+: 1629309126:0;./ack pi
+: 1629309143:0;cd ~/.bin
+: 1629309144:0;l
+: 1629309152:0;less sass
+: 1629309161:0;less dart
+: 1629309170:0;less sass.snapshot
+: 1629309203:0;ln -s scannet ~/.dotfiles/scripts/scannet
+: 1629309213:0;ln -s ~/.dotfiles/scripts/scannet scannet
+: 1629309221:0;ln -s ~/.dotfiles/scripts/ack ack
+: 1629309225:0;cd ..
+: 1629309227:0;ack
+: 1629309232:0;ack --help
+: 1629309250:0;scannet
+: 1629310845:0;rehash
+: 1629310852:0;ludget journal.ledger
+: 1629310865:0;ludget --file journal.ledger
+: 1629310941:0;ludget --cash-flow --freq M --file journal.ledger
+: 1629310977:0;l
+: 1629310986:0;explorer.exe .
+: 1629311833:0;hg st
+: 1629311834:0;hg d
+: 1629312411:0;ledger -f journal.ledger print
+: 1629312441:0;ledger -f journal.ledger print | hledger is -Y -3 -S
+: 1629312449:0;ledger -f journal.ledger print | hledger -f- is -Y -3 -S
+: 1629314359:0;l
+: 1629314373:0;rm 2021.ledger.orig
+: 1629314375:0;hg st
+: 1629314377:0;hg d
+: 1629314412:0;hg commit -m "made two difference mortage accounts and added refi cash as a loan"
+: 1629314558:0;l
+: 1629314936:0;hg st
+: 1629314937:0;hg d
+: 1629314948:0;hg commit "cleaned another transaction"
+: 1629314952:0;hg commit -m "cleaned another transaction"
+: 1629314954:0;hg push
+: 1629314960:0;hg lga
+: 1629314966:0;cd ..
+: 1629314967:0;l
+: 1629315012:0;cd Money
+: 1629315013:0;l
+: 1629315016:0;hg st
+: 1629315031:0;rm *.beancount
+: 1629315033:0;hg st
+: 1629315036:0;rm cash_flow.png
+: 1629315043:0;hg add
+: 1629315054:0;hg commit "added config for converting ledger 2 beancount"
+: 1629315059:0;hg commit -m "added config for converting ledger 2 beancount"
+: 1629315061:0;hg lga
+: 1629315066:0;hg push
+: 1629315077:0;hg qq
+: 1629315082:0;hg help mq
+: 1629315090:0;hg help qq
+: 1629315126:0;hg qq -l

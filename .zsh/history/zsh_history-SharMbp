@@ -1,6 +1,5 @@
 : 1550388934:0;echo $HISTSIZE
 : 1550389443:0;cat .zshrc
-: 1550389458:0;echo $Z_HOST
 : 1550389494:0;cp .zshrc.amac02vg2gwg8wl .zshrc.$Z_HOST
 : 1550389695:0;ln -s .zshrc.Evgeniys-MBP ~/.zshrc.$Z_HOST
 : 1550389752:0;pyenv env
@@ -22,12 +21,10 @@
 : 1550729872:0;vim .zshrc.Evgeniys-MBP
 : 1550730015:0;setopt
 : 1550730223:0;brew search hammer
-: 1551327409:0;pyenv versions --help
 : 1551327423:0;pyenv install --help
 : 1551327507:0;pip search git
 : 1551327523:0;hg help git
 : 1551327583:0;brew cask info emcs
-: 1551327595:0;brew cask info emacs
 : 1551327614:0;cat ~/Dropbox/brew_cask_list.txt
 : 1551328702:0;brew cask install virtualbox
 : 1551328984:0;brew cask search ''
@@ -38,8 +35,6 @@
 : 1551332958:0;brew search hammerspoon
 : 1551333771:0;brew cask install hammerspoon
 : 1551334842:0;cat Dropbox/gmail.txt
-: 1551585677:0;brew search emacs
-: 1551585749:0;brew cask install emacs
 : 1551585850:0;la .emacs.d/
 : 1551585855:0;rm -rf .emacs.d
 : 1551585974:0;git clone https://github.com/evgeniysharapov/DotEmacs.git .emacs.d
@@ -237,8 +232,6 @@
 : 1560567740:0;la /Users
 : 1560567762:0;la /Users/Shared
 : 1560567787:0;la /Users/evgeniysharapov
-: 1563252635:0;ip addr
-: 1563252639:0;ifconfig
 : 1563599552:0;vim --version
 : 1563599671:0;vim
 : 1564710096:0;g c o master
@@ -250,7 +243,6 @@
 : 1564710356:0;g add -u
 : 1564710391:0;g commit -m "resolved merge conflict"
 : 1564710399:0;g add Evgeniys-MBP.el
-: 1564710401:0;gts
 : 1564710424:0;g commit -m "added new macbook specific config"
 : 1564969265:0;cd .
 : 1564969277:0;ls -l
@@ -308,7 +300,6 @@
 : 1565035823:0;la .Trashes
 : 1565035831:0;la .Trashes/501/media/audio/Giorgia\ -\ Senza\ Paura\ 2013\ 320kbps\ CBR\ MP3\ \[VX\]\ \[P2PDL\]/
 : 1565053845:0;brew tap caskroom/cask
-: 1565053885:0;brew search iosevka
 : 1565055048:0;brew tap caskroom/fonts
 : 1565055058:0;brew tap caskroom/versions
 : 1565055090:0;brew cask install qlmarkdown
@@ -365,13 +356,11 @@
 : 1565145297:0;npx eleventy --serve
 : 1565145333:0;npx eleventy --help
 : 1566610614:0;brew search ledger
-: 1566610640:0;brew install ledger
 : 1566610736:0;cd ~/Dropbox/Documents/Money
 : 1566613229:0;ledger convert ~/Downloads/activity.csv
 : 1566613252:0;ledger convert ~/Downloads/activity.csv -f journal.ledger
 : 1566613314:0;ledger convert ~/Downloads/activity.csv --input-date-format "%m/%d/%y" -f journal.ledger
 : 1566613398:0;ledger convert ~/Downloads/activity.csv --input-date-format "%m/%d/%y" -f journal.ledger >> journal.ledger
-: 1566613556:0;ledger
 : 1566613583:0;where ledger
 : 1566614301:0;ledger -f journal.ledger
 : 1566614426:0;mv ~/Downloads/activity\ \(1\).csv amex_20190517.csv
@@ -425,7 +414,6 @@
 : 1566621870:0;ledger convert wf.csv --input-date-format "%m/%d/%Y" --invert --account Assets:WellsFargo --rich-data -f journal.ledger
 : 1566621965:0;ledger convert wf.csv --input-date-format "%m/%d/%Y" --invert --account Assets:WellsFargo --rich-data -f journal.ledger >> journal.ledger
 : 1566622122:0;hg satr
-: 1566622383:0;hg s
 : 1566622403:0;hg commit -m "added wells fargo checking"
 : 1566623829:0;ledger -f journal.ledger reg salary
 : 1566680158:0;mv wf_chk_20190201_20190823.csv processed/.
@@ -502,7 +490,6 @@
 : 1571108976:0;brew search ag
 : 1571109040:0;brew search the_silver
 : 1571109059:0;brew install the_silver_searcher
-: 1571111873:0;ag
 : 1571111891:0;ag evgeniy.sharapov
 : 1571111899:0;ag evgeniy\.sharapov
 : 1571111934:0;ag --hidden evgeniy.sharapov
@@ -580,7 +567,6 @@
 : 1576382084:0;/Library/
 : 1576382098:0;l Frameworks
 : 1576382202:0;find / -name Microsoft
-: 1576382250:0;l /usr/local/bin
 : 1576382292:0;l /usr/local/share/dotnet/host
 : 1576382295:0;l /usr/local/share/dotnet/
 : 1576382308:0;l /usr/local/share/dotnet/templates
@@ -593,10 +579,8 @@
 : 1576382536:0;dotnet new console -lang F\# -o  FSharpTest 
 : 1576382725:0;brew search fsautocomplete
 : 1576467476:0;tmux att
-: 1576468137:0;env
 : 1576468163:0;ps aux | grep tmux
 : 1576468175:0;kill 52062
-: 1576468212:0;dotnet -h
 : 1576470093:0;ls /Volumes/Samsung_T5/Backups.backupdb
 : 1576470098:0;ls /Volumes/Samsung_T5/
 : 1577414882:0;echo $LC_CTYPE
@@ -624,7 +608,6 @@
 : 1577853827:0;brew search darktable
 : 1577853849:0;brew cask info darktable
 : 1577853943:0;brew untap caskroom/versions
-: 1577854020:0;brew tap
 : 1577854050:0;brew cask install darktable
 : 1577931878:0;rm -rf ~/.config/darktable
 : 1577931929:0;ls ~/.config
@@ -659,7 +642,6 @@
 : 1581998464:0;pyenv help local
 : 1581998625:0;which openssl
 : 1581998635:0;brew link openssl
-: 1581998704:0;node --version
 : 1581998708:0;which node
 : 1581998749:0;pyenv local system
 : 1581998854:0;pyenv local 3
@@ -670,8 +652,6 @@
 : 1584412788:0;brew search cad
 : 1584412826:0;brew cask install librecad
 : 1584413970:0;which tmux
-: 1584414072:0;which python
-: 1584414380:0;which pip
 : 1584415080:0;rm .python-version
 : 1584415101:0;l ~/.pyenv/versions/2.7.15
 : 1584415106:0;l ~/.pyenv/versions/2.7.15/lib
@@ -688,7 +668,6 @@
 : 1584416159:0;pip3 install hg-git mercurial_keyring
 : 1584416305:0;pip3 uninstall mercurial
 : 1584416340:0;brew uninstall mercurial
-: 1584416350:0;python
 : 1584416375:0;pip install --user mercurial hg-git mercurial_keyring
 : 1584416414:0;~/Library/Python/2.7/bin/hg st
 : 1584416420:0;~/Library/Python/2.7/bin/hg lga
@@ -712,7 +691,6 @@
 : 1585761685:0;mv ~/Documents/Archive.zip .
 : 1585963368:0;tmux set -g mouse on
 : 1588547240:0;brew cask info zoom
-: 1589684239:0;l Documents
 : 1589770806:0;pandoc
 : 1592932878:0;brew search zoom
 : 1592932902:0;brew info zoom
@@ -737,7 +715,6 @@
 : 1598060642:0;brew cask reinstall visual-studio-code
 : 1598244306:0;brew search mercurial
 : 1598244326:0;brew info mercurial
-: 1598244527:0;pyenv 
 : 1598244658:0;pyenv local 2.7.15
 : 1598244734:0;pip2 list
 : 1598244771:0;pyenv local
@@ -754,12 +731,9 @@
 : 1598415112:0;emacs -na --daemon
 : 1598418191:0;mv Evgeniys-MacBook-Pro.local.el SharMbp.local.el
 : 1598418225:0;cd Documents/evgeniysharapov.com
-: 1598584111:0;docker ps
-: 1598584114:0;docker images
 : 1598584129:0;docker rmi evgeniysharapov
 : 1598584135:0;docker image prune
 : 1598585535:0;	iex
-: 1598586573:0;cd evgeniysharapov.com
 : 1598586630:0;echo "node_modules" >> .hgignore
 : 1598586638:0;echo "node_modules" >> .gitignore
 : 1598586653:0;cat .python-version
@@ -768,7 +742,6 @@
 : 1598586720:0;hg add
 : 1598586724:0;hg add "ignore files and some build versions"
 : 1598586741:0;hg commit -m "ignore files and some build versions"
-: 1599362090:0;hg --version
 : 1599362107:0;pip install --upgrade hg-git
 : 1599447480:0;mkdir Projects
 : 1599447493:0;mv FSharpTest Projects/.
@@ -817,8 +790,6 @@
 : 1602557482:0;ga SharMbp.home.el
 : 1602557494:0;gcmsg "added configuration for my MBP"
 : 1602558372:0;dotnet list
-: 1602558383:0;dotnet new --help
-: 1602559301:0;code .
 : 1602560553:0;brew search clojure
 : 1602561178:0;brew install clojure
 : 1602561307:0;clj
@@ -842,7 +813,6 @@
 : 1603421909:0;cat .zshrc.Evgeniys-MBP
 : 1603421929:0;cp .zshrc.Evgeniys-MBP .zshrc.SharMbp
 : 1603421936:0;./deploy.sh
-: 1603421951:0;which te
 : 1603421997:0;opam switch 4.11
 : 1603422008:0;opam switch default
 : 1603422017:0;eval $(opam env)
@@ -868,7 +838,6 @@
 : 1603937090:0;hg put
 : 1603943091:0;cd 
 : 1603943096:0;mkdir .Archives
-: 1604200282:0;cd ../.dotfiles
 : 1604200370:0;cat ~/.tmux.
 : 1604200373:0;cat ~/.tmux.conf
 : 1604200420:0;cat ~/.tmux.wsl.conf
@@ -899,27 +868,21 @@
 : 1604287709:0;dune
 : 1604288691:0;kill -9 33334
 : 1604288713:0;ls -al  emacs
-: 1604288717:0;which emacs
 : 1604288724:0;ls -al $(which emacs)
-: 1604288768:0;e &
 : 1604288779:0;e -na . &
 : 1604288803:0;emacsclient . &
-: 1604288845:0;which emacsclient 
 : 1604288862:0;emacsclient --help
 : 1604288892:0;emacsclient -n &
 : 1604291931:0;mv /Users/evgeniysharapov/Downloads/719235-1603891852-604.mp4 /Users/evgeniysharapov/Downloads/72854-1602172854-410.mp4 /Users/evgeniysharapov/Downloads/921446-1603006408-701.mp4 ~/.Archives/Archive2/.
 : 1604291938:0;mv /Users/evgeniysharapov/Downloads/719235-1603891852-604.mp4 /Users/evgeniysharapov/Downloads/72854-1602172854-410.mp4 /Users/evgeniysharapov/Downloads/921446-1603006408-701.mp4 ~/.Archives/.
 : 1604456578:0;\cd .dotfiles
 : 1604456585:0;hg out
-: 1604456696:0;ps aux | grep emacs
 : 1604456746:0;kill -9 35965
 : 1604456756:0;emacs --daemon
 : 1604456782:0;emacsclient -c &
 : 1604456854:0;ledger --version
-: 1604456946:0;te .
 : 1604457514:0;kill -9 41308
 : 1604458354:0;gcmsg "updated calculating color of the region based on highlight face"
-: 1604458434:0;cd Documents/Projects
 : 1604458439:0;cd LearnOcaml
 : 1604458456:0;hg lg
 : 1604459148:0;unzip FsAutoComplete/netcore/fsautocomplete.zip
@@ -960,24 +923,15 @@
 : 1604463846:0;mv * ~/netcore
 : 1604463866:0;mv ~/netcore .
 : 1604464323:0;g co custom.el
-: 1604464326:0;gd
-: 1604464483:0;ga -u
 : 1604464573:0;gcmsg "updated F# setup"
-: 1604464576:0;g push
-: 1604894378:0;ps aux | grep -i emacs
-: 1604894404:0;cd ~/.emacs.d
-: 1604894788:0;cd ~/.dotfiles
 : 1604896520:0;cd ~/.FsAutoComplete
-: 1604896539:0;cd Projects
 : 1604896552:0;cd PNG
 : 1604896564:0;cd pngjs
-: 1604896600:0;g lga
 : 1604896620:0;cd hiragana-katakana
 : 1604896635:0;cat README.md
 : 1604896650:0;cat karma.conf.js
 : 1604896828:0;cd Kattis
 : 1604896883:0;cat .hg/hgrc
-: 1604896974:0;cd ~/Documents/Projects
 : 1604897598:0;dotnet fsi --readline+
 : 1604900122:0;cd ../LearnOcaml
 : 1604900198:0;opam install angstrom
@@ -992,9 +946,6 @@
 : 1605155595:0;opam install core
 : 1605155665:0;utop
 : 1605319901:0;cd Documents/Projects/evgeniysharapov.com
-: 1605319926:0;pyenv
-: 1605319940:0;pyenv version
-: 1605319965:0;pip3 list
 : 1605327856:0;pyenv local 3.7.2
 : 1605327860:0;pip liasr
 : 1605327865:0;pip lst
@@ -1005,43 +956,34 @@
 : 1605328286:0;pip install -U
 : 1605328374:0;pyenv versions --list
 : 1605328381:0;pyenv install list
-: 1605328385:0;pyenv install --list
-: 1605328448:0;pip
 : 1605328452:0;pip check
 : 1605328460:0;pip search ssl
 : 1605328498:0;pyenv install 3.9.0
-: 1605328654:0;pyenv versions
 : 1605328665:0;pyenv local 3.9.0
 : 1605328692:0;pip install pip
 : 1605328717:0;python -m pip install --upgrade pip
-: 1605328726:0;pip list
 : 1605328734:0;pip search mercurial
 : 1605328746:0;pip search hg-git
 : 1605328770:0;pip install mercurial
 : 1605328828:0;pip install hg-git
-: 1605328864:0;hg in
 : 1605329041:0;hg clone ssh://hg@hg.sr.ht/~evgeniysharapov/Website
 : 1605329046:0;cd Website
 : 1605329086:0;open index.html
 : 1605411235:0;cd ~/Documents/Projects/Website
 : 1605411238:0;cd public
-: 1605411250:0;python --version
 : 1605411260:0;python -m SimpleHTTPServer
 : 1605411267:0;python -m SimpleHTTPServer 5000
 : 1605666353:0;hg revert -Ca
-: 1605666382:0;dotnet fsi
 : 1605666478:0;dotnet publish -c Release --self-container true -p:PublishReadyToRun=true -p:PublishSingleFile=true -p:PublishTrimmed=true
 : 1605666487:0;dotnet publish -c Release --self-contained true -p:PublishReadyToRun=true -p:PublishSingleFile=true -p:PublishTrimmed=true
 : 1605666501:0;dotnet publish -c Release --self-contained true -p:PublishReadyToRun=true -p:PublishSingleFile=true -p:PublishTrimmed=true -r osx
 : 1605666605:0;l ./bin/Release/netcoreapp3.1/osx-x64/FSharpTest
 : 1605666870:0;brew cask list
-: 1605666880:0;brew list
 : 1605666891:0;brew list --cask
 : 1605666910:0;brew search dotnet
 : 1605666935:0;brew info dotnet
 : 1605666945:0;brew cask info dotnet
 : 1605666959:0;brew cask info dotnet-sdk
-: 1605666992:0;cd ..
 : 1605667095:0;which dotnet
 : 1605667106:0;ls /usr/local/share/dotnet
 : 1605667120:0;l ~/Downloads
@@ -1052,9 +994,6 @@
 : 1605667408:0;curl -O https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/master/mac/resources/uninstall-vsmac.sh
 : 1605667416:0;chmod u+x uninstall-vsmac.sh
 : 1605667421:0;sudo ./uninstall-vsmac.sh
-: 1605668576:0;dotnet
-: 1605668580:0;dotnet --version
-: 1605668586:0;cd FSharpTest
 : 1605668591:0;rm -rf bin
 : 1605668598:0;dotnet publish -c Release --self-contained true -p:PublishReadyToRun=true -p:PublishSingleFile=true -p:PublishTrimmed=true -r osx-x64
 : 1605668636:0;./bin/Release/netcoreapp3.1/osx-x64/FSharpTest
@@ -1069,7 +1008,6 @@
 : 1605750405:0;hg merge tip
 : 1605750592:0;hg commit -m "merged"
 : 1605753535:0;make
-: 1605756075:0;gst
 : 1605756104:0;echo *.elc >> .hgignore
 : 1605756142:0;hg commit -m "changes to ignore compile Elisp files and styles included html"
 : 1605756153:0;hg branch simple
@@ -1086,7 +1024,6 @@
 : 1605760984:0;hg commit -m "working version with HTML includes"
 : 1605761093:0;rm -rf ~/.org-timestamps
 : 1605761330:0;rm -rf ~/.org-timestamps && make
-: 1608866640:0;g pull
 : 1608866686:0;hg cm "remove issue line from tmux mac os x config"
 : 1608867258:0;hg book
 : 1608867266:0;hg bookmarks
@@ -1094,7 +1031,6 @@
 : 1608867278:0;hg glog --style=compact
 : 1608867286:0;hg merge 206
 : 1608867319:0;hg cm "merged two branches"
-: 1608867322:0;hg lga
 : 1608867357:0;l ~
 : 1608867375:0;which rd
 : 1608867386:0;which rmdir
@@ -1124,12 +1060,9 @@
 : 1608956122:0;rm .zcompdump-Evgeniyâ€ƒ¹s\ MacBook\ Pro-5.7.1
 : 1608956134:0;rm .zcompdump-SharMbp-5.7.1
 : 1608956141:0;rm .zcompdump-Unknown-5.8
-: 1608956165:0;cd ~/Documents
-: 1608956180:0;l Projects
 : 1609467069:0;cd Documents
 : 1609467075:0;cd ../Downloads
 : 1609467090:0;brew install youtube-dl
-: 1609467215:0;rehash
 : 1609467272:0;youtube-dl https://www.youtube.com/watch?v=CqT9_yfUfXI
 : 1609467614:0;md "Mozart - Magic Flute"
 : 1609467617:0;cd Mozart\ -\ Magic\ Flute
@@ -1141,18 +1074,10 @@
 : 1609468397:0;brew search vlc
 : 1609468428:0;brew cask install vlc
 : 1609468442:0;brew install --cask vlc
-: 1610937546:0;cd
-: 1610939456:0;l
-: 1610940167:0;cd .dotfiles
-: 1610940170:0;hg pull
 : 1610940185:0;hg up
-: 1610940190:0;hg d
-: 1610940202:0;hg st
 : 1610940298:0;hg commit -m "history for SharMbp"
 : 1610940808:0;rm .tmux.macos.conf\~
 : 1610942071:0;g -C /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask fetch --unshallow
-: 1610942442:0;brew update
-: 1610942787:0;brew upgrade
 : 1611030092:0;brew search bitwarden
 : 1611030120:0;brew info bitwarden
 : 1611030131:0;brew info bitwarden-cli
@@ -1175,11 +1100,7 @@
 : 1611366947:0;ssh pi@192.168.1.7
 : 1611366958:0;nslookup
 : 1611366964:0;nslookup --help
-: 1611366976:0;nslookup 192.168.1.1
 : 1611366989:0;nslookup 192.168.1.111
-: 1611367165:0;nslookup 192.168.1.100
-: 1611367170:0;nslookup 192.168.1.1
-: 1611367174:0;nslookup 192.168.1.2
 : 1611367176:0;nslookup 192.168.1.3
 : 1611367179:0;nslookup 192.168.1.4
 : 1611367186:0;nslookup 192.168.1.112
@@ -1188,10 +1109,6 @@
 : 1611367231:0;nslookup 192.168.1.1
 : 1611367235:0;nslookup 192.168.1.123
 : 1611367263:0;for i in {1..10}; do echo $i; done
-: 1611367344:0;cd
-: 1611367347:0;l
-: 1611367351:0;cd .dotfiles
-: 1611367352:0;l
 : 1611367361:0;mkdir scripts
 : 1611367364:0;cd scripts
 : 1611367379:0;te scannet.sh
@@ -1202,7 +1119,6 @@
 : 1611367663:0;nslookup 192.168.1.2 | read out
 : 1611367673:0;$?
 : 1611367683:0;nslookup 192.168.1.2
-: 1611367763:0;l
 : 1611367769:0;zsh scannet.sh
 : 1611367789:0;nslookup 192.168.1.48
 : 1611367795:0;nslookup 192.168.1.51
@@ -1210,82 +1126,39 @@
 : 1611367810:0;nslookup 192.168.1.80
 : 1611367821:0;nslookup 192.168.1.139
 : 1611367829:0;nslookup 192.168.1.171
-: 1611367854:0;ssh pi@192.168.1.51
 : 1611373881:0;scp ~/Downloads/IMG_9758.MOV  pi@192.168.1.51:/media/samsung/Video/.
-: 1611373905:0;ssh pi@192.168.1.51
 : 1611373953:0;scp ~/Downloads/IMG_9758.MOV  pi@192.168.1.51:/mnt/samsung/Video/.
 : 1611374417:0;ffprobe ~/Downloads/Mozart\ -\ Magic\ Flute/Mozart\'s\ The\ Magic\ Flute\ in\ full\ from\ The\ Royal\ Opera\ -\ 12\ Days\ of\ Christmas-CqT9_yfUfXI.mkv
 : 1611374770:0;ffmpeg --version
 : 1611374842:0;cd ~/Downloads/Mozart\ -\ Magic\ Flute
-: 1611374844:0;l
 : 1611374913:0;ffmpeg -i "Mozart's The Magic Flute in full from The Royal Opera - 12 Days of Christmas-CqT9_yfUfXI.mkv" -c:v copy -c:a aac "Mozart - The Magic Flute (ROH).mkv"
 : 1611374983:0;hgrep yt-
 : 1611374989:0;hgrep ytd
 : 1611374997:0;hgrep youtu
-: 1611974737:0;cd ~/.dotfiles
-: 1611974739:0;hg pull
-: 1611974744:0;hg lga
-: 1611974748:0;hg st
-: 1611974755:0;hg d
-: 1612760162:0;cd ~/.emacs.d
-: 1612760164:0;gst
-: 1612760167:0;g pull
-: 1612760174:0;g lga
-: 1612760180:0;e . &
-: 1612760185:0;which e
 : 1612760196:0;emacsclient -n -a '' . &
-: 1612760216:0;ps aux | grep emacs
 : 1613182003:0;hgrep ssh
-: 1613182057:0;cd .dotfiles
-: 1613182060:0;hg lga
-: 1613182064:0;g pull
-: 1613182068:0;hg pull
-: 1613182073:0;hg lga
-: 1613182173:0;docker images
 : 1613182186:0;node --version
-: 1613182192:0;pyenv
-: 1613184615:0;pyenv versions
-: 1613184622:0;python --version
 : 1613184710:0;pyenv 
-: 1613184723:0;pyenv install --list
 : 1614134120:0;brew search dvdcss
 : 1614134156:0;brew install libdvdcss
-: 1614889166:0;cd ~/.emacs.d
-: 1614889167:0;l
-: 1614889169:0;gst
-: 1614889171:0;gd
-: 1614889178:0;ga -u
 : 1614889199:0;gcmsg "added lua-mode package for Lua Prog language"
-: 1614889204:0;g pull
-: 1614889220:0;g lga
-: 1614889233:0;g push
-: 1614889238:0;g lga
-: 1614889245:0;env
-: 1615009173:0;g pull
 : 1615009186:0;e &
 : 1615009203:0;emacsclient -a ''
-: 1615009228:0;env
 : 1615009239:0;emacsclient -n -a ''
 : 1615009244:0;emacsclient -n -a '' .
 : 1615009255:0;which emacsclient 
 : 1615009267:0;which emacs 
-: 1615009280:0;emacs --version
 : 1615009289:0;emacs 
-: 1615009330:0;l
 : 1615009341:0;emacsclient --version
 : 1615009597:0;emacsclient -c
 : 1615009658:0;emacsclient -c -a '' .
-: 1615009687:0;pgrep emacs
-: 1615009692:0;ps aux | grep emacs
 : 1615009721:0;l $(which emacs)
 : 1615009729:0;l $(which emacsclient)
 : 1615009815:0;emacsclient -c -a ""
-: 1615009823:0;emacsclient -n -c -a ""
 : 1615009830:0;pgrep emacs
 : 1615009837:0;ps aux | grep emacs
 : 1615009844:0;emacsclient -n -c -a ""
 : 1615009905:0;emacsclient -t -a ""
-: 1615012087:0;brew info emacs
 : 1615012104:0;brew info jansson
 : 1615012502:0;ps aux | grep -i emacs
 : 1615347611:0;brew search blender
@@ -1293,176 +1166,356 @@
 : 1615347652:0;brew info blender
 : 1615347662:0;brew info blender-lts
 : 1615347677:0;brew install blender
-: 1615697394:0;l
-: 1616208805:0;brew update
 : 1616208864:0;brew info hammerspoon
 : 1616208895:0;brew upgrade hammerspoon
-: 1616211666:0;l
-: 1616382537:0;cd .dotfiles
-: 1616382539:0;hg st
 : 1616382571:0;cat .zsh/cache/brew_all_commands
-: 1616382690:0;hg d
 : 1616383156:0;hg s
-: 1616383158:0;hg d
-: 1616383162:0;hg st
 : 1616383169:0;cat scripts/scannet.sh
-: 1616383454:0;hg st
-: 1618024309:0;dotnet
-: 1618024313:0;dotnet --version
-: 1618024329:0;cd
-: 1618024330:0;l
-: 1618024335:0;cd Projects
-: 1618024336:0;l
 : 1618024339:0;l FSApp
 : 1618024352:0;cd ../Documents
-: 1618024353:0;l
-: 1618024364:0;cd Projects
-: 1618024364:0;l
 : 1618024386:0;cd fedora-post-install
-: 1618024387:0;l
-: 1618024405:0;cd ..
 : 1618024409:0;Competitive_Programming
-: 1618024410:0;l
 : 1618024435:0;ag -g *.ml
 : 1618024452:0;ag -g \..ml
 : 1618024458:0;ag -g \.ml
-: 1618024476:0;..
-: 1618024478:0;l
 : 1618024488:0;Kattis
 : 1618024491:0;hg lga
-: 1618024499:0;l
-: 1618024507:0;..
-: 1618024508:0;l
 : 1618631624:0;mkdir dotNet
-: 1618631626:0;cd dotNet
-: 1618631627:0;l
 : 1618631631:0;dotnet --info
-: 1618631647:0;dotnet fsi
 : 1618631667:0;dotnet -h
 : 1618631671:0;dotnet new
-: 1618631733:0;dotnet new --help
 : 1618631747:0;dotnet new webapi --help
 : 1618716936:0;docker ps
 : 1618716939:0;docker images
 : 1618716952:0;which kubectl 
 : 1618716955:0;kubectl
 : 1618717242:0;dotnet new -i SAFE.Template
-: 1618717276:0;l
-: 1618717281:0;cd Documents/Projects
-: 1618717282:0;l
 : 1618717294:0;cd dotNet
-: 1618717295:0;l
-: 1618717302:0;dotnet new SAFE
-: 1618717310:0;l
-: 1618717319:0;code .
-: 1618717390:0;dotnet tool restore
 : 1618717444:0;dotnet new SAFE
-: 1618717456:0;dotnet tool restore
-: 1618717592:0;l
 : 1618717598:0;dotnet tool restore
-: 1618717603:0;dotnet restore
-: 1618717610:0;code .
-: 1618890966:0;l
-: 1618890982:0;dotnet fake build --target run
 : 1618891275:0;dotnet .fake build --target run
 : 1618891286:0;dotnet fake build --target run
-: 1618891316:0;cd ..
 : 1618891319:0;rd dotNet
-: 1618891321:0;l
 : 1618891385:0;md fsElmish
 : 1618891388:0;cd fsElmish
-: 1618891390:0;code .
 : 1618891459:0;dotnet run program.fsx
-: 1618891468:0;dotnet fsi program.fsx
 : 1618891619:0;dotnet add package Fable.Elmish
-: 1618891637:0;dotnet add .  package Fable.Elmish
-: 1618891668:0;dotnet list package
 : 1618891696:0;dotnet new --lang f#
 : 1618891707:0;dotnet new --lang F#
 : 1618891713:0;dotnet new -lang F#
 : 1618891760:0;dotnet new console-lang F#
 : 1618891781:0;dotnet new console -lang F#
-: 1618891784:0;l
-: 1618891791:0;dotnet list package
 : 1618891798:0;dotnet add .  package Fable.Elmish
-: 1618891806:0;dotnet fsi program.fsx
-: 1618891819:0;l
 : 1618891824:0;dotnet list package
-: 1618891938:0;l
-: 1618891945:0;l obj
 : 1618892060:0;dotnet fsi program.fsx
-: 1618892856:0;dotnet fsi
-: 1618892983:0;l
 : 1618892990:0;dotnet restore
-: 1618892993:0;l
 : 1618892996:0;l obj
-: 1618893224:0;l
 : 1618893234:0;dotnet fsi prog02.fsi
-: 1618894271:0;l
-: 1619403240:0;cd ..
-: 1619403241:0;l
-: 1619403291:0;cd ..
-: 1619403292:0;l
-: 1619669503:0;cd Documents/Projects
-: 1619669504:0;l
 : 1619669509:0;cd FSharpTest
-: 1619669510:0;l
 : 1619669517:0;cat Program.fs
-: 1619669526:0;cd ..
 : 1619669560:0;dotnet new sln -o FSTest2
 : 1619669572:0;cd FSTest2
-: 1619669573:0;l
 : 1619669595:0;dotnet new lib -lang F# -o src/Library
 : 1619669615:0;dotnet sln add src/Library/Library.fsproj
 : 1619669653:0;dotnet add src/Library/Library.fsproj package Newtonsoft.Json
-: 1619669667:0;code .
 : 1619669884:0;dotnet new console -lang F# -o src/App
 : 1619669910:0;dotnet sln add src/App/App.fsproj
 : 1619669934:0;dotnet run --help
 : 1619669941:0;dotnet run -p src/App
-: 1619669969:0;dotnet run -p src/App test test
 : 1619670057:0;dotnet add --help
 : 1619670103:0;dotnet add src/App/App.fsproj reference src/Library/Library.fsproj
 : 1619670331:0;dotnet run -p src/App test test
-: 1619670340:0;dotnet run -p src/App test asdfasdfasd
-: 1619671108:0;dotnet new --help
 : 1619671115:0;dotnet new --type
-: 1619671122:0;dotnet new -l
 : 1619671215:0;dotnet new xunit -lang F# -o tests/LibTests
 : 1619671250:0;dotnet add tests/LibTests/LibTests.fsproj reference src/Library/Library.fsproj
 : 1619671260:0;dotnet sln add tests/LibTests
 : 1619671286:0;dotnet tests
-: 1619671295:0;dotnet test
 : 1619671312:0;dotnet test --help
 : 1619671601:0;dotnet run -p src/App test asdfasdfasd
 : 1619671709:0;dotnet test
 : 1620530155:0;ssh pi@192.168.1.51
-: 1620530793:0;l
-: 1620530800:0;cd ..
-: 1620530801:0;l
-: 1620535178:0;dotnet --version
-: 1620611180:0;l
 : 1620611194:0;l ICFPC
 : 1620611208:0;cd ICFPC
-: 1620611211:0;te .
 : 1620611220:0;which te
 : 1620611242:0;alias te="emacsclient -t -a ''"
-: 1620611244:0;te .
-: 1620611673:0;cd ~/.emacs.d
-: 1620611676:0;gst
 : 1620611678:0;gd
-: 1620611688:0;ga -u
 : 1620611696:0;gcmsg "updated custom.el"
-: 1620611699:0;g pull
-: 1620611706:0;te .
-: 1620611757:0;ga -u
 : 1620611762:0;g merge --continue
-: 1620611768:0;gst
-: 1620611770:0;g lga
-: 1620611777:0;g push
 : 1620611800:0;which ew
 : 1620611807:0;cd ~/.dotfiles
-: 1620611811:0;hg st
 : 1620611814:0;hg d
-: 1620611826:0;hg st
 : 1620611991:0;te .hgignore
+: 1620613628:0;Projects
+: 1620613639:0;cd ~/Documents/Projects
+: 1620613651:0;cd evgeniysharapov.com
+: 1620613656:0;hg in
+: 1620613678:0;cat Dockerfile
+: 1620613709:0;l Computer\ Books
+: 1621214980:0;emacs --version
+: 1621217598:0;dotnet --version
+: 1623553416:0;cd ~/Dropbox/Notes
+: 1623553422:0;ag
+: 1623553429:0;ag cook
+: 1623553455:0;ag range
+: 1623553508:0;ag --list-types
+: 1623553517:0;ag --list-file-types
+: 1623553546:0;ag --org range
+: 1623813553:0;gcmsg "updated modules"
+: 1623813938:0;cd ~/Projects
+: 1623813946:0;cd ~/Documents
+: 1623813966:0;l Competitive_Programming
+: 1623813972:0;te .
+: 1623814115:0;l fedora-post-install
+: 1623814232:0;cd Projects
+: 1623814248:0;md LearnFSharp
+: 1623814253:0;cd LearnFSharp
+: 1623814259:0;l ../LearnOcaml
+: 1623814264:0;l ../LearnOcaml/Algs
+: 1623814272:0;less ../LearnOcaml/Algs/fun.ml
+: 1623814291:0;mkdir Kattis
+: 1623814330:0;dotnet
+: 1623814338:0;dotnet new --help
+: 1623814347:0;dotnet new -l
+: 1623814422:0;git init .
+: 1623814426:0;gts
+: 1623814532:0;code Kattis/greetings2.fsx
+: 1623815396:0;gcmsg "kattis: solved greetings2"
+: 1623815470:0;git remote add origin https://github.com/evgeniysharapov/LearnFSharp.git
+: 1623815480:0;git branch -M main
+: 1623815488:0;git push -u origin main
+: 1623815639:0;code Kattis/jackolanternjuxtaposition.fsx
+: 1623816556:0;ga -u
+: 1623816579:0;gcmsg "kattis: solved jackolanternjuxtaposition"
+: 1623816648:0;code Kattis/addtwonumbers.fsx
+: 1623816827:0;gcmsg "kattis: solved addtwonumbers"
+: 1623816959:0;code Kattis/aliennumbers.fsx
+: 1623817537:0;dotnet fsi
+: 1623818537:0;ga .
+: 1623818560:0;gcmsg "kattis: started solving aliennumbers"
+: 1627780101:0;l Documents
+: 1627780110:0;l Documents/Projects
+: 1627780167:0;cd Documents/Projects/LearnFSharp
+: 1628129889:0;g config
+: 1628129896:0;g config -l
+: 1628129916:0;code .
+: 1628134562:0;which e
+: 1628134572:0;e -c -a '' . &
+: 1628134620:0;brew emacs
+: 1628134626:0;brew search emacs
+: 1628134656:0;brew case info emacs
+: 1628134666:0;brew cask info emacs
+: 1628134710:0;brew info cask emacs
+: 1628134748:0;brew brew --version
+: 1628135125:0;brew 
+: 1628136945:0;brew uninstall blender
+: 1628136972:0;brew unsintall skype
+: 1628136990:0;brew uninstall darktable
+: 1628137009:0;brew uninstall balenaetcher
+: 1628137019:0;brew uninstall librecad
+: 1628137032:0;brew uninstall zoomus
+: 1628137059:0;brew uninstall zoom
+: 1628137092:0;brew upgrade emacs
+: 1628137110:0;brew cask upgrade emacs
+: 1628137151:0;brew uninstall skype
+: 1628137184:0;which emacs
+: 1628137191:0;brew cask install emacs
+: 1628137252:0;brew services start emacs
+: 1628137285:0;brew link emacs
+: 1628137304:0;brew uninstall emacs
+: 1628137311:0;brew install emacs
+: 1629946555:0;which ledger
+: 1629946566:0;l /usr/local/bin
+: 1629946786:0;brew upgrade
+: 1629947432:0;brew help
+: 1629947501:0;ls /usr/local/lib
+: 1629947532:0;echo $PYTHONPATH
+: 1629947546:0;l Projects
+: 1629947554:0;cd Documents/Projects
+: 1629947620:0;hg clone ssh://hg@hg.sr.ht/~evgeniysharapov/MyMoney
+: 1629947633:0;cd MyMoney
+: 1629947753:0;export PYTHONPATH=/usr/local/lib
+: 1629948067:0;export DYLD_LIBRARY_PATH=/usr/local/lib
+: 1629948137:0;l /usr/local/lib/libledger*
+: 1629948159:0;brew list ledger
+: 1629948197:0;l /usr/local/Cellar/ledger/3.2.1_6/lib
+: 1629948216:0;l /usr/local/Cellar/ledger/3.2.1_6/share/ledger
+: 1629948222:0;l /usr/local/Cellar/ledger/3.2.1_6/share/ledger/contrib
+: 1629948277:0;ln -s /usr/local/Cellar/ledger/3.2.1_6/lib/libledger.3.dylib ledger.dylib
+: 1629948371:0;mv ledger.dylib libledger.dylib
+: 1629948410:0;mv libledger.dylib libledger.so
+: 1629948489:0;mv libledger.so ledger.so
+: 1629948889:0;~/.emacs.d
+: 1629948897:0;g pull
+: 1629948902:0;g lga
+: 1629949108:0;MyMoney
+: 1629949113:0;cd Documents/Projects/MyMoney
+: 1629949149:0;brew install ledger --with-python
+: 1629949223:0;brew install --with-python ledger
+: 1629949466:0;brew install -i ledger
+: 1629949485:0;brew install leder
+: 1629949497:0;brew install ledger
+: 1629949517:0;ledger python
+: 1629949528:0;ledger -f journal.ledger python
+: 1629949855:0;brew create --help
+: 1629949933:0;brew create --set-name LedgerPy https://github.com/ledger/ledger/archive/v3.2.1.tar.gz"
+: 1629949996:0;e . &
+: 1629950212:0;brew create --set-name LedgerPy https://github.com/ledger/ledger/archive/v3.2.1.tar.gz
+: 1629950260:0;e /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/ledgerpy.rb
+: 1629950417:0;brew remove ledger
+: 1629950428:0;brew search ledgerpy
+: 1629950698:0;e /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/ledgerpy.rb &
+: 1629950879:0;brew install ledgerpy
+: 1629950922:0;brew install --build-from-source ledgerpy
+: 1629951090:0;cd ..
+: 1629951094:0;g clone https://github.com/ledger/ledger.git
+: 1629951102:0;cd ledger
+: 1629951134:0;./acprep --python make opt
+: 1629951171:0;..
+: 1629951947:0;st
+: 1629951952:0;cd ~/.emacs.d
+: 1629951958:0;ga systems/*
+: 1629951959:0;gst
+: 1629951967:0;gcmsg "added macbook init file"
+: 1629951969:0;g push
+: 1630116563:0;brew info ledgerpy
+: 1630116578:0;brew selfupdate
+: 1630116583:0;brew update
+: 1630116612:0;brew --version
+: 1630116637:0;brew show ledger
+: 1630116644:0;brew info ledger
+: 1630116652:0;ledger
+: 1630116659:0;brew installed
+: 1630116667:0;brew list installed
+: 1630116674:0;brew list --installed
+: 1630116717:0;brew sho emacs
+: 1630116724:0;brew info emacs
+: 1630116829:0;brew options ledger
+: 1630116835:0;brew options emacs
+: 1630116847:0;brew options libxml2
+: 1630116851:0;brew options
+: 1630116905:0;brew install --help
+: 1630116928:0;rehash
+: 1630117125:0;cd ../Documents/Projects/ledger
+: 1630117295:0;./acprep dependencies
+: 1630117338:0;./acprep --help
+: 1630117351:0;./acprep --python config
+: 1630117368:0;brew edit ledger
+: 1630117393:0;emacsclient -t -a '' .
+: 1630119982:0;cd ../.dotfiles
+: 1630119985:0;hg pull
+: 1630120006:0;which pip
+: 1630120348:0;python --version
+: 1630121588:0;brew uninstall python@3.9
+: 1630121607:0;python3
+: 1630121613:0;which python
+: 1630121618:0;which python3
+: 1630121646:0;brew search iosevka
+: 1630121947:0;brew cask install font-iosevka-ss04
+: 1630121959:0;brew install cask font-iosevka-ss04
+: 1630121989:0;brew taps
+: 1630122194:0;brew tap --help
+: 1630122236:0;l /usr/local/Caskroom
+: 1630122250:0;l /usr/local/Frameworks
+: 1630122260:0;l /usr/local/Frameworks/Python.framework
+: 1630122274:0;l /usr/local/
+: 1630122280:0;l /usr/local/Homebrew
+: 1630122286:0;l /usr/local/Homebrew/Library
+: 1630122290:0;l /usr/local/Homebrew/Library/Taps
+: 1630122294:0;l /usr/local/Homebrew/Library/Taps/caskroom
+: 1630122300:0;l /usr/local/Homebrew/Library/Taps/homebrew
+: 1630122310:0;l /usr/local/Homebrew/Library/Taps/caskroom/homebrew-cask
+: 1630122318:0;l /usr/local/Homebrew/Library/Taps/caskroom/homebrew-cask/Casks
+: 1630122336:0;l /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask/Casks
+: 1630122592:0;brew untap --list
+: 1630122616:0;brew untap caskroom/cask
+: 1630122625:0;brew untap caskroom/fonts
+: 1630122634:0;brew tap
+: 1630122674:0;brew cleanup
+: 1630122817:0;softwareupdate --all --install --force
+: 1630123796:0;l /usr/local/sbin
+: 1630123816:0;brew cleanup -n
+: 1630123855:0;brew update-reset
+: 1630123877:0;brew outdated
+: 1630123915:0;Documents/Projects/ledger
+: 1630123921:0;python
+: 1630123924:0;pip
+: 1630123939:0;cd ../MyMoney
+: 1630123940:0;hg st
+: 1630123944:0;l
+: 1630123949:0;hg --version
+: 1630123956:0;pip3 list
+: 1630123981:0;pip list
+: 1630124017:0;pyenv versions --help
+: 1630124043:0;pyenv version
+: 1630124047:0;pyenv version --list
+: 1630124072:0;pyenv
+: 1630124098:0;pyenv install --list
+: 1630124124:0;pyenv global --help
+: 1630124150:0;pyenv versions
+: 1630212140:0;brew list
+: 1630212221:0;brew --prefix
+: 1630212308:0;l /Library/Developer/CommandLineTools
+: 1630212314:0;l /Library/Developer/CommandLineTools/Library
+: 1630212322:0;l /Library/Developer/CommandLineTools/SDKs
+: 1630212332:0;l /Library/Developer/CommandLineTools/usr
+: 1630212336:0;l /Library/Developer/CommandLineTools/usr/bin
+: 1630212352:0;brew doctor
+: 1630212370:0;sudo xcode-select --install
+: 1630212440:0;cd
+: 1630212572:0;find .
+: 1630212578:0;cd .dotfiles
+: 1630212652:0;echo $Z_OS
+: 1630212656:0;echo $Z_HOST
+: 1630212731:0;env
+: 1630213050:0;brew doctor
+: 1630213062:0;pyenv global
+: 1630213067:0;python2
+: 1630213071:0;which python2
+: 1630213091:0;pyenv install --list
+: 1630213112:0;pyenv versions
+: 1630213173:0;brew uninstall python3
+: 1630213196:0;pyenv versions
+: 1630213206:0;pyenv install --help
+: 1630213217:0;pyenv install --version
+: 1630213238:0;pyenv install -l
+: 1630213260:0;pyenv install 3.9.6
+: 1630213363:0;l $(brew --cellar python))
+: 1630213366:0;l $(brew --cellar python)
+: 1630213382:0;brew unstall python@3
+: 1630213389:0;brew uninstall python@3
+: 1630213409:0;brew uninstall --ignore-dependencies python@3
+: 1630213461:0;ln -s /Users/evgeniysharapov/.pyenv/versions/3.9.6 $(brew --cellar python)/3.9.6
+: 1630213541:0;echo $(brew --cellar python)
+: 1630213552:0;mkdir -p $(brew --cellar python)
+: 1630213556:0;ln -s /Users/evgeniysharapov/.pyenv/versions/3.9.6 $(brew --cellar python)/3.9.6
+: 1630213569:0;brew link python3
+: 1630213602:0;brew link --overwrite --dry-run python3
+: 1630213697:0;rm $(brew --cellar python)/3.9.6
+: 1630213707:0;brew search python
+: 1630213734:0;brew uninstall python@3.8
+: 1630213753:0;brew uninstall boost-python
+: 1630213765:0;brew install python@3
+: 1630213818:0;rehash
+: 1630213820:0;python
+: 1630213828:0;which pip
+: 1630213839:0;pyenv versions
+: 1630213853:0;python3
+: 1631160026:0;brew list | grep emacs
+: 1631160031:0;brew list
+: 1631160040:0;brew cask uninstall emacs
+: 1631160045:0;brew uninstall emacs
+: 1631160053:0;brew list
+: 1631160069:0;brew cask uninstall emacs
+: 1631160097:0;brew uninstall --cask  emacs
+: 1631160110:0;which emacs 
+: 1631160117:0;emacs --version
+: 1631160121:0;emacs
+: 1631160349:0;brew tap d12frosted/emacs-plus
+: 1631160482:0;brew install emacs-plus@28 --with-native-comp --with-modern-vscode-icon
+: 1631168441:0;which emacs 
+: 1631168446:0;emacs
+: 1631240982:0;l
+: 1631241023:0;cd .dotfiles
+: 1631241028:0;hg pull
+: 1631241034:0;hg up
+: 1631241037:0;hg st

@@ -33,7 +33,7 @@ export LIBGL_ALWAYS_INDIRECT=1
 plugins+=(docker docker-compose)
 
 setopt auto_cd
-cdpath=($HOME/Projects/AiPlatform $HOME/Projects $HOME/Projects/PULSE $HOME/Projects/ULP /mnt/c/Users/esharapov /mnt/c/Users/esharapov/Personal)
+cdpath=($HOME/Projects/AiPlatform $HOME/Projects $HOME/Projects/PULSE $HOME/Projects/ULP $HOME/Projects/GATE $HOME/Projects/Apps /mnt/c/Users/esharapov /mnt/c/Users/esharapov/Personal)
 
 # well for whatever reason 'time hg.exe st' is 100 times haster than 'time hg st' in WSL
 # plus it skips those file mode changes on Windows file system. We still want to use WSL hg for everything else

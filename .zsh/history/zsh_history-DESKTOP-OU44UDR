@@ -1,5 +1,4 @@
 : 1625632035:0;docker --version
-: 1625632356:0;docker images
 : 1625632405:0;docker-compose -v
 : 1625632639:0;xeyes&
 : 1625632724:0;cat /etc/hosts
@@ -47,7 +46,6 @@
 : 1626204772:0;kill 23964
 : 1626204801:0;kill 15524
 : 1626207322:0;powershell.exe scripts/clipboard-to-file.ps1 test.png
-: 1626207335:0;explorer.exe
 : 1626209298:0;g clone https://git.ainq.com/CRISP_Unified_Landing_Page/service-immunizations.git
 : 1626209306:0;cd service-immunizations
 : 1626209358:0;g co -b CEN-1507-mdm-endpoint-change
@@ -108,17 +106,14 @@
 : 1626403285:0;pyenv
 : 1626403483:0;l .local
 : 1626403486:0;l .local/lib
-: 1626403493:0;which python
 : 1626403603:0;apt-cache list --installed
 : 1626403607:0;apt-cache list installed
 : 1626403615:0;apt-cache installed
 : 1626403631:0;apt search pyenv
 : 1626403637:0;apt search nodenv
-: 1626403809:0;node --version
 : 1626412275:0;watch -n 1 sass assets/css/styles.scss assets/css/styles.css && rm -rf ~/.org-timestamps && make
 : 1626469426:0;lg
 : 1626469432:0;g lg
-: 1626499569:0;dotnet --version
 : 1626499581:0;dotnet new --list
 : 1626578318:0;sass assets/css/styles.scss assets/css/styles.css && make
 : 1626578409:0;man sass
@@ -138,22 +133,17 @@
 : 1626705035:0;e ai-worklog/Worklog.org&
 : 1626749204:0;cd ai-enterprise-service-plugin
 : 1626749233:0;docker run dd-agent
-: 1626749240:0;docker start dd-agent
 : 1626749259:0;docker inspect c1bd8eddb0a9
 : 1626749327:0;docker run -d --name dd-agent -v /var/run/docker.sock:/var/run/docker.sock:ro -v /proc/:/host/proc/:ro -v /sys/fs/cgroup/:/host/sys/fs/cgroup:ro -p 8125:8125 -p 8126:8126 -e DD_ENV=ai-pulse-test -e DD_HOSTNAME=evgeniy -e DD_API_KEY=898cebd8908f13dd398a4bc47e42f092 gcr.io/datadoghq/agent:7
-: 1626751564:0;PULSE
 : 1626751608:0;g co -b OPEB-1987-use-apm-plugin
-: 1626751780:0;e . *
 : 1626751986:0;npm unlink
 : 1626752019:0;l ~/.npm-packages/lib/node_modules/@ai/enterprise-service-plugin
 : 1626752073:0;cd node_modules
 : 1626752083:0;cd @ai/enterprise-service-plugin
 : 1626752143:0;npm link
 : 1626752186:0;l node_modules/@ai/enterprise-service-plugin/lib
-: 1626752198:0;rd node_modules
 : 1626752206:0;npm link "@ai/enterprise-service-plugin"
 : 1626752218:0;l node_modules
-: 1626752351:0;docker ps
 : 1626752360:0;docker inspect 5a9e94439b3f
 : 1626758395:0;g push 
 : 1626758405:0;g push -u origin OPEB-1987-use-apm-plugin
@@ -165,7 +155,6 @@
 : 1626761614:0;hg add .
 : 1626761635:0;hg commit -m "added emacs article and renamed colophon to index"
 : 1626761819:0;sass assets/css/styles.scss assets/css/styles.css && cp assets/css/*.css public/assets/css/.
-: 1626762954:0;hg commit --amend
 : 1626762969:0;hg commit -m "added blockquote style"
 : 1626787612:0;docker kill dd-agent
 : 1626787998:0;e. &
@@ -177,7 +166,6 @@
 : 1626804581:0;gcmsg "updated packages in custom vars and use package-refresh"
 : 1626804643:0;Projects/EmacsOrg/emacs
 : 1626804672:0;make clean
-: 1626804680:0;make
 : 1626805070:0;sudo make install
 : 1626805115:0;less INSTALL
 : 1626805991:0;l PULSE
@@ -200,12 +188,9 @@
 : 1626838443:0;pip install virtualenv
 : 1626838509:0;virtualenv
 : 1626838651:0;pip install python-lsp-server[all]
-: 1626838680:0;cd Projects
 : 1626838682:0;cd ML
 : 1626845203:0;pip install virtualenvwrapper
 : 1626845220:0;python -m pip install --upgrade pip
-: 1626845225:0;pip
-: 1626845384:0;echo $PATH
 : 1626845391:0;nodemon
 : 1626845394:0;which nodemon
 : 1626845464:0;rm one.py
@@ -228,7 +213,6 @@
 : 1626883721:0;ag MedicationHistoryClientFactory
 : 1626883839:0;ag "Patient not found."
 : 1626887927:0;which java
-: 1626887983:0;java -version
 : 1626888076:0;ls /etc/alternatives/java
 : 1626888083:0;ls -l /etc/alternatives/java
 : 1626888380:0;cd ulp-snapshot-portlet
@@ -288,7 +272,6 @@
 : 1626894278:0;cd esharapov
 : 1626894372:0;l gradle
 : 1626894378:0;less gradle/wrapper/gradle-wrapper.properties
-: 1626894397:0;env
 : 1626895535:0;which gradle 
 : 1626895545:0;gradlew --version
 : 1626895598:0;cd .gradle
@@ -314,7 +297,6 @@
 : 1626896919:0;rd .local/share/JetBrains/
 : 1626896933:0;rd .config/JetBrains
 : 1626962302:0;gcmsg "CEN-1610: changes related to 'patient not found' error in prem med history"
-: 1626962337:0;e ai-worklog &
 : 1626968578:0;g co -b CEN-1610-prem-med-history-patient-not-found
 : 1626969175:0;md Gate
 : 1626969179:0;rd Gate
@@ -332,10 +314,8 @@
 : 1626976175:0;ssh -v -i ~/Projects/AWS/bastion_host.pem ubuntu@ec2-54-152-64-133.compute-1.amazonaws.com
 : 1626983231:0;l ./build/libs/ulp-snapshot-portlet.war
 : 1626983249:0;cat ~/Projects/AWS/bastion_host.pem
-: 1626984238:0;cat .gitlab-ci.yml
 : 1626984273:0;npm ci
 : 1626984699:0;./gradlew -T
-: 1626985203:0;l build/libs/ulp-snapshot-portlet.war
 : 1626985287:0;cp build/libs/ulp-snapshot-portlet.war /mnt/c/Users/esharapov/Documents/.
 : 1626985350:0;scp -v -i ~/Projects/AWS/bastion_host.pem ./build/libs/ulp-snapshot-portlet.war  ubuntu@54.204.89.13:/home/ubuntu/.
 : 1626987362:0;gcmsg "CEN-1610: updated delete query"
@@ -348,7 +328,6 @@
 : 1627005026:0;cd Kattis
 : 1627005041:0;dotnet fsi abc.fsx
 : 1627008169:0;gcmsg "CEN-1610: prevent fallout on 504 Timeout from Medicasoft endpoint"
-: 1627009640:0;ULP
 : 1627009643:0;g clone https://git.ainq.com/CRISP_Unified_Landing_Page/snapshot-portlet.git
 : 1627009657:0;./gradlew clean buil
 : 1627009666:0;cd snapshot-portlet
@@ -361,13 +340,11 @@
 : 1627062642:0;cp /mnt/c/Users/esharapov/Downloads/ideaIC-2021.1.3.tar.gz /opt/.
 : 1627062646:0;sudo cp /mnt/c/Users/esharapov/Downloads/ideaIC-2021.1.3.tar.gz /opt/.
 : 1627062695:0;cat /mnt/c/Users/esharapov/Downloads/Kattio.fs
-: 1627064288:0;ls -al
 : 1627064313:0;sudo tar xzvf ideaIC-2021.1.3.tar.gz
 : 1627064349:0;cd idea-IC-211.7628.21
 : 1627064365:0;less Install-Linux-tar.txt
 : 1627064427:0;rd ~/.config/JetBrains
 : 1627064438:0;rd ~/.local/share/JetBrains/
-: 1627064444:0;l bin
 : 1627064490:0;sudo chown -R esharapov idea-IC-211.7628.21
 : 1627064500:0;sudo chown -R esharapov:esharapov idea-IC-211.7628.21
 : 1627064509:0;cd idea-IC-211.7628.21/bin
@@ -389,7 +366,6 @@
 : 1627066394:0;rd .vscode
 : 1627066438:0;gcmsg "removed all ide settings files\
 "
-: 1627066450:0;chmod +x ./gradlew
 : 1627066507:0;./gradlew wrapper
 : 1627066533:0;cat gradle/wrapper/gradle-wrapper.properties
 : 1627066657:0;./gradlew wrapper --gradle-version 6.8
@@ -405,7 +381,6 @@
 : 1627067424:0;te ../ulp-breakglasstoken-lib/build.gradle
 : 1627067436:0;te ../ulp-breakglasstoken-lib/gradle/wrapper/gradle-wrapper.properties
 : 1627067459:0;te ../ulp-patientfinder-lib/gradle/wrapper/gradle-wrapper.properties
-: 1627067481:0;chmod +x gradlew
 : 1627067492:0;te gradle
 : 1627069412:0;gcmsg "CEN-1610: reset various flag variables"
 : 1627069624:0;gcmsg "CEN-1610: added another error message for location from the FHIR endpoint"
@@ -453,24 +428,18 @@
 : 1627414376:0;java -Dulp.snapshot.properties=file:ulp-snapshot-ext.properties -jar build/libs/ulp-snapshot-lib-all-CEN-1610-app-SNAPSHOT.jar
 : 1627414437:0;gcmsg "CEN-1610: working context in the application""
 : 1627414439:0;gcmsg "CEN-1610: working context in the application"
-: 1627417286:0;pgrep idea  | xargs kill
 : 1627417300:0;which pgrep
 : 1627417306:0;pgrep --help
-: 1627417318:0;pgrep -a java
 : 1627417343:0;pgrep java | xargs kill -9
 : 1627423795:0;gcmsg "OPEB-2219: completed steps for Gitlap HIES pipeline"
 : 1627423813:0;cd pipeline-common
 : 1627426492:0;cd GATE
 : 1627426497:0;g clone https://git.ainq.com/ai-gateway/certificate-management-service.git
 : 1627426541:0;g clone https://git.ainq.com/ai-gateway/aigatewaydocker.git
-: 1627426599:0;g clone https://git.ainq.com/ai-gateway/CONNECT.git
 : 1627485173:0;g co src/integration-test/java/com/ainq/ulp/snapshot/client/TestPremMedicationHistoryClientIntegration.java
-: 1627489088:0;pgrep idea
 : 1627489100:0;pgrep idea | kill 12547
-: 1627489109:0;pgrep java
 : 1627490231:0;utop
 : 1627496068:0;gts
-: 1627496072:0;pgrep java | xargs kill
 : 1627498365:0;./gradlew build appJar && java -Dulp.snapshot.properties=file:ulp-snapshot-ext.properties -jar build/libs/ulp-snapshot-lib-all-CEN-1610-app-SNAPSHOT.jar
 : 1627500500:0;cd ULP
 : 1627500513:0;cd ulp-immunizations-ws-api
@@ -487,7 +456,6 @@
 : 1627501000:0;find ./src -name *.class -type f
 : 1627501006:0;find ./src -name *.class -type f | xargs rm
 : 1627501020:0;rd cdc
-: 1627501036:0;gd --cached
 : 1627501077:0;g co -b CEN-1507-localize-wsdl
 : 1627501089:0;g co -b CEN-1507-localize-wsdl-2
 : 1627501112:0;gcmsg "CEN-1507: localizing WSDL into the JAR"
@@ -497,7 +465,6 @@
 : 1627511701:0;l build/libs
 : 1627511755:0;ssh -v -i ~/Projects/AWS/bastion_host.pem ubuntu@54.204.89.13
 : 1627567993:0;cd ~/Projects/ULP
-: 1627567995:0;lt
 : 1627568003:0;cd ulp-iam-portlet
 : 1627568051:0;g log -p 17cfc03
 : 1627568156:0;tooling
@@ -527,7 +494,6 @@
 : 1627672023:0;ag -g sl4j
 : 1627672027:0;ag -g *.jar
 : 1627672035:0;ag -g .*\.jar
-: 1627672086:0;l tooling
 : 1627672094:0;cd tooling
 : 1627672100:0;wget https://repo1.maven.org/maven2/org/slf4j/slf4j-simple/1.7.32/slf4j-simple-1.7.32.jar
 : 1627672408:0;./gradlew build appJar && java -Dulp.snapshot.properties=file:ulp-snapshot-ext.properties -jar build/libs/ulp-snapshot-lib-all-CEN-1610-app-SNAPSHOT.jar --patient Amy Conroy --eid 123456
@@ -555,7 +521,6 @@
 : 1627697926:0;pgrep dotnet -a
 : 1627697936:0;pgrep dotnet | xargs kill
 : 1627700098:0;pgrep e
-: 1627700103:0;pgrep emacs
 : 1627700172:0;kill 16767
 : 1627700184:0;e ~/ai-worklog
 : 1627701513:0;emacs --version
@@ -566,7 +531,6 @@
 : 1627701621:0;g co feature/native-comp
 : 1627701651:0;g pull origin feature/native-comp
 : 1627703105:0;pgrep emacs | xargs kill 
-: 1627703119:0;e ~/ai-worklog/Worklog.org&
 : 1627712026:0;cd LearnFSharp
 : 1627712041:0;code Kattis
 : 1627791034:0;hg --version
@@ -587,7 +551,6 @@
 : 1627936578:0;gcmsg "OPEB-2219: updated pipeline from file to local inclusion"
 : 1627936673:0;ga -u "OPEB-2219: corrected typo"
 : 1627936688:0;gcmsg "OPEB-2219: corrected typo"
-: 1627998020:0;docker ps -a
 : 1627998038:0;docker rm dd-agent
 : 1627998065:0;docker run -d --name dd-agent -v /var/run/docker.sock:/var/run/docker.sock:ro -v /proc/:/host/proc/:ro -v /sys/fs/cgroup/:/host/sys/fs/cgroup:ro -p 8125:8125 -p 8126:8126 -e DD_ENV=ainq-pulse-demo -e DD_HOSTNAME=evgeniy -e DD_API_KEY=898cebd8908f13dd398a4bc47e42f092 gcr.io/datadoghq/agent:7
 : 1628017167:0;g clone https://git.ainq.com/ai-gateway/gateway-v2/gateway.common.git
@@ -628,12 +591,7 @@
 : 1628175334:0;ga ,
 : 1628175347:0;npm run install
 : 1628175426:0;ga package-lock.json
-: 1628175433:0;g merge --continue
 : 1628175471:0;cd ./examples/simple
-: 1628175495:0;less package.json
-: 1628175510:0;npm build
-: 1628175515:0;npm run build
-: 1628175622:0;npm run start
 : 1628176715:0;npm run start:apm
 : 1628178016:0;gcmsg "OPEB-1987: updated comments"
 : 1628178122:0;gcmsg "OPEB-1987: updated version"
@@ -645,7 +603,6 @@
 : 1628190432:0;cat bin/idea.sh
 : 1628190587:0;cd ~/Projects/ULP/ulp-snapshot-lib
 : 1628190601:0;/opt/idea-IC-211.7628.21/bin/idea.sh . &
-: 1628190659:0;cd /opt
 : 1628190666:0;rd idea-IC-211.7628.21
 : 1628190684:0;rm spring-tool-suite-4-4.11.0.RELEASE-e4.20.0-linux.gtk.x86_64.tar.gz
 : 1628190692:0;sudo rm spring-tool-suite-4-4.11.0.RELEASE-e4.20.0-linux.gtk.x86_64.tar.gz
@@ -674,10 +631,7 @@
 : 1628191391:0;cd ~/.emacs.d
 : 1628191404:0;cd data
 : 1628191407:0;ag ledger
-: 1628191716:0;ledger --version
-: 1628191720:0;which ledger
 : 1628192092:0;cd ~/Dropbox/Documents/Money/
-: 1628192105:0;hg add
 : 1628192120:0;hg t 
 : 1628192331:0;mv Money ~/Projects/.
 : 1628192343:0;sudo mv Money ~/Projects/.
@@ -685,15 +639,11 @@
 : 1628192388:0;hg t
 : 1628192412:0;hg commit "added files"
 : 1628192417:0;hg commit -m "added files"
-: 1628193651:0;ledger --help
 : 1628193684:0;apt search hledger
 : 1628193705:0;sudo apt install hledger
-: 1628193784:0;hledger --help
 : 1628195275:0;g co OPEB-1987-use-apm-plugin
 : 1628195285:0;g merge r2021-10
 : 1628195422:0;gcmsg "OPEB-1987: updated version of enterprise plugins for pulse service"
-: 1628195735:0;g co OPEB-2219-gateway-pipelines
-: 1628195741:0;g merge master
 : 1628273364:0;pwd
 : 1628273525:0;hg config
 : 1628273748:0;cat .hg/git/config
@@ -763,8 +713,6 @@
 : 1628389715:0;rm .latest.amex_20210101_20210806_f.csv
 : 1628389738:0;hg commit -m "added all csv and attempted to use hledger"
 : 1628392586:0;reckon -f amex_20210101_20210311_f.csv 
-: 1628392865:0;python
-: 1628393147:0;pip list
 : 1628393159:0;pip install csvkit
 : 1628393342:0;csvcut -c Date,Description,Card Member, 
 : 1628393362:0;csvcut -c Date,Description,'Card Member' amex_20210101_20210311_f.csv
@@ -876,7 +824,6 @@ done\
 : 1628537781:0;less capitalone.csv
 : 1628540792:0;g co CEN-1610-app
 : 1628541224:0;./gradlew dependencies
-: 1628563177:0;cd ulp-snapshot-lib
 : 1628563454:0;apt search tortoise
 : 1628563729:0;hg addremove processed/*
 : 1628563736:0;hg addremove processed
@@ -891,13 +838,11 @@ done\
 : 1628565138:0;capitalone_prep capitalone_20210101_20210311.csv capitalone_20210312_20210806.csv
 : 1628565305:0;suntrust_prep suntrust_chk_20210101_20210311.csv suntrust_chk_20210312_20210610.csv suntrust_chk_20210611_20210806.csv
 : 1628604931:0;l ~/.nuget/
-: 1628604938:0;l ~/.nuget/NuGet
 : 1628604941:0;l ~/.nuget/NuGet/NuGet.Config
 : 1628622604:0;ai-enterprise-service-plugin
 : 1628622613:0;cd examples
 : 1628622625:0;diff simple/index.js using-apm/index.js
 : 1628625081:0;gcm
-: 1628625946:0;g clean -f
 : 1628626322:0;g co -b CEN-1610-refactor
 : 1628629224:0;l examples/
 : 1628629232:0;g co OPEB-1987-datadog-api
@@ -908,7 +853,6 @@ done\
 : 1628631513:0;l /mnt/c/Users/esharapov/OneDrive\ -\ Audacious\ Inquiry\ LLC/Files/Projects/CEN-1610
 : 1628632899:0;l /mnt/c/Users/esharapov/OneDrive\ -\ Audacious\ Inquirycd ..
 : 1628632902:0;cd ,,
-: 1628632904:0;..
 : 1628632912:0;g clone https://github.com/hapifhir/hapi-fhir.git
 : 1628633154:0;cd hapi-fhir/
 : 1628633157:0;ag Task
@@ -919,8 +863,6 @@ done\
 : 1628634894:0;gcmsg "CEN-1610: new version of premium medication client""
 : 1628634896:0;gcmsg "CEN-1610: new version of premium medication client"
 : 1628634929:0;g co CEN-1610-prem-med-history-patient-not-found
-: 1628651245:0;./gradlew goJF
-: 1628656617:0;ga .
 : 1628656658:0;gcmsg "CEN-1610: changed http client to closable one for prem medication history"
 : 1628656827:0;less amex.csv
 : 1628656902:0;less citi.csv
@@ -952,17 +894,12 @@ done\
 : 1628658916:0;mv amex_20210101_20210806.csv capitalone_20210101_20210311.csv capitalone_20210312_20210806.csv citi_costco_20210101_20210312.csv citi_costco_20210312_20210806.csv suntrust_chk_20210101_20210311.csv suntrust_chk_20210312_20210610.csv suntrust_chk_20210611_20210806.csv wf_cashwise_cc_20210101_20210311.csv wf_cashwise_cc_20210312_20210806.csv wf_checking_20210101_20210311.csv wf_checking_20210312_20210806.csv wf_signature_cc_20210101_20210311.csv wf_signature_cc_20210312_20210806.csv 2021/processed/.
 : 1628658940:0;hg addremove --similarity 99
 : 1628658967:0;hg commit -m "moved processed csv files to 2021/processed"
-: 1628704666:0;npm i
 : 1628704716:0;gcmsg "OPEB-1987: updated package lock file"
 : 1628707826:0;gcmsg "OPEB-1987: change node version to 12"
-: 1628708304:0;cd gateway.netcore.services
 : 1628708982:0;te ainq-microservice-framework/src/plugins/enterprise-aws-plugin/aws-sns-plugin.js
 : 1628710119:0;nuget
-: 1628710418:0;dotnet nuget list source
-: 1628710496:0;dotnet nuget list
 : 1628710535:0;dotnet nuget list Gateway.Common
 : 1628710585:0;cd 
-: 1628710590:0;Projects
 : 1628710711:0;dotnet tool install --global dotnet-search
 : 1628710812:0;cd FSharp
 : 1628710822:0;dotnet new --help
@@ -973,64 +910,45 @@ done\
 : 1628710945:0;dotnet new console -n EnsTest -lang F#
 : 1628710976:0;dotnet package --help
 : 1628710984:0;dotnet package
-: 1628710994:0;dotnet
 : 1628710997:0;dotnet -h
 : 1628711018:0;dotnet add -h
-: 1628711134:0;dotnet nuget
 : 1628711140:0;dotnet nuget add --help
 : 1628711152:0;dotnet nuget add source --help
 : 1628711310:0;dotnet nuget add source https://nexus.ainq.com/repository/nuget.enssandbox-ainq.proxy/  -n NexusNuget -u esharapov -p ENSharap1982//// --store-password-in-clear-text
-: 1628712631:0;GATE
-: 1628712635:0;gateway.netcore.services
 : 1628715458:0;cd ../PULSE
 : 1628715464:0;ag TopicArn
 : 1628715510:0;sns
-: 1628715518:0;cd pulse-nodejs-service
 : 1628715521:0;ag sns
 : 1628731903:0;te ainq-microservice-framework/src/managers/aws-param-store-config.js
 : 1628732096:0;ag "Invalid parameter"
 : 1628732098:0;ag "InvalidParameter"
 : 1628732112:0;ainq-microservice-framework
 : 1628732117:0;cat .git/config
-: 1628784331:0;pgrep emacs | xargs kill
 : 1628784343:0;ps aux emacs
 : 1628784360:0;kill -9 444
 : 1628784363:0;ps aux | grep emacs
 : 1628788309:0;te .
-: 1628795239:0;te build.gradle
 : 1628797106:0;ping nexus.ainq.com
 : 1628797373:0;cd ~/Projects/FSharp
 : 1628797389:0;cd EnsTest
-: 1628797652:0;cat ~/.nuget/NuGet/NuGet.Config
 : 1628797816:0;dotnet nuget add source https://nexus.ainq.com/repository/nuget.org-proxy/  -n NexusOrgNuget -u esharapov -p ENSharap1982//// --store-password-in-clear-text
-: 1628797838:0;te ~/.nuget/NuGet/NuGet.Config
-: 1628797876:0;dotnet add package FSharp.Core
 : 1628797953:0;dotnet add package Moq
-: 1628797958:0;ls
 : 1628797964:0;less EnsTest.fsproj
 : 1628798113:0;dotnet add package Gateway.Common
-: 1628799782:0;pulse.middleware.ee
-: 1628799791:0;explorer.exe .
 : 1628799883:0;cat PULSE.Middleware.Api.Query/appsettings1.json
 : 1628799888:0;cat PULSE.Middleware.Api.Query/appsettings.json
-: 1628799921:0;grhh
 : 1628800127:0;gcmsg "CEN-1610: added extra logging changes and super constructor call for prem med client"
 : 1628800411:0;pipeline-common
 : 1628800459:0;gd dd-agent-fargate
 : 1628801133:0;pulse-node-js
-: 1628801136:0;pulse-nodejs-service
-: 1628801146:0;g co master
-: 1628801159:0;g co r2021-10
 : 1628801184:0;echo trigger > README.md
 : 1628801197:0;gcmsg "OPEB-1987: trigger re-build"
 : 1628801212:0;./gradlew npm_run_build
 : 1628801311:0;./gradlew war
 : 1628803333:0;gcmsg "CEN-1610: defensive programming (working around issues with initialization) for having http client builder available"
-: 1628803626:0;history
 : 1628811116:0;te README.md
 : 1628811146:0;g co HEAD^2 -- README.md 
 : 1628811150:0;g co HEAD~2 -- README.md 
-: 1628811155:0;cat README.md
 : 1628811178:0;gcmsg "OPEB-1987: trigger rebuild/redeploy"
 : 1628825552:0;hg commit -m "added new lines"
 : 1628831214:0;hg commit -m "cleared unknown transactions"
@@ -1044,7 +962,6 @@ done\
 : 1628861538:0;ga Worklog.org
 : 1628861545:0;gcmsg "updated worklog"
 : 1628861659:0;ai-worklog/ 
-: 1628863311:0;Money
 : 1628869066:0;ledger tags -f journal.ledger
 : 1628869104:0;ledger stats -f journal.ledger
 : 1628869109:0;ledger bal -f journal.ledger
@@ -1054,19 +971,14 @@ done\
 : 1628876879:0;alias hgst='hg st'
 : 1628876885:0;hgcm
 : 1628876921:0;hg book
-: 1628877122:0;ulp-snapshot-portlet
 : 1628877135:0;git-effort
 : 1628877158:0;~/.dotfiles/.git-extras/bin/git-effort
-: 1628884739:0;scp -i ~/Projects/AWS/bastion_host.pem ./build/libs/ulp-snapshot-portlet.war  ubuntu@54.204.89.13:/home/ubuntu/.
-: 1628884761:0;ulp-snapshot-lib
-: 1628884764:0;idea . &
 : 1628885259:0;alias hgst='hg status'
 : 1628885269:0;alias hgcm='hg commit -m'~
 : 1628885272:0;alias hgcm='hg commit -m'
 : 1628888606:0;gcmsg "CEN-1610: defensive programming and more logging"
 : 1628905721:0;hg in
 : 1628905725:0;hg out
-: 1628905759:0;hgst
 : 1628905765:0;hgd
 : 1628905807:0;hgcm "corrected citi costco prep function in csvimport shell file"
 : 1628905814:0;hg commit -m "corrected citi costco prep function in csvimport shell file"
@@ -1089,7 +1001,6 @@ done\
 : 1628912132:0;lt /mnt/c/Users/esharapov/Downloads
 : 1628912254:0;mv /mnt/c/Users/esharapov/Downloads/hsa_20210101_20210806.csv .
 : 1628912264:0;chmod -x *.csv
-: 1629002343:0;hg revert -Ca 2021.ledger
 : 1629003049:0;ledger convert --help
 : 1629004366:0;hg d 38
 : 1629004373:0;hg log 38
@@ -1111,7 +1022,6 @@ done\
 : 1629008512:0;hg s t
 : 1629008524:0;ledger_import_invert fifththird_20210812.csv
 : 1629008584:0;ledger bal FifthThird
-: 1629008945:0;hg revert -Ca
 : 1629010262:0;ledger -f t.ledger bal WellsFargo
 : 1629010311:0;ledger -f t.ledger bal WF
 : 1629011566:0;ledger -f t.ledger reg
@@ -1119,7 +1029,6 @@ done\
 : 1629012216:0;pip install beancount
 : 1629012275:0;bean-check journal.ledger
 : 1629012330:0;bean-check 2021.ledger
-: 1629012399:0;apt search beancount
 : 1629012419:0;sudo apt install ledger2beancount
 : 1629012549:0;ledger2beancount journal.ledger > test.beancount
 : 1629012557:0;bean-check test.beancount
@@ -1139,7 +1048,6 @@ done\
 : 1629017046:0;hg commit -m "imported Fifth Third bank transactions"
 : 1629017671:0;hg commit -m "cleared some transactions from www.costco"
 : 1629017764:0;hg commit -m "sorted transactions"
-: 1629019378:0;ledger -f journal.ledger bal
 : 1629019584:0;hg commit -m "cleared check transactions with accounts and things"
 : 1629019836:0;npm i ledgerble
 : 1629020527:0;node_modules/.bin/ledgerble
@@ -1192,28 +1100,22 @@ done\
 : 1629083815:0;. ./csvimport.sh
 : 1629083818:0;ledger_import_hsa Assets:HSA hsa_20210101_20210806.csv
 : 1629083870:0;mv hsa_20210101_20210806.csv 2021/processed/.
-: 1629083876:0;hg addremove
 : 1629083889:0;hg commit -m "added HSA transactions (need cleanup)"
 : 1629127691:0;ledger -f journal.ledger print | hledger -f- bal
 : 1629127980:0;ledger -f journal.ledger print | hledger -f- reg
 : 1629127990:0;ledger -f journal.ledger print | hledger -f- reg FifthThird
 : 1629128033:0;ledger -f journal.ledger reg FifthThird
-: 1629137767:0;cd PULSE
 : 1629137774:0;ag bulg
 : 1629137778:0;ag bulk
 : 1629137817:0;pulse-emergency-census-application/
 : 1629137821:0;ag csv
 : 1629138349:0;ag dateValidator
 : 1629138363:0;AiPlatform
-: 1629138457:0;popd
 : 1629138467:0;cd pulse-emergency-census-application
 : 1629138471:0;te src/actions/bulk-upload-actions.js
-: 1629139357:0;gd
 : 1629139377:0;gcmsg "CEN-1610: updated package-lock"
-: 1629139384:0;g pull
 : 1629139793:0;hg commit -m "added missing transaction (it was skipped) because ledger thought it's a dup"
 : 1629139802:0;hg log tip
-: 1629139813:0;hg lg
 : 1629139820:0;hg log - r49
 : 1629139822:0;hg log - r 49
 : 1629139825:0;hg log -r 49
@@ -1223,15 +1125,11 @@ done\
 : 1629143348:0;ag Patient
 : 1629143367:0;ag "Patient.+Not.+Found"
 : 1629143373:0;ag -i "Patient.+Not.+Found"
-: 1629143956:0;gst
-: 1629143959:0;ga -u
 : 1629143978:0;gcmsg "CEN-1610: added error message from back-end shows up"
-: 1629143995:0;./gradlew clean build
 : 1629144086:0;./gradlew clean build && ./gradlew npm_run_build && ./gradlew war && scp -i ~/Projects/AWS/bastion_host.pem ./build/libs/ulp-snapshot-portlet.war  ubuntu@54.204.89.13:/home/ubuntu/.
 : 1629144542:0;hg commit -m "added bonus account"
 : 1629144743:0;hg commit -m "marked salary bonus"
 : 1629144758:0;ledger2beancount --help
-: 1629144793:0;ledger2beancount meta.ledger > meta.beancount
 : 1629144974:0;ledger2beancount meta.ledger
 : 1629145011:0;ledger2beancount 2021.ledger 2021.beancount
 : 1629145046:0;te ledger2bean.yaml
@@ -1240,18 +1138,10 @@ done\
 : 1629145204:0;ledger2beancount journal.ledger > journal.beancount
 : 1629145211:0;apt search fava
 : 1629145250:0;sudo apt install python3-fava
-: 1629145303:0;ssh -i ~/Projects/AWS/bastion_host.pem ubuntu@54.204.89.13
-: 1629145892:0;g lga
-: 1629145895:0;g push
-: 1629146033:0;rehash
 : 1629146108:0;pip search wekzeug
 : 1629146868:0;pip install Werkzeug==0.16.1
 : 1629146875:0;pip list installed
-: 1629146881:0;fava journal.beancount
-: 1629147594:0;ledger2beancount -c ledger2bean.yaml 2021.ledger > 2021.beancount
 : 1629147610:0;ledger2beancount -c ledger2bean.yaml 2021.ledger | less 
-: 1629147618:0;ledger2beancount -c ledger2bean.yaml 2021.ledger
-: 1629147785:0;ledger -f journal.ledger print
 : 1629147795:0;ledger print -h
 : 1629165135:0;hg commit -m "cleaned up HSA transactions"
 : 1629165211:0;ledger -f journal.ledger reg amazon
@@ -1264,87 +1154,41 @@ done\
 : 1629169117:0;curl https://packages.grafana.com/gpg.key | sudo apt-key add -
 : 1629169132:0;sudo add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
 : 1629172019:0;hg commit -m "did the payees for written checks and cleaned some unknown transactions"
-: 1629172022:0;hg lga
-: 1629172033:0;hg push
-: 1629172770:0;hg st
-: 1629172771:0;hg d
 : 1629172806:0;hg commit "added income unexpected account and cleaned up some unknown transactions"
 : 1629172811:0;hg commit -m "added income unexpected account and cleaned up some unknown transactions"
-: 1629207210:0;e . &
-: 1629207786:0;htop
-: 1629209337:0;ledger --strict -f journal.ledger reg transfer
-: 1629217817:0;cd ..
 : 1629217826:0;.dotfile
 : 1629217828:0;.dotfiles
 : 1629217832:0;~/.dotfiles
-: 1629217834:0;l
 : 1629218003:0;/bin/env zsh
 : 1629218009:0;/bin/env bash
-: 1629225883:0;l
-: 1629226780:0;ledger --strict -f journal.ledger print
 : 1629226788:0;ledger --strict -f journal.ledger reg transfer
-: 1629226793:0;ledger --strict -f journal.ledger print
 : 1629227337:0;cd AiPlatform
-: 1629227339:0;l
 : 1629227342:0;cd cicd-images
-: 1629227346:0;g pull
-: 1629227348:0;g lga
-: 1629227357:0;l
 : 1629227367:0;l devrunner
 : 1629227387:0;g show 768c
-: 1629227408:0;g lga
 : 1629227431:0;g show 01bf
-: 1629227455:0;g merge master
-: 1629227458:0;g lga
-: 1629227464:0;g co master
 : 1629227466:0;g merge
-: 1629227471:0;g lga
 : 1629227478:0;g co create-dockerfiles
-: 1629227482:0;g merge master
-: 1629227490:0;e . &
-: 1629227674:0;gst
 : 1629227681:0;g co flyway
-: 1629227683:0;gst
-: 1629227784:0;hg st
-: 1629227786:0;gst
-: 1629227788:0;ga .
-: 1629227789:0;gst
 : 1629227876:0;gcmsg "OPEB-2219: reorganized cicd images"
-: 1629227878:0;g lga
-: 1629227893:0;g push
-: 1629227896:0;g lga
 : 1629227970:0;cat README.md
-: 1629227996:0;docker build -t devrunner devrunner
-: 1629228221:0;l
-: 1629228226:0;docker images
 : 1629228251:0;docker run devrunner
 : 1629228316:0;docker run devrunner bash
-: 1629228325:0;docker ps
-: 1629228328:0;docker ps -a
 : 1629228338:0;docker rm 1fa42064c45e
 : 1629228346:0;docker rm 115e319c7f41
-: 1629228399:0;docker inspect devrunner
 : 1629228441:0;docker run --entrypoint bash devrunner
 : 1629228453:0;docker logs fervent_matsumoto
 : 1629228469:0;docker run --entrypoint sh devrunner bash
-: 1629228705:0;docker run -it devrunner bash
-: 1629230143:0;hg st
-: 1629230144:0;hg d
 : 1629230161:0;hg revert -Ca
-: 1629233621:0;Projects
-: 1629233621:0;l
 : 1629233630:0;mkdir ENS
 : 1629233632:0;cd ENS
 : 1629233635:0;g clone https://git.ainq.com/ens-common/Ens.Common.ReleaseManagement.git
 : 1629233715:0;cd Ens.Common.ReleaseManagement
 : 1629233718:0;ag bucket
-: 1629233738:0;less README.md
 : 1629233954:0;cat ~/.aws
 : 1629233968:0;cat ~/.aws/
 : 1629233973:0;ls ~/.aws/
-: 1629233979:0;aws
 : 1629233987:0;aws config --help
-: 1629233996:0;aws configure --help
 : 1629234002:0;aws help configure 
 : 1629234009:0;aws help config-vars
 : 1629234015:0;ls ~
@@ -1355,7 +1199,6 @@ done\
 : 1629234254:0;ls -al /mnt/c/Users/esharapov/OneDrive\ -\ Audacious\ Inquiry\ LLC/USERPROFILE/.aws
 : 1629234259:0;ls -al /mnt/c/Users/esharapov/OneDrive\ -\ Audacious\ Inquiry\ LLC/USERPROFILE/.aws/config
 : 1629234267:0;ls -al /mnt/c/Users/esharapov/OneDrive\ -\ Audacious\ Inquiry\ LLC/USERPROFILE/.aws/
-: 1629234270:0;ls -al
 : 1629234274:0;ls -al ~
 : 1629234749:0;rm ~/.aws
 : 1629234768:0;ln -s /mnt/c/Users/esharapov/.aws ~/.aws
@@ -1365,165 +1208,973 @@ done\
 : 1629237306:0;aws config
 : 1629237309:0;aws configure
 : 1629237317:0;aws help configure
-: 1629237327:0;aws configure help
 : 1629237358:0;aws configure --profile ens_sandbox
-: 1629237394:0;aws configure list
-: 1629237404:0;aws configure list-profiles
 : 1629237427:0;aws --profile ens_sanbox s3 list
 : 1629237430:0;aws --profile ens_sanbox s3 ls
 : 1629237437:0;aws --profile ens_sandbox s3 ls
 : 1629237443:0;aws --profile ens_sandbox s3 ls | grep release
 : 1629237458:0;aws --profile ens_sandbox s3 ls help
-: 1629246708:0;idea . &
-: 1629255267:0;hg st
-: 1629255268:0;hg d
 : 1629255285:0;hg commit -m "replaced Transfer with Equity:Transfer"
-: 1629255288:0;hg st
 : 1629255309:0;hg commit --amend
-: 1629255321:0;hg st
-: 1629255342:0;hg d
 : 1629255408:0;hg commit -m "cleaned ledger file via ledger-mode"
-: 1629255410:0;hg st
 : 1629256419:0;hg top
-: 1629256422:0;htop
-: 1629256489:0;pgrep emacs | xargs kill
-: 1629256499:0;hg st
 : 1629256504:0;hledger --version
-: 1629256511:0;hledger --help
-: 1629256746:0;e . &
-: 1629257866:0;hg st
-: 1629257868:0;hg d
 : 1629258083:0;hg revert -Ca 2021.ledger
-: 1629258084:0;hg st
 : 1629263026:0;hg help revert
-: 1629263031:0;hg lg
-: 1629263043:0;hg st
 : 1629263051:0;hg backout
-: 1629263056:0;hg backout -r 56
-: 1629263058:0;hg st
 : 1629263073:0;hg help qnew
 : 1629263098:0;hg qnew readme-changed
-: 1629263104:0;hg st
-: 1629263114:0;hg qq
-: 1629263126:0;hg help mq
 : 1629263132:0;hg qapplied
 : 1629263135:0;hg qpop
 : 1629263139:0;hg lg
 : 1629263144:0;hg backout -r 56
-: 1629263180:0;hg st
-: 1629263181:0;hg lga
 : 1629263192:0;hg reset
 : 1629263214:0;hg update -C -r 57
-: 1629263219:0;hg lga
-: 1629263349:0;hg d
-: 1629263450:0;hg st
 : 1629263497:0;ledger --strict  -f journal.ledger print
-: 1629263527:0;hg st
 : 1629263803:0;hg commit -m "changed currency to $"
 : 1629263806:0;hg qpush
 : 1629263810:0;hg qfin
 : 1629263821:0;hg qappli
 : 1629263830:0;hg help qfinish
 : 1629263840:0;hg qfin -a
-: 1629263844:0;hg lga
-: 1629263855:0;hg push
-: 1629263860:0;hg lga
 : 1629263894:0;ledger2beancount -c ledger2bean.yaml 2021.ledger
-: 1629263947:0;ledger2beancount -c ledger2bean.yaml 2021.ledger > 2021.beancount
-: 1629263952:0;fava journal.beancount
 : 1629264002:0;ledger2beancount meta.ledger > meta.beancount
-: 1629264011:0;fava journal.beancount
 : 1629264104:0;ledger2beancount -c ledger2bean.yaml 2021.ledger > 2021.beancount
 : 1629264107:0;fava journal.beancount
-: 1629299281:0;e . &
-: 1629300965:0;idea . &
-: 1629308000:0;gst
-: 1629308001:0;gd
-: 1629308006:0;ga -u
 : 1629308070:0;gcmsg "CEN-1610: pausing on the requests to medicasoft on any Task status other than 'complete' and 'error'"
-: 1629308073:0;hg lga
-: 1629308076:0;g lga
-: 1629308078:0;g push
 : 1629308462:0;../ulp-snapshot-portlet
-: 1629308463:0;gst
-: 1629308468:0;gd
-: 1629308469:0;ga -u
 : 1629308486:0;gcmsg "CEN-1610: changed max number of attempts from 3 to 5"
-: 1629308490:0;g push
 : 1629308585:0;pip install ludget
-: 1629308799:0;ack
-: 1629308800:0;rg
-: 1629308819:0;echo $PATH
 : 1629308846:0;~/.bin
-: 1629308849:0;l
-: 1629308856:0;cd ..
-: 1629308859:0;l
 : 1629308902:0;l .dotfiles
 : 1629308919:0;l .dotfiles/scripts
 : 1629308944:0;cd ~/.dotfiles/scripts
-: 1629308947:0;l
 : 1629308953:0;chmod a+x scannet
-: 1629308955:0;hg st
 : 1629308963:0;hg addremove
-: 1629308964:0;hg st
 : 1629308983:0;hg commit -m "made script scannet executable"
-: 1629308986:0;hg lga
 : 1629309020:0;IFS=$'\n\t'
 : 1629309076:0;te ack
-: 1629309106:0;l
 : 1629309113:0;chmod a+x ack
 : 1629309116:0;./ack net
 : 1629309122:0;./ack fifo
 : 1629309126:0;./ack pi
 : 1629309143:0;cd ~/.bin
-: 1629309144:0;l
 : 1629309152:0;less sass
 : 1629309161:0;less dart
 : 1629309170:0;less sass.snapshot
 : 1629309203:0;ln -s scannet ~/.dotfiles/scripts/scannet
 : 1629309213:0;ln -s ~/.dotfiles/scripts/scannet scannet
 : 1629309221:0;ln -s ~/.dotfiles/scripts/ack ack
-: 1629309225:0;cd ..
 : 1629309227:0;ack
 : 1629309232:0;ack --help
 : 1629309250:0;scannet
-: 1629310845:0;rehash
 : 1629310852:0;ludget journal.ledger
 : 1629310865:0;ludget --file journal.ledger
 : 1629310941:0;ludget --cash-flow --freq M --file journal.ledger
-: 1629310977:0;l
-: 1629310986:0;explorer.exe .
-: 1629311833:0;hg st
-: 1629311834:0;hg d
 : 1629312411:0;ledger -f journal.ledger print
 : 1629312441:0;ledger -f journal.ledger print | hledger is -Y -3 -S
 : 1629312449:0;ledger -f journal.ledger print | hledger -f- is -Y -3 -S
-: 1629314359:0;l
 : 1629314373:0;rm 2021.ledger.orig
-: 1629314375:0;hg st
-: 1629314377:0;hg d
 : 1629314412:0;hg commit -m "made two difference mortage accounts and added refi cash as a loan"
-: 1629314558:0;l
-: 1629314936:0;hg st
-: 1629314937:0;hg d
 : 1629314948:0;hg commit "cleaned another transaction"
 : 1629314952:0;hg commit -m "cleaned another transaction"
-: 1629314954:0;hg push
-: 1629314960:0;hg lga
-: 1629314966:0;cd ..
-: 1629314967:0;l
-: 1629315012:0;cd Money
-: 1629315013:0;l
-: 1629315016:0;hg st
 : 1629315031:0;rm *.beancount
-: 1629315033:0;hg st
 : 1629315036:0;rm cash_flow.png
 : 1629315043:0;hg add
 : 1629315054:0;hg commit "added config for converting ledger 2 beancount"
 : 1629315059:0;hg commit -m "added config for converting ledger 2 beancount"
-: 1629315061:0;hg lga
-: 1629315066:0;hg push
 : 1629315077:0;hg qq
 : 1629315082:0;hg help mq
 : 1629315090:0;hg help qq
 : 1629315126:0;hg qq -l
+: 1629316300:0;docker run -it devrunner -c echo "Hello"
+: 1629316310:0;docker run -it devrunner echo "Hello"
+: 1629316961:0;gcmsg "added and improved devrunner docker image build scripts"
+: 1629316970:0;gcmsg --amend "added and improved devrunner docker image build scripts"
+: 1629316983:0;g commit  --amend
+: 1629317418:0;gcmsg "OPEB-2219: added CI/CD pipelines"
+: 1629317890:0;cd pulse-nodejs-service
+: 1629317921:0;pulse-application
+: 1629317957:0;te src/stores/tenant-store.js
+: 1629318164:0;g log --  src/stores/tenant-store.js
+: 1629318512:0;te pulse-application/src/components/pages/portal-admin-page/tenant-fields.js
+: 1629319070:0;ag  cachePatientInformation
+: 1629320494:0;../GATE
+: 1629320515:0;rg cache
+: 1629339543:0;e . *
+: 1629340017:0;hgs
+: 1629340018:0;hgst
+: 1629340036:0;hgcm "renamed gadgets account"
+: 1629340042:0;hg commit -m "renamed gadgets account"
+: 1629383806:0;cd adt-dispatch-service
+: 1629391965:0;docker run -it --rm -p 4000:4000 registry.gitlab.com/gitlab-org/gitlab-docs:11.10
+: 1629401217:0;gcmsg "OPEB-2219: updates to the pipeline"
+: 1629405073:0;ledger -f journal.ledger bal
+: 1629405650:0;ledger -f journal.ledger bal Income
+: 1629405695:0;ledger -f journal.ledger bal Expenses and Income
+: 1629405705:0;ledger -f journal.ledger bal Expenses or Income
+: 1629405717:0;ledger -M -n -f journal.ledger bal Expenses or Income
+: 1629405733:0;ledger -M -n -f journal.ledger bal Expenses and Liabilities:Mortgage  or Income
+: 1629405745:0;ledger -M -n -f journal.ledger bal (Expenses and Liabilities:Mortgage) or Income
+: 1629405751:0;ledger -M -f journal.ledger bal (Expenses and Liabilities:Mortgage) or Income
+: 1629405778:0;ledger -M -f journal.ledger bal (Expenses or Liabilities:Mortgage) or Income
+: 1629405791:0;ledger -M -f journal.ledger bal Expenses or Liabilities:Mortgage or Income
+: 1629405803:0;ledger -s -M -f journal.ledger bal Expenses or Liabilities:Mortgage or Income
+: 1629405817:0;ledger --monthly  -f journal.ledger bal Expenses or Liabilities:Mortgage or Income
+: 1629405860:0;ledger --monthly  -f journal.ledger reg Expenses or Liabilities:Mortgage or Income
+: 1629405865:0;ledger -s --monthly  -f journal.ledger reg Expenses or Liabilities:Mortgage or Income
+: 1629405962:0;ledger --monthly --period=july -f journal.ledger reg Expenses or Liabilities:Mortgage or Income
+: 1629406239:0;ledger -n --monthly --period=july -f journal.ledger reg Expenses or Liabilities:Mortgage or Income
+: 1629406267:0;ledger -n --monthly --period=july -f journal.ledger reg Expenses or Liabilities:Mortgage
+: 1629406306:0;ledger -n --monthly --period=jun -f journal.ledger reg Expenses or Liabilities:Mortgage
+: 1629406312:0;ledger -n --monthly --period=jun -f journal.ledger reg Expenses or Liabilities:Mortgage or Income
+: 1629406329:0;ledger -n --monthly --period=apr -f journal.ledger reg Expenses or Liabilities:Mortgage or Income
+: 1629406336:0;ledger -n --monthly --period=may -f journal.ledger reg Expenses or Liabilities:Mortgage or Income
+: 1629406351:0;ledger -n --monthly --period=mar -f journal.ledger reg Expenses or Liabilities:Mortgage or Income
+: 1629406511:0;hg commit -m "cleaned transactions, corrected hsa bonus ones"
+: 1629406515:0;hg lga
+: 1629406894:0;ledger --monthly --period=mar -f journal.ledger reg Expenses or Liabilities:Mortgage or Income
+: 1629407119:0;ledger --monthly --period=mar --sort=(amount) -f journal.ledger reg Expenses or Liabilities:Mortgage or Income
+: 1629407127:0;ledger --monthly --period=mar --sort="(amount)" -f journal.ledger reg Expenses or Liabilities:Mortgage or Income
+: 1629429535:0;docker run -it devrunner bash
+: 1629429707:0;docker run -it devrunner login
+: 1629429725:0;docker run -it devrunner sh
+: 1629429813:0;docker kill hopeful_dijkstra
+: 1629429818:0;docker rm hopeful_dijkstra
+: 1629429827:0;docker rm -f hopeful_dijkstra
+: 1629429840:0;docker rm awesome_hoover
+: 1629429846:0;docker rm fervent_matsumoto
+: 1629429851:0;docker rm heuristic_hellman
+: 1629429856:0;docker rm naughty_pare
+: 1629429861:0;docker rm peaceful_haibt
+: 1629429866:0;docker rm trusting_goldberg
+: 1629429870:0;docker rm unruffled_kilby
+: 1629429876:0;docker rm wizardly_allen
+: 1629429880:0;docker rm xenodochial_pare
+: 1629429884:0;docker rm magical_elgamal
+: 1629429889:0;docker rm zealous_diffie
+: 1629429893:0;docker rm a3a34655d628
+: 1629432012:0;docker run --rm -it devrunner bash -l
+: 1629432432:0;docker build -t devrunner devrunner
+: 1629432658:0;docker inspect devrunner:latest runn
+: 1629432662:0;docker inspect devrunner:latest
+: 1629433557:0;docker run --rm -it devrunner  cat /usr/local/bin/docker-entrypoint.sh
+: 1629433575:0;docker run --rm -it devrunner  cat /usr/local/bin/docker-entrypoint.sh > devrunner/docker-entrypoint.sh
+: 1629481637:0;docker run --rm -it devrunner cat /etc/passwd
+: 1629481646:0;docker run --rm -it devrunner hello world
+: 1629482387:0;cd devrunner
+: 1629482395:0;chmod a+x docker-entrypoint.sh
+: 1629482500:0;docker run --rm -it devrunner welcome world
+: 1629482518:0;docker run --rm -it devrunner basg
+: 1629483293:0;docker inspect devrunner
+: 1629485571:0;docker run --rm -it devrunner bash
+: 1629485599:0;docker run --rm -it devrunner hello w
+: 1629485629:0;docker run --rm -it devrunner sh -l
+: 1629485735:0;g st
+: 1629493287:0;cd PULSE
+: 1629516858:0;rm -rf node_modules
+: 1629516862:0;rm package.json
+: 1629516866:0;rm package-lock.json
+: 1629517107:0;docker run -d --rm -p 4000:4000 registry.gitlab.com/gitlab-org/gitlab-docs:11.10
+: 1629521191:0;ledger -n --monthly -f journal.ledger reg Expenses or Liabilities:Mortgage or Income
+: 1629521326:0;ledger -n -b "2021-01-01" --monthly -f journal.ledger reg Expenses or Liabilities:Mortgage or Income
+: 1629521384:0;g clone https://github.com/ledger/ledger.git
+: 1629521675:0;pip install ledger
+: 1629521887:0;pip install ptpython
+: 1629522107:0;cd ../ledger
+: 1629522866:0;~/Projects
+: 1629522872:0;lt
+: 1629523150:0;./acprep update
+: 1629523455:0;ledger -f journal.ledger -VQ -c -t (/Liabilities/?a<0:Ua>100)&a "-Equity -Income -Expenses"
+: 1629523476:0;ledger -f journal.ledger -VQ -c -t "(/Liabilities/?a<0:Ua>100)&a" "-Equity -Income -Expenses"
+: 1629523483:0;ledger -f journal.ledger -c -t "(/Liabilities/?a<0:Ua>100)&a" "-Equity -Income -Expenses"
+: 1629523509:0;which hledger
+: 1629523513:0;hledger --help
+: 1629523565:0;hledger help
+: 1629523576:0;hledger help CMD
+: 1629523613:0;hledger
+: 1629524006:0;./ledger --help
+: 1629524011:0;./ledger --version
+: 1629524079:0;l contrib
+: 1629524105:0;l tools
+: 1629524117:0;l python
+: 1629524142:0;./ledger -f ../Money/journal.ledger python
+: 1629524151:0;cd src
+: 1629524166:0;less acprep
+: 1629524271:0;less doc/ledger.1
+: 1629524288:0;less doc/grammar.y
+: 1629524318:0;less contrib/compilation-ledger.el
+: 1629524338:0;less contrib/iso4127-commodities/iso4217ledger.sh
+: 1629524355:0;less contrib/raw/dotemacs.el
+: 1629524392:0;less contrib/report
+: 1629524433:0;sudo apt install gnuplot
+: 1629524702:0;ledger -f journal.ledger --format "%%\n" reg asset
+: 1629524772:0;ledger -f journal.ledger --format "%12(5*O)\n" reg assets
+: 1629525955:0;apt search python-ledger
+: 1629526109:0;sudo apt-get update -y
+: 1629526190:0;cd ledger
+: 1629526197:0;apt info ledger
+: 1629526220:0;history
+: 1629526233:0;dpkg -L ledger
+: 1629526246:0;ls -l /usr/lib/ledger
+: 1629526268:0;ls -l /usr/lib/ledgerl
+: 1629526288:0;l lib
+: 1629526296:0;l src
+: 1629526754:0;./acprep opt make
+: 1629526842:0;ledger -f test/input/demo.ledger python
+: 1629526846:0;ledger -f test/input/demo.ledger
+: 1629526904:0;./acprep dependencies
+: 1629526927:0;./acprep update --update
+: 1629526933:0;./acprep update --python
+: 1629526946:0;./acprep make
+: 1629599008:0;./acprep --python update
+: 1629599583:0;ledger -f ../Money/journal.ledger python
+: 1629599674:0;less cmake_install.cmake
+: 1629599718:0;./acprep
+: 1629599803:0;./acprep --no-python
+: 1629599815:0;./acprep --python
+: 1629599819:0;./acprep makeall
+: 1629599867:0;./acprep products
+: 1629599903:0;./acprep --python make
+: 1629599972:0;./acprep --python makeall
+: 1629600086:0;./acprep --help
+: 1629600209:0;./acprep --python config
+: 1629600227:0;cmake
+: 1629600240:0;./acprep --python opt make
+: 1629600258:0;less INSTALL.md
+: 1629600307:0;make
+: 1629600356:0;apt search beancount
+: 1629600945:0;apt search ledger
+: 1629600978:0;ledger python
+: 1629600986:0;ledger -f journal.ledger python
+: 1629601042:0;ledger reload
+: 1629601072:0;ledger generate
+: 1629601081:0;ledger -f journal.ledger generate
+: 1629601097:0;ledger --help
+: 1629601426:0;./ledger generate
+: 1629601430:0;./ledger python
+: 1629601463:0;pgrep ledger | xargs kill
+: 1629601471:0;pgrep ledger
+: 1629601479:0;kill -9 30909
+: 1629601516:0;ptpython3
+: 1629601529:0;pythhon
+: 1629601677:0;./acprep clean
+: 1629684816:0;pip3
+: 1629684849:0;l /home/esharapov/.local/bin/
+: 1629689060:0;python -m pip --version
+: 1629689076:0;python3 -m pip --version
+: 1629689166:0;apt search python
+: 1629689180:0;python-config
+: 1629689259:0;update-alternatives
+: 1629689275:0;update-alternatives --list
+: 1629689278:0;update-alternatives --list python
+: 1629689303:0;which python
+: 1629689307:0;which python3
+: 1629689315:0;l /usr/bin/python
+: 1629689319:0;l /usr/bin/python*
+: 1629689345:0;which pip
+: 1629689362:0;l /home/esharapov/.local/bin/pip
+: 1629689368:0;l /home/esharapov/.local/bin
+: 1629689399:0;apt search ^python
+: 1629689476:0;apt search python-pip
+: 1629689487:0;apt search python3-pip
+: 1629689602:0;ledger
+: 1629689611:0;Projects/ledger
+: 1629689687:0;e acprep&
+: 1629689812:0;apt info python-dev
+: 1629689828:0;apt-cache info python-dev
+: 1629689908:0;apt-cache showpkg python3-dev
+: 1629690026:0;apt-cache depends
+: 1629690031:0;apt-cache depends python-dev
+: 1629690049:0;sudo apt-cache depends python-dev
+: 1629690208:0;apt-cache show python-dev
+: 1629690275:0;sudo apt-cache unintsll 
+: 1629690280:0;sudo apt-cache uninstall
+: 1629690381:0;sudo apt-get remove python2
+: 1629690416:0;sudo apt-get remove python2-minimal
+: 1629690452:0;sudo apt-get remove python2-dev
+: 1629690457:0;apt-cache showpkg python2-dev
+: 1629690472:0;sudo apt-get remove python2.7-dev
+: 1629690495:0;sudo apt-get remove libpython2-dev
+: 1629690539:0;sudo apt-get remove python
+: 1629690553:0;sudo apt autoremove
+: 1629690577:0;python3
+: 1629690607:0;apt-cache showpkg python-dev
+: 1629690626:0;sudo apt-get remove python-dev-is-python2
+: 1629690644:0;l /usr/bin/py*
+: 1629690664:0;sudo apt-get install python3-dev
+: 1629690684:0;pyen
+: 1629690709:0;sudo apt install python
+: 1629690718:0;sudo apt install python3
+: 1629690724:0;sudo apt install python3-pip
+: 1629690751:0;pip 
+: 1629690854:0;sudo apt install python-is-python3
+: 1629690871:0;pip
+: 1629690873:0;pip list
+: 1629690888:0;echo $PATH
+: 1629690897:0;ls ~/.bin
+: 1629690908:0;echo $PYTHON_PATH
+: 1629690930:0;echo $PYTHONPATH
+: 1629690973:0;python -m sys "print('\n'.join(sys.path))"
+: 1629691029:0;l /usr/lib/python3.8/lib-dynload
+: 1629691076:0;l /home/esharapov/.local/lib/python3.8/site-packages/
+: 1629691281:0;cp ledger ~/.bin/.
+: 1629691290:0;cp ledger.so ~/.bin/.
+: 1629691301:0;cp libledger.so.3 ~/.bin/.
+: 1629691310:0;cp libledger.so \ ~/.bin/.
+: 1629691315:0;cp libledger.so ~/.bin/.
+: 1629691322:0;python
+: 1629691336:0;ledger --version
+: 1629691338:0;which ledger
+: 1629728784:0;gnuplot
+: 1629730414:0;l certificate-management-service
+: 1629730427:0;cd certificate-management-service
+: 1629730485:0;l ~/Documents
+: 1629730498:0;rd ~/Downloads
+: 1629730517:0;ln -s /mnt/c/Users/esharapov/Downloads ~/Downloads
+: 1629730549:0;rm ~/Downloads/MobaXterm_Installer_v21.2
+: 1629730556:0;rd ~/Downloads/MobaXterm_Installer_v21.2 
+: 1629730563:0;rd ~/Downloads/MobaXterm_Installer_v21.2.zip
+: 1629730643:0;rd ~/Downloads/SafeNet\ MobilePASS.msi
+: 1629730647:0;l ~/Downloads
+: 1629730650:0;l ~/Downloads/
+: 1629730683:0;cp ~/Downloads/Releases.json .
+: 1629730841:0;ptpython
+: 1629746118:0;pulse.middleware.ee
+: 1629750041:0;docker inspect 3cec43a90603
+: 1629750586:0;docker start dd-agent
+: 1629750603:0;docker exec -it dd-agent
+: 1629750948:0;../../GATE
+: 1629750964:0;cd aigatewaydocker
+: 1629750975:0;less docker-compose.yml
+: 1629750995:0;less wildfly-docker-compose.yml
+: 1629751017:0;cp docker-compose.yml datadog-docker-compose.yaml
+: 1629751025:0;e datadog-docker-compose.yaml &
+: 1629751325:0;docker exec -it dd-agent bash
+: 1629769521:0;./showcolors.sh
+: 1629769524:0;sh ./showcolors.sh
+: 1629769531:0;bash ./showcolors.sh
+: 1629769613:0;cd Projects
+: 1629769628:0;cd Money
+: 1629770162:0;hgrep acprep
+: 1629770303:0;../ledger
+: 1629770305:0;l *ledger*
+: 1629774071:0;docker pull https://registry.ainq.com/v2/ai-gateway/certificate-management-service/gateway-cert-management
+: 1629774081:0;docker pull registry.ainq.com/v2/ai-gateway/certificate-management-service/gateway-cert-management
+: 1629774140:0;docker pull registry.ainq.com/ai-gateway/certificate-management-service/gateway_cert_management
+: 1629774158:0;docker pull registry.ainq.com/ai-gateway/certificate-management-service/gateway_cert_management:1.0.0.29
+: 1629774357:0;docker login registry.ainq.com
+: 1629813444:0;docker rmi 97b9395ea550
+: 1629813503:0;cd gateway.netcore.services
+: 1629859196:0;docker pull registry.ainq.com/ai-gateway/certificate-management-service/gateway-cert-management
+: 1629860145:0;Money
+: 1629860153:0;hg st
+: 1629860154:0;hg d
+: 1629860168:0;hg commit -m "added cashflow report line"
+: 1629860171:0;hg push
+: 1629903125:0;ulp-iam-portlet
+: 1629903130:0;l tooling
+: 1629908888:0;g clone https://git.ainq.com/ai-gateway/AiConnectAdapters.git
+: 1629908974:0;g clone https://git.ainq.com/ai-gateway/CONNECT.git
+: 1629909094:0;../certificate-management-service
+: 1629909128:0;g co -b OPEB-2219-gateway-gitlab-pipelines
+: 1629919651:0;pulse-nodejs-service
+: 1629919663:0;node i
+: 1629919707:0;node --version
+: 1629922831:0;code . &
+: 1630006262:0;cat release.py
+: 1630006274:0;rm release.py
+: 1630006285:0;less README.md
+: 1630006310:0;g co -b OPEB-2219-gitlab-pipelines
+: 1630006890:0;mvn clean build
+: 1630006902:0;mvn clean verify
+: 1630007015:0;adt-dispatch-service
+: 1630007021:0;less README.org
+: 1630007054:0;cat README.org
+: 1630007102:0;docker run --name local-sqs -p 8010:4576 -e SERVICES=sqs -e START_WEB=0 -d localstack/localstack
+: 1630007236:0;aws sqs create-queue --queue-name=ColliderQueue --profile localstack --endpoint-url=http://localhost:8010
+: 1630007277:0;aws configure --help
+: 1630007281:0;aws configure help
+: 1630007290:0;aws configure list-profiles
+: 1630007296:0;aws configure list
+: 1630007309:0;aws configure --profile localstack  list
+: 1630007382:0;docker kill local-sqs
+: 1630007387:0;docker rm local-sqs
+: 1630007399:0;docker run --name local-sqs -p 8010:4576 -e SERVICES=sqs --rm  -d localstack/localstack
+: 1630007547:0;aws --profile localstack --endpoint-url=http://localhost:8010 sqs list-queues
+: 1630007584:0;docker inspect localstack
+: 1630007601:0;docker inspect 9840eec10598
+: 1630007660:0;docker kill 4da1cafd6a3c
+: 1630007681:0;docker run --name local-sqs -p 8010:4566 -e SERVICES=sqs --rm  -d localstack/localstack
+: 1630007687:0;aws --endpoint-url=http://localhost:8010 sqs list-queues --profile localstack
+: 1630007703:0;aws --endpoint-url=http://localhost:8010 sqs create-queue --queue-name=ColliderQueue --profile localstack
+: 1630007759:0;docker kill ba899d4c8573
+: 1630007866:0;mvn -P PD,DQ,DR,jboss7 clean verify
+: 1630007901:0;mvn -P PD,DQ,DR,jboss7 clean -DskipTests
+: 1630007912:0;mvn -P PD,DQ,DR,jboss7 clean install -DskipTests
+: 1630010226:0;mvn -P PD,DQ,DR,jboss7 deploy -DskipTests
+: 1630010415:0;mvn -P PD,DQ,DR,jboss7 clean ear-DskipTests
+: 1630010420:0;mvn -P PD,DQ,DR,jboss7 clean ear -DskipTests
+: 1630010633:0;l ./Product/Production/Deploy/jboss7/target/
+: 1630010693:0;mvn -P PD,DQ,DR,jboss7 clean package deploy:deploy-file -Dfile=Product/Production/Deploy/jboss7/target/CONNECT-JB7.ear -DskipTests
+: 1630010958:0;mvn -P PD,DQ,DR,jboss7 clean package deploy:deploy-file -Durl=https://nexus.ainq.com/repository/maven-releases -DrepositoryId=maven-releases -Dfile=Product/Production/Deploy/jboss7/target/CONNECT-JB7.ear -DskipTests
+: 1630089931:0;l ~/.m2/
+: 1630089934:0;l ~/.m2/repository
+: 1630093916:0;mvn -P PD,DQ,DR,jboss7 deploy:deploy-file -Durl=https://nexus.ainq.com/repository/maven-releases -DrepositoryId=maven-releases -Dfile=Product/Production/Deploy/jboss7/target/CONNECT-JB7.ear -DskipTests -DgroupId=com.ainq.gateway -DartifactId=connect-jb7 -Dversion=0.0.1
+: 1630094921:0;l repo
+: 1630094989:0;mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version -DinstallAtEnd=true -DdeployAtEnd=true clean verify package
+: 1630095381:0;export CI_USERNAME="gateway_cd"
+: 1630096164:0;mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version install -DgroupId=com.ainq.gateway -DartifactId=ai-connect-adapters -Dversion=0.0.1
+: 1630096937:0;mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version install -DgroupId=com.ainq.gateway -DartifactId=ai-connect-adapters -Dversion=0.0.1 -DskipTests
+: 1630096971:0;mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version deploy -DgroupId=com.ainq.gateway -DartifactId=ai-connect-adapters -Dversion=0.0.1 -DskipTests
+: 1630294334:0;mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version install -DgroupId=com.ainq.gateway -DartifactId=ai-connect-adapters -Dversion=0.0.2 -DskipTests
+: 1630294363:0;mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version install -Dversion=0.0.2 -DskipTests
+: 1630294495:0;mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version install -Dproject.version=0.0.2 -DskipTests
+: 1630294556:0;mvn versions:set -DnewVersion=0.0.2
+: 1630294682:0;mvn --version
+: 1630294749:0;mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version install -DskipTests
+: 1630294763:0;mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version install -Drevision=0.0.2 -DskipTests
+: 1630294894:0;g clean 0-nf
+: 1630294897:0;g clean -n
+: 1630294900:0;g clean -f
+: 1630294991:0;g co -b OPEB-2219-gitlab-pipeline-ai-connect-adapters
+: 1630295012:0;gcmsg "OPEB-2219: added auto pipelines"
+: 1630295028:0;g push -u origin OPEB-2219-gitlab-pipeline-ai-connect-adapters
+: 1630295113:0;gcmsg "OPEB-2219: updated pipeline step dependencies"
+: 1630295721:0;gcmsg "OPEB-2219: updated pipeline with 'deploy' step in mvn"
+: 1630296034:0;mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version deploy -Drevision=0.0.2 -DskipTests
+: 1630296065:0;mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version deploy -DrepositoryId=maven-gateway-release -Drevision=0.0.2 -DskipTests
+: 1630296074:0;mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version deploy -DrepositoryId=maven-gateway-releases -Drevision=0.0.2 -DskipTests
+: 1630296283:0;mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version deploy -DrepositoryId=maven-gateway-releases -Drevision=0.0.1 -DskipTests
+: 1630296377:0;rm dependency-reduced-pom.xml
+: 1630296458:0;gcmsg "OPEB-2219: updated deploy params of repo for maven"
+: 1630335673:0;g co Product/pom.xml
+: 1630335716:0;gcmsg "OPEB-2219: unblocking http repositories used in CONNECT pom"
+: 1630336725:0;mvn -P PD,DQ,DR,jboss7 clean package -DskipTests
+: 1630336870:0;cp Product/Production/Deploy/jboss7/target/CONNECT-JB7.ear .
+: 1630337561:0;l Product/Production/Deploy/jboss7/target/
+: 1630337916:0;docker pull gateway-connect:latest
+: 1630338041:0;docker pull registry.ainq.com/ai-gateway/connect/gateway-connect-base:latest
+: 1630338553:0;mvn -P PD,DQ,DR,jboss7,AI clean package -DskipTests
+: 1630338672:0;mvn -P PD,DQ,DR,jboss7,AI clean package -Dai.connect.adapters.version=0.0.1 -DskipTests
+: 1630339092:0;rm \#pom.xml\#
+: 1630339095:0;rm CONNECT-JB7.ear
+: 1630339122:0;gcmsg "OPEB-2219: build CONNECT with AiConnectAdapters as a dependency"
+: 1630340105:0;diff --help
+: 1630340179:0;diff -q files ../CONNECT/Product/Production/Common/Properties/src/main/resources
+: 1630340218:0;l files/drivers
+: 1630340222:0;l files/drivers/com
+: 1630340330:0;diff data/wildfly/config/AdapterMpiConfig.xml ../CONNECT/Product/Production/Common/Properties/src/main/resources/AdapterMpiConfig.xml 
+: 1630340715:0;diff -q data/wildfly/config ../CONNECT/Product/Production/Common/Properties/src/main/resources/
+: 1630347303:0;pgrep idea | xargs kill
+: 1630348127:0;gcmsg "OPEB-2219: added some docs"
+: 1630348196:0;mv data/wildfly/config data/wildfly/config-custom
+: 1630348213:0;mkdir -p data/wildfly/config-original
+: 1630348266:0;cp -r ../CONNECT/Product/Production/Common/Properties/src/main/resources/* data/wildfly/config-original/.
+: 1630348311:0;gcmsg "OPEB-2219: have two sets of config files for wildfly"
+: 1630348986:0;docker build --pull -t gateway-connect -f Docker.gitlab .
+: 1630349626:0;mvn org.apache.maven.plugins:maven-dependency-plugin:2.1:get -DrepoUrl=https://nexus.ainq.com/repository/maven-gateway-releases -Dartifact=com.ainq.gateway:connect-jb7:0.0.1
+: 1630349685:0;cat ../certificate-management-service/settings.xml
+: 1630349708:0;cat ../AiConnectAdapters/settings.xml
+: 1630349722:0;cp ../AiConnectAdapters/settings.xml .
+: 1630349895:0;mvn -s settings.xml org.apache.maven.plugins:maven-dependency-plugin:2.1:get -DrepoUrl=https://nexus.ainq.com/repository/maven-gateway-releases -Dartifact=com.ainq.gateway:connect-jb7:0.0.1
+: 1630350822:0;mvn -s settings.xml org.apache.maven.plugins:maven-dependency-plugin:2.1:get -Drepo=maven-gateway-releases::default::https://nexus.ainq.com/repository/maven-gateway-releases -Dartifact=com.ainq.gateway:connect-jb7:0.0.1
+: 1630350925:0;mvn -s settings.xml org.apache.maven.plugins:maven-dependency-plugin:2.1:get -DremoteRepositories=maven-gateway-releases::default::https://nexus.ainq.com/repository/maven-gateway-releases -Dartifact=com.ainq.gateway:connect-jb7:0.0.1
+: 1630350969:0;mvn -s settings.xml org.apache.maven.plugins:maven-dependency-plugin:3.2.0:get -DremoteRepositories=maven-gateway-releases::default::https://nexus.ainq.com/repository/maven-gateway-releases -Dartifact=com.ainq.gateway:connect-jb7:0.0.1
+: 1630351103:0;mvn -s settings.xml dependency:get -DrepoUrl=https://nexus.ainq.com/repository/maven-gateway-releases -Dartifact=com.ainq.gateway:connect-jb7:0.0.1
+: 1630351261:0;env
+: 1630351388:0;l files
+: 1630351400:0;mkdir deps
+: 1630351409:0;mv settings.xml deps/.
+: 1630351599:0;mvn -s settings.xml dependency:get -Drepo.id=maven-gateway-releases -DrepoUrl=https://nexus.ainq.com/repository/maven-gateway-releases -Dartifact=com.ainq.gateway:connect-jb7:0.0.1
+: 1630351605:0;mvn -s deps/settings.xml dependency:get -Drepo.id=maven-gateway-releases -DrepoUrl=https://nexus.ainq.com/repository/maven-gateway-releases -Dartifact=com.ainq.gateway:connect-jb7:0.0.1
+: 1630351708:0;mvn -e -s deps/settings.xml dependency:get -Drepo.id=maven-gateway-releases -DrepoUrl=https://nexus.ainq.com/repository/maven-gateway-releases -Dartifact=com.ainq.gateway:connect-jb7:0.0.1
+: 1630351798:0;mvn -e -s deps/settings.xml dependency:get --help
+: 1630351844:0;mvn -e -P default -s deps/settings.xml dependency:get -Drepo.id=maven-gateway-releases -DrepoUrl=https://nexus.ainq.com/repository/maven-gateway-releases -Dartifact=com.ainq.gateway:connect-jb7:0.0.1
+: 1630356056:0;docker build --pull -t gateway-connect -f Dockerfile.gitlab .
+: 1630356327:0;gcmsg "OPEB-2219: unblocked repo for prime faces"
+: 1630356335:0;rg
+: 1630356356:0;rg "http://" -f pom.xml
+: 1630356379:0;rg "http\:\/\/" -f pom.xml
+: 1630356389:0;rg "http\:\/\/"
+: 1630356396:0;rg "http://"
+: 1630356405:0;rg "<url>http://"
+: 1630356621:0;curl -X GET -u ${CI_USERNAME}:${CI_PASSWORD} "https://nexus.ainq.com/nexus/service/local/artifact/maven/redirect?r=Repo_Name&g=GroupID&a=artifactID&v=LATEST&p=zip" -O
+: 1630356677:0;curl -X GET -u ${CI_USERNAME}:${CI_PASSWORD} "https://nexus.ainq.com/nexus/service/local/artifact/maven/redirect?r=maven-gateway-releases&g=com.ainq.gateway&a=ai-connect-adapters&v=LATEST&p=jar" -O
+: 1630356765:0;curl -X GET -u ${CI_USERNAME}:${CI_PASSWORD} "https://nexus.ainq.com/nexus/service/artifact/maven/redirect?r=maven-gateway-releases&g=com.ainq.gateway&a=ai-connect-adapters&v=LATEST&p=jar" -O
+: 1630356782:0;curl -X GET -u ${CI_USERNAME}:${CI_PASSWORD} "https://nexus.ainq.com/nexus/service/artifact/maven/redirect?r=maven-gateway-releases&g=com.ainq.gateway&a=ai-connect-adapters&v=0.0.1&p=jar" -O
+: 1630356791:0;less redirect\?r=maven-gateway-releases\&g=com.ainq.gateway\&a=ai-connect-adapters\&v=0.0.1\&p=jar
+: 1630356876:0;curl -X GET -u ${CI_USERNAME}:${CI_PASSWORD} "https://nexus.ainq.com/repository/maven-gateway-releases/redirect?g=com.ainq.gateway&a=ai-connect-adapters&v=0.0.1&p=jar" -O
+: 1630356979:0;curl -X GET -u esharapov:ENSharap1982///// "https://nexus.ainq.com/nexus/service/artifact/maven/redirect?r=maven-gateway-releases&g=com.ainq.gateway&a=ai-connect-adapters&v=LATEST&p=jar" -O
+: 1630356999:0;curl -X GET -u esharapov:ENSharap1982///// "https://nexus.ainq.com/nexus/service/local/artifact/maven/redirect?r=maven-gateway-releases&g=com.ainq.gateway&a=ai-connect-adapters&v=LATEST&p=jar" -O
+: 1630357007:0;curl -X GET -u esharapov:ENSharap1982///// "https://nexus.ainq.com/nexus/service/local/artifact/maven/redirect?r=maven-gateway-releases&g=com.ainq.gateway&a=ai-connect-adapters&v=0.0.1&p=jar" -O
+: 1630357158:0;curl -X GET "https://nexus.ainq.com/service/rest/v1/search/assets/download?repository=maven-gateway-releases&maven.groupId=com.ainq.gateway&maven.artifactId=ai-connect-adapters&maven.baseVersion=0.0.1" -H "accept: application/json"
+: 1630357173:0;curl -u esharapov:ENSharap1982///// -X GET "https://nexus.ainq.com/service/rest/v1/search/assets/download?repository=maven-gateway-releases&maven.groupId=com.ainq.gateway&maven.artifactId=ai-connect-adapters&maven.baseVersion=0.0.1" -H "accept: application/json"
+: 1630357191:0;curl -u esharapov:ENSharap1982///// -X GET "https://nexus.ainq.com/service/rest/v1/search/assets?repository=maven-gateway-releases&maven.groupId=com.ainq.gateway&maven.artifactId=ai-connect-adapters&maven.baseVersion=0.0.1" -H "accept: application/json"
+: 1630357266:0;curl -u esharapov:ENSharap1982///// -X GET "https://nexus.ainq.com/service/rest/v1/search/assets?repository=maven-gateway-releases&maven.groupId=com.ainq.gateway&maven.artifactId=ai-connect-adapters&maven.baseVersion=0.0.1&maven.extension=jar" -H "accept: application/json"
+: 1630357288:0;curl -u $CI_USERNAME:$CI_PASSWORD -X GET "https://nexus.ainq.com/service/rest/v1/search/assets?repository=maven-gateway-releases&maven.groupId=com.ainq.gateway&maven.artifactId=ai-connect-adapters&maven.baseVersion=0.0.1&maven.extension=jar" -H "accept: application/json"
+: 1630357312:0;curl -u $CI_USERNAME:$CI_PASSWORD -X GET "https://nexus.ainq.com/service/rest/v1/search/assets/download?repository=maven-gateway-releases&maven.groupId=com.ainq.gateway&maven.artifactId=ai-connect-adapters&maven.baseVersion=0.0.1&maven.extension=jar" -H "accept: application/json" -0
+: 1630357325:0;rm redirect\?g=com.ainq.gateway\&a=ai-connect-adapters\&v=0.0.1\&p=jar
+: 1630357336:0;rm redirect\?r=Repo_Name\&g=GroupID\&a=artifactID\&v=LATEST\&p=zip
+: 1630357344:0;rm redirect\?r=maven-gateway-releases\&g=com.ainq.gateway\&a=ai-connect-adapters\&v=0.0.1\&p=jar
+: 1630357349:0;rm redirect\?r=maven-gateway-releases\&g=com.ainq.gateway\&a=ai-connect-adapters\&v=LATEST\&p=jar
+: 1630357482:0;curl -u $CI_USERNAME:$CI_PASSWORD -X GET "https://nexus.ainq.com/service/rest/v1/search/assets/download?repository=maven-gateway-releases&maven.groupId=com.ainq.gateway&maven.artifactId=ai-connect-adapters&maven.baseVersion=0.0.1&maven.extension=jar" -H "accept: application/json"
+: 1630357488:0;curl -v -u $CI_USERNAME:$CI_PASSWORD -X GET "https://nexus.ainq.com/service/rest/v1/search/assets/download?repository=maven-gateway-releases&maven.groupId=com.ainq.gateway&maven.artifactId=ai-connect-adapters&maven.baseVersion=0.0.1&maven.extension=jar" -H "accept: application/json"
+: 1630357523:0;curl -L -u $CI_USERNAME:$CI_PASSWORD -X GET "https://nexus.ainq.com/service/rest/v1/search/assets/download?repository=maven-gateway-releases&maven.groupId=com.ainq.gateway&maven.artifactId=ai-connect-adapters&maven.baseVersion=0.0.1&maven.extension=jar" -H "accept: application/json"
+: 1630357538:0;curl -L -u $CI_USERNAME:$CI_PASSWORD -X GET "https://nexus.ainq.com/service/rest/v1/search/assets/download?repository=maven-gateway-releases&maven.groupId=com.ainq.gateway&maven.artifactId=ai-connect-adapters&maven.baseVersion=0.0.1&maven.extension=jar" -H "accept: application/json" --output
+: 1630357549:0;curl -L --output  -u $CI_USERNAME:$CI_PASSWORD -X GET "https://nexus.ainq.com/service/rest/v1/search/assets/download?repository=maven-gateway-releases&maven.groupId=com.ainq.gateway&maven.artifactId=ai-connect-adapters&maven.baseVersion=0.0.1&maven.extension=jar" -H "accept: application/json"
+: 1630357580:0;curl -L  -u "$CI_USERNAME":"$CI_PASSWORD" -X GET "https://nexus.ainq.com/service/rest/v1/search/assets/download?repository=maven-gateway-releases&maven.groupId=com.ainq.gateway&maven.artifactId=ai-connect-adapters&maven.baseVersion=0.0.1&maven.extension=jar" -H "accept: application/json"
+: 1630357592:0;curl -L  -u "$CI_USERNAME":"$CI_PASSWORD" -X GET "https://nexus.ainq.com/service/rest/v1/search/assets/download?repository=maven-gateway-releases&maven.groupId=com.ainq.gateway&maven.artifactId=ai-connect-adapters&maven.baseVersion=0.0.1&maven.extension=jar" -H "accept: application/json" -0
+: 1630357610:0;curl -L  -u "$CI_USERNAME":"$CI_PASSWORD" -X GET "https://nexus.ainq.com/service/rest/v1/search/assets/download?repository=maven-gateway-releases&maven.groupId=com.ainq.gateway&maven.artifactId=ai-connect-adapters&maven.baseVersion=0.0.1&maven.extension=jar" -H "accept: application/json" --output ai-connect-adapters-0.0.1.jar
+: 1630359279:0;l build/libs/ulp-snapshot-portlet.war
+: 1630359299:0;scp -i ~/Projects/AWS/bastion_host.pem ./build/libs/ulp-snapshot-portlet.war  ubuntu@54.204.89.13:/home/ubuntu/.
+: 1630359791:0;ssh -i ~/Projects/AWS/bastion_host.pem ubuntu@54.204.89.13
+: 1630374901:0;pgrep java -v
+: 1630374984:0;pgrep emacs
+: 1630374991:0;pgrep emacs | xargs kill
+: 1630380266:0;docker run gateway-connect
+: 1630380568:0;docker kill 9cee
+: 1630380573:0;docker rm 9cee
+: 1630380638:0;curl -L  -u "$CI_USERNAME":"$CI_PASSWORD" -X GET "https://nexus.ainq.com/service/rest/v1/search/assets/download?repository=maven-gateway-releases&maven.groupId=com.ainq.gateway&maven.artifactId=connect-jb7&maven.baseVersion=0.0.3&maven.extension=ear" -H "accept: application/json" --output connect-jb7.ear
+: 1630380674:0;jar -tf connect-jb7.ear
+: 1630380916:0;docker build --no-cache  -t devrunner devrunner
+: 1630381455:0;docker inspect gateway-connect
+: 1630425067:0;docker build --pull -t gateway-connect -f Dockerfile --build-arg CI_USERNAME=$CI_USERNAME --build-arg CI_PASSWORD=$CI_PASSWORD --build-arg AI_CONNECT_VERSION=0.0.3 .
+: 1630431114:0;docker run --name gateway -p 8080:8080 -p 8443:8443 -p 9990:9990 --rm -d gateway-connect
+: 1630431473:0;docker cp --help
+: 1630431526:0;docker cp gateway:CONNECT-JB7.ear connect-jb7.deployed.ear
+: 1630431573:0;docker cp gateway:/opt/jboss/wildfly/snadalone/deployments/CONNECT-JB7.ear connect-jb7.deployed.ear
+: 1630431663:0;jar -tf connect-jb7.deployed.ear > good.txt
+: 1630431674:0;jar -tf connect-jb7.ear > bad.txt
+: 1630431741:0;jar -vtf connect-jb7.ear
+: 1630431751:0;jar -tvf connect-jb7.ear > bad.txt
+: 1630431761:0;jar -tvf connect-jb7.deployed.ear > good.txt
+: 1630431764:0;diff good.txt bad.txt
+: 1630431869:0;jar --help
+: 1630431999:0;jar xf connect-jb7.ear lib/ai-connect-adapters-0.0.1.jar
+: 1630432049:0;jar xf connect-jb7.deployed.ear lib/AiConnectAdapters-0.0.1-SNAPSHOT.jar
+: 1630432052:0;cd lib
+: 1630432064:0;jar tf AiConnectAdapters-0.0.1-SNAPSHOT.jar
+: 1630432075:0;jar tf ai-connect-adapters-0.0.1.jar
+: 1630432084:0;jar tf ai-connect-adapters-0.0.1.jar > g.txt
+: 1630432090:0;jar tf ai-connect-adapters-0.0.1.jar > b.txt
+: 1630432097:0;jar tf AiConnectAdapters-0.0.1-SNAPSHOT.jar > g.txt
+: 1630432102:0;diff g.txt b.txt
+: 1630435030:0;gd development
+: 1630435361:0;apt search soapUI
+: 1630435364:0;apt search soap
+: 1630435876:0;l ~/.zsh/history
+: 1630435934:0;te ~/.dotfiles/.zsh/spec/DESKTOP-OU44UDR.zsh
+: 1630435991:0;. ~/.zshrc
+: 1630436021:0;less datadog-docker-compose.yaml
+: 1630436029:0;less readme.md
+: 1630436178:0;gcmsg "OPEB-2219: no extra containers. fast build with artifacts from nexus"
+: 1630436310:0;g co multiple-local-gateways
+: 1630436354:0;te docker-compose.yml
+: 1630437400:0;less ~/.aws/config
+: 1630437408:0;less ~/.aws/credentials
+: 1630437838:0;cd soapui
+: 1630438208:0;te logs.log
+: 1630438401:0;mkdir ../tests
+: 1630438408:0;mv connect-jb7.* ../tests//
+: 1630438419:0;mv bad.txt ../tests/
+: 1630438429:0;mv good.txt ../tests/
+: 1630438434:0;mv lib ../tests/
+: 1630438660:0;g clone https://github.com/CONNECT-Solution/CONNECT.git CONNECT-Solutions
+: 1630441211:0;cd /opt
+: 1630441264:0;cp ~/Downloads
+: 1630441275:0;cp ~/Downloads/SoapUI-5.6.0-linux-bin.tar.gz .
+: 1630441280:0;sudo cp ~/Downloads/SoapUI-5.6.0-linux-bin.tar.gz .
+: 1630441320:0;sudo tar xzvf SoapUI-5.6.0-linux-bin.tar.gz
+: 1630441338:0;chown esharapov:esharapov SoapUI-5.6.0
+: 1630441346:0;sudo chown -R esharapov:esharapov SoapUI-5.6.0
+: 1630441353:0;cd SoapUI-5.6.0
+: 1630441369:0;l bin
+: 1630441399:0;cd SoapUI-5.6.0/bin
+: 1630441411:0;./soapui.sh&
+: 1630441431:0;java -version
+: 1630441452:0;update-alternatives --all
+: 1630441504:0;apt search jdk
+: 1630441520:0;apt search openjdk
+: 1630441701:0;sudo apt install openjdk-11-jdk
+: 1630441777:0;./soapui.sh
+: 1630441806:0;./soapui.sh &
+: 1630441835:0;apt list --installed | grep jdk
+: 1630441911:0;less /usr/lib/jvm/java-11-openjdk-amd64/release
+: 1630442213:0;;
+: 1630444148:0;sudo rm -rf SoapUI-5.6.0
+: 1630444155:0;sudo rm -rf SoapUI-5.6.0-linux-bin.tar.gz
+: 1630462654:0;pgrep odea
+: 1630462658:0;pgrep idea
+: 1630462662:0;pgrep java
+: 1630462672:0;pgrep -a java
+: 1630462813:0;pgrep java | xargs kill
+: 1630463859:0;~/ai-worklog
+: 1630463893:0;gcmsg "updated worklog at the end of august"
+: 1630464081:0;docker volume ls
+: 1630464114:0;mv logs.log ../tests
+: 1630464124:0;l deps
+: 1630464137:0;rd deps
+: 1630464200:0;e ~/ai-worklog/Worklog.org&
+: 1630512974:0;g co -b OPEB-2219-pipeline-merge-mulitple-local-gateways
+: 1630512982:0;g merge multiple-local-gateways
+: 1630513135:0;#g merge --continue
+: 1630513154:0;qsdfsd
+: 1630513439:0;cat data/wildfly/config/PCConfiguration.xml
+: 1630513483:0;gd --cached Dockerfile
+: 1630513523:0;g merge --continue
+: 1630513606:0;EDITOR=vim g merge --continue
+: 1630513710:0;mv data/wildfly/config
+: 1630513777:0;diff data/wildfly/config-custom data/wildfly/config-original
+: 1630513807:0;diff -R data/wildfly/config-custom data/wildfly/config-original
+: 1630513812:0;diff -r data/wildfly/config-custom data/wildfly/config-original
+: 1630513898:0;less data/wildfly/config-custom/AdapterMpiConfig.xml
+: 1630518824:0;aigatewaydocker
+: 1630518830:0;test
+: 1630518838:0;tests
+: 1630518863:0;mv connect-jb7.ear connect-jb7.bad.ear
+: 1630518878:0;cp connect-jb7.deployed.ear connect-jb7.ear
+: 1630518918:0;cp connect-jb7.ear ~/Downloads/.
+: 1630521089:0;1docker images
+: 1630521175:0;docker run --name gateway -p 8080:8080 -p 8443:8443 -p 9990:9990 --rm -d registry.ainq.com/ai-gateway/aigatewaydocker/gateway-connect:latest
+: 1630521209:0;dockr ps
+: 1630521225:0;docker exec -it gateway bash
+: 1630521366:0;docker cp gateway:/opt/jboss/wildfly/standalone/deployments/CONNECT-JB7.ear connect-jb7.deployed.ear
+: 1630521386:0;cp connect-jb7.deployed.ear ~/Downloads/.
+: 1630522123:0;docker cp gateway:/opt/jboss/wildfly/standalone/deployments/CONNECT-JB7.ear aigatewaydocker_wildfly_1:/opt/jboss/wildfly/standalone/deployments/CONNECT-JB7.ear
+: 1630522175:0;docker cp connect-jb7.deployed.ear aigatewaydocker_wildfly_1:/opt/jboss/wildfly/standalone/deployments/CONNECT-JB7.ear
+: 1630522380:0;../aigatewaydocker
+: 1630522385:0;l soapui
+: 1630522484:0;cp soapui/* ~/Downloads/.
+: 1630523632:0;cat connect-jb7.ear
+: 1630523666:0;export AI_CONNECT_VERSION=0.0.3
+: 1630523669:0;curl -L -u "$CI_USERNAME":"$CI_PASSWORD" -X GET "https://nexus.ainq.com/service/rest/v1/search/assets/download?repository=maven-gateway-releases&maven.groupId=com.ainq.gateway&maven.artifactId=connect-jb7&maven.baseVersion=$AI_CONNECT_VERSION&maven.extension=ear" -H "accept: application/json" --output connect-jb7.ear
+: 1630523697:0;export AI_CONNECT_VERSION=0.0.4
+: 1630523703:0;curl -v -L -u "$CI_USERNAME":"$CI_PASSWORD" -X GET "https://nexus.ainq.com/service/rest/v1/search/assets/download?repository=maven-gateway-releases&maven.groupId=com.ainq.gateway&maven.artifactId=connect-jb7&maven.baseVersion=$AI_CONNECT_VERSION&maven.extension=ear" -H "accept: application/json" --output connect-jb7.ear
+: 1630525113:0;CODE=10
+: 1630525118:0;echo $CODE
+: 1630525132:0;test $CODE -ne 10
+: 1630525137:0;test $CODE -eq 10
+: 1630525145:0;test $CODE -eq 11
+: 1630525722:0;docker run -it --rm --name wild jboss/wildfly:15.0.0.Final sh
+: 1630526275:0;docker rmi gateway-connect
+: 1630526285:0;docker image prune
+: 1630526297:0;docker build --pull -t gateway-connect -f Dockerfile.gitlab --build-arg CI_USERNAME=$CI_USERNAME --build-arg CI_PASSWORD=$CI_PASSWORD --build-arg AI_CONNECT_VERSION=0.0.3 .
+: 1630526323:0;docker ps -a
+: 1630526337:0;docker rm gateway
+: 1630526342:0;docker run --name gateway -p 8081:8080 -p 8444:8443 -p 9991:9990 --rm -d registry.ainq.com/ai-gateway/aigatewaydocker/gateway-connect:latest
+: 1630526346:0;docker kill gateway
+: 1630526354:0;docker run --name gateway -p 8081:8080 -p 8444:8443 -p 9991:9990 --rm -d gateway-connect:latest
+: 1630526359:0;docker logs -f gateway
+: 1630526463:0;docker logs -f gateway > gateway_startup.log
+: 1630526479:0;docker logs gateway > gateway_startup.log
+: 1630526739:0;less gateway_startup.log
+: 1630526901:0;docker kill 1b2fe3ee688a
+: 1630527499:0;AiConnectAdapters
+: 1630527507:0;CONNECT
+: 1630527556:0;ag AiConnect
+: 1630527572:0;less RELEASE_NOTES.md
+: 1630527642:0;ag RespondingGateway_Service
+: 1630528950:0;cd CONNECT
+: 1630528963:0;cat .gitlab-ci.yml
+: 1630529078:0;less Dockerfile
+: 1630529087:0;java --version
+: 1630529097:0;update-alternatives --config java
+: 1630529107:0;sudo update-alternatives --config java
+: 1630529120:0;mvn ${MAVEN_CLI_OPTS} -P PD,DQ,DR,jboss7,AI -Dai.connect.adapters.version=0.0.1 clean package -DskipTests
+: 1630529253:0;l Product/Production/Deploy/jboss7/target/CONNECT-JB7.ear 
+: 1630529280:0;docker cp Product/Production/Deploy/jboss7/target/CONNECT-JB7.ear aigatewaydocker_wildfly_1:/opt/jboss/wildfly/standalone/deployments/CONNECT-JB7.ear
+: 1630546926:0;rm connect-jb7.ear
+: 1630546952:0;l ../tests/connect-jb7.deployed.ear
+: 1630547044:0;docker cp ../tests/connect-jb7.deployed.ear aigatewaydocker_wildfly_1:/opt/jboss/wildfly/standalone/deployments/CONNECT_JB7.ear
+: 1630552034:0;cp ~/Downloads/CONNECT-JB7.bad.fix.ear CONNECT-JB7.ear
+: 1630552053:0;docker cp CONNECT-JB7.ear aigatewaydocker_wildfly_1:/opt/jboss/wildfly/standalone/deployments/CONNECT_JB7.ear
+: 1630595712:0;ls ~/.nuget
+: 1630595717:0;ls ~/.nuget/NuGet/NuGet.Config
+: 1630595720:0;cat ~/.nuget/NuGet/NuGet.Config
+: 1630609845:0;ulp-snapshot-portlet
+: 1630609898:0;ulp-snapshot-lib
+: 1630610259:0;te build.gradle
+: 1630610311:0;gcmsg "CEN-1610: updated version of the snapshot library for the release"
+: 1630615365:0;qg pull
+: 1630615445:0;g co mastr
+: 1630615559:0;g merge release_3.12.0
+: 1630615596:0;g co -b release_3.14
+: 1630615628:0;te .ulp-config.yml
+: 1630633782:0;q
+: 1630633786:0;mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version clean verify package
+: 1630633792:0;mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version clean verify package -DskipTests
+: 1630633833:0;cp target/ai-connect-adapters-0.0.1-SNAPSHOT.jar ~/Downloads/.
+: 1630635734:0;export CI_USERNAME=gateway_cd
+: 1630635748:0;export CI_PASSWORD="G@t3w@y_Cd"
+: 1630635764:0;docker build --help
+: 1630636585:0;ll target
+: 1630636619:0;rm -rf target
+: 1630636621:0;docker build .
+: 1630636876:0;l target
+: 1630636878:0;ls -al
+: 1630636914:0;mvn
+: 1630636991:0;docker run -it --rm maven maven:3-jdk-8 mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version clean verify package -DskipTests
+: 1630637222:0;docker run -it --rm --name maven -v "$(pwd)":/usr/src/mymaven -w /usr/src/mymaven  maven:3-jdk-8 mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version clean verify package -DskipTests
+: 1630637435:0;docker run -it --rm --name maven -e CI_USERNAME=$CI_USERNAME -e CI_PASSWORD=$CI_PASSWORD -v "$(pwd)":/usr/src/mymaven -w /usr/src/mymaven  maven:3-jdk-8 mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version clean verify package -DskipTests
+: 1630637746:0;ls
+: 1630637749:0;ls target
+: 1630637770:0;cp target/ai-connect-adapters-0.0.1-SNAPSHOT.jar ~/Downloads/ai-connect-adapters-0.0.1-SNAPSHOT_1.jar
+: 1630638136:0;docker cp ~/Downloads/adapters/CONNECT-JB7.ear aigatewaydocker_wildfly_1:/opt/jboss/wildfly/standalone/deployments/CONNECT_JB7.ear
+: 1630638196:0;docker exec -it aigatewaydocker_wildfly_1 bash
+: 1630638299:0;grhh
+: 1630638877:0;gcmsg "OPEB-2219: include revision version from CI_COMMIT_TAG in maven build command"
+: 1630639269:0;gcmsg "OPEB-2219: now we use the same version (TAG) between CONNECT and AiConnectAdapters"
+: 1630639913:0;docker build --pull -t gateway-connect -f Dockerfile.gitlab --build-arg CI_USERNAME=$CI_USERNAME --build-arg CI_PASSWORD=$CI_PASSWORD --build-arg AI_CONNECT_VERSION=0.0.2 .
+: 1630639977:0;docker-compose up
+: 1630646145:0;gd
+: 1630646188:0;ga Dockerfile.gitlab
+: 1630646326:0;gd --cached
+: 1630646658:0;gcmsg "OPEB-2219: handle curl errors when downloading Nexus artifact, open up port 8787"
+: 1630646959:0;g pick 705be78
+: 1630646973:0;g cherry-pick 705be78
+: 1630647018:0;g stash
+: 1630647035:0;g co OPEB-2219-pipeline-merge-mulitple-local-gateways
+: 1630647051:0;g push -u origin OPEB-2219-pipeline-merge-mulitple-local-gateways
+: 1630648110:0;gd OPEB-2219-gitlab-pipelines
+: 1630648138:0;gd OPEB-2219-gitlab-pipelines -- .gitlab-ci.yml
+: 1630648151:0;g co OPEB-2219-gitlab-pipelines
+: 1630648448:0;gcmsg "OPEB-2219: made failing stage manual"
+: 1630649575:0;gcmsg "OPEB-2219: hmm updated with some file path shenanigans during docker build fix" 
+: 1630649580:0;gpsuh
+: 1630649889:0;l data
+: 1630649924:0;l data/wildfly
+: 1630649963:0;l .gitignore
+: 1630649966:0;cat .gitignore
+: 1630650066:0;te .gitignore
+: 1630650097:0;mv gateway_startup.log ../tests/.
+: 1630650122:0;gcmsg "OPEB-2219: added config files, that were for some reason in ignore list"
+: 1630650657:0;Projects
+: 1630650677:0;Connect
+: 1630650682:0;mkdir Connect
+: 1630650685:0;cd Connect
+: 1630650688:0;g clone https://github.com/CONNECT-Solution/Common-Types.git
+: 1630650736:0;l Common-Types
+: 1630650759:0;mkdir FsConnectTypes
+: 1630650777:0;rd FsConnectTypes
+: 1630650796:0;dotnet new console -n FsConnectTypes -lang F#
+: 1630650961:0;cd FsConnectTypes
+: 1630693338:0;less FsConnectTypes.fsproj
+: 1630693348:0;dotnet add package FSharp.Data.Xsd --version 1.0.2
+: 1630693422:0;te ~/.nuget/NuGet/NuGet.Config
+: 1630694044:0;dotnet nuget update
+: 1630694076:0;dotnet nuget update nuget.org
+: 1630694082:0;dotnet nuget update source nuget.org
+: 1630694157:0;dotnet nuget update source EnsSandbox
+: 1630694176:0;cat *.fsproj
+: 1630694313:0;l ~/.nuget
+: 1630694318:0;l ~/.nuget/NuGet
+: 1630694339:0;mv ~/.nuget/NuGet/NuGet.Config ~/.nuget/NuGet/NuGet.Config.bak
+: 1630694351:0;dotnet add package FSharp.Data.Xsd
+: 1630694584:0;gcmsg "OPEB-2219: updated documentation on building the gateway docker"
+: 1630697067:0;apt search dotnet
+: 1630697090:0;which dotnet
+: 1630697096:0;apt list installed
+: 1630697100:0;apt list --installed
+: 1630697179:0;sudo apt update dotnet
+: 1630697196:0;sudo apt install dotnet
+: 1630697213:0;dotnet --version
+: 1630697235:0;cd ~
+: 1630697252:0;l .dotnet
+: 1630697259:0;rd .dotnet
+: 1630697262:0;rd .nuget
+: 1630697271:0;popd
+: 1630697277:0;dotnet restore
+: 1630697591:0;docker pull registry.ainq.com/ulp-development/ulp-core/liferay-portal:75933571a4530498621020a6b028224b27b3d10e
+: 1630697650:0;docker pull registry.ainq.com/ulp-development/ulp-core/liferay-portal
+: 1630697829:0;docker pull registry.ainq.com/ulp-development/docker/liferay-portal:7.0-dxp-ga1-tomcat-hsql-de-90
+: 1630697868:0;docker-compose build liferay-portal
+: 1630698249:0;g branch --help
+: 1630698271:0;g branch -m release_3.14 release_3.14.0
+: 1630698318:0;g push -u origin release_3.14.0
+: 1630698572:0;dotnet nuget
+: 1630698579:0;dotnet nuget locals
+: 1630698588:0;dotnet nuget list
+: 1630698591:0;dotnet nuget list source
+: 1630698610:0;dotnet add package FSharp.Core
+: 1630699103:0;te readme.md
+: 1630699518:0;echo trigger >> readme.md
+: 1630699523:0;gcmsg "OPEB-2219: trigger pipeline"
+: 1630699644:0;apt list --installed dotnet
+: 1630699749:0;apt info dotnet-apphost-pack-5.0
+: 1630699816:0;sudo apt remove --purge dotnet-apphost-pack-3.1 dotnet-apphost-pack-5.0 dotnet-host dotnet-hostfxr-3.1
+: 1630699869:0;apt list --installed | grep dotnet
+: 1630699877:0;apt list --installed | grep netstandard
+: 1630699993:0;sudo apt remove --purge dotnet-runtime-deps-3.1 dotnet-runtime-deps-5.0 dotnet-targeting-pack-3.1 dotnet-targeting-pack-5.0 netstandard-targeting-pack-2.1
+: 1630700010:0;rehash
+: 1630700013:0;dotnet
+: 1630700018:0;rd ~/.dotnet
+: 1630700021:0;rd ~/.nuget
+: 1630700024:0;l ~
+: 1630700056:0;l ~/.aspnet
+: 1630700063:0;rd ~/.aspnet
+: 1630701634:0;curl -X POST \\
+     -F token=6618faaaced46a8aea7372bf3cb3a6 \\
+     -F ref=0.0.4 \\
+     https://git.ainq.com/api/v4/projects/959/trigger/pipeline
+: 1630701679:0;curl -X POST \\
+     -F token=6618faaaced46a8aea7372bf3cb3a6 \\
+     -F ref=OPEB-2219-gitlab-pipelines \\
+     https://git.ainq.com/api/v4/projects/959/trigger/pipeline
+: 1630722597:0;htop
+: 1630722743:0;which ff 
+: 1630722766:0;which firefox.exe
+: 1630725941:0;e ai-worklog &
+: 1631027558:0;gateway.netcore.services
+: 1631028236:0;ag CI_DEBUG
+: 1631028247:0;ag CI_
+: 1631028265:0;ag CI_.*DEBUG
+: 1631028291:0;ag "CI_.*DEBUG"
+: 1631028354:0;gateway.netcore.services/
+: 1631030544:0;docker images
+: 1631030562:0;docker run -it --rm alpine sh
+: 1631031753:0;aws
+: 1631031787:0;aws ecs list-task-definitions
+: 1631031848:0;aws ecs list-task-definitions --cluster pulse-dev-gateway --name pulse-dev-gateway-dir-monitor
+: 1631031863:0;aws ecs list-task-definitions help
+: 1631031878:0;aws ecs help
+: 1631031921:0;aws ecs describe-task-dedinition help
+: 1631031937:0;aws ecs help describe-task-definition
+: 1631031946:0;aws ecs describe-task-definition help
+: 1631032022:0;aws ecs list-task-definitions pulse-dev-gateway
+: 1631032040:0;aws ecs list-task-definitions --family-prefix pulse-dev-gateway
+: 1631032065:0;aws ecs list-task-definitions --family-prefix pulse-dev-gateway-dir-monitor
+: 1631032083:0;aws ecs list-task-definitions --no-paginate --family-prefix pulse-dev-gateway-dir-monitor
+: 1631032113:0;aws --no-paginate ecs list-task-definitions --family-prefix pulse-dev-gateway-dir-monitor
+: 1631032125:0;PAGER=cat aws ecs list-task-definitions --family-prefix pulse-dev-gateway-dir-monitor
+: 1631032171:0;PAGER=cat aws ecs list-task-definitions --family-prefix pulse-dev-gateway-dir-monitor | jq '.'
+: 1631032220:0;PAGER=cat aws ecs list-task-definitions --output=text --family-prefix pulse-dev-gateway-dir-monitor | awk -FS=: '{print $2}'
+: 1631032228:0;PAGER=cat aws ecs list-task-definitions --output=text --family-prefix pulse-dev-gateway-dir-monitor | awk -FS=":" '{print $2}'
+: 1631032234:0;PAGER=cat aws ecs list-task-definitions --output=text --family-prefix pulse-dev-gateway-dir-monitor
+: 1631032273:0;PAGER=cat aws ecs list-task-definitions --output=text --family-prefix pulse-dev-gateway-dir-monitor | awk 'END{print $NF}' 
+: 1631032284:0;PAGER=cat aws ecs list-task-definitions --output=text --family-prefix pulse-dev-gateway-dir-monitor | awk IFS=":" 'END{print $NF}' 
+: 1631032296:0;PAGER=cat aws ecs list-task-definitions --output=text --family-prefix pulse-dev-gateway-dir-monitor | awk FS=":" 'END{print $NF}' 
+: 1631032315:0;PAGER=cat aws ecs list-task-definitions --output=text --family-prefix pulse-dev-gateway-dir-monitor | awk -FS=":" 'END{print $NF}' 
+: 1631032327:0;PAGER=cat aws ecs list-task-definitions --output=text --family-prefix pulse-dev-gateway-dir-monitor | awk -IFS=":" 'END{print $NF}' 
+: 1631032341:0;PAGER=cat aws ecs list-task-definitions --output=text --family-prefix pulse-dev-gateway-dir-monitor | awk -F: 'END{print $NF}' 
+: 1631041165:0;ulp-core
+: 1631041172:0;cd ulp-core
+: 1631041184:0;l configuration/dhin-staging
+: 1631041219:0;l configuration/
+: 1631041227:0;l configuration/dhin-staging/
+: 1631041241:0;cat configuration/dhin-staging/portal-task-definition-delta.json
+: 1631041310:0;configuration
+: 1631041650:0;npm run docker:launch
+: 1631041670:0;...
+: 1631041674:0;du -hs ulp-core
+: 1631041696:0;cd ulp-core/
+: 1631041701:0;du -hs configuration
+: 1631041720:0;explorer.exe
+: 1631041742:0;explorer.exe .
+: 1631070317:0;g co master
+: 1631070324:0;g co OPEB-2219-gateway-pipelines
+: 1631070326:0;g merge master
+: 1631072073:0;rg CLUSTER_NAME
+: 1631072094:0;ff *yml
+: 1631072100:0;ff *yaml
+: 1631072105:0;ff *ya?ml
+: 1631072110:0;ff *ml
+: 1631072130:0;ff *ml -exec grep CLUSTER_NAME {}
+: 1631072132:0;ff *ml -exec grep CLUSTER_NAME {} \;
+: 1631084515:0;cd ulp
+: 1631084545:0;cd ulp-snapshot-lib
+: 1631084581:0;g show d61eaaa
+: 1631084621:0;g lgp
+: 1631084628:0;g log
+: 1631110243:0;ULP
+: 1631110252:0;docker ps
+: 1631110272:0;docker kill aigatewaydocker_db_1
+: 1631110278:0;docker rm aigatewaydocker_db_1
+: 1631110283:0;docker rm 86d6e5ae71b9
+: 1631110288:0;docker rm aigatewaydocker_wildfly_1
+: 1631126207:0;md CRISP
+: 1631126216:0;g clone https://git.ainq.com/CRISP_Unified_Landing_Page/services.git
+: 1631126233:0;cd services
+: 1631126248:0;rg networkSources
+: 1631126249:0;rg networkSource
+: 1631128138:0;chmod +x gradlew
+: 1631128146:0;./gradlew build
+: 1631128335:0;rg -i pmpi
+: 1631128586:0;rg -i networkSource
+: 1631131085:0;cd CRISP
+: 1631131088:0;g clone https://git.ainq.com/CRISP_Unified_Landing_Page/service-prescriptions.git
+: 1631215206:0;cd service-prescriptions
+: 1631215219:0;idea . &
+: 1631215631:0;g co -b OPEB-2356-pmpi-response-api-change
+: 1631219936:0;cd ..
+: 1631219940:0;rg pmpi
+: 1631220569:0;service-prescriptions
+: 1631220583:0;gcmsg "OPEB-2356: added serialization of PMPi response"
+: 1631222352:0;gcmsg "OPEB-2356: added tests with MockRestService for PMPi call"
+: 1631222365:0;g push -u origin OPEB-2356-pmpi-response-api-change
+: 1631281565:0;GATE
+: 1631281576:0;cd CONNECT-Solutions
+: 1631281623:0;mvn clean verify package
+: 1631287754:0;chmod +x ./gradlew
+: 1631288326:0;less /home/esharapov/Projects/ULP/CRISP/service-prescriptions/build/reports/tests/test/index.html
+: 1631289065:0;ga -u
+: 1631289086:0;gcmsg "OPEB-2356: updated formatting and fixed testing start up"
+: 1631299912:0;./gradlew goJF
+: 1631299935:0;./gradlew clean build
+: 1631300089:0;ga .
+: 1631300090:0;gst
+: 1631300108:0;gcmsg "OPEB-2356: added handling single objects and arrays"
+: 1631300110:0;g push
+: 1631302294:0;PULSE
+: 1631302309:0;g pull --help
+: 1631302331:0;g --help
+: 1631302351:0;g -C pulse-nodejs-service pull
+: 1631302362:0;g -C pulse-application pull
+: 1631302372:0;cd pulse-application
+: 1631302402:0;g -C pulse-admin-module pull
+: 1631302424:0;pulse-admin-module 
+: 1631302814:0;../pulse-nodejs-service
+: 1631303001:0;cat package.json | grep admin-mod
+: 1631303024:0;../pulse-admin-module
+: 1631303026:0;l
+: 1631303041:0;less package.json
+: 1631303135:0;..
+: 1631303139:0;ag pulse-admin-module
+: 1631303175:0;ainq-admin-portal-application
+: 1631303191:0;g co r2021-10
+: 1631303194:0;g pull
+: 1631303211:0;cat package.json
+: 1631303225:0;cat package.json | grep admin
+: 1631303243:0;g lga
+: 1631303273:0;g cp -b OPEB-2296-facility-search
+: 1631303276:0;g co -b OPEB-2296-facility-search
+: 1631303281:0;e . &
+: 1631303323:0;npm build
+: 1631303354:0;npm run build
+: 1631303416:0;npx babel
+: 1631303450:0;npx babel help
+: 1631303610:0;rd node_modules
+: 1631303618:0;npm i
+: 1631304558:0;npm run start
+: 1631325771:0;l
+: 1631325878:0;l ~/Downloads
+: 1631325881:0;l ~/Downloads/
+: 1631326287:0;cat Projects/PULSE/pulse-nodejs-service/.env
+: 1631326325:0;cat Projects/PULSE/ainq-admin-portal-application/.env.defaults
+: 1631326712:0;cd Projects/PULSE/ainq-admin-portal-application
+: 1631326715:0;gst
+: 1631326724:0;te .
+: 1631326745:0;gst
+: 1631326756:0;npm run start
+: 1631326861:0;te .
+: 1631326897:0;npm run start
+: 1631327035:0;l
+: 1631327037:0;gst
+: 1631327043:0;g co webpack/webpack.development.js
+: 1631327044:0;gst
+: 1631327048:0;npm run start
+: 1631327090:0;te .
+: 1631327126:0;npm run start
+: 1631327715:0;cd ~/.dotfiles
+: 1631327717:0;hg st
+: 1631327724:0;hg d

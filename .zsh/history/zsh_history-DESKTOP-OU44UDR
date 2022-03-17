@@ -1,17 +1,14 @@
 : 1625632035:0;docker --version
 : 1625632405:0;docker-compose -v
-: 1625632639:0;xeyes&
 : 1625632724:0;cat /etc/hosts
 : 1625632812:0;l ~/.zsh
 : 1625632826:0;l ~/.zsh/spec/P3530-20190221.zsh
 : 1625632837:0;cat ~/.zsh/spec/P3530-20190221.zsh
 : 1625633599:0;cp P3530-20190221.el DESKTOP-OU44UDR.el
 : 1625633654:0;cp ~/.zsh/spec/P3530-20190221.zsh ~/.zsh/spec/DESKTOP-OU44UDR.zsh
-: 1625633680:0;xeyes &
 : 1626075321:0;e Worklog.org &
 : 1626099285:0;cd xml-transform
 : 1626099400:0;g co r2021-07
-: 1626100338:0;cd ainq-common-service
 : 1626100345:0;ag cookie
 : 1626105565:0;g clone https://git.ainq.com/ulp-development/java-libraries/ulp-immunizations-ws-api.git
 : 1626105595:0;g co -b CEN-1507-update-wsdl-location
@@ -28,17 +25,13 @@
 : 1626106400:0;cat ../dhin-initiate-ws-api/.gitlab-ci.yml
 : 1626106417:0;cat ../ulp-breakglass-portlet/.gitlab-ci.yml
 : 1626106460:0;gcmsg "CEN-1507: updated gitlab pipeline (this project is very old)"
-: 1626184184:0;which e
 : 1626194615:0;ls -ltr
 : 1626194622:0;ls -lt
 : 1626194635:0;which ll
 : 1626194652:0;man ls
 : 1626194664:0;which l
 : 1626194679:0;which lt
-: 1626200934:0;t
-: 1626201967:0;rm t
 : 1626204209:0;powershell
-: 1626204212:0;powershell.exe
 : 1626204240:0;powershell.exe --help
 : 1626204736:0;kill 23736
 : 1626204751:0;kill 23782
@@ -46,18 +39,12 @@
 : 1626204772:0;kill 23964
 : 1626204801:0;kill 15524
 : 1626207322:0;powershell.exe scripts/clipboard-to-file.ps1 test.png
-: 1626209298:0;g clone https://git.ainq.com/CRISP_Unified_Landing_Page/service-immunizations.git
-: 1626209306:0;cd service-immunizations
 : 1626209358:0;g co -b CEN-1507-mdm-endpoint-change
 : 1626209452:0;cat ~/.zsh/history/zsh_history-P3530-20190221 | grep ssh
-: 1626209460:0;ssh pi@192.168.1.51
 : 1626209748:0;gcmsg "CEN-1507: updated deps for immunization ws lib (MDM endpoint WSDL)"
 : 1626209785:0;g push -u origin CEN-1507-mdm-endpoint-change
-: 1626209854:0;te .gitlab-ci.yml
 : 1626209887:0;gcmsg "CEN-1507: updated DinD for Gitlab pipeline"
 : 1626272505:0;.emacs.d 
-: 1626274260:0;cd ~/Projects
-: 1626274266:0;cd EmacsOrg
 : 1626274270:0;cd emacs
 : 1626274478:0;make uninstall
 : 1626274486:0;sudo make uninstall
@@ -70,14 +57,11 @@
 : 1626274734:0;l .cache/lsp/npm
 : 1626274739:0;l .cache/lsp/npm/javascript-typescript-langserver
 : 1626274821:0;find site-lisp -name *.elc
-: 1626281839:0;te . &
 : 1626289404:0;hg commit -m "moved to a new laptop DESKTOP-OU44UDR"
 : 1626289406:0;hg ;ga
-: 1626289425:0;hg pull
 : 1626289433:0;hg heads
 : 1626289457:0;hg merge tip
 : 1626291853:0;e .emacs.d &
-: 1626291953:0;cd .emacs.d
 : 1626291987:0;rd elpa
 : 1626291999:0;g co custom.el
 : 1626318723:0;rm .emacs.desktop.wsl
@@ -89,7 +73,6 @@
 : 1626379270:0;l ~/.npm-packages/bin
 : 1626379282:0;export PATH=~/.npm-packages/bin:$PATH
 : 1626383591:0;npm i dd-tracer
-: 1626383604:0;npm i dd-trace
 : 1626401806:0;l .tooling
 : 1626402038:0;l DataDog
 : 1626402056:0;DataDog/trace-examples
@@ -98,23 +81,18 @@
 : 1626402075:0;l javascript/node/microservices
 : 1626402079:0;l javascript/node/microservices/docker-compose.yml
 : 1626402082:0;less javascript/node/microservices/docker-compose.yml
-: 1626402183:0;te .env
 : 1626402823:0;docker run -d --name dd-agent -v /var/run/docker.sock:/var/run/docker.sock:ro -v /proc/:/host/proc/:ro -v /sys/fs/cgroup/:/host/sys/fs/cgroup:ro -e DD_API_KEY=DD_API_KEY=898cebd8908f13dd398a4bc47e42f092 gcr.io/datadoghq/agent:7
 : 1626402917:0;docker kill 27ba28cb8009
 : 1626402923:0;docker rm 27ba28cb8009
 : 1626402987:0;docker run -d --name dd-agent -v /var/run/docker.sock:/var/run/docker.sock:ro -v /proc/:/host/proc/:ro -v /sys/fs/cgroup/:/host/sys/fs/cgroup:ro -p 8125:8125 -p 8126:8126 -e DD_ENV=ai-pulse-test -e DD_HOSTNAME=evgeniy -e DD_API_KEY=DD_API_KEY=898cebd8908f13dd398a4bc47e42f092 gcr.io/datadoghq/agent:7
-: 1626403285:0;pyenv
 : 1626403483:0;l .local
 : 1626403486:0;l .local/lib
 : 1626403603:0;apt-cache list --installed
 : 1626403607:0;apt-cache list installed
 : 1626403615:0;apt-cache installed
 : 1626403631:0;apt search pyenv
-: 1626403637:0;apt search nodenv
 : 1626412275:0;watch -n 1 sass assets/css/styles.scss assets/css/styles.css && rm -rf ~/.org-timestamps && make
 : 1626469426:0;lg
-: 1626469432:0;g lg
-: 1626499581:0;dotnet new --list
 : 1626578318:0;sass assets/css/styles.scss assets/css/styles.css && make
 : 1626578409:0;man sass
 : 1626578414:0;sass --help
@@ -125,12 +103,10 @@
 : 1626582245:0;hg commit -m "added phone tablen desktop screen differentiations and modified styles of top navigation."
 : 1626582486:0;hg commit "fixed structure of site with links to about and articles"
 : 1626582491:0;hg commit -m "fixed structure of site with links to about and articles"
-: 1626659910:0;cd Website
 : 1626661554:0;python -m http.server -p 8000 public/
 : 1626662404:0;cat ./src/articles/emacs-and-orgmode-website.org
 : 1626662411:0;cat ./src/about/index.org
 : 1626662443:0;vim ./src/about/index.org
-: 1626705035:0;e ai-worklog/Worklog.org&
 : 1626749204:0;cd ai-enterprise-service-plugin
 : 1626749233:0;docker run dd-agent
 : 1626749259:0;docker inspect c1bd8eddb0a9
@@ -150,40 +126,29 @@
 : 1626758433:0;g push -u origin OPEB-1987-datadog-api
 : 1626758724:0;webserver
 : 1626758744:0;Website/
-: 1626760962:0;python -m http.server --directory public 8000
-: 1626761602:0;Website
 : 1626761614:0;hg add .
 : 1626761635:0;hg commit -m "added emacs article and renamed colophon to index"
-: 1626761819:0;sass assets/css/styles.scss assets/css/styles.css && cp assets/css/*.css public/assets/css/.
 : 1626762969:0;hg commit -m "added blockquote style"
-: 1626787612:0;docker kill dd-agent
 : 1626787998:0;e. &
 : 1626788546:0;emacs --daemon
 : 1626790171:0;docker rm 2957a276d3a4
 : 1626790353:0;node run start
-: 1626803815:0;vim init.el
 : 1626803863:0;l elpa
 : 1626804581:0;gcmsg "updated packages in custom vars and use package-refresh"
 : 1626804643:0;Projects/EmacsOrg/emacs
 : 1626804672:0;make clean
 : 1626805070:0;sudo make install
 : 1626805115:0;less INSTALL
-: 1626805991:0;l PULSE
 : 1626807716:0;docker run -d --name dd-agent -v /var/run/docker.sock:/var/run/docker.sock:ro -v /proc/:/host/proc/:ro -v /sys/fs/cgroup/:/host/sys/fs/cgroup:ro -p 8125:8125 -p 8126:8126 -e DD_ENV=ainq-pulse-test-2 -e DD_HOSTNAME=evgeniy -e DD_API_KEY=898cebd8908f13dd398a4bc47e42f092 gcr.io/datadoghq/agent:7
 : 1626807728:0;cd AiPlatform/ai-enterprise-service-plugin
 : 1626807741:0;rm examples/using-apm/apis/README.md
-: 1626807760:0;te package.json
-: 1626814688:0;Projects/FSharp
 : 1626814694:0;ElegantFSharp
 : 1626815242:0;dotnet ~/.FsAutoComplete/netcore/fsautoComplete.dll --version
 : 1626815262:0;dotnet ~/.FsAutoComplete/netcore/fsautocomplete.dll --version
 : 1626833322:0;l ToDo
-: 1626833325:0;cd ToDo
 : 1626833951:0;pip search ptpython
-: 1626834391:0;gs
 : 1626834421:0;te custom.el
 : 1626834460:0;gcmsg "using lsp-mode for all the LSP functionality"
-: 1626836484:0;pgrep emacs 
 : 1626838311:0;pip install python-lsp-server
 : 1626838443:0;pip install virtualenv
 : 1626838509:0;virtualenv
@@ -201,8 +166,6 @@
 : 1626845845:0;python -m venv --help
 : 1626845867:0;python -m venv env
 : 1626845872:0;cd env
-: 1626845901:0;source env/bin/activate
-: 1626845925:0;deactivate
 : 1626883494:0;ag getMedicationHistory
 : 1626883510:0;te ulp-snapshot-portlet/src/main/java/com/ainq/ulp/snapshot/controller/SnapshotResourceMappings.java
 : 1626883596:0;ag getMedHistoryService
@@ -212,14 +175,11 @@
 : 1626883697:0;te ulp-snapshot-lib/src/main/java/com/ainq/ulp/snapshot/service/MedicationHistoryService.java
 : 1626883721:0;ag MedicationHistoryClientFactory
 : 1626883839:0;ag "Patient not found."
-: 1626887927:0;which java
 : 1626888076:0;ls /etc/alternatives/java
 : 1626888083:0;ls -l /etc/alternatives/java
 : 1626888380:0;cd ulp-snapshot-portlet
 : 1626888394:0;g co 4.3.3
 : 1626888858:0;update-alternatives --help
-: 1626888864:0;update-alternatives --list java
-: 1626889663:0;idea &
 : 1626889897:0;ag Redhat
 : 1626889900:0;ag -i Redhat
 : 1626889904:0;ag -i jdk
@@ -250,7 +210,6 @@
 : 1626892473:0;pgrep gradle
 : 1626892534:0;cd ~/.zsh
 : 1626892549:0;ag -i redhat
-: 1626892583:0;cat  spec/DESKTOP-OU44UDR.zsh
 : 1626892589:0;te spec/DESKTOP-OU44UDR.zsh
 : 1626892620:0;env | grep java
 : 1626892623:0;env | grep -i java
@@ -270,14 +229,12 @@
 : 1626894267:0;l .liferay
 : 1626894273:0;l .liferay/bundles
 : 1626894278:0;cd esharapov
-: 1626894372:0;l gradle
 : 1626894378:0;less gradle/wrapper/gradle-wrapper.properties
 : 1626895535:0;which gradle 
 : 1626895545:0;gradlew --version
 : 1626895598:0;cd .gradle
 : 1626895601:0;ag mnt
 : 1626895609:0;lr
-: 1626895611:0;l -R
 : 1626895629:0;find .
 : 1626895637:0;find . | xargs grep mnt
 : 1626895645:0;find . -type f| xargs grep mnt
@@ -293,7 +250,6 @@
 : 1626895918:0;cd /opt/idea-IC-202.7660.26
 : 1626895921:0;find . -type f | xargs grep -il Redhat
 : 1626896743:0;l gradle.properties
-: 1626896746:0;cat gradle.properties
 : 1626896919:0;rd .local/share/JetBrains/
 : 1626896933:0;rd .config/JetBrains
 : 1626962302:0;gcmsg "CEN-1610: changes related to 'patient not found' error in prem med history"
@@ -314,7 +270,6 @@
 : 1626976175:0;ssh -v -i ~/Projects/AWS/bastion_host.pem ubuntu@ec2-54-152-64-133.compute-1.amazonaws.com
 : 1626983231:0;l ./build/libs/ulp-snapshot-portlet.war
 : 1626983249:0;cat ~/Projects/AWS/bastion_host.pem
-: 1626984273:0;npm ci
 : 1626984699:0;./gradlew -T
 : 1626985287:0;cp build/libs/ulp-snapshot-portlet.war /mnt/c/Users/esharapov/Documents/.
 : 1626985350:0;scp -v -i ~/Projects/AWS/bastion_host.pem ./build/libs/ulp-snapshot-portlet.war  ubuntu@54.204.89.13:/home/ubuntu/.
@@ -330,7 +285,6 @@
 : 1627008169:0;gcmsg "CEN-1610: prevent fallout on 504 Timeout from Medicasoft endpoint"
 : 1627009643:0;g clone https://git.ainq.com/CRISP_Unified_Landing_Page/snapshot-portlet.git
 : 1627009657:0;./gradlew clean buil
-: 1627009666:0;cd snapshot-portlet
 : 1627011044:0;gl
 : 1627047267:0;e ~/ai-worklog/Worklog &
 : 1627052934:0;rd /tmp/gradle*
@@ -363,7 +317,6 @@
 : 1627066375:0;rd .idea
 : 1627066379:0;rd .settings
 : 1627066383:0;rd .project
-: 1627066394:0;rd .vscode
 : 1627066438:0;gcmsg "removed all ide settings files\
 "
 : 1627066507:0;./gradlew wrapper
@@ -387,7 +340,6 @@
 : 1627070122:0;which gcov
 : 1627071629:0;ga-u
 : 1627071653:0;gcmsg "CEN-1610: added more logging and debug information"
-: 1627308425:0;dotnet fsi --help
 : 1627316482:0;chmod +x medicasoft_probe.sh
 : 1627316677:0;./medicasoft_probe.sh -m 1234 asdfasdf
 : 1627317004:0;./medicasoft_probe.sh -m
@@ -399,7 +351,6 @@
 : 1627327916:0;ga medicasoft_probe.sh
 : 1627327932:0;gcmsg "CEN-1610: added Medicasoft endpoint probing script"
 : 1627327979:0;g push -u origin CEN-1610-prem-med-history-patient-not-found
-: 1627331497:0;.emacs.d
 : 1627331779:0;cd GATE/gateway.netcore.services
 : 1627331789:0;t . &
 : 1627410082:0;java -jar build/libs/ulp-snapshot-lib-all-CEN-1610-prem-med-history-patient-not-found-SNAPSHOT.jar
@@ -419,29 +370,18 @@
 : 1627413515:0;./gradlew clean build appJar && java -Dulp.snapshot.properties=file:ulp-snapshot-ext.properties -jar build/libs/ulp-snapshot-lib-all-CEN-1610-app-SNAPSHOT.jar
 : 1627413917:0;l build/tmp
 : 1627413920:0;l build/tmp/jar
-: 1627413928:0;l build/classes
-: 1627413931:0;l build/classes/java
-: 1627413934:0;l 
-: 1627413939:0;l .gradle
-: 1627413953:0;l build
-: 1627413958:0;l build/resources
 : 1627414376:0;java -Dulp.snapshot.properties=file:ulp-snapshot-ext.properties -jar build/libs/ulp-snapshot-lib-all-CEN-1610-app-SNAPSHOT.jar
 : 1627414437:0;gcmsg "CEN-1610: working context in the application""
 : 1627414439:0;gcmsg "CEN-1610: working context in the application"
-: 1627417300:0;which pgrep
-: 1627417306:0;pgrep --help
 : 1627417343:0;pgrep java | xargs kill -9
 : 1627423795:0;gcmsg "OPEB-2219: completed steps for Gitlap HIES pipeline"
 : 1627423813:0;cd pipeline-common
-: 1627426492:0;cd GATE
 : 1627426497:0;g clone https://git.ainq.com/ai-gateway/certificate-management-service.git
 : 1627426541:0;g clone https://git.ainq.com/ai-gateway/aigatewaydocker.git
 : 1627485173:0;g co src/integration-test/java/com/ainq/ulp/snapshot/client/TestPremMedicationHistoryClientIntegration.java
 : 1627489100:0;pgrep idea | kill 12547
 : 1627490231:0;utop
-: 1627496068:0;gts
 : 1627498365:0;./gradlew build appJar && java -Dulp.snapshot.properties=file:ulp-snapshot-ext.properties -jar build/libs/ulp-snapshot-lib-all-CEN-1610-app-SNAPSHOT.jar
-: 1627500500:0;cd ULP
 : 1627500513:0;cd ulp-immunizations-ws-api
 : 1627500586:0;g br -d CEN-1507-localize-wsdl
 : 1627500603:0;g br -D CEN-1507-localize-wsdl
@@ -462,7 +402,6 @@
 : 1627501125:0;g push -u origin CEN-1507-localize-wsdl-2
 : 1627501141:0;ag version
 : 1627501272:0;gcmsg "CEN-1507: fixed formatting"
-: 1627511701:0;l build/libs
 : 1627511755:0;ssh -v -i ~/Projects/AWS/bastion_host.pem ubuntu@54.204.89.13
 : 1627567993:0;cd ~/Projects/ULP
 : 1627568003:0;cd ulp-iam-portlet
@@ -517,21 +456,16 @@
 : 1627697034:0;ga . 
 : 1627697075:0;gcmsg "CEN-1610: modified app for snapshot CLI"
 : 1627697085:0;g push -u origin CEN-1610-app
-: 1627697694:0;FSharp
 : 1627697926:0;pgrep dotnet -a
 : 1627697936:0;pgrep dotnet | xargs kill
-: 1627700098:0;pgrep e
 : 1627700172:0;kill 16767
 : 1627700184:0;e ~/ai-worklog
-: 1627701513:0;emacs --version
 : 1627701547:0;cd ~/Projects/EmacsOrg/emacs
 : 1627701552:0;g fetch
-: 1627701592:0;g br
 : 1627701608:0;g br -a | grep native
 : 1627701621:0;g co feature/native-comp
 : 1627701651:0;g pull origin feature/native-comp
 : 1627703105:0;pgrep emacs | xargs kill 
-: 1627712026:0;cd LearnFSharp
 : 1627712041:0;code Kattis
 : 1627791034:0;hg --version
 : 1627791046:0;which hg
@@ -551,7 +485,6 @@
 : 1627936578:0;gcmsg "OPEB-2219: updated pipeline from file to local inclusion"
 : 1627936673:0;ga -u "OPEB-2219: corrected typo"
 : 1627936688:0;gcmsg "OPEB-2219: corrected typo"
-: 1627998038:0;docker rm dd-agent
 : 1627998065:0;docker run -d --name dd-agent -v /var/run/docker.sock:/var/run/docker.sock:ro -v /proc/:/host/proc/:ro -v /sys/fs/cgroup/:/host/sys/fs/cgroup:ro -p 8125:8125 -p 8126:8126 -e DD_ENV=ainq-pulse-demo -e DD_HOSTNAME=evgeniy -e DD_API_KEY=898cebd8908f13dd398a4bc47e42f092 gcr.io/datadoghq/agent:7
 : 1628017167:0;g clone https://git.ainq.com/ai-gateway/gateway-v2/gateway.common.git
 : 1628017311:0;cat Gateway.Common/Gateway.Common.csproj
@@ -561,7 +494,6 @@
 : 1628017728:0;cd ../gateway.common
 : 1628017862:0;gcmsg "added a code from Gateway.Common of Gateway.NetCore.Services project"
 : 1628021808:0;cd ../../ULP/ulp-snapshot-lib
-: 1628021827:0;./gradlew tasks
 : 1628024373:0;cd ../../ULP/ulp-snapshot-portlet
 : 1628024377:0;ag retry
 : 1628091953:0;dotnet pack
@@ -578,9 +510,6 @@
 : 1628109775:0;wget --no-check-certificate http://gist.githubusercontent.com/kmorcinek/2710267/raw/.gitignore
 : 1628109780:0;ga .gitignore
 : 1628109786:0;gcmsg "added gitignore"
-: 1628110310:0;code .
-: 1628111776:0;dotnet fsi
-: 1628112239:0;pgrep dotnet
 : 1628112268:0;cat 2018 | dotnet fsi marswindow.fsx
 : 1628112275:0;echo 2018 | dotnet fsi marswindow.fsx
 : 1628112281:0;echo 2019 | dotnet fsi marswindow.fsx
@@ -590,7 +519,6 @@
 : 1628175205:0;ga README.md
 : 1628175334:0;ga ,
 : 1628175347:0;npm run install
-: 1628175426:0;ga package-lock.json
 : 1628175471:0;cd ./examples/simple
 : 1628176715:0;npm run start:apm
 : 1628178016:0;gcmsg "OPEB-1987: updated comments"
@@ -606,7 +534,6 @@
 : 1628190666:0;rd idea-IC-211.7628.21
 : 1628190684:0;rm spring-tool-suite-4-4.11.0.RELEASE-e4.20.0-linux.gtk.x86_64.tar.gz
 : 1628190692:0;sudo rm spring-tool-suite-4-4.11.0.RELEASE-e4.20.0-linux.gtk.x86_64.tar.gz
-: 1628190724:0;ll
 : 1628190749:0;./sts-4.11.0.RELEASE/SpringToolSuite4 &
 : 1628190824:0;sudo rd idea-IC-211.7628.21
 : 1628190831:0;sudo rmdir idea-IC-211.7628.21
@@ -627,9 +554,6 @@
 : 1628191274:0;ag -g *.csv
 : 1628191282:0;ag -g *\.csv
 : 1628191292:0;ag -g ".*.csv"
-: 1628191388:0;cd
-: 1628191391:0;cd ~/.emacs.d
-: 1628191404:0;cd data
 : 1628191407:0;ag ledger
 : 1628192092:0;cd ~/Dropbox/Documents/Money/
 : 1628192120:0;hg t 
@@ -648,7 +572,6 @@
 : 1628273525:0;hg config
 : 1628273748:0;cat .hg/git/config
 : 1628273820:0;te .hg/hgrc
-: 1628279605:0;aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION
 : 1628279634:0;AWS_DEFAULT_REGION=us-east-1 aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION
 : 1628284124:0;cat amex
 : 1628284369:0;mv /mnt/c/Users/esharapov/Downloads/activity\ \(1\).csv amex_20210312_20210806.csv
@@ -694,7 +617,6 @@
 : 1628387315:0;rechon
 : 1628387320:0;reckon
 : 1628387339:0;te ~/.dotfiles/
-: 1628387374:0;cd ~/.dotfiles
 : 1628387377:0;hg st 
 : 1628387391:0;hg commit "updated history and PATH"
 : 1628387396:0;hg commit -m "updated history and PATH"
@@ -823,7 +745,6 @@ done\
 : 1628536561:0;seq 1 20 | tac
 : 1628537781:0;less capitalone.csv
 : 1628540792:0;g co CEN-1610-app
-: 1628541224:0;./gradlew dependencies
 : 1628563454:0;apt search tortoise
 : 1628563729:0;hg addremove processed/*
 : 1628563736:0;hg addremove processed
@@ -837,7 +758,6 @@ done\
 : 1628565125:0;amex_prep amex_20210101_20210806.csv
 : 1628565138:0;capitalone_prep capitalone_20210101_20210311.csv capitalone_20210312_20210806.csv
 : 1628565305:0;suntrust_prep suntrust_chk_20210101_20210311.csv suntrust_chk_20210312_20210610.csv suntrust_chk_20210611_20210806.csv
-: 1628604931:0;l ~/.nuget/
 : 1628604941:0;l ~/.nuget/NuGet/NuGet.Config
 : 1628622604:0;ai-enterprise-service-plugin
 : 1628622613:0;cd examples
@@ -901,21 +821,14 @@ done\
 : 1628710535:0;dotnet nuget list Gateway.Common
 : 1628710585:0;cd 
 : 1628710711:0;dotnet tool install --global dotnet-search
-: 1628710812:0;cd FSharp
-: 1628710822:0;dotnet new --help
-: 1628710863:0;dotnet new -l
-: 1628710872:0;dotnet new -h
 : 1628710929:0;dotnet new -name EnsTest -lang F#
 : 1628710936:0;dotnet new -n EnsTest -lang F#
 : 1628710945:0;dotnet new console -n EnsTest -lang F#
 : 1628710976:0;dotnet package --help
 : 1628710984:0;dotnet package
-: 1628710997:0;dotnet -h
 : 1628711018:0;dotnet add -h
 : 1628711140:0;dotnet nuget add --help
 : 1628711152:0;dotnet nuget add source --help
-: 1628711310:0;dotnet nuget add source https://nexus.ainq.com/repository/nuget.enssandbox-ainq.proxy/  -n NexusNuget -u esharapov -p ENSharap1982//// --store-password-in-clear-text
-: 1628715458:0;cd ../PULSE
 : 1628715464:0;ag TopicArn
 : 1628715510:0;sns
 : 1628715521:0;ag sns
@@ -926,12 +839,7 @@ done\
 : 1628732117:0;cat .git/config
 : 1628784343:0;ps aux emacs
 : 1628784360:0;kill -9 444
-: 1628784363:0;ps aux | grep emacs
-: 1628788309:0;te .
-: 1628797106:0;ping nexus.ainq.com
-: 1628797373:0;cd ~/Projects/FSharp
 : 1628797389:0;cd EnsTest
-: 1628797816:0;dotnet nuget add source https://nexus.ainq.com/repository/nuget.org-proxy/  -n NexusOrgNuget -u esharapov -p ENSharap1982//// --store-password-in-clear-text
 : 1628797953:0;dotnet add package Moq
 : 1628797964:0;less EnsTest.fsproj
 : 1628798113:0;dotnet add package Gateway.Common
@@ -944,7 +852,6 @@ done\
 : 1628801184:0;echo trigger > README.md
 : 1628801197:0;gcmsg "OPEB-1987: trigger re-build"
 : 1628801212:0;./gradlew npm_run_build
-: 1628801311:0;./gradlew war
 : 1628803333:0;gcmsg "CEN-1610: defensive programming (working around issues with initialization) for having http client builder available"
 : 1628811116:0;te README.md
 : 1628811146:0;g co HEAD^2 -- README.md 
@@ -957,10 +864,8 @@ done\
 : 1628835345:0;hgcm "paid capitalone from wf"
 : 1628839221:0;hg d | less
 : 1628839302:0;hg commit -m "updated accounts in meta and did some transaction resolutions"
-: 1628861486:0;ai-worklog
 : 1628861529:0;ga Worklog/*.png
 : 1628861538:0;ga Worklog.org
-: 1628861545:0;gcmsg "updated worklog"
 : 1628861659:0;ai-worklog/ 
 : 1628869066:0;ledger tags -f journal.ledger
 : 1628869104:0;ledger stats -f journal.ledger
@@ -970,16 +875,12 @@ done\
 : 1628871152:0;less 2021/processed/citi_costco_20210312_20210806.csv
 : 1628876879:0;alias hgst='hg st'
 : 1628876885:0;hgcm
-: 1628876921:0;hg book
 : 1628877135:0;git-effort
 : 1628877158:0;~/.dotfiles/.git-extras/bin/git-effort
 : 1628885259:0;alias hgst='hg status'
 : 1628885269:0;alias hgcm='hg commit -m'~
 : 1628885272:0;alias hgcm='hg commit -m'
 : 1628888606:0;gcmsg "CEN-1610: defensive programming and more logging"
-: 1628905721:0;hg in
-: 1628905725:0;hg out
-: 1628905765:0;hgd
 : 1628905807:0;hgcm "corrected citi costco prep function in csvimport shell file"
 : 1628905814:0;hg commit -m "corrected citi costco prep function in csvimport shell file"
 : 1628907389:0;mkdir tests
@@ -1110,7 +1011,6 @@ done\
 : 1629137817:0;pulse-emergency-census-application/
 : 1629137821:0;ag csv
 : 1629138349:0;ag dateValidator
-: 1629138363:0;AiPlatform
 : 1629138467:0;cd pulse-emergency-census-application
 : 1629138471:0;te src/actions/bulk-upload-actions.js
 : 1629139377:0;gcmsg "CEN-1610: updated package-lock"
@@ -1149,7 +1049,6 @@ done\
 : 1629165226:0;ledger -f journal.ledger reg transfer
 : 1629165788:0;hg commit -m "cleanup more transactions"
 : 1629168082:0;sudo apt search gnuplot
-: 1629168869:0;sudo apt update
 : 1629168977:0;apt list --upgradeable
 : 1629169117:0;curl https://packages.grafana.com/gpg.key | sudo apt-key add -
 : 1629169132:0;sudo add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
@@ -1157,12 +1056,9 @@ done\
 : 1629172806:0;hg commit "added income unexpected account and cleaned up some unknown transactions"
 : 1629172811:0;hg commit -m "added income unexpected account and cleaned up some unknown transactions"
 : 1629217826:0;.dotfile
-: 1629217828:0;.dotfiles
-: 1629217832:0;~/.dotfiles
 : 1629218003:0;/bin/env zsh
 : 1629218009:0;/bin/env bash
 : 1629226788:0;ledger --strict -f journal.ledger reg transfer
-: 1629227337:0;cd AiPlatform
 : 1629227342:0;cd cicd-images
 : 1629227367:0;l devrunner
 : 1629227387:0;g show 768c
@@ -1171,7 +1067,6 @@ done\
 : 1629227478:0;g co create-dockerfiles
 : 1629227681:0;g co flyway
 : 1629227876:0;gcmsg "OPEB-2219: reorganized cicd images"
-: 1629227970:0;cat README.md
 : 1629228251:0;docker run devrunner
 : 1629228316:0;docker run devrunner bash
 : 1629228338:0;docker rm 1fa42064c45e
@@ -1181,11 +1076,9 @@ done\
 : 1629228469:0;docker run --entrypoint sh devrunner bash
 : 1629230161:0;hg revert -Ca
 : 1629233630:0;mkdir ENS
-: 1629233632:0;cd ENS
 : 1629233635:0;g clone https://git.ainq.com/ens-common/Ens.Common.ReleaseManagement.git
 : 1629233715:0;cd Ens.Common.ReleaseManagement
 : 1629233718:0;ag bucket
-: 1629233954:0;cat ~/.aws
 : 1629233968:0;cat ~/.aws/
 : 1629233973:0;ls ~/.aws/
 : 1629233987:0;aws config --help
@@ -1203,10 +1096,7 @@ done\
 : 1629234749:0;rm ~/.aws
 : 1629234768:0;ln -s /mnt/c/Users/esharapov/.aws ~/.aws
 : 1629234772:0;ls ~/.aws
-: 1629234784:0;cat ~/.aws/config
-: 1629237094:0;cat ~/.aws/credentials
 : 1629237306:0;aws config
-: 1629237309:0;aws configure
 : 1629237317:0;aws help configure
 : 1629237358:0;aws configure --profile ens_sandbox
 : 1629237427:0;aws --profile ens_sanbox s3 list
@@ -1226,7 +1116,6 @@ done\
 : 1629263098:0;hg qnew readme-changed
 : 1629263132:0;hg qapplied
 : 1629263135:0;hg qpop
-: 1629263139:0;hg lg
 : 1629263144:0;hg backout -r 56
 : 1629263192:0;hg reset
 : 1629263214:0;hg update -C -r 57
@@ -1258,7 +1147,6 @@ done\
 : 1629309116:0;./ack net
 : 1629309122:0;./ack fifo
 : 1629309126:0;./ack pi
-: 1629309143:0;cd ~/.bin
 : 1629309152:0;less sass
 : 1629309161:0;less dart
 : 1629309170:0;less sass.snapshot
@@ -1293,13 +1181,10 @@ done\
 : 1629316970:0;gcmsg --amend "added and improved devrunner docker image build scripts"
 : 1629316983:0;g commit  --amend
 : 1629317418:0;gcmsg "OPEB-2219: added CI/CD pipelines"
-: 1629317890:0;cd pulse-nodejs-service
-: 1629317921:0;pulse-application
 : 1629317957:0;te src/stores/tenant-store.js
 : 1629318164:0;g log --  src/stores/tenant-store.js
 : 1629318512:0;te pulse-application/src/components/pages/portal-admin-page/tenant-fields.js
 : 1629319070:0;ag  cachePatientInformation
-: 1629320494:0;../GATE
 : 1629320515:0;rg cache
 : 1629339543:0;e . *
 : 1629340017:0;hgs
@@ -1332,7 +1217,6 @@ done\
 : 1629406336:0;ledger -n --monthly --period=may -f journal.ledger reg Expenses or Liabilities:Mortgage or Income
 : 1629406351:0;ledger -n --monthly --period=mar -f journal.ledger reg Expenses or Liabilities:Mortgage or Income
 : 1629406511:0;hg commit -m "cleaned transactions, corrected hsa bonus ones"
-: 1629406515:0;hg lga
 : 1629406894:0;ledger --monthly --period=mar -f journal.ledger reg Expenses or Liabilities:Mortgage or Income
 : 1629407119:0;ledger --monthly --period=mar --sort=(amount) -f journal.ledger reg Expenses or Liabilities:Mortgage or Income
 : 1629407127:0;ledger --monthly --period=mar --sort="(amount)" -f journal.ledger reg Expenses or Liabilities:Mortgage or Income
@@ -1374,16 +1258,12 @@ done\
 : 1629493287:0;cd PULSE
 : 1629516858:0;rm -rf node_modules
 : 1629516862:0;rm package.json
-: 1629516866:0;rm package-lock.json
-: 1629517107:0;docker run -d --rm -p 4000:4000 registry.gitlab.com/gitlab-org/gitlab-docs:11.10
 : 1629521191:0;ledger -n --monthly -f journal.ledger reg Expenses or Liabilities:Mortgage or Income
 : 1629521326:0;ledger -n -b "2021-01-01" --monthly -f journal.ledger reg Expenses or Liabilities:Mortgage or Income
 : 1629521384:0;g clone https://github.com/ledger/ledger.git
 : 1629521675:0;pip install ledger
 : 1629521887:0;pip install ptpython
 : 1629522107:0;cd ../ledger
-: 1629522866:0;~/Projects
-: 1629522872:0;lt
 : 1629523150:0;./acprep update
 : 1629523455:0;ledger -f journal.ledger -VQ -c -t (/Liabilities/?a<0:Ua>100)&a "-Equity -Income -Expenses"
 : 1629523476:0;ledger -f journal.ledger -VQ -c -t "(/Liabilities/?a<0:Ua>100)&a" "-Equity -Income -Expenses"
@@ -1399,7 +1279,6 @@ done\
 : 1629524105:0;l tools
 : 1629524117:0;l python
 : 1629524142:0;./ledger -f ../Money/journal.ledger python
-: 1629524151:0;cd src
 : 1629524166:0;less acprep
 : 1629524271:0;less doc/ledger.1
 : 1629524288:0;less doc/grammar.y
@@ -1414,12 +1293,9 @@ done\
 : 1629526109:0;sudo apt-get update -y
 : 1629526190:0;cd ledger
 : 1629526197:0;apt info ledger
-: 1629526220:0;history
 : 1629526233:0;dpkg -L ledger
 : 1629526246:0;ls -l /usr/lib/ledger
 : 1629526268:0;ls -l /usr/lib/ledgerl
-: 1629526288:0;l lib
-: 1629526296:0;l src
 : 1629526754:0;./acprep opt make
 : 1629526842:0;ledger -f test/input/demo.ledger python
 : 1629526846:0;ledger -f test/input/demo.ledger
@@ -1442,7 +1318,6 @@ done\
 : 1629600227:0;cmake
 : 1629600240:0;./acprep --python opt make
 : 1629600258:0;less INSTALL.md
-: 1629600307:0;make
 : 1629600356:0;apt search beancount
 : 1629600945:0;apt search ledger
 : 1629600978:0;ledger python
@@ -1456,7 +1331,6 @@ done\
 : 1629601463:0;pgrep ledger | xargs kill
 : 1629601471:0;pgrep ledger
 : 1629601479:0;kill -9 30909
-: 1629601516:0;ptpython3
 : 1629601529:0;pythhon
 : 1629601677:0;./acprep clean
 : 1629684816:0;pip3
@@ -1465,8 +1339,6 @@ done\
 : 1629689076:0;python3 -m pip --version
 : 1629689166:0;apt search python
 : 1629689180:0;python-config
-: 1629689259:0;update-alternatives
-: 1629689275:0;update-alternatives --list
 : 1629689278:0;update-alternatives --list python
 : 1629689303:0;which python
 : 1629689307:0;which python3
@@ -1497,7 +1369,6 @@ done\
 : 1629690472:0;sudo apt-get remove python2.7-dev
 : 1629690495:0;sudo apt-get remove libpython2-dev
 : 1629690539:0;sudo apt-get remove python
-: 1629690553:0;sudo apt autoremove
 : 1629690577:0;python3
 : 1629690607:0;apt-cache showpkg python-dev
 : 1629690626:0;sudo apt-get remove python-dev-is-python2
@@ -1510,8 +1381,6 @@ done\
 : 1629690751:0;pip 
 : 1629690854:0;sudo apt install python-is-python3
 : 1629690871:0;pip
-: 1629690873:0;pip list
-: 1629690888:0;echo $PATH
 : 1629690897:0;ls ~/.bin
 : 1629690908:0;echo $PYTHON_PATH
 : 1629690930:0;echo $PYTHONPATH
@@ -1523,7 +1392,6 @@ done\
 : 1629691301:0;cp libledger.so.3 ~/.bin/.
 : 1629691310:0;cp libledger.so \ ~/.bin/.
 : 1629691315:0;cp libledger.so ~/.bin/.
-: 1629691322:0;python
 : 1629691336:0;ledger --version
 : 1629691338:0;which ledger
 : 1629728784:0;gnuplot
@@ -1536,26 +1404,18 @@ done\
 : 1629730556:0;rd ~/Downloads/MobaXterm_Installer_v21.2 
 : 1629730563:0;rd ~/Downloads/MobaXterm_Installer_v21.2.zip
 : 1629730643:0;rd ~/Downloads/SafeNet\ MobilePASS.msi
-: 1629730647:0;l ~/Downloads
-: 1629730650:0;l ~/Downloads/
 : 1629730683:0;cp ~/Downloads/Releases.json .
-: 1629730841:0;ptpython
-: 1629746118:0;pulse.middleware.ee
 : 1629750041:0;docker inspect 3cec43a90603
 : 1629750586:0;docker start dd-agent
 : 1629750603:0;docker exec -it dd-agent
 : 1629750948:0;../../GATE
-: 1629750964:0;cd aigatewaydocker
 : 1629750975:0;less docker-compose.yml
 : 1629750995:0;less wildfly-docker-compose.yml
 : 1629751017:0;cp docker-compose.yml datadog-docker-compose.yaml
 : 1629751025:0;e datadog-docker-compose.yaml &
-: 1629751325:0;docker exec -it dd-agent bash
 : 1629769521:0;./showcolors.sh
 : 1629769524:0;sh ./showcolors.sh
 : 1629769531:0;bash ./showcolors.sh
-: 1629769613:0;cd Projects
-: 1629769628:0;cd Money
 : 1629770162:0;hgrep acprep
 : 1629770303:0;../ledger
 : 1629770305:0;l *ledger*
@@ -1563,40 +1423,24 @@ done\
 : 1629774081:0;docker pull registry.ainq.com/v2/ai-gateway/certificate-management-service/gateway-cert-management
 : 1629774140:0;docker pull registry.ainq.com/ai-gateway/certificate-management-service/gateway_cert_management
 : 1629774158:0;docker pull registry.ainq.com/ai-gateway/certificate-management-service/gateway_cert_management:1.0.0.29
-: 1629774357:0;docker login registry.ainq.com
-: 1629813444:0;docker rmi 97b9395ea550
-: 1629813503:0;cd gateway.netcore.services
 : 1629859196:0;docker pull registry.ainq.com/ai-gateway/certificate-management-service/gateway-cert-management
 : 1629860145:0;Money
-: 1629860153:0;hg st
-: 1629860154:0;hg d
 : 1629860168:0;hg commit -m "added cashflow report line"
-: 1629860171:0;hg push
-: 1629903125:0;ulp-iam-portlet
 : 1629903130:0;l tooling
 : 1629908888:0;g clone https://git.ainq.com/ai-gateway/AiConnectAdapters.git
 : 1629908974:0;g clone https://git.ainq.com/ai-gateway/CONNECT.git
 : 1629909094:0;../certificate-management-service
 : 1629909128:0;g co -b OPEB-2219-gateway-gitlab-pipelines
-: 1629919651:0;pulse-nodejs-service
 : 1629919663:0;node i
-: 1629919707:0;node --version
-: 1629922831:0;code . &
 : 1630006262:0;cat release.py
 : 1630006274:0;rm release.py
-: 1630006285:0;less README.md
 : 1630006310:0;g co -b OPEB-2219-gitlab-pipelines
 : 1630006890:0;mvn clean build
 : 1630006902:0;mvn clean verify
-: 1630007015:0;adt-dispatch-service
 : 1630007021:0;less README.org
 : 1630007054:0;cat README.org
 : 1630007102:0;docker run --name local-sqs -p 8010:4576 -e SERVICES=sqs -e START_WEB=0 -d localstack/localstack
 : 1630007236:0;aws sqs create-queue --queue-name=ColliderQueue --profile localstack --endpoint-url=http://localhost:8010
-: 1630007277:0;aws configure --help
-: 1630007281:0;aws configure help
-: 1630007290:0;aws configure list-profiles
-: 1630007296:0;aws configure list
 : 1630007309:0;aws configure --profile localstack  list
 : 1630007382:0;docker kill local-sqs
 : 1630007387:0;docker rm local-sqs
@@ -1621,7 +1465,6 @@ done\
 : 1630089931:0;l ~/.m2/
 : 1630089934:0;l ~/.m2/repository
 : 1630093916:0;mvn -P PD,DQ,DR,jboss7 deploy:deploy-file -Durl=https://nexus.ainq.com/repository/maven-releases -DrepositoryId=maven-releases -Dfile=Product/Production/Deploy/jboss7/target/CONNECT-JB7.ear -DskipTests -DgroupId=com.ainq.gateway -DartifactId=connect-jb7 -Dversion=0.0.1
-: 1630094921:0;l repo
 : 1630094989:0;mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version -DinstallAtEnd=true -DdeployAtEnd=true clean verify package
 : 1630095381:0;export CI_USERNAME="gateway_cd"
 : 1630096164:0;mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version install -DgroupId=com.ainq.gateway -DartifactId=ai-connect-adapters -Dversion=0.0.1
@@ -1631,12 +1474,10 @@ done\
 : 1630294363:0;mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version install -Dversion=0.0.2 -DskipTests
 : 1630294495:0;mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version install -Dproject.version=0.0.2 -DskipTests
 : 1630294556:0;mvn versions:set -DnewVersion=0.0.2
-: 1630294682:0;mvn --version
 : 1630294749:0;mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version install -DskipTests
 : 1630294763:0;mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version install -Drevision=0.0.2 -DskipTests
 : 1630294894:0;g clean 0-nf
 : 1630294897:0;g clean -n
-: 1630294900:0;g clean -f
 : 1630294991:0;g co -b OPEB-2219-gitlab-pipeline-ai-connect-adapters
 : 1630295012:0;gcmsg "OPEB-2219: added auto pipelines"
 : 1630295028:0;g push -u origin OPEB-2219-gitlab-pipeline-ai-connect-adapters
@@ -1646,7 +1487,6 @@ done\
 : 1630296065:0;mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version deploy -DrepositoryId=maven-gateway-release -Drevision=0.0.2 -DskipTests
 : 1630296074:0;mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version deploy -DrepositoryId=maven-gateway-releases -Drevision=0.0.2 -DskipTests
 : 1630296283:0;mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version deploy -DrepositoryId=maven-gateway-releases -Drevision=0.0.1 -DskipTests
-: 1630296377:0;rm dependency-reduced-pom.xml
 : 1630296458:0;gcmsg "OPEB-2219: updated deploy params of repo for maven"
 : 1630335673:0;g co Product/pom.xml
 : 1630335716:0;gcmsg "OPEB-2219: unblocking http repositories used in CONNECT pom"
@@ -1666,7 +1506,6 @@ done\
 : 1630340222:0;l files/drivers/com
 : 1630340330:0;diff data/wildfly/config/AdapterMpiConfig.xml ../CONNECT/Product/Production/Common/Properties/src/main/resources/AdapterMpiConfig.xml 
 : 1630340715:0;diff -q data/wildfly/config ../CONNECT/Product/Production/Common/Properties/src/main/resources/
-: 1630347303:0;pgrep idea | xargs kill
 : 1630348127:0;gcmsg "OPEB-2219: added some docs"
 : 1630348196:0;mv data/wildfly/config data/wildfly/config-custom
 : 1630348213:0;mkdir -p data/wildfly/config-original
@@ -1682,7 +1521,6 @@ done\
 : 1630350925:0;mvn -s settings.xml org.apache.maven.plugins:maven-dependency-plugin:2.1:get -DremoteRepositories=maven-gateway-releases::default::https://nexus.ainq.com/repository/maven-gateway-releases -Dartifact=com.ainq.gateway:connect-jb7:0.0.1
 : 1630350969:0;mvn -s settings.xml org.apache.maven.plugins:maven-dependency-plugin:3.2.0:get -DremoteRepositories=maven-gateway-releases::default::https://nexus.ainq.com/repository/maven-gateway-releases -Dartifact=com.ainq.gateway:connect-jb7:0.0.1
 : 1630351103:0;mvn -s settings.xml dependency:get -DrepoUrl=https://nexus.ainq.com/repository/maven-gateway-releases -Dartifact=com.ainq.gateway:connect-jb7:0.0.1
-: 1630351261:0;env
 : 1630351388:0;l files
 : 1630351400:0;mkdir deps
 : 1630351409:0;mv settings.xml deps/.
@@ -1693,7 +1531,6 @@ done\
 : 1630351844:0;mvn -e -P default -s deps/settings.xml dependency:get -Drepo.id=maven-gateway-releases -DrepoUrl=https://nexus.ainq.com/repository/maven-gateway-releases -Dartifact=com.ainq.gateway:connect-jb7:0.0.1
 : 1630356056:0;docker build --pull -t gateway-connect -f Dockerfile.gitlab .
 : 1630356327:0;gcmsg "OPEB-2219: unblocked repo for prime faces"
-: 1630356335:0;rg
 : 1630356356:0;rg "http://" -f pom.xml
 : 1630356379:0;rg "http\:\/\/" -f pom.xml
 : 1630356389:0;rg "http\:\/\/"
@@ -1730,8 +1567,6 @@ done\
 : 1630359299:0;scp -i ~/Projects/AWS/bastion_host.pem ./build/libs/ulp-snapshot-portlet.war  ubuntu@54.204.89.13:/home/ubuntu/.
 : 1630359791:0;ssh -i ~/Projects/AWS/bastion_host.pem ubuntu@54.204.89.13
 : 1630374901:0;pgrep java -v
-: 1630374984:0;pgrep emacs
-: 1630374991:0;pgrep emacs | xargs kill
 : 1630380266:0;docker run gateway-connect
 : 1630380568:0;docker kill 9cee
 : 1630380573:0;docker rm 9cee
@@ -1765,7 +1600,6 @@ done\
 : 1630435364:0;apt search soap
 : 1630435876:0;l ~/.zsh/history
 : 1630435934:0;te ~/.dotfiles/.zsh/spec/DESKTOP-OU44UDR.zsh
-: 1630435991:0;. ~/.zshrc
 : 1630436021:0;less datadog-docker-compose.yaml
 : 1630436029:0;less readme.md
 : 1630436178:0;gcmsg "OPEB-2219: no extra containers. fast build with artifacts from nexus"
@@ -1789,10 +1623,8 @@ done\
 : 1630441338:0;chown esharapov:esharapov SoapUI-5.6.0
 : 1630441346:0;sudo chown -R esharapov:esharapov SoapUI-5.6.0
 : 1630441353:0;cd SoapUI-5.6.0
-: 1630441369:0;l bin
 : 1630441399:0;cd SoapUI-5.6.0/bin
 : 1630441411:0;./soapui.sh&
-: 1630441431:0;java -version
 : 1630441452:0;update-alternatives --all
 : 1630441504:0;apt search jdk
 : 1630441520:0;apt search openjdk
@@ -1801,13 +1633,9 @@ done\
 : 1630441806:0;./soapui.sh &
 : 1630441835:0;apt list --installed | grep jdk
 : 1630441911:0;less /usr/lib/jvm/java-11-openjdk-amd64/release
-: 1630442213:0;;
 : 1630444148:0;sudo rm -rf SoapUI-5.6.0
 : 1630444155:0;sudo rm -rf SoapUI-5.6.0-linux-bin.tar.gz
 : 1630462654:0;pgrep odea
-: 1630462658:0;pgrep idea
-: 1630462662:0;pgrep java
-: 1630462672:0;pgrep -a java
 : 1630462813:0;pgrep java | xargs kill
 : 1630463859:0;~/ai-worklog
 : 1630463893:0;gcmsg "updated worklog at the end of august"
@@ -1815,22 +1643,18 @@ done\
 : 1630464114:0;mv logs.log ../tests
 : 1630464124:0;l deps
 : 1630464137:0;rd deps
-: 1630464200:0;e ~/ai-worklog/Worklog.org&
 : 1630512974:0;g co -b OPEB-2219-pipeline-merge-mulitple-local-gateways
 : 1630512982:0;g merge multiple-local-gateways
 : 1630513135:0;#g merge --continue
 : 1630513154:0;qsdfsd
 : 1630513439:0;cat data/wildfly/config/PCConfiguration.xml
 : 1630513483:0;gd --cached Dockerfile
-: 1630513523:0;g merge --continue
 : 1630513606:0;EDITOR=vim g merge --continue
 : 1630513710:0;mv data/wildfly/config
 : 1630513777:0;diff data/wildfly/config-custom data/wildfly/config-original
 : 1630513807:0;diff -R data/wildfly/config-custom data/wildfly/config-original
 : 1630513812:0;diff -r data/wildfly/config-custom data/wildfly/config-original
 : 1630513898:0;less data/wildfly/config-custom/AdapterMpiConfig.xml
-: 1630518824:0;aigatewaydocker
-: 1630518830:0;test
 : 1630518838:0;tests
 : 1630518863:0;mv connect-jb7.ear connect-jb7.bad.ear
 : 1630518878:0;cp connect-jb7.deployed.ear connect-jb7.ear
@@ -1843,7 +1667,6 @@ done\
 : 1630521386:0;cp connect-jb7.deployed.ear ~/Downloads/.
 : 1630522123:0;docker cp gateway:/opt/jboss/wildfly/standalone/deployments/CONNECT-JB7.ear aigatewaydocker_wildfly_1:/opt/jboss/wildfly/standalone/deployments/CONNECT-JB7.ear
 : 1630522175:0;docker cp connect-jb7.deployed.ear aigatewaydocker_wildfly_1:/opt/jboss/wildfly/standalone/deployments/CONNECT-JB7.ear
-: 1630522380:0;../aigatewaydocker
 : 1630522385:0;l soapui
 : 1630522484:0;cp soapui/* ~/Downloads/.
 : 1630523632:0;cat connect-jb7.ear
@@ -1858,82 +1681,55 @@ done\
 : 1630525145:0;test $CODE -eq 11
 : 1630525722:0;docker run -it --rm --name wild jboss/wildfly:15.0.0.Final sh
 : 1630526275:0;docker rmi gateway-connect
-: 1630526285:0;docker image prune
 : 1630526297:0;docker build --pull -t gateway-connect -f Dockerfile.gitlab --build-arg CI_USERNAME=$CI_USERNAME --build-arg CI_PASSWORD=$CI_PASSWORD --build-arg AI_CONNECT_VERSION=0.0.3 .
-: 1630526323:0;docker ps -a
 : 1630526337:0;docker rm gateway
 : 1630526342:0;docker run --name gateway -p 8081:8080 -p 8444:8443 -p 9991:9990 --rm -d registry.ainq.com/ai-gateway/aigatewaydocker/gateway-connect:latest
 : 1630526346:0;docker kill gateway
-: 1630526354:0;docker run --name gateway -p 8081:8080 -p 8444:8443 -p 9991:9990 --rm -d gateway-connect:latest
 : 1630526359:0;docker logs -f gateway
 : 1630526463:0;docker logs -f gateway > gateway_startup.log
 : 1630526479:0;docker logs gateway > gateway_startup.log
 : 1630526739:0;less gateway_startup.log
 : 1630526901:0;docker kill 1b2fe3ee688a
-: 1630527499:0;AiConnectAdapters
-: 1630527507:0;CONNECT
 : 1630527556:0;ag AiConnect
 : 1630527572:0;less RELEASE_NOTES.md
 : 1630527642:0;ag RespondingGateway_Service
-: 1630528950:0;cd CONNECT
-: 1630528963:0;cat .gitlab-ci.yml
 : 1630529078:0;less Dockerfile
-: 1630529087:0;java --version
-: 1630529097:0;update-alternatives --config java
-: 1630529107:0;sudo update-alternatives --config java
 : 1630529120:0;mvn ${MAVEN_CLI_OPTS} -P PD,DQ,DR,jboss7,AI -Dai.connect.adapters.version=0.0.1 clean package -DskipTests
 : 1630529253:0;l Product/Production/Deploy/jboss7/target/CONNECT-JB7.ear 
 : 1630529280:0;docker cp Product/Production/Deploy/jboss7/target/CONNECT-JB7.ear aigatewaydocker_wildfly_1:/opt/jboss/wildfly/standalone/deployments/CONNECT-JB7.ear
-: 1630546926:0;rm connect-jb7.ear
 : 1630546952:0;l ../tests/connect-jb7.deployed.ear
 : 1630547044:0;docker cp ../tests/connect-jb7.deployed.ear aigatewaydocker_wildfly_1:/opt/jboss/wildfly/standalone/deployments/CONNECT_JB7.ear
 : 1630552034:0;cp ~/Downloads/CONNECT-JB7.bad.fix.ear CONNECT-JB7.ear
 : 1630552053:0;docker cp CONNECT-JB7.ear aigatewaydocker_wildfly_1:/opt/jboss/wildfly/standalone/deployments/CONNECT_JB7.ear
-: 1630595712:0;ls ~/.nuget
 : 1630595717:0;ls ~/.nuget/NuGet/NuGet.Config
-: 1630595720:0;cat ~/.nuget/NuGet/NuGet.Config
 : 1630609845:0;ulp-snapshot-portlet
 : 1630609898:0;ulp-snapshot-lib
-: 1630610259:0;te build.gradle
 : 1630610311:0;gcmsg "CEN-1610: updated version of the snapshot library for the release"
 : 1630615365:0;qg pull
 : 1630615445:0;g co mastr
 : 1630615559:0;g merge release_3.12.0
 : 1630615596:0;g co -b release_3.14
 : 1630615628:0;te .ulp-config.yml
-: 1630633782:0;q
 : 1630633786:0;mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version clean verify package
 : 1630633792:0;mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version clean verify package -DskipTests
 : 1630633833:0;cp target/ai-connect-adapters-0.0.1-SNAPSHOT.jar ~/Downloads/.
-: 1630635734:0;export CI_USERNAME=gateway_cd
-: 1630635748:0;export CI_PASSWORD="G@t3w@y_Cd"
-: 1630635764:0;docker build --help
 : 1630636585:0;ll target
 : 1630636619:0;rm -rf target
 : 1630636621:0;docker build .
-: 1630636876:0;l target
-: 1630636878:0;ls -al
 : 1630636914:0;mvn
 : 1630636991:0;docker run -it --rm maven maven:3-jdk-8 mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version clean verify package -DskipTests
 : 1630637222:0;docker run -it --rm --name maven -v "$(pwd)":/usr/src/mymaven -w /usr/src/mymaven  maven:3-jdk-8 mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version clean verify package -DskipTests
 : 1630637435:0;docker run -it --rm --name maven -e CI_USERNAME=$CI_USERNAME -e CI_PASSWORD=$CI_PASSWORD -v "$(pwd)":/usr/src/mymaven -w /usr/src/mymaven  maven:3-jdk-8 mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version clean verify package -DskipTests
-: 1630637746:0;ls
 : 1630637749:0;ls target
 : 1630637770:0;cp target/ai-connect-adapters-0.0.1-SNAPSHOT.jar ~/Downloads/ai-connect-adapters-0.0.1-SNAPSHOT_1.jar
 : 1630638136:0;docker cp ~/Downloads/adapters/CONNECT-JB7.ear aigatewaydocker_wildfly_1:/opt/jboss/wildfly/standalone/deployments/CONNECT_JB7.ear
 : 1630638196:0;docker exec -it aigatewaydocker_wildfly_1 bash
-: 1630638299:0;grhh
 : 1630638877:0;gcmsg "OPEB-2219: include revision version from CI_COMMIT_TAG in maven build command"
 : 1630639269:0;gcmsg "OPEB-2219: now we use the same version (TAG) between CONNECT and AiConnectAdapters"
-: 1630639913:0;docker build --pull -t gateway-connect -f Dockerfile.gitlab --build-arg CI_USERNAME=$CI_USERNAME --build-arg CI_PASSWORD=$CI_PASSWORD --build-arg AI_CONNECT_VERSION=0.0.2 .
-: 1630639977:0;docker-compose up
-: 1630646145:0;gd
 : 1630646188:0;ga Dockerfile.gitlab
-: 1630646326:0;gd --cached
 : 1630646658:0;gcmsg "OPEB-2219: handle curl errors when downloading Nexus artifact, open up port 8787"
 : 1630646959:0;g pick 705be78
 : 1630646973:0;g cherry-pick 705be78
-: 1630647018:0;g stash
 : 1630647035:0;g co OPEB-2219-pipeline-merge-mulitple-local-gateways
 : 1630647051:0;g push -u origin OPEB-2219-pipeline-merge-mulitple-local-gateways
 : 1630648110:0;gd OPEB-2219-gitlab-pipelines
@@ -1942,49 +1738,31 @@ done\
 : 1630648448:0;gcmsg "OPEB-2219: made failing stage manual"
 : 1630649575:0;gcmsg "OPEB-2219: hmm updated with some file path shenanigans during docker build fix" 
 : 1630649580:0;gpsuh
-: 1630649889:0;l data
 : 1630649924:0;l data/wildfly
 : 1630649963:0;l .gitignore
-: 1630649966:0;cat .gitignore
 : 1630650066:0;te .gitignore
 : 1630650097:0;mv gateway_startup.log ../tests/.
 : 1630650122:0;gcmsg "OPEB-2219: added config files, that were for some reason in ignore list"
-: 1630650657:0;Projects
-: 1630650677:0;Connect
 : 1630650682:0;mkdir Connect
-: 1630650685:0;cd Connect
 : 1630650688:0;g clone https://github.com/CONNECT-Solution/Common-Types.git
-: 1630650736:0;l Common-Types
 : 1630650759:0;mkdir FsConnectTypes
 : 1630650777:0;rd FsConnectTypes
 : 1630650796:0;dotnet new console -n FsConnectTypes -lang F#
 : 1630650961:0;cd FsConnectTypes
 : 1630693338:0;less FsConnectTypes.fsproj
 : 1630693348:0;dotnet add package FSharp.Data.Xsd --version 1.0.2
-: 1630693422:0;te ~/.nuget/NuGet/NuGet.Config
 : 1630694044:0;dotnet nuget update
 : 1630694076:0;dotnet nuget update nuget.org
 : 1630694082:0;dotnet nuget update source nuget.org
 : 1630694157:0;dotnet nuget update source EnsSandbox
 : 1630694176:0;cat *.fsproj
-: 1630694313:0;l ~/.nuget
-: 1630694318:0;l ~/.nuget/NuGet
 : 1630694339:0;mv ~/.nuget/NuGet/NuGet.Config ~/.nuget/NuGet/NuGet.Config.bak
 : 1630694351:0;dotnet add package FSharp.Data.Xsd
 : 1630694584:0;gcmsg "OPEB-2219: updated documentation on building the gateway docker"
-: 1630697067:0;apt search dotnet
-: 1630697090:0;which dotnet
-: 1630697096:0;apt list installed
-: 1630697100:0;apt list --installed
 : 1630697179:0;sudo apt update dotnet
 : 1630697196:0;sudo apt install dotnet
-: 1630697213:0;dotnet --version
 : 1630697235:0;cd ~
 : 1630697252:0;l .dotnet
-: 1630697259:0;rd .dotnet
-: 1630697262:0;rd .nuget
-: 1630697271:0;popd
-: 1630697277:0;dotnet restore
 : 1630697591:0;docker pull registry.ainq.com/ulp-development/ulp-core/liferay-portal:75933571a4530498621020a6b028224b27b3d10e
 : 1630697650:0;docker pull registry.ainq.com/ulp-development/ulp-core/liferay-portal
 : 1630697829:0;docker pull registry.ainq.com/ulp-development/docker/liferay-portal:7.0-dxp-ga1-tomcat-hsql-de-90
@@ -1992,25 +1770,17 @@ done\
 : 1630698249:0;g branch --help
 : 1630698271:0;g branch -m release_3.14 release_3.14.0
 : 1630698318:0;g push -u origin release_3.14.0
-: 1630698572:0;dotnet nuget
 : 1630698579:0;dotnet nuget locals
-: 1630698588:0;dotnet nuget list
-: 1630698591:0;dotnet nuget list source
 : 1630698610:0;dotnet add package FSharp.Core
-: 1630699103:0;te readme.md
 : 1630699518:0;echo trigger >> readme.md
 : 1630699523:0;gcmsg "OPEB-2219: trigger pipeline"
 : 1630699644:0;apt list --installed dotnet
 : 1630699749:0;apt info dotnet-apphost-pack-5.0
 : 1630699816:0;sudo apt remove --purge dotnet-apphost-pack-3.1 dotnet-apphost-pack-5.0 dotnet-host dotnet-hostfxr-3.1
-: 1630699869:0;apt list --installed | grep dotnet
 : 1630699877:0;apt list --installed | grep netstandard
 : 1630699993:0;sudo apt remove --purge dotnet-runtime-deps-3.1 dotnet-runtime-deps-5.0 dotnet-targeting-pack-3.1 dotnet-targeting-pack-5.0 netstandard-targeting-pack-2.1
-: 1630700010:0;rehash
-: 1630700013:0;dotnet
 : 1630700018:0;rd ~/.dotnet
 : 1630700021:0;rd ~/.nuget
-: 1630700024:0;l ~
 : 1630700056:0;l ~/.aspnet
 : 1630700063:0;rd ~/.aspnet
 : 1630701634:0;curl -X POST \\
@@ -2021,26 +1791,19 @@ done\
      -F token=6618faaaced46a8aea7372bf3cb3a6 \\
      -F ref=OPEB-2219-gitlab-pipelines \\
      https://git.ainq.com/api/v4/projects/959/trigger/pipeline
-: 1630722597:0;htop
 : 1630722743:0;which ff 
 : 1630722766:0;which firefox.exe
-: 1630725941:0;e ai-worklog &
-: 1631027558:0;gateway.netcore.services
 : 1631028236:0;ag CI_DEBUG
 : 1631028247:0;ag CI_
 : 1631028265:0;ag CI_.*DEBUG
 : 1631028291:0;ag "CI_.*DEBUG"
 : 1631028354:0;gateway.netcore.services/
-: 1631030544:0;docker images
 : 1631030562:0;docker run -it --rm alpine sh
-: 1631031753:0;aws
 : 1631031787:0;aws ecs list-task-definitions
 : 1631031848:0;aws ecs list-task-definitions --cluster pulse-dev-gateway --name pulse-dev-gateway-dir-monitor
 : 1631031863:0;aws ecs list-task-definitions help
-: 1631031878:0;aws ecs help
 : 1631031921:0;aws ecs describe-task-dedinition help
 : 1631031937:0;aws ecs help describe-task-definition
-: 1631031946:0;aws ecs describe-task-definition help
 : 1631032022:0;aws ecs list-task-definitions pulse-dev-gateway
 : 1631032040:0;aws ecs list-task-definitions --family-prefix pulse-dev-gateway
 : 1631032065:0;aws ecs list-task-definitions --family-prefix pulse-dev-gateway-dir-monitor
@@ -2057,7 +1820,6 @@ done\
 : 1631032315:0;PAGER=cat aws ecs list-task-definitions --output=text --family-prefix pulse-dev-gateway-dir-monitor | awk -FS=":" 'END{print $NF}' 
 : 1631032327:0;PAGER=cat aws ecs list-task-definitions --output=text --family-prefix pulse-dev-gateway-dir-monitor | awk -IFS=":" 'END{print $NF}' 
 : 1631032341:0;PAGER=cat aws ecs list-task-definitions --output=text --family-prefix pulse-dev-gateway-dir-monitor | awk -F: 'END{print $NF}' 
-: 1631041165:0;ulp-core
 : 1631041172:0;cd ulp-core
 : 1631041184:0;l configuration/dhin-staging
 : 1631041219:0;l configuration/
@@ -2065,13 +1827,9 @@ done\
 : 1631041241:0;cat configuration/dhin-staging/portal-task-definition-delta.json
 : 1631041310:0;configuration
 : 1631041650:0;npm run docker:launch
-: 1631041670:0;...
 : 1631041674:0;du -hs ulp-core
 : 1631041696:0;cd ulp-core/
 : 1631041701:0;du -hs configuration
-: 1631041720:0;explorer.exe
-: 1631041742:0;explorer.exe .
-: 1631070317:0;g co master
 : 1631070324:0;g co OPEB-2219-gateway-pipelines
 : 1631070326:0;g merge master
 : 1631072073:0;rg CLUSTER_NAME
@@ -2086,46 +1844,22 @@ done\
 : 1631084581:0;g show d61eaaa
 : 1631084621:0;g lgp
 : 1631084628:0;g log
-: 1631110243:0;ULP
-: 1631110252:0;docker ps
-: 1631110272:0;docker kill aigatewaydocker_db_1
-: 1631110278:0;docker rm aigatewaydocker_db_1
 : 1631110283:0;docker rm 86d6e5ae71b9
-: 1631110288:0;docker rm aigatewaydocker_wildfly_1
 : 1631126207:0;md CRISP
-: 1631126216:0;g clone https://git.ainq.com/CRISP_Unified_Landing_Page/services.git
-: 1631126233:0;cd services
 : 1631126248:0;rg networkSources
 : 1631126249:0;rg networkSource
-: 1631128138:0;chmod +x gradlew
-: 1631128146:0;./gradlew build
 : 1631128335:0;rg -i pmpi
 : 1631128586:0;rg -i networkSource
-: 1631131085:0;cd CRISP
-: 1631131088:0;g clone https://git.ainq.com/CRISP_Unified_Landing_Page/service-prescriptions.git
-: 1631215206:0;cd service-prescriptions
-: 1631215219:0;idea . &
 : 1631215631:0;g co -b OPEB-2356-pmpi-response-api-change
-: 1631219936:0;cd ..
 : 1631219940:0;rg pmpi
-: 1631220569:0;service-prescriptions
 : 1631220583:0;gcmsg "OPEB-2356: added serialization of PMPi response"
 : 1631222352:0;gcmsg "OPEB-2356: added tests with MockRestService for PMPi call"
 : 1631222365:0;g push -u origin OPEB-2356-pmpi-response-api-change
-: 1631281565:0;GATE
 : 1631281576:0;cd CONNECT-Solutions
 : 1631281623:0;mvn clean verify package
-: 1631287754:0;chmod +x ./gradlew
 : 1631288326:0;less /home/esharapov/Projects/ULP/CRISP/service-prescriptions/build/reports/tests/test/index.html
-: 1631289065:0;ga -u
 : 1631289086:0;gcmsg "OPEB-2356: updated formatting and fixed testing start up"
-: 1631299912:0;./gradlew goJF
-: 1631299935:0;./gradlew clean build
-: 1631300089:0;ga .
-: 1631300090:0;gst
 : 1631300108:0;gcmsg "OPEB-2356: added handling single objects and arrays"
-: 1631300110:0;g push
-: 1631302294:0;PULSE
 : 1631302309:0;g pull --help
 : 1631302331:0;g --help
 : 1631302351:0;g -C pulse-nodejs-service pull
@@ -2136,45 +1870,2604 @@ done\
 : 1631302814:0;../pulse-nodejs-service
 : 1631303001:0;cat package.json | grep admin-mod
 : 1631303024:0;../pulse-admin-module
-: 1631303026:0;l
-: 1631303041:0;less package.json
-: 1631303135:0;..
 : 1631303139:0;ag pulse-admin-module
-: 1631303175:0;ainq-admin-portal-application
-: 1631303191:0;g co r2021-10
-: 1631303194:0;g pull
-: 1631303211:0;cat package.json
 : 1631303225:0;cat package.json | grep admin
-: 1631303243:0;g lga
 : 1631303273:0;g cp -b OPEB-2296-facility-search
 : 1631303276:0;g co -b OPEB-2296-facility-search
-: 1631303281:0;e . &
 : 1631303323:0;npm build
 : 1631303354:0;npm run build
 : 1631303416:0;npx babel
 : 1631303450:0;npx babel help
-: 1631303610:0;rd node_modules
-: 1631303618:0;npm i
-: 1631304558:0;npm run start
-: 1631325771:0;l
 : 1631325878:0;l ~/Downloads
 : 1631325881:0;l ~/Downloads/
 : 1631326287:0;cat Projects/PULSE/pulse-nodejs-service/.env
 : 1631326325:0;cat Projects/PULSE/ainq-admin-portal-application/.env.defaults
 : 1631326712:0;cd Projects/PULSE/ainq-admin-portal-application
-: 1631326715:0;gst
-: 1631326724:0;te .
-: 1631326745:0;gst
-: 1631326756:0;npm run start
-: 1631326861:0;te .
-: 1631326897:0;npm run start
-: 1631327035:0;l
-: 1631327037:0;gst
 : 1631327043:0;g co webpack/webpack.development.js
-: 1631327044:0;gst
-: 1631327048:0;npm run start
-: 1631327090:0;te .
-: 1631327126:0;npm run start
-: 1631327715:0;cd ~/.dotfiles
-: 1631327717:0;hg st
-: 1631327724:0;hg d
+: 1631327803:0;gcmsg "resetting overlays in org file with captures"
+: 1631327820:0;cd ../ai-worklog
+: 1631327826:0;te Worklog.org
+: 1631327873:0;gcmsg "updated worklog on 9/10"
+: 1631327979:0;cd ~/Projects
+: 1631328006:0;cat marswindow.fsx
+: 1631328035:0;mv marswindow.fsx Kattis/.
+: 1631328045:0;ga Kattis/
+: 1631328055:0;gcmsg "added marswindow solution"
+: 1631328134:0;e ElegantFSharp &
+: 1631328267:0;../Apps/Money
+: 1631539180:0;g lg
+: 1631539212:0;g merge -help
+: 1631539251:0;g co OPEB-2219-gitlab-pipeline-ai-connect-adapters
+: 1631539259:0;g merge development
+: 1631539390:0;CONNECT
+: 1631541176:0;ainq-admin-portal-application
+: 1631544227:0;g push -u origin OPEB-2296-facility-search
+: 1631544305:0;gcmsg "OPEB-2296: updated version of admin module"
+: 1631544647:0;e ~/ai-worklog/Worklog.org&
+: 1631545626:0;apt list installed
+: 1631545636:0;apt list --installed | grep dotnet
+: 1631545738:0;apt-get remove dotnet-host
+: 1631545741:0;sudo apt-get remove dotnet-host
+: 1631545979:0;sudo apt-get install -y dotnet-sdk-5.0
+: 1631549771:0;apt search nodeenv
+: 1631549782:0;sudo apt install nodeenv
+: 1631549807:0;nodeenv
+: 1631549828:0;nodeenv --list
+: 1631549895:0;apt search nodenv
+: 1631550024:0;apt search nvm
+: 1631550036:0;nodeenv 
+: 1631550041:0;nodeenv --help
+: 1631550141:0;nodeenv node15
+: 1631550219:0;l node15
+: 1631550298:0;rd node15
+: 1631550301:0;nodeenv --node=15.14.0 --npm=7.7.6 node15
+: 1631550400:0;cd .zsh
+: 1631550412:0;cat spec/DESKTOP-OU44UDR.zsh
+: 1631550542:0;git clone https://github.com/nodenv/nodenv.git ~/.nodenv\
+
+: 1631553119:0;echo $PATH | grep node
+: 1631553185:0;nodenv versions --help
+: 1631553509:0;sudo apt remove nodeenv
+: 1631553573:0;nodenv commands
+: 1631553626:0;mkdir -p "$(nodenv root)"/plugins
+: 1631553638:0;git clone https://github.com/nodenv/node-build.git "$(nodenv root)"/plugins/node-build
+: 1631553710:0;pgrep emacs | xargs kil
+: 1631554634:0;kill 1891
+: 1631555148:0;e Projects/FSharp
+: 1631555228:0;e Projects/FSharp &
+: 1631556280:0;nodenv install --help
+: 1631556285:0;nodenv install -l
+: 1631556314:0;nodenv install 15.14.0
+: 1631558981:0;nodenv local
+: 1631558985:0;nodenv global
+: 1631560451:0;dotnet -a
+: 1631560971:0;dotnet restore --disable-parallel --disable-parallel
+: 1631560996:0;rd .nuget
+: 1631561002:0;rd .dotnet
+: 1631561676:0;dotnet restore --no-cache
+: 1631561765:0;l /tmp/MSBuild2*
+: 1631561779:0;cat /tmp/MSBuild23240
+: 1631561853:0;curl 'https://api.nuget.org/v3-flatcontainer/dapper/2.0.35/dapper.2.0.35.nupkg'
+: 1631561866:0;curl https://api.nuget.org/v3-flatcontainer/dapper/2.0.35/dapper.2.0.35.nupkg --output t
+: 1631562256:0;dotnet restore --help
+: 1631562304:0;dotnet restore --v
+: 1631562333:0;dotnet restore --verbosity 10
+: 1631562340:0;dotnet restore --verbosity 3
+: 1631562512:0;dotnet restore --verbosity max
+: 1631562515:0;dotnet restore --verbosity maximum
+: 1631562519:0;dotnet restore -v
+: 1631562524:0;dotnet restore -v 1
+: 1631562850:0;dotnet restore --disable-parallel
+: 1631563159:0;cp gateway.netcore.services ~/Downloads/.
+: 1631563164:0;cp -r gateway.netcore.services ~/Downloads/.
+: 1631563405:0;dotnet restore --verbosity n
+: 1631564533:0;dotnet restore --verbosity m --disable-parallel
+: 1631564613:0;dotnet restore --verbosity d --disable-parallel
+: 1631583989:0;grep nuget ~/.dotfiles/.zsh/history/zsh_history-P3530-20190221 
+: 1631584016:0;dotnet nuget add source http://nuget.enssandbox-ainq.com:5000
+: 1631584057:0;dotnet nuget add source https://nexus.ainq.com/repository/nuget.org-proxy/  -n NexusOrgNuget -u esharapov -p ENSharap1982//// --store-password-in-clear-text
+: 1631584073:0;dotnet nuget add source https://nexus.ainq.com/repository/nuget.enssandbox-ainq.proxy/  -n NexusNuget -u esharapov -p ENSharap1982//// --store-password-in-clear-text
+: 1631584087:0;cat ~/.nuget/NuGet/NuGet.Config
+: 1631584148:0;dotnet nuget update --help
+: 1631584155:0;dotnet nuget update source --help
+: 1631584259:0;cd MyWebApi
+: 1631643496:0;dotnet --help
+: 1631643518:0;dotnet sln
+: 1631643522:0;dotnet sln list
+: 1631644459:0;whoami
+: 1631644527:0;ping nexus.ainq.com/
+: 1631644529:0;ping nexus.ainq.com
+: 1631644544:0;traceroute6 nexus.ainq.com
+: 1631644574:0;nslookup https://nexus.ainq.com/
+: 1631644581:0;nslookup nexus.ainq.com
+: 1631644940:0;mkdir Projects
+: 1631645029:0;mkdir GATE
+: 1631645196:0;dotnet nuget list Azure -Verbosity detailed
+: 1631645266:0;te ~/.nuget/NuGet/NuGet.Config 
+: 1631658438:0;dotnet tool --help
+: 1631658476:0;dotnet tool list --help
+: 1631658486:0;dotnet tool list -g
+: 1631721116:0;ulp-patientfinder-lib
+: 1631721240:0;gd 3.4.4 3.2.1
+: 1631721319:0;gd 3.4.4
+: 1631721446:0;ulp-patient-search-portlet
+: 1631721477:0;ulp-results-viewer-portlet
+: 1631721517:0;te build.gradle
+: 1631724658:0;te Program.fs
+: 1631724698:0;LearnFSharp
+: 1631724703:0;ToDo
+: 1631735985:0;ga ToDo/
+: 1631735995:0;te ToDo
+: 1631736029:0;cd ToDo
+: 1631736481:0;l bin/Debug/net5.0/
+: 1631736678:0;gcmsg "added todo webapi project"
+: 1631736916:0;dotnet add package FSharp.AWS.DynamoDB 
+: 1631737213:0;cat ~/Projects/ENS/Ens.Common.ReleaseManagement/Ens.Common.ReleaseManagement.Launcher/Properties/Settings.settings
+: 1631738406:0;dotnet add package FSharp.AWS.DynamoDB --version 0.8.2-beta
+: 1631738458:0;build
+: 1631738473:0;ls obj
+: 1631738567:0;cat ToDo.fsproj
+: 1631738597:0;dotnet fsi .
+: 1631757975:0;gcmsg "updated ToDo application"
+: 1631758004:0;cat EnsTest/Program.fs
+: 1631758035:0;l Safe
+: 1631760761:0;cd ElegantFSharp
+: 1631800971:0;kill 606
+: 1631801037:0;kill 766
+: 1631801040:0;kill 258
+: 1631801043:0;kill -9 258
+: 1631801070:0;t
+: 1631815972:0;cat Releases.json | jq '.'
+: 1631816162:0;cat Releases.json | jq '.ReleaseNum'
+: 1631816185:0;cat Releases.json | jq '[].ReleaseNum'
+: 1631816229:0;cat Releases.json | jq '.[]'
+: 1631816237:0;cat Releases.json | jq '.[].ReleaseNum'
+: 1631816270:0;cat Releases.json | jq '.[]|=sort_by(.ReleaseNum)'
+: 1631816288:0;cat Releases.json | jq 'sort_by(.ReleaseNum)'
+: 1631816308:0;cat Releases.json | jq 'sort_by(.ReleaseNum)' | jq '.[].ReleaseNum'
+: 1631816507:0;cat Releases.json | jq 'sort_by(.ReleaseNum)'| jq '. + [.[-1]]' | jq '.[].ReleaseNum'
+: 1631816664:0;cat Releases.json | jq 'sort_by(.ReleaseNum)'| jq '. + [.[-1]]' | jq '.[].ReleaseNum' > Release1.json
+: 1631816682:0;diff Release1.json Releases.json 
+: 1631816709:0;te Release1.json
+: 1631816766:0;cat Releases.json | jq 'sort_by(.ReleaseNum)'| jq '. + [.[-1]]' | jq '[-1].ReleaseNum|=[-2].ReleaseNum + 1' | jq '.[].ReleaseNum'
+: 1631816775:0;cat Releases.json | jq 'sort_by(.ReleaseNum)'| jq '. + [.[-1]]' | jq '.[-1].ReleaseNum|=.[-2].ReleaseNum + 1' | jq '.[].ReleaseNum'
+: 1631816797:0;cat Releases.json | jq 'sort_by(.ReleaseNum)'| jq '. + [.[-1]]' | jq '.[-1].ReleaseNum |= .[-2].ReleaseNum + 1' | jq '.[].ReleaseNum'
+: 1631816834:0;cat Releases.json | jq 'sort_by(.ReleaseNum)'| jq '. + [.[-1]]' | jq '.[-1].ReleaseNum += 1' | jq '.[].ReleaseNum'
+: 1631816860:0;cat Releases.json | jq 'sort_by(.ReleaseNum)'| jq '. + [.[-1]]' | jq '.[-1].ReleaseNum += 1' | jq '.[-1]'
+: 1631908655:0;gm t
+: 1631908657:0;rm t
+: 1631908704:0;../aigatewaydocker
+: 1631908940:0;g co local-start
+: 1631908943:0;g co -b local-start
+: 1631909064:0;(curl --silent -L -u "":"" -X GET "https://nexus.ainq.com/service/rest/v1/search/assets/download?repository=maven-gateway-releases&maven.groupId=com.ainq.gateway&maven.artifactId=connect-jb7&maven.baseVersion=0.0.2&maven.extension=ear" -H "accept: application/json" --output connect-jb7.ear --write-out "%{http_code}"
+: 1631909125:0;curl --silent -L -u "":"" -X GET "https://nexus.ainq.com/service/rest/v1/search/assets/download?repository=maven-gateway-releases&maven.groupId=com.ainq.gateway&maven.artifactId=connect-jb7&maven.baseVersion=0.0.2&maven.extension=ear" -H "accept: application/json" --output connect-jb7.ear --write-out "%{http_code}"
+: 1631909174:0;curl --silent -L -u "$CI_USERNAME":"$CI_PASSWORD" -X GET "https://nexus.ainq.com/service/rest/v1/search/assets/download?repository=maven-gateway-releases&maven.groupId=com.ainq.gateway&maven.artifactId=connect-jb7&maven.baseVersion=0.0.2&maven.extension=ear" -H "accept: application/json" --output connect-jb7.ear --write-out "%{http_code}"
+: 1631909235:0;rm connect-jb7.ear
+: 1631909250:0;docker build --pull -t gateway-connect -f Dockerfile.gitlab --build-arg CI_USERNAME=$CI_USERNAME --build-arg CI_PASSWORD=$CI_PASSWORD --build-arg AI_CONNECT_VERSION=0.0.2 .
+: 1632152021:0;hg in
+: 1632152058:0;hgcm "removed title from about page org file"
+: 1632158968:0;python -m http.server --directory public 8000
+: 1632159801:0;cp ~/Downloads/docker-compose-multiple-gateway.yml .
+: 1632166753:0;aws ecs describe-task-definition --task-definition pulse-dev-gateway-service --revision 120 --region us-east-1
+: 1632166764:0;aws ecs describe-task-definition --help
+: 1632166769:0;aws ecs describe-task-definition help
+: 1632166791:0;aws ecs describe-task-definition --task-definition pulse-dev-gateway-service:120 --region us-east-1
+: 1632167722:0;aws ecs descrive-services help
+: 1632167816:0;aws --verbose  ecs describe-services --services pulse-dev-gateway-service --cluster pulse-dev-gateway
+: 1632167824:0;aws ecs --verbose describe-services --services pulse-dev-gateway-service --cluster pulse-dev-gateway
+: 1632167830:0;aws ecs -v describe-services --services pulse-dev-gateway-service --cluster pulse-dev-gateway
+: 1632167916:0;aws ecs describe-services --services pulse-dev-gateway-service --cluster pulse-dev-gateway
+: 1632167948:0;aws ecs describe-services help
+: 1632168008:0;aws ecs describe-services --services pulse-dev-gateway-service --cluster pulse-dev-gateway | jq 'del(events)'
+: 1632168041:0;aws ecs describe-services --services pulse-dev-gateway-service --cluster pulse-dev-gateway | jq 'del(.services[0].events)'
+: 1632240580:0;g clone https://git.ainq.com/ai-gateway/gateway-v2/deployment.git
+: 1632254472:0;Downloads
+: 1632254516:0;mv new_user_credentials\(1\).csv gateway_cicd.csv
+: 1632254523:0;cat gateway_cicd.csv
+: 1632320293:0;nodenv install --list
+: 1632320412:0;uname -a
+: 1632320492:0;nodenv
+: 1632320501:0;nodenv versions
+: 1632320879:0;ainq-common-service
+: 1632320894:0;cp .env.defaults .env
+: 1632320897:0;te .env
+: 1632321039:0;npm i babel-node
+: 1632321084:0;npm install -g babel-cli
+: 1632321197:0;npm run start-nob
+: 1632321271:0;l node_modules/.bin
+: 1632321278:0;l node_modules/.bin/babel-node
+: 1632321318:0;npm i @babel/helper-regex
+: 1632321339:0;npm i @babel/helper-define-map
+: 1632321399:0;history | grep npm
+: 1632323978:0;ps aux | grep -i emacs | awk '{print $2}'
+: 1632323985:0;ps aux | grep -i emacs | awk '{print $2}' | xargs kill
+: 1632324335:0;npm --help
+: 1632324343:0;npm -v --help
+: 1632324362:0;du -hS node_modules
+: 1632324368:0;du -hs node_modules
+: 1632324868:0;ps aux | grep -i emacs
+: 1632331586:0;pgrep -v python
+: 1632331595:0;which pgrep
+: 1632331601:0;pgrep --help
+: 1632331609:0;pgrep -f python
+: 1632331634:0;pgrep -a python
+: 1632331649:0;pgrep python | xargs kill
+: 1632332311:0;docker pull 397804960777.dkr.ecr.us-east-1.amazonaws.com/gateway-cert-management:0.0.2-12
+: 1632332327:0;aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION
+: 1632332336:0;aws ecr get-login --no-include-email --region us-east-1
+: 1632332374:0;aws ecr
+: 1632332414:0;aws ecr get-login-password
+: 1632332440:0;aws ecr get-login-password | docker login 397804960777.dkr.ecr.us-east-1.amazonaws.com
+: 1632332469:0;aws ecr get-login-password | docker login -u AWS 397804960777.dkr.ecr.us-east-1.amazonaws.com
+: 1632332536:0;aws ecr get-login-password help
+: 1632332561:0;aws ecr get-login-password | docker login -u AWS --password-stdin 397804960777.dkr.ecr.us-east-1.amazonaws.com
+: 1632332568:0;docker pull
+: 1632332570:0;docker pull 397804960777.dkr.ecr.us-east-1.amazonaws.com/gateway-cert-management:0.0.2-8
+: 1632342581:0;ag AWS.*Logg
+: 1632345879:0;pgrep -i python
+: 1632425890:0;hgcm "added created in footer, processing created and updated drawers"
+: 1632425958:0;rm ~/.org-timestamps/
+: 1632460492:0;rd ~/.org-timestamps/
+: 1632509065:0;~/Projects/Apps
+: 1632509071:0;g clone https://github.com/be5invis/Iosevka.git
+: 1632623874:0;hgcm "updated no tags on inside the pages (we use keywords)"
+: 1632623876:0;hg out
+: 1632623895:0;cd Iosevka
+: 1632623997:0;gcmsg "removed some org files from agenda and set fixed pitch font to Iosevka"
+: 1632624047:0;g merge --continue
+: 1632624076:0;cd ~/.dotfiles
+: 1632625989:0;which diatheke
+: 1632626056:0;hgrep dpkg
+: 1632626072:0;dpkg -S $(which diatheke)
+: 1632626081:0;apt info diatheke
+: 1632626092:0;diatheke
+: 1632626150:0;diatheke -b -k Jn 14:26
+: 1632626161:0;diatheke -k Jn 14:26
+: 1632626168:0;diatheke -k Johnn 14:26
+: 1632626227:0;diatheke -b KJV -k Jn 14:26
+: 1632626244:0;diatheke -b KJV -f plain -k Jn 14:26
+: 1632627358:0;diatheke -b KJV -f plain -k Jn 14:26-29
+: 1632627404:0;diatheke -b KJV -f plain -k Jn 14:26-
+: 1632627414:0;diatheke -b KJV -f plain -k Jn 14:26-35
+: 1632630791:0;pgrep python
+: 1632631067:0;ht book
+: 1632631069:0;hg book
+: 1632631074:0;hg bookmarks
+: 1632631192:0;hg book --help
+: 1632636512:0;cat new_user_credentials\(1\).csv
+: 1632636516:0;cat new_user_credentials\(2\).csv
+: 1632636528:0;cat new_user_credentials\(1\).csv new_user_credentials\(2\).csv
+: 1632636545:0;cat new_user_credentials.csv
+: 1632636575:0;cat new_user_credentials.csv new_user_credentials\(1\).csv new_user_credentials\(2\).csv > AWS_credentials.csv
+: 1632637289:0;sass assets/css/styles.scss assets/css/styles.css && cp assets/css/*.css public/assets/css/.
+: 1632638238:0;hgd
+: 1632638259:0;hgcm "adjusted styles even for small phones"
+: 1632640080:0;g clone https://github.com/evgeniysharapov/evgeniysharapov.github.io.git
+: 1632640085:0;cd evgeniysharapov.github.io
+: 1632640107:0;cp -r ../Website/public/* .
+: 1632640124:0;gcmsg "initial commit"
+: 1632640529:0;dig WWW.EXAMPLE.COM +nostats +nocomments +nocmd
+: 1632640542:0;dig www.evgeniysharapov.com +nostats +nocomments +nocmd
+: 1632640906:0;dig www.evgeniysharapov.com +noall +answer -t A
+: 1632640913:0;dig evgeniysharapov.com +noall +answer -t A
+: 1632845625:0;python -m http.server --directory public 8000 &
+: 1632939907:0;l Common-Types
+: 1632939912:0;cd Connect
+: 1632939938:0;g up
+: 1632942583:0;cd aigatewaydocker
+: 1632942744:0;cat Dockerfile.gitlab
+: 1632942771:0;docker run --name gateway -p 8081:8080 -p 8444:8443 -p 9991:9990 --rm -d gateway-connect:latest
+: 1632942805:0;docker kill bd4b2b6ec6df
+: 1632942914:0;docker-compose -f docker-compose-multiple-gateway.yml up
+: 1632943255:0;docker-compose up
+: 1632943718:0;docker logs -f aigatewaydocker_db_1
+: 1632946179:0;docker kill aigatewaydocker_db_1
+: 1632946183:0;docker kill aigatewaydocker_wildfly_1
+: 1632946189:0;docker rm aigatewaydocker_db-1.1_1
+: 1632946193:0;docker rm aigatewaydocker_wildfly-1.1_1
+: 1632946197:0;docker rm aigatewaydocker_db_1
+: 1632946201:0;docker rm aigatewaydocker_wildfly_1
+: 1632946204:0;ps
+: 1632948982:0;hgcm "use dynamic article-info block instead of drawers for create/update dates"
+: 1633011602:0;l public/images
+: 1633012192:0;make
+: 1633112653:0;cd util
+: 1633112718:0;python3 -m pip freeze
+: 1633112779:0;pyvenv --help
+: 1633112783:0;pyvenv
+: 1633112793:0;virtualenv --help
+: 1633112858:0;cat > README.md
+: 1633113077:0;python3 -m venv env
+: 1633113097:0;source env/bin/activate
+: 1633113143:0;pip install boto3
+: 1633113941:0;ptpython3
+: 1633115638:0;mkdir GwDevOpsHelper
+: 1633115640:0;cd GwDevOpsHelper
+: 1633115646:0;sam --version
+: 1633115658:0;sam init --help
+: 1633115905:0;sam init
+: 1633116249:0;cd gw-devops-helper
+: 1633116467:0;aws ecr --help
+: 1633116471:0;aws ecr help
+: 1633116485:0;aws ecr describe-images help
+: 1633116497:0;aws ecr describe-images --repository-name gateway-connect
+: 1633116523:0;aws ecr describe-images --repository-name gateway-connect | jq '.imageDetails.imageTags'
+: 1633116535:0;aws ecr describe-images --repository-name gateway-connect | jq '.imageDetails'
+: 1633116544:0;aws ecr describe-images --repository-name gateway-connect | jq '.imageDetails[].imageTags'
+: 1633116579:0;aws ecr describe-images --repository-name gateway-connect | jq '.imageDetails[].imageTags' | jq -s
+: 1633116991:0;available_versions pulse-dev gateway-connect
+: 1633117051:0;available_versions pulse-sandbox gateway-connect
+: 1633117132:0;V=$(available_versions pulse gateway-connect)
+: 1633117134:0;V
+: 1633117138:0;$V
+: 1633117141:0;echo $V
+: 1633117149:0;echo $V[0]
+: 1633117152:0;echo $V[1]
+: 1633117154:0;echo $V[2]
+: 1633117269:0;local -A associativeArray="($(jq -r '. | to_entries | .[] |\
+    "[\"" + .key + "\"]=" + (.value | @sh)' <<< "$V"))"\
+
+: 1633117532:0;available_versions pulse gateway-connect
+: 1633117565:0;. util/helpers.sh
+: 1633117566:0;echo available_versions pulse gateway-connect
+: 1633117594:0;aws ecr describe-images --repository-name gateway-connect | jq '[.imageDetails[].imageTags]|flatten'
+: 1633117601:0;aws ecr describe-images --repository-name gateway-connect | jq '[.imageDetails[].imageTags]|flatten' | jq -r '.'
+: 1633117619:0;aws ecr describe-images --repository-name gateway-connect | jq -r '[.imageDetails[].imageTags]|flatten'
+: 1633117630:0;versions=$(aws ecr describe-images --repository-name gateway-connect | jq -r '[.imageDetails[].imageTags]|flatten')
+: 1633117649:0;for v in $versions; do echo $v; done
+: 1633117732:0;versions=()
+: 1633117818:0;while read -r value; do\
+versions+=("$value")\
+done << (aws ecr describe-images --repository-name gateway-connect | jq -c '[.imageDetails[].imageTags|flatten')\
+
+: 1633117832:0;while read -r value; do\
+versions+=("$value")\
+done < < (aws ecr describe-images --repository-name gateway-connect | jq -c '[.imageDetails[].imageTags|flatten')\
+
+: 1633117852:0;while read -r value; do\
+versions+=("$value")\
+done << $(aws ecr describe-images --repository-name gateway-connect | jq -c '[.imageDetails[].imageTags|flatten')\
+
+: 1633117870:0;while read -r value; do\
+versions+=("$value")\
+done << $(aws ecr describe-images --repository-name gateway-connect | jq -c '[.imageDetails[].imageTags]|flatten')\
+
+: 1633117874:0;while read -r value; do\
+versions+=("$value")\
+done < < $(aws ecr describe-images --repository-name gateway-connect | jq -c '[.imageDetails[].imageTags]|flatten')\
+
+: 1633117885:0;while read -r value; do\
+versions+=("$value")\
+done < <(aws ecr describe-images --repository-name gateway-connect | jq -c '[.imageDetails[].imageTags]|flatten')\
+
+: 1633117902:0;echo versions
+: 1633117906:0;echo $versions
+: 1633117916:0;$version[1]
+: 1633117924:0;$version[3]
+: 1633117934:0;${version[3]}
+: 1633117937:0;${versions[3]}
+: 1633117941:0;${versions[@]}
+: 1633117949:0;echo ${versions[0]}
+: 1633117951:0;echo ${versions[1]}
+: 1633117955:0;echo ${versions[2]}
+: 1633359526:0;cd ../GwDevOpsHelper/gw-devops-helper
+: 1633359529:0;sam local invoke
+: 1633359570:0;sam build
+: 1633359598:0;aws configure list-profiles
+: 1633359614:0;sam --help
+: 1633359624:0;sam deploy --help
+: 1633359659:0;pip freeze
+: 1633359668:0;pip freeze l
+: 1633359680:0;less template.yaml
+: 1633360662:0;dotnet help
+: 1633360668:0;dotnet new help
+: 1633361370:0;aws configure set help
+: 1633369533:0;test
+: 1633369541:0;test "$DO_PULL"
+: 1633369561:0;test "${NO_PULL}"
+: 1633369572:0;test "${NO_PULL}" = "false"
+: 1633369672:0;test "${NO_PULL}" && echo "Hello"
+: 1633369692:0;NO_PULL=123
+: 1633369703:0;NO_PULL=
+: 1633369704:0;test ! "${NO_PULL}" && echo "Hello"
+: 1633369945:0;NO_PULL=true
+: 1633369962:0;NO_PULL=1
+: 1633369964:0;test "${NO_PULL:-false}" = "false" && echo "Hello"
+: 1633369971:0;NO_PULL=false
+: 1633370018:0;DO_PULL=false
+: 1633370044:0;test "${DO_PULL:-true}" = "true" && echo "Hello"
+: 1633370164:0;echo $DO_PULL
+: 1633370185:0;test "${DO_PULL:-true}" = "true" || echo "Hello"
+: 1633370219:0;DO_PULL=
+: 1633370223:0;DO_PULL=1
+: 1633370224:0;test "${DO_PULL:-true}" = "false" || echo "Hello"
+: 1633371400:0;l ../deployment/util/env/bin
+: 1633371433:0;python3 -m venv help
+: 1633371441:0;rd help
+: 1633371445:0;python3 -m venv --help
+: 1633371518:0;deactivate
+: 1633371528:0;rd ../deployment/util/env
+: 1633372569:0;dotnet new webapi -n GatewayDevOpsApi -lang F#
+: 1633372578:0;cd GatewayDevOpsApi
+: 1633373730:0;less ../../../PULSE/pulse.middleware.ee/PULSE.Middleware.Api.Activation/Startup.cs
+: 1633374886:0;cat GatewayDevOpsApi.fsproj
+: 1633374902:0;dotnet add package AWSSDK.ECS --version 3.7.2.51
+: 1633375086:0;dotnet nuget -h
+: 1633375126:0;e ~/.nuget/NuGet/NuGet.Config &
+: 1633375155:0;dotnet nuget list source
+: 1633375168:0;dotnet add package AWSSDK.ECS
+: 1633375186:0;dotnet add package AWSSDK.SimpleSystemManagement
+: 1633375198:0;dotnet add package AWSSDK.SimpleSystemsManagement
+: 1633375210:0;dotnet add package AWSSDK.ECR
+: 1633384113:0;aws ecs help
+: 1633385266:0;GwDevOpsHelper/G
+: 1633385272:0;GwDevOpsHelper/GatewayDevOpsApi
+: 1633385688:0;cd ENS
+: 1633397549:0;aws ecs describe-task-definition --task-definition pulse-dev-gateway-service --region us-east-1
+: 1633398454:0;aws ecs describe-services --region us-east-1
+: 1633398468:0;aws ecs describe-services --services pulse-dev-gateway-connect --region us-east-1
+: 1633398491:0;aws ecs describe-services --cluster pulse-dev-gateway --services pulse-dev-pulse-gateway-connect --region us-east-1
+: 1633398545:0;aws ecs describe-services --cluster pulse-dev-gateway --services pulse-dev-gateway-connect --region us-east-1
+: 1633398560:0;aws ecs describe-services --cluster pulse-dev-gateway --services pulse-dev-gateway-service --region us-east-1
+: 1633404521:0;git init
+: 1633404580:0;cat ../../gateway.netcore.services/.gitignore
+: 1633404606:0;cp ../../gateway.netcore.services/.gitignore .
+: 1633404629:0;gcmsg "OPEB-2378: initial commit"
+: 1633404655:0;git remote add origin https://git.ainq.com/ai-gateway/gateway-v2/gatewaydevopsapi.git
+: 1633409152:0;dotnet fsi --help
+: 1633485857:0;dotnet nuget add source https://nexus.ainq.com/repository/nuget-hosted/  -n NexusHostedNuget -u esharapov -p ENSharap1982//// --store-password-in-clear-text
+: 1633485871:0;cd ../../gateway.netcore.services
+: 1633485881:0;g co feature/common
+: 1633486613:0;less Gateway.NetCore.Services.sln
+: 1633627367:0;GATE/GwDevOpsHelper/GatewayDevOpsApi
+: 1633627551:0;gcmsg "renamed controllers, simplified Gateway module"
+: 1633634119:0;code GatewayDevOpsApi.fsproj
+: 1633634323:0;l .vscode/launch.json
+: 1633634338:0;l 
+: 1633663542:0;docker run -d --rm -p 4000:4000 registry.gitlab.com/gitlab-org/gitlab-docs:11.10
+: 1633663845:0;git pull
+: 1633721804:0;g co -b OPEB-2444-gateway-common-module-build-fix
+: 1633721812:0;gstr
+: 1633721830:0;gcmsg "[200~OPEB-2444: adding nuget configuration and making sure building of the services works in Docker build \
+\
+Added arguments to the Dockerfile: NUGET_USER and NUGET_PASSWORD. One\
+can set them in CI/CD variables for the project and pass them as\
+docker build arguments.
+: 1633722919:0;docker build --pull --build-arg NUGET_USER=$NUGET_USER --build-arg NUGET_PASSWORD=$NUGET_PASSWORD -t test_gateway -f Gateway.Api.PatientDiscovery .
+: 1633722948:0;docker build --pull --build-arg NUGET_USER=ulp_cd --build-arg NUGET_PASSWORD='ULP_CD! -t test_gateway -f Gateway.Api.PatientDiscovery .
+: 1633722957:0;docker build --pull --build-arg NUGET_USER=ulp_cd --build-arg NUGET_PASSWORD='ULP_CD!' -t test_gateway -f Gateway.Api.PatientDiscovery .
+: 1633724692:0;docker ps 
+: 1633725328:0;cp nuget.config.template nuget.config
+: 1633725411:0;sed -i -e "s/%USERNAME%/ulp_cd/g" -e "s/%PASSWORD%/ULP_CD nuget.config
+: 1633725447:0;sed -i -e "s/%USERNAME%/ulp_cd/g" -e "s/%PASSWORD%/ULP_CD\!/g" nuget.config
+: 1633725692:0;docker build --pull --build-arg NUGET_USER=ulp_cd --build-arg NUGET_PASSWORD='ULP_CD!' -t test_gateway -f Gateway.Api.PatientDiscovery/DockerfileAWS .
+: 1633725920:0;docker build --help
+: 1633725942:0;docker --help
+: 1633749716:0;dotnet restore Gateway.Api.PatientDiscovery.csproj
+: 1633750214:0;cd Gateway.Api.PatientDiscovery
+: 1633750222:0;dotnet publish -c Release
+: 1633750254:0;l ~/.nuget
+: 1633750374:0;mv ~/.nuget/packages ~/.nuget/packages.bak 
+: 1633750489:0;cat nuget.config
+: 1633750740:0;ls ~/.nuget
+: 1633750743:0;ls ~/.nuget/packages
+: 1633751073:0;cd ~/.nuget/packages.bak/enterprise.audit.models
+: 1633751156:0;dotnet nuget push --interactive
+: 1633834149:0;~/.nuget
+: 1633834156:0;cd packages.bak
+: 1633834166:0;cd enterprise.audit.models
+: 1633834171:0;cd 3.0.0
+: 1633834181:0;dotnet nuget --help
+: 1633834188:0;dotnet nuget push --help
+: 1633834411:0;dotnet nuget push -k 71d10b1a-634b-368f-a81f-0d760ae49933 -s NugetHosted .
+: 1633834517:0;te ~/.nuget/NuGet/NuGet.Config
+: 1633834785:0;dotnet nuget push enterprise.audit.models.3.0.0.nupkg
+: 1633834819:0;dotnet nuget push enterprise.audit.models.3.0.0.nupkg --interactive
+: 1633834837:0;dotnet -D nuget push enterprise.audit.models.3.0.0.nupkg --interactive
+: 1633835010:0;less enterprise.audit.models.nuspec
+: 1633835034:0;l lib
+: 1633835037:0;l lib/netcoreapp3.1
+: 1633835046:0;less enterprise.audit.models.3.0.0.nupkg
+: 1633835111:0;dotnet -D nuget push enterprise.audit.models.3.0.0.nupkg
+: 1633835323:0;dotnet -D nuget push enterprise.audit.models.3.0.0.nupkg -k 71d10b1a-634b-368f-a81f-0d760ae49933 -s https://nexus.ainq.com/repository/nuget-hosted/
+: 1633835338:0;../..
+: 1633835402:0;hies.common.authenticationmanager/22.0.0
+: 1633835436:0;../../hies.common.configurationmanager/21.0.0/
+: 1633835467:0;../../enterprise.audit.netcore/38.0.0
+: 1633835482:0;../../enterprise.tenant.common/100.0.0
+: 1633835495:0;../../enterprise.tenant.integration/56.0.0/
+: 1633835515:0;../../enterprise.tenant.provisionlib/61.0.0
+: 1633835671:0;mv nuget.config nuget.config.bak
+: 1633835673:0;less nuget.config
+: 1633835848:0;l ~/.local/lib
+: 1633835852:0;l ~/.local/include
+: 1633835861:0;l ~/.local/share/Nuget
+: 1633835867:0;l ~/.local/share/NuGet
+: 1633836006:0;rd ~/.nuget/packages
+: 1633836010:0;rd ~/.local/share/NuGet
+: 1633836017:0;rd ~/.local/share/Nuget
+: 1633836036:0;rd /tmp/NUnit.Framework.Assert\ nunit.framework_\ Version_3.12.0.0_\ Culture_neutral_\ PublicKeyToken_2638cd05610744eb.cs
+: 1633836054:0;rd /tmp/nuget
+: 1633836058:0;sudo rd /tmp/nuget
+: 1633836080:0;rd /tmp/NuGet
+: 1633836087:0;rd /tmp/NuGetScratch/
+: 1633836097:0;dotnet restore Gateway.Api.PatientDiscovery/Gateway.Api.PatientDiscovery.csproj
+: 1633837255:0;docker -D build --pull --build-arg NUGET_USER=ulp_cd --build-arg NUGET_PASSWORD='ULP_CD!' -t test_gateway -f Gateway.Api.PatientDiscovery/DockerfileAWS .
+: 1633837458:0;docker -D build --pull --build-arg NUGET_USER=ulp_cd --build-arg NUGET_PASSWORD='ULP_cd1!' -t test_gateway -f Gateway.Api.PatientDiscovery/DockerfileAWS .
+: 1633837974:0;rm nuget.config.bak
+: 1633837989:0;ga -u .
+: 1633838029:0;gcmsg "OPEB-2444: updates to the dockerfiles for building services and nuget.config.template for adding sources automatically"
+: 1633838465:0;gcmsg "OPEB-2444: updated building dockerfiles"
+: 1633967611:0;cd .nuget/
+: 1633967616:0;rd packages
+: 1633967625:0;mv packages.bak packages
+: 1633971873:0;l netcore/fsautocomplete.dll.config
+: 1633971875:0;less netcore/fsautocomplete.dll.config
+: 1633971898:0;less netcore/fsautocomplete.runtimeconfig.json
+: 1633971917:0;less netcore/FSharp.Core.xml
+: 1633971930:0;less netcore/fsautocomplete.backgroundservices.runtimeconfig.json
+: 1633972102:0;Projects/GATE/GwDevOpsHelper/GatewayDevOpsApi
+: 1633977723:0;dotnet ~/.FsAutoComplete/netcore/fsautocomplete.dll --background-service-enabled
+: 1633978380:0;pgrep dotnet
+: 1633978405:0;sudo rm -rf bin
+: 1633978415:0;sudo rm -rf obj
+: 1633978425:0;l .vs
+: 1633978431:0;rd .vs
+: 1633978442:0;sudo rm -rf .vs
+: 1633978493:0;chown -R esharapov:esharapov .vscode
+: 1634055418:0;g clone https://github.com/syl20bnr/spacemacs.git
+: 1634055503:0;.FsAutoComplete
+: 1634055520:0;mv fsautocomplete.netcore.zip fsautocomplete-May.netcore.zip
+: 1634055538:0;mv ~/Downloads/fsautocomplete.netcore.zip .
+: 1634055623:0;unzip fsautocomplete.netcore.zip 
+: 1634055704:0;echo !(fsautocomplete)
+: 1634055715:0;echo "!(fsautocomplete)"
+: 1634055775:0;l ^fsautocomplete*
+: 1634055784:0;l ./^fsautocomplete*
+: 1634055817:0;l *.zip
+: 1634055825:0;mv *.zip ~/Downloads/.
+: 1634055837:0;rm *
+: 1634055896:0;sudo rm -rf *
+: 1634055914:0;mv ~/Downloads/fsautocomplete* .
+: 1634055922:0;mkdir netcore
+: 1634055933:0;cp fsautocomplete.netcore.zip netcore/.
+: 1634055935:0;cd netcore
+: 1634055943:0;unzip fsautocomplete.netcore.zip
+: 1634055966:0;l fsautocomplete
+: 1634055976:0;chmod +r fsautocomplete
+: 1634055977:0;less fsautocomplete
+: 1634056033:0;chmod +x fsautocomplete
+: 1634056040:0;./fsautocomplete
+: 1634056082:0;..fsautocomplete
+: 1634056090:0;rd netcore
+: 1634056905:0;cp *.zip ~/Downloads/.
+: 1634057044:0;cp -R ~/Downloads/fsautocomplete.netcore ./netcore
+: 1634057050:0;l netcore
+: 1634057075:0;dotnet netcore/fsautocomplete --version
+: 1634057084:0;./netcore/fsautocomplete --version
+: 1634057144:0;vim ~/.emacs.d/init.el
+: 1634057473:0;dotnet netcore/fsautocomplete.dll --version
+: 1634057478:0;dotnet netcore/fsautocomplete.dll --help
+: 1634057498:0;./netcore/fsautocomplete --help
+: 1634061984:0;less .lsp-session-v1
+: 1634061994:0;rm .lsp-session-v1
+: 1634062013:0;cd data
+: 1634062021:0;rm .emacs.desktop.
+: 1634062024:0;rm .emacs.desktop.lock
+: 1634062031:0;l anaconda-mode
+: 1634062039:0;rd anaconda-mode
+: 1634062048:0;ag lsp
+: 1634062087:0;FSharp/
+: 1634062095:0;Faker
+: 1634062114:0;rm \#Xeger.fsx\#
+: 1634062132:0;rm .\#Xeger.fsx
+: 1634062687:0;ag etags
+: 1634062692:0;te init.el
+: 1634062701:0;cd .emacs.d
+: 1634062710:0;cat network-security.data
+: 1634062727:0;vim init.el
+: 1634062806:0;emacs .
+: 1634063233:0;which e
+: 1634063239:0;which te
+: 1634063249:0;where emacs
+: 1634063253:0;where emacsclient
+: 1634063264:0;emacs --version
+: 1634063271:0;emacsclient --version
+: 1634063358:0;gst -c .emacs.d
+: 1634063398:0;mv .emacs.d .emacs.d.orig
+: 1634063408:0;g clone .emacs.d.orig .emacs.d
+: 1634063418:0;emacs -t .
+: 1634063424:0;emacs
+: 1634064052:0;l GATE
+: 1634140428:0;which ag
+: 1634148883:0;mv network-security.data data/.
+: 1634148935:0;Apps
+: 1634221867:0;cd snapshot-portlet
+: 1634221910:0;g log -p  a05e87b
+: 1634221967:0;g log  a05e87
+: 1634221985:0;g show a05e87b8d0e2e1e8ace8993c67afff78b46bf87c
+: 1634224392:0;rd .emacs.d.orig
+: 1634224404:0;less .cache
+: 1634224449:0;l transient
+: 1634224453:0;l transient/history.el
+: 1634224457:0;less transient/history.el
+: 1634238549:0;../Projects/
+: 1634238561:0;cd EmacsOrg
+: 1634238584:0;g clone https://github.com/jwiegley/dot-emacs.git jwiegley-dot-emacs
+: 1634239922:0;g clone https://github.com/sethm/emacs-files.git
+: 1634239929:0;.dotfiles
+: 1634239932:0;~/.dotfiles
+: 1634244089:0;echo $HISTFILE
+: 1634244108:0;cat $HISTFILE | wc -l
+: 1634244113:0;cat $HISTFILE | uniq | wc -l
+: 1634244151:0;te scripts/historytrim
+: 1634244598:0;cat $HISTFILE | awk -F';' '{print $1}'
+: 1634244601:0;cat $HISTFILE | awk -F';' '{print $2}'
+: 1634244611:0;cat $HISTFILE | awk -F';' '{print $2}' | wc -l
+: 1634244618:0;cat $HISTFILE | awk -F';' '{print $2}' | uniq | wc -l
+: 1634244812:0;tail -20 $HISTFILE
+: 1634244832:0;cat $HISTFILE | awk -F';' '{print $2}' | uniq -s 15 | wc -l
+: 1634244847:0;head 20 $HISTFILE
+: 1634244862:0;cat $HISTFILE | awk -F';' '{print $2}' | uniq -s 15
+: 1634244885:0;man uniq
+: 1634245052:0;cd sethm-emacs-files
+: 1634245100:0;l vendor/org-mode
+: 1634245120:0;l .git
+: 1634245125:0;l .git/modules
+: 1634245130:0;l .git/modules/tera-mode
+: 1634245142:0;l .git/modules/vendor
+: 1634245154:0;git submodule init --update
+: 1634245163:0;g submodule status
+: 1634245172:0;g submodule update
+: 1634245624:0;~/.emacs.d
+: 1634245667:0;git submodule init
+: 1634245673:0;git submodule update
+: 1634327015:0;cd LearnFSharp
+: 1634327028:0;code Types.fsx
+: 1634327340:0;dotnet fsi Types.fsx
+: 1634350423:0;chown eshrapov:esharapov Types.fsx
+: 1634350426:0;sudo chown eshrapov:esharapov Types.fsx
+: 1634350437:0;sudo chown eshrapov Types.fsx
+: 1634350448:0;sudo chown esharapov:esharapov Types.fsx
+: 1634350999:0;ga -a
+: 1634351007:0;gcmsg "added some types files"
+: 1634351027:0;l ElegantFSharp
+: 1634351035:0;l ElegantFSharp/HtmlData.fsx
+: 1634351037:0;cat ElegantFSharp/HtmlData.fsx
+: 1634351070:0;l Faker
+: 1634565648:0;e ai-worklog/Worklog.org&
+: 1634694455:0;e pulse-nodejs-service &
+: 1634694757:0;ag "default/activation"
+: 1634694807:0;e pulse-application/src/services/configs/endpoints.js &
+: 1634695040:0;ag "/directory"
+: 1634742713:0;cp ~/Downloads/offsite_planning.xlsx ~/ai-worklog/Worklog/.
+: 1634745840:0;echo $(( .1 + .2 ))
+: 1634745846:0;$(( .1 + .2 ))
+: 1634745879:0;expr .1 + .2
+: 1634745882:0;expr
+: 1634745885:0;expr --help
+: 1634745915:0;echo $(expr 0.1 + 0.2)
+: 1634745919:0;echo $(expr 1 + 2)
+: 1635173389:0;ag visitNUmber
+: 1635173393:0;ag visitNumber
+: 1635174088:0;ag -i CORS
+: 1635192616:0;pulse-socket-io-service
+: 1635192639:0;lga.
+: 1635260386:0;ssh pi@192.168.1.51
+: 1635356983:0;l webpack
+: 1635356988:0;l webpack/webpack.production.js
+: 1635356994:0;te webpack/webpack.production.js
+: 1635364888:0;ag facility-header-feature
+: 1635364929:0;g co r2021-10
+: 1635364938:0;ag facility-
+: 1635515938:0;../GATE/
+: 1635516906:0;less src/services/email-service.js
+: 1635520927:0;node -version
+: 1635520931:0;node --version
+: 1635520935:0;npm --version
+: 1635521037:0;cat .env
+: 1635521119:0;less package.json
+: 1635521355:0;history
+: 1635521502:0;which babel-node
+: 1635521602:0;gs
+: 1635534723:0;te . &
+: 1635781776:0;curl --request POST --header 'PRIVATE-TOKEN: RCsu-xDx4vJJoCWEBdyu' 'https://git.ainq.com/api/v4/projects/1029/repository/tags?tag_name=1.0.31-0&ref=cd8e2029e1f7c511a70e749d8db5207f46c4c3cc'
+: 1635781853:0;curl -s -o /dev/null -w "%{http_code}" --request POST --header 'PRIVATE-TOKEN: RCsu-xDx4vJJoCWEBdyu' 'https://git.ainq.com/api/v4/projects/1029/repository/tags?tag_name=1.0.31-0&ref=cd8e2029e1f7c511a70e749d8db5207f46c4c3cc' 
+: 1635781927:0;R=$(curl -s -o /dev/null -w "%{http_code}" --request POST --header 'PRIVATE-TOKEN: RCsu-xDx4vJJoCWEBdyu' 'https://git.ainq.com/api/v4/projects/1029/repository/tags?tag_name=1.0.31-0&ref=cd8e2029e1f7c511a70e749d8db5207f46c4c3cc')
+: 1635781934:0;echo $R
+: 1635782347:0;$(git describe --tags --abbrev=0 || echo "1.0.0")
+: 1635782354:0;echo $(git describe --tags --abbrev=0 || echo "1.0.0")
+: 1635782368:0;echo ${OV:$(git describe --tags --abbrev=0 || echo "1.0.0")}
+: 1635782383:0;OV=asdf
+: 1635782385:0;echo ${OV:-$(git describe --tags --abbrev=0 || echo "1.0.0")}
+: 1635782623:0;while [ "$HTTP_CODE" != "200" ]; do\
+echo "hello"\
+HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" --request POST --header 'PRIVATE-TOKEN: RCsu-xDx4vJJoCWEBdyu' 'https://git.ainq.com/api/v4/projects/1029/repository/tags?tag_name=1.0.31-0&ref=cd8e2029e1f7c511a70e749d8db5207f46c4c3cc')\
+done
+: 1635790216:0;curl -s -o /dev/null -w "%{http_code}" --request POST --header 'PRIVATE-TOKEN: RCsu-xDx4vJJoCWEBdyu' https://git.ainq.com/ai-gateway/gateway-v2/gateway.netcore.services/pipelines/39813/cancel.json 
+: 1635790253:0;curl  --request POST --header 'cookie: sidebar_collapsed=false; GUEST_LANGUAGE_ID=en_US; frequently_used_emojis=thumbsup; _ga=GA1.2.1779764774.1628606265; _rdt_uuid=1628606265877.addfa4db-e6c4-4c36-b5d4-57b67727af75; _fbp=fb.1.1628606265963.30369046; auto_devops_settings_dismissed=true; remember_user_token=W1sxMTddLCIkMmEkMTAkbnAwYUQ4UFNBTGdrajRqTzAzQ1BhLiIsIjE2MzUzNjA0NDcuNTg2NzM2NCJd--808bcb46dd845bd0c8c94c177c916e63f8854033; _gitlab_session=32418a5fc9839487261ad04e8b5174d6; event_filter=all' https://git.ainq.com/ai-gateway/gateway-v2/gateway.netcore.services/pipelines/39813/cancel.json 
+: 1635790323:0;curl  --request POST --header 'cookie: remember_user_token=W1sxMTddLCIkMmEkMTAkbnAwYUQ4UFNBTGdrajRqTzAzQ1BhLiIsIjE2MzUzNjA0NDcuNTg2NzM2NCJd--808bcb46dd845bd0c8c94c177c916e63f8854033; _gitlab_session=32418a5fc9839487261ad04e8b5174d6' https://git.ainq.com/ai-gateway/gateway-v2/gateway.netcore.services/pipelines/39813/cancel.json 
+: 1635790339:0;curl  --request POST --header '_gitlab_session=32418a5fc9839487261ad04e8b5174d6' https://git.ainq.com/ai-gateway/gateway-v2/gateway.netcore.services/pipelines/39813/cancel.json 
+: 1635790355:0;curl  --request POST --header 'cookie: remember_user_token=W1sxMTddLCIkMmEkMTAkbnAwYUQ4UFNBTGdrajRqTzAzQ1BhLiIsIjE2MzUzNjA0NDcuNTg2NzM2NCJd--808bcb46dd845bd0c8c94c177c916e63f8854033' https://git.ainq.com/ai-gateway/gateway-v2/gateway.netcore.services/pipelines/39813/cancel.json 
+: 1635790599:0;curl -s -o /dev/null -w "%{http_code}" --request DELETE --header 'PRIVATE-TOKEN: RCsu-xDx4vJJoCWEBdyu' 'https://git.ainq.com/api/v4/projects/1029/pipelines/39813' 
+: 1635790608:0;curl --request DELETE --header 'PRIVATE-TOKEN: RCsu-xDx4vJJoCWEBdyu' 'https://git.ainq.com/api/v4/projects/1029/pipelines/39813' 
+: 1635790736:0;curl -x GET --header 'PRIVATE-TOKEN: RCsu-xDx4vJJoCWEBdyu' 'https://git.ainq.com/api/v4/projects/1029/pipelines/39813' 
+: 1635790762:0;curl --request GET --header 'PRIVATE-TOKEN: RCsu-xDx4vJJoCWEBdyu' 'https://git.ainq.com/api/v4/projects/1029/pipelines/39813' 
+: 1635790882:0;curl --request GET --header 'PRIVATE-TOKEN: RCsu-xDx4vJJoCWEBdyu' 'https://git.ainq.com/api/v4/projects/1029/pipelines/39823' 
+: 1635790889:0;curl --request DELETE --header 'PRIVATE-TOKEN: RCsu-xDx4vJJoCWEBdyu' 'https://git.ainq.com/api/v4/projects/1029/pipelines/39823' 
+: 1635792059:0;OLD_VERSION=${NEW_VERSION:-$(git describe --tags --abbrev=0 || echo "1.0.0")}
+: 1635792071:0;echo=${NEW_VERSION:-$(git describe --tags --abbrev=0 || echo "1.0.0")}
+: 1635792079:0;echo
+: 1635792093:0;echo ${NEW_VERSION:-$(git describe --tags --abbrev=0 || echo "1.0.0")}
+: 1635792108:0;git describe --tags
+: 1635792123:0;git tags
+: 1635792126:0;git tag\
+: 1635792128:0;git tag
+: 1635792132:0;git tag --list
+: 1635792279:0;git describe --tags --abrev=0
+: 1635792308:0;g describe --tags --abrev=0
+: 1635792327:0;g describe --tags --abbrev=0 --candidates=10000
+: 1635792336:0;g describe --tags --abbrev=0 --candidates 10000
+: 1635792358:0;g describe --tags --abbrev=0 --candidates 100
+: 1635792389:0;g tags --help
+: 1635792441:0;git rev-list --tags --max-count=1
+: 1635792456:0;git describe --tags $(git rev-list --tags --max-count=1)
+: 1635792470:0;git describe --tags $(git rev-list --tags --max-count=10)
+: 1635792659:0;g tag -d 1.1.0
+: 1635792662:0;git tag -l | sort -V
+: 1635792771:0;cd deployment
+: 1635792772:0;$(git tag -l | sort -V | tail -1) || echo "1.0.0"
+: 1635792779:0;git tag -l | sort -V | tail -1 || echo "1.0.0"
+: 1635792784:0;git tag -l | sort -V | tail -1
+: 1635796308:0;l FSharp
+: 1635796323:0;cd Safe
+: 1635796604:0;dotnet restore Safe.sln
+: 1635796621:0;dotnet restore .
+: 1635797211:0;dotnet fake -t run
+: 1635797508:0;l deploy/
+: 1635797518:0;rd src/Server/bin 
+: 1635797521:0;rd src/Server/obj
+: 1635797528:0;rd src/Shared/bin
+: 1635797531:0;rd src/Shared/obj
+: 1635797537:0;rd src/Client/bin
+: 1635797540:0;rd src/Client/obj
+: 1635797547:0;dotnet fake build -t run
+: 1635797576:0;dotnet fake clean
+: 1635797628:0;rm paket.dependencies
+: 1635797631:0;rm paket.lock
+: 1635797643:0;rd paket-files
+: 1635797652:0;dotnet fake
+: 1635797659:0;dotnet fake build -t clean
+: 1635797680:0;rd Safe
+: 1635798220:0;dotnet --help\
+: 1635798222:0;dotnet --help
+: 1635798382:0;dotnet new --help
+: 1635798559:0;sudo rm -rf Safe
+: 1635798615:0;mkdir TodoWebApp
+: 1635798618:0;cd TodoWebApp
+: 1635798621:0;dotnet new SAFE
+: 1635814751:0;ps aux | grep emacs
+: 1635814843:0;pgrep -i emacs
+: 1635814857:0;man xargs
+: 1635818158:0;FSharp/ElegantFSharp
+: 1636040607:0;cat package.json|tr -d " \t\n\r"
+: 1636040652:0;cat package.json|tr -d " \t\n\r" | grep -oP 'scripts\"\:\{(.*?)\}'
+: 1636040684:0;compls=$([[ -s $PWD/package.json ]] || return 0 && cat package.json | tr -d " \t\n\r" | grep -oP 'scripts\"\:\{(.*?)\}' | sed -e "s/scripts\"\://g" | sed -e "s/{//g" | grep -oP '\"(.*?):\"' | sed -e 's/\"//g' | sed -e 's/\://g' | sed -e 's/\,//g' | sort)
+: 1636040689:0;echo $compls
+: 1636040733:0;[[ -s $PWD/package.json ]] || return 0 && cat package.json | tr -d " \t\n\r" | grep -oP 'scripts\"\:\{(.*?)\}' | sed -e "s/scripts\"\://g" | sed -e "s/{//g" | grep -oP '\"(.*?):\"' | sed -e 's/\"//g' | sed -e 's/\://g' | sed -e 's/\,//g' | sort
+: 1636040743:0;[[ -s $PWD/package.json ]] || return 0 && cat package.json | tr -d " \t\n\r" | grep -oP 'scripts\"\:\{(.*?)\}' | sed -e "s/scripts\"\://g" | sed -e "s/{//g" | grep -oP '\"(.*?):\"' | sed -e 's/\"//g' | sed -e 's/\,//g' | sort
+: 1636040808:0;[[ -s $PWD/package.json ]] || return 0 && cat package.json | tr -d " \t\n\r" | grep -oP 'scripts\"\:\{(.*?)\}' | sed -e "s/scripts\"\://g" | sed -e "s/{//g" | grep -oP '\"(.*?):\"' | sed -e 's/\"//g' | sed -e 's/\:$//g' | sed -e 's/\,//g' | sort
+: 1636046293:0;. ~/.zshrc
+: 1636046329:0;npm ci
+: 1636046808:0;npm run start
+: 1636125404:0;g clone https://git.ainq.com/ai-gateway/gateway-v2/gateway.netcore.services.shared.git
+: 1636125921:0;g co -b pipeline-fix
+: 1636125967:0;g br -d master
+: 1636125976:0;g br -D master
+: 1636126776:0;g co pipeline-fix
+: 1636126813:0;gcmsg "updated nuget.config templating and nuget pushing steps"
+: 1636126823:0;g push -u origin pipeline-fix
+: 1636142370:0;g pull https://git.ainq.com/ai-gateway/gateway-v2/gateway.service.directorypoller.git
+: 1636142373:0;g clone https://git.ainq.com/ai-gateway/gateway-v2/gateway.service.directorypoller.git
+: 1636142487:0;gcmsg "OPEB-2432: updated pipeline better handling version tags"
+: 1636143832:0;g co opeb-2388-testing-browser-cache
+: 1636143914:0;ga -u "OPEB-2388: roll back facility icon"
+: 1636143922:0;gcmsg "OPEB-2388: roll back facility icon"
+: 1636387463:0;pgrep -i emacs 
+: 1636430661:0;gcmsg "OPEB-2388: added cache-control header"
+: 1636430733:0;g l
+: 1636430749:0;g revert HEAD
+: 1636430900:0;gcmsg "OPEB-2388: updated webpack to use content-hash"
+: 1636430919:0;pulse-application
+: 1636430932:0;g co -b opeb-2388-fixing-browser-cache
+: 1636430938:0;te webpack
+: 1636430989:0;gcmsg "OPEB-2388: use content-hash for webpack configuration"
+: 1636431002:0;g push -u origin opeb-2388-fixing-browser-cache
+: 1636481698:0;docker build -f ${DOCKERFILE:-Dockerfile} -t pulse-nodejs-service .
+: 1636482154:0;gcmsg "OPEB-2507: update Dockerfile for building the image for the service (pass python, upgrade)"
+: 1636492748:0;./gradlew sonarqube -Dsonar.verbose=true -Dsonar.host.url=https://sonarqube.ainq.com/
+: 1636558523:0;cat package-lock.json| grep gyp
+: 1636577562:0;e ~/ai-worklog &
+: 1636605628:0;apt search racket
+: 1636605661:0;sudo apt install racket
+: 1636646303:0;racket
+: 1636661907:0;racket --version
+: 1636661911:0;which racket 
+: 1636661920:0;raco --version
+: 1636661930:0;raco docs
+: 1636661935:0;raco help
+: 1636662006:0;cd GATE
+: 1636662074:0;dotnet new classlib -n AwsSqsExtendedClient -lang F#
+: 1636662085:0;cd AwsSqsExtendedClient
+: 1636662325:0;dotnet add package AWSSDK.SQS
+: 1636666303:0;../PULSE
+: 1636666348:0;g co -b opeb-2514-sonarqube
+: 1636666693:0;gcmsg "OPEB-2514: updated pipelines, adding sonarqube stage and step"
+: 1636772452:0;cd Projects/Apps
+: 1636772456:0;cd Website
+: 1636772463:0;hg d
+: 1636772482:0;hg add src/images/PermLocation.jpg
+: 1636772495:0;hg commit -m "added index with perm map"
+: 1636772523:0;hg merge -r 50
+: 1636772529:0;hg merge commit
+: 1636772543:0;hg commit -m "merged two versions'
+: 1636772547:0;hg commit -m "merged two versions"
+: 1636772554:0;hg push
+: 1636773071:0;gcmsg "updated config"
+: 1636987856:0;e ai-worklog &
+: 1637007396:0;g br
+: 1637007427:0;gd r2022-01
+: 1637007440:0;gd r2022-01 --stat
+: 1637007566:0;g co OPEB-2207-unit-tests
+: 1637008181:0;npm test
+: 1637008378:0;g c o src/services/utils/names.test.js
+: 1637008381:0;g co src/services/utils/names.test.js
+: 1637008465:0;mocha src/services/utils/names.test.js -r dotenv/config --require @babel/register
+: 1637008473:0;npx mocha src/services/utils/names.test.js -r dotenv/config --require @babel/register
+: 1637008494:0;npx mocha src/**/*.test.js -r dotenv/config --require @babel/register
+: 1637008668:0;gcmsg "OPEB-2207: added email service to unit tests"
+: 1637008690:0;g merge r2022-01
+: 1637008941:0;npm i npm-install-peers -D
+: 1637008959:0;npm -g i npm-install-peers
+: 1637008978:0;npm-install-peers
+: 1637008990:0;npm i eslint
+: 1637009023:0;npm i --legacy-peer-deps
+: 1637009127:0;gd package.json
+: 1637009149:0;gcmsg "OPEB-2207: merged with upstream"
+: 1637075479:0;./gradlew clean verify
+: 1637075924:0;./gradlew clean check
+: 1637076147:0;ag 9000
+: 1637076199:0;./gradlew sonarqube -Dsonar.host.url=https://sonarqube.ainq.com
+: 1637076445:0;./gradlew sonarqube -Dsonar.host.url=https://sonarqube.ainq.com -Dsonar.login=334b87747eb4c80150f2b7f64fa76386d004e757
+: 1637079445:0;ga README.adoc
+: 1637079458:0;gcmsg "
+: 1637079492:0;gcmsg "OPEB-2518: updated docs for running sonarqube locally"
+: 1637079502:0;ag System
+: 1637079730:0;gcmsg "OPEB-2618: added proper logging, removed printing to console"
+: 1637086512:0;hg pull
+: 1637086532:0;hg up
+: 1637086541:0;hg clean
+: 1637086542:0;hg st
+: 1637086546:0;hg lga
+: 1637086551:0;hg lg
+: 1637094094:0;gcmsg "OPEB-2518: added tests and deps for testing"
+: 1637094104:0;g push -u origin opeb-2518-unit-tests
+: 1637094498:0;cat ../pulse-nodejs-service/.env
+: 1637094525:0;cat ../pulse-application/.env
+: 1637100319:0;gcmsg "OPEB-2518: added more tests and refactored code to make it more testable"
+: 1637693405:0;e ai-worklog/Worklog.org &
+: 1637700385:0;g ;lga
+: 1637700430:0;g show
+: 1637700467:0;g push -u origin opeb-2514-sonarqube
+: 1637700692:0;rm PULSE.Middleware.Api.Query/appsettings1.json
+: 1637700848:0;dotnet sonarscanner begin /k:"$SONARQUBE_PROJECT" /d:sonar.host.url="https://sonarqube.ainq.com"  /d:sonar.login="$SONARQUBE_TOKEN"
+: 1637700928:0;cat PULSE.Middleware.Api.Document/DockerfileAWS
+: 1637700971:0;h dotnet
+: 1637701023:0;dotnet tool install -h
+: 1637701044:0;dotnet tool install --global sonarscanner
+: 1637701055:0;dotnet tool install --global dotnet-sonarscanner
+: 1637701122:0;dotnet tool update --global dotnet-sonarscanner
+: 1637701135:0;dotnet tool update -v d --global dotnet-sonarscanner
+: 1637701262:0;~/.dotnet/tools/dotnet-sonarscanner begin --help
+: 1637701265:0;~/.dotnet/tools/dotnet-sonarscanner begin
+: 1637701268:0;~/.dotnet/tools/dotnet-sonarscanner
+: 1637701271:0;~/.dotnet/tools/dotnet-sonarscanner --help
+: 1637701290:0;~/.dotnet/tools/dotnet-sonarscanner begin /k:"$SONARQUBE_PROJECT" /d:sonar.host.url="https://sonarqube.ainq.com"  /d:sonar.login="$SONARQUBE_TOKEN"
+: 1637701294:0;~/.dotnet/tools/dotnet-sonarscanner /?
+: 1637701329:0;~/.dotnet/tools/dotnet-sonarscanner begin /key:"$SONARQUBE_PROJECT" /d:sonar.host.url="https://sonarqube.ainq.com"  /d:sonar.login="$SONARQUBE_TOKEN"
+: 1637701341:0;dotnet sonarscanner
+: 1637701381:0;dotnet sonarscanner begin /key:"$SONARQUBE_PROJECT" /d:sonar.host.url="https://sonarqube.ainq.com"  /d:sonar.login="$SONARQUBE_TOKEN"
+: 1637701404:0;echo $SONARQUBE_TOKEN
+: 1637701434:0;dotnet sonarscanner begin /key:"pulse-middleware" /d:sonar.host.url="https://sonarqube.ainq.com"  /d:sonar.login="$SONARQUBE_TOKEN"
+: 1637701603:0;																																																																																																																																																																																									q
+: 1637703034:0;dotnet sonarscanner end /?
+: 1637703078:0;dotnet sonarscanner end -v d /key:"pulse-middleware" /d:sonar.host.url="https://sonarqube.ainq.com"  /d:sonar.login="$SONARQUBE_TOKEN"
+: 1637703096:0;dotnet sonarscanner end /key:"pulse-middleware" /d:sonar.host.url="https://sonarqube.ainq.com"  /d:sonar.login="$SONARQUBE_TOKEN"
+: 1637703124:0;dotnet sonarscanner end /key:pulse-middleware /d:sonar.host.url="https://sonarqube.ainq.com"  /d:sonar.login="$SONARQUBE_TOKEN"
+: 1637703132:0;dotnet sonarscanner end /key:'pulse-middleware' /d:sonar.host.url="https://sonarqube.ainq.com"  /d:sonar.login="$SONARQUBE_TOKEN"
+: 1637703221:0;dotnet sonarscanner end /k:'pulse-middleware' /d:sonar.host.url="https://sonarqube.ainq.com"  /d:sonar.login="$SONARQUBE_TOKEN"
+: 1637703254:0;dotnet sonarscanner end /d:sonar.host.url="https://sonarqube.ainq.com"  /d:sonar.login="$SONARQUBE_TOKEN"
+: 1637782767:0;g clean -f
+: 1637782787:0;npm run test
+: 1637783532:0;cd PULSE.Middleware.Api.Activation
+: 1637783571:0;dotnet sonarscanner end /k:pulse-middleware-activation /d:sonar.host.url="https://sonarqube.ainq.com"  /d:sonar.login="$SONARQUBE_TOKEN"
+: 1637787590:0;Website
+: 1637787614:0;te ~/.dotfiles/.zshrc
+: 1637790283:0;te package.json
+: 1637790937:0;npx mocha src/**/*.test.js -r dotenv/config  --require @babel/register --recursive
+: 1637791025:0;SCANNER_VERSION=4.6.2.2472
+: 1637791026:0;wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-${SCANNER_VERSION}-linux.zip
+: 1638067684:0;Dropbox
+: 1638067687:0;Notes
+: 1638208634:0;cat Letters.tex
+: 1638208815:0;mv ~/Downloads/Letter.pdf ~/Dropbox/Documents/Ai
+: 1638208823:0;cd ~/Dropbox/Documents/Ai
+: 1638208882:0;sudo apt install pdftk
+: 1638209090:0;pdftk Religious-Vaccination-Exemption-Request_.pdf Letter.pdf cat output Religious-Vaccination-Exemption-Requeset.pdf
+: 1638213164:0;~/Projects
+: 1638213176:0;lDocker
+: 1638213178:0;l Docker
+: 1638213182:0;l Docker/coverage
+: 1638213185:0;rd Docker/coverage
+: 1638213193:0;rd Docker
+: 1638213244:0;apt search pdflatex
+: 1638213262:0;apt search texlive
+: 1638213318:0;python2
+: 1638213324:0;pyenv
+: 1638213375:0;less .gitlab-ci.yml
+: 1638213623:0;unzip sonar-scanner-cli-4.6.2.2472-linux.zip
+: 1638213735:0;./sonar-scanner-4.6.2.2472-linux/bin/sonar-scanner -Dsonar.host.url=https://sonarqube.ainq.com -Dsonar.login=${SONARQUBE_TOKEN} -Dsonar.projectKey=pulse-nodejs-service -Dsonar.sources=src
+: 1638214099:0;l .nyc_output
+: 1638214151:0;nyc
+: 1638214200:0;te .nycrc
+: 1638214394:0;l coverage
+: 1638214407:0;explorer . &
+: 1638214533:0;rd coverage
+: 1638219802:0;npx nyc mocha src/**/*.test.js -r dotenv/config  --require @babel/register --recursive
+: 1638220166:0;npx nyc --reporter=lcov --reporter=text-summary  mocha src/**/*.test.js -r dotenv/config  --require @babel/register --recursive
+: 1638220258:0;npm install --save-dev nyc
+: 1638220393:0;mocha
+: 1638220396:0;npx mocha
+: 1638220404:0;npx mocha src
+: 1638220415:0;npx mocha src/**/*.test.js
+: 1638220430:0;npm install --save-dev mocha
+: 1638220500:0;npm install coveralls --save-dev
+: 1638220571:0;npx nyc
+: 1638221505:0;gcmsg "OPEB-2207: coverage configuration"
+: 1638221673:0;gcmsg "OPEB-2207: added more coverage"
+: 1638221733:0;npx nyc -r html -r text npm run test
+: 1638221807:0;gcmsg "OPEB-2207: changed command line for coverage"
+: 1638222608:0;npm run coverage
+: 1638223120:0;npx nyc -r html npm run test
+: 1638223254:0;gcmsg "OPEB-2207: experimenting with coverage"
+: 1638223766:0;gcmsg "OPEB-2207: updated documentation - added infor about coverage tools and tests"
+: 1638224438:0;l ~
+: 1638224508:0;dotnet build .
+: 1638224538:0;export PATH=$PATH:~/.dotnet/tools
+: 1638224607:0;dotnet sonarscanner end
+: 1638224770:0;gcmsg "OPEB-2514: works locally, need to make it work in gitlab"
+: 1638224971:0;gcmsg "OPEB-2514: works locally, let's not mess with dependency repos"
+: 1638238099:0;pgrep -i idea
+: 1638238105:0;pgrep -i idea | xargs kill
+: 1638238114:0;pgrep -i java | xargs kill
+: 1638239568:0;ag ConfigSource
+: 1638239603:0;xml-transform
+: 1638239637:0;l -R test
+: 1638239776:0;./gradlew check
+: 1638239931:0;./gradlew sonarqube -Dsonar.host.url=http://sonar.mycompany.com -Dsonar.verbose=true
+: 1638240198:0;update-java-alternatives 
+: 1638240201:0;update-java-alternatives  -l
+: 1638240305:0;./gradlew sonarqube -Dsonar.host.url=http://sonarqube.ainq.com -Dsonar.verbose=true
+: 1638240435:0;./gradlew sonarqube
+: 1638240445:0;./gradlew sonarqube -Dsonar.host.url=https://sonarqube.ainq.com -Dsonar.verbose=true
+: 1638240485:0;./gradlew --stacktrace sonarqube -Dsonar.host.url=https://sonarqube.ainq.com -Dsonar.verbose=true
+: 1638240570:0;./gradlew --stacktrace sonarqube -Dsonar.host.url=https://sonarqube.ainq.com -Dsonar.verbose=true -Dsonar.login=de6318e114064229278e9c416b187912eceb757f
+: 1638240746:0;gcmsg "OPEB-2518: experiments with running sonarqube coverage"
+: 1638241851:0;ls coverage
+: 1638241865:0;l build/sonar
+: 1638241874:0;l build/sonar/scanner-report
+: 1638241887:0;l build/sonar/findbugs
+: 1638242145:0;l build/reports/jacoco/test/jacocoTestReport.xml
+: 1638242149:0;less build/reports/jacoco/test/jacocoTestReport.xml
+: 1638307277:0;gcmsg "OPEB-2518: added more tests for coverage"
+: 1638455508:0;./gradlew sonarqube -Dsonar.host.url=https://sonarqube.ainq.com -Dsonar.verbose=true -Dsonar.login=de6318e114064229278e9c416b187912eceb757f
+: 1638456900:0;gcmsg "OPEB-2518: beefed up tests to cover over 80%"
+: 1638469489:0;docker build -t pulse-activation PULSE.Middleware.Api.Activation/DockerfileAWS .
+: 1638469499:0;docker build -t pulse-activation PULSE.Middleware.Api.Activation/DockerfileAWS
+: 1638469515:0;docker build -t pulse-activation -f PULSE.Middleware.Api.Activation/DockerfileAWS
+: 1638469518:0;docker build -t pulse-activation -f PULSE.Middleware.Api.Activation/DockerfileAWS .
+: 1638469892:0;NUGET_PASSWORD='G@t3w@y_Cd'
+: 1638470754:0;gcmsg "OPEB-2514: modified Dockerfile for building api projects"
+: 1638470859:0;registry.ainq.com/ai-platform-development/cicd/cicd-images/sonarqubedotnetrunner:v0.2
+: 1638470885:0;docker login registry.ainq.com
+: 1638470912:0;docker pull registry.ainq.com/ai-platform-development/cicd/cicd-images/sonarqubedotnetrunner:v0.2
+: 1638472236:0;cd ~/.nuget
+: 1638472240:0;cd packages
+: 1638472245:0;ls gateway.common
+: 1638472299:0;cd gateway.restadapters
+: 1638472305:0;cd 33.0.0
+: 1638472331:0;gateway.common
+: 1638472342:0;50.0.0
+: 1638472346:0;dotnet -D nuget push *.nupkg -k 71d10b1a-634b-368f-a81f-0d760ae49933 -s https://nexus.ainq.com/repository/nuget-hosted/
+: 1638473193:0;popd
+: 1638473308:0;docker run --name sonarqube --rm -v $PWD:/src sonarqubedotnetrunner:v0.2
+: 1638473318:0;docker image ls
+: 1638473340:0;docker run --name sonarqube --rm -v $PWD:/src registry.ainq.com/ai-platform-development/cicd/cicd-images/sonarqubedotnetrunner:v0.2
+: 1638473369:0;docker run --name sonarqube --rm -v $PWD:/src registry.ainq.com/ai-platform-development/cicd/cicd-images/sonarqubedotnetrunner:v0.2 -c bash
+: 1638473395:0;docker run --name sonarqube --command bash --rm -v $PWD:/src registry.ainq.com/ai-platform-development/cicd/cicd-images/sonarqubedotnetrunner:v0.2
+: 1638473409:0;docker run --name sonarqube -v $PWD:/src registry.ainq.com/ai-platform-development/cicd/cicd-images/sonarqubedotnetrunner:v0.2
+: 1638473427:0;docker logs -f 34906
+: 1638473479:0;docker run --name sonarqube --rm -a -v $PWD:/src registry.ainq.com/ai-platform-development/cicd/cicd-images/sonarqubedotnetrunner:v0.2
+: 1638473516:0;docker run --name sonarqube --rm  -v $PWD:/src registry.ainq.com/ai-platform-development/cicd/cicd-images/sonarqubedotnetrunner:v0.2 bash
+: 1638473542:0;docker run --name sonarqube --rm  -v $PWD:/src registry.ainq.com/ai-platform-development/cicd/cicd-images/sonarqubedotnetrunner:v0.2 ash
+: 1638473556:0;docker run --name sonarqube --rm  -v $PWD:/src registry.ainq.com/ai-platform-development/cicd/cicd-images/sonarqubedotnetrunner:v0.2 sh
+: 1638473597:0;docker rm sonarqube
+: 1638473761:0;te .gitlab-ci.yml
+: 1638474449:0;PULSE.Middleware.Api.Activation/obj/Debug/netcoreapp3.1/
+: 1638474463:0;pulse.middleware.ee/
+: 1638474466:0;l PULSE.Middleware.Api.Activation/obj/Debug/netcoreapp3.1/
+: 1638479783:0;git clone pulse.middleware.ee pulse-mw
+: 1638479837:0;cp nuget.config ../pulse-mw/.
+: 1638480694:0;g co nuget.config.template
+: 1638480741:0;PATH=$PATH:$HOME/.dotnet/tools
+: 1638480743:0;dotnet sonarscanner end /k:pulse-middleware /d:sonar.host.url="https://sonarqube.ainq.com"  /d:sonar.login="$SONARQUBE_TOKEN"
+: 1638480779:0;git clone pulse-mw-2
+: 1638480787:0;git clone pulse.middleware.ee pulse-mw-2
+: 1638480792:0;cd pulse-mw-2
+: 1638480825:0;dotnet sonarscanner begin /k:pulse-middleware /d:sonar.host.url="https://sonarqube.ainq.com"  /d:sonar.login="$SONARQUBE_TOKEN"
+: 1638480884:0;dotnet sonarscanner end /d:sonar.login="$SONARQUBE_TOKEN"
+: 1638497958:0;sudo rd pulse-mw
+: 1638497975:0;sudo rm -rf pulse-mw-2
+: 1638500751:0;gcmsg "OPEB-2514: use publish instead of build for sonarqube step"
+: 1638565229:0;g clone pulse.middleware.ee pulse-mw
+: 1638565233:0;cd pulse-mw
+: 1638565289:0;cp ../pulse.middleware.ee/nuget.config .
+: 1638565295:0;docker run --name sonarqube --rm -it  -v $PWD:/src registry.ainq.com/ai-platform-development/cicd/cicd-images/sonarqubedotnetrunner:v0.2
+: 1638565765:0;../pulse.middleware.ee
+: 1638565803:0;gcmsg "OPEB-2514: updating sonarqube step - verified running in sonarqube container. Using publish -c Release"
+: 1638813673:0;nyc npm run test
+: 1638814023:0;g co -b OPEB-2207-more-coverage
+: 1638814043:0;npm i --save-dev babel-plugin-rewire
+: 1638814768:0;src/**/*.test.js
+: 1638814775:0;echo src/**/*.test.js
+: 1638815015:0;mocha src/index.test.js -r dotenv/config  --require @babel/register --require babel-plugin-rewire
+: 1638815019:0;npx mocha src/index.test.js -r dotenv/config  --require @babel/register --require babel-plugin-rewire
+: 1638815233:0;node
+: 1638815280:0;./node_modules/.bin/babel-node
+: 1638815305:0;../node_modules/.bin/babel-node
+: 1638815817:0;npx mocha src/utils.test.js -r dotenv/config  --require @babel/register --require babel-plugin-rewire
+: 1638815867:0;ga packa*
+: 1638815884:0;gcmsg "OPEB-2207: boost test coverage"
+: 1638815898:0;g push -u origin OPEB-2207-more-coverage
+: 1638816092:0;g merge origin/r2022-01
+: 1638816102:0;rm package-lock.json
+: 1638816112:0;ga package-lock.json
+: 1638816139:0;gcmsg "OPEB-2207: updated with David's work on removing getDefaultAction"
+: 1638816250:0;gcmsg "OPEB-2207: resolved conflicts"
+: 1638816430:0;rd node_modules
+: 1638818083:0;npm i --force
+: 1638818217:0;ga package*
+: 1638818231:0;gcmsg "OPEB-2207: fixing deps"
+: 1638818276:0;SONARQUBE_TOKEN=de6318e114064229278e9c416b187912eceb757f
+: 1638819768:0;mocha 'src/services/middleware-service.test.js' -r dotenv/config  --require @babel/register --require babel-plugin-rewire --recursive
+: 1638819771:0;npx mocha 'src/services/middleware-service.test.js' -r dotenv/config  --require @babel/register --require babel-plugin-rewire --recursive
+: 1638828048:0;npm run test:unit
+: 1638828055:0;npx nyc npm run test
+: 1638828063:0;./sonar-scanner-4.6.2.2472-linux/bin/sonar-scanner -Dsonar.host.url=https://sonarqube.ainq.com -Dsonar.login=${SONARQUBE_TOKEN} -Dsonar.projectKey=pulse-nodejs-service -Dsonar.sources=src -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
+: 1638828319:0;ga src
+: 1638828335:0;gcmsg "OPEB-2207: updated test to beef up the coverage"
+: 1638843510:0;diatheke --help
+: 1638906193:0;diatheke -b KJV -o fms -k Jn 3:15
+: 1638906299:0;diatheke -b KJV -e HTML -o fms -k Jn 3:15
+: 1638995310:0;rd pulse-mw
+: 1638995317:0;sudo rm -rf pulse-mw
+: 1638996877:0;cat Work.org
+: 1638996882:0;cat Journal.org
+: 1638996886:0;rm Work.org
+: 1638996889:0;rm Journal.org
+: 1639003349:0;pgrep -i emacs  | xargs kill
+: 1639003360:0;../.emacs.d
+: 1639003368:0;ag timer
+: 1639077979:0;scl
+: 1639078477:0;deployment
+: 1639078540:0;g co -b opeb-2454-jan-release
+: 1639103110:0;pgrep vscode
+: 1639103114:0;pgrep code
+: 1639103123:0;sudo pgrep -i code
+: 1639103130:0;sudo htop
+: 1639104172:0;l data/
+: 1639104188:0;l data/.emacs.desktop.wsl
+: 1639104197:0;cat data/.emacs.desktop.wsl
+: 1639104756:0;mv data/.emacs.desktop.wsl data/.emacs.desktop
+: 1639107143:0;diatheke -b StrongsGreek -k 3056
+: 1639107152:0;	diatheke -b KJV -m 1 -k "R 1:1-7"
+: 1639107164:0;diatheke -b StrongsGreek -k G3056
+: 1639107258:0;	diatheke -b KJV -m 1 -k -e plain "R 1:1-7"
+: 1639107269:0;	diatheke -b KJV -m 1 -e plain -k "R 1:1-7"
+: 1639107275:0;	diatheke -b KJV -m 1 -e text -k "R 1:1-7"
+: 1639107300:0;	diatheke -b KJV -m 1 -f plain -k "R 1:1-7"
+: 1639107327:0;	diatheke -b KJV -m 1 -f Latex -k "R 1:1-7"
+: 1639107335:0;	diatheke -b KJV -m 1 -f Latex -k "R 1:1-2"
+: 1639107340:0;	diatheke -b KJV -m 1 -f Latex -k "R 1:2-3"
+: 1639110201:0;gcmsg "updated emacs on Windows WSL desktop"
+: 1639149463:0;cd AiPlatform
+: 1639149477:0;g clone https://git.ainq.com/ai-platform-development/business-web-services/ainq-common-service.git
+: 1639149486:0;cd ainq-common-service
+: 1639162760:0;g co -b OPEB-2564-login-history-report
+: 1639170320:0;.
+: 1639170325:0;PU
+: 1639170338:0;rd ainq-common-service
+: 1639170355:0;rd ainq-pulse-service
+: 1639170366:0;l ../AiPlatform
+: 1639170399:0;mv ainq-web-client-framework ../AiPlatform/.
+: 1639170416:0;mv ainq-microservice-framework ../AiPlatform/.
+: 1639422585:0;adt-dispatch-service
+: 1639422600:0;ag log\.
+: 1639422858:0;cd ../xml-transform
+: 1639422891:0;./gradlew dependencies --help
+: 1639422937:0;./gradlew dependencies | grep log
+: 1639422985:0;./gradlew dependencies > dependencies.txt
+: 1639502818:0;pulse-emergency-census-application
+: 1639502822:0;pulse-nodejs-service
+: 1639502852:0;g co r2022-01
+: 1639602572:0;echo $(ls *.csproj)
+: 1639602582:0;echo $(ls {*}.csproj)
+: 1639602606:0;echo $(ls *.csproj | awk -F. {print $1} )
+: 1639602614:0;echo $(ls *.csproj | awk -F='.' {print $1} )
+: 1639602648:0;echo $(ls *.csproj | awk -F='.' '{print $1}' )
+: 1639602653:0;echo $(ls *.csproj | awk -F='.' '{print $2}' )
+: 1639602664:0;echo $(ls *.csproj | awk -F=. '{print $1}' )
+: 1639602692:0;echo $(ls *.csproj |  sed 's/\.csproj//g' )
+: 1639602703:0;echo $(ls *.csproj |  sed 's/\.csproj/\.dll/g' )
+: 1639602713:0;dotnet  $(ls *.csproj |  sed 's/\.csproj/\.dll/g' )
+: 1639602955:0;docker run --name sonarqube --command bash --rm mcr.microsoft.com/dotnet/aspnet:3.1
+: 1639602976:0;docker run --name aspnet  --rm mcr.microsoft.com/dotnet/aspnet:3.1 bash
+: 1639602991:0;docker run --name aspnet --rm mcr.microsoft.com/dotnet/aspnet:3.1 sh
+: 1639603000:0;docker logs aspnet
+: 1639603036:0;docker run --name aspnet -it --rm mcr.microsoft.com/dotnet/aspnet:3.1 sh
+: 1639603227:0;PROJECT_NAME=Gateway.Service.DirectoryPoller
+: 1639603340:0;docker build -t dirpoller --build-args NUGET_USER=$NUGET_USER --build-args NUGET_PASSWORD=$NUGET_PASSWORD --build-args=PROJECT_NAME=$PROJECT_NAME  -f Gateway.Service.DirectoryPoller/DockerfileAWS .
+: 1639603525:0;docker run --name dirpoller --rm dirpoller
+: 1639603640:0;docker run --name dirpoller -it --rm dirpoller 
+: 1639603681:0;docker run --name dirpoller -it --rm dirpoller bash
+: 1639603759:0;docker build -t dirpoller --build-arg NUGET_USER=$NUGET_USER --build-arg NUGET_PASSWORD=$NUGET_PASSWORD --build-arg=PROJECT_NAME=$PROJECT_NAME  -f Gateway.Service.DirectoryPoller/DockerfileAWS .
+: 1639603780:0;docker run --name dirpoller -it --rm dirpoller
+: 1639686217:0;cd service-
+: 1639688302:0;./gradlew dependencyReport
+: 1639688338:0;cat build/reports/project/dependencies.txt
+: 1639688398:0;te build/reports/project/dependencies.txt
+: 1639688681:0;explorer.exe build/reports/project/dependencies.txt
+: 1639688691:0;explorer.exe build/reports/project &
+: 1639688702:0;explorer.exe . &
+: 1639689173:0;l build/classes
+: 1639689177:0;l build/classes/java
+: 1639689192:0;./gradlew war
+: 1639751012:0;g clone https://git.ainq.com/CRISP_Unified_Landing_Page/patient-search-portlet.git
+: 1639751021:0;cd patient-search-portlet
+: 1639751042:0;g co release_1.31
+: 1639751057:0;ag log4j
+: 1639751227:0;chmod +x gradlew
+: 1639768854:0;g co build.gradle
+: 1639768881:0;update-alternatives --config java
+: 1639768994:0;./gradlew dependencyInsight --dependency log4j-core
+: 1639769006:0;./gradlew dependencyInsight --dependency log4j
+: 1639769032:0;./gradlew dependencyInsight
+: 1639769047:0;./gradlew dependencyManagement
+: 1639769099:0;./gradlew dependencies > dependencies_patient_search_portlet.txt
+: 1639774985:0;datadog
+: 1639775034:0;ag dd-agent
+: 1639775194:0;ag JMX
+: 1639775337:0;cat PULSE/adt-dispatch-service/src/main/docker/Dockerfile.jvm
+: 1639775356:0;ag -g Dockerfile
+: 1639775391:0;cat PULSE/xml-transform/Dockerfile
+: 1640016756:0;g clone https://git.ainq.com/CRISP_Unified_Landing_Page/service-immunizations.git
+: 1640016794:0;g clone https://git.ainq.com/CRISP_Unified_Landing_Page/service-prescriptions.git
+: 1640016850:0;g clone https://git.ainq.com/CRISP_Unified_Landing_Page/service-events.git
+: 1640016866:0;g clone https://git.ainq.com/CRISP_Unified_Landing_Page/service-audit.git
+: 1640016873:0;cd service-audit
+: 1640016894:0;g reset --hard HEAD
+: 1640016997:0;g la
+: 1640017004:0;lga
+: 1640017006:0;ll
+: 1640017053:0;g clone https://git.ainq.com/CRISP_Unified_Landing_Page/service-alerts.git
+: 1640017076:0;g clone https://git.ainq.com/CRISP_Unified_Landing_Page/service-relationship-management.git
+: 1640017083:0;cd service-relationship-management
+: 1640017119:0;rd ulp-service-salesforce
+: 1640017123:0;g clone https://git.ainq.com/CRISP_Unified_Landing_Page/ulp-service-salesforce.git
+: 1640017150:0;g clone https://git.ainq.com/CRISP_Unified_Landing_Page/services.git
+: 1640017380:0;service-alerts
+: 1640018179:0;l build/libs
+: 1640018187:0;l build/resources
+: 1640018275:0;service-events
+: 1640018319:0;unzip ainq-ulp-crisp-service-events-1.28.0_release_1.28-SNAPSHOT.war
+: 1640019374:0;cd service-immunizations
+: 1640019459:0;cd build/libs
+: 1640019465:0;unzip ainq-ulp-crisp-service-immunizations-1.0.0_master-SNAPSHOT.war
+: 1640019469:0;cd WEB-INF/lib
+: 1640019565:0;st
+: 1640019788:0;g clone https://git.ainq.com/CRISP_Unified_Landing_Page/audit-extract.git
+: 1640019795:0;cd audit-extract
+: 1640019854:0;chmod +x ./gradlew 
+: 1640019937:0;g stash
+: 1640019939:0;g co 
+: 1640019943:0;g co release_1.28
+: 1640019946:0;g stash pop
+: 1640020120:0;g clone https://git.ainq.com/CRISP_Unified_Landing_Page/service-pdmpprescriptions.git
+: 1640020130:0;cd service-pdmpprescriptions
+: 1640022601:0;ag ulp-models
+: 1640022613:0;ag apigate
+: 1640022753:0;cat ../service-prescriptions/settings.gradle
+: 1640022901:0;rd catalina.home_IS_UNDEFINED/logs/service-alerts.2021-12-20.log
+: 1640022911:0;rd catalina.home_IS_UNDEFINED
+: 1640022919:0;l ../service-pdmpprescriptions
+: 1640022951:0;cat settings.gradle
+: 1640023094:0;cd service-prescriptions
+: 1640023188:0;ag crisp-models
+: 1640023494:0;ping -c4 8.8.8.8
+: 1640023563:0;./gradlew clean lint verifyGoogleJavaFormat
+: 1640027218:0;service-prescriptions
+: 1640028509:0;cd ulp-service-salesforce
+: 1640028577:0;g co salesforce-avideon
+: 1640028587:0;g merge salesforce-avideon
+: 1640028672:0;gcmsg "CEN-4539: updated version of log4j deps to 2.17"
+: 1640033481:0;cat ../service-prescriptions/settings.gradle >> settings.gradle
+: 1640034775:0;./gradlew dependency
+: 1640034787:0;./gradlew dependencies
+: 1640034804:0;./gradlew dependencies | grep log4j
+: 1640038473:0;l scripts
+: 1640038491:0;curl -o langtool.zip https://languagetool.org/download/LanguageTool-stable.zip
+: 1640038856:0;apt search langtool
+: 1640038860:0;apt search lang
+: 1640038866:0;apt search lang.*tool
+: 1640039232:0;rm langtool.zip
+: 1640040358:0;apt search mc
+: 1640040363:0;apt search midnight
+: 1640040371:0;apt install mc
+: 1640040373:0;sudo apt install mc
+: 1640059297:0;~
+: 1640103235:0;service-audit
+: 1640103267:0;g co 1.21.1
+: 1640103301:0;g cherry-pick b90f9bb
+: 1640103442:0;./gradlew --update-locks clean build
+: 1640103537:0;l gradle
+: 1640103551:0;./gradlew updateDependencies
+: 1640103781:0;l gradle/dependency-locks
+: 1640103792:0;rd gradle/dependency-locks
+: 1640103813:0;./gradlew generateLock
+: 1640105062:0;./gradlew --write-locks clean build
+: 1640105128:0;gcmsg "CEN-4539: updated lockfiles for dependencies"
+: 1640105351:0;cat .gitlab-ci.yml
+: 1640105361:0;gd master -- .gitlab-ci.yml
+: 1640105423:0;gcmsg "CEN-4539: updated for docker/gitlab shenanigans"
+: 1640116202:0;l hapi-fhir
+: 1640116212:0;l hapi-fhir/hapi-fhir-client-okhttp
+: 1640116227:0;cat hapi-fhir/hapi-fhir-client-okhttp/src/main/java/ca/uhn/fhir/okhttp/client/OkHttpRestfulClient.java
+: 1640285996:0;service-pdmpprescriptions
+: 1640286017:0;cd ../service-prescriptions
+: 1640286114:0;g co 1.28.0
+: 1640286124:0;g co -b log4j-fix
+: 1640286139:0;g cherry-pick 1d6d8f1
+: 1640286157:0;g push -u origin log4j-fix
+: 1641411156:0;explorer.exe . 
+: 1641413254:0;cp ~/Downloads/glslang-master-linux-Release/bin/glslangValidator ~/.bin/.
+: 1641413258:0;cd ~/.bin
+: 1641413277:0;glslangValidator
+: 1641417124:0;cat .log/ti-21842.log
+: 1641417157:0;echo .log >> .gitignore
+: 1641417181:0;gcmsg "initial revision - mandelbrot fractal shader"
+: 1641500739:0;g co development
+: 1641500762:0;mvn clean install -DskipTests
+: 1641501376:0;chown esharapov:esharapov target
+: 1641501389:0;sud ochown esharapov:esharapov target
+: 1641501392:0;sudo chown esharapov:esharapov target
+: 1641505277:0;docker pull maven:3-jdk-8
+: 1641505434:0;docker rmi dirpoller
+: 1641505445:0;docker rmi test_gateway
+: 1641505452:0;docker rmi pulse-activation
+: 1641505481:0;docker rmi 793f9e5501e6
+: 1641505502:0;docker rmi 97b9395ea550
+: 1641505515:0;docker rmi cb2a0925e0d8
+: 1641505634:0;MAVEN_RUN="mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version clean verify package -DskipTests"
+: 1641505708:0;docker run --name mvn -it -v $(pwd):/sources -w /sources --rm maven:3-jdk8 $MAVEN_RUN
+: 1641505716:0;docker run --name mvn -it -v $(pwd):/sources -w /sources --rm maven:3-jdk-8 $MAVEN_RUN
+: 1641505764:0;docker run --name mvn -it -v "$(pwd)":/usr/sources -w /usr/sources --rm maven:3-jdk-8 $MAVEN_RUN
+: 1641505817:0;docker run --rm -it -v "$(pwd)":/usr/sources -w /usr/sources maven:3-jdk-8 mvn clean install
+: 1641505885:0;cat settings.xml
+: 1641505968:0;docker run --rm -it -e CI_USERNAME=gateway_cd -e CI_PASSWORD=G@t3w@y_Cd -v "$(pwd)":/usr/sources -w /usr/sources maven:3-jdk-8 mvn clean install
+: 1641506012:0;docker run --rm -it -e CI_USERNAME=gateway_cd -e CI_PASSWORD=G@t3w@y_Cd -v "$(pwd)":/usr/sources -w /usr/sources maven:3-jdk-8 mvn -s settings.xml clean install
+: 1641507631:0;rd target
+: 1641507671:0;sudo chown -R esharapov:esharapov target
+: 1641507963:0;cat ~/Downloads/DocQueryPolicyChecker.class
+: 1641507971:0;l ~/.bin
+: 1641507981:0;java -jar cfr-0.148.jar
+: 1641507989:0;java -jar ~/.bin/cfr-0.148.jar
+: 1641508003:0;java -jar ~/.bin/cfr-0.148.jar ~/Downloads/DocQueryPolicyChecker.class
+: 1641508014:0;java -jar ~/.bin/cfr-0.148.jar ~/Downloads/DocQueryPolicyChecker.class > DocQueryPolicyChecker.java
+: 1641508418:0;find ~/.m2 -f "DocumentQuery*"
+: 1641508422:0;find ~/.m2 -name "DocumentQuery*"
+: 1641508525:0;l .m2/repository/org/connectopensource/DocumentQueryCore/4.6.0/DocumentQueryCore-4.6.0.jar
+: 1641508535:0;l ~/.m2/repository/org/connectopensource/DocumentQueryCore/4.6.0/DocumentQueryCore-4.6.0.jar
+: 1641508549:0;l ~/Downloads/DocumentQueryCore-4.6.0.jar
+: 1641508841:0;cat ~/.m2/repository/org/connectopensource/DocumentQueryCore/4.6.0/_remote.repositories
+: 1641508848:0;cat ~/.m2/repository/org/connectopensource/DocumentQueryCore/4.6.0/DocumentQueryCore-4.6.0-sources.jar.lastUpdated
+: 1641508960:0;l ~/.m2/repository/org/connectopensource/DocumentQueryCore/4.6.0
+: 1641508974:0;l ~/.m2/repository/org/connectopensource/DocumentQueryCore/4.6.0/DocumentQueryCore-4.6.0.pom
+: 1641508978:0;cat ~/.m2/repository/org/connectopensource/DocumentQueryCore/4.6.0/DocumentQueryCore-4.6.0.pom
+: 1641509142:0;l ..
+: 1641522372:0;find ../CONNECT -name "DocQueryPolicyCheck*"
+: 1641522394:0;cd CONNECT
+: 1641570487:0;ag --xml  DocumentQueryCore 
+: 1641570510:0;e Product/Production/Services/DocumentQueryCore/pom.xml &
+: 1641572036:0;hgrep deploy
+: 1641572115:0;l Product/Production/Deploy/
+: 1641572119:0;l Product/Production/Deploy/jboss7
+: 1641572123:0;l Product/Production/Deploy/jboss7/target
+: 1641572145:0;less README.md
+: 1641572290:0;te pom.xml
+: 1641572333:0;ag "<version>4.6.0</version>"
+: 1641572357:0;ag -c 4 "<version>4.6.0</version>"
+: 1641572366:0;ag -a 4 -b 4 "<version>4.6.0</version>"
+: 1641572394:0;ag -A 4 -B 4 "<version>4.6.0</version>"
+: 1641572687:0;mvn -s settings.xml --batch-mode --errors --fail-at-end --show-version clean install -DskipTests
+: 1641573042:0;l repo
+: 1641573049:0;ls -al
+: 1641573192:0;te settings.xml
+: 1641573227:0;mvn clean install deploy
+: 1641573387:0;hgrep CI_
+: 1641573400:0;export CI_USERNAME=gateway_cd
+: 1641573406:0;export CI_PASSWORD="G@t3w@y_Cd"
+: 1641573414:0;mvn clean install deploy -DskipTests=true
+: 1641573460:0;ag maven-gateway-releases
+: 1641573484:0;te Product/Production/Deploy/pom.xml
+: 1641573527:0;te build-tools/pom.xml
+: 1641574965:0;docker run --rm -it -e CI_USERNAME=gateway_cd -e CI_PASSWORD=G@t3w@y_Cd -v "$(pwd)":/usr/sources -w /usr/sources maven:3.6-jdk-8 mvn -s settings.xml clean install
+: 1641576498:0;mvn -s settings.xml clean install deploy -DskipTests=true
+: 1641585254:0;cat ~/.zsh/spec/DESKTOP-OU44UDR.zsh
+: 1641585289:0;echo $DISPLAY
+: 1641607686:0;Connect
+: 1641607691:0;cd ..
+: 1641607696:0;cd GATE/CONNECT
+: 1641609913:0;p5
+: 1641610024:0;g remote add origin https://github.com/evgeniysharapov/p5shaders.git
+: 1641610437:0;aigatewaydocker
+: 1641610466:0;rm \#docker-compose-multiple-gateway.yml\#
+: 1641610556:0;l data
+: 1641610569:0;ga docker-compose.yml
+: 1641610573:0;ga docker-compose-multiple-gateway.yml
+: 1641610577:0;gcmsg "Building Docker image and starting Gateway service locally"
+: 1641610605:0;te readme.md
+: 1641610653:0;gcmsg "OPEB-2485: updated readme"
+: 1641932095:0;g clone https://git.ainq.com/ai-gateway/gateway-v2/gateway.api.querydocument.git
+: 1641932134:0;cd gateway.api.querydocument
+: 1641933201:0;te Gateway.Api.QueryDocument/Gateway.Api.QueryDocument.csproj
+: 1641933577:0;NUGET_USER=gateway_cd
+: 1641933584:0;NUGET_PASSWORD="G@t3w@y_Cd"
+: 1641933808:0;g co Gateway.Api.QueryDocument.Tests/Gateway.Api.QueryDocument.Tests.csproj
+: 1641933826:0;g co Gateway.Api.QueryDocument/Gateway.Api.QueryDocument.csproj
+: 1641933833:0;docker build --pull --build-arg NUGET_USER=$NUGET_USER --build-arg NUGET_PASSWORD=$NUGET_PASSWORD -t dotnet_test -f Gateway.Api.QueryDocument/DockerfileAWS .
+: 1641934741:0;docker build --pull --build-arg NUGET_USER=$NUGET_USER --build-arg NUGET_PASSWORD=$NUGET_PASSWORD -t dotnet_test -f Gateway.Api.QueryDocument.Tests/Dockerfile .
+: 1641934850:0;g co Gateway.Api.QueryDocument.Tests/QDRequestConverterTests.cs
+: 1641938633:0;g co -b unit-testing
+: 1642026572:0;idea &
+: 1642084212:0;if ((echo '[{"username":"user1"},{"username":"user2"}]') | jq '.[] | select(.username=="user1") | length') > 0; then echo "update"; else echo "create"; fi
+: 1642084322:0;echo '[{"username":"user1"},{"username":"user2"}]'
+: 1642084335:0;echo '[{"username":"user1"},{"username":"user2"}]' | jq '.[]'
+: 1642084373:0;echo '[{"username":"user1"},{"username":"user2"}]' | jq '.[] | select ( .username=="user1") | length'
+: 1642084389:0;echo '[{"username":"user1"},{"username":"user2"}]' | jq '.[] | select ( .username=="user3") | length'
+: 1642084476:0;echo '[{"username":"user1"},{"username":"user2"}]' | jq '.[] | select ( .username=="user3") | []'
+: 1642084548:0;echo '[{"username":"user1"},{"username":"user2"}]' | jq '.[] | select ( .username=="user3") | .[]'
+: 1642084581:0;echo '[{"username":"user1"},{"username":"user2"}]' | jq '.[] | select ( .username=="user3") | tolist'
+: 1642084652:0;echo '[{"username":"user1"},{"username":"user2"}]' | jq -c '.[] | select ( .username=="user3")'
+: 1642084663:0;echo '[{"username":"user1"},{"username":"user2"}]' | jq '.[] | select ( .username=="user3")'
+: 1642084666:0;echo '[{"username":"user1"},{"username":"user2"}]' | jq '.[] | select ( .username=="user1")'
+: 1642084731:0;echo '[{"username":"user1"},{"username":"user2"}]' | jq '.[] | contains( .username=="user1")'
+: 1642084740:0;echo '[{"username":"user1"},{"username":"user2"}]' | jq '.[] | contains(username=="user1")'
+: 1642084772:0;echo '[{"username":"user1"},{"username":"user2"}]' | jq '.[] | select(.username) | contains("user1")'
+: 1642084786:0;echo '[{"username":"user1"},{"username":"user2"}]' | jq '.[] | select(.username | contains("user1")'
+: 1642084792:0;echo '[{"username":"user1"},{"username":"user2"}]' | jq '.[] | select(.username | contains("user1"))'
+: 1642084796:0;echo '[{"username":"user1"},{"username":"user2"}]' | jq '.[] | select(.username | contains("user3"))'
+: 1642084841:0;test $(echo '[{"username":"user1"},{"username":"user2"}]' | jq '.[] | select(.username | contains("user3"))')
+: 1642084846:0;test $(echo '[{"username":"user1"},{"username":"user2"}]' | jq '.[] | select(.username | contains("user1"))')
+: 1642084917:0;if $(echo '[{"username":"user1"},{"username":"user2"}]' | jq '.[] | select(.username | contains("user1"))'); then echo 'there'; else echo 'not there' fi
+: 1642084927:0;if $(echo '[{"username":"user1"},{"username":"user2"}]' | jq '.[] | select(.username | contains("user1"))'); then echo 'there'; else echo 'not there'; fi
+: 1642084968:0;if $(echo '[{"username":"user1"},{"username":"user2"}]' | jq '.[] | select(.username | contains("user3"))'); then echo 'there'; else echo 'not there'; fi
+: 1642084979:0;if $(echo '[{"username":"user1"},{"username":"user2"}]' | jq '.[] | select(.username | contains("user3"))'); then echo 'not there'; else echo 'there'; fi
+: 1642084986:0;if $(echo '[{"username":"user1"},{"username":"user2"}]' | jq '.[] | select(.username | contains("user1"))'); then echo 'not there'; else echo 'there'; fi
+: 1642085068:0;if [ -n "$(echo '[{"username":"user1"},{"username":"user2"}]' | jq '.[] | select(.username | contains("user1"))')" ]; then echo 'not there'; else echo 'there'; fi
+: 1642085076:0;if [ -n "$(echo '[{"username":"user1"},{"username":"user2"}]' | jq '.[] | select(.username | contains("user1"))')" ]; then echo 'there'; else echo 'not there'; fi
+: 1642085083:0;if [ -n "$(echo '[{"username":"user1"},{"username":"user2"}]' | jq '.[] | select(.username | contains("user3"))')" ]; then echo 'there'; else echo 'not there'; fi
+: 1642087141:0;htp[
+: 1642089045:0;ps auz
+: 1642089047:0;ps aux
+: 1642089121:0;sudo apt install xeyes
+: 1642089133:0;sudo apt install x11-apps
+: 1642089309:0;env
+: 1642089367:0;export DISPLAY=172.25.224.1:0
+: 1642089610:0;xclock
+: 1642091654:0;env | grep DISP
+: 1642091670:0;curl http://172.25.224.1:8000
+: 1642091772:0;curl https://google.com
+: 1642091862:0;wget -O https://www.google.com/
+: 1642091870:0;wget -O - https://www.google.com/
+: 1642091901:0;wget -O - https://testtenant.test-ainqapps.com/login
+: 1642091928:0;wget -O - http://172.25.224.1:8000
+: 1642092055:0;curl -v http://172.25.224.1:8000
+: 1642098244:0;kill -9 11619
+: 1642098868:0;ifconfig
+: 1642098872:0;ipconfig
+: 1642099559:0;ping 8.8.8.8
+: 1642101139:0;cat /etc/resolv.conf
+: 1642101147:0;ip addre
+: 1642176408:0;powershell.exe /home/esharapov/.emacs.d/scripts/clipboard-to-file.ps1 test.png
+: 1642185979:0;xclip
+: 1642185984:0;apt search xclip
+: 1642185997:0;sudo apt install xclip
+: 1642186060:0;xclip -o > test.png
+: 1642186118:0;echo "Hello" | xclip
+: 1642186119:0;xclip -o
+: 1642186186:0;xclip -selection clipboard -t TARGETS -o
+: 1642187384:0;powershell.exe
+: 1642187414:0;which powershell.exe
+: 1642187530:0;explorer.exe
+: 1642192281:0;l /tmp/
+: 1642192291:0;cat /tmp/scratchM3W2GB
+: 1642192295:0;cat /tmp/scratchlsO6WZ
+: 1642194912:0;powershell.exe /home/esharapov/.emacs.d/scripts/clipboard-to-file.ps1 /home/esharapov/Downloads/Test/dfsgsdfg_20220114_161325_MhKT4m.png
+: 1642478796:0;xeyes &
+: 1642520697:0;sudo rm test3.png
+: 1642520707:0;sudo rm test4.png
+: 1642522443:0;l ~/.local/share
+: 1642522521:0;unzip ~/Downloads/LanguageTool-stable.zip -d $HOME/.local/share/
+: 1642822663:0;.emacs.d
+: 1642822667:0;g pul
+: 1643059611:0;cd Enterprise.Surescripts.Api
+: 1643059635:0;docker build -f DockerfileAWS -t surescriptapi .
+: 1643059698:0;aws configure list
+: 1643059722:0;cat ~/.aws
+: 1643059769:0;te ~/.aws/
+: 1643059858:0;docker run --rm -it -v "$HOME/.aws":/root/.aws surescriptsapi
+: 1643059868:0;docker imagesa
+: 1643060039:0;code ..
+: 1643060478:0;aws --profile entutil-dev s3api list-objects --bucket
+: 1643061562:0;aws --profile entutil-dev s3api list-objects --bucket entutil-dev-surescripts-certs
+: 1643062923:0;docker build -f DockerfileAWS -t surescriptapi ..
+: 1643062950:0;docker run --rm -it -v "$HOME/.aws":/root/.aws surescriptapi
+: 1643063316:0;docker run --rm -it -e AWS_PROFILE=entutil-dev -v "$HOME/.aws":/root/.aws surescriptapi
+: 1643081644:0;cd ~/.emacs.d
+: 1643081658:0;gcmsg "updated capture template"
+: 1643213299:0;pulse.middleware.ee
+: 1643213505:0;docker build -t dirpoller Gateway.Service.DirectoryPoller/DockerfileAWS .
+: 1643213511:0;docker build -t dirpoller -f Gateway.Service.DirectoryPoller/DockerfileAWS .
+: 1643213592:0;docker build --build-arg PROJECT_NAME=Gateway.Service.DirectoryPoller --build-arg PROJECT_FOLDER=Gateway.Service.DirectoryPoller  -t dirpoller -f Gateway.Service.DirectoryPoller/DockerfileAWS .
+: 1643213750:0;docker build --build-arg NUGET_USER=gateway_cd --build-arg NUGET_PASSWORD="G@t3w@y_Cd" --build-arg PROJECT_NAME=Gateway.Service.DirectoryPoller --build-arg PROJECT_FOLDER=Gateway.Service.DirectoryPoller  -t dirpoller -f Gateway.Service.DirectoryPoller/DockerfileAWS .
+: 1643295043:0;l gateway.netcore.services
+: 1643295088:0;e gateway.netcore.services/ &
+: 1643314536:0;ag TenantIdToOIDMap
+: 1643333000:0;find * -type f -not -path '*/.git/*'
+: 1643333015:0;apt search fzf
+: 1643333113:0;sudo apt install fzf
+: 1643393628:0;l /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/security/
+: 1643393636:0;l /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/security/java.security
+: 1643393641:0;te /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/security/java.security
+: 1643403836:0;cat ../PULSE/adt-dispatch-service/src/main/resources/application.properties
+: 1643404145:0;curl -X GET "https://api.datadoghq.com/api/v1/hosts" \\
+     -H "Content-Type: application/json" \\
+     -H "DD-API-KEY: ${DD_API_KEY}" \\
+     -H "DD-APPLICATION-KEY: ${DD_API_KEY}"
+: 1643404551:0;curl -X GET "https://api.datadoghq.com/api/v1/validate" \\
+-H "Content-Type: application/json" \\
+-H "DD-API-KEY: ${DD_API_KEY}"
+: 1643404972:0;echo $DD_API_KEY
+: 1643405030:0;curl -X GET "https://api.datadoghq.com/api/v1/dashboard/lists/manual" \\
+-H "Content-Type: application/json" \\
+-H "DD-API-KEY: ${DD_API_KEY}"
+: 1643405042:0;curl -X GET "https://api.datadoghq.com/api/v1/dashboard/lists/manual" \\
+-H "Content-Type: application/json" \\
+-H "DD-API-KEY: ${DD_API_KEY}" \\
+-H "DD-APPLICATION-KEY: ${DD_APP_KEY}"
+: 1643405163:0;curl -X GET "https://api.datadoghq.com/api/v1/hosts" \\
+-H "Content-Type: application/json" \\
+-H "DD-API-KEY: ${DD_API_KEY}" \\
+-H "DD-APPLICATION-KEY: ${DD_APP_KEY}"
+: 1643666208:0;Emacs
+: 1643666219:0;EmacsOrg
+: 1643666226:0;g clone https://github.com/hypernumbers/learn_elisp_the_hard_way.git
+: 1643670815:0;curl -X GET "https://api.datadoghq.com/api/v1/hosts" \\
+-H "Content-Type: application/json" \\
+-H "DD-API-KEY: ${DD_API_KEY}" \\
+-H "DD-APPLICATION-KEY: ${DD_APP_KEY}" | jq .
+: 1643751347:0;curl -IvL https://testapi.crisphealth.org/ccda-federator/list
+: 1643751564:0;mkdir SSL
+: 1643752110:0;te TestSSL.java
+: 1643752193:0;javac TestSSL.java
+: 1643845657:0;ag -g DocumentSearchImpl
+: 1643845662:0;code . &
+: 1643899614:0;docker image prune
+: 1643900371:0;npm init
+: 1643900419:0;npm i --save  dd-trace
+: 1643901225:0;mkdir Custom
+: 1643901229:0;yarn
+: 1643901614:0;cat ~/.npmrc
+: 1643901838:0;npm i dd-trace
+: 1643901890:0;te ~/.npmrc
+: 1643901953:0;curl github.com
+: 1643902003:0;npm i
+: 1643902012:0;npm i lodash
+: 1643902079:0;ip addr
+: 1643902398:0;ping github.com
+: 1643902566:0;cd Projects/DataDog
+: 1643902570:0;cd Custom
+: 1643902577:0;yarn create @datadog/app
+: 1643902839:0;cat README.MD
+: 1643902906:0;chmod +x
+: 1643902921:0;l .gradle
+: 1643902935:0;chown esharapov:esharapov -R .gradle
+: 1643902939:0;sudo chown esharapov:esharapov -R .gradle
+: 1643903075:0;cd starter-kit
+: 1643903667:0;cat README.md
+: 1643903682:0;yarn build
+: 1643903698:0;yarn start
+: 1643914145:0;l docker-dd-agent
+: 1643914172:0;datadog-java-apm
+: 1643914178:0;cat agent
+: 1643914184:0;cat agent/datadog.conf
+: 1643916559:0;pip search datadog
+: 1643916572:0;python --version
+: 1643916687:0;cat <EOF >> requirements.txt
+: 1643916698:0;echo datadog >> requirements.txt
+: 1643916704:0;pip install -r requirements.txt
+: 1643916777:0;python gatewaymon.py
+: 1643917141:0;python
+: 1643917148:0;ptpython
+: 1643941350:0;ulp-core
+: 1643941378:0;servic
+: 1643941456:0;mc
+: 1643941475:0;which mc
+: 1643941885:0;g co -b OPEB-2558-update-lockfiles
+: 1643941905:0;gcmsg "OPEB-2558: updated lockfiles"
+: 1643942153:0;cd GATE/Monitor
+: 1643942168:0;cat package.json
+: 1643942177:0;cat gen-hostmap-data.js
+: 1643942187:0;rd .log
+: 1643942198:0;rm gen-hostmap-data.js
+: 1643942202:0;rm package
+: 1643942207:0;rm package-lock.json package.json
+: 1643942258:0;cp -R ../../DataDog/Custom .
+: 1643942299:0;cp -R ../../DataDog/datadog-java-apm .
+: 1643942496:0;DataDog/
+: 1643942504:0;l datadog
+: 1643942512:0;l datadog/conf.d
+: 1643942520:0;less datadog/conf.d/docker_daemon.yaml
+: 1643942560:0;l trace-examples
+: 1643942584:0;less trace-examples/python/README.md
+: 1643942809:0;l dd-test
+: 1643942837:0;less dd-test/build.gradle 
+: 1643943553:0;l datadog-java-apm
+: 1643943580:0;cd datadog-java-apm
+: 1643943588:0;cat .gitignore
+: 1643943599:0;mv .gitignore ..
+: 1643943605:0;rd .git
+: 1643943675:0;gcmsg "OPEB-2588: initial commit"
+: 1643943775:0;remote add origin git@git.ainq.com:ai-gateway/gw-monitor-poc.git
+: 1643943778:0;g remote add origin git@git.ainq.com:ai-gateway/gw-monitor-poc.git
+: 1643943790:0;g push -u origin master
+: 1643943930:0;g remote add origin https://git.ainq.com/ai-gateway/gw-monitor-poc.git
+: 1643943957:0;g push -u origin --tags
+: 1643943982:0;mv ~/ai-worklog/Gateway.org .
+: 1643944006:0;gcmsg "added info file"
+: 1643944096:0;docker run -d --name dd-agent -v /var/run/docker.sock:/var/run/docker.sock:ro -v /proc/:/host/proc/:ro -v /sys/fs/cgroup/:/host/sys/fs/cgroup:ro -e DD_API_KEY=5c2847ceb78a6b1251d4d4f7bd520d61 -e DD_SITE="datadoghq.com" gcr.io/datadoghq/agent:7
+: 1643944639:0;md custom-check
+: 1643944643:0;cd custom-check
+: 1643944858:0;docker exec -it dd-agent bash
+: 1643991173:0;services
+: 1643991220:0;sh gradlew clean build
+: 1643995238:0;g co -b opeb-2558-update-ssl-tls
+: 1643995265:0;chmod +x ./gradlew
+: 1643995890:0;./gradlew dependencies --write-locks
+: 1643996107:0;./gradlew goJF
+: 1643996148:0;gcmsg "OPEB-2558: updated dependencies"
+: 1643996268:0;gcmsg "OPEB-2558: ensure SSL protocol is not deprecated on updated JVM"
+: 1644009232:0;mkdir CRISP
+: 1644009239:0;g clone https://github.com/evgeniysharapov/CRISP.git
+: 1644009298:0;gcmsg "added services 1.29. fix"
+: 1644012096:0;ag SSLv3
+: 1644012098:0;ag SSL
+: 1644012453:0;cp ../../Projects/ULP/services/build/libs/services.war .
+: 1644012472:0;gcmsg "added services.war updated"
+: 1644251153:0;pgrep -v  emacs 
+: 1644251168:0;man pgrep
+: 1644251206:0;kill 1823
+: 1644251208:0;pgrep -a emacs 
+: 1644252016:0;g co release_1.29
+: 1644252029:0;g merge opeb-2558-update-ssl-tls
+: 1644252051:0;g merge release_1.29
+: 1644252078:0;g tag --help
+: 1644252698:0;PULSE
+: 1644252703:0;cd pulse-nodejs-service
+: 1644252706:0;ag email
+: 1644252855:0;Ai
+: 1644252864:0;ag sendEmail
+: 1644259165:0;cat CRISP
+: 1644259181:0;ag -g TestSSL*
+: 1644265849:0;cd
+: 1644265852:0;ai-worklog
+: 1644265865:0;less Worklog.org
+: 1644265919:0;du -hS Worklog
+: 1644265928:0;du -hS img
+: 1644265931:0;du -hS files
+: 1644265940:0;cd Worklog
+: 1644265972:0;convert --help
+: 1644266038:0;identify -ping r2021-10-Release-Pre-PI-Initiative-Review-for-ERP-Team_20210616_120539_HjdHgX.png
+: 1644266070:0;identify -ping Working-on-Security-Training_20210901_120510_ifocjo.png
+: 1644266105:0;l | wc -l
+: 1644266154:0;chown esharapov:esharapov *
+: 1644266158:0;sudo chown esharapov:esharapov *
+: 1644270584:0;l Apps
+: 1644270587:0;cd Apps
+: 1644270694:0;hgrep dotnet
+: 1644270700:0;hgrep apt dotnet
+: 1644270705:0;hgrep apt install
+: 1644270707:0;hgrep apt
+: 1644270738:0;sudo apt-get update
+: 1644270996:0;dotnet --list-skds
+: 1644271224:0;sudo apt-get install -y dotnet-sdk-6.0
+: 1644336692:0;l Projects
+: 1644336710:0;l PULSE
+: 1644336717:0;l ULP
+: 1644336727:0;l ULP/CRISP
+: 1644336757:0;l CRISP
+: 1644336763:0;l CRISP/CRISP
+: 1644336776:0;mv CRISP/CRISP Projects/.
+: 1644336779:0;cd Projects
+: 1644336796:0;CRISP
+: 1644336802:0;rd CRISP
+: 1644336924:0;cd Money
+: 1644336943:0;cat 2021
+: 1644336946:0;l 2021
+: 1644336957:0;l 2021/processed
+: 1644336990:0;cat journal.ledger
+: 1644336999:0;cat meta.ledger
+: 1644337044:0;...
+: 1644337051:0;l Py
+: 1644337060:0;du -hS hapi-fhir
+: 1644337064:0;du -hs hapi-fhir
+: 1644337082:0;Projects
+: 1644337091:0;du -hs java-saml
+: 1644337095:0;du -hs ULP
+: 1644337111:0;du -hs PULSE
+: 1644337127:0;du -hs Ocaml
+: 1644337756:0;cp ~/Downloads/ainq-ulp-crisp-services-1.29.1.war CRISP/.
+: 1644338703:0;cd CRISP
+: 1644338732:0;cp ainq-ulp-crisp-services-1.29.1.war services_1.zip
+: 1644338746:0;cp services.war services.zip
+: 1644338944:0;mv ainq-ulp-crisp-services-1.29.1.war services.war
+: 1644338975:0;gcmsg "OPEB-2558: updated services.war to 1.29.1"
+: 1644341247:0;dotnet --version
+: 1644341259:0;code
+: 1644343249:0;te ~/.nuget
+: 1644343336:0;dotnet nuget list
+: 1644343348:0;dotnet source list
+: 1644343355:0;dotnet source
+: 1644343367:0;dotnet nuget source
+: 1644343371:0;dotnet nuget source list
+: 1644343393:0;Projects/FSharp
+: 1644351109:0;code COVID.dib
+: 1644351957:0;mv ~/Downloads/COVID-19-fsharp.dib .
+: 1644354488:0;which java
+: 1644354530:0;find -f /usr/share/ -name java.security
+: 1644354537:0;find /usr/share/ -f -name java.security
+: 1644354541:0;find /usr/share/ -name java.security
+: 1644354716:0;curl -vvv https://testapi.crisphealth.org/ccda-federator/list
+: 1644354753:0;te SSL
+: 1644354917:0;cd SSL
+: 1644354919:0;java -Djavax.net.debug=ssl -Dhttps.protocols=TLSv1.1,TLSv1,TLSv1.2 -Djavax.net.debug=all -Djavax.net.debug=all TestSSL  https://testapi.crisphealth.org/ccda-federator/list
+: 1644445588:0;code Gateway.Service.DirectoryMonitor
+: 1644445606:0;ag DirectoryView
+: 1644445624:0;code Gateway.Api.DirectoryService
+: 1644445827:0;cd Gateway.Api.DirectoryService
+: 1644511938:0;cat Gateway.Service.DirectoryPoller/Gateway.Service.DirectoryPoller.csproj
+: 1644513388:0;Gate
+: 1644517049:0;ag -g styles*
+: 1644517077:0;te ainq-web-client-framework/src/components/styles.scss
+: 1644517124:0;ag document-result
+: 1644517127:0;ag document-results
+: 1644517136:0;ag .document-results
+: 1644517145:0;cd ../PULSE
+: 1644517291:0;ag doc-modal-container
+: 1644517314:0;te pulse-application/src/components/pages/search-page/search-content/document-view
+: 1644517346:0;cd pulse-application/src/components/pages/search-page/search-content/document-view
+: 1644517348:0;explorer.exe .
+: 1644533673:0;g co -b dd-metrics
+: 1644533764:0;dotnet nuget
+: 1644533778:0;dotnet reference
+: 1644533783:0;dotnet add
+: 1644533870:0;cd Gateway.Service.DirectoryPoller
+: 1644533921:0;chown -R esharapov:esharapov  bin
+: 1644533925:0;sudo chown -R esharapov:esharapov  bin
+: 1644533933:0;sudo chown -R esharapov:esharapov  obj
+: 1644534148:0;l /tmp/NuGetScratch
+: 1644534156:0;l /tmp/NuGetScratch/lock
+: 1644534170:0;chown -R esharapov:esharapov /tmp/NuGetScratch
+: 1644534173:0;sudo chown -R esharapov:esharapov /tmp/NuGetScratch
+: 1644545212:0;echo .ionide >> .gitignore
+: 1644546931:0;docker run -d --name dd-agent -v /var/run/docker.sock:/var/run/docker.sock:ro -v /proc/:/host/proc/:ro -v /sys/fs/cgroup/:/host/sys/fs/cgroup:ro -e DD_API_KEY=5c2847ceb78a6b1251d4d4f7bd520d61 -e DD_SITE="datadoghq.com" -e DD_DOGSTATSD_NON_LOCAL_TRAFFIC="true" -p 8126:8126 -p 8125:8125 gcr.io/datadoghq/agent:7
+: 1644546957:0;docker kill dd-agent
+: 1644547023:0;python ddtest1.py
+: 1644552395:0;gcmsg "OPEB-2588: added DD tracer to the project"
+: 1644552405:0;g push -u origin dd-metrics
+: 1644594989:0;ag "that already exists in the list for"
+: 1644595056:0;cd gateway.netcore.services.shared
+: 1644595069:0;g co master
+: 1644595389:0;ag "entry for"
+: 1644595732:0;ag "**MISSING**"
+: 1644595739:0;ag "\*\*MISSING\*\*"
+: 1644598030:0;dotnet --list-runtimes
+: 1644598035:0;dotnet --list-sdks
+: 1644598085:0;apt  search aspnet
+: 1644598129:0;sudo apt install -y aspnetcode-runtime-3.1
+: 1644598139:0;sudo apt install -y aspnetcore-runtime-3.1
+: 1644605139:0;ag "results written to database"
+: 1644606982:0;ag Gateway.Shared
+: 1644606991:0;ag Gateway.Common
+: 1644607039:0;rd Gateway.Service.DirectoryPoller
+: 1644607053:0;l Gateway.Adapter.DirectoryService
+: 1644607070:0;less Gateway.Adapter.DirectoryService/IDirectoryServiceAdapter.cs
+: 1644607078:0;less Gateway.Adapter.DirectoryService/DefaultDirectoryServiceAdapter.cs
+: 1644610858:0;l aigatewaydocker/data
+: 1644610864:0;l aigatewaydocker/data/readme.md
+: 1644610866:0;less aigatewaydocker/data/readme.md
+: 1644610910:0;echo aigatewaydocker/data/mysql >> .agignore
+: 1644610920:0;echo aigatewaydocker/data/mysql-1.1 >> .agignore
+: 1644612104:0;ag
+: 1644612106:0;ag --version
+: 1644612128:0;rg
+: 1644612133:0;rg --version
+: 1644612142:0;rg --help
+: 1644612149:0;rg DirectoryServiceAdapter
+: 1644612321:0;mv .agignore .ignore
+: 1644612324:0;ag DirectoryServiceAdapter
+: 1644613802:0;ag ConnectivityMonitoringDatabaseConnectionString
+: 1644721967:0;g co -b opeb-2588-dd-monitor
+: 1644721999:0;gcmsg "OPEB-2588: updated launch settings"
+: 1644722016:0;g push -u origin opeb-2588-dd-monitor
+: 1644722729:0;cd Gateway.Service.DirectoryMonitor
+: 1644722745:0;cat Gateway.Service.DirectoryMonitor.csproj
+: 1644722761:0;dotnet add package Datadog.Trace
+: 1644723810:0;ag statsd
+: 1644723964:0;dotnet add package DogStatsD-CSharp-Client --version 7.0.0
+: 1644726579:0;gcmsg "OPEB-2588: sending metrics and service checks from dir monitor"
+: 1644727998:0;g merge origin/OPEB-2524
+: 1644807833:0;docker rm dd-agent
+: 1644807837:0;docker run -d --name dd-agent -v /var/run/docker.sock:/var/run/docker.sock:ro -v /proc/:/host/proc/:ro -v /sys/fs/cgroup/:/host/sys/fs/cgroup:ro -e DD_API_KEY=5c2847ceb78a6b1251d4d4f7bd520d61 -e DD_SITE="datadoghq.com" -e DD_DOGSTATSD_NON_LOCAL_TRAFFIC="true" -p 8126:8126 -p 8125:8125/udp gcr.io/datadoghq/agent:7
+: 1644807845:0;docker logs dd-agent
+: 1644807852:0;docker logs -f dd-agent
+: 1644808876:0;hostname
+: 1644809590:0;gcmsg "OPEB-2588: added port and ip for the StatsD"
+: 1644850906:0;pgrep e
+: 1644865768:0;pgrep -v emacs
+: 1644865782:0;kill 12379
+: 1644879353:0;gcmsg "OPEB-2588: updated monitoring metrics sent to DD"
+: 1644879419:0;cd GaTE
+: 1644879426:0;Projects/GATE
+: 1644879595:0;docker pull mavben
+: 1644879599:0;docker pull maven
+: 1644879727:0;docker run maven --version
+: 1644879759:0;java --version
+: 1644879776:0;update-alternatives
+: 1644879784:0;update-alternatives --list
+: 1644879786:0;update-alternatives --list java
+: 1644879851:0;sudo update-alternatives --config java
+: 1644879874:0;docker run maven mvn --version
+: 1644880087:0;curl -Ls https://sh.jbang.dev | sh -s - app install --fresh --force quarkus@quarkusio
+: 1644880103:0;jbang
+: 1644880107:0;l .jbang
+: 1644880119:0;apt search jbang
+: 1644880200:0;apt search sdkman
+: 1644889529:0;docker run -it -w /app -v $PWD:/app maven mvn io.quarkus.platform:quarkus-maven-plugin:2.7.1.Final:create \\
+    -DprojectGroupId=com.ainq.gateway \\
+    -DprojectArtifactId=gateway-monitor \\
+    -Dextensions="resteasy"
+: 1644889853:0;id
+: 1644890023:0;id -u
+: 1644890025:0;id -g
+: 1644890062:0;echo $UID
+: 1644890065:0;echo $GIT
+: 1644890067:0;echo $GID
+: 1644890086:0;sudo rm -rf gateway-monitor
+: 1644890137:0;docker run -it -u $UID:$GID -w /tmp/app -v $PWD:/tmp/app maven mvn io.quarkus.platform:quarkus-maven-plugin:2.7.1.Final:create \\
+    -DprojectGroupId=com.ainq.gateway \\
+    -DprojectArtifactId=gateway-monitor \\
+    -Dextensions="resteasy"
+: 1644890232:0;l gateway
+: 1644890235:0;l gateway-monitor
+: 1644890552:0;alias mvn="docker run -it -u $UID:$GID -w /tmp/app -v $PWD:/tmp/app -v $HOME/.m2:/var/maven/.m2 -e MAVEN_CONFIG=/var/maven/.m2 maven mvn -Duser.home=/var/maven"
+: 1644890556:0;mvn --version
+: 1644890613:0;mvn io.quarkus.platform:quarkus-maven-plugin:2.7.1.Final:create \\
+    -DprojectGroupId=com.ainq.gateway \\
+    -DprojectArtifactId=gateway-monitor \\
+    -Dextensions="resteasy"
+: 1644890699:0;alias mvn="docker run --rm -it -u $UID:$GID -w /tmp/app -v $(pwd):/tmp/app -v $HOME/.m2:/var/maven/.m2 -e MAVEN_CONFIG=/var/maven/.m2 maven mvn -Duser.home=/var/maven"
+: 1644890703:0;docker ps
+: 1644890719:0;docker rm youthful_lamarr
+: 1644890724:0;docker rm clever_mayer
+: 1644890730:0;docker rm dreamy_gauss
+: 1644890734:0;docker rm gifted_diffie
+: 1644890747:0;docker rm b9639bfbdefc
+: 1644890752:0;docker rm hopeful_ptolemy
+: 1644890756:0;docker rm kind_keldysh
+: 1644890761:0;docker rm peaceful_ritchie
+: 1644890765:0;docker rm xenodochial_galois
+: 1644890768:0;docker ps -a
+: 1644890775:0;mvn clean build install
+: 1644890785:0;mvn clean install
+: 1644890827:0;l target
+: 1644890977:0;mvnw
+: 1644890984:0;which gradlew
+: 1644890989:0;which gradle
+: 1644890993:0;gradle
+: 1644891011:0;./mvnw quarkus:dev
+: 1644935914:0;curl -Ls https://sh.jbang.dev | bash -s - app install --fresh --force quarkus@quarkusio
+: 1644936483:0;quarkys
+: 1644936511:0;l ~/.jbang
+: 1644936516:0;l ~/.jbang/bin
+: 1644936816:0;export PATH=$HOME/.jbang/bin:$PATH
+: 1644936826:0;quarkus --version
+: 1644937620:0;gateway-monitor
+: 1644937833:0;java -version
+: 1644937844:0;apt search maven
+: 1644937863:0;sudo apt update
+: 1644943086:0;apt search maven$
+: 1644943102:0;which quarkus
+: 1644943109:0;cat quarkus
+: 1644943121:0;cat $(which quarkus)
+: 1644943133:0;te ~/.jbang
+: 1644943237:0;quarkus registry list
+: 1644943284:0;quarkus create app
+: 1644943314:0;rd code-with-quarkus
+: 1644943322:0;quarkus ext list
+: 1644943427:0;quarkus create app --help
+: 1644943490:0;quarkus create app --gradle com.ainq.gateway:gateway-monitor
+: 1644943514:0;./gradlew build
+: 1644945506:0;l build.
+: 1644945575:0;./gradlew clean
+: 1644946015:0;python -m http.server 8080 &
+: 1644946049:0;python -m http.server 9000 &
+: 1644948434:0;kill -9 415
+: 1644960059:0;rd '?'
+: 1644960073:0;quarkus build
+: 1644960191:0;quarkus dev --help
+: 1644960223:0;quarkus dev --verbose --clean --refresh
+: 1644960266:0;quarkus build dev --verbose --clean --refresh
+: 1644960283:0;quarkus
+: 1644960300:0;quarkus build --help
+: 1644960314:0;quarkus build --native
+: 1644960592:0;l build
+: 1644960608:0;./build/gateway-monitor-1.0.0-SNAPSHOT-runner
+: 1644960689:0;./gradlew --console=plain quarkusDev
+: 1645023376:0;GATE/Monitor
+: 1645038110:0;cd gateway-monitor
+: 1645040104:0;gcmsg "OPEB-2588: updated monitoring events data being sent to DD"
+: 1645043759:0;ag PDQRequestConverter
+: 1645044250:0;gcmsg "OPEB-2588: added java based quarkus monitor skeleton"
+: 1645044304:0;pip3 install "datadog-checks-dev[cli]"
+: 1645048923:0;l custom-check
+: 1645048930:0;dd custom-check
+: 1645048937:0;rd custom-check
+: 1645048951:0;l Custom
+: 1645048955:0;l Custom/starter-kit
+: 1645048959:0;l Custom/starter-kit/src
+: 1645048966:0;l Custom/starter-kit/src/widget
+: 1645048972:0;less Custom/starter-kit/src/widget/index.tsx
+: 1645049908:0;gcmsg "OPEB-2588: added more checks and metrics"
+: 1645050005:0;ping google.com
+: 1645050761:0;cd gateway.netcore.services
+: 1645050784:0;cd ~/ai-worklog
+: 1645050798:0;gcmsg "updated worklog"
+: 1645064767:0;du -hs ai-worklog
+: 1645067046:0;gcmsg "OPEB-2588: fixing typo with ; "
+: 1645108181:0;kill 10651
+: 1645108654:0;ag -g masterList*
+: 1645108661:0;ag -g master
+: 1645109744:0;gcmsg "OPEB-2588: tidying up events and metrics and tags"
+: 1645126699:0;gcmsg "OPEB-2588: updating python script"
+: 1645131591:0;rd gateway-monitor
+: 1645131620:0;gcmsg "removed java gateway-monitor project"
+: 1645131730:0;cd DataDog
+: 1645131734:0;g clone https://github.com/DataDog/integrations-extras.git
+: 1645132739:0;te integrations-extras/
+: 1645132912:0;python -m pip install --upgrade "datadog-checks-dev[cli]"
+: 1645193632:0;ddev
+: 1645210736:0;te .
+: 1645211454:0;AiConnectAdapters
+: 1645211508:0;rm DocQueryPolicyChecker.java
+: 1645211516:0;rm dependency-reduced-pom.xml
+: 1645211576:0;l Gateway.Api.PatientDiscovery
+: 1645211595:0;l Gateway.Api.QueryDocument
+: 1645211604:0;rd Gateway.Api.QueryDocument
+: 1645211613:0;l Gateway.Api.RetrieveDocument
+: 1645213621:0;Monitor
+: 1645213631:0;cat ~/Downloads/masterList.json
+: 1645213637:0;cat ~/Downloads/masterList.json | jq '.'
+: 1645213745:0;cat ~/Downloads/masterList.json | jq '$.length'
+: 1645213749:0;cat ~/Downloads/masterList.json | jq 'length'
+: 1645214381:0;rd Gateway.Api.PatientDiscovery
+: 1645214405:0;grhh
+: 1645214503:0;cat ~/Downloads/masterList.json| jq 'length'
+: 1645215519:0;cat ~/Downloads/currentStatus.json | jq 'length'
+: 1645215535:0;cat ~/Downloads/currentStatus.json | jq '.[0]'
+: 1645215559:0;cat ~/Downloads/masterList.json | jq '.[0]'
+: 1645216328:0;cat ~/Downloads/masterList.json | grep 88.99.11.22
+: 1645216341:0;cat ~/Downloads/masterList.json | jq '.' | grep 88.99.11.22
+: 1645216367:0;cat ~/Downloads/masterList.json | jq '.[oid=88.99.11.22]'
+: 1645216724:0;cat ~/Downloads/masterList.json | jq '.[] | select (.oid = 88.99.11.22)'
+: 1645216744:0;cat ~/Downloads/masterList.json | jq '.[] | select (.oid ==  88.99.11.22)'
+: 1645216753:0;cat ~/Downloads/masterList.json | jq '.[] | select (.oid ==  "88.99.11.22")'
+: 1645218648:0;cat ~/Downloads/masterList.json | jq '.[] | select (.oid ==  "88.99.11.22")' > ~/Projects/GATE/Monitor/nodes.json
+: 1645220369:0;cat bootstrap.sh
+: 1645221196:0;dotnet 
+: 1645221784:0;dotnet new webapi -lang F# -o gateway.dd.service 
+: 1645221795:0;cd gateway.dd.service
+: 1645221807:0;rd gateway.dd.service
+: 1645221828:0;dotnet new webapi -lang F# -o gateway.api.datadog
+: 1645221835:0;cd gateway.api.datadog
+: 1645222039:0;dotnet add package Swashbuckle.AspNetCore
+: 1645224616:0;fsi
+: 1645226795:0;dotnet add package FSharp.Configuration
+: 1645235782:0;gateway.api.datadog
+: 1645235861:0;quarkus create app --gradle com.ainq.gateway:gateway-api-datadog
+: 1645236135:0;quarkus --help
+: 1645236595:0;te gateway.api.datadog
+: 1645236663:0;mv gateway.api.datadog/gateway-api-datadog .
+: 1645236669:0;cd gateway-api-datadog
+: 1645238436:0;quarkus extension add 'quarkus-smallrye-openapi'
+: 1645238533:0;quarkus dev
+: 1645238839:0;quarkus extension add 'quarkus-resteasy-jsonb'
+: 1645239400:0;cd Monitor
+: 1645239410:0;e Gateway.org&
+: 1645239574:0;quarkus extension add 'quarkus-config-yaml'
+: 1645245179:0;./gradlew quarkusBuild --help
+: 1645245222:0;./gradlew build -Dquarkus.package.type=native
+: 1645320716:0;pgrep idea | xargs kill
+: 1645322172:0;pgrep -a emacs
+: 1645323423:0;pgrep idea
+: 1645323435:0;pgrep java
+: 1645323439:0;pgrep -a java
+: 1645323446:0;kill -9 5111
+: 1645324103:0;ag CompileNewOrganizationMasterList
+: 1645324139:0;gateway.netcore.services.shared
+: 1645327922:0;hgrep quarkus
+: 1645327952:0;quarkus extension add 'quarkus-reasteasy-jackson'
+: 1645328013:0;quarkus ext ls --help
+: 1645328017:0;quarkus ext ls
+: 1645412333:0;curl localhost:8080
+: 1645412686:0;ag "Failed to retrieve internal identifier mappings:
+: 1645412803:0;ag profile
+: 1645413786:0;ag "Failed to retrieve internal identifier mappings"
+: 1645414897:0;ag loggerconfiguration
+: 1645418795:0;gcmsg "OPEB-2588: updating poller adding creating of the GatewayMonitor on datadog"
+: 1645497852:0;ag httpclient
+: 1645499814:0;g init
+: 1645499846:0;gcmsg "OPEB-2588: created gateway-api-datadog microservice"
+: 1645499949:0;g remote add origin https://git.ainq.com/ai-gateway/gateway-v2/gateway-datadog-api.git
+: 1645499961:0;g push -u origin --all
+: 1645501619:0;gcmsg "OPEB-2588: updating list of entries for GW monitors and extenralizing gataway-datadog-api to config file"
+: 1645502561:0;./gradlew assemble
+: 1645502582:0;./gradlew tasks
+: 1645502780:0;cat src/main/docker/Dockerfile.jvm
+: 1645504755:0;dotnet new -i SAFE.Template
+: 1645504930:0;dotnet new webapi -lang F# -o Gateway.Dir.Poller
+: 1645559642:0;gateway-api-datadog
+: 1645560669:0;gts
+: 1645564061:0;dotnet run Gateway.Service.DirectoryPoller
+: 1645564067:0;dotnet run Gateway.Service.DirectoryPoller/Gateway.Service.DirectoryPoller.csproj
+: 1645581345:0;curl https://dev-dir-ceq.sequoiadns.org/fhir-stu3/1.0.1/Organization/?apikey=CvNxnK_KFc73sawJlyU8-noWFLFJYwGP7gIW2GIqChg_zs3hRE&_format=json&_start=1&_count=99
+: 1645581357:0;curl "https://dev-dir-ceq.sequoiadns.org/fhir-stu3/1.0.1/Organization/?apikey=CvNxnK_KFc73sawJlyU8-noWFLFJYwGP7gIW2GIqChg_zs3hRE&_format=json&_start=1&_count=99"
+: 1645581379:0;curl -v "https://dev-dir-ceq.sequoiadns.org/fhir-stu3/1.0.1/Organization/?apikey=CvNxnK_KFc73sawJlyU8-noWFLFJYwGP7gIW2GIqChg_zs3hRE&_format=json&_start=1&_count=99"
+: 1645582310:0;ag dataSource
+: 1645583070:0;chown -r esharapov:esharapov .vscode
+: 1645583075:0;chown -r esharapov:esharapov .ionide
+: 1645583081:0;sudo chown -r esharapov:esharapov .ionide
+: 1645583090:0;sudo chown -R esharapov:esharapov .ionide
+: 1645583095:0;sudo chown -R esharapov:esharapov .vscode
+: 1645583110:0;chown -R esharapov:esharapov AwsTest.fsx
+: 1645583113:0;sudo chown -R esharapov:esharapov AwsTest.fsx
+: 1645583120:0;dotnet fsi AwsTest.fsx
+: 1645583406:0;ag "nuget"
+: 1645583592:0;l /tmp/nuget
+: 1645583601:0;l /tmp/nuget/21769--9c332e1c-4b5d-4a23-bc7d-e55442250617
+: 1645583605:0;l /tmp/nuget/21769--9c332e1c-4b5d-4a23-bc7d-e55442250617/obj
+: 1645583660:0;cat Gateway.Dir.Poller.fsproj
+: 1645583683:0;cat .vscode/tasks.json
+: 1645583698:0;l .ionide
+: 1645583702:0;l .ionide/symbolCache.db
+: 1645583709:0;rd .ionide
+: 1645583945:0;dotnet add package AWSSDK.S3
+: 1645584984:0;l .vscode
+: 1645584997:0;l Controllers
+: 1645585010:0;l Program.fs
+: 1645585013:0;less Program.fs
+: 1645641166:0;dotnet new -i Amazon.Lambda.Templates
+: 1645644618:0;l Gateway.Service.DirectoryPoller/Helpers
+: 1645644623:0;l Gateway.Service.DirectoryPoller/Models
+: 1645648218:0;l pipeline-common
+: 1645648348:0;g clone https://git.ainq.com/ai-platform-development/cicd/pulse-stage.git
+: 1645648391:0;cd pulse-stage
+: 1645653821:0;../GATE
+: 1645655279:0;ENS
+: 1645655283:0;g clone https://git.ainq.com/enterprise-components/enterprise.surescripts.netcore.git
+: 1645655289:0;cd enterprise.surescripts.netcore
+: 1645730732:0;../gateway-api-datadog
+: 1645730735:0;./gradlew quarkusDev
+: 1645757490:0;gcmsg "OPEB-2588: move calls to datadog to the project"
+: 1645757523:0;dotnet new xunit -lang F# -o Gateway.Service.DirectoryPoller.Tests
+: 1645757557:0;dotnet sln -h
+: 1645757583:0;dotnet sln add Gateway.Service.DirectoryPoller.Tests/Gateway.Service.DirectoryPoller.Tests.fsproj
+: 1645757627:0;dotnet add ./Gateway.Service.DirectoryPoller.Tests/Gateway.Service.DirectoryPoller.Tests.fsproj reference ./Gateway.Service.DirectoryPoller/Gateway.Service.DirectoryPoller.csproj
+: 1645757766:0;gcmsg "OPEB-2588: added unit tests"
+: 1645757975:0;cd Gateway.Service.DirectoryPoller.Tests
+: 1645758373:0;cat ../Gateway.Service.DirectoryPoller/DirectoryPollerService.cs
+: 1645759883:0;gcmsg "OPEB-2588: tests and amended the JSON conversion"
+: 1645761261:0;l Gateway.Service.DirectoryPoller
+: 1645761761:0;DD_API_KEY=898cebd8908f13dd398a4bc47e42f092
+: 1645761764:0;DD_APP_KEY=319aef0c2be3da27e2eaa4425696acaa8daae732
+: 1645761787:0;curl -X GET "https://api.datadoghq.com/api/v1/monitors" \\
+-H "Content-Type: application/json" \\
+-H "DD-API-KEY: ${DD_API_KEY}" \\
+-H "DD-APPLICATION-KEY: ${DD_APP_KEY}" | jq .
+: 1645761811:0;curl -X GET "https://api.datadoghq.com/api/v1/monitors" \\
+-H "Content-Type: application/json" \\
+-H "DD-API-KEY: ${DD_API_KEY}" \\
+-H "DD-APPLICATION-KEY: ${DD_APP_KEY}"
+: 1645761910:0;curl -X GET "https://api.datadoghq.com/api/v1/monitor" \\
+-H "Content-Type: application/json" \\
+-H "DD-API-KEY: ${DD_API_KEY}" \\
+-H "DD-APPLICATION-KEY: ${DD_APP_KEY}"
+: 1645762397:0;curl -X GET "https://api.datadoghq.com/api/v1/monitor/searchq \\
+-H "Content-Type: application/json" \\
+-H "DD-API-KEY: ${DD_API_KEY}" \\
+-H "DD-APPLICATION-KEY: ${DD_APP_KEY}"
+: 1645762537:0;cd gateway.service.directorypoller
+: 1645762566:0;gcmsg "OPEB-2588: added tests (DIB) and logging over HttpCLient"
+: 1645762678:0;gcmsg "OPEB-2537: updated pipeline - posting release to the stage account"
+: 1645762892:0;gcmsg "OPEB-2537: fixed stage in the pipeline"
+: 1645799759:0;pgrep emacsclient
+: 1645799764:0;pgrep emacsclient | xargs kill
+: 1645799845:0;xeyes
+: 1645799872:0;pgrep emacs 
+: 1645810054:0;g co r2022-03
+: 1645810058:0;g merge opeb-2537-pipeline-stage
+: 1645812990:0;gd 3.3.3 .. 3.3.5
+: 1645815104:0;gd 3.3.3..3.3.5
+: 1645815250:0;g describe --tags $(git rev-list --tags --max-count=10)
+: 1645815261:0;g describe --tags --abbrev=0
+: 1645821721:0;cat ~/Downloads
+: 1645821737:0;cat ~/Downloads/*csv
+: 1645821743:0;l ~/Downloads/*csv
+: 1645821924:0;l ~/Downloads/new_user_credentials\(1\).csv
+: 1645822082:0;tail -n +1 ~/Downloads/new_user_credentials\(2\).csv
+: 1645822088:0;tail -n +2 ~/Downloads/new_user_credentials\(2\).csv
+: 1645822102:0;tail -n +2 ~/Downloads/new_user_credentials\(2\).csv >> ~/Downloads/AWS_credentials.csv
+: 1645822130:0;cat ~/Downloads/new_user_credentials.csv
+: 1645822136:0;cat ~/Downloads/new_user_credentials\(1\).csv
+: 1645822141:0;cat ~/Downloads/new_user_credentials\(2\).csv
+: 1645822153:0;rm ~/Downloads/new_user_credentials*
+: 1645822163:0;l ~/Downloads/*.csv
+: 1645822186:0;cat ~/Downloads/gateway_cicd.csv
+: 1645822190:0;rm ~/Downloads/gateway_cicd.csv
+: 1646018017:0;aws ecr 
+: 1646018092:0;aws configure set aws_access_key_id AKIARGCDYVXMOXX2246Y
+: 1646018106:0;aws configure set aws_secret_access_key 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
+: 1646018114:0;aws configure set region us-east-1
+: 1646018132:0;aws ecr get-login-password |  docker login -u AWS --password-stdin 081746505176.dkr.ecr.us-east-1.amazonaws.com
+: 1646018155:0;docker pull 081746505176.dkr.ecr.us-east-1.amazonaws.com/entutil_surescripts_api
+: 1646018208:0;docker pull 081746505176.dkr.ecr.us-east-1.amazonaws.com/entutil_surescripts_api:v0.0.22
+: 1646018284:0;docker tag 081746505176.dkr.ecr.us-east-1.amazonaws.com/entutil_surescripts_api:v0.0.22 081746505176.dkr.ecr.us-east-1.amazonaws.com/entutil_surescripts_api:latest
+: 1646018299:0;docker push 081746505176.dkr.ecr.us-east-1.amazonaws.com/entutil_surescripts_api
+: 1646021270:0;aws --profile entutile-dev ecr get-login-password |  docker login -u AWS --password-stdin 081746505176.dkr.ecr.us-east-1.amazonaws.com
+: 1646021285:0;aws --profile entutil-dev ecr get-login-password |  docker login -u AWS --password-stdin 081746505176.dkr.ecr.us-east-1.amazonaws.com
+: 1646021316:0;aws --profile entutil-dev ecr get-login-password |  docker login -u AWS --password-stdin 778079405878.dkr.ecr.us-east-1.amazonaws.com
+: 1646021425:0;docker logout
+: 1646021427:0;aws --profile enterprise-dev ecr get-login-password |  docker login -u AWS --password-stdin 778079405878.dkr.ecr.us-east-1.amazonaws.com
+: 1646021520:0;aws configure set aws_access_key_id  AKIA3KKJFQ43IB5SUS2N
+: 1646021542:0;aws configure set aws_secret_access_key  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
+: 1646021574:0;aws ecr get-login-password |  docker login -u AWS --password-stdin 778079405878.dkr.ecr.us-east-1.amazonaws.com
+: 1646021897:0;l ~/.aws/credentials
+: 1646021961:0;aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 081746505176.dkr.ecr.us-east-1.amazonaws.com
+: 1646022071:0;aws configure --help
+: 1646022075:0;aws configure -h
+: 1646022105:0;aws configure
+: 1646022191:0;te  ~/.aws
+: 1646022252:0;aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 778079405878.dkr.ecr.us-east-1.amazonaws.com
+: 1646022350:0;cat ~/.aws/config
+: 1646022377:0;aws ecr get-login-password --profie esharapov_ent --region us-east-1 | docker login --username AWS --password-stdin 778079405878.dkr.ecr.us-east-1.amazonaws.com
+: 1646022387:0;aws ecr get-login-password --profie=esharapov_ent --region us-east-1 | docker login --username AWS --password-stdin 778079405878.dkr.ecr.us-east-1.amazonaws.com
+: 1646022847:0;k
+: 1646022870:0;enterprise.surescripts.netcore
+: 1646023846:0;curl "https://api.ecr.us-east-1.amazonaws.com/"
+: 1646024554:0;aws ecr get-login-password --profile esharapov_ent --region us-east-1
+: 1646024703:0;aws ecr get-login-password --profile esharapov_ent --region us-east-1 | docker login --username AWS --password-stdin 778079405878.dkr.ecr.us-east-1.amazonaws.com
+: 1646024732:0;docker pull 778079405878.dkr.ecr.us-east-1.amazonaws.com/entutil_surescripts_api:0.0.1-78
+: 1646024787:0;cat ~/.aws/credentials
+: 1646024990:0;aws configure help
+: 1646025019:14;te .aws
+: 1646025062:0;aws configure --profile ent_stage
+: 1646025170:0;docker pull 778079405878.dkr.ecr.us-east-1.amazonaws.com/entutil_surescripts_callbackapi:0.0.1-78
+: 1646025178:0;docker images
+: 1646025802:0;aws ecr get-login-password --profile ent_stage --region us-east-1 | docker login --username AWS --password-stdin 081746505176.dkr.ecr.us-east-1.amazonaws.com
+: 1646025878:0;docker tag 778079405878.dkr.ecr.us-east-1.amazonaws.com/entutil_surescripts_api:0.0.1-78 081746505176.dkr.ecr.us-east-1.amazonaws.com/entutil_surescripts_api:0.0.1-78
+: 1646025895:0;docker tag 778079405878.dkr.ecr.us-east-1.amazonaws.com/entutil_surescripts_callbackapi:0.0.1-78 081746505176.dkr.ecr.us-east-1.amazonaws.com/entutil_surescripts_callbackapi:0.0.1-78
+: 1646025910:0;docker tag 778079405878.dkr.ecr.us-east-1.amazonaws.com/entutil_surescripts_api:0.0.1-78 081746505176.dkr.ecr.us-east-1.amazonaws.com/entutil_surescripts_api:latest
+: 1646025917:0;docker tag 778079405878.dkr.ecr.us-east-1.amazonaws.com/entutil_surescripts_callbackapi:0.0.1-78 081746505176.dkr.ecr.us-east-1.amazonaws.com/entutil_surescripts_callbackapi:latest
+: 1646025943:0;docker push 081746505176.dkr.ecr.us-east-1.amazonaws.com/entutil_surescripts_api:0.0.1-78
+: 1646025963:0;docker push 081746505176.dkr.ecr.us-east-1.amazonaws.com/entutil_surescripts_api:latest
+: 1646025987:0;docker push 081746505176.dkr.ecr.us-east-1.amazonaws.com/entutil_surescripts_callbackapi:0.0.1-78
+: 1646026014:0;docker push 081746505176.dkr.ecr.us-east-1.amazonaws.com/entutil_surescripts_callbackapi:latest
+: 1646026165:0;aws ssm put-parameter --name "/config/enterprise/utility/surescripts-api/svc_version" --type String --value 0.0.1-78 --overwrite
+: 1646026192:0;aws ssm put-parameter --profile ent_stage --region us-east-1 --name "/config/enterprise/utility/surescripts-api/svc_version" --type String --value 0.0.1-78 --overwrite
+: 1646026217:0;aws ssm put-parameter --profile ent_stage --region us-east-1 --name "/config/enterprise/utility/surescripts-callbackapi/svc_version" --type String --value 0.0.1-78 --overwrite
+: 1646028141:0;g co -b opeb-2537-pipeline-stage
+: 1646028173:0;gcmsg "OPEB-2537: added stage deploy and promotion"
+: 1646028181:0;g push -u origin opeb-2537-pipeline-stage
+: 1646074104:0;chown -R esharapov:esharapov Tests.dib
+: 1646074107:0;sudo chown -R esharapov:esharapov Tests.dib
+: 1646074422:0;curl -X GET "https://api.datadoghq.com/api/v1/monitor/search?query="GW |" \\
+-H "Content-Type: application/json" \\
+-H "DD-API-KEY: ${DD_API_KEY}" \\
+-H "DD-APPLICATION-KEY: ${DD_APP_KEY}"
+: 1646074436:0;curl -X GET "https://api.datadoghq.com/api/v1/monitor/search?query=GW \\
+-H "Content-Type: application/json" \\
+-H "DD-API-KEY: ${DD_API_KEY}" \\
+-H "DD-APPLICATION-KEY: ${DD_APP_KEY}"
+: 1646074456:0;curl -X GET "https://api.datadoghq.com/api/v1/monitor/search?query=GW" \\
+-H "Content-Type: application/json" \\
+-H "DD-API-KEY: ${DD_API_KEY}" \\
+-H "DD-APPLICATION-KEY: ${DD_APP_KEY}"
+: 1646074483:0;curl -X GET "https://api.datadoghq.com/api/v1/monitor/search?query='tag:host:node.2.16.840.1.113883.3.564.2512'" \\
+-H "Content-Type: application/json" \\
+-H "DD-API-KEY: ${DD_API_KEY}" \\
+-H "DD-APPLICATION-KEY: ${DD_APP_KEY}"
+: 1646074496:0;curl -X GET "https://api.datadoghq.com/api/v1/monitor/search?query=tag:host:node.2.16.840.1.113883.3.564.2512" \\
+-H "Content-Type: application/json" \\
+-H "DD-API-KEY: ${DD_API_KEY}" \\
+-H "DD-APPLICATION-KEY: ${DD_APP_KEY}"
+: 1646084677:0;youtube-dl
+: 1646084683:0;apt search youtube-dl
+: 1646084701:0;sudo apt install youtube-dl
+: 1646084777:0;pip --version
+: 1646084787:0;pip install youtube-dl
+: 1646084961:0;cd ~/Downloads
+: 1646085079:0;pip uninstall youtube-dl
+: 1646085095:0;sudo apt install youtube-dl 
+: 1646085216:0;dotnet new -h
+: 1646085451:0;rd Gw.Lambda.Dynamo
+: 1646085453:0;dotnet new --install Amazon.Lambda.Templates::6.0.0
+: 1646085464:0;dotnet new lambda.DynamoDB -lang F# -o Gw.Lambda.Dynamo
+: 1646085469:0;cd Gw.Lambda.Dynamo
+: 1646085571:0;dotnet test test
+: 1646085579:0;dotnet test test/Gw.Lambda.Dynamo.Tests/Gw.Lambda.Dynamo.Tests.fsproj
+: 1646085640:0;dotnet restore src/Gw.Lambda.Dynamo
+: 1646085670:0;dotnet restore test/Gw.Lambda.Dynamo.Tests
+: 1646085686:0;dotnet test test/Gw.Lambda.Dynamo.Tests
+: 1646085759:0;dotnet -h
+: 1646166427:0;which youtube-dl
+: 1646166436:0;youtube-dl --version
+: 1646166440:0;youtube-dl --help
+: 1646166482:0;youtube-dl -x --audio-format mp3 https://www.youtube.com/watch?v=9SNIuHcg_zA&list=PLEfGEO6EGurB8bDrUZTWoeCdUkPuzBt6A
+: 1646166592:0;youtube-dl https://www.youtube.com/watch?v=8TWoWjHCvEY
+: 1646166616:0;sudo apt purge youtube-dl
+: 1646166635:0;sudo apt autoremove
+: 1646166750:0;apt list --installed
+: 1646167214:0;cd ~/ULP
+: 1646167218:0;ULP
+: 1646167229:0;lt
+: 1646167236:0;l service
+: 1646167238:0;l services
+: 1646167248:0;cd service
+: 1646167249:0;cd services
+: 1646167509:0;cat gradle.properties
+: 1646169864:0;cd ULP
+: 1646169931:0;ag getENS
+: 1646169938:0;g tag
+: 1646169959:0;g info 2.8.2
+: 1646169964:0;g show 2.8.2
+: 1646170748:0;gd a812f6b..15b092a
+: 1646170805:0;gd 15b092a..a812f6b
+: 1646170854:0;g cherry-pick 15b092a..a812f6b
+: 1646170878:0;idea . &
+: 1646171119:0;g cherry-pick --continue
+: 1646171208:0;gd ..3.2.8
+: 1646171217:0;gd 3.2.8..HEAD
+: 1646171233:0;gd 3.2.8..HEAD >> ../opeb-2680.patch
+: 1646171248:0;g co 3.2.8
+: 1646171268:0;g branch -d release_3.2
+: 1646171273:0;g branch -D release_3.2
+: 1646171287:0;g co release_3.2
+: 1646171298:0;g apply ../opeb-2680.patch
+: 1646171349:0;gcmsg "OPEB-2680: porting ENSsubscribers (OPEB-2002 and OPEB-2032) from CRISP to DHIN"
+: 1646171639:0;l src/main/com/
+: 1646171665:0;g cat-file src/main/java/com/ainq/ulp/iam/saml/util/SysConstants.java 
+: 1646171699:0;g cat-file --path ./src/main/java/com/ainq/ulp/iam/saml/util/SysConstants.java release_3.3
+: 1646171712:0;g cat-file --path=./src/main/java/com/ainq/ulp/iam/saml/util/SysConstants.java release_3.3
+: 1646171744:0;g cat-file -p --path=./src/main/java/com/ainq/ulp/iam/saml/util/SysConstants.java release_3.3
+: 1646171825:0;g show release_3.3:src/main/java/com/ainq/ulp/iam/saml/util/SysConstants.java
+: 1646171845:0;g co release_3.3 -- src/main/java/com/ainq/ulp/iam/saml/util/SysConstants.java 
+: 1646171861:0;gd --cached
+: 1646171889:0;gcmsg "OPEB-2680: adding org type custom field definition"
+: 1646171896:0;./gradlew clean build
+: 1646172138:0;./gradlew test
+: 1646253834:0;ulp-iam-portlet
+: 1646259606:0;gateway.service.directorypoller
+: 1646259640:0;gateway.netcore.services
+: 1646321418:0;export DD_API_KEY=898cebd8908f13dd398a4bc47e42f092
+: 1646321422:0;export DD_APP_KEY=319aef0c2be3da27e2eaa4425696acaa8daae732
+: 1646321424:0;curl -X GET "https://api.datadoghq.com/api/v1/monitor/search?query=tag:host:node.2.16.840.1.113883.3.564.2512" \\
+-H "Content-Type: application/json" \\
+-H "DD-API-KEY: ${DD_API_KEY}" \\
+-H "DD-APPLICATION-KEY: ${DD_APP_KEY}" | jq '.'
+: 1646325870:0;e & 
+: 1646339598:0;l bin
+: 1646339630:0;l Gateway.Service.DirectoryPoller/bin/Debug/netcoreapp3.1/Gateway.Service.DirectoryPoller
+: 1646339636:0;l Gateway.Service.DirectoryPoller/bin/Debug/netcoreapp3.1/Gateway.Service.DirectoryPoller.dll
+: 1646341591:0;gcmsg "OPEB-2588: serialization of monitor search and more tests"
+: 1646423301:0;dotnet test
+: 1646423426:0;ga -u
+: 1646423443:0;gcmsg "OPEB-2588: updated tests and fixed typo in DatadogService"
+: 1646423543:0;AiPlatform
+: 1646423596:0;g clone https://git.ainq.com/ai-platform-development/cicd/pulse-prod.git
+: 1646423604:0;pulse-stage
+: 1646424821:0;g lag
+: 1646425319:0;cd pulse-prod
+: 1646425333:0;g co -b opeb-2689-surescripts-deploy
+: 1646769327:0;cat ~/Downloads/AWS_credentials.csv
+: 1646838383:0;pgrep emacs
+: 1646838387:0;pgrep emacs | xargs kill
+: 1646841111:0;../../AiPlatform/pulse-stage
+: 1646841123:0;gd
+: 1646841127:0;g pull
+: 1646841143:0;gd origin/ent-surescripts-pipeline
+: 1646850085:0;g lga
+: 1646850120:0;ga
+: 1646850152:0;ga .
+: 1646850153:0;gcmsg "OPEB-2689: corrected name of the step in dep"
+: 1646850155:0;g push
+: 1646851648:0;dotnet tool install -g Amazon.Lambda.Tools
+: 1646851678:0;dotnet tool update -g Amazon.Lambda.Tools
+: 1646851888:0;l ~/.dotnet
+: 1646852006:0;dotnet tool install -g Amazon.Lambda.TestTool-6.0
+: 1646852067:0;te ~/.zshenv
+: 1646852128:0;export PATH=$HOME/.dotnet/tools:$PATH
+: 1646852130:0;rehash
+: 1646852134:0;dotnet lambda --help
+: 1646852144:0;l ~/.dotnet/tools
+: 1646852160:0;dotnet tool
+: 1646852224:0;dotnet tool install -g Amazon.Lambda.TestTool-3.1
+: 1646852352:0;dotnet new --list
+: 1646855671:0;cd FSharp
+: 1646855803:0;AWS
+: 1646855818:0;dotnet new -l
+: 1646855844:0;dotnet new lambda.EmptyFunction -lang F# -o SimpleScheduling
+: 1646855973:0;chown -R esharapov:esharapov .
+: 1646855975:0;sudo chown -R esharapov:esharapov .
+: 1646856540:0;cd src/
+: 1646856690:0;dotnet add package AWSSDK.CloudWatchEvents
+: 1646857006:0;gst
+: 1646857016:0;cat SimpleScheduling.fsproj
+: 1646857670:0;cat /etc/wsl
+: 1646864789:0;sudo vim /etc/wsl.conf
+: 1646864951:0;Projects/AWS
+: 1646865008:0;ls
+: 1646865090:0;sudo rm -R /tmp/vscode-*
+: 1646865098:0;l /tmp
+: 1646865108:0;l /tmp/NuGet*
+: 1646865119:0;l /tmp/nu*
+: 1646865135:0;sudo rm -rf /tmp/nuget
+: 1646865142:0;sudo rm -rf /tmp/NuGet
+: 1646865146:0;sudo rm -rf /tmp/NuGetScratch
+: 1646865152:0;cd src
+: 1646865167:0;rm -rf bin
+: 1646865169:0;rm -rf obj
+: 1646865178:0;dotnet add package AWSSDK.EventBridge 
+: 1646924407:0;te
+: 1646924430:0;xeyes&
+: 1646930644:0;aws events
+: 1646930651:0;aws eventbridge
+: 1646930659:0;aws eventbridge help
+: 1646930663:0;aws
+: 1646930667:0;aws help\
+: 1646930670:0;aws --version
+: 1646930672:0;which aws
+: 1646930685:0;pip list
+: 1646930709:0;pip3 list
+: 1646930723:0;pip3 list | grep aws
+: 1646930741:0;hgrep aws
+: 1646930802:0;aws events help
+: 1646934774:0;dotnet lambda -h
+: 1646934814:0;dotnet lambda get-function-config
+: 1646935092:0;dotnet lambda list-functions
+: 1646935126:0;dotnet lambda --profile pulse list-functions
+: 1646935130:0;dotnet lambda --profile=pulse list-functions
+: 1646935217:0;cd src/SimpleScheduling/
+: 1646935219:0;dotnet lambda list-functions --profile=pulse
+: 1646935400:0;dotnet lambda list-functions -h
+: 1646935412:0;dotnet lambda list-functions help
+: 1646939401:0;ag pollResultsHistory
+: 1646939996:0;code gateway.netcore.services.shared &
+: 1646941541:0;l tests
+: 1646941552:0;cat failed_services.txt
+: 1646941569:0;l Monitor
+: 1646941608:0;cd AWS
+: 1646941625:0;cd SimpleScheduling
+: 1646941850:0;dotnet lambda deploy-function --profile pulse --tags billing-env=dev SimpleScheduling
+: 1646941926:0;dotnet lambda deploy-function --profile pulse --region us-east-1 --tags billing-env=dev SimpleScheduling
+: 1646941984:0;dotnet lambda deploy-function --profile pulse --region us-east-1 --tags billing-env=dev SimpleScheduling -pl ./src/SimpleScheduling 
+: 1646942082:0;dotnet lambda list-function --profile pulse --region us-east-1
+: 1646942087:0;dotnet lambda list-functions --profile pulse --region us-east-1
+: 1646942100:0;dotnet lambda list-functions --profile pulse --region us-east-1 | grep sched
+: 1646942108:0;dotnet lambda list-functions --profile pulse --region us-east-1 | grep Sched
+: 1646942276:0;l src
+: 1646942279:0;l src/SimpleScheduling
+: 1646942307:0;dotnet lambda deploy-function --profile pulse --region us-east-1 SimpleScheduling -pl ./src/SimpleScheduling 
+: 1646942379:0;te src/SimpleScheduling/aws-lambda-tools-defaults.json
+: 1646942409:0;dotnet lambda deploy-function -pl ./src/SimpleScheduling 
+: 1646942565:0;l -R
+: 1646942759:0;dotnet lambda
+: 1646942767:0;dotnet lambda package help
+: 1646942775:0;dotnet lambda package -pl src/SimpleScheduling
+: 1646942783:0;cd src/SimpleScheduling
+: 1646942862:0;dotnet lambda package
+: 1646942931:0;dotnet lambda deploy-function
+: 1646943420:0;dotnet lambda deploy-function SimpleScheduling
+: 1646943564:0;dotnet publish
+: 1646943607:0;dotnet publish --no-restore
+: 1646943694:0;dotnet publish --no-restore --self-contained true
+: 1646944276:0;dotnet publish --no-restore --self-contained true -c Release -r linux-x64 -p:PublishReadyToRun=true
+: 1646944288:0;dotnet publish --no-restore --self-contained true -c Release -p:PublishReadyToRun=true
+: 1646944923:0;dotnet lambda delete-function SimpleScheduling
+: 1646944943:0;dotnet lambda delete-function SimpleScheduling -pl src/SimpleScheduling
+: 1646944948:0;dotnet lambda deploy-function SimpleScheduling -pl src/SimpleScheduling
+: 1646945023:0;dotnet lambda help
+: 1646945030:0;dotnet lambda deploy-function help
+: 1646945866:0;dotnet lambda deploy-function -frole bsvcs-dev-gateway SimpleScheduling -pl src/SimpleScheduling
+: 1646945881:0;dotnet lambda invoke-function SimpleScheduling --payload "teste"
+: 1646945895:0;dotnet lambda invoke-function SimpleScheduling --payload "teste" -pl src/SimpleScheduling
+: 1646946479:0;src/SimpleScheduling
+: 1646946502:0;restore
+: 1646946623:0;dotnet test ../../test/SimpleScheduling.Tests/SimpleScheduling.Tests.fsproj
+: 1646946649:0;code ../.. &
+: 1646946703:0;../../test/SimpleScheduling.Tests
+: 1646946718:0;dotnet add package Amazon.Lambda.CloudWatchEvents
+: 1646947229:0;../../
+: 1646947236:0;dotnet test test/SimpleScheduling.Tests/SimpleScheduling.Tests.fsproj
+: 1646949638:0;ag ICONNECTAdapter
+: 1646949956:0;find CONNECT/ -type f -name "*.wsdl" 
+: 1646950108:0;cat CONNECT/Product/Production/Gateway/PatientDiscovery_10/src/main/resources/patientdiscovery/_10/webservices.xml
+: 1646950221:0;l CONNECT/Product/Production/Gateway/AdminDistribution_10 
+: 1646950224:0;l CONNECT/Product/Production/Gateway/
+: 1646950243:0;find CONNECT/Product/Production/ -name "*.wsdl"
+: 1646950294:0;cat CONNECT/Product/Production/Services/ConnectionManagerCore/src/main/resources/wsdl/NhinUddiAPIV3.wsdl
+: 1646950313:0;find CONNECT/Product/Production/ -name "*.xsd"
+: 1646950376:0;ag PRPA_IN
+: 1646950881:0;rd bin
+: 1646950884:0;rd obj
+: 1646950893:0;cat .vscode/launch.json
+: 1646950953:0;dotnet
+: 1646950960:0;cd Gateway.Dir.Poller
+: 1646950966:0;rd .vscode
+: 1646950973:0;cat Properties
+: 1646950975:0;cat Properties/launchSettings.json
+: 1646951055:0;which dotnet
+: 1646951305:0;dotnet interactive
+: 1646952185:0;fg
+: 1647017541:0;l /usr/share/dotnet
+: 1647017657:0;apt search dotnet
+: 1647018690:0;docker run -it --rm -p 8000:80 --name dotnet mcr.microsoft.com/dotnet/framework
+: 1647018706:0;docker run -it --rm -p 8000:80 --name dotnet mcr.microsoft.com/dotnet/framework:4.8
+: 1647018847:0;dotnet tool install --global dotnet-svcutil
+: 1647019068:0;dotnet svcutil
+: 1647019075:0;dotnet svcutil -h
+: 1647019246:0;md WCF
+: 1647019248:0;cd WCF
+: 1647019257:0;dotnet svcutil http://connect.pulsedev-ainq.com:8080/Gateway/PatientDiscovery/1_0/EntityPatientDiscovery?wsdl
+: 1647019343:0;wsdl2java
+: 1647020104:0;dotnet add package -h
+: 1647020155:0;dotnet --package-directory packages add package System.ServiceModel.Primitives
+: 1647020225:0;find /usr/share/dotnet -name System.Service*
+: 1647020244:0;dotnet new -l;
+: 1647020298:0;dotnet new console -lang F# -o . WCF
+: 1647020322:0;dotnet new console -lang F# -o . 
+: 1647020340:0;dotnet add package System.ServiceModel.Primitives
+: 1647020384:0;dotnet add package System.ServiceModel.Http
+: 1647020400:0;dotnet add package FSharp.Data
+: 1647020438:0;dotnet add package FSharp.Data.TypeProviders
+: 1647020449:0;l obj
+: 1647020536:0;dotnet add package FSharp.Data.WsdlProvider --prerelease
+: 1647020549:0;dotnet fsi
+: 1647020664:0;echo $PATH
+: 1647020676:0;ls ~/.dotnet
+: 1647020681:0;ls ~/.dotnet/tools
+: 1647020689:0;dotnet tool -h
+: 1647020698:0;dotnet tool list
+: 1647021613:0;xeyes 
+: 1647021636:0;e &
+: 1647021768:0;GATE
+: 1647021777:0;Gateway.Dir.Poller
+: 1647022096:0;l ~/.vscode-server
+: 1647022100:0;l ~/.vscode-server/bin
+: 1647022145:0;htop
+: 1647022301:0;l ~/.nuget/
+: 1647022305:0;l ~/.nuget/NuGet
+: 1647022308:0;l ~/.nuget/packages
+: 1647022348:0;sudo chown -R esharapov:esharapov ~/.nuget
+: 1647022372:0;du -hs ~/.vscode-server
+: 1647022379:0;rd ~/.vscode-server
+: 1647022384:0;code .
+: 1647022530:0;e . &
+: 1647022816:0;FSharp
+: 1647022822:0;cd FSTestApp
+: 1647022827:0;dotnet build
+: 1647022838:0;dotnet restore
+: 1647022847:0;dotnet run
+: 1647023657:0;;
+: 1647023684:0;mv ~/Downloads/FsAutoComplete-0.50.0.zip .
+: 1647023710:0;unzip FsAutoComplete-0.50.0.zip -d FSA
+: 1647023715:0;cd FSA
+: 1647023723:0;rd FSA
+: 1647023733:0;unzip FsAutoComplete-0.50.0.zip
+: 1647023740:0;cd FsAutoComplete-0.50.0
+: 1647023988:0;dotnet fake build --target LocalRelease
+: 1647024176:0;dotnet --info
+: 1647024304:0;rd .fake
+: 1647024316:0;dotnet tool restore
+: 1647024328:0;dotnet fake build
+: 1647024422:0;rd ~/Downloads/fsautocomplete.netcore
+: 1647024431:0;rd ~/Downloads/fsautocomplete-May.netcore.zip
+: 1647024436:0;rd ~/Downloads/fsautocomplete.netcore\ \(1\).zip
+: 1647024444:0;rd ~/Downloads/fsautocomplete.netcore.zip
+: 1647024477:0;rd ~/Downloads/fsautocomplete.netcore.zip ~/Projects/FSharp
+: 1647024490:0;l ~/Projects/FSharp
+: 1647024537:0;cd ~/Projects/FSharp
+: 1647024540:0;l LearnFSharp
+: 1647024548:0;l EnsTest
+: 1647024552:0;..
+: 1647024554:0;l
+: 1647024562:0;cd ....
+: 1647024567:0;cd Projects/FSharp
+: 1647024567:0;l
+: 1647024598:0;l LearnFSharp/
+: 1647024601:0;l LearnFSharp/.git
+: 1647024604:0;l LearnFSharp/.git/objects
+: 1647024612:0;..
+: 1647024616:0;rd FSharp
+: 1647024623:0;sudo rm -rf FSharp
+: 1647024628:0;l
+: 1647024643:0;md FSharp
+: 1647024647:0;cd FSharp
+: 1647024678:0;mv ~/Downloads/fsautocomplete.netcore.zip .
+: 1647024683:0;unzip fsautocomplete.netcore.zip
+: 1647024686:0;l
+: 1647024698:0;..
+: 1647024704:0;rd FSharp
+: 1647024734:0;l
+: 1647024783:0;l ~/.FsAutoComplete
+: 1647024801:0;l ~/.FsAutoComplete/netcore/
+: 1647024811:0;l ~/.FsAutoComplete/netcore
+: 1647024835:0;l ~/.FsAutoComplete/netcore/runtimes
+: 1647024872:0;l ~/.FsAutoComplete
+: 1647024893:0;rd ~/.FsAutoComplete/*
+: 1647024899:0;l ~/.FsAutoComplete
+: 1647024924:0;unzip ~/Downloads/fsautocomplete.netcore.zip -d ~/.FsAutoComplete
+: 1647024933:0;l ~/.FsAutoComplete
+: 1647024957:0;~/.FsAutoComplete/fsautoComplete
+: 1647024976:0;chmod +x ~/.FsAutoComplete/fsautocomplete 
+: 1647024981:0;~/.FsAutoComplete/fsautocomplete
+: 1647025109:0;l ~/.FsAutoComplete/runtimes
+: 1647025136:0;chmod a+rw ~/.FsAutoComplete/fsautocomplete* 
+: 1647025140:0;~/.FsAutoComplete/fsautocomplete
+: 1647025171:0;rm ~/.FsAutoComplete/*
+: 1647025184:0;sudo rm ~/.FsAutoComplete/*
+: 1647025189:0;sudo rm -rf ~/.FsAutoComplete/*
+: 1647025277:0;e &
+: 1647025344:0;hgrep dotnet
+: 1647025445:0;unzip ~/Downloads/fsautocomplete.netcore.zip -d ~/.FsAutoComplete/netcore
+: 1647025458:0;l ~/.FsAutoComplete/netcore
+: 1647025495:0;chmod a+rw *.dll
+: 1647025507:0;chmod a+rw ~/.FsAutoComplete/netcore/*.dll
+: 1647025526:0;chmod +x ~/.FsAutoComplete/netcore/fsautocomplete
+: 1647025530:0;l ~/.FsAutoComplete/netcore
+: 1647025692:0;chmod a+rw ~/.FsAutoComplete/netcore/*.json
+: 1647025695:0;chmod a+rw ~/.FsAutoComplete/netcore/*.pdb
+: 1647025710:0;chmod a+rw ~/.FsAutoComplete/netcore/*.win32manifest
+: 1647025721:0;~/.FsAutoComplete/netcore/fsautocomplete
+: 1647025727:0;~/.FsAutoComplete/netcore/fsautocomplete --help
+: 1647025749:0;~/.FsAutoComplete/netcore/fsautocomplete --version
+: 1647025957:0;l
+: 1647026077:0;cd AWS
+: 1647026078:0;l
+: 1647026082:0;..
+: 1647026094:0;mkdir FSharp
+: 1647026098:0;cd FSharp
+: 1647026104:0;dotnet new -l
+: 1647026128:0;dotnet new  console -lang F# -o Hello .
+: 1647026131:0;dotnet new  console -lang F# -o Hello
+: 1647026137:0;cd Hello
+: 1647026139:0;l
+: 1647026147:0;dotnet build
+: 1647026166:0;e . &
+: 1647026252:0;dotnet run
+: 1647026653:0;dotnet fsi --readline--
+: 1647026656:0;dotnet fsi --readline
+: 1647027173:0;htop
+: 1647027322:0;l
+: 1647028638:0;htop
+: 1647028665:0;pgrep emacs
+: 1647028671:0;e . &
+: 1647032710:0;..
+: 1647032714:0;g clone https://github.com/evgeniysharapov/LearnFSharp.git
+: 1647032720:0;cd LearnFSharp
+: 1647032724:0;code .
+: 1647032909:0;cd ToDo
+: 1647032913:0;dotnet restore
+: 1647032923:0;code .
+: 1647033089:0;..
+: 1647033098:0;l
+: 1647033103:0;e . &
+: 1647033267:0;l
+: 1647033276:0;..
+: 1647033278:0;l
+: 1647033428:0;cd LearnFSharp
+: 1647033429:0;l
+: 1647033441:0;mkdir Data
+: 1647033445:0;cd Data
+: 1647033448:0;..
+: 1647033451:0;code .
+: 1647033463:0;e . &
+: 1647351023:0;pgrep emacs | xargs kill
+: 1647351060:0;e &
+: 1647353901:0;l
+: 1647353905:0;g pull
+: 1647353909:0;l
+: 1647353959:0;code .
+: 1647364039:0;pgrep emacs
+: 1647366854:0;pgrep emacs | xargs kill
+: 1647366862:0;e &
+: 1647366990:0;pgrep emacs | xargs kill
+: 1647366997:0;e &
+: 1647369895:0;pgrep emacs
+: 1647369906:0;pgrep emacs | xargs kill
+: 1647369909:0;l
+: 1647372265:0;e &
+: 1647372273:0;pgrep emacs | xargs kill
+: 1647372280:0;htop
+: 1647372301:0;e &
+: 1647372323:0;pgrep emacs | xargs kill
+: 1647372328:0;htop
+: 1647372348:0;e &
+: 1647373034:0;l
+: 1647373039:0;cat AlgoDataStructs.dib
+: 1647373705:0;dotnet new -i "giraffe-template::*"
+: 1647373717:0;dotnet new --list
+: 1647445701:0;~/ai-worklog
+: 1647463394:0;popd
+: 1647463406:0;g pull
+: 1647463413:0;gst
+: 1647463414:0;gd
+: 1647463425:0;grhh
+: 1647463426:0;gst
+: 1647463428:0;g pull
+: 1647463430:0;g lga
+: 1647465217:0;	l
+: 1647465224:0;dotnet new -l
+: 1647465275:0;dotnet new --install Feliz.Template
+: 1647465482:0;dotnet new --install Fable.Template
+: 1647465502:0;dotnet new -l
+: 1647465567:0;dotnet new fable -n SimpleFable
+: 1647465570:0;l
+: 1647465574:0;cd SimpleFable
+: 1647465575:0;l
+: 1647465580:0;npm i
+: 1647465684:0;dotnet new --install Feliz.Template
+: 1647466308:0;l
+: 1647528040:0;..
+: 1647528044:0;l
+: 1647528054:0;cd .dotfiles
+: 1647528055:0;hg st

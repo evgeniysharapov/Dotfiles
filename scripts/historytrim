@@ -1,0 +1,11 @@
+#!/bin/sh
+# Removes duplicates from history file
+# history file looks like this
+#
+#: 1634224449:0;l transient
+#: 1634224453:0;l transient/history.el
+#: 1634224457:0;less transient/history.el
+#: 1634238549:0;../Projects/
+#: 1634238561:0;cd EmacsOrg
+#
+#

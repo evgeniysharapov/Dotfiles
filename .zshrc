@@ -193,6 +193,15 @@ if [ -z "$ZSH_COMPDUMP" ]; then
 fi
 compinit -i -d "${ZSH_COMPDUMP}"
 
+# ** Npm Run completions
+function _npm_scripts () {
+     compls=$([[ -s $PWD/package.json ]] || return 0 && cat package.json | tr -d " \t\n\r" | grep -oP 'scripts\"\:\{(.*?)\}' | sed -e "s/scripts\"\://g" | sed -e "s/{//g" | grep -oP '\"(.*?):\"' | sed -e 's/\"//g' | sed -e 's/\:$//g' | sed -e 's/\,//g' | sort)
+
+     completions=(${=compls})
+     compadd -- $completions
+}
+compdef _npm_scripts npm run
+
 # * Prompt
 
 # Perform parameter expansion, command substitution and arithmetic expansion in prompts
@@ -345,3 +354,7 @@ test -r ${HOME}/.opam/opam-init/init.zsh && . ${HOME}/.opam/opam-init/init.zsh >
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/terraform terraform
+
+# Add JBang to environment
+alias j!=jbang
+export PATH="$HOME/.jbang/bin:$PATH"

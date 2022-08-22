@@ -8,6 +8,16 @@
 # https://github.com/Lokaltog/powerline-fonts
 #
 
+# * Figuring out colors
+# use this script:
+#
+#   for i in {0..255}; do
+#       printf "\x1b[38;5;${i}mcolour${i}\x1b[0m\n"
+#   done
+#
+# Then you can use colourXXX
+
+
 # Status update interval
 set -g status-interval 1
 

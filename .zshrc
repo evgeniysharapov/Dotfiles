@@ -71,6 +71,8 @@ autoload -U up-line-or-beginning-search
 zle -N up-line-or-beginning-search
 
 if [[ -n "${terminfo[kcuu1]}" ]]; then
+    autoload -U up-line-or-beginning-search
+    zle -N up-line-or-beginning-search
     bindkey "${terminfo[kcuu1]}" up-line-or-beginning-search
 fi
 # for some reason using $terminfo doesn't work on mac
@@ -82,6 +84,8 @@ fi
 autoload -U down-line-or-beginning-search
 zle -N down-line-or-beginning-search    
 if [[ -n "${terminfo[kcud1]}" ]]; then
+    autoload -U down-line-or-beginning-search
+    zle -N down-line-or-beginning-search    
     bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
 fi
 # for some reason using $terminfo doesn't work on mac
@@ -198,6 +202,15 @@ if [ -z "$ZSH_COMPDUMP" ]; then
 fi
 compinit -i -d "${ZSH_COMPDUMP}"
 
+# ** Npm Run completions
+function _npm_scripts () {
+     compls=$([[ -s $PWD/package.json ]] || return 0 && cat package.json | tr -d " \t\n\r" | grep -oP 'scripts\"\:\{(.*?)\}' | sed -e "s/scripts\"\://g" | sed -e "s/{//g" | grep -oP '\"(.*?):\"' | sed -e 's/\"//g' | sed -e 's/\:$//g' | sed -e 's/\,//g' | sort)
+
+     completions=(${=compls})
+     compadd -- $completions
+}
+compdef _npm_scripts npm run
+
 # * Prompt
 
 # Perform parameter expansion, command substitution and arithmetic expansion in prompts
@@ -285,6 +298,11 @@ alias gco='git checkout'
 alias gd='git diff'
 alias gst='git status'
 alias grhh='git reset --hard HEAD'
+alias gcm='git checkout master'
+
+# ** Mercurial
+alias hgst='hg status'
+alias hgcm='hg commit -m'
 
 # ** Grep
 alias grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
@@ -345,4 +363,8 @@ test -r ${HOME}/.opam/opam-init/init.zsh && . ${HOME}/.opam/opam-init/init.zsh >
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/terraform terraform
+
+# Add JBang to environment
+alias j!=jbang
+export PATH="$HOME/.jbang/bin:$PATH"
 export HOMEBREW_GITHUB_API_TOKEN=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

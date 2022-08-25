@@ -55,4 +55,4 @@ gradlew () {
 }
 
 # adding aliases to Dockerized commands
-alias mvn="docker run --rm -it -u \$UID:\$GID -w /tmp/app -v \$PWD:/tmp/app -v \$HOME/.m2:/var/maven/.m2 -e MAVEN_CONFIG=/var/maven/.m2 maven mvn -Duser.home=/var/maven"
+alias mvn="docker run --rm -it -u $UID:$GID -w /tmp/app -v $(pwd):/tmp/app -v $HOME/.m2:/var/maven/.m2 -e MAVEN_CONFIG=/var/maven/.m2 maven mvn -Duser.home=/var/maven"

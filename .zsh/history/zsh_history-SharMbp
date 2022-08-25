@@ -21,7 +21,6 @@
 : 1550729872:0;vim .zshrc.Evgeniys-MBP
 : 1550730015:0;setopt
 : 1550730223:0;brew search hammer
-: 1551327423:0;pyenv install --help
 : 1551327507:0;pip search git
 : 1551327523:0;hg help git
 : 1551327583:0;brew cask info emcs
@@ -158,12 +157,10 @@
 : 1557641407:0;cd SamsungS7Active
 : 1557641463:0;rsync -avzzh --progress --update -e "ssh -p 8022" u0_a63@192.168.1.172:/storage/emulated/0/viber .
 : 1557641913:0;rsync -avzzh --progress --update -e "ssh -p 8022" u0_a63@192.168.1.172:/storage/emulated/0/WhatsApp .
-: 1559186205:0;cd Downloads
 : 1559186257:0;ffmpeg -i IMG_0891.MOV -filter:v scale=720:-1 -c:a copy IMG_0891_small.mp4
 : 1559961429:0;where python
 : 1559961474:0;pyenv help versions
 : 1559961483:0;pyenv help install
-: 1559961491:0;pyenv install -l
 : 1559961533:0;et .hgrc
 : 1559961623:0;brew search tmux
 : 1559961642:0;brew install tmux
@@ -418,7 +415,6 @@
 : 1566623829:0;ledger -f journal.ledger reg salary
 : 1566680158:0;mv wf_chk_20190201_20190823.csv processed/.
 : 1566680180:0;hg cm "processed WF checking dump"
-: 1566680192:0;hg commit --amend
 : 1566703798:0;hg cm "assigned transactions to various accounts"
 : 1566704211:0;lga
 : 1566704832:0;cat wf_visacashwise_20190426_20190823.csv | awk  'BEGIN {FS=",";print "date,amount,,note,desc";OFS=","} {gsub(/"/,"",$2); print $1,$2,$3,$4,$5}' > wf.csv
@@ -529,7 +525,6 @@
 : 1571506772:0;ls /Volumes
 : 1571626848:0;cd ~/Documents/evgeniysharapov.com
 : 1571635389:0;/usr/bin/python
-: 1571635494:0;cd ~
 : 1572061272:0;pyenv install --list | grep pypy3
 : 1572061297:0;pyenv install pypy3.5-6.0.0
 : 1572312628:0;git lga
@@ -717,10 +712,7 @@
 : 1598244326:0;brew info mercurial
 : 1598244658:0;pyenv local 2.7.15
 : 1598244734:0;pip2 list
-: 1598244771:0;pyenv local
-: 1598330116:0;pyenv global
 : 1598330133:0;ls ~/.pyenv/versions/3.7.2/bin
-: 1598330240:0;pyenv list
 : 1598333911:0;l /Users/evgeniysharapov/Library/Python/2.7/bin/hg
 : 1598333931:0;/Users/evgeniysharapov/Library/Python/2.7/bin/hg --version
 : 1598333950:0;which pip3
@@ -807,7 +799,6 @@
 : 1603419721:0;l -al
 : 1603419860:0;mv Archive.zip ~/Documents/Archive2.zip
 : 1603421749:0;l .oh-my-zsh
-: 1603421757:0;ls
 : 1603421764:0;ag eshar
 : 1603421778:0;find . -name "eshar*"
 : 1603421909:0;cat .zshrc.Evgeniys-MBP
@@ -819,7 +810,6 @@
 : 1603422020:0;ocaml
 : 1603422962:0;l Library
 : 1603422976:0;l .cargo
-: 1603422985:0;rust --version
 : 1603423501:0;gd opam-user-setup.el
 : 1603423573:0;ga opam-user-setup.el
 : 1603423594:0;gcmsg "use HOME in paths to .opam configuration"
@@ -853,7 +843,6 @@
 : 1604202482:0;rustup --version
 : 1604202487:0;rustc
 : 1604202493:0;rustup update stable
-: 1604202505:0;rustc --version
 : 1604286519:0;l ~/.opam
 : 1604286544:0;opam install user-setup
 : 1604286562:0;cd .emacs.d
@@ -876,7 +865,6 @@
 : 1604291931:0;mv /Users/evgeniysharapov/Downloads/719235-1603891852-604.mp4 /Users/evgeniysharapov/Downloads/72854-1602172854-410.mp4 /Users/evgeniysharapov/Downloads/921446-1603006408-701.mp4 ~/.Archives/Archive2/.
 : 1604291938:0;mv /Users/evgeniysharapov/Downloads/719235-1603891852-604.mp4 /Users/evgeniysharapov/Downloads/72854-1602172854-410.mp4 /Users/evgeniysharapov/Downloads/921446-1603006408-701.mp4 ~/.Archives/.
 : 1604456578:0;\cd .dotfiles
-: 1604456585:0;hg out
 : 1604456746:0;kill -9 35965
 : 1604456756:0;emacs --daemon
 : 1604456782:0;emacsclient -c &
@@ -884,11 +872,9 @@
 : 1604457514:0;kill -9 41308
 : 1604458354:0;gcmsg "updated calculating color of the region based on highlight face"
 : 1604458439:0;cd LearnOcaml
-: 1604458456:0;hg lg
 : 1604459148:0;unzip FsAutoComplete/netcore/fsautocomplete.zip
 : 1604459236:0;rm -rf FsAutoComplete
 : 1604459245:0;echo $PATH
-: 1604459266:0;l ~/.local
 : 1604459276:0;l ~/.bin
 : 1604459295:0;mv ~/Downloads/fsautocomplete.* ~/.bin/.
 : 1604459300:0;cd ~/.bin
@@ -906,7 +892,6 @@
 : 1604459789:0;fsautocomplete
 : 1604459881:0;dotnet fsautocomplete.dll
 : 1604459915:0;l /usr/local/share/dotnet/shared
-: 1604462464:0;cd ~/Downloads
 : 1604462494:0;mv 142050-1590969254-782.mp4 220759-1604428536-730.mp4 243553-1604433999-589.mp4 589482-1604417523-794.mp4 680633-1604359168-666.mp4 855823-1604363035-578.mp4 ~/.Archives/Archive2/.
 : 1604462502:0;mv 142050-1590969254-782.mp4 220759-1604428536-730.mp4 243553-1604433999-589.mp4 589482-1604417523-794.mp4 680633-1604359168-666.mp4 855823-1604363035-578.mp4 ~/.Archives/Archive2
 : 1604462512:0;mv 142050-1590969254-782.mp4 220759-1604428536-730.mp4 243553-1604433999-589.mp4 589482-1604417523-794.mp4 680633-1604359168-666.mp4 855823-1604363035-578.mp4 ~/.Archives/Archive\ 2
@@ -967,7 +952,6 @@
 : 1605328770:0;pip install mercurial
 : 1605328828:0;pip install hg-git
 : 1605329041:0;hg clone ssh://hg@hg.sr.ht/~evgeniysharapov/Website
-: 1605329046:0;cd Website
 : 1605329086:0;open index.html
 : 1605411235:0;cd ~/Documents/Projects/Website
 : 1605411238:0;cd public
@@ -1007,7 +991,6 @@
 "
 : 1605750405:0;hg merge tip
 : 1605750592:0;hg commit -m "merged"
-: 1605753535:0;make
 : 1605756104:0;echo *.elc >> .hgignore
 : 1605756142:0;hg commit -m "changes to ignore compile Elisp files and styles included html"
 : 1605756153:0;hg branch simple
@@ -1018,9 +1001,7 @@
 : 1605759512:0;l public
 : 1605759516:0;l public/assets
 : 1605759520:0;l public/assets/css
-: 1605760161:0;hg add .
 : 1605760177:0;hg commit -m "somewhat workable simple version"
-: 1605760969:0;hg addremove
 : 1605760984:0;hg commit -m "working version with HTML includes"
 : 1605761093:0;rm -rf ~/.org-timestamps
 : 1605761330:0;rm -rf ~/.org-timestamps && make
@@ -1048,7 +1029,6 @@
 : 1608955836:0;/bin/ls -G
 : 1608955999:0;ll
 : 1608956030:0;hg cm "on mac ls uses -G for colors"
-: 1608956033:0;hg push
 : 1608956056:0;rm .zsh_custom
 : 1608956064:0;rm .zshrc.Evgeniys-MBP
 : 1608956071:0;rm .zshrc.P3530-20190221
@@ -1060,7 +1040,6 @@
 : 1608956122:0;rm .zcompdump-Evgeniy �s\ MacBook\ Pro-5.7.1
 : 1608956134:0;rm .zcompdump-SharMbp-5.7.1
 : 1608956141:0;rm .zcompdump-Unknown-5.8
-: 1609467069:0;cd Documents
 : 1609467075:0;cd ../Downloads
 : 1609467090:0;brew install youtube-dl
 : 1609467272:0;youtube-dl https://www.youtube.com/watch?v=CqT9_yfUfXI
@@ -1074,7 +1053,6 @@
 : 1609468397:0;brew search vlc
 : 1609468428:0;brew cask install vlc
 : 1609468442:0;brew install --cask vlc
-: 1610940185:0;hg up
 : 1610940298:0;hg commit -m "history for SharMbp"
 : 1610940808:0;rm .tmux.macos.conf\~
 : 1610942071:0;g -C /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask fetch --unshallow
@@ -1142,12 +1120,10 @@
 : 1614134120:0;brew search dvdcss
 : 1614134156:0;brew install libdvdcss
 : 1614889199:0;gcmsg "added lua-mode package for Lua Prog language"
-: 1615009186:0;e &
 : 1615009203:0;emacsclient -a ''
 : 1615009239:0;emacsclient -n -a ''
 : 1615009244:0;emacsclient -n -a '' .
 : 1615009255:0;which emacsclient 
-: 1615009267:0;which emacs 
 : 1615009289:0;emacs 
 : 1615009341:0;emacsclient --version
 : 1615009597:0;emacsclient -c
@@ -1155,12 +1131,9 @@
 : 1615009721:0;l $(which emacs)
 : 1615009729:0;l $(which emacsclient)
 : 1615009815:0;emacsclient -c -a ""
-: 1615009830:0;pgrep emacs
-: 1615009837:0;ps aux | grep emacs
 : 1615009844:0;emacsclient -n -c -a ""
 : 1615009905:0;emacsclient -t -a ""
 : 1615012104:0;brew info jansson
-: 1615012502:0;ps aux | grep -i emacs
 : 1615347611:0;brew search blender
 : 1615347647:0;brew cask info blender
 : 1615347652:0;brew info blender
@@ -1179,10 +1152,8 @@
 : 1618024452:0;ag -g \..ml
 : 1618024458:0;ag -g \.ml
 : 1618024488:0;Kattis
-: 1618024491:0;hg lga
 : 1618631624:0;mkdir dotNet
 : 1618631631:0;dotnet --info
-: 1618631667:0;dotnet -h
 : 1618631671:0;dotnet new
 : 1618631747:0;dotnet new webapi --help
 : 1618716936:0;docker ps
@@ -1233,26 +1204,15 @@
 : 1619671312:0;dotnet test --help
 : 1619671601:0;dotnet run -p src/App test asdfasdfasd
 : 1619671709:0;dotnet test
-: 1620530155:0;ssh pi@192.168.1.51
-: 1620611194:0;l ICFPC
-: 1620611208:0;cd ICFPC
 : 1620611220:0;which te
 : 1620611242:0;alias te="emacsclient -t -a ''"
-: 1620611678:0;gd
 : 1620611696:0;gcmsg "updated custom.el"
-: 1620611762:0;g merge --continue
 : 1620611800:0;which ew
 : 1620611807:0;cd ~/.dotfiles
-: 1620611814:0;hg d
 : 1620611991:0;te .hgignore
 : 1620613628:0;Projects
-: 1620613639:0;cd ~/Documents/Projects
-: 1620613651:0;cd evgeniysharapov.com
-: 1620613656:0;hg in
 : 1620613678:0;cat Dockerfile
 : 1620613709:0;l Computer\ Books
-: 1621214980:0;emacs --version
-: 1621217598:0;dotnet --version
 : 1623553416:0;cd ~/Dropbox/Notes
 : 1623553422:0;ag
 : 1623553429:0;ag cook
@@ -1264,16 +1224,12 @@
 : 1623813938:0;cd ~/Projects
 : 1623813946:0;cd ~/Documents
 : 1623813966:0;l Competitive_Programming
-: 1623813972:0;te .
 : 1623814115:0;l fedora-post-install
-: 1623814232:0;cd Projects
 : 1623814248:0;md LearnFSharp
-: 1623814253:0;cd LearnFSharp
 : 1623814259:0;l ../LearnOcaml
 : 1623814264:0;l ../LearnOcaml/Algs
 : 1623814272:0;less ../LearnOcaml/Algs/fun.ml
 : 1623814291:0;mkdir Kattis
-: 1623814330:0;dotnet
 : 1623814338:0;dotnet new --help
 : 1623814347:0;dotnet new -l
 : 1623814422:0;git init .
@@ -1290,15 +1246,12 @@
 : 1623816827:0;gcmsg "kattis: solved addtwonumbers"
 : 1623816959:0;code Kattis/aliennumbers.fsx
 : 1623817537:0;dotnet fsi
-: 1623818537:0;ga .
 : 1623818560:0;gcmsg "kattis: started solving aliennumbers"
 : 1627780101:0;l Documents
 : 1627780110:0;l Documents/Projects
 : 1627780167:0;cd Documents/Projects/LearnFSharp
 : 1628129889:0;g config
 : 1628129896:0;g config -l
-: 1628129916:0;code .
-: 1628134562:0;which e
 : 1628134572:0;e -c -a '' . &
 : 1628134620:0;brew emacs
 : 1628134626:0;brew search emacs
@@ -1317,20 +1270,16 @@
 : 1628137092:0;brew upgrade emacs
 : 1628137110:0;brew cask upgrade emacs
 : 1628137151:0;brew uninstall skype
-: 1628137184:0;which emacs
 : 1628137191:0;brew cask install emacs
 : 1628137252:0;brew services start emacs
 : 1628137285:0;brew link emacs
-: 1628137304:0;brew uninstall emacs
 : 1628137311:0;brew install emacs
 : 1629946555:0;which ledger
 : 1629946566:0;l /usr/local/bin
-: 1629946786:0;brew upgrade
 : 1629947432:0;brew help
 : 1629947501:0;ls /usr/local/lib
 : 1629947532:0;echo $PYTHONPATH
 : 1629947546:0;l Projects
-: 1629947554:0;cd Documents/Projects
 : 1629947620:0;hg clone ssh://hg@hg.sr.ht/~evgeniysharapov/MyMoney
 : 1629947633:0;cd MyMoney
 : 1629947753:0;export PYTHONPATH=/usr/local/lib
@@ -1344,9 +1293,6 @@
 : 1629948371:0;mv ledger.dylib libledger.dylib
 : 1629948410:0;mv libledger.dylib libledger.so
 : 1629948489:0;mv libledger.so ledger.so
-: 1629948889:0;~/.emacs.d
-: 1629948897:0;g pull
-: 1629948902:0;g lga
 : 1629949108:0;MyMoney
 : 1629949113:0;cd Documents/Projects/MyMoney
 : 1629949149:0;brew install ledger --with-python
@@ -1358,7 +1304,6 @@
 : 1629949528:0;ledger -f journal.ledger python
 : 1629949855:0;brew create --help
 : 1629949933:0;brew create --set-name LedgerPy https://github.com/ledger/ledger/archive/v3.2.1.tar.gz"
-: 1629949996:0;e . &
 : 1629950212:0;brew create --set-name LedgerPy https://github.com/ledger/ledger/archive/v3.2.1.tar.gz
 : 1629950260:0;e /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/ledgerpy.rb
 : 1629950417:0;brew remove ledger
@@ -1366,20 +1311,14 @@
 : 1629950698:0;e /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/ledgerpy.rb &
 : 1629950879:0;brew install ledgerpy
 : 1629950922:0;brew install --build-from-source ledgerpy
-: 1629951090:0;cd ..
 : 1629951094:0;g clone https://github.com/ledger/ledger.git
 : 1629951102:0;cd ledger
 : 1629951134:0;./acprep --python make opt
-: 1629951171:0;..
-: 1629951947:0;st
 : 1629951952:0;cd ~/.emacs.d
 : 1629951958:0;ga systems/*
-: 1629951959:0;gst
 : 1629951967:0;gcmsg "added macbook init file"
-: 1629951969:0;g push
 : 1630116563:0;brew info ledgerpy
 : 1630116578:0;brew selfupdate
-: 1630116583:0;brew update
 : 1630116612:0;brew --version
 : 1630116637:0;brew show ledger
 : 1630116644:0;brew info ledger
@@ -1394,7 +1333,6 @@
 : 1630116847:0;brew options libxml2
 : 1630116851:0;brew options
 : 1630116905:0;brew install --help
-: 1630116928:0;rehash
 : 1630117125:0;cd ../Documents/Projects/ledger
 : 1630117295:0;./acprep dependencies
 : 1630117338:0;./acprep --help
@@ -1402,14 +1340,8 @@
 : 1630117368:0;brew edit ledger
 : 1630117393:0;emacsclient -t -a '' .
 : 1630119982:0;cd ../.dotfiles
-: 1630119985:0;hg pull
-: 1630120006:0;which pip
-: 1630120348:0;python --version
 : 1630121588:0;brew uninstall python@3.9
-: 1630121607:0;python3
-: 1630121613:0;which python
 : 1630121618:0;which python3
-: 1630121646:0;brew search iosevka
 : 1630121947:0;brew cask install font-iosevka-ss04
 : 1630121959:0;brew install cask font-iosevka-ss04
 : 1630121989:0;brew taps
@@ -1437,44 +1369,30 @@
 : 1630123855:0;brew update-reset
 : 1630123877:0;brew outdated
 : 1630123915:0;Documents/Projects/ledger
-: 1630123921:0;python
 : 1630123924:0;pip
 : 1630123939:0;cd ../MyMoney
-: 1630123940:0;hg st
-: 1630123944:0;l
 : 1630123949:0;hg --version
 : 1630123956:0;pip3 list
 : 1630123981:0;pip list
 : 1630124017:0;pyenv versions --help
-: 1630124043:0;pyenv version
 : 1630124047:0;pyenv version --list
 : 1630124072:0;pyenv
-: 1630124098:0;pyenv install --list
 : 1630124124:0;pyenv global --help
-: 1630124150:0;pyenv versions
-: 1630212140:0;brew list
 : 1630212221:0;brew --prefix
 : 1630212308:0;l /Library/Developer/CommandLineTools
 : 1630212314:0;l /Library/Developer/CommandLineTools/Library
 : 1630212322:0;l /Library/Developer/CommandLineTools/SDKs
 : 1630212332:0;l /Library/Developer/CommandLineTools/usr
 : 1630212336:0;l /Library/Developer/CommandLineTools/usr/bin
-: 1630212352:0;brew doctor
 : 1630212370:0;sudo xcode-select --install
 : 1630212440:0;cd
 : 1630212572:0;find .
-: 1630212578:0;cd .dotfiles
-: 1630212652:0;echo $Z_OS
-: 1630212656:0;echo $Z_HOST
-: 1630212731:0;env
 : 1630213050:0;brew doctor
 : 1630213062:0;pyenv global
 : 1630213067:0;python2
 : 1630213071:0;which python2
 : 1630213091:0;pyenv install --list
-: 1630213112:0;pyenv versions
 : 1630213173:0;brew uninstall python3
-: 1630213196:0;pyenv versions
 : 1630213206:0;pyenv install --help
 : 1630213217:0;pyenv install --version
 : 1630213238:0;pyenv install -l
@@ -1484,7 +1402,6 @@
 : 1630213382:0;brew unstall python@3
 : 1630213389:0;brew uninstall python@3
 : 1630213409:0;brew uninstall --ignore-dependencies python@3
-: 1630213461:0;ln -s /Users/evgeniysharapov/.pyenv/versions/3.9.6 $(brew --cellar python)/3.9.6
 : 1630213541:0;echo $(brew --cellar python)
 : 1630213552:0;mkdir -p $(brew --cellar python)
 : 1630213556:0;ln -s /Users/evgeniysharapov/.pyenv/versions/3.9.6 $(brew --cellar python)/3.9.6
@@ -1495,27 +1412,456 @@
 : 1630213734:0;brew uninstall python@3.8
 : 1630213753:0;brew uninstall boost-python
 : 1630213765:0;brew install python@3
-: 1630213818:0;rehash
-: 1630213820:0;python
 : 1630213828:0;which pip
-: 1630213839:0;pyenv versions
 : 1630213853:0;python3
 : 1631160026:0;brew list | grep emacs
-: 1631160031:0;brew list
-: 1631160040:0;brew cask uninstall emacs
 : 1631160045:0;brew uninstall emacs
-: 1631160053:0;brew list
 : 1631160069:0;brew cask uninstall emacs
 : 1631160097:0;brew uninstall --cask  emacs
-: 1631160110:0;which emacs 
 : 1631160117:0;emacs --version
-: 1631160121:0;emacs
 : 1631160349:0;brew tap d12frosted/emacs-plus
 : 1631160482:0;brew install emacs-plus@28 --with-native-comp --with-modern-vscode-icon
 : 1631168441:0;which emacs 
 : 1631168446:0;emacs
-: 1631240982:0;l
-: 1631241023:0;cd .dotfiles
-: 1631241028:0;hg pull
-: 1631241034:0;hg up
-: 1631241037:0;hg st
+: 1631244783:0;e -n -a '' . &
+: 1631245033:0;kill 9600
+: 1631245043:0;e -c -n -a '' . &
+: 1631245415:0;kill 10903
+: 1631245422:0;kill 10873
+: 1631245546:0;ps aux | grep emacs
+: 1631245559:0;e -n . &
+: 1631245753:0;which emacs
+: 1631245768:0;ls -l $(which emacs)
+: 1631245916:0;brew services
+: 1631245929:0;brew services --help
+: 1631245947:0;brew services start emacs-plus@28
+: 1631246007:0;ls -al
+: 1631246019:0;ls -al .zsh
+: 1631246031:0;ls -al .zsh/history
+: 1631246228:0;echo $Z_HOST
+: 1631248037:0;which e
+: 1631248382:0;ln -s /usr/local/Cellar/emacs-plus@28/28.0.50/Emacs.app /Applications
+: 1631248393:0;ls /Applications
+: 1631248476:0;la -al  -s /usr/local/Cellar/emacs-plus@28/28.0.50
+: 1631248488:0;ls -al /Applications
+: 1631328480:0;brew search iosevka
+: 1631328531:0;brew install font-iosevka
+: 1631328601:0;brew search cascadia
+: 1631328616:0;brew search menlo
+: 1631328638:0;brew search sf-mono
+: 1631328765:0;brew install font-cascadia-code-pl
+: 1631328841:0;brew search jetbrains
+: 1631328879:0;cd Documents/Projects
+: 1631328901:0;l ICFPC
+: 1631329244:0;gcmsg "updated custom vars"
+: 1631329281:0;gd --cached
+: 1631329329:0;g merge --continue
+: 1631329368:0;EDITOR=vim g merge --continue
+: 1631329383:0;gcmsg "merged"
+: 1631329393:0;env
+: 1631329527:0;te
+: 1631329857:0;emacsclient -c -a '' . &
+: 1631330127:0;rd eln-cache
+: 1631330131:0;rd elpa
+: 1631330164:0;kill 405
+: 1631332675:0;pgrep emacs | xargs kill
+: 1631332686:0;ps aux | grep -i emacs
+: 1631505250:0;~/Documents/Projects
+: 1631505264:0;code .
+: 1631508884:0;~/.emacs.d
+: 1631509073:0;g stash
+: 1631510065:0;Documents/Projects
+: 1631510074:0;g clone https://github.com/fsprojects/fsharp-language-server
+: 1631510077:0;cd fsharp
+: 1631510080:0;cd fsharp-language-server
+: 1631510085:0;npm i
+: 1631672516:0;cd ~/Downloads
+: 1631672520:0;curl 'https://onlymanuals-pdfs.s3.amazonaws.com/manuals/%202006%20Nissan%20Sentra%20Service%20Repair%20Manual%20%28SM6E-1B15U0%29.pdf?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWHINZ2MPFDWFT7HH%2F20210915%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210915T022133Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=d58b6aec103d46e693cf2235d1868b6aadc4e6c44b29ee5e6a97da56005c6676' \\
+  -H 'Connection: keep-alive' \\
+  -H 'sec-ch-ua: "Google Chrome";v="93", " Not;A Brand";v="99", "Chromium";v="93"' \\
+  -H 'DNT: 1' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36' \\
+  -H 'sec-ch-ua-platform: "macOS"' \\
+  -H 'Accept: */*' \\
+  -H 'Origin: https://www.onlymanuals.com' \\
+  -H 'Sec-Fetch-Site: cross-site' \\
+  -H 'Sec-Fetch-Mode: cors' \\
+  -H 'Sec-Fetch-Dest: empty' \\
+  -H 'Referer: https://www.onlymanuals.com/' \\
+  -H 'Accept-Language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  --compressed
+: 1631672540:0;cd Downloads
+: 1631672611:0;curl 'https://onlymanuals-pdfs.s3.amazonaws.com/manuals/%202006%20Nissan%20Sentra%20Service%20Repair%20Manual%20%28SM6E-1B15U0%29.pdf?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWHINZ2MPFDWFT7HH%2F20210915%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210915T022133Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=d58b6aec103d46e693cf2235d1868b6aadc4e6c44b29ee5e6a97da56005c6676' \\
+  -H 'Connection: keep-alive' \\
+  -H 'sec-ch-ua: "Google Chrome";v="93", " Not;A Brand";v="99", "Chromium";v="93"' \\
+  -H 'DNT: 1' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36' \\
+  -H 'sec-ch-ua-platform: "macOS"' \\
+  -H 'Accept: */*' \\
+  -H 'Origin: https://www.onlymanuals.com' \\
+  -H 'Sec-Fetch-Site: cross-site' \\
+  -H 'Sec-Fetch-Mode: cors' \\
+  -H 'Sec-Fetch-Dest: empty' \\
+  -H 'Referer: https://www.onlymanuals.com/' \\
+  -H 'Accept-Language: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7' \\
+  --compressed \\
+-o Nissan2006_Repair_manual.pdf
+: 1631676810:0;cd LearnFSharp
+: 1631676839:0;dotnet new webapi -o WebApi -lang F#
+: 1631676845:0;cd WebApi
+: 1631676849:0;dotnet build
+: 1631676862:0;dotnet -h
+: 1631676868:0;dotnet run
+: 1632275442:0;brew update
+: 1632275607:0;brew search sonic
+: 1632275625:0;brew info sonic
+: 1632275665:0;brew install sonic-pi
+: 1632882578:0;rd Projects
+: 1632882671:0;cd ..
+: 1632882699:0;cd ICFPC
+: 1632882733:0;Website
+: 1632882775:0;hg qnew --help
+: 1632882789:0;hg qnew -m "some changes to publish.el"
+: 1632882834:0;hg qnew -m "some changes to publish.el" publish-changes
+: 1632882838:0;hg qref
+: 1632882842:0;hg qpop
+: 1632967216:0;python3 -m http.server --directory public 8000 
+: 1632967941:0;brew install --update zsh
+: 1632967965:0;zsh --version
+: 1632968046:0;"$terminfo"
+: 1632968053:0;"$terminfo[kcud1]"
+: 1632968073:0;zle
+: 1632968076:0;"$terminfo[kcuu1]"
+: 1632968148:0;which up-line-or-beginning-search
+: 1632968182:0;which history-substring-search-up
+: 1632968381:0;source ~/.zshrc
+: 1632968497:0;cat -v
+: 1632970511:0;python3 -m http.server --directory public 8000 &
+: 1632970522:0;rd ~/.org-timestamps
+: 1633101127:0;hgcm "tags to links"
+: 1633101137:0;hg commit -m "tags to links"
+: 1633141860:0;alias hgcm='hg commit -m'
+: 1633141875:0;hgcm "added comments to the tags-to-links function"
+: 1634439579:0;g submodule --help
+: 1634439588:0;g submodule status
+: 1634439594:0;g submodule update
+: 1634441504:0;pgrep -iv emacs
+: 1634441509:0;pgrep -i -a emacs
+: 1634441516:0;pgrep --help
+: 1635557004:0;cd .dotfiles
+: 1635557014:0;hg merge
+: 1635557891:0;bindkey '^[[A' up-line-or-search
+: 1635558165:0;. ~/.zshrc
+: 1635561766:0;brew info djvu2pdf
+: 1635561777:0;brew info djvulibre
+: 1635561792:0;brew install djvulibre
+: 1635561980:0;brew info djview4
+: 1635561995:0;brew info macdjview
+: 1635562051:0;brew install macdjview
+: 1635563715:0;brew search djvu
+: 1635563727:0;brew search djview
+: 1635563744:0;brew info djview
+: 1635563762:0;brew install djview
+: 1635563778:0;rehash
+: 1635648549:0;echo $Z_OS
+: 1635648607:0;Dropbox
+: 1635648611:0;Notes
+: 1635991272:0;brew search viber
+: 1635991714:0;te ~/Library/Library/KeyBindings/DefaultKeyBinding.dict
+: 1636081793:0;cd Documents
+: 1636081797:0;cd Projects
+: 1636081820:0;hg out
+: 1636081831:0;hg in
+: 1636082180:0;python -m http.server -p 8000 public/
+: 1636082190:0;python3 -m http.server -p 8000 public/
+: 1636082247:0;pgrep python | xargs kill
+: 1636082262:0;ps aux | grep python
+: 1636082299:0;kill 26385
+: 1636082952:0;hg commit -m "WIP: generating tags pages"
+: 1636773305:0;sftp
+: 1636773316:0;sftp pi@192.168.1.51
+: 1636773351:0;ssh pi@192.168.1.51
+: 1636774033:0;brew search racket
+: 1636774057:0;brew info racket
+: 1636774127:0;hg up
+: 1636774163:0;python -m http.server --directory public 8000
+: 1636774169:0;python3 -m http.server --directory public 8000
+: 1636774255:0;Documents/Projects/Website
+: 1636944494:0;hg commit --help
+: 1636944647:0;GST
+: 1636944651:0;hg d
+: 1636944709:0;hg lgs
+: 1636944735:0;hg commit --interactive
+: 1636944796:0;hg commit -m "changed content"
+: 1636945641:0;cat test.test
+: 1636945643:0;cat test.test1
+: 1636946055:0;rm test.test
+: 1636946058:0;rm test.test1
+: 1636949392:0;mkdir src/tags
+: 1636949420:0;touch src/tags/.keep
+: 1636949463:0;cat src/tags/pc.org
+: 1636949473:0;cat src/tags/sailboat.org
+: 1636949538:0;l public/tags/laptop.html 
+: 1636949542:0;cat public/tags/laptop.html 
+: 1637035476:0;cat src/tags/car.org
+: 1637035721:0;cat src/tags/*
+: 1637035731:0;cat src/tags/laptop.org
+: 1637035950:0;st
+: 1637035970:0;l src
+: 1637036263:0;rm src/tags/*.org
+: 1637037402:0;hg commit -m "updated tag files generation"
+: 1637039180:0;rm content/tags/*.org
+: 1637039188:0;hg add .
+: 1637039200:0;hg commit -m "re-organizeing content and source code"
+: 1637072114:0;hg addremove
+: 1637072119:0;hg commit --amend
+: 1637072128:0;hg lga
+: 1637072131:0;hg push
+: 1637174406:0;brew search pdf-expert
+: 1637174552:0;brew install pdf-expert
+: 1642221493:0;pbpaste --help
+: 1642221795:0;osascript -e "get the clipboard as <<class PNGf>>" > test.png
+: 1642222114:0;osascript -e "get the clipboard as «class PNGf»" > test.png
+: 1642222394:0;osascript -e "clipboard info"
+: 1642222532:0;osascript -e "get the clipboard as «class PNGf»" | sed "s/«data ${class}//; s/»//" | xxd -r -p  > test2.png
+: 1642222640:0;osascript -e "get the clipboard as «class PNGf»" | sed "s/«data PNGf//; s/»//" | xxd -r -p  > test2.png
+: 1643167448:0;rust --version
+: 1643167455:0;rustc --version
+: 1643334547:0;HTOP
+: 1643334550:0;htop
+: 1643334553:0;pgrep emacs
+: 1643334641:0;te init.el
+: 1643334664:0;g lga
+: 1643335276:0;ag <<<
+: 1643335281:0;ag '<<<'
+: 1643335291:0;vim data/network-security.data
+: 1643335614:0;ag '===='
+: 1643335625:0;te custom.el
+: 1643336016:0;ag '==='
+: 1643336035:0;ls
+: 1643336326:0;ag exec-path-from-shell
+: 1643336514:0;pgrep -i emacs
+: 1643336519:0;te .
+: 1643336560:0;e &
+: 1643336950:0;mc
+: 1643338469:0;brew search fzf
+: 1643338479:0;brew info fzy
+: 1643338489:0;brew info fzf
+: 1643681986:0;brew searh nextcloud
+: 1643682005:0;brew upgrade
+: 1643682780:0;.emacs.d
+: 1643682783:0;g pull
+: 1643682874:0;l data
+: 1643682881:0;rm .emacs.desktop
+: 1643682896:0;rm .emacs.desktop.lock
+: 1643682901:0;gd
+: 1643682919:0;ga .
+: 1643682932:0;gcmsg "updated network sec and packages"
+: 1643682934:0;gst
+: 1643682935:0;g push
+: 1643683116:0;dotnet
+: 1643683121:0;dotnet --version
+: 1643683128:0;ocaml --version
+: 1643683925:0;cd ~/Documents/Projects
+: 1643683934:0;cd evgeniysharapov.com
+: 1643683959:0;..
+: 1643683971:0;cd Website
+: 1643683974:0;hg pull
+: 1643683980:0;hg st
+: 1643683986:0;make
+: 1643684033:0;hg lg
+: 1643684070:0;e . &
+: 1643684091:0;python -m http.server --directory public 8000 &
+: 1643684101:0;python --version
+: 1643687952:0;python
+: 1643688613:0;python -m SimpleHTTPServer --help
+: 1643688799:0;pyenv list
+: 1643688803:0;pyenv --list
+: 1643688814:0;pyenv version
+: 1643688816:0;pyenv versions
+: 1643688833:0;whicvh python
+: 1643688836:0;which python
+: 1643688866:0;pyenv local
+: 1643688872:0;pyenv --help
+: 1643688884:0;l ~/.config
+: 1643688899:0;l ~/.config/stetic/
+: 1643688903:0;l ~/.config/stetic/library-cache
+: 1643688916:0;l ~/.local
+: 1643688920:0;l ~/.local/share
+: 1643689584:0;python3 -m http.server --directory output 8000
+: 1643691575:0;pgrep -i emacs | xargs kill
+: 1643733615:0;brew list
+: 1643733776:0;brew info syntax-highlight
+: 1643733821:0;brew install syntax-highlight
+: 1643733893:0;brew search nextcloud
+: 1643733901:0;brew install nextcloud
+: 1643734390:0;cd ~
+: 1643734398:0;rd .Archives
+: 1645246559:0;l
+: 1646712423:0;brew search remote
+: 1646712442:0;brew install microsoft-remote-desktop
+: 1647312895:0;dotnet --version
+: 1647312911:0;brew search dotnet
+: 1647312928:0;brew info dotnet
+: 1647312938:0;brew info dotnet-sdk
+: 1647312962:0;which dotnet
+: 1647312975:0;dotnet fsi
+: 1647314081:0;l
+: 1647314084:0;cd Documents/Projects
+: 1647314085:0;l
+: 1647314098:0;dotnet new -h
+: 1647314126:0;dotnet new --list
+: 1647314240:0;l
+: 1647315317:0;dotnet new --install Fable.Template
+: 1647315981:0;dotnet new console -lang F# fsDataStructs
+: 1647315989:0;dotnet new console -lang F# -o fsDataStructs
+: 1647315995:0;cd fsDataStructs
+: 1647315998:0;code .
+: 1647316044:0;e . &
+: 1647316675:0;l
+: 1647316678:0;..
+: 1647316678:0;l
+: 1647316684:0;cd LearnFSharp
+: 1647316686:0;l
+: 1647316688:0;g pull
+: 1647316691:0;g lga
+: 1647316693:0;l
+: 1647316700:0;code .
+: 1647319024:0;gst
+: 1647319030:0;ga AlgoDataStructs.dib
+: 1647319040:0;gcmsg "added two problems solved"
+: 1647319042:0;g push
+: 1647319262:0;g lga
+: 1647401818:0;l
+: 1647401836:0;gst
+: 1647401841:0;ga -u
+: 1647401851:0;gcmsg "added another problem from Kattis"
+: 1647401852:0;g push
+: 1647405983:0;dotnet new -i Feliz.Template
+: 1647405993:0;l
+: 1647405998:0;gst
+: 1647406012:0;rd Kattis/\#marswindow.fsx\#
+: 1647406019:0;rm Kattis/\#test.fsx\#
+: 1647406020:0;gst
+: 1647406045:0;dotnet new feliz -n FifteenPuzzle 
+: 1647406050:0;cd FifteenPuzzle
+: 1647406051:0;l
+: 1647406060:0;yarn 
+: 1647406064:0;npm --version
+: 1647406068:0;node --version
+: 1647406072:0;npm i
+: 1647481413:0;cat ~/.npmrc
+: 1647481441:0;mv ~/.npmrc ~/.npmrc.orig
+: 1647481445:0;npm i
+: 1647481562:0;rd node_modules
+: 1647481568:0;npm i
+: 1647481633:0;cat
+: 1647481636:0;l
+: 1647481640:0;cat package.json
+: 1647481666:0;l
+: 1647481671:0;rd node_modules
+: 1647481687:0;cat package-lock.json| grep nan
+: 1647481766:0;brew search node
+: 1647481779:0;nodenv
+: 1647481784:0;nodenv versions
+: 1647481796:0;nodeenv install --help
+: 1647481801:0;nodenv install --help
+: 1647481808:0;nodenv install -l
+: 1647481847:0;nodenv versions
+: 1647481909:0;nodenv install 16.13.2
+: 1647481923:0;nodenv versions
+: 1647481929:0;nodenv -h
+: 1647481939:0;nodenv global -h
+: 1647481947:0;nodenv versions
+: 1647481960:0;nodenv global 16.13.2
+: 1647481964:0;node --version
+: 1647481968:0;npm --version
+: 1647481970:0;l
+: 1647481976:0;npm i
+: 1647482200:0;l
+: 1647482246:0;code .
+: 1647482265:0;dotnet npm start
+: 1647482282:0;cat README.md
+: 1647482301:0;npm start
+: 1647482331:0;l
+: 1647482338:0;te NuGet.Config
+: 1647482360:0;cat src
+: 1647482423:0;l
+: 1647482452:0;npm start
+: 1647482569:0;l
+: 1647482856:0;cat src
+: 1647482859:0;npm i
+: 1647482873:0;npm start
+: 1647482901:0;l
+: 1647482913:0;mv NuGet.Config _nuget_config
+: 1647482915:0;npm start
+: 1647482936:0;cd src
+: 1647482937:0;l
+: 1647482946:0;l bin
+: 1647482949:0;l bin/Debug
+: 1647482960:0;l bin/Debug/net5.0
+: 1647483258:0;brew list installed
+: 1647483265:0;brew list
+: 1647483299:0;brew list | grep dotnet
+: 1647483312:0;brew search dotnet
+: 1647483337:0;..
+: 1647483338:0;l
+: 1647483347:0;npm i
+: 1647483358:0;npm start
+: 1647483639:0;brew info dotnet-sdk
+: 1647483649:0;which dotnwet
+: 1647483652:0;which dotnet
+: 1647483666:0;brew install dotnet-sdk
+: 1647485309:0;rehash
+: 1647485311:0;dotnet
+: 1647485315:0;dotnet --version
+: 1647485319:0;npm i
+: 1647485327:0;npm start
+: 1647485386:0;code .
+: 1647485485:0;npm start
+: 1647485570:0;code src
+: 1647485641:0;npm start
+: 1647485934:0;code .
+: 1647485969:0;npm test
+: 1647486083:0;npm start
+: 1647567472:0;brew list
+: 1647567529:0;Documents/Projects
+: 1647567530:0;l
+: 1647567542:0;l ICFPC
+: 1647567780:0;l
+: 1647567785:0;e . &
+: 1647568192:0;pgrep emacs
+: 1647568195:0;pgrep -i emacs
+: 1647568203:0;pgrep -i emacs | xargs kill
+: 1647568330:0;cd fsElmish
+: 1647568335:0;dotnet fsi --help
+: 1647568356:0;dotnet fsi
+: 1647568378:0;e . &
+: 1647569203:0;..
+: 1647569204:0;l
+: 1647569228:0;cd LearnFSharp
+: 1647569229:0;l
+: 1647569235:0;code FifteenPuzzle
+: 1647569584:0;npm start
+: 1647570413:0;l
+: 1647570448:0;cd FifteenPuzzle
+: 1647570449:0;l
+: 1647570454:0;dotnet test
+: 1647570466:0;dotnet test tests/Tests.fsproj
+: 1647570484:0;..
+: 1647570486:0;gst
+: 1647570492:0;ga FifteenPuzzle
+: 1647570495:0;gst
+: 1647570517:0;gcmsg "Added Feliz web application - Fifteen Puzzle game"
+: 1647570523:0;g push
+: 1647570617:0;FifteenPuzzle
+: 1647570622:0;npm test:live
+: 1647570627:0;npm run test:live
+: 1650165617:0;pgrep emacs
+: 1650165622:0;..
+: 1650165628:0;Dropbox/Notes
+: 1650165630:0;e . &
+: 1650243629:0;diatheke
+: 1650243636:0;brew search diatheke

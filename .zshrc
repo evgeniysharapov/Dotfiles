@@ -65,24 +65,29 @@ bindkey -e
 
 # / is not part of the word. This works with word delete functionality
 export WORDCHARS=${WORDCHARS:s/\///}
-
+  
 # <Up> will search history back 
-if [[ -n "${terminfo[kcuu1]}" ]]; then
-    autoload -U up-line-or-beginning-search
-    zle -N up-line-or-beginning-search
-    bindkey "${terminfo[kcuu1]}" up-line-or-beginning-search
-    #bindkey "$terminfo[kcuu1]" history-substring-search-up
+autoload -U up-line-or-beginning-search
+zle -N up-line-or-beginning-search
 
+if [[ -n "${terminfo[kcuu1]}" ]]; then
+    bindkey "${terminfo[kcuu1]}" up-line-or-beginning-search
+fi
+# for some reason using $terminfo doesn't work on mac
+if [[ "$Z_OS" == "osx" ]]; then
+    bindkey '^[[A' up-line-or-beginning-search
 fi
 
 # <Down> will search history forward
+autoload -U down-line-or-beginning-search
+zle -N down-line-or-beginning-search    
 if [[ -n "${terminfo[kcud1]}" ]]; then
-    autoload -U down-line-or-beginning-search
-    zle -N down-line-or-beginning-search    
     bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
-    #bindkey "$terminfo[kcud1]" history-substring-search-down
 fi
-
+# for some reason using $terminfo doesn't work on mac
+if [[ "$Z_OS" == "osx" ]]; then
+    bindkey '^[[B' down-line-or-beginning-search
+fi
 
 
 # * History
@@ -340,3 +345,4 @@ test -r ${HOME}/.opam/opam-init/init.zsh && . ${HOME}/.opam/opam-init/init.zsh >
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/terraform terraform
+export HOMEBREW_GITHUB_API_TOKEN=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

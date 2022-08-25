@@ -26,11 +26,6 @@ which opam > /dev/null && \
     eval "$(opam env)"
 
 setopt auto_cd
-
-# useful aliases
-alias e="emacsclient"
-alias te="emacsclient -t"
-alias et="emacsclient -t"
  
 # we have installed Guile
 export GUILE_LOAD_PATH="/usr/local/share/guile/site/3.0"

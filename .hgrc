@@ -62,7 +62,10 @@ serve = -v
 diff = -p
 
 [subrepos]
-git:allowed = true
+allowed = True
+hg:allowed = True
+git:allowed = True
+svn:allowed = True
 
 [color]
 mode = ansi

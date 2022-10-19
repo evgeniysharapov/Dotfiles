@@ -55,8 +55,8 @@ setopt pushdminus
 autoload -z edit-command-line
 zle -N edit-command-line
 bindkey "^X^E" edit-command-line
-export EDITOR="emacsclient -t -a ''"
-export VISUAL=$EDITOR
+export EDITOR="emacsclient -t -a '' "
+export VISUAL="$EDITOR"
 
 # * Keybindings
 
@@ -65,24 +65,33 @@ bindkey -e
 
 # / is not part of the word. This works with word delete functionality
 export WORDCHARS=${WORDCHARS:s/\///}
-
+  
 # <Up> will search history back 
+autoload -U up-line-or-beginning-search
+zle -N up-line-or-beginning-search
+
 if [[ -n "${terminfo[kcuu1]}" ]]; then
     autoload -U up-line-or-beginning-search
     zle -N up-line-or-beginning-search
     bindkey "${terminfo[kcuu1]}" up-line-or-beginning-search
-    #bindkey "$terminfo[kcuu1]" history-substring-search-up
-
+fi
+# for some reason using $terminfo doesn't work on mac
+if [[ "$Z_OS" == "osx" ]]; then
+    bindkey '^[[A' up-line-or-beginning-search
 fi
 
 # <Down> will search history forward
+autoload -U down-line-or-beginning-search
+zle -N down-line-or-beginning-search    
 if [[ -n "${terminfo[kcud1]}" ]]; then
     autoload -U down-line-or-beginning-search
     zle -N down-line-or-beginning-search    
     bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
-    #bindkey "$terminfo[kcud1]" history-substring-search-down
 fi
-
+# for some reason using $terminfo doesn't work on mac
+if [[ "$Z_OS" == "osx" ]]; then
+    bindkey '^[[B' down-line-or-beginning-search
+fi
 
 
 # * History
@@ -358,3 +367,7 @@ complete -o nospace -C /usr/bin/terraform terraform
 # Add JBang to environment
 alias j!=jbang
 export PATH="$HOME/.jbang/bin:$PATH"
+export HOMEBREW_GITHUB_API_TOKEN=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
+
+# Mac OS X TeX environment
+export PATH=/Users/evgeniysharapov/.ConTeXt/tex/texmf-osx-64/bin:$PATH

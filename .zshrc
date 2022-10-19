@@ -368,3 +368,6 @@ complete -o nospace -C /usr/bin/terraform terraform
 alias j!=jbang
 export PATH="$HOME/.jbang/bin:$PATH"
 export HOMEBREW_GITHUB_API_TOKEN=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
+
+# Mac OS X TeX environment
+export PATH=/Users/evgeniysharapov/.ConTeXt/tex/texmf-osx-64/bin:$PATH

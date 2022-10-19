@@ -8,7 +8,7 @@
 local hyper = require('hyper')
 local wm = require('win-management')
 
-hyper.install('F20') -- set to F20 which is right_alt on my MBP
+hyper.install('F18') -- set to F18 which is right_alt on my MBP
 
 hyper.bindKey('r', function()
   hs.reload()
@@ -19,6 +19,12 @@ function show()
    hs.alert.show('Hello')
 end
 
+-- adding Window Manager Lunette
+-- https://github.com/scottwhudson/Lunette
+hs.loadSpoon("Lunette")
+spoon.Lunette:bindHotkeys()
+
+--[[
 -- fullscreen
 hyper.bindKey('up', wm.windowMaximize)
 -- resize to center
@@ -35,3 +41,5 @@ hyper.bindKey('2', function() wm.moveWindowToPosition(wm.screenPositions.bottom)
 -- mobing windows between screens
 hyper.bindShiftKey('right', function() hs.window.focusedWindow():moveOneScreenEast() end)
 hyper.bindShiftKey('left', function() hs.window.focusedWindow():moveOneScreenWest() end)
+--]]
+

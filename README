@@ -1,8 +1,51 @@
+# Configuration Files
+
 You have to have a mercurial tool. In addition to that you would have to have `hg-git` package installed in the python used by mercurial.
 
 By default Mercurial does not allow Git subrepositories, so you would have to override that setting when you clone this repository:
 
-   hg --config subrepos.git:allowed=true clone https://bitbucket.org/evgeniysharapov/dotfiles .dotfiles
+    hg --config subrepos.git:allowed=true clone https://bitbucket.org/evgeniysharapov/dotfiles .dotfiles
 
-Then you can just cd to `~/.dotfiles` and run `./deploy.sh`. This will create links to the dotfiles in your $HOME directory.
+Then you can just cd to `~/.dotfiles` and run `./deploy.sh`. This will create links to the dotfiles in your `$HOME` directory.
 
+
+## Configuration On Macbook 
+
+Switching Capslock to Ctrl could be done using Karabiner or `hdiutil`. 
+
+Here's what I use to map Capslock to LCtrl and ROption to F18 (later used as a Hyper in Hammerspoon). 
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.local.KeyRemapping</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/hidutil</string>
+        <string>property</string>
+        <string>--set</string>
+        <string>{"UserKeyMapping":[
+            {
+              "HIDKeyboardModifierMappingSrc": 0x700000039,
+              "HIDKeyboardModifierMappingDst": 0x7000000E0
+            },
+            {
+              "HIDKeyboardModifierMappingSrc": 0x7000000E6,
+              "HIDKeyboardModifierMappingDst": 0x70000006D
+            }
+        ]}</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+</dict>
+</plist>
+```
+
+I placed that file into `$HOME/Library/LaunchAgents/com.local.KeyRemapping.plist`. 
+
+Helpful links:
+* [Hyper Key on Mac without Karabiner](https://www.naseer.dev/post/hidutil/)
+* [hidutil key remapping generator](https://hidutil-generator.netlify.app/)

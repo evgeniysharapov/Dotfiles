@@ -361,13 +361,5 @@ alias -g NUL="> /dev/null 2>&1"
 # opam configuration
 test -r ${HOME}/.opam/opam-init/init.zsh && . ${HOME}/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/bin/terraform terraform
-
-# Add JBang to environment
-alias j!=jbang
-export PATH="$HOME/.jbang/bin:$PATH"
-export HOMEBREW_GITHUB_API_TOKEN=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
-
-# Mac OS X TeX environment
-export PATH=/Users/evgeniysharapov/.ConTeXt/tex/texmf-osx-64/bin:$PATH
+#autoload -U +X bashcompinit && bashcompinit
+#complete -o nospace -C /usr/bin/terraform terraform

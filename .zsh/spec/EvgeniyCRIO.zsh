@@ -5,7 +5,7 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 setopt auto_cd
-cdpath=($HOME/Documents/EDC)
+cdpath=($HOME/Documents/EDC $HOME/Documents)
 
 # gcloud settings
 source $HOME/google-cloud-sdk/completion.zsh.inc

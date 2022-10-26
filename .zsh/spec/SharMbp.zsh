@@ -34,3 +34,11 @@ export GUILE_SYSTEM_EXTENSIONS_PATH="/usr/local/lib/guile/3.0/extensions"
 
 # adjust PATH adding HomeBrew path
 export PATH=$(brew --prefix)/sbin:$PATH
+
+# Add JBang to environment
+alias j!=jbang
+export PATH="$HOME/.jbang/bin:$PATH"
+export HOMEBREW_GITHUB_API_TOKEN=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
+
+# Mac OS X TeX environment
+export PATH=/Users/evgeniysharapov/.ConTeXt/tex/texmf-osx-64/bin:$PATH

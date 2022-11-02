@@ -8,23 +8,79 @@
 local hyper = require('hyper')
 local wm = require('win-management')
 
-hyper.install('F18') -- set to F18 which is right_alt on my MBP
+-- set Hyper to F18 which is right_alt on my MBP
+hyper.install('F18') 
 
 hyper.bindKey('r', function()
   hs.reload()
-  hs.alert.show('Reloaded')
+  hs.alert.how('Reloaded')
 end)
-
-function show()
-   hs.alert.show('Hello')
-end
 
 -- adding Window Manager Lunette
 -- https://github.com/scottwhudson/Lunette
-hs.loadSpoon("Lunette")
-spoon.Lunette:bindHotkeys()
-
 --[[
+hs.loadSpoon("Lunette")
+-- customize bindings onto a Hyper key
+customBindings = {
+  leftHalf = {
+    {{"cmd", "alt"}, "left"},
+  },
+  rightHalf = {
+    {{"cmd", "alt"}, "right"},
+  },
+  topHalf = {
+    {{"cmd", "alt"}, "up"},
+  },
+  bottomHalf = {
+    {{"cmd", "alt"}, "down"},
+  },
+  topLeft = {
+    {{"ctrl", "cmd"}, "Left"},
+  },
+  topRight = {
+    {{"ctrl", "cmd"}, "Right"},
+  },
+  bottomLeft = {
+    {{"ctrl", "cmd", "shift"}, "Left"},
+  },
+  bottomRight = {
+    {{"ctrl", "cmd", "shift"}, "Right"},
+  },
+  fullScreen = {
+    {{"cmd", "alt"}, "F"},
+  },
+  center = {
+    {{"cmd", "alt"}, "C"},
+  },
+  nextThird = {
+    {{"ctrl", "alt"}, "Right"},
+  },
+  prevThird = {
+    {{"ctrl", "alt"}, "Left"},
+  },
+  enlarge = {
+    {{"ctrl", "alt", "shift"}, "Right"},
+  },
+  shrink = {
+    {{"ctrl", "alt", "shift"}, "Left"},
+  },
+  undo = {
+    {{"F19"}, "Z"},
+  },
+  redo = {
+    {{"alt", "cmd", "shift"}, "Z"},
+  },
+  nextDisplay = {
+    {{"ctrl", "alt", "cmd"}, "Right"},
+  },
+  prevDisplay = {
+    {{"ctrl", "alt", "cmd"}, "Left"},
+  }
+}
+spoon.Lunette:bindHotkeys(customBindings)
+]]--
+
+
 -- fullscreen
 hyper.bindKey('up', wm.windowMaximize)
 -- resize to center
@@ -41,5 +97,4 @@ hyper.bindKey('2', function() wm.moveWindowToPosition(wm.screenPositions.bottom)
 -- mobing windows between screens
 hyper.bindShiftKey('right', function() hs.window.focusedWindow():moveOneScreenEast() end)
 hyper.bindShiftKey('left', function() hs.window.focusedWindow():moveOneScreenWest() end)
---]]
 

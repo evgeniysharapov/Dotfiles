@@ -47,5 +47,6 @@ Here's what I use to map Capslock to LCtrl and ROption to F18 (later used as a H
 I placed that file into `$HOME/Library/LaunchAgents/com.local.KeyRemapping.plist`. 
 
 Helpful links:
+* [Using hidutil to map macOS keyboard keys](https://rakhesh.com/mac/using-hidutil-to-map-macos-keyboard-keys/)
 * [Hyper Key on Mac without Karabiner](https://www.naseer.dev/post/hidutil/)
 * [hidutil key remapping generator](https://hidutil-generator.netlify.app/)

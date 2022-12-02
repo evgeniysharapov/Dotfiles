@@ -1,8 +1,6 @@
 #
 # Configuration Specific to CRIO Macbook Pro
 # 
-# check for homebrew and evaluate its shell setup 
-eval "$(/opt/homebrew/bin/brew shellenv)"
 
 setopt auto_cd
 cdpath=($HOME/Documents/EDC $HOME/Documents $HOME/Documents/Looker)
@@ -11,4 +9,6 @@ cdpath=($HOME/Documents/EDC $HOME/Documents $HOME/Documents/Looker)
 source $HOME/google-cloud-sdk/completion.zsh.inc
 source $HOME/google-cloud-sdk/path.zsh.inc
 
+# For Google Cloud SDK development 
+export GOOGLE_APPLICATION_CREDENTIALS=/Users/evgeniysharapov/.keys/crio-dev-267118-fb2d927062e3.json
 

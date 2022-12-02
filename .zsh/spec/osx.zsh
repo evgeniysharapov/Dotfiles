@@ -1,5 +1,8 @@
 # MacOS X Specific Configuration
 
+# check for homebrew and evaluate its shell setup
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # make sure we initialize pyenv
 which pyenv > /dev/null && \
     eval "$(pyenv init -)"

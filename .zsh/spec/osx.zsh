@@ -19,3 +19,5 @@ which nodenv > /dev/null && \
 which jenv > /dev/null && \
     eval "$(jenv init -)"
 
+# Homebrew Completions 
+fpath=($HOMEBREW_REPOSITORY/share/zsh/site-functions/ $fpath)

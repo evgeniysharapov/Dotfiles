@@ -52,6 +52,7 @@
 
 # System Specific files (see https://git-scm.com/docs/git-config#_includes)
 [include]
-        path = ~/.gitconfig.ainq
-        path = ~/.gitconfig.crio
+        #path = ~/.gitconfig.ainq
+        #path = ~/.gitconfig.crio
+	path = ~/.gitconfig.labcorp
         

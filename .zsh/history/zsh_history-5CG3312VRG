@@ -1,0 +1,30 @@
+: 1707246095:0;apt install tmux
+: 1707246104:0;sudo apt install tmux
+: 1707246783:0;ls
+: 1707246785:0;l
+: 1707246870:0;sudo apt install powerline
+: 1707247693:0;aws
+: 1707247704:0;l
+: 1707247751:0;rm .git
+: 1707247754:0;l
+: 1707247760:0;cat .gitconfig
+: 1707247768:0;cat Dotfiles/.gitconfig
+: 1707247790:0;mv .gitconfig .gitconfig.labcorp
+: 1707247792:0;gst
+: 1707247822:0;man ln
+: 1707247845:0;ECHO $(pwd)
+: 1707247850:0;echo $(pwd)
+: 1707247876:0;ln -s /home/sharape/Dotfiles/.gitconfig .gitconfig
+: 1707247890:0;te .gitconfig
+: 1707247935:0;gst
+: 1707247943:0;cd Dotfiles
+: 1707247944:0;gst
+: 1707247995:0;gd
+: 1707247998:0;ga -u
+: 1707248010:0;g reset
+: 1707248011:0;gst
+: 1707248019:0;g co -b labcorp
+: 1707248022:0;ga -u
+: 1707248033:0;gcmsg "added labcorp specific settings"
+: 1707248035:0;g push
+: 1707248046:0;ga .zsh/history/zsh_history-5CG3312VRG

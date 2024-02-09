@@ -1,30 +1,369 @@
 : 1707246095:0;apt install tmux
 : 1707246104:0;sudo apt install tmux
-: 1707246783:0;ls
-: 1707246785:0;l
 : 1707246870:0;sudo apt install powerline
 : 1707247693:0;aws
-: 1707247704:0;l
-: 1707247751:0;rm .git
-: 1707247754:0;l
 : 1707247760:0;cat .gitconfig
 : 1707247768:0;cat Dotfiles/.gitconfig
 : 1707247790:0;mv .gitconfig .gitconfig.labcorp
-: 1707247792:0;gst
 : 1707247822:0;man ln
 : 1707247845:0;ECHO $(pwd)
 : 1707247850:0;echo $(pwd)
 : 1707247876:0;ln -s /home/sharape/Dotfiles/.gitconfig .gitconfig
 : 1707247890:0;te .gitconfig
-: 1707247935:0;gst
-: 1707247943:0;cd Dotfiles
-: 1707247944:0;gst
-: 1707247995:0;gd
-: 1707247998:0;ga -u
 : 1707248010:0;g reset
-: 1707248011:0;gst
 : 1707248019:0;g co -b labcorp
 : 1707248022:0;ga -u
 : 1707248033:0;gcmsg "added labcorp specific settings"
 : 1707248035:0;g push
 : 1707248046:0;ga .zsh/history/zsh_history-5CG3312VRG
+: 1707248054:0;gcmsg "added labcorp history"
+: 1707248063:0;g push -u origin labcorp
+: 1707248127:0;echo $PATH
+: 1707248151:0;idea
+: 1707248161:0;which code
+: 1707248181:0;te .zshrc
+: 1707248224:0;te .zshenv
+: 1707248278:0;l .zsh/spec/EvgeniyCRIO.zsh
+: 1707248285:0;cat .zsh/spec/EvgeniyCRIO.zsh
+: 1707248361:0;cp ~/.zsh/spec/EvgeniyCRIO.zsh .zsh/spec/5CG3312VRG.zsh
+: 1707248373:0;e .zsh/spec/5CG3312VRG.zsh &
+: 1707248653:0;l /opt/idea-IC-233.14015.106/bin
+: 1707248696:0;l /opt/idea-IC-233.14015.106/Install-Linux-tar.txt
+: 1707248702:0;cat /opt/idea-IC-233.14015.106/Install-Linux-tar.txt
+: 1707249166:0;aws configure --profile
+: 1707249174:0;aws configure --profile master01
+: 1707249412:0;aws configure --profile dev06
+: 1707249501:0;aws ecs
+: 1707249506:0;aws ecs --help
+: 1707249513:0;aws help
+: 1707249532:0;aws ecs help
+: 1707249555:0;aws --profile dev06 ecs list-clusters
+: 1707249562:0;aws configure
+: 1707249591:0;aws --profile dev06 --region us-east-1 ecs list-clusters
+: 1707249620:0;aws --profile dev06 --region us-east-1 ecs help
+: 1707249643:0;aws --profile dev06 --region us-east-1 ecs list-services
+: 1707249725:0;curl -X GET https://confluence.labcorp.com/collector/pages.action?key=~Sharape
+: 1707250716:0;curl -X GET https://www.google.com
+: 1707250745:0;te
+: 1707250894:0;Documents
+: 1707250905:0;rd _wsl_test
+: 1707250932:0;gts
+: 1707250934:0;g lga
+: 1707254529:0;aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 501991847235.dkr.ecr.us-east-1.amazonaws.com
+: 1707254861:0;cd Documents/lvs-docker-dev
+: 1707254868:0;cat .env
+: 1707254885:0;cat docs/before-you-begin.md
+: 1707255118:0;idea.sh & 
+: 1707255146:0;ps aux | grep java
+: 1707255190:0;kill -9 37104
+: 1707255300:0;cat ~/.ssh/id_rsa.pub
+: 1707318041:0;curl -X GET https://google.com
+: 1707318423:0;git config --list
+: 1707318498:0;cp /mnt/c/Users/sharape/AppData/Local/Programs/Git/mingw64/etc/ssl/certs/git.labcorp.com.crt /usr/local/share/ca-certificates/.
+: 1707318510:0;sudo cp /mnt/c/Users/sharape/AppData/Local/Programs/Git/mingw64/etc/ssl/certs/git.labcorp.com.crt /usr/local/share/ca-certificates/.
+: 1707318518:0;sudo update-ca-certificates 
+: 1707318525:0;curl -X GET https://git.labcorp.com
+: 1707318532:0;curl https://git.labcorp.com
+: 1707318572:0;curl https://curl.se/docs/sslcerts.html
+: 1707318874:0;ENSharap1982!
+: 1707321180:0;interface ipv4 show subinterface
+: 1707321191:0;netsh interface ipv4 show subinterface
+: 1707321329:0;ip link
+: 1707322520:0;aws --debug --profile dev06 ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 501991847235.dkr.ecr.us-east-1.amazonaws.com.
+: 1707322884:0;sudo ip link set eth0 mtu 1514
+: 1707322959:0;sudo ip link set eth0 mtu 1500
+: 1707323291:0;sudo ip link set eth0 mtu 1200
+: 1707330446:0;e .
+: 1707330475:0;ps aux | grep -i emacs
+: 1707330485:0;e . &
+: 1707332006:0;cat .bash_history
+: 1707332803:0;export http_proxy=http://wsa.labcorp.com:8080/
+: 1707332808:0;export https_proxy=http://wsa.labcorp.com:8080/
+: 1707333059:0;export https_proxy=http://wsa.labcorp.com:8080
+: 1707333064:0;export http_proxy=http://wsa.labcorp.com:8080
+: 1707333136:0;unset http_proxy
+: 1707333141:0;unset https_proxy
+: 1707333471:0;code .
+: 1707334621:0;aws --debug --profile dev06 ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 501991847235.dkr.ecr.us-east-1.amazonaws.com
+: 1707334782:0;te .
+: 1707334940:0;docker-compose up
+: 1707335013:0;ag 
+: 1707335056:0;l ~/.ssh
+: 1707335561:0;curl localhost:8080
+: 1707335944:0;curl -X GET lvs-docker-dev
+: 1707335973:0;curl -X GET lvs-docker-dev/lvs-direct-launc
+: 1707336812:0;code ~/.lvs-docker-dev 
+: 1707336951:0;ifconfig
+: 1707336993:0;python3 -m http.server 8888 -b 172.23.166.186
+: 1707337263:0;docker ls
+: 1707337266:0;docker ps
+: 1707337308:0;docker logs lvs-docker-dev-lvs-docker-dev-1
+: 1707337375:0;env
+: 1707337555:0;cat /home/sharape/.ssh/id_rsa
+: 1707337624:0;node --version
+: 1707338328:0;./bin/down.sh
+: 1707338495:0;cp ~/.ssh/id_rsa* /mnt/c/Users/sharape/.ssh/.
+: 1707339559:0;cat /etc/wsl.conf
+: 1707339943:0;sudo cp /etc/resolv.conf /etc/resolv.conf.bak
+: 1707339952:0;unlink /etc/resolv.conf
+: 1707340155:0;cd /mnt/c/Users/sharape/Documents/lvs-docker-dev
+: 1707341119:0;code .lvs-docker-dev
+: 1707342254:0;python3 -m http.server 8888
+: 1707342912:0;aws --profile dev06 ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 501991847235.dkr.ecr.us-east-1.amazonaws.com
+: 1707343816:0;idea.sh&
+: 1707343841:0;apt search firefox
+: 1707343885:0;sudo apt install firefox
+: 1707356591:0;sudo mv /etc/resolv.conf /etc/resolv.conf.bak.2
+: 1707356639:0;sudo mv /etc/resolv.conf.bak /etc/resolve.conf
+: 1707358056:0;ls /etc/res*
+: 1707358086:0;sudo mv /etc/resolve.conf /etc/resolv.conf
+: 1707358230:0;sudo apt-get install firefox
+: 1707359170:0;cat /etc/resolve.conf
+: 1707359201:0;sudo unlink /etc/resolv.conf
+: 1707359238:0;nslookup yahoo.com
+: 1707360703:0;l snap
+: 1707360725:0;mkdir Work
+: 1707360746:0;cp /mnt/c/Users/sharape/Downloads/wsl-vpnkit.tar.gz Work/.
+: 1707360748:0;cd Work
+: 1707360760:0;tar xzvf wsl-vpnkit.tar.gz
+: 1707360767:0;LL
+: 1707360820:0;Work
+: 1707360831:0;rm -rf app
+: 1707360836:0;rm -rf bin
+: 1707360840:0;rm -rf etc
+: 1707360847:0;rm -rf dev
+: 1707360852:0;rm -rf home
+: 1707360856:0;rm -rf lib
+: 1707360859:0;rm -rf media
+: 1707360863:0;rm -rf mnt
+: 1707360867:0;rm -rf opt
+: 1707360876:0;rm -rf proc
+: 1707360879:0;rm -rf root
+: 1707360883:0;rm -rf run
+: 1707360886:0;rm -rf sbin
+: 1707360890:0;rm -rf srv
+: 1707360894:0;rm -rf sys
+: 1707360900:0;rm -rf tmp
+: 1707360904:0;rm -rf usr
+: 1707360908:0;rm -rf var
+: 1707360913:0;rm .dockerenv
+: 1707361734:0;wsl.exe -d wsl-vpnkit --cd /app cat /app/wsl-vpnkit.service | sudo tee /etc/systemd/system/wsl-vpnkit.service
+: 1707361763:0;cat /etc/systemd/system/wsl-vpnkit.service
+: 1707361802:0;sudo systemctl enable wsl-vpnkit
+: 1707363431:0;firefox &
+: 1707363497:0;sudo apt-get remove firefox
+: 1707364757:0;export http_proxy=http://corpgate.labcorp.com:8080
+: 1707364762:0;export https_proxy=http://corpgate.labcorp.com:8080
+: 1707364781:0;export https_proxy=http://was.labcorp.com:8080
+: 1707364798:0;export http_proxy=http://was.labcorp.com:8080
+: 1707364800:0;curl -X GET 8.8.8.8
+: 1707364813:0;curl -X GET git.labcorp.com
+: 1707364825:0;curl -vvv -X GET git.labcorp.com
+: 1707364863:0;sudo systemd wsl-vpnkit status
+: 1707365955:0;ping 1.1.1.1
+: 1707366112:0;systemctl
+: 1707366219:0;sudo systemctl start wsl-vpnkit
+: 1707366227:0;systemctl status wsl-vpnkit
+: 1707369010:0;ping 2.2.2.2
+: 1707369277:0;sudo vim /etc/wsl.conf
+: 1707369322:0;sudo vim /etc/resolv.conf
+: 1707369370:0;ip addr
+: 1707369377:0;nslookup google.com
+: 1707415924:0;./bin/up.sh
+: 1707420519:0;ip addr show
+: 1707420543:0;cat /etc/resolv.conf
+: 1707420583:0;routef 
+: 1707420592:0;ip
+: 1707420597:0;ip route google.com
+: 1707420605:0;ip route 8.8.8.8
+: 1707420610:0;ip route help
+: 1707420623:0;TRACERT.EXE
+: 1707420632:0;TRACERT.EXE google.com
+: 1707421837:0;ping git.labcorp.com
+: 1707425283:0;sudo apt-get search the_silver_searcher
+: 1707425294:0;sudo apt search the_silver_searcher
+: 1707425418:0;rm Documents
+: 1707425423:0;l LabCorp
+: 1707425438:0;rd LabCorp
+: 1707425459:0;ls
+: 1707425491:0;rd vscode-js-debug
+: 1707425535:0;rd quarantined
+: 1707425561:0;rd dlp
+: 1707425578:0;rd My
+: 1707425606:0;rm Games
+: 1707425683:0;rm Application
+: 1707425700:0;rm Objects
+: 1707425732:0;rm Saved
+: 1707425746:0;rm Sharape
+: 1707425759:0;rm rm Start
+: 1707425767:0;rm files
+: 1707425788:0;rm mcafee
+: 1707425804:0;rm showcolors.sh
+: 1707425825:0;rm scripts
+: 1707425853:0;rm Local
+: 1707425866:0;rm Menu
+: 1707425883:0;rm _viminfo
+: 1707425918:0;rm 3D
+: 1707425989:0;rm .git
+: 1707426001:0;rm .zcompdump-5CG3312VRG-5.8
+: 1707426005:0;rm .zsh*
+: 1707426016:0;rm .vim*
+: 1707426025:0;rm .tmux*
+: 1707426034:0;rm .npmrc
+: 1707426043:0;rm Library
+: 1707426050:0;rm Data
+: 1707426063:0;rm .octaverc
+: 1707426070:0;rm .kdiff3rc
+: 1707426129:0;rm .inputrc .hammerspoon
+: 1707426135:0;rm .gemrc
+: 1707426143:0;rm .git-extras
+: 1707426147:0;rm .gitconfig.ainq
+: 1707426152:0;rm .gitconfig.crio
+: 1707426157:0;rm .gitignore_global
+: 1707426166:0;rm .hg-ext
+: 1707426173:0;rm .hgignore_global
+: 1707426213:0;rm .hgrc
+: 1707426220:0;rm .ackrc
+: 1707426224:0;rm .autohotkey
+: 1707426232:0;rm .bash_profile
+: 1707426241:0;rm .ctags
+: 1707426248:0;rm .eslintrc.json
+: 1707426254:0;rm .ghci
+: 1707426258:0;rm .bashrc
+: 1707426263:0;rm .globalrc
+: 1707426273:0;rm .hgrc.AMAC02VG2GWG8WL
+: 1707426280:0;rm .hgrc.nn-esharapov-02
+: 1707426285:0;rm .hgrc.P3530-20190221
+: 1707426291:0;rm .hgrc.WIN-VYVGUGX6RE
+: 1707426333:0;Dotfiles
+: 1707426362:0;rm Dotfiles
+: 1707426377:0;cat .zsh/history/zsh_history-5CG3312VRG
+: 1707426402:0;ping github.com
+: 1707426857:0;sudo apt install silversearcher-ag
+: 1707426869:0;sudo apt-get update
+: 1707427610:0;pgrep -i idea
+: 1707427629:0;kill -9 14808
+: 1707427634:0;pgrep -i java
+: 1707427645:0;kill -9 14425
+: 1707427651:0;pgrep java
+: 1707427664:0;kill 14425
+: 1707427676:0;pgrep idea
+: 1707427681:0;ps aux | grep idea
+: 1707427689:0;kill -9 11404
+: 1707427702:0;kill -9 14578
+: 1707427709:0;top
+: 1707427904:0;cd /mnt/c/Users/sharape/Documents
+: 1707427910:0;rd _test
+: 1707427918:0;cd lvs-docker-dev
+: 1707427925:0;cd ..
+: 1707427934:0;cd lvs-rest
+: 1707427944:0;cd ../lvs-services
+: 1707427957:0;rd .idea
+: 1707428404:0;l .m2
+: 1707428493:0;cat ./Documents/settings.xml
+: 1707428515:0;cp ./Documents/settings.xml .m2/.
+: 1707428945:0;java -version
+: 1707429158:0;cd ~
+: 1707429165:0;l Work
+: 1707429171:0;ll
+: 1707429175:0;mkdir Projects
+: 1707429177:0;cd Projects
+: 1707429186:0;idea.sh &
+: 1707487124:0;ping 8.8.8.8
+: 1707488305:0;~
+: 1707488353:0;cd Dotfiles
+: 1707488373:0;cat \#.zshenv\#
+: 1707488390:0;cat .\#.zshenv
+: 1707488408:0;rm \#.zshenv\#
+: 1707488426:0;rm .\#.zshenv
+: 1707488431:0;l
+: 1707488435:0;gd
+: 1707488451:0;gst
+: 1707488486:0;curl -s "https://get.sdkman.io" | sh
+: 1707488602:0;..
+: 1707488614:0;te sdkman-install.sh
+: 1707488645:0;cat sdkman-install.sh| sh
+: 1707488688:0;sudo apt-get install unzip
+: 1707488724:0;sudo apt-get install zip
+: 1707488727:0;cat sdkman-install.sh| bash
+: 1707489734:0;curl -k -s "https://get.sdkman.io"
+: 1707492061:0;openssl --version
+: 1707492122:0;openssl x509 -inform DER -in /mnt/c/Users/sharape/Documents/labcorp_root_ca.cer -out ./labcorp_root_ca.crt
+: 1707492140:0;sudo cp labcorp_root_ca.crt /usr/local/share/ca-certificates
+: 1707492162:0;curl -s "https://get.sdkman.io"
+: 1707493586:0;openssl x509 -inform DER -in /mnt/c/Users/sharape/Documents/cicso_umbrella_root.cer -out ./cisco_umbrella_root.crt
+: 1707493614:0;sudo cp cisco_umbrella_root.crt /usr/local/share/ca-certificates/
+: 1707493624:0;sudo update-ca-certificates
+: 1707493644:0;curl -vvv -s "https://get.sdkman.io"
+: 1707493787:0;history
+: 1707494141:0;rehash
+: 1707494146:0;sdk selfupdate
+: 1707494157:0;cat ~/.sdkman
+: 1707494166:0;l ~/.sdkman/candidates
+: 1707494170:0;l ~/.sdkman/
+: 1707495568:0;rd ~/.sdkman
+: 1707495572:0;curl -s "https://get.sdkman.io" | bash
+: 1707495623:0;. $HOME/.sdkman/bin/sdkman-init.sh"
+: 1707495625:0;. $HOME/.sdkman/bin/sdkman-init.sh
+: 1707495629:0;sdk
+: 1707495788:0;sdk list
+: 1707496019:0;sdk list java
+: 1707496094:0;te ~/.zsh/spec/5CG3312VRG.zsh
+: 1707496199:0;sdk version
+: 1707496208:0;cd Projects
+: 1707496455:0;l
+: 1707496460:0;g clone ssh://git@git.labcorp.com:7999/elv31/lvs-docker-dev.git
+: 1707496523:0;g clone ssh://git@git.labcorp.com:7999/dx/lvs-rest.git
+: 1707496558:0;g clone ssh://git@git.labcorp.com:7999/dx/lvs-services.git
+: 1707496813:0;aws --profile dev06 ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 501991847235.dkr.ecr.us-east-1.amazonaws.com
+: 1707496838:0;sudo apt-get update
+: 1707496911:0;docker images
+: 1707496918:0;l
+: 1707496923:0;cd lvs-docker-dev
+: 1707496924:0;l
+: 1707496926:0;g lga
+: 1707496954:0;l
+: 1707496959:0;cat README.md
+: 1707497180:0;sudo apt search lynx
+: 1707497253:0;apt SEARCH PANDOC
+: 1707497259:0;apt search pandoc
+: 1707498129:0;sudo apt install pandoc
+: 1707498151:0;rehash
+: 1707498160:0;pandoc -t plain README.md| less
+: 1707502739:0;sudo apt search golang
+: 1707502747:0;sudo apt search golang-go
+: 1707502798:0;sudo apt install golang-go
+: 1707502863:0;rehash
+: 1707502864:0;go
+: 1707503079:0;go install github.com/charmbracelet/glow@latest
+: 1707503148:0;rehash
+: 1707503151:0;glow
+: 1707504034:0;..
+: 1707504035:0;l
+: 1707504047:0;idea.sh &
+: 1707504215:0;git config --list
+: 1707504244:0;less ~/.bash_history
+: 1707504361:0;l
+: 1707504370:0;cd Dotfiles
+: 1707504371:0;l
+: 1707504376:0;glow
+: 1707504390:0;TE .
+: 1707506323:0;l
+: 1707506355:0;g config --global user.email "sharape@labcorp.com"
+: 1707506359:0;gst
+: 1707506366:0;gd
+: 1707506378:0;gst
+: 1707506382:0;gd
+: 1707506405:0;te .
+: 1707506476:0;gst
+: 1707506488:0;rm .zsh/spec/5CG3312VRG.zsh\~
+: 1707506491:0;gst
+: 1707506502:0;cat .zsh/cache/DEBS_avail
+: 1707506508:0;..
+: 1707506511:0;gst
+: 1707506517:0;cd Dotfiles
+: 1707506518:0;l
+: 1707506520:0;gst
+: 1707506530:0;ga .zsh/spec
+: 1707506531:0;gst
+: 1707506535:0;ga -u

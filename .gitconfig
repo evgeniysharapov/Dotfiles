@@ -1,6 +1,6 @@
 [user]
         name = Evgeniy Sharapov
-	email = sharape@labcorp.com
+	    email = evgeniy.sharapov@gmail.com
 [alias]
         st = status
         ci = commit
@@ -29,7 +29,7 @@
 
 [push]
         default = simple
-	autoSetupRemote = true
+	    autoSetupRemote = true
 
 [color]
         ui = auto
@@ -54,5 +54,7 @@
 [include]
         #path = ~/.gitconfig.ainq
         #path = ~/.gitconfig.crio
-	path = ~/.gitconfig.labcorp
+	    path = ~/.gitconfig.labcorp
         
+[credential]
+        helper = store

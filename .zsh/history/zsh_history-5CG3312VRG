@@ -12,14 +12,10 @@
 : 1707247890:0;te .gitconfig
 : 1707248010:0;g reset
 : 1707248019:0;g co -b labcorp
-: 1707248022:0;ga -u
 : 1707248033:0;gcmsg "added labcorp specific settings"
-: 1707248035:0;g push
 : 1707248046:0;ga .zsh/history/zsh_history-5CG3312VRG
 : 1707248054:0;gcmsg "added labcorp history"
-: 1707248063:0;g push -u origin labcorp
 : 1707248127:0;echo $PATH
-: 1707248151:0;idea
 : 1707248161:0;which code
 : 1707248181:0;te .zshrc
 : 1707248224:0;te .zshenv
@@ -45,20 +41,14 @@
 : 1707249725:0;curl -X GET https://confluence.labcorp.com/collector/pages.action?key=~Sharape
 : 1707250716:0;curl -X GET https://www.google.com
 : 1707250745:0;te
-: 1707250894:0;Documents
 : 1707250905:0;rd _wsl_test
-: 1707250932:0;gts
-: 1707250934:0;g lga
 : 1707254529:0;aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 501991847235.dkr.ecr.us-east-1.amazonaws.com
 : 1707254861:0;cd Documents/lvs-docker-dev
 : 1707254868:0;cat .env
 : 1707254885:0;cat docs/before-you-begin.md
-: 1707255118:0;idea.sh & 
-: 1707255146:0;ps aux | grep java
 : 1707255190:0;kill -9 37104
 : 1707255300:0;cat ~/.ssh/id_rsa.pub
 : 1707318041:0;curl -X GET https://google.com
-: 1707318423:0;git config --list
 : 1707318498:0;cp /mnt/c/Users/sharape/AppData/Local/Programs/Git/mingw64/etc/ssl/certs/git.labcorp.com.crt /usr/local/share/ca-certificates/.
 : 1707318510:0;sudo cp /mnt/c/Users/sharape/AppData/Local/Programs/Git/mingw64/etc/ssl/certs/git.labcorp.com.crt /usr/local/share/ca-certificates/.
 : 1707318518:0;sudo update-ca-certificates 
@@ -73,9 +63,7 @@
 : 1707322884:0;sudo ip link set eth0 mtu 1514
 : 1707322959:0;sudo ip link set eth0 mtu 1500
 : 1707323291:0;sudo ip link set eth0 mtu 1200
-: 1707330446:0;e .
 : 1707330475:0;ps aux | grep -i emacs
-: 1707330485:0;e . &
 : 1707332006:0;cat .bash_history
 : 1707332803:0;export http_proxy=http://wsa.labcorp.com:8080/
 : 1707332808:0;export https_proxy=http://wsa.labcorp.com:8080/
@@ -83,9 +71,7 @@
 : 1707333064:0;export http_proxy=http://wsa.labcorp.com:8080
 : 1707333136:0;unset http_proxy
 : 1707333141:0;unset https_proxy
-: 1707333471:0;code .
 : 1707334621:0;aws --debug --profile dev06 ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 501991847235.dkr.ecr.us-east-1.amazonaws.com
-: 1707334782:0;te .
 : 1707334940:0;docker-compose up
 : 1707335013:0;ag 
 : 1707335056:0;l ~/.ssh
@@ -93,14 +79,11 @@
 : 1707335944:0;curl -X GET lvs-docker-dev
 : 1707335973:0;curl -X GET lvs-docker-dev/lvs-direct-launc
 : 1707336812:0;code ~/.lvs-docker-dev 
-: 1707336951:0;ifconfig
 : 1707336993:0;python3 -m http.server 8888 -b 172.23.166.186
 : 1707337263:0;docker ls
 : 1707337266:0;docker ps
 : 1707337308:0;docker logs lvs-docker-dev-lvs-docker-dev-1
-: 1707337375:0;env
 : 1707337555:0;cat /home/sharape/.ssh/id_rsa
-: 1707337624:0;node --version
 : 1707338328:0;./bin/down.sh
 : 1707338495:0;cp ~/.ssh/id_rsa* /mnt/c/Users/sharape/.ssh/.
 : 1707339559:0;cat /etc/wsl.conf
@@ -109,19 +92,15 @@
 : 1707340155:0;cd /mnt/c/Users/sharape/Documents/lvs-docker-dev
 : 1707341119:0;code .lvs-docker-dev
 : 1707342254:0;python3 -m http.server 8888
-: 1707342912:0;aws --profile dev06 ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 501991847235.dkr.ecr.us-east-1.amazonaws.com
-: 1707343816:0;idea.sh&
 : 1707343841:0;apt search firefox
 : 1707343885:0;sudo apt install firefox
 : 1707356591:0;sudo mv /etc/resolv.conf /etc/resolv.conf.bak.2
 : 1707356639:0;sudo mv /etc/resolv.conf.bak /etc/resolve.conf
 : 1707358056:0;ls /etc/res*
 : 1707358086:0;sudo mv /etc/resolve.conf /etc/resolv.conf
-: 1707358230:0;sudo apt-get install firefox
 : 1707359170:0;cat /etc/resolve.conf
 : 1707359201:0;sudo unlink /etc/resolv.conf
 : 1707359238:0;nslookup yahoo.com
-: 1707360703:0;l snap
 : 1707360725:0;mkdir Work
 : 1707360746:0;cp /mnt/c/Users/sharape/Downloads/wsl-vpnkit.tar.gz Work/.
 : 1707360748:0;cd Work
@@ -165,12 +144,9 @@
 : 1707366219:0;sudo systemctl start wsl-vpnkit
 : 1707366227:0;systemctl status wsl-vpnkit
 : 1707369010:0;ping 2.2.2.2
-: 1707369277:0;sudo vim /etc/wsl.conf
 : 1707369322:0;sudo vim /etc/resolv.conf
 : 1707369370:0;ip addr
 : 1707369377:0;nslookup google.com
-: 1707415924:0;./bin/up.sh
-: 1707420519:0;ip addr show
 : 1707420543:0;cat /etc/resolv.conf
 : 1707420583:0;routef 
 : 1707420592:0;ip
@@ -185,7 +161,6 @@
 : 1707425418:0;rm Documents
 : 1707425423:0;l LabCorp
 : 1707425438:0;rd LabCorp
-: 1707425459:0;ls
 : 1707425491:0;rd vscode-js-debug
 : 1707425535:0;rd quarantined
 : 1707425561:0;rd dlp
@@ -235,52 +210,31 @@
 : 1707426280:0;rm .hgrc.nn-esharapov-02
 : 1707426285:0;rm .hgrc.P3530-20190221
 : 1707426291:0;rm .hgrc.WIN-VYVGUGX6RE
-: 1707426333:0;Dotfiles
 : 1707426362:0;rm Dotfiles
 : 1707426377:0;cat .zsh/history/zsh_history-5CG3312VRG
 : 1707426402:0;ping github.com
 : 1707426857:0;sudo apt install silversearcher-ag
-: 1707426869:0;sudo apt-get update
-: 1707427610:0;pgrep -i idea
 : 1707427629:0;kill -9 14808
 : 1707427634:0;pgrep -i java
 : 1707427645:0;kill -9 14425
-: 1707427651:0;pgrep java
 : 1707427664:0;kill 14425
-: 1707427676:0;pgrep idea
-: 1707427681:0;ps aux | grep idea
 : 1707427689:0;kill -9 11404
 : 1707427702:0;kill -9 14578
-: 1707427709:0;top
 : 1707427904:0;cd /mnt/c/Users/sharape/Documents
 : 1707427910:0;rd _test
-: 1707427918:0;cd lvs-docker-dev
 : 1707427925:0;cd ..
-: 1707427934:0;cd lvs-rest
 : 1707427944:0;cd ../lvs-services
-: 1707427957:0;rd .idea
 : 1707428404:0;l .m2
 : 1707428493:0;cat ./Documents/settings.xml
 : 1707428515:0;cp ./Documents/settings.xml .m2/.
-: 1707428945:0;java -version
-: 1707429158:0;cd ~
 : 1707429165:0;l Work
-: 1707429171:0;ll
 : 1707429175:0;mkdir Projects
-: 1707429177:0;cd Projects
-: 1707429186:0;idea.sh &
-: 1707487124:0;ping 8.8.8.8
 : 1707488305:0;~
-: 1707488353:0;cd Dotfiles
 : 1707488373:0;cat \#.zshenv\#
 : 1707488390:0;cat .\#.zshenv
 : 1707488408:0;rm \#.zshenv\#
 : 1707488426:0;rm .\#.zshenv
-: 1707488431:0;l
-: 1707488435:0;gd
-: 1707488451:0;gst
 : 1707488486:0;curl -s "https://get.sdkman.io" | sh
-: 1707488602:0;..
 : 1707488614:0;te sdkman-install.sh
 : 1707488645:0;cat sdkman-install.sh| sh
 : 1707488688:0;sudo apt-get install unzip
@@ -295,8 +249,6 @@
 : 1707493614:0;sudo cp cisco_umbrella_root.crt /usr/local/share/ca-certificates/
 : 1707493624:0;sudo update-ca-certificates
 : 1707493644:0;curl -vvv -s "https://get.sdkman.io"
-: 1707493787:0;history
-: 1707494141:0;rehash
 : 1707494146:0;sdk selfupdate
 : 1707494157:0;cat ~/.sdkman
 : 1707494166:0;l ~/.sdkman/candidates
@@ -305,65 +257,963 @@
 : 1707495572:0;curl -s "https://get.sdkman.io" | bash
 : 1707495623:0;. $HOME/.sdkman/bin/sdkman-init.sh"
 : 1707495625:0;. $HOME/.sdkman/bin/sdkman-init.sh
-: 1707495629:0;sdk
-: 1707495788:0;sdk list
 : 1707496019:0;sdk list java
-: 1707496094:0;te ~/.zsh/spec/5CG3312VRG.zsh
 : 1707496199:0;sdk version
-: 1707496208:0;cd Projects
-: 1707496455:0;l
 : 1707496460:0;g clone ssh://git@git.labcorp.com:7999/elv31/lvs-docker-dev.git
 : 1707496523:0;g clone ssh://git@git.labcorp.com:7999/dx/lvs-rest.git
 : 1707496558:0;g clone ssh://git@git.labcorp.com:7999/dx/lvs-services.git
-: 1707496813:0;aws --profile dev06 ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 501991847235.dkr.ecr.us-east-1.amazonaws.com
-: 1707496838:0;sudo apt-get update
 : 1707496911:0;docker images
-: 1707496918:0;l
-: 1707496923:0;cd lvs-docker-dev
-: 1707496924:0;l
-: 1707496926:0;g lga
-: 1707496954:0;l
 : 1707496959:0;cat README.md
 : 1707497180:0;sudo apt search lynx
 : 1707497253:0;apt SEARCH PANDOC
 : 1707497259:0;apt search pandoc
 : 1707498129:0;sudo apt install pandoc
-: 1707498151:0;rehash
 : 1707498160:0;pandoc -t plain README.md| less
 : 1707502739:0;sudo apt search golang
 : 1707502747:0;sudo apt search golang-go
 : 1707502798:0;sudo apt install golang-go
-: 1707502863:0;rehash
 : 1707502864:0;go
 : 1707503079:0;go install github.com/charmbracelet/glow@latest
-: 1707503148:0;rehash
-: 1707503151:0;glow
-: 1707504034:0;..
-: 1707504035:0;l
-: 1707504047:0;idea.sh &
 : 1707504215:0;git config --list
 : 1707504244:0;less ~/.bash_history
-: 1707504361:0;l
-: 1707504370:0;cd Dotfiles
-: 1707504371:0;l
-: 1707504376:0;glow
-: 1707504390:0;TE .
-: 1707506323:0;l
 : 1707506355:0;g config --global user.email "sharape@labcorp.com"
-: 1707506359:0;gst
-: 1707506366:0;gd
-: 1707506378:0;gst
-: 1707506382:0;gd
-: 1707506405:0;te .
-: 1707506476:0;gst
 : 1707506488:0;rm .zsh/spec/5CG3312VRG.zsh\~
-: 1707506491:0;gst
 : 1707506502:0;cat .zsh/cache/DEBS_avail
-: 1707506508:0;..
-: 1707506511:0;gst
 : 1707506517:0;cd Dotfiles
-: 1707506518:0;l
-: 1707506520:0;gst
 : 1707506530:0;ga .zsh/spec
-: 1707506531:0;gst
-: 1707506535:0;ga -u
+: 1707506542:0;gcmsg "labcorp git configuration"
+: 1707506548:0;g push -u origin labcorp
+: 1707506613:0;Dotfiles
+: 1707506620:0;g show
+: 1707506647:0;mvn
+: 1707506653:0;mvn --version
+: 1707506664:0;java --version
+: 1707507689:0;cd ../lvs-docker-dev
+: 1707510692:0;kill -9 58579
+: 1707510830:0;ls
+: 1707510834:0;ls -al
+: 1707511030:0;Pro
+: 1707511034:0;Projects/
+: 1707515190:0;cp /mnt/c/Users/sharape/Downloads/github-copilot-intellij-1.4.14.4554.zip .
+: 1707515387:0;sudo apt-get install firefox
+: 1707746877:0;ping 192.1.168.51
+: 1707746969:0;ssh esharapov@192.168.1.51
+: 1707746981:0;ipconfig
+: 1707746984:0;ifconfig
+: 1707746989:0;ip addr show
+: 1707756148:0;g clone ssh://git@git.labcorp.com:7999/dx/lvs-ui.git
+: 1707756158:0;c lvs-ui
+: 1707756164:0;cd lvs-ui
+: 1707756231:0;cd ../lvs-rest
+: 1707756803:0;LG LGA
+: 1707763117:0;../lvs-docker-dev
+: 1707763451:0;ag LVS_REST_BUILD_MODE
+: 1707763852:0;l ~/.lvs-docker-dev/external-placeholder
+: 1707763894:0;ag LVS_DOCKER_DEV_HOME
+: 1707763968:0;ag  LVS_REST_EXTERNAL_FOLDER
+: 1707764122:0;ag LVS_REST_BUILD_MOD
+: 1707764177:0;mvn clean package
+: 1707765262:0;.lvs-docker-dev
+: 1707765724:0;echo "" < logs/lvs-rest.log
+: 1707765731:0;echo "" > logs/lvs-rest.log
+: 1707765737:0;sudo echo "" > logs/lvs-rest.log
+: 1707765764:0;sudo rm logs/lvs-rest.log
+: 1707765771:0;l logs
+: 1707769327:0;l lvs-rest
+: 1707769330:0;l lvs-rest/bin
+: 1707769601:0;cat /mnt/c/Users/sharape/Documents/taskdef.json
+: 1707771515:0;ag taskdef.json
+: 1707772619:0;l ~/Documents
+: 1707772663:0;rd ~/Documents/wsl-test
+: 1707772664:0;rd ~/Documents/wsl-test-2
+: 1707772677:0;mv github-copilot-intellij-1.4.14.4554.zip ~/Documents/.
+: 1707772685:0;l ~
+: 1707772698:0;l ~/Work
+: 1707772714:0;mv ~/Work/wsl-vpnkit.tar.gz ~/Documents/.
+: 1707772717:0;rd ~/Work
+: 1707772767:0;cp /mnt/c/Users/sharape/Documents/taskdef.json .
+: 1707772883:0;apt search dos2unix
+: 1707772895:0;sudo apt install dos2unix
+: 1707772917:0;dos2unix --help
+: 1707772953:0;dos2unix application.yml
+: 1707772959:0;dos2unix taskdef.json
+: 1707772970:0;cp application.yml lvs-rest/src/main/resources/.
+: 1707773033:0;cp /mnt/c/Users/sharape/Documents/application.yml .
+: 1707773036:0;te application.yml
+: 1707773099:0;te /mnt/c/Users/sharape/Documents/application.yml
+: 1707773448:0;l ~/.lvs-docker-dev
+: 1707773494:0;echo $HOME
+: 1707773521:0;sudo chown /home/sharape/.lvs-docker-dev/container-build-folder
+: 1707773531:0;sudo chown /home/sharape/.lvs-docker-dev/container-build-folder sharape:sharape
+: 1707773545:0;sudo chown -R sharape:sharape /home/sharape/.lvs-docker-dev/container-build-folder
+: 1707773552:0;sudo chown -R sharape:sharape /home/sharape/.lvs-docker-dev/logs
+: 1707773557:0;cp taskdef.json ~/.lvs-docker-dev/container-build-folder/lvs-rest/lvs-rest/terraform/.
+: 1707835248:0;rm ~/.lvs-docker-dev/container-build-folder/lvs-rest/lvs-rest/terraform/taskdef.json
+: 1707835280:0;rm .emacs.d
+: 1707835381:0;l DotEmacs
+: 1707835408:0;mv DotEmacs ../.
+: 1707835420:0;rd .emacs.d
+: 1707835426:0;mv DotEmacs .emacs.
+: 1707835436:0;mv .emacs.d
+: 1707835446:0;mv .emacs. .emacs.d
+: 1707835541:0;kill 19106
+: 1707835599:0;kill 28359
+: 1707835993:0;emacs -Q 
+: 1707836235:0;kill 28802
+: 1707836769:0;kill 32565
+: 1707836788:0;emacs --debug-init . 
+: 1707837537:0;apt search iosevka
+: 1707837859:0;sudo apt-get install fonts-iosevka
+: 1707838006:0;mv /mnt/c/Users/sharape/Downloads/fonts-iosevka_22.0.0+ds-1_all.deb ~/Documents/.
+: 1707838094:0;cd ~/Documents
+: 1707838106:0;dpkg -i fonts-iosevka_22.0.0+ds-1_all.deb
+: 1707838113:0;sudo dpkg -i fonts-iosevka_22.0.0+ds-1_all.deb
+: 1707838134:0;kill 55214
+: 1707838491:0;kill 56478
+: 1707838547:0;kill 60229
+: 1707838600:0;kill 60947
+: 1707838806:0;kill 63129
+: 1707838832:0;kill 63505
+: 1707838835:0;kill 63507
+: 1707838845:0;kill 635610
+: 1707838847:0;kill 63510
+: 1707839437:0;ag taskdef.jsonl
+: 1707839449:0;sudo apt-get install tree
+: 1707839464:0;tree -l 5
+: 1707839470:0;tree --help
+: 1707839488:0;tree -L 5
+: 1707839490:0;tree -L 3
+: 1707839503:0;tree -L 4
+: 1707839523:0;sudo apt-get install jq
+: 1707839543:0;sudo apt search nodenv
+: 1707839559:0;sdk lit
+: 1707849396:0;l $HOME/Projects/lvs-rest
+: 1707849565:0;./bin/up.sh
+: 1707850217:0;export  LVS_REST_EXTERNAL_FOLDER=$HOME/Projects/lvs-rest
+: 1707850672:0;cp /mnt/c/Users/sharape/Documents/lvs-rest-qa.sh ~/Documents/.
+: 1707850835:0;cp ~/Documents/lvs-rest-qa.sh ~/.lvs-docker-dev/env-files/taskdef/lvs-rest-tzvi.sh
+: 1707851848:0;l target/
+: 1707854567:0;cd .zsh/spec
+: 1707854614:0;kill 12249
+: 1707854682:0;kill 12944
+: 1707854685:0;vim ~/.emacs.d/init.el
+: 1707854741:0;kill 13394
+: 1707854750:0;git st
+: 1707854754:0;cat README.
+: 1707854760:0;cat README.org
+: 1707854883:0;cd ~/.emacs.d
+: 1707854888:0;git submodule update --init --recursive
+: 1707855016:0;kill 15716
+: 1707855024:0;e .
+: 1707916756:0;ag panel-view
+: 1707916862:0;kill 20951
+: 1707917621:0;l lvs-cache
+: 1707917639:0;mvn clean compile
+: 1707917670:0;Projects/lvs-ui
+: 1707923279:0;idea.sh&
+: 1707930110:0;kill 19267
+: 1707930146:0;kill 44667
+: 1707930161:0;kill 45223
+: 1707930177:0;kill 49136
+: 1707930200:0;kill 44481
+: 1707936669:0;kill -9 44481
+: 1707937062:0;cd ~/Projects
+: 1707937075:0;cd Kotlin\ Koans
+: 1707937407:0;kill -9 16670
+: 1707937414:0;kill -9 74479
+: 1707939458:0;sudo vim /etc/wsl.conf
+: 1707942213:0;free
+: 1707942217:0;free -mh
+: 1707948101:0;emacs -Q
+: 1707948149:0;cat systems/5CG3312VRG.el
+: 1707948707:0;kill 9515
+: 1707948712:0;emacs --debug-init
+: 1707948975:0;kill 10622
+: 1707948994:0;ps aux | grep emacs
+: 1707948999:0;kill 11837
+: 1708011175:0;aws --profile dev06 ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 501991847235.dkr.ecr.us-east-1.amazonaws.com
+: 1708011300:0;rd AtomicKotlin
+: 1708011308:0;rd Kotlin\ Koans
+: 1708011311:0;rd Kotlin\ Koans1
+: 1708011316:0;rd Kotlin_Onboarding__Introduction
+: 1708011336:0;mv taskdef.json ../Documents/.
+: 1708011342:0;mv application.yml ../Documents/.
+: 1708011367:0;TE .
+: 1708011413:0;l env-files
+: 1708011419:0;l container-build-folder
+: 1708011426:0;l container-build-folder/lvs-direct-launch
+: 1708011431:0;l container-build-folder/lvs-poc-ui
+: 1708011434:0;l container-build-folder/lvs-poc-ui/lvs-poc-ui
+: 1708011443:0;less container-build-folder/lvs-poc-ui/lvs-poc-ui/taskDefinition.json 
+: 1708011468:0;less container-build-folder/lvs-poc-ui/lvs-poc-ui/tf-to-env.js
+: 1708014012:0;curl --location --request GET 'https: //eeh-hapi-fhir-stu3-qa.dev01.dxa.labcorp.com/fhir/Practitioner' \\
+--header 'Content-Type: application/fhir+json' \\
+--header 'Accept: application/fhir+json' \\
+--data '{\
+    "resourceType": "Practitioner",\
+    "name": {\
+        "use": "usual",\
+        "family": [\
+            "Hegmann"\
+        ],\
+        "given": [\
+            "Korbin"\
+        ],\
+        "suffix": [\
+            "MD"\
+        ]\
+    },\
+    "address": [\
+        {\
+            "line": [\
+                "4531 N 16th St"\
+            ],\
+            "city": "Phoenix",\
+            "state": "AR",\
+            "postalCode": "85016",\
+            "country": "US"\
+        }\
+    ],\
+    "gender": "male"\
+}'
+: 1708014026:0;curl --location --request GET 'https://eeh-hapi-fhir-stu3-qa.dev01.dxa.labcorp.com/fhir/Practitioner' \\
+--header 'Content-Type: application/fhir+json' \\
+--header 'Accept: application/fhir+json' \\
+--data '{\
+    "resourceType": "Practitioner",\
+    "name": {\
+        "use": "usual",\
+        "family": [\
+            "Hegmann"\
+        ],\
+        "given": [\
+            "Korbin"\
+        ],\
+        "suffix": [\
+            "MD"\
+        ]\
+    },\
+    "address": [\
+        {\
+            "line": [\
+                "4531 N 16th St"\
+            ],\
+            "city": "Phoenix",\
+            "state": "AR",\
+            "postalCode": "85016",\
+            "country": "US"\
+        }\
+    ],\
+    "gender": "male"\
+}'
+: 1708014238:0;g show  53e97e7e
+: 1708014257:0;cat env-files
+: 1708014261:0;cat env-files/docker
+: 1708014296:0;l env-files/docker
+: 1708015255:0;lvs-services
+: 1708015317:0;git gui
+: 1708015356:0;gitk
+: 1708015361:0;sudo apt search gitk
+: 1708015453:0;sudo apt install gitk
+: 1708015759:0;gitk .
+: 1708020991:0;cat owasp-suppressions.xml
+: 1708022130:0;docker-compose --help
+: 1708022170:0;tree -L 1
+: 1708022174:0;tree -L 2
+: 1708022220:0;mvn clean compile package
+: 1708022272:0;idea() { idea.sh & }
+: 1708025497:0;e &
+: 1708025765:0;ag "4"
+: 1708025772:0;ag \"4\"
+: 1708025807:0;mvn spring-boot:run
+: 1708031783:0;ps aux | grep idea | awk {print $2}
+: 1708031790:0;ps aux | grep idea | awk '{print $2}'
+: 1708031809:0;ps aux | grep idea.Main | awk '{print $2}'
+: 1708031827:0;ps aux | grep idea.Main | awk '{print $2}' | xargs kill
+: 1708031865:0;ps aux | grep \/opt\/idea
+: 1708031882:0;ps aux | grep /idea
+: 1708032223:0;./bin/restart
+: 1708098547:0;npm install
+: 1708098676:0;pgrep -i idea
+: 1708098679:0;which pgrep
+: 1708098684:0;pgrep --help
+: 1708098711:0;ps aux | grep idea
+: 1708098736:0;pgrep Main
+: 1708098815:0;pgrep java.+idea
+: 1708098824:0;kill 88275
+: 1708098834:0;idea
+: 1708098844:0;idea.sh & 
+: 1708099070:0;sudo apt-get update; sudo apt-get install make build-essential libssl-dev zlib1g-dev \\
+libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm \\
+libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+: 1708108100:0;curl https://pyenv.run | bash
+: 1708108131:0;te ~/.zsh/
+: 1708108406:0;source ~/.zsh/spec/5CG3312VRG.zsh
+: 1708108419:0;pyenv list
+: 1708116027:0;~/.emacs.d
+: 1708116693:0;git config credential.helper store
+: 1708116751:0;git config --global credential.helper store
+: 1708116757:0;cat ~/.gitconfig
+: 1708116774:0;cat ~/.gitconfig.crio
+: 1708116780:0;cat ~/.gitconfig.labcorp
+: 1708116787:0;cat ~/.gitconfig.ainq
+: 1708116878:0;te ~/.gitconfig.labcorp
+: 1708117567:0;te .git/config
+: 1708117595:0;git push
+: 1708357150:0;pgrep idea
+: 1708357155:0;pgrep -f idea
+: 1708362476:0;~/Projects
+: 1708362484:0;g clone ssh://git@git.labcorp.com:7999/dx/tf-aws-base-infrastructure.git
+: 1708364700:0;cate package.json
+: 1708364704:0;cat package.json
+: 1708364759:0;which node 
+: 1708373411:0;which npx
+: 1708373428:0;apt search npm
+: 1708373525:0;apt search nodenv
+: 1708373545:0;g clone https://github.com/nodenv/nodenv.git ~/.nodenv
+: 1708373558:0;sudo ln -vs ~/.nodenv/bin/nodenv /usr/local/bin/nodenv
+: 1708373582:0;mkdir -p "$(nodenv root)"/plugins
+: 1708373595:0;g clone https://github.com/nodenv/node-build.git "$(nodenv root)"/plugins/node-build
+: 1708373606:0;g clone https://github.com/nodenv/nodenv-aliases.git $(nodenv root)/plugins/nodenv-aliases
+: 1708373615:0;nodenv install 14.7.0
+: 1708373637:0;nodenv global 14
+: 1708456739:0;which node
+: 1708456784:0;l $(nodenv root)/shims
+: 1708456811:0;l /usr/local/bin/
+: 1708456866:0;which nodenv
+: 1708456868:0;nodenv
+: 1708456872:0;nodenv local
+: 1708456877:0;nodenv global
+: 1708456915:0;nodenv init
+: 1708456926:0;nodenv init - zsh
+: 1708456954:0;te ~/.zshrc
+: 1708457161:0;node
+: 1708457170:0;which npm
+: 1708533877:0;ag
+: 1708533891:0;ag --list-file-types
+: 1708534017:0;python3
+: 1708534026:0;pip3
+: 1708534030:0;which pythin
+: 1708534032:0;which python
+: 1708534036:0;which python3
+: 1708534040:0;pyenv
+: 1708534044:0;pyenv versions
+: 1708543930:0;pyenv global
+: 1708543937:0;pyenv --help
+: 1708543953:0;python install --list
+: 1708547258:0;curl -fsSL https://ollama.com/install.sh | sh
+: 1708548827:0;pyenv install --list
+: 1708548836:0;pyenv install --list | grep ^\d
+: 1708548839:0;pyenv install --list | grep ^\d.+
+: 1708548845:0;pyenv install --list | grep "^\d.+"
+: 1708548849:0;pyenv install --list | grep "^3.+"
+: 1708548852:0;pyenv install --list | grep "\W3.+"
+: 1708548859:0;pyenv install --list | grep 3.
+: 1708548864:0;pyenv install --list | grep ^3.
+: 1708548869:0;pyenv install --list | grep $3.
+: 1708548881:0;pyenv install --list | grep 3.12
+: 1708548892:0;pyenv install 3.12.2
+: 1708548911:0;ollama show --help
+: 1708549601:0;pyenv help
+: 1708549617:0;pyenv virturalenve help
+: 1708549623:0;pyenv virtualenve help
+: 1708549649:0;pyenv global 3.12.2
+: 1708549665:0;pip
+: 1708549667:0;pip list
+: 1708549903:0;ollama run llama2
+: 1708550318:0;ollama show
+: 1708550338:0;ollama pull mistral
+: 1708552328:0;npm --version
+: 1708552376:0;ollama list --help
+: 1708552764:0;cat /proc/version
+: 1708552853:0;ollama list
+: 1708552878:0;pip install ollama
+: 1708552895:0;md lama
+: 1708552897:0;cd lama
+: 1708552902:0;te test.py
+: 1708552951:0;python
+: 1708553061:0;ollama
+: 1708553075:0;ollama pull llama2
+: 1708614579:0;lvs-ui
+: 1708619511:0;sudo dpkg -i /mnt/c/Users/sharape/Downloads/pandoc-3.1.12.1-1-amd64.deb
+: 1708619521:0;pandoc
+: 1708619526:0;pandoc --version
+: 1708620973:0;hgrep
+: 1708621140:0;te ~/.zsh/spec/5CG3312VRG.zsh
+: 1708621572:0;npm io
+: 1708621951:0;te ~/.npmrc
+: 1708622045:0;cd mock-services
+: 1708622075:0;npm run start
+: 1708625737:0;te .
+: 1708626550:0;code lvs-ui
+: 1708628368:0;sudo dpkg -i /mnt/c/Users/sharape/Downloads/Hoppscotch_linux_x64.deb
+: 1708628414:0;sudo apt remove hoppscotch
+: 1708628422:0;apt search hoppscotch
+: 1708631542:0;aws --profile master01 s3
+: 1708631561:0;aws --profile master01 s3 help
+: 1708631569:0;aws --profile master01 s3 cp help
+: 1708631681:0;aws --profile master01 s3 cp s3://lvs-bronze-storage-qa/appOrchardQA04/2023/12/27/eigSy4SDO--Xx0q7RpqJZOA3-4ffe1cc1-22a1-46b0-ba64-34473e80d3d2 
+: 1708631686:0;aws --profile master01 s3 cp s3://lvs-bronze-storage-qa/appOrchardQA04/2023/12/27/eigSy4SDO--Xx0q7RpqJZOA3-4ffe1cc1-22a1-46b0-ba64-34473e80d3d2 .
+: 1708631720:0;aws --profile master01 s3 cp s3://lvs-bronze-storage-qa/appOrchardQA04/2023/12/27/eigSy4SDO--Xx0q7RpqJZOA3-011afefc-6218-406d-b54f-05c7e7fd7417 .
+: 1708704078:0;pip install jupyter
+: 1708704257:0;pip install boto3
+: 1708704271:0;md DevOps
+: 1708711380:0;git add GetServiceRequests.ipynb
+: 1708711408:0;git commit -m "Initial Commit" 
+: 1708711430:0;git remote add origin ssh://git@git.labcorp.com:7999/~sharape/swat-notebooks.git
+: 1708711437:0;git push -u origin HEAD:master
+: 1708712449:0;gcmsg "few more changes"
+: 1708716255:0;sudo apt-get update && sudo apt-get install -y dotnet-sdk-8.0
+: 1708716386:0;dotnet --list-sdks
+: 1708716390:0;dotnet --list-runtimes
+: 1708716395:0;dotnet --version
+: 1708721740:0;gcmsg "removed token from nb"
+: 1708722298:0;pip install kotlin-jupyter-kernel
+: 1708722447:0;python -m pip install notebook zsh_jupyter_kernel
+: 1708722453:0;jupyter kernelspec list
+: 1708959927:0;3qqqqqqqqqqqqqqqq
+: 1708959967:0;glga
+: 1708962187:0;rd .idea
+: 1708962197:0;rm lvs-services.iml
+: 1708963817:0;pgrep -f idea\.Main
+: 1708964251:0;mv /mnt/c/Users/sharape/Downloads/biblioteka.zip .
+: 1708964256:0;unzip biblioteka.zip
+: 1708964270:0;rd biblioteka.zip
+: 1708964286:0;gcmsg
+: 1708964317:0;./gradlew 
+: 1708966991:0;./gradlew tasks
+: 1708967025:0;./gradlew bootRun
+: 1708968235:0;firefox&
+: 1708968297:0;cat /mnt/c/Windows/System32
+: 1708968308:0;cat /mnt/c/Windows/System32/drivers/etc/
+: 1708968314:0;cat /mnt/c/Windows/System32/drivers/etc/hosts
+: 1708968342:0;curl -X GET localhost:8081
+: 1708968346:0;curl -X GET localhost:8081/
+: 1708968464:0;curl -X GET http://localhost:8081/
+: 1708968477:0;curl -X GET http://localhost:8081/html
+: 1708968483:0;curl -vvv -X GET http://localhost:8081/html
+: 1708968751:0;curl -vvv -X GET http://localhost:8081/test
+: 1708969050:0;curl http://localhost:8081/actuator
+: 1708969078:0;curl http://localhost:8082/actuator/beans
+: 1708973528:0;curl http://localhost:8081/test/
+: 1708973575:0;curl http://localhost:8080/test
+: 1708973579:0;curl http://localhost:8081/test
+: 1708974497:0;curl http://localhost:8081
+: 1708974814:0;curl http://localhost:8081/actuator/health
+: 1708974819:0;curl http://localhost:8081/actuator/beans
+: 1708974823:0;curl http://localhost:8081/actuator/
+: 1708974830:0;curl http://localhost:8081/actuator/endpoints
+: 1708975032:0;curl http://localhost:8081/
+: 1708975037:0;curl http://localhost:8081/api/test
+: 1708975177:0;mv /mnt/c/Users/sharape/Downloads/demo.zip .
+: 1708975183:0;unzip demo.zip
+: 1708976002:0;mv /mnt/c/Users/sharape/Downloads/ktl.zip .
+: 1708976005:0;unzip ktl.zip
+: 1708976189:0;pgrep java
+: 1708976198:0;ps aux | grep 8081
+: 1708976204:0;ps aux | grep java
+: 1708976256:0;curl http://localhost:8080
+: 1708976909:0;rm demo
+: 1708976912:0;rm demo.zip
+: 1708976917:0;rm ktl.zip
+: 1708976919:0;rd demo
+: 1708976921:0;rd ktl
+: 1708981164:0;cd lvs-services
+: 1708983515:0;g co -b oasis-integration
+: 1708983526:0;g push -u origin oasis-integration
+: 1708997281:0;../biblioteka
+: 1708997304:0;gcmsg "basics are working"
+: 1708997788:0;g remote add origin git@github.com:evgeniysharapov/biblioteka.git
+: 1708997801:0;g branch -M main
+: 1708997809:0;g push -u origin main
+: 1708997912:0;2
+: 1709046045:0;cd lvs-docker-dev
+: 1709046059:0;~/.lvs-docker-dev
+: 1709048559:0;~/.m2/repository/com/lca/lvs/lvs-ui
+: 1709048583:0;l ~/.m2/repository/com/lca/lvs/lvs-ui
+: 1709048590:0;l ~/.m2/repository/com/lca/lvs/lvs-ui/7.9.0-RC1-SNAPSHOT/
+: 1709048686:0;l ~/.m2/repository/com/lca/lvs/lvs-ui/7
+: 1709048688:0;l ~/.m2/repository/com/lca/lvs/lvs-ui/
+: 1709053683:0;gcmsg "DXA-10\
+q
+: 1709053690:0;gst\
+q
+: 1709058694:0;lvs-docker-dev
+: 1709061645:0;Projects/lvs-rest
+: 1709061702:0;dos2unix /mnt/c/Users/sharape/Downloads/application.yml
+: 1709061707:0;cp /mnt/c/Users/sharape/Downloads/application.yml src/main/resources/.
+: 1709062742:0;./bin/restart.sh
+: 1709062933:0;./bin/restart.sh lvs-rest
+: 1709063755:0;pgrep -f idea\.Main | xargs kill
+: 1709066307:0;g co ssh://git@git.labcorp.com:7999/dx/lvs-dxa-implementationguide.git
+: 1709066319:0;g clone ssh://git@git.labcorp.com:7999/dx/lvs-dxa-implementationguide.git
+: 1709130008:0;kill 180
+: 1709130021:0;sudo kill 180
+: 1709130052:0;kill 37940
+: 1709130062:0;sudo kill 37940
+: 1709130076:0;kill 38323
+: 1709130182:0;pgrep ollama
+: 1709136605:0;export AWS_PROFILE=master01
+: 1709136616:0;aws iam get-user
+: 1709136636:0;aws --profile master01 help
+: 1709136651:0;aws --profile master01 iam help
+: 1709136669:0;aws --profile master01 iam get-user
+: 1709136687:0;aws --profile master01 sts
+: 1709136700:0;aws --profile master01 sts get-caller-identity
+: 1709136734:0;aws --profile master01 s3 ls
+: 1709136744:0;aws --profile master01 sts help
+: 1709136752:0;aws --profile master01 sts get-session-token
+: 1709151736:0;ga TransitionEnvToMaster.ipynb
+: 1709151760:0;gcmsg "Added notebook for transitioning account from dev06 to master"
+: 1709151853:0;gcmsg "updated Devops scripts"
+: 1709151858:0;ga Diagrams.dib
+: 1709151872:0;gcmsg "added a notebook with Mermaid diagramms"
+: 1709156177:0;gcmsg "using python boto3 instead of command line simplifies the role switching quite a bit"
+: 1709156305:0;g br
+: 1709156308:0;g br -a
+: 1709220445:0;sudo apt search elm
+: 1709220485:0;glow
+: 1709222873:0;sudo apt install plantuml
+: 1709222897:0;plantuml
+: 1709222910:0;plantuml --help
+: 1709222917:0;man plantuml
+: 1709222947:0;apt search plantuml
+: 1709222961:0;sudo apt install pandoc-planuml-filter
+: 1709222967:0;sudo apt install pandoc-plantuml-filter
+: 1709222983:0;Documents
+: 1709222985:0;pwd
+: 1709231331:0;gcmsg "DXA-10484: use shared creds and state file from master01"
+: 1709231588:0;cd terraform
+: 1709231609:0;cd extdev
+: 1709231671:0;# adding terraform
+: 1709231686:0;echo $HISTSIZE
+: 1709231695:0;wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+: 1709231758:0;sudo apt update
+: 1709231767:0;apt search terraform
+: 1709231778:0;sudo apt install terraform
+: 1709231796:0;terraform version
+: 1709231803:0;terraform
+: 1709231930:0;te ~/.aws/credentials
+: 1709232241:0;terraform -lock=false plan
+: 1709234508:0;gcmsg "DXA-10484: changed aws account from from dev06 to dev01"
+: 1709234649:0;terraform/extdev
+: 1709240567:0;...
+: 1709240574:0;g pull ssh://git@git.labcorp.com:7999/dx/lvs-oncology.git
+: 1709240586:0;g clone ssh://git@git.labcorp.com:7999/dx/lvs-oncology.git
+: 1709240607:0;g clone ssh://git@git.labcorp.com:7999/dx/dxa-auth-client.git
+: 1709240635:0;g clone ssh://git@git.labcorp.com:7999/dx/preload-registration.git
+: 1709240665:0;g clone ssh://git@git.labcorp.com:7999/dx/lvs-persistence-token-refresh.git
+: 1709240704:0;g clone ssh://git@git.labcorp.com:7999/dx/lvs-preload-token-refresh.git
+: 1709240729:0;g clone ssh://git@git.labcorp.com:7999/dx/preload-patient.git
+: 1709240744:0;g clone ssh://git@git.labcorp.com:7999/dx/preload-practice.git
+: 1709240773:0;g clone ssh://git@git.labcorp.com:7999/dx/lvs-hapi-fhir.git
+: 1709240780:0;cd lvs-hapi-fhir
+: 1709240784:0;tree
+: 1709240813:0;te terraform/Development/taskdef.json
+: 1709240854:0;cd preload-patient
+: 1709240874:0;cd preload-practice
+: 1709241202:0;lvs-preload-token-refresh
+: 1709241226:0;lvs-oncology
+: 1709241320:0;../lvs-hapi-fhir
+: 1709241378:0;../dxa-auth-client
+: 1709318671:0;g clone https://github.com/VictorShiller/IG-Sample2
+: 1709318676:0;cd IG-Sample2
+: 1709318691:0;sh _genonce.sh
+: 1709318710:0;sh _updatePublisher.sh
+: 1709320140:0;cp /mnt/c/Users/sharape/Downloads/hl7.fhir.r4.core-4.0.1.tgz ~/.fhir
+: 1709320148:0;l ~/.fhir
+: 1709320158:0;man tar
+: 1709320188:0;tar -t ~/.fhir/hl7.fhir.r4.core-4.0.1.tgz
+: 1709320193:0;tar -t -f ~/.fhir/hl7.fhir.r4.core-4.0.1.tgz
+: 1709320213:0;cd ~/.fhir/
+: 1709320219:0;tar xzvf hl7.fhir.r4.core-4.0.1.tgz
+: 1709320225:0;l package
+: 1709320334:0;l packages/packages.ini
+: 1709320340:0;cat packages/packages.ini
+: 1709320460:0;mkdir packages/hl7.fhir.r4.core\#4.0.1
+: 1709320483:0;mv package packages/hl7.fhir.r4.core\#4.0.1/.
+: 1709321008:0;node --version
+: 1709321067:0;nodenv install --list | grep 18.
+: 1709321079:0;nodenv install 18.19.1
+: 1709321154:0;apt search jekyll
+: 1709321168:0;sudo install jekyll
+: 1709321176:0;sudo apt install jekyll
+: 1709321650:0;tar czvf IG-Sample2.tgz IG-Sample2
+: 1709321780:0;IG-Sample2
+: 1709321793:0;gcmsg "changes over webex"
+: 1709321804:0;git remote add labcorp ssh://git@git.labcorp.com:7999/~sharape/ig-sample2.git
+: 1709321820:0;git push -u labcorp HEAD:master
+: 1709323479:0;g clone ssh://git@git.labcorp.com:7999/elv16/lvs-er-implementationguide.git
+: 1709323553:0;cd lvs-er-implementationguide
+: 1709323564:0;chmod +x *.sh
+: 1709323613:0;g co feature/Urine24
+: 1709323750:0;./_updatePublisher.sh
+: 1709324154:0;cp /mnt/c/Users/sharape/Downloads/labcorp.fhir.cds-0.1.3.tgz ~/.fhir
+: 1709324174:0;cd ~/.fhir
+: 1709324180:0;tar xzvf labcorp.fhir.cds-0.1.3.tgz
+: 1709324219:0;mkdir packages/labcorp.fhir.cds#0.1.3
+: 1709324230:0;mv package ./packages/labcorp.fhir.cds\#0.1.3/.
+: 1709324238:0;l packages
+: 1709324245:0;popd
+: 1709324508:0;npm i -g fsh-sushi
+: 1709324959:0;lvs-er-implementationguide
+: 1709325042:0;java -version
+: 1709325363:0;cat ~/.fhir/packages/hl7.terminology.r4\#5.0.0/.index.json
+: 1709325379:0;RD ~/.fhir/packages/hl7.terminology.r4\#5.0.0
+: 1709325383:0;rd ~/.fhir/packages/hl7.terminology.r4\#5.0.0
+: 1709326132:0;sushi
+: 1709326600:0;history
+: 1709326609:0;history | grep sudo apt install
+: 1709326615:0;history | grep "sudo apt install"
+: 1709326623:0;history | grep "sudo apt-get install"
+: 1709326648:0;history | grep "jdk"
+: 1709326651:0;history | grep java
+: 1709326945:0;cat ~/.bash_history
+: 1709331445:0;nslookup 104.22.4.26
+: 1709564065:0;sdkman
+: 1709564069:0;sdk
+: 1709564085:0;sdk list
+: 1709565546:0;sdk install quarkus
+: 1709565557:0;quarkus --version
+: 1709565562:0;quarkus help
+: 1709565580:0;quarkus --help
+: 1709566111:0;sdk list leiningen
+: 1709566125:0;sdk instal leiningen
+: 1709566130:0;sdk install leiningen
+: 1709566145:0;lein --help
+: 1709568506:0;cat /mnt/c/Users/sharape/.wslconfig
+: 1709569424:0;./_genonce.sh
+: 1709569469:0;cat .git/config
+: 1709569650:0;env
+: 1709572512:0;l ~/.fhir/packages
+: 1709572528:0;l ~/.fhir/packages/hl7.fhir.r4.core\#4.0.1
+: 1709572541:0;tree -L 2 ~/.fhir/packages/hl7.fhir.r4.core\#4.0.1
+: 1709572546:0;tree -L 1 ~/.fhir/packages/hl7.fhir.r4.core\#4.0.1
+: 1709583631:0;g co master
+: 1709583640:0;g co DXZ-10484
+: 1709583643:0;g co DXA-10484
+: 1709583650:0;g merge master
+: 1709584088:0;gcmsg "DXA-10484: updated ARN for secrets manager"
+: 1709585221:0;md fs
+: 1709585227:0;dotnet new react -lang F# -o GoSaasApp
+: 1709585376:0;dotnet new fs-react -lang F# -o GoSaasApp 
+: 1709585387:0;dotnet new search fs-react -lang F# -o GoSaasApp 
+: 1709585411:0;dotnet new install fs-react
+: 1709585419:0;dotnet new search react
+: 1709585482:0;dotnet new install fable-react-elmish
+: 1709585500:0;dotnet new install Semuserable.Fable.Templates
+: 1709585535:0;dotnet new install Fable.Template.Elmish.React.Demo
+: 1709585557:0;dotnet new fable-react-elmish -lang F# -o GoSaasApp 
+: 1709585570:0;dotnet new fable-react-elmish -lang='F#' -o GoSaasApp 
+: 1709585576:0;dotnet new fable-react-elmish -o GoSaasApp 
+: 1709585605:0;rd GoSaasApp
+: 1709585623:0;dotnet new -lang="F#" -o GoSaasApp
+: 1709585683:0;dotnet new -i Feliz.Template
+: 1709585730:0;dotnet new feliz -n GoSaasApp
+: 1709585749:0;cat App.sln
+: 1709585769:0;dotnet add package Feliz
+: 1709585777:0;l src
+: 1709585795:0;nodenv list
+: 1709585811:0;nodenv versions
+: 1709585813:0;npm i
+: 1709585828:0;ag Elmish
+: 1709585834:0;cd src
+: 1709585849:0;dotnet add package Feliz.UseElmish
+: 1709585866:0;lcat App.fsproj
+: 1709585869:0;cat App.fsproj
+: 1709586205:0;rm IG-Sample2.tgz
+: 1709586217:0;l lama
+: 1709586221:0;rd lama
+: 1709586237:0;apt remove ollama
+: 1709586243:0;sudo apt remove ollama
+: 1709586255:0;apt search ollama
+: 1709586292:0;ps aux | grep ollama
+: 1709586295:0;top
+: 1709586462:0;cd GoSaasApp
+: 1709586699:0;sudo systemctl stop docker
+: 1709587621:0;g init
+: 1709587907:0;git remote add origin git@github.com:evgeniysharapov/GoSaasApp.git
+: 1709587913:0;git branch -M main
+: 1709587917:0;git push -u origin main
+: 1709591389:0;gcmsg "DXA-10484: changed vpc_tag"
+: 1709655702:0;dotnet fsi speech.fsx
+: 1709656413:0;gcmsg "DXA-10484: disabled persistence"
+: 1709666794:0;ga **/variables-preload.tf
+: 1709666811:0;gcmsg "DXA-10484: updated tag on vpc"
+: 1709666855:0;gcmsg "DXA-10484: created another secret and put its ARN to dxa-auth-client"
+: 1709674545:0;git log -S"subnet-list-dxa-values"
+: 1709674570:0;git log -S"subnet-list-dxa-values" --print
+: 1709674618:0;git log -S"subnet-list-dxa-values" --source --all
+: 1709674637:0;git log -S"subnet-list-dxa-values" -p --source --all
+: 1709734767:0;gcmsg "DXA-10484: updated the value for aws_subnet_ids based on QA01 environment"
+: 1709753918:0;gcmsg "DXA-10484: corrected name of audit bucket"
+: 1709754127:0;gcmsg "DXA-10484: added config for lvs-poc-ui-service module that fixes loadbalancer error"
+: 1709758579:0;gcmsg "DXA-10484: exclude lvs-poc-ui_service from inclusion into extdev"
+: 1709759336:0;gcmsg "DXA-10484: fixed typo when exclude lvs-poc-ui_service from inclusion into extdev"
+: 1709760350:0;gcmsg "DXA-10484: corrected module name when exclude lvs-poc-ui_service from inclusion into extdev"
+: 1709761531:0;gcmsg "DXA-10484: enough with exclusion of lvs-poc-ui. add it and change lb_subnets and asg_subnets in the module"
+: 1709762063:0;dotnet new install SAFE.Template
+: 1709762099:0;rm Build.fs
+: 1709762105:0;rd .config
+: 1709762111:0;rd .editorconfig
+: 1709762116:0;rd .fantomasignore
+: 1709762119:0;rd .gitignore
+: 1709762124:0;rd .npmrc
+: 1709762135:0;rd .packet
+: 1709762139:0;rd .paket
+: 1709762145:0;rd Build.fsproj
+: 1709762153:0;rd Helpers.fs
+: 1709762156:0;rd README.md
+: 1709762160:0;rd fs.sln
+: 1709762166:0;rd package.json
+: 1709762169:0;rd package-lock.json
+: 1709762172:0;rd global.json
+: 1709762180:0;rd paket.
+: 1709762182:0;rd paket.dependencies
+: 1709762187:0;rd paket.references
+: 1709762190:0;rd paket.lock
+: 1709762197:0;rd tests
+: 1709762204:0;l .vs
+: 1709762208:0;rd .vs
+: 1709762210:0;rd .vscode
+: 1709762222:0;mkdir biblioteka
+: 1709762232:0;dotnet new SAFE
+: 1709762328:0;dotnet paket restore
+: 1709762335:0;dotnet tools restore
+: 1709762343:0;dotnet tool restore
+: 1709762541:0;nodenv local 18
+: 1709762895:0;gcmsg "DXA-10484: correct typo when import diagnosticAssistanceCore module"
+: 1709762932:0;../Projects
+: 1709762937:0;biblioteka
+: 1709762943:0;.
+: 1709762956:0;git init
+: 1709762960:0;git init .
+: 1709762972:0;gcmsg "initial commit"
+: 1709820477:0;gs
+: 1709820854:0;gcmsg "DXA-10484: added missing variables for lvs-poc-ui-service"
+: 1709824778:0;gcmsg "DXA-10484: attempt to match extdev to QA01"
+: 1709826052:0;gcmsg "DXA-10484: changing subnets for lb"
+: 1709828510:0;gcmsg "DXA-10484: change subnets for poc-ui to Private"
+: 1709828787:0;gcmsg "DXA-10484: use PublicExt tier for LB subnet"
+: 1709832780:0;pgrep code
+: 1709832788:0;ps aux | grep code
+: 1709832832:0;pgrep -f vscode | xargs kill
+: 1709832837:0;pgrep -f vscode
+: 1709834471:0;cd DevOps
+: 1709836355:0;ag 501991847235.dkr.ecr.us-east-1.amazonaws.com/lvs-rest
+: 1709836446:0;cat lvs-rest/Dockerfile
+: 1709836459:0;cat lvs-rest/Jenkinsfile
+: 1709836974:0;ag 501991847235
+: 1709837077:0;cat terraform/extdev/taskdef.json
+: 1709837223:0;ag AWSREPODEV
+: 1709838241:0;cd lvs-rest
+: 1709838248:0;LGST
+: 1709838264:0;g stash
+: 1709838458:0;te pom.xml
+: 1709838542:0;../tf-aws-base-infrastructure
+: 1709838591:0;te ~/.gitconfig
+: 1709838665:0;explorer.exe ~
+: 1709838786:0;code ~
+: 1709840815:0;cat Jenkinsfile
+: 1709841109:0;cd dxa-auth-client
+: 1709841356:0;preload-registration
+: 1709841393:0;lvs-persistence-token-refresh
+: 1709841401:0;cat Dockerfile
+: 1709841451:0;te lvs-oncology/terraform/extdev/taskdef.json
+: 1709841477:0;cd lvs-oncology
+: 1709841586:0;l lvs-preload-token-refresh
+: 1709841595:0;l preload-patient
+: 1709841599:0;l preload-practice
+: 1709841609:0;l preload-practice/docker-compose-automation.yml
+: 1709841617:0;cat preload-practice/docker-compose-automation.yml
+: 1709845653:0;lvs-hapi-fhir
+: 1709845694:0;te terraform/DEV01/taskdef.json
+: 1709845708:0;te terraform/QA01/taskdef.json
+: 1709845794:0;lvs-rest
+: 1709845825:0;g co -b DXA-10484
+: 1709845831:0;gcmsg "DXA-10484: updated reference to the image for shared repo in master AWS account"
+: 1709845835:0;g push -u origin DXA-10484
+: 1709907188:0;ag REDISSERVICE_REPLICATED_NODEADDRESSES
+: 1709908079:0;gcmsg "DXA-10484: updated redis configuration endpoint address"
+: 1709909920:0;ag "Unable.*MDM"
+: 1709910141:0;code lvs-services/lvs-infrastructure/src/main/java/com/lca/lvs/rest/services/dxashared/PhoenixService.java
+: 1709917179:0;te terraform/extdev/taskdef.json
+: 1709917237:0;gcmsg "DXA-10484: corrected typo in redis config endpoint address"
+: 1709924026:0;ag jdbc:
+: 1709924686:0;ag lvs-fhir-dev-aurora
+: 1709924711:0;ag postgresql
+: 1709925630:0;ag postgres
+: 1709925676:0;ag fhir_postgresql_credentials
+: 1710177068:0;fs
+: 1710177087:0;mkdir Misc
+: 1710177096:0;mv *fsx Misc/.
+: 1710177102:0;mv MyData.db Misc/.
+: 1710177110:0;mv Example* Misc/.
+: 1710177721:0;cd Misc
+: 1710186426:0;g clone git@github.com:evgeniysharapov/biblioteka.git
+: 1710186463:0;g co -b fsharp
+: 1710186472:0;rd build.gradle
+: 1710186476:0;rd gradle
+: 1710186479:0;rd src
+: 1710186484:0;rm gradlew
+: 1710186488:0;rm gradlew.bat
+: 1710186492:0;rm settings.gradle
+: 1710186524:0;mv ../Misc/Biblioteka.fsx .
+: 1710186531:0;ga .
+: 1710186548:0;gcmsg "switching to F#"
+: 1710186561:0;g push -u origin fsharp
+: 1710186603:0;g co main
+: 1710188495:0;cd redisnode
+: 1710188499:0;ag redisnode
+: 1710188502:0;ag -i redisnode
+: 1710189291:0;ag auth_token
+: 1710189437:0;ag aws_secretsmanager_secret_version
+: 1710189467:0;ag redis_auth_token
+: 1710189537:0;gts
+: 1710189564:0;gcmsg "DXA-10484: updated link to redis cluster"
+: 1710190095:0;ag arn:aws:secretsmanager:us-east-1:749776248005:secret:Elvis/dev/DX_Database_Application_Role_Credentials-iZJKVq:application_role_password
+: 1710190108:0;ag arn:aws:secretsmanager:us-east-1:749776248005:secret:Elvis/dev
+: 1710190905:0;gcmsg "DXA-10484: changed reference to redis server pasword"
+: 1710207533:0;pgrep -f .vscode | xargs kill
+: 1710250121:0;ping 8.8.8.8
+: 1710250131:0;sudo apt-get update
+: 1710253945:0;ag shard
+: 1710254865:0;cd ../QA01
+: 1710254868:0;ag redis
+: 1710255254:0;gcmsg "DXA-10484: changed the mode of the redis connection to the one working with shard type"
+: 1710255521:0;ag dx-lvs-rest-host
+: 1710257458:0;tf-aws-base-infrastructure
+: 1710257462:0;gd HEAD
+: 1710257466:0;g show HEAD
+: 1710258603:0;l terraform/extdev/lvs-poc-ui-config.tf
+: 1710265272:0;ag SmartOnFhirController
+: 1710265284:0;code lvs-rest/src/main/java/com/lca/lvs/rest/controllers/SmartOnFhirController.java
+: 1710265397:0;ag HipaaSqsService.java
+: 1710265400:0;ag HipaaSqsService
+: 1710265412:0;code lvs-services/lvs-hipaa-audit/src/main/java/com/lca/lvs/hipaa/queue/services/HipaaSqsService.java
+: 1710265498:0;ag HipaaSqsService.sqsQueueUrl
+: 1710265504:0;ag sqsQueueUrl
+: 1710265781:0;cd tf-aws-base-infrastructure
+: 1710265786:0;cd terraform/QA01
+: 1710265789:0;ag sqs
+: 1710265945:0;ag hipaa-audit-sqs
+: 1710266772:0;cd terraform/extdev
+: 1710267260:0;gcmsg "DXA-10484: create missing SQS queue for Hipaa Audit"
+: 1710267302:0;ag "@\W+@"
+: 1710267304:0;ag "@\w+@"
+: 1710267725:0;terraform init -migrate-state
+: 1710267740:0;terraform init -reconfigure
+: 1710267962:0;terraform init
+: 1710267965:0;terraform plan
+: 1710268098:0;ga -X **/login.tf
+: 1710268291:0;ga -u ':!**/login.tf'
+: 1710268301:0;gd --cached
+: 1710268326:0;gcmsg "DXA-10484: use QA sqs and s3 bucket for hipaa shared"
+: 1710268450:0;Projects
+: 1710268638:0;fs/biblioteka
+: 1710268642:0;code .
+: 1710268696:0;g pull
+: 1710269328:0;dotnet new -i "Falco.Template::*"
+: 1710269359:0;ga -u
+: 1710269367:0;gcmsg "updated ignore file"
+: 1710269376:0;dotnet new falco
+: 1710269400:0;dotnet run
+: 1710269425:0;cat 6.0.0
+: 1710269429:0;ag 6.0.0
+: 1710269446:0;ag NetCore
+: 1710276038:0;git clean -n
+: 1710276044:0;f
+: 1710276053:0;git clean -f
+: 1710276060:0;rd Properties
+: 1710276063:0;rd obj
+: 1710276069:0;l bin
+: 1710276072:0;l bin/Debug
+: 1710276077:0;l bin/Debug/net6.0/biblioteka
+: 1710276083:0;./bin/Debug/net6.0/biblioteka
+: 1710276097:0;rd bin
+: 1710350821:0;.emacs.d
+: 1710350922:0;l ~/Projects/DevOps/
+: 1710350935:0;code ~/Projects/DevOps/
+: 1710425773:0;gd
+: 1710425780:0;grhh
+: 1710441816:0;apt-get youtube-dl
+: 1710441821:0;apt-get search youtube-dl
+: 1710441825:0;apt search youtube-dl
+: 1710441878:0;sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+: 1710441899:0;sudo chmod a+rx /usr/local/bin/youtube-dl
+: 1710441930:0;youtube-dl https://www.youtube.com/watch?v=fd6EKKKjIoE
+: 1710441959:0;sudo rm -f /usr/local/bin/youtube-dl
+: 1710441975:0;pyenv virtualenv help
+: 1710442004:0;python --version
+: 1710442060:0;sudo apt install yt-dlp
+: 1710442100:0;cd Documents
+: 1710442106:0;yt-dlp 
+: 1710442264:0;yt-dlp -U https://www.youtube.com/watch?v=fd6EKKKjIoE
+: 1710442279:0;sudo apt remove yt-dlp
+: 1710442311:0;pip3 install yt-dlp
+: 1710442320:0;rehash
+: 1710442330:0;yt-dlp https://www.youtube.com/watch?v=fd6EKKKjIoE
+: 1710442365:0;yt-dlp -f mp4 https://www.youtube.com/watch?v=fd6EKKKjIoE
+: 1710442390:0;cat taskdef.json
+: 1710442797:0;rm 'Russian folk dance! [fd6EKKKjIoE].*\
+'
+: 1710442820:0;rm 'Russian folk dance! [fd6EKKKjIoE].webm'
+: 1710442824:0;yt-dlp -f mp4 https://www.youtube.com/watch?v=fd6EKKKjIoE&list=PLioTfNuC9OAtnOvaCa1Y2GsTqaPdek5WU
+: 1710442870:0;rm 'Russian folk dance! [fd6EKKKjIoE].mp4'
+: 1710442881:0;yt-dlp -f mp4 https://www.youtube.com/playlist?list=PLioTfNuC9OAtnOvaCa1Y2GsTqaPdek5WU
+: 1710442904:0;yt-dlp -f mp4 https://youtube.com/playlist?list=PLioTfNuC9OAtnOvaCa1Y2GsTqaPdek5WU&si=Z5qcOpEJ-_UTzeAy
+: 1710447022:0;explorer.exe .
+: 1710510276:0;cd /mnt/c/Users/sharape/Downloads
+: 1710510281:0;mkdir Empl
+: 1710510342:0;unzip EmployeeService.zip
+: 1710514539:0;pgrep -f .vscode
+: 1710514543:0;pgrep -f \.vscode
+: 1710516715:0;l /mnt
+: 1710516720:0;l /mnt/g/
+: 1710516725:0;l /mnt/g
+: 1710516730:0;l /mnt/d
+: 1710516749:0;ll
+: 1710516777:0;cd ~
+: 1710516870:0;hgrep ollama
+: 1710516894:0;sudo systemctl stop ollama.service
+: 1710517119:0;pgrep emacs
+: 1710517125:0;pgrep emacs | xargs kill
+: 1710517134:0;pgrep -f idea | xargs kill
+: 1710517140:0;pgrep -f .Idea | xargs kill
+: 1710517144:0;pgrep -f \.Idea | xargs kill
+: 1710517220:0;cd .emacs.d
+: 1710517223:0;e . &
+: 1710517559:0;l Documents
+: 1710517581:0;rd Documents
+: 1710517592:0;l snap
+: 1710517618:0;l biblioteka
+: 1710517625:0;rd biblioteka
+: 1710517633:0;l fs
+: 1710517642:0;..
+: 1710517650:0;md Personal
+: 1710517663:0;mv ~/Projects/fs Personal/.
+: 1710517666:0;cd Projects
+: 1710517977:0;idea.sh &
+: 1710518223:0;../Personal
+: 1710518240:0;g clone git@github.com:evgeniysharapov/MyMoney.git mymon
+: 1710518249:0;cd fs
+: 1710518260:0;cd biblioteka
+: 1710518261:0;gst
+: 1710518263:0;g lga
+: 1710518269:0;g push
+: 1710518271:0;l
+: 1710518298:0;htop
+: 1710518335:0;sudo systemctl stop ollama
+: 1710518346:0;sudo systemctl disable ollama
+: 1710518352:0;sudo rm /etc/systemd/system/ollama.service
+: 1710518360:0;sudo rm $(which ollama)
+: 1710518367:0;sudo rm -r /usr/share/ollama
+: 1710518381:0;sudo groupdel ollama
+: 1710518383:0;sudo userdel ollama
+: 1710518830:0;cd Personal/mymon
+: 1710518842:0;te ~/Dotfiles
+: 1710518891:0;cd Dotfiles
+: 1710518892:0;gst
+: 1710518898:0;cd ~/Dotfiles
+: 1710518900:0;gst
+: 1710518909:0;ga -u

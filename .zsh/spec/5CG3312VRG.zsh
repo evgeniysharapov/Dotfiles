@@ -16,8 +16,19 @@ which nodenv > /dev/null && \
 
 
 # added Intellij IDEA
-export PATH=/opt/idea-IC-233.14015.106/bin:$PATH
+#export PATH=/opt/idea-IC-233.14015.106/bin:$PATH
+export PATH=/opt/idea-IU-241.14494.240/bin:$PATH
+# let's add an alias for idea and redirect all the noise to dev/null
+alias idea='idea.sh > /dev/null 2>&1 &'
+
 
 # Adding 'sdk' command from SDKMAN!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# Adding QCad
+export PATH=$HOME/opt/qcad-3.29.6-trial-linux-qt5.14-x86_64:$PATH
+
+# Compiled and installed Emacs29 to /opt/emacs29/
+export PATH="/opt/emacs29/bin:$PATH"
+

@@ -1,12 +1,25 @@
 # Configuration Files
 
-You have to have a mercurial tool. In addition to that you would have to have `hg-git` package installed in the python used by mercurial.
+## Requirements 
 
-By default Mercurial does not allow Git subrepositories, so you would have to override that setting when you clone this repository:
+### Stow 
+This one uses `stow` to manage symlinks. For more details please see [Jake Weisler's Stow intro](https://www.jakewiesler.com/blog/managing-dotfiles#understanding-stow) or [Managing Your dotfiles using Stow](https://dr563105.github.io/blog/manage-dotfiles-with-gnu-stow/).
 
-    hg --config subrepos.git:allowed=true clone https://bitbucket.org/evgeniysharapov/dotfiles .dotfiles
+Installing `stow`
 
-Then you can just cd to `~/.dotfiles` and run `./deploy.sh`. This will create links to the dotfiles in your `$HOME` directory.
+    sudo apt stow # Ubuntu
+    
+    brew install stow # Homebrew Mac
+
+### Other tools 
+
+These are helpful:
+ - git-extras 
+ - ag
+ 
+
+## Install and Deploy 
+
 
 
 ## Configuration On Macbook 

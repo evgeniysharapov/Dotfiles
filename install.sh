@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/env zsh
 
 #
 # Deploys our configuration files in HOME directory as symbolic links

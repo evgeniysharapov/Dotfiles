@@ -6,7 +6,6 @@
 #  Author: Evgeniy Sharapov
 #
 
-
 # * Extra Scripts Directory
 ZSH=${HOME}/.zsh
 # caching 

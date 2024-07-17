@@ -3203,3 +3203,32 @@ git push -u origin main
 : 1721164364:0;cd ~/Dotfiles
 : 1721164366:0;gst
 : 1721164369:0;gd
+: 1721165071:0;sudo apt install stow
+: 1721223025:0;l
+: 1721223030:0;gst
+: 1721223036:0;gd -- README
+: 1721223064:0;g co -b using-stow
+: 1721223071:0;g lga
+: 1721223088:0;g co using-stow
+: 1721223091:0;l
+: 1721223093:0;gst
+: 1721223109:0;rm .zsh/history/zsh_history-5CG3312VRG___
+: 1721223115:0;ga README
+: 1721223121:0;gcmsg "updated documentation"
+: 1721223124:0;gd
+: 1721223138:0;l
+: 1721223189:0;apt search git-extras
+: 1721223196:0;sudo apt install git-extras
+: 1721223210:0;rehash
+: 1721223938:0;dpkg --listfiles git-extras
+: 1721223957:0;g changelog
+: 1721224067:0;e . &
+: 1721224107:0;./showcolors.sh
+: 1721224116:0;sh showcolors.sh
+: 1721224121:0;bash showcolors.sh
+: 1721224205:0;..
+: 1721224209:0;rd Dotfiles.old
+: 1721224214:0;rd Dotfiles.old.2
+: 1721224216:0;l
+: 1721224264:0;l Library
+: 1721224277:0;cp -R Dotfiles Dotfiles.Git

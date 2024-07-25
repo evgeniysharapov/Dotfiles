@@ -1,4 +1,4 @@
-#!/bin/env zsh
+#!/bin/zsh
 
 #
 # Deploys our configuration files in HOME directory as symbolic links
@@ -8,14 +8,14 @@
 all_modules=(
     ack
 #    autohotkey
-#    bash
+    bash
     ctags
     eslint
     gem
     ghc
     git
     global
-#    hammerspoon
+    hammerspoon
 #    hg
     input
     kdiff
@@ -24,7 +24,7 @@ all_modules=(
 #    octave
     scripts
     tmux
-#    vim
+    vim
     zsh
 )
 for mod_name in $all_modules;

@@ -1,0 +1,18 @@
+#!/bin/env zsh
+
+echo "Rebuilding and Restarting Lvs Stack...."
+
+LVS_SERVICES_DIR="${HOME}/Projects/lvs-services/"
+LVS_REST_DIR="${HOME}/Projects/lvs-rest/"
+LVS_DOCKER_DEV_DIR="${HOME}/Projects/lvs-docker-dev/"
+
+# Rebuild 
+for D in "${LVS_SERVICES_DIR}" "${LVS_REST_DIR}"
+do
+    cd $D
+    mvn clean compile package install -Dmaven.test.skip=true
+done
+
+# Restart
+cd "${LVS_DOCKER_DEV_DIR}"
+sh ./bin/restart.sh

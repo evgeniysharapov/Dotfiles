@@ -98,7 +98,7 @@ if [ -z "$HISTFILE" ]; then
     HISTFILE=${ZSH}/history/zsh_history-${Z_HOST}
 fi
 # More history is saved 
-HISTSIZE=100000
+HISTSIZE=1000000
 SAVEHIST=$HISTSIZE
 # avoid duplicates
 # https://wiki.archlinux.org/index.php/zsh#Preventing_duplicate_lines_in_the_history

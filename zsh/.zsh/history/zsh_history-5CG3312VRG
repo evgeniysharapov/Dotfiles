@@ -68,8 +68,6 @@
 : 1707333064:0;export http_proxy=http://wsa.labcorp.com:8080
 : 1707333136:0;unset http_proxy
 : 1707333141:0;unset https_proxy
-: 1707334621:0;aws --debug --profile dev06 ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 501991847235.dkr.ecr.us-east-1.amazonaws.com
-: 1707334940:0;docker-compose up
 : 1707335056:0;l ~/.ssh
 : 1707335561:0;curl localhost:8080
 : 1707335944:0;curl -X GET lvs-docker-dev
@@ -465,7 +463,6 @@
 : 1708014261:0;cat env-files/docker
 : 1708014296:0;l env-files/docker
 : 1708015317:0;git gui
-: 1708015356:0;gitk
 : 1708015361:0;sudo apt search gitk
 : 1708015453:0;sudo apt install gitk
 : 1708015759:0;gitk .
@@ -481,7 +478,6 @@
 : 1708031827:0;ps aux | grep idea.Main | awk '{print $2}' | xargs kill
 : 1708031865:0;ps aux | grep \/opt\/idea
 : 1708031882:0;ps aux | grep /idea
-: 1708098547:0;npm install
 : 1708098676:0;pgrep -i idea
 : 1708098679:0;which pgrep
 : 1708098684:0;pgrep --help
@@ -807,9 +803,6 @@ q
 : 1709585730:0;dotnet new feliz -n GoSaasApp
 : 1709585749:0;cat App.sln
 : 1709585769:0;dotnet add package Feliz
-: 1709585795:0;nodenv list
-: 1709585811:0;nodenv versions
-: 1709585813:0;npm i
 : 1709585828:0;ag Elmish
 : 1709585834:0;cd src
 : 1709585849:0;dotnet add package Feliz.UseElmish
@@ -897,7 +890,6 @@ q
 : 1709838786:0;code ~
 : 1709841356:0;preload-registration
 : 1709841393:0;lvs-persistence-token-refresh
-: 1709841401:0;cat Dockerfile
 : 1709841451:0;te lvs-oncology/terraform/extdev/taskdef.json
 : 1709841586:0;l lvs-preload-token-refresh
 : 1709841595:0;l preload-patient
@@ -1139,7 +1131,6 @@ sudo apt-get install azure-functions-core-tools-4
 : 1711395853:0;ag clinicalDecisionSupportEnabled
 : 1711401416:0;gd -- **/LaunchInfo.java
 : 1711461509:0;rm t
-: 1711481764:0;l scripts
 : 1711481767:0;l scripts/
 : 1711481786:0;g clone https://github.com/dermatologist/fhirform-server.git
 : 1711481790:0;cd fhirform-server
@@ -1173,7 +1164,6 @@ sudo apt-get install azure-functions-core-tools-4
 : 1711573402:0;g co -b transition-master-consolidated
 : 1711573812:0;g push -u origin transition-master-consolidated
 : 1711633011:0;man ag
-: 1711633025:0;rg
 : 1711633087:0;g clone git@github.com:hapifhir/hapi-fhir.git
 : 1711633218:0;ag AbstractJaxRS
 : 1711633241:0;echo hapi-fhir >> .ignore
@@ -1187,7 +1177,6 @@ sudo apt-get install azure-functions-core-tools-4
 : 1711638663:0;sudo apt-get updated
 : 1711639179:0;cat ../fhirql
 : 1711639182:0;cat ../fhirql/pom.xml
-: 1711639513:0;cat ~/.m2/settings.xml
 : 1711647557:0;ag panelAction
 : 1711656999:0;code ../fhirql
 : 1711657677:0;ag HttpServlet
@@ -1304,7 +1293,6 @@ sudo apt-get install azure-functions-core-tools-4
 : 1711743277:0;code blazectl
 : 1711743579:0;cd blazectl
 : 1711744137:0;l /usr/local/share/ca-certificates/cisco_umbrella_root.crt
-: 1711744355:0;docker build .
 : 1711744497:0;docker run --rm -v $(pwd)src/test/resources/bundles:/resources --network host blazectl -s http://localhost:8888 upload /resources
 : 1711744533:0;docker build . -t blazectl
 : 1711744700:0;g remote set-url labcorp ssh://git@git.labcorp.com:7999/~sharape/blazectl.git
@@ -1329,13 +1317,11 @@ sudo apt-get install azure-functions-core-tools-4
 : 1711746734:0;rm cisco_umbrella_root.crt
 : 1711746743:0;g co -b develop
 : 1711746754:0;g merge public-master
-: 1711746760:0;g push -u origin master
 : 1711746802:0;g merge origin/master
 : 1711746841:0;g co public-master
 : 1711746896:0;g push -u labcorp develop
 : 1711746922:0;g show 439225a
 : 1711746950:0;docker image rm blazectl1
-: 1711746954:0;docker images
 : 1711746958:0;docker run --rm -v $(pwd)src/test/resources/bundles:/resources --network host blazectl
 : 1711747131:0;docker run --rm -v $(pwd)src/test/resources/fhir/bundles:/resources --network host blazectl  -s http://localhost:8888 upload /resources
 : 1711747165:0;docker run --rm -v $(pwd)src/test/resources/fhir/bundles:/resources --network host blazectl --server http://localhost:8888 upload /resources
@@ -1438,7 +1424,6 @@ sudo apt-get install azure-functions-core-tools-4
 : 1712264161:0;gcmsg "DXA-10689: re-organizes source code into app and client"
 : 1712264172:0;g push -u origin reorganization
 : 1712264249:0;git config --global --add --bool push.autoSetupRemote true
-: 1712326977:0;~/Projects
 : 1712326992:0;cd AzureCloudLabs
 : 1712337137:0;gcmsg "DXA-10484: corrected ARNs for shared hippa queue and bucket"
 : 1712340598:0;gcmsg "DXA-10490: removed extra space from sqs queue URL"
@@ -1502,7 +1487,6 @@ sudo apt remove netstandard*
 : 1712842625:0;g stash show --help
 : 1712842851:0;gd 7a11833d8
 : 1712859731:0;g prune -n
-: 1712859737:0;g clean -n
 : 1712859969:0;cat ~/.lvs-docker-dev
 : 1712859975:0;l ~/.lvs-docker-dev/
 : 1712859979:0;l ~/.lvs-docker-dev/container-build-folder
@@ -1512,7 +1496,6 @@ sudo apt remove netstandard*
 : 1712860063:0;cat ./bin/common.sh
 : 1712862011:0;code .lvs-docker-dev
 : 1712862548:0;./bin/restart.sh redis
-: 1712862594:0;cat docker-compose.yml
 : 1712865076:0;idea.sh &
 : 1712865511:0;mvn test -pl lvs-smart-on-fhir -am
 : 1712865886:0;mvn test -pl lvs-smart-on-fhir -Dtest="PersistenceS3ServiceImplTest"
@@ -1539,7 +1522,6 @@ sudo apt remove netstandard*
 : 1712952261:0;g co -b fixing-failing-tests-relying-on-redis
 : 1713187887:0;rm dxa-shell.zip
 : 1713201708:0;gd origin/liebert/move-extdev-dxa-client
-: 1713202095:0;g br
 : 1713202104:0;g co DXA-10484
 : 1713202319:0;/opt/idea-IU-241.14494.240/bin/idea.sh &
 : 1713202564:0;gd transition-master-consolidated
@@ -1588,7 +1570,6 @@ sudo apt remove netstandard*
 : 1713284797:0;ag 5.0.3-alpine
 : 1713287673:0;g add pom.xml
 : 1713287680:0;ga lvs-test-utils
-: 1713287687:0;ga lvs-smart-on-fhir
 : 1713287772:0;gcmsg "DXA-11126: moved testcontainers into lvs-test-utils"
 : 1713289461:0;g co fixing-failing-tests-relying-on-redis
 : 1713289659:0;mvn clean compile install -pl lvs-smart-on-fhir
@@ -1605,7 +1586,6 @@ sudo apt remove netstandard*
 : 1713300432:0;cat ../lvs-fhir-starter-library/src/main/java/com/lca/lvs/fhirstarter/client/EmrFhirTemplate.java 
 : 1713300447:0;cat ../lvs-fhir-starter-library/src/main/java/com/lca/lvs/fhirstarter/client/EmrFhirQueryApplicator.java
 : 1713300456:0;cat ../lvs-fhir-starter-library/src/main/java/com/lca/lvs/fhirstarter/client/impl/DefaultEmrFhirQueryApplicator.java
-: 1713362004:0;which idea
 : 1713364369:0;~/Dotfiles
 : 1713364439:0;te.
 : 1713364968:0;te ~/Dotfiles/.zsh/spec/5CG3312VRG.zsh
@@ -1697,7 +1677,6 @@ sudo apt remove netstandard*
 : 1713983231:0;az login
 : 1713983630:0;az account list
 : 1713984785:0;pyenv
-: 1713985044:0;l DevOps
 : 1713985066:0;mv DevOps Diagrams
 : 1713985086:0;md DevOps
 : 1713985105:0;mv Diagrams/AWSTasks.ipynb DevOps/.
@@ -1728,7 +1707,6 @@ sudo apt remove netstandard*
 : 1714064786:0;cat ../.pyenv/completions/pyenv.zsh
 : 1714064810:0;pyenv init -
 : 1714064866:0;source ~/.pyenv/completions/pyenv.zsh
-: 1714065079:0;g add --interactive
 : 1714066270:0;ag AWSCURRENT
 : 1714066295:0;ag DX_lvs-rest_service
 : 1714066628:0;g co -b DXA-11153-another-fix
@@ -1823,8 +1801,6 @@ sudo apt remove netstandard*
 : 1714494219:0;gcmsg "DXA-11254: more network adjustments"
 : 1714499899:0;gcmsg "DXA-11254: explicit name of the tag for vpc for implementation guide"
 : 1714503472:0;Projects/lvs-services
-: 1714505314:0;g show -p HEAD
-: 1714505358:0;aws login
 : 1714505376:0;./bin/aws-login.sh
 : 1714506129:0;docker --help
 : 1714507943:0;g co dev
@@ -1914,7 +1890,6 @@ sudo apt remove netstandard*
 : 1714596725:0;ag AWSSHAREDREPO
 : 1714596742:0;touch lvs-hapi-fhir
 : 1714656447:0;cd lvs-hapi-fhir
-: 1714656463:0;gd HEAD~1
 : 1714656477:0;g push -u origin DXA-11254-transition-to-master
 : 1714656571:0;te terraform/Development/taskdef.json
 : 1714661922:0;lvs-ui
@@ -2001,7 +1976,6 @@ sudo apt remove netstandard*
 : 1715050562:0;g stash show stash@\{1\}
 : 1715050591:0;ag -g MergeDRO
 : 1715108855:0;ps aux | grep idea
-: 1715176276:0;./bin/rebuild.sh
 : 1715177137:0;ag LVS_SERVICES_EXTERNAL_FOLDER
 : 1715180784:0;g push -u origin  DXA-11126-call-ifs-observations
 : 1715189529:0;te bin
@@ -2137,7 +2111,6 @@ sudo apt remove netstandard*
 : 1715806581:0;gcmsg "DXA-11341: DXA-11127: DXA-11342: corrected services and running integration tests, using environment variables to get the data from IFS"
 : 1715807106:0;gcmsg "DXA-11341: DXA-11127: DXA-11342: cleaning up the PR"
 : 1715866550:0;gcmsg "DXA-11341: DXA-11127: DXA-11342: making tests pass"
-: 1715869430:0;e &
 : 1715871491:0;cd TbT
 : 1715871495:0;tex mac01.tex
 : 1715875358:0;../layout
@@ -2233,7 +2206,6 @@ sudo apt remove netstandard*
 : 1716227409:0;apt search ^git
 : 1716227415:0;apt search ^git$
 : 1716229226:0;./bin/up &
-: 1716231243:0;./bin/up.sh
 : 1716231266:0;cd logs
 : 1716231918:0;ag JWT_SECRET
 : 1716232020:0;ag redisService
@@ -2253,7 +2225,6 @@ sudo apt remove netstandard*
 : 1716237744:0;g stash push --help
 : 1716238011:0;curl https://lvs-settings-rest-qa.dev01.dxa.labcorp.com/settings?organizationId=dkr-dstu2-qa&applicationId=lvs-poc-ui
 : 1716238030:0;curl -vvv "https://lvs-settings-rest-qa.dev01.dxa.labcorp.com/settings?organizationId=dkr-dstu2-qa&applicationId=lvs-poc-ui"
-: 1716238266:0;ag settings
 : 1716313442:0;g stash save "demo related changes"
 : 1716313472:0;g show c67f25dc
 : 1716313713:0;g co -b fix-missing-beans
@@ -2297,7 +2268,6 @@ sudo apt remove netstandard*
 : 1716495813:0;gcmsg "DXA-11223: DXA-11056: DXA-11406: DXA-11407: DXA-11409: DXA-11410: DXA-11411: DXA-11412: DXA-11413: refactor EmrFhirService"
 : 1716495921:0;g co -b DXA-11412-different-refactor
 : 1716495932:0;g restore --source develop lvs-smart-on-fhir/src/main/java/com/lca/lvs/smartonfhir/services/EmrFhirService.java
-: 1716496569:0;ga-u
 : 1716496600:0;gcmsg "DXA-11223: DXA-11056: DXA-11406: DXA-11407: DXA-11409: DXA-11410: DXA-11411: DXA-11412: DXA-11413: refactoring EmrFhirService - make tests pass"
 : 1716496804:0;gcmsg "DXA-11223: DXA-11056: DXA-11406: DXA-11407: DXA-11409: DXA-11410: DXA-11411: DXA-11412: DXA-11413: refactor EmrFhirService - move methods"
 : 1716497498:0;gcmsg "DXA-11223: DXA-11056: DXA-11406: DXA-11407: DXA-11409: DXA-11410: DXA-11411: DXA-11412: DXA-11413: refactor EmrFhirService - move methods to BundleUtils"
@@ -2329,8 +2299,6 @@ sudo apt remove netstandard*
 : 1717015882:0;gcmsg "DXA-11223: DXA-11056: move method from EmrFhirService to AbstractEmrFhirService and change some modifiers"
 : 1717015902:0;g push -u origin DXA-11223-DXA-11056-observations-and-dr
 : 1717016694:0;gcmsg "DXA-11223: DXA-11056: moved methods from EmrFhirService to AbstractEmrFhirService"
-: 1717079045:0;tf-aws-base-infrastructure
-: 1717079054:0;g show HEAD
 : 1717079068:0;ag %AWSREPO
 : 1717079071:0;ag \%AWSREPO
 : 1717079092:0;ag \%AWS
@@ -2346,7 +2314,6 @@ sudo apt remove netstandard*
 : 1717083045:0;mvn clean compile verify
 : 1717083098:0;ag AbstractEmrFhirService
 : 1717083226:0;ag smartonfhir
-: 1717083342:0;mvn compile
 : 1717083361:0;lvs-infrastructure
 : 1717083372:0;mvn verify
 : 1717083420:0;hgrep mvn
@@ -2388,7 +2355,6 @@ sudo apt remove netstandard*
 : 1717472127:0;ag unit-test-
 : 1717472229:0;gcmsg "DXA-11104: IfsEmrDataController unit test"
 : 1717476325:0;gcmsg "DXA-11104: IfsEmrDataController and IfsLcaDataControler unit tests (JUnit) run with NgTest"
-: 1717476900:0;~/.lvs-docker-dev
 : 1717477490:0;ag "LCA Patient Resource is not found in the IFS"
 : 1717477497:0;ag "Resource is not found in the IFS"
 : 1717510260:0;rm logs/lvs-*
@@ -2399,7 +2365,6 @@ sudo apt remove netstandard*
 : 1717527646:0;ag Categories
 : 1717527676:0;ag \"system\"
 : 1717529482:0;gcmsg "DXA-11223: DXA-11056: moved getting categories from  Settings to Settings class"
-: 1717602830:0;g br -a
 : 1717602839:0;g br -a | grep DXA-11070
 : 1717602865:0;g co feature/DXA-11070
 : 1717603008:0;g co DXA-11056-diagnostic-reports
@@ -2548,12 +2513,10 @@ libtree-sitter-dev
 : 1717767875:0;ag -f Orders
 : 1717767885:0;ag -g Orders
 : 1717767904:0;ag -g Order
-: 1717773539:0;l snap
 : 1717773713:0;cd emacs
 : 1717773727:0;mv emacs emacs_src
 : 1717773732:0;l emacs_src
 : 1717773741:0;l emacs_src/native-lisp/29.3-7a797575
-: 1717783591:0;history
 : 1717785364:0;audiveris
 : 1717785376:0;./gradlew build
 : 1717785397:0;gradle
@@ -2597,7 +2560,6 @@ libtree-sitter-dev
 : 1718043994:0;g push -u origin revert-merge-with-ifs-services
 : 1718053625:0;g co DXA-11412=practitioner
 : 1718115997:0;which qcad
-: 1718116021:0;te ~/Dotfiles
 : 1718116469:0;inkscape &
 : 1718116529:0;md Attic
 : 1718127586:0;gcmsg "DXA-10516: trigger build"
@@ -2610,9 +2572,7 @@ libtree-sitter-dev
 : 1718134032:0;md ../../qcad-trial-plugins
 : 1718138655:0;rm qcad-3.29.6-trial-linux-qt5.14-x86_64.run
 : 1718138662:0;rd qcad
-: 1718138667:0;l ph
 : 1718166142:0;gcmsg "DXA-11412: added practitioner calls and tests to IFS EMR service"
-: 1718166165:0;g br --help
 : 1718166242:0;g br -m DXA-11412=practitioner DXA-11412-practitioner 
 : 1718199564:0;g push -u origin DXA-11412-practitioner
 : 1718201978:0;g co -b DXA-11406-11407-11408-11409-11410-11411
@@ -2674,7 +2634,6 @@ libtree-sitter-dev
 : 1718681128:0;gcmsg "DXA-11410: ServiceRequests service and tests"
 : 1718695474:0;gcmsg "DXA-11413: Medication (Services, Requests, Administrations, Dispenses) services and tests"
 : 1718696291:0;g co -b DXA-11110-DXA-11111-DXA-11112-DXA-11113-DXA-11114-DXA-11115-DXA-11116
-: 1718717679:0;mvn clean compile test
 : 1718717909:0;gcmsg "DXA-11110: DXA-11111: DXA-11112: DXA-11113: DXA-11114: DXA-11115: DXA-11116: corrected tests  and added all the REST API calls for IFS EMR resources"
 : 1718718493:0;g push -u origin DXA-11110-DXA-11111-DXA-11112-DXA-11113-DXA-11114-DXA-11115-DXA-11116
 : 1718721167:0;rm -f /home/sharape/.lvs-docker-dev/logs/lvs-direct-launch.log /home/sharape/.lvs-docker-dev/logs/lvs-poc-ui.log /home/sharape/.lvs-docker-dev/logs/lvs-rest.log /home/sharape/.lvs-docker-dev/logs/lvs-ui.log 
@@ -2725,7 +2684,6 @@ libtree-sitter-dev
 : 1718995517:0;g br -D DXA-11406-11407-11408-11409-11410-11411
 : 1718995592:0;g br -D DXA-11690-refactor-resource-handling
 : 1718995691:0;g co -b DXA-11690-refactor-resource-handling
-: 1718996277:0;mvn clean compile package test verify
 : 1718999001:0;g push -u origin DXA-11690-refactor-resource-handling
 : 1719000382:0;g co DXA-11406-11407-11408-11409-11410-11411
 : 1719000396:0;g merge DXA-11690-refactor-resource-handling
@@ -2759,9 +2717,7 @@ libtree-sitter-dev
 : 1719866918:0;../../lvs-rest
 : 1719866930:0;mvn compile package 
 : 1719866960:0;Projects/lvs-docker-dev
-: 1719867327:0;pwd
 : 1719867466:0;ag "/opt/labcorp/external-folders"
-: 1719867515:0;glow
 : 1719868082:0;rm -f logs/*
 : 1719942608:0;mtxrun --script font --reload
 : 1719942623:0;mtxrun --script fonts --list --all
@@ -2802,7 +2758,6 @@ libtree-sitter-dev
 : 1720188181:0;cd lvs-rest
 : 1720188185:0;g kga
 : 1720190301:0;npm --version
-: 1720190306:0;node --version
 : 1720190331:0;ga fonts*
 : 1720190346:0;te .gitignore
 : 1720190379:0;gcmsg "experimenting with fonts"
@@ -2873,15 +2828,12 @@ git push -u origin main
 : 1720536007:0;e ~/Personal/cookbook &
 : 1720538814:0;glga
 : 1720546329:0;echo $PATH | tr /:/\n/
-: 1720546375:0;l ~/.bin
 : 1720546421:0;l .go/bin
 : 1720546438:0;echo $PATH | tr ":" "\n" 
-: 1720546469:0;l /usr/local/bin
 : 1720546489:0;l /usr/local/
 : 1720546709:0;mkdir .bin
 : 1720546727:0;te .bin/digestif
 : 1720546742:0;chmod a+x .bin/digestif
-: 1720547235:0;Personal/cookbook
 : 1720548862:0;pgrep emacs | xargs kille
 : 1720550439:0;rm layout3.tuc
 : 1720550442:0;rm layout3.log
@@ -2892,7 +2844,6 @@ git push -u origin main
 : 1720550503:0;open layout3.pdf
 : 1720554195:0;context layout4.mkiv
 : 1720554208:0;open layout4.pdf
-: 1720625307:0;.lvs-docker-dev
 : 1720626854:0;Projects/hapi-fhir
 : 1720626862:0;ag getLastRequest
 : 1720628299:0;ag setCategorySystem
@@ -3055,7 +3006,6 @@ git push -u origin main
 : 1721248058:0;rm Library
 : 1721248295:0;apt search clipboard
 : 1721248549:0;gcmsg "stopped advice to kill-ring"
-: 1721250068:0;grehh
 : 1721334103:0;gcmsg "DXA-11932: addeed PatientFinder service to avoid issues with multiple threads and SecurityContextUtil static methods. Fixed failing tests"
 : 1721353561:0;cd mkdocs-o
 : 1721353569:0;hgrep mkdocs
@@ -3069,7 +3019,6 @@ git push -u origin main
 : 1721661193:0;g co -b improve-tex
 : 1721661205:0;gcmsg "re-arrange tex setup"
 : 1721661218:0;g co -b switch-to-parinfer
-: 1721662209:0;htop
 : 1721662253:0;kill -9 468
 : 1721662264:0;l .cache
 : 1721662287:0;l eln-cache
@@ -3080,7 +3029,6 @@ git push -u origin main
 : 1721662389:0;ps aux emacs
 : 1721662402:0;ps -aux emacs
 : 1721662406:0;ps
-: 1721662411:0;ps aux
 : 1721662421:0;ps aux | gerp emacs
 : 1721662461:0;ps aux | grep emacs
 : 1721662490:0;pgrep emacs | xargs kill
@@ -3091,8 +3039,6 @@ git push -u origin main
 : 1721668287:0;ag 0oadvd4677A1Fd9Ab1t7
 : 1721672314:0;l parinfer-rust
 : 1721672324:0;rd parinfer-rust
-: 1721674381:0;g stash
-: 1721674412:0;g stash pop
 : 1721674563:0;gcmsg "modify loading paredit"
 : 1721675115:0;gcmsg "changes to initialization of the emacs lisp mode. Issues with paredit RET and ielm and minibuffer still stand"
 : 1721683552:0;gcmsg "DXA-11932: added DocumentReference service to create document references"
@@ -3145,14 +3091,12 @@ git push -u origin main
 : 1721753059:0;.emacs.d
 : 1721765925:0;gcmsg "DXA-11932: making tests not to complain"
 : 1721767720:0;gcmsg "DXA-11932: changed s3 bucket name in settings and use AsyncService dependency instead of ExecutorService"
-: 1721767740:0;mvn compile package install
 : 1721768225:0;mvn compile package
 : 1721769432:0;gcmsg "DXA-11932: correcterd dependencies in tests and changed reference to getPractioner"
 : 1721769443:0;g push -u origin DXA-11513-async-observations
 : 1721770607:0;g merge improve-tex
 : 1721771672:0;gcmsg "better tex and viewing generated documents"
 : 1721828099:0;./bin/restart.sh &
-: 1721828934:0;mvn package install
 : 1721831839:0;gcmsg "DXA-11932: storing a bundle of DocumentReferences in a cache"
 : 1721835605:0;cd ~/Personal/cookbook
 : 1721835627:0;ga cookbook*
@@ -3182,7 +3126,6 @@ git push -u origin main
 : 1721921384:0;mtxrun --var-value TEXMF
 : 1721921481:0;mtxrun --generate
 : 1721922024:0;g clone https://github.com/evgeniysharapov/digestif.git
-: 1721922033:0;cat ~/.emacs.d/.git/config
 : 1721922053:0;cd digestif
 : 1721922083:0;g co fixing-issues-with-context
 : 1721922097:0;digestif -v
@@ -3250,10 +3193,8 @@ git push -u origin main
 : 1721926324:0;curl -v  http://lvs-docker-dev/lvs-auth?nonce=eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJodHRwOi8vbHZzLWRvY2tlci1kZXYvbHZzLXJlc3QiLCJqdGkiOiJlNjMxZWQ3Mi01MjllLTQyNjEtYmNjMy01M2NiZDFlNTk1ZjQiLCJhdWQiOiJ3ZWIiLCJyb2xlcyI6W10sImlhdCI6MTcyMTkyNjA1MiwiZXhwIjoxNzIxOTI2MDgyfQ.IquBbER4bOw-L6uFb-_AFkOTy1940SYe9dWIvK60oOqVWGanGOmx9G456hUYMyBdhGCFKHWwi3Y8TJrDVnkZ_A
 : 1721929993:0;mvn compile install -Dmaven.test.skip=true
 : 1721930033:0;cd ~/.bin/
-: 1721930466:0;cd ~/Dotfiles
 : 1721930479:0;cd scripts/.bin
 : 1721930487:0;chmod a+x restart-lvs
-: 1721930495:0;stow scripts
 : 1721934890:0;gcmsg "DXA-11932: added serialization utility for multiple objects and unit test for it"
 : 1721936084:0;ga **/SerializationUtils*
 : 1721936117:0;gcmsg "DXA-11932: updated serialization utilit and its unit tests to handle nulls"
@@ -3319,7 +3260,6 @@ EOF
 : 1722021639:0;l /usr/local/share/ca-certificates
 : 1722021884:0;md mvn_download
 : 1722021943:0;te pom.xml
-: 1722021992:0;mvn install
 : 1722022157:0;g clone git@github.com:Tensegritics/ClojureDart.git
 : 1722022165:0;Clojure
 : 1722022178:0;mv helloworld Clojure/.
@@ -3366,7 +3306,6 @@ export AWS_SECRET_ACCESS_KEY=$(echo $OUT | jq -r '.Credentials''.SecretAccessKey
 export AWS_SESSION_TOKEN=$(echo $OUT | jq -r '.Credentials''.SessionToken');
 : 1722286355:0;1env
 : 1722286363:0;env | grep AWS
-: 1722286372:0;cat ~/.aws/credentials
 : 1722286432:0;aws --profile=master01 sts assume-role --role-arn arn:aws:iam::749776248005:role/DeveloperUsers --role-session-name aaa
 : 1722286404:0;aws sts assume-role --role-arn arn:aws:iam::749776248005:role/DeveloperUsers --role-session-name aaa
 : 1722286513:0;OUT=$(aws --profile=master01 sts assume-role --role-arn arn:aws:iam::749776248005:role/DeveloperUsers --role-session-name aaa);\\
@@ -3411,7 +3350,6 @@ export AWS_SESSION_TOKEN=$(echo $OUT | jq -r '.Credentials''.SessionToken');
 : 1722289809:0;mv ../DevOps/response.json .
 : 1722289831:0;gcmsg "response from `sync` with Document References fullfilled"
 : 1722291885:0;pyenv virtualenvs --help
-: 1722291936:0;Projects
 : 1722291942:0;md Tools
 : 1722291959:0;pip install playwright
 : 1722292014:0;playwright codegen http://lvs-docker-dev/lvs-direct-launch/
@@ -3421,9 +3359,7 @@ export AWS_SESSION_TOKEN=$(echo $OUT | jq -r '.Credentials''.SessionToken');
 : 1722292104:0;playwright codegen firefox http://lvs-docker-dev/lvs-direct-launch/
 : 1722292117:0;playwright -b firefox codegen firefox http://lvs-docker-dev/lvs-direct-launch/
 : 1722302212:0;pgrep idea
-: 1722302248:0;pgrep -f idea
 : 1722304199:0;gcmsg "DXA-11932: tests and resources read with exception guard"
-: 1722307184:0;ga -u 
 : 1722307791:0;gcmsg "DXA-11071: async DiagnosticReports from EMR"
 : 1722310759:0;gcmsg "DXA-11097: async DiagnosticReports from EMR"
 : 1722310795:0;gcmsg "DXA-11097: async Conditions from EMR"
@@ -3462,8 +3398,6 @@ export AWS_ACCESS_KEY_ID=$(echo $OUT | jq -r '.Credentials''.AccessKeyId');\\
 export AWS_SECRET_ACCESS_KEY=$(echo $OUT | jq -r '.Credentials''.SecretAccessKey');\\
 export AWS_SESSION_TOKEN=$(echo $OUT | jq -r '.Credentials''.SessionToken');\
 
-: 1722351408:0;env
-: 1722351438:0;restart-lvs
 : 1722353764:0;e .emacs.d &
 : 1722354480:0;cd Personal/Clojure/ClojureDart
 : 1722354550:0;mvn_download
@@ -3472,7 +3406,6 @@ export AWS_SESSION_TOKEN=$(echo $OUT | jq -r '.Credentials''.SessionToken');\
 : 1722354949:0;which gradle
 : 1722355034:0;cat gradle/wrapper/gradle-wrapper.properties
 : 1722355046:0;te gradle/wrapper/gradle-wrapper.properties
-: 1722355085:0;cat README.md
 : 1722355273:0;te ~/.gradle/
 : 1722355644:0;rm ~/.gradle/gradle.properties
 : 1722355645:0;./gradlew -Dhttps.proxyhost=rduwsa08.labcorp.com -Dhttps.proxyPort=8080 clean jar
@@ -3495,12 +3428,10 @@ export AWS_SESSION_TOKEN=$(echo $OUT | jq -r '.Credentials''.SessionToken');\
 : 1722356265:0;keytool -v -list -keystore /home/sharape/.sdkman/candidates/java/current\\lib\\security\\cacerts 
 : 1722356381:0;keytool -v -list -keystore /home/sharape/.sdkman/candidates/java/current/lib/security/cacerts
 : 1722356424:0;keytool -list -keystore /home/sharape/.sdkman/candidates/java/current/lib/security/cacerts
-: 1722356482:0;echo $PATH
 : 1722356513:0;export PATH=/opt/idea-IU-241.14494.240/bin:/home/sharape/.nodenv/shims:/home/sharape/.pyenv/plugins/pyenv-virtualenv/shims:/home/sharape/.pyenv/shims:/home/sharape/.pyenv/bin:/home/sharape/.gem/ruby/2.7.0/bin:/home/sharape/.npm-packages/bin:/home/sharape/.bin:/home/sharape/.local/bin:/home/sharape/.go/bin:/home/sharape/.cargo/bin:/home/sharape/.nodenv/bin:/home/sharape/.pyenv/bin:/home/sharape/.jbang/bin:/home/sharape/.dotnet/tools:/home/sharape/Projects/FSharp/fsharp-language-server/src/FSharpLanguageServer/bin/Release/net6.0/linux-x64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Amazon Corretto/jdk17.0.12_7/bin:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files/WindowsPowerShell/Scripts/HP.ClientScriptLibrary:/mnt/c/Program Files/1E/Client/Extensibility/NomadBranch:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/Amazon/AWSCLIV2/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Pandoc/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/ffmpeg/bin:/mnt/c/Program Files/7-Zip:/mnt/c/Users/sharape/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/sharape/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/sharape/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/sharape/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/sharape/AppData/Local/Programs/Git/cmd:/mnt/c/Users/sharape/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/Amazon/AWSCLIV2:/mnt/c/Program Files/JetBrains/IntelliJ IDEA Community Edition 2023.3.3/bin:/mnt/c/Users/sharape/AppData/Roaming/npm:/mnt/c/Users/sharape/AppData/Local/Programs/Ollama:/mnt/c/Users/sharape/.dotnet/tools:/mnt/c/Users/sharape/Desktop/Faster-Whisper-XXL
 : 1722356526:0;export PATH="/opt/idea-IU-241.14494.240/bin:/home/sharape/.nodenv/shims:/home/sharape/.pyenv/plugins/pyenv-virtualenv/shims:/home/sharape/.pyenv/shims:/home/sharape/.pyenv/bin:/home/sharape/.gem/ruby/2.7.0/bin:/home/sharape/.npm-packages/bin:/home/sharape/.bin:/home/sharape/.local/bin:/home/sharape/.go/bin:/home/sharape/.cargo/bin:/home/sharape/.nodenv/bin:/home/sharape/.pyenv/bin:/home/sharape/.jbang/bin:/home/sharape/.dotnet/tools:/home/sharape/Projects/FSharp/fsharp-language-server/src/FSharpLanguageServer/bin/Release/net6.0/linux-x64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Amazon Corretto/jdk17.0.12_7/bin:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files/WindowsPowerShell/Scripts/HP.ClientScriptLibrary:/mnt/c/Program Files/1E/Client/Extensibility/NomadBranch:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/Amazon/AWSCLIV2/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Pandoc/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/ffmpeg/bin:/mnt/c/Program Files/7-Zip:/mnt/c/Users/sharape/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/sharape/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/sharape/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/sharape/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/sharape/AppData/Local/Programs/Git/cmd:/mnt/c/Users/sharape/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/Amazon/AWSCLIV2:/mnt/c/Program Files/JetBrains/IntelliJ IDEA Community Edition 2023.3.3/bin:/mnt/c/Users/sharape/AppData/Roaming/npm:/mnt/c/Users/sharape/AppData/Local/Programs/Ollama:/mnt/c/Users/sharape/.dotnet/tools:/mnt/c/Users/sharape/Desktop/Faster-Whisper-XXL"
 : 1722356528:0;sdk
 : 1722356583:0;which java
-: 1722356587:0;java -version
 : 1722356607:0;keytool -l -keystore $JAVA_HOME/lib/security/cacerts
 : 1722356613:0;keytool -list -keystore $JAVA_HOME/lib/security/cacerts
 : 1722356657:0;ll ~
@@ -3528,7 +3459,6 @@ EOF
 : 1722364366:0;mv /mnt/c/Users/sharape/Downloads/flutter_linux_3.22.3-stable.tar.xz ../../.
 : 1722364385:0;mv /mnt/c/Users/sharape/Downloads/commandlinetools-linux-11076708_latest.zip ../../.
 : 1722364389:0;cd ~/Personal
-: 1722364551:0;l /opt
 : 1722364778:0;tar xzvf flutter_linux_3.22.3-stable.tar.xz
 : 1722364785:0;tar xvf flutter_linux_3.22.3-stable.tar.xz
 : 1722364920:0;sudo mv flutter /opt/.
@@ -3557,12 +3487,10 @@ EOF
 : 1722368861:0;export PATH=/opt/cmdline-tools/bin:$PATH
 : 1722368887:0;sdkmanager --install "cmdline-tools;latest"
 : 1722368899:0;sdkmanager
-: 1722368926:0;cd hapi-fhir
 : 1722368935:0;cd Pers
 : 1722368940:0;cd ../Personal
 : 1722368948:0;rm android-studio-2024.1.1.12-linux.tar.gz
 : 1722368951:0;rm flutter_linux_3.22.3-stable.tar.xz
-: 1722368958:0;cd Clojure
 : 1722368960:0;cd hello
 : 1722368966:0;clj -M:cljd init
 : 1722368998:0;mkdir -p src/acme\
@@ -3600,10 +3528,6 @@ EOF
 : 1722370206:0;mvn -U clean package install
 : 1722370272:0;mv ~/.m2/settings.xml ~/.m2/settings.xml.bak
 : 1722370274:0;mvn dependency:resolve -U
-: 1722431923:0;ll
-: 1722431928:0;l ClojureDart
-: 1722440701:0;pgrep -f idea | xargs kill
-: 1722440735:0;pgrep -f emacs | xargs kill
 : 1722440738:0;e ~/.emacs.d &
 : 1722445572:0;gs --stat
 : 1722445577:0;gd --stat
@@ -3632,14 +3556,12 @@ EOF
 : 1722452016:0;g lga -- pom.xml
 : 1722452034:0;g lga --patch -- pom.xml
 : 1722452305:0;g br -D incremental-loading-merge
-: 1722452402:0;g merge develop
 : 1722454033:0;g co lvs-infrastructure/src/main/java/com/lca/lvs/base/CacheCategory.java
 : 1722454043:0;g co lvs-infrastructure/src/main/java/com/lca/lvs/base/EndpointAuthConfiguration.java
 : 1722454052:0;g co lvs-infrastructure/src/main/java/com/lca/lvs/base/EndpointSessionConfiguration.java
 : 1722454062:0;g co  lvs-infrastructure/src/main/java/com/lca/lvs/base/EndpointSessionConfigurationToFhirSessionConfigMapper.java
 : 1722454070:0;g co lvs-infrastructure/src/test/resources/application-ifs-it.properties
 : 1722454076:0;g co  lvs-infrastructure/src/test/resources/application-ifs.properties
-: 1722454095:0;mvn clean compile
 : 1722456379:0;g lga -- **/CdsVerficationServiceTest*
 : 1722456398:0;g lga -- **/Cds*VerficationServiceTest*
 : 1722456409:0;g lga -- **/CdsHooksClintVerficationServiceTest*
@@ -3649,8 +3571,6 @@ EOF
 : 1722456556:0;gd develop -- **/CdsHooks*
 : 1722456589:0;gd develop -- **/CdsHooksClientVerificationServiceTest.java
 : 1722456600:0;gd inceremental-loading-merge -- **/CdsHooksClientVerificationServiceTest.java
-: 1722459317:0;gd incremental-loading-merge
-: 1722459421:0;g merge incremental-loading-merge
 : 1722459639:0;g br -D DXA-11096-async-load
 : 1722459661:0;g co DXA-11096-async-load
 : 1722459711:0;gd DXA-11096-async-load -- pom.xml
@@ -3662,23 +3582,18 @@ EOF
 : 1722538286:0;mv /mnt/c/Users/sharape/Downloads/Date\ range.CSV citi_20240301_20240731.CSV
 : 1722538391:0;mv /mnt/c/Users/sharape/Downloads/Chase8082_Activity20240301_20240731_20240801.CSV chase_20240301_20240731.csv
 : 1722538474:0;gcmsg "added Amex, CapitalOne, Chase and Citi TXs for 3/1/24 to 7/31/24 period"
-: 1722542403:0;g stash --list
 : 1722542408:0;g stashlist
-: 1722542411:0;g stash list
 : 1722542484:0;git reflog
 : 1722542582:0;g show 76ecd44f5
 : 1722542729:0;g cherry-pick 76ecd44f5
 : 1722544660:0;gcmsg "DXA-12056: adding Immunization, Account, Coverage and Medical Statements to the async method"
 : 1722608286:0;d ..
 : 1722608297:0;cd Projects/Diagrams
-: 1722608303:0;explorer.exe .
 : 1722608382:0;ga Blair\ Desk\ -\ Office\ -\ Made\ with\ Clipchamp.mp4 Lunch\ Area\ -\ Office.mp4 My\ Desk\ -\ Office\ -\ Made\ with\ Clipchamp.mp4 West\ Wing\ Middle\ -\ Office\ -\ Made\ with\ Clipchamp.mp4 
-: 1722608409:0;cat .git/config
 : 1722608451:0;cd shared
 : 1722608473:0;mv ../Diagrams/Blair\ Desk\ -\ Office\ -\ Made\ with\ Clipchamp.mp4 ../Diagrams/Lunch\ Area\ -\ Office.mp4 ../Diagrams/My\ Desk\ -\ Office\ -\ Made\ with\ Clipchamp.mp4 ../Diagrams/West\ Wing\ Middle\ -\ Office\ -\ Made\ with\ Clipchamp.mp4 .
 : 1722608490:0;gcmsg "office videos\
 "
-: 1722609031:0;cd Diagrams
 : 1722609048:0;rm Blair\ Desk\ -\ Office\ -\ Made\ with\ Clipchamp.mp4:Avecto.Zone.Identifier
 : 1722609053:0;rm Blair\ Desk\ -\ Office\ -\ Made\ with\ Clipchamp.mp4:PG\$Secure
 : 1722609058:0;rm Blair\ Desk\ -\ Office\ -\ Made\ with\ Clipchamp.mp4:Zone.Identifier
@@ -3706,7 +3621,6 @@ EOF
 : 1722612085:0;just testing 2024
 : 1722612088:0;just testing 2024 may
 : 1722614235:0;cd .lvs-docker-dev
-: 1722614300:0;cd lvs-docker-dev
 : 1722614497:0;ag Labcorp
 : 1722624621:0;ag -g DataLoading
 : 1722624634:0;rm lvs-smart-on-fhir/src/main/java/com/lca/lvs/smartonfhir/DataLoadingEmrFhirService.java
@@ -3714,7 +3628,6 @@ EOF
 : 1722625140:0;gcmsg "DXA-12056: cleanup of the PR"
 : 1722626164:0;g co release/7.13.0 
 : 1722631473:0;python --version
-: 1722631488:0;rehash
 : 1722631491:0;pip list
 : 1722631551:0;l Tools
 : 1722631556:0;cd Tools
@@ -3728,15 +3641,11 @@ EOF
 : 1722631792:0;gd incremental-loading-merge~2 **/EmrFhirService*
 : 1722631844:0;gd DXA-11096-async-load
 : 1722631855:0;gd DXA-11096-async-load -- **/EmrFhirService*
-: 1722631896:0;gd release/7.13.0
 : 1722631908:0;gd release/7.13.0 -- **/EmrFhirService*
 : 1722632390:0;g co  lvs-smart-on-fhir/src/main/java/com/lca/lvs/smartonfhir/cache/internal/QueryHashInterceptor.java
-: 1722632418:0;g merge --abort
 : 1722866513:0;cd ../Personal/mymon
 : 1722866542:0;gcmsg "cleaned justfile"
-: 1722866567:0;g co main
 : 1722866574:0;g merge adding-2024
-: 1722893628:0;mvn clean package install
 : 1722968423:0;l tex-prog
 : 1722968540:0;GA -U
 : 1722977096:0;rm 2024/processed/fifththird_20240101_20240731.csv
@@ -3750,7 +3659,6 @@ EOF
 : 1722978509:0;echo $t
 : 1722978516:0;l /tmp
 : 1722978584:0;gcmsg "made a template for temp file for csv processing"
-: 1722978608:0;g clean -f
 : 1722978800:0;just import -p
 : 1722978811:0;te justfile
 : 1722978903:0;cat  /tmp/citi_20240301_20240731.csv.pqx1cs
@@ -3773,16 +3681,10 @@ EOF
 : 1723039441:0;gcmsg "DXA-11905: changed the method producing hash key for the query"
 : 1723039454:0;g push -u origin DXA-11905-query-hash
 : 1723047372:0;gcmsg "more categorization and added vacation accont for OBX 2024"
-: 1723047422:0;te .git/config
 : 1723054670:0;ollama pull llama2
-: 1723054851:0;pgrep -f .idea | xargs kill
-: 1723056386:0;g merge release/7.13.0
 : 1723056729:0;g co DXA-11513-async-observations
-: 1723056746:0;g merge incremental-loading
-: 1723056833:0;g merge --continue
 : 1723056920:0;mvn package
 : 1723063259:0;cd lvs-dxa-implementationguide
-: 1723063264:0;g lg
 : 1723063301:0;g co DXA-12092-documentreference
 : 1723063313:0;g co -b DXA-12092-documentreference-profile
 : 1723124592:0;hledger-ui --help
@@ -3828,14 +3730,12 @@ EOF
 : 1723148019:0;rm tmp.csv
 : 1723148065:0;gcmsg "added python env, amazon order details downloader, hledger args files"
 : 1723150107:0;g show
-: 1723150805:0;mvn clean compile package
 : 1723152195:0;g co -b DXA-11051-ifsdroservice
 : 1723211486:0;pdftk --help
 : 1723211522:0;cd /mnt/c/Users/sharape/Documents
 : 1723211595:0;pdftk Rapture.pdf Eschatology.pdf Israel\ and\ Church.pdf cat output Notes_Related_To_End_Of_Times.pdf
 : 1723215286:0;hledger bal
 : 1723215304:0;hledger cashflow
-: 1723226819:0;gts
 : 1723231559:0;g co -b DXA-12092-DocumentReference-profile
 : 1723236105:0;hledger is
 : 1723236134:0;hledger is -b 2024
@@ -3843,7 +3743,6 @@ EOF
 : 1723236904:0;g pull https://github.com/Xitian9/hledger-vega.git
 : 1723236919:0;g clone https://github.com/Xitian9/hledger-vega.git
 : 1723237926:0;g reset
-: 1723238490:0;../Projects
 : 1723238503:0;ag "Persistence.dxaBronze"
 : 1723239470:0;gcmsg "DXA-12092: setting meta.profile for DocumentReference referring to the bundle stored in S3"
 : 1723239479:0;g push -u origin DXA-12092-DocumentReference-profile
@@ -3857,12 +3756,9 @@ EOF
 : 1723486677:0;gcmsg "some few more changes illustrating the params/settings"
 : 1723492278:0;ag "streams\.enabled"
 : 1723494672:0;gcmsg "DXA-11051: merging results using CompletableFuture"
-: 1723494696:0;mvn clean compile test verify
 : 1723494709:0;g co release/7.13
 : 1723494761:0;mvn compile package install -DskipTests=true
-: 1723494821:0;./bin/up.sh &
 : 1723498182:0;code ~/.lvs-docker-dev
-: 1723513787:0;docker exec -it lvs-docker-dev-lvs-rest-1 sh -c "echo > /opt/labcorp/user-home/logs/lvs-rest.log"
 : 1723513946:0;ag IfsEmrService
 : 1723514047:0;l external-placeholder
 : 1723514077:0;ag IfsEmr
@@ -3871,14 +3767,9 @@ EOF
 : 1723514140:0;mvn compile package -Dmaven.test.skip=true
 : 1723514161:0;l target
 : 1723515708:0;rd target.old
-: 1723515742:0;g co incremental-loading
-: 1723515781:0;mvn clean compile package install
 : 1723517678:0;vcd cookbook
-: 1723517680:0;cd cookbook
 : 1723518445:0;cd Personal/mymon
 : 1723518602:0;ping github.com
-: 1723518625:0;curl google.com
-: 1723519183:0;cd Personal
 : 1723519189:0;curl -L https://services.gradle.org/distributions/gradle-8.1-bin.zip
 : 1723519213:0;curl github.com
 : 1723519225:0;curl -vvv github.com
@@ -3890,7 +3781,6 @@ EOF
 : 1723564346:0;hledger add --help
 : 1723564406:0;hledger add
 : 1723570740:0;gcmsg "DXA-11051: IfsDROService returns combined DRs and combined Observations"
-: 1723570742:0;g lga
 : 1723573188:0;mvn test
 : 1723573329:0;cd Projects
 : 1723573337:0;l lvs-jailhouse
@@ -3904,32 +3794,23 @@ EOF
 : 1723580451:0;gcmsg "DXA-11051: full fledged IFS DRO Service Test with all services working"
 : 1723581684:0;gau
 : 1723581710:0;gcmsg "DXA-11051: fully running service, but returns not found for the patient search"
-: 1723603536:0;Personal
 : 1723603540:0;cd just
 : 1723649447:0;g --version
 : 1723649453:0;g stash --help
-: 1723649515:0;gd --cached
 : 1723649525:0;gd --cached > 1.diff
-: 1723649528:0;grhh
 : 1723649546:0;g co -b DXA-11905-query-hash
 : 1723649553:0;g co DXA-11905-query-hash
-: 1723649562:0;g co incremental-loading-merge
 : 1723649572:0;g merge DXA-11905-query-hash
 : 1723649619:0;g merge DXA-12092-DocumentReference-profile
 : 1723649853:0;g apply 1.diff
 : 1723649862:0;rm 1.diff
 : 1723655365:0;yt-dlp
-: 1723661492:0;..
 : 1723661497:0;cd hledger-vega
-: 1723661499:0;te .
 : 1723661653:0;IFS_SANDBOX_CLIENT_SECRET=`cat $HOME/ifs.secret` mvn -pl lvs-infrastructure compile test verify
 : 1723663978:0;IFS_SANDBOX_CLIENT_SECRET=`cat $HOME/ifs.secret` mvn compile test verify
 : 1723664060:0;cat src/Makefile
 : 1723664068:0;cat src/hledger-vega
 : 1723664133:0;cat src/datasets/expenses.args
-: 1723664154:0;cd ..
-: 1723664157:0;cd mymon
-: 1723664175:0;e . &
 : 1723664276:0;export LEDGER_FILE=$PWD/journal.ledger
 : 1723664326:0;hledger bal --output-format=csv --layout=tidy --daily ^Expenses
 : 1723664333:0;hledger bal --output-format=csv --daily ^Expenses
@@ -3941,101 +3822,822 @@ EOF
 : 1723666168:0;ag  ENDPOINTS_SECRETSMANAGERSERVICE_ARN
 : 1723668128:0;mvn compile test verify
 : 1723729533:0;cat linux-install.sh
-: 1723729549:0;lvs-services
-: 1723729582:0;lvs-rest
-: 1723729734:0;lvs-docker-dev
-: 1723729735:0;l
 : 1723730587:0;mvn -pl lvs-infrastructure compile test verify
-: 1723730666:0;ga .
 : 1723730687:0;gcmsg "DXA-11051: using both IT and unit test for the IfsDROService"
 : 1723741993:0;lvs-dxa-implementationguide
-: 1723742006:0;code .
-: 1723834282:0;gd
-: 1723834293:0;ga -u
-: 1723834294:0;gst
 : 1723834319:0;gcmsg "DXA-11051: adding full scale logic of DR, O, SR to merge service for IFS"
-: 1723834340:0;g co DXA-11051-ifsdroservice
-: 1723834342:0;g push
 : 1723834378:0;gpull
 : 1723834388:0;mvn clean install
-: 1723834544:0;g co develop
-: 1723834556:0;g co release/7.13.0
-: 1723834559:0;g pull
-: 1723834565:0;mvn clean package
-: 1723834735:0;./bin/up.sh&
 : 1723835588:0;./bin/up
-: 1723835593:0;./bin/restart.sh
-: 1724161784:0;idea 
 : 1724163016:0;pgrep emacs | xargs kill -9
 : 1724163038:0;which restart-lvs
-: 1724175736:0;idea
-: 1724179039:0;pgrep -f \.Idea | xargs kill
-: 1724182318:0;lvs-services
-: 1724182337:0;idea
-: 1724182348:0;lvs-rest
-: 1724182399:0;g lga
-: 1724182408:0;g co DXA-11051-ifsdroservice
-: 1724182414:0;g co incremental-loading
 : 1724182419:0;mvn clean package
 : 1724182845:0;ag -g IfsDro
 : 1724182848:0;ag -g IfsDR
-: 1724182913:0;gts
 : 1724182917:0;g stash --list
-: 1724182921:0;g stash list
-: 1724187268:0;mvn clean compile package
 : 1724187464:0;mvn install
-: 1724187656:0;mvn clean compile package
 : 1724187670:0;cat ~/.bin/restart-lvs
 : 1724188022:0;cd lvs-docker-dev
-: 1724188055:0;./bin/up.sh &
-: 1724252560:0;ga -u
 : 1724252604:0;gcmsg "DXA-11051: updated IfsDROService"
-: 1724252606:0;g push
-: 1724262832:0;history
 : 1724262885:0;OUT=$(aws --profile=master01 sts assume-role --role-arn arn:aws:iam::749776248005:role/DeveloperUsers --role-session-name aaa);\\nexport AWS_ACCESS_KEY_ID=$(echo $OUT | jq -r '.Credentials''.AccessKeyId');\\nexport AWS_SECRET_ACCESS_KEY=$(echo $OUT | jq -r '.Credentials''.SecretAccessKey');
 : 1724262906:0;OUT=$(aws --profile=master01 sts assume-role --role-arn arn:aws:iam::749776248005:role/DeveloperUsers --role-session-name aaa);
 : 1724262911:0;echo $OUT
-: 1724262944:0;OUT=$(aws --profile=master01 sts assume-role --role-arn arn:aws:iam::749776248005:role/DeveloperUsers --role-session-name aaa); export AWS_ACCESS_KEY_ID=$(echo $OUT | jq -r '.Credentials''.AccessKeyId'); export AWS_SECRET_ACCESS_KEY=$(echo $OUT | jq -r '.Credentials''.SecretAccessKey');
-: 1724262948:0;env
 : 1724262985:0;redis-cli clustercfg.lvs-redis-cache-shard-qa.lldoqf.use1.cache.amazonaws.com:6379
 : 1724262998:0;redis-cli --help
 : 1724263024:0;redis-cli -h clustercfg.lvs-redis-cache-shard-qa.lldoqf.use1.cache.amazonaws.com -p 6379
 : 1724263399:0;tf-aws-base-infrastructure
-: 1724263401:0;l
 : 1724263404:0;l terraform
-: 1724263408:0;code .
-: 1724275289:0;gst
-: 1724275292:0;ga -u
 : 1724275332:0;gcmsg "DXA-11051: added more tests and expose merged observations and diagnostic reports through LocalQueryDef"
-: 1724275333:0;g push
-: 1724338548:0;lvs-services
-: 1724338553:0;g lga
-: 1724338559:0;lvs-rest
-: 1724338561:0;l
-: 1724338563:0;g pull
-: 1724338566:0;g lga
 : 1724338660:0;git branch -r | grep -v ' -> '
 : 1724338709:0;git symbolic-ref HEAD 2>&-
 : 1724338752:0;currentbranchref="$(git symbolic-ref HEAD 2>&-)"
 : 1724338788:0;cd ~/Dotfiles
-: 1724338790:0;l
 : 1724338796:0;l scripts
-: 1724338799:0;l scripts/.bin
-: 1724338821:0;gst
-: 1724338823:0;gd
-: 1724338828:0;gst
 : 1724338837:0;rm History.md
 : 1724338845:0;ga scripts
-: 1724338846:0;gst
 : 1724338865:0;gcmsg "added a script for quick restarting of LVS Docker Dev stack"
-: 1724338868:0;gst
-: 1724338872:0;gd
 : 1724338899:0;g add --interactive
-: 1724338956:0;gst
 : 1724338966:0;gcmsg "updated HISTSIZE"
-: 1724338969:0;g push
-: 1724341100:0;te .git/config
-: 1724341129:0;g push
-: 1724341175:0;te .git/config
-: 1724341272:0;g push
-: 1724341279:0;gst
+: 1724342584:0;stow scripts
+: 1724342597:0;l scripts/.bin
+: 1724342617:0;chmod a+x scripts/.bin/digestif
+: 1724342635:0;rm ~/.bin/digestif
+: 1724342878:0;cat .git/config
+: 1724342915:0;g br
+: 1724342935:0;g br --help
+: 1724343482:0;g co -b DXA-11057-combined-data-service
+: 1724360698:0;gcmsg "DXA-11057: created a CombinedDataService with getting DRs and Os from all three sources and deduping them"
+: 1724360709:0;g push -u origin DXA-11057-combined-data-service
+: 1724362859:0;gcmsg "DXA-11057: created a test for CombinedDataService. Need to resolve issue with static vars and multiple threads in using SecurityContextUtils"
+: 1724421678:0;cd /mnt/c/Users/sharape/Downloads/
+: 1724421710:0;ffmpeg -i Alleluia.m4a Alleluia.mp3
+: 1724422959:0;yt-dlp -f bestaudio --download-sections "*376-469" https://www.youtube.com/watch?v=uOAPvaykVbE
+: 1724437418:0;gcmsg "DXA-11057: updated the test for CombinedDataService. Still issues with multiple threads and SecurityContextUtils. Now it's not in the child thread but more in the redis thread: fqes-rx-redis-1: Cannot invoke "com.lca.lvs.fhir.JwtContext.getCustomerId()" because "jwtContext" is null"
+: 1724437441:0;gcmsg "DXA-11057: updated the test for CombinedDataService. Still issues with multiple threads and SecurityContextUtils. Now it's not in the child thread but more in the redis thread: fqes-rx-redis-1: Cannot invoke \"com.lca.lvs.fhir.JwtContext.getCustomerId()\" because \"jwtContext\" is null"
+: 1724447746:0;ag supportsSort
+: 1724685374:0;cd StudioProjects
+: 1724685377:0;cd ..
+: 1724685379:0;proj.db
+: 1724685389:0;ag fhirQuerySettings
+: 1724685414:0;te lvs-services/lvs-fhir/src/test/resources/com/lca/lvs/fhir/settings/app-setting-synthetic-dx-report.json
+: 1724685491:0;te lvs-services/lvs-smart-on-fhir/src/test/resources/com/lca/lvs/smartonfhir/services/SampleSettings.json
+: 1724686123:0;g co lvs-fhir/src/main/java/com/lca/lvs/fhir/services/LvsExecutorService.java
+: 1724686185:0;gcmsg "DXA-11057: running tests and they work"
+: 1724687066:0;g help sync
+: 1724687109:0;glow
+: 1724687167:0;mpx ng
+: 1724687172:0;npx ng
+: 1724687184:0;ng
+: 1724687457:0;npm install -g @angular/cli@11.2.2 npm@latest
+: 1724687546:0;rehahs
+: 1724687548:0;rehash
+: 1724687556:0;npm install
+: 1724687576:0;nodenv list
+: 1724687580:0;nodenv versions
+: 1724687593:0;nodenv install --list
+: 1724687627:0;nodenv install 14.15.5
+: 1724687662:0;rd ~/.nodenv/versions/14.7.0
+: 1724687669:0;rd ~/.nodenv/versions/14.7
+: 1724687673:0;node --version
+: 1724687676:0;npm i
+: 1724692320:0;ag build-info
+: 1724692359:0;te make-build-info.js
+: 1724692371:0;node make-build-info.js
+: 1724692377:0;npx ng build
+: 1724698393:0;e &
+: 1724703948:0;gcmsg "DXA-11057: added all other resource through interfaces and also added integration tests (disabled by default)"
+: 1724707588:0;cat lvs-poc-ui
+: 1724707594:0;cat lvs-poc-ui/Dockerfile
+: 1724707605:0;cat lvs-poc-ui/bin/lvs-poc-ui.sh
+: 1724707613:0;cat lvs-poc-ui/bin/lvs-poc-ui-functions.sh
+: 1724707640:0;cat container-build-folder/lvs-poc-ui
+: 1724707826:0;./bin/build-images.sh
+: 1724708320:0;./bin/rebuild.sh
+: 1724708334:0;./bin/up.sh
+: 1724764107:0;ag -g "merge"
+: 1724765313:0;curl http://lvs-docker-dev/lvs-rest/dev-tools/launch-direct?iss=https%3A%2F%2Feeh-smart-launcher-dstu2-qa.dev01.dxa.labcorp.com%2Fv%2Fr2%2Ffhir&orgId=dkr-dstu2-qa&appId=lvs-poc-ui&practitionerId=v2-134977&patientId=d793-4r00d2-20409491-3947b80-938f309&updateLastLogin=true
+: 1724765321:0;curl "http://lvs-docker-dev/lvs-rest/dev-tools/launch-direct?iss=https%3A%2F%2Feeh-smart-launcher-dstu2-qa.dev01.dxa.labcorp.com%2Fv%2Fr2%2Ffhir&orgId=dkr-dstu2-qa&appId=lvs-poc-ui&practitionerId=v2-134977&patientId=d793-4r00d2-20409491-3947b80-938f309&updateLastLogin=true"
+: 1724765329:0;curl -vvv "http://lvs-docker-dev/lvs-rest/dev-tools/launch-direct?iss=https%3A%2F%2Feeh-smart-launcher-dstu2-qa.dev01.dxa.labcorp.com%2Fv%2Fr2%2Ffhir&orgId=dkr-dstu2-qa&appId=lvs-poc-ui&practitionerId=v2-134977&patientId=d793-4r00d2-20409491-3947b80-938f309&updateLastLogin=true"
+: 1724765350:0;curl -vvv "http://lvs-docker-dev/lvs-poc-ui/lvs-auth?nonce=eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJodHRwOi8vbHZzLWRvY2tlci1kZXYvbHZzLXJlc3QiLCJqdGkiOiJkODViNmEwOC0yZmY5LTRhZDQtYTQ3NC1mZTAxZWVkOTA3M2EiLCJhdWQiOiJ3ZWIiLCJyb2xlcyI6W10sImlhdCI6MTcyNDc2NTMyOSwiZXhwIjoxNzI0NzY1MzU5fQ.sF4btZkTKxTu6uNYi4Zp_isD2Namx5PDnJiZ_VLdRLr-WMao00QGY27qo626zj0JnE8TMlR_NWlGgw80H0Wubg"
+: 1724772775:0;cat /mnt/c/Users/sharape/Downloads/Wealthcare_HSA_20221031-20231031.xlsx
+: 1724772783:0;cat /mnt/c/Users/sharape/Downloads/Wealthcare_HSA_20231101-20231231.xlsx
+: 1724772806:0;mkdir hsa
+: 1724772818:0;mv /mnt/c/Users/sharape/Downloads/Wealthcare_* hsa/.
+: 1724781920:0;g co -b DXA-11051-ifsdroservice-controller
+: 1724781957:0;gcmsg "DXA-11051: Controller that calls IfsDRO service to get the data for Observations and DiagnosticReports for both LCA and EMR from IFS"
+: 1724781965:0;git push --set-upstream origin DXA-11051-ifsdroservice-controller
+: 1724866097:0;jq --version
+: 1724866104:0;jq --help
+: 1724941082:0;ideagst
+: 1724941108:0;gcmsg "DXA-11057: fixed concurrency issues in tests"
+: 1724944368:0;cat ~/.aws
+: 1724944372:0;cat ~/.aws/config
+: 1724944459:0;ag base-ubuntu
+: 1724944463:0;ag ubuntu
+: 1724944534:0;docker imageas
+: 1724944612:0;cat ./bin/build-images.sh
+: 1724944645:0;l lvs-base-ubuntu
+: 1724944698:0;cat lvs-base-ubuntu/Dockerfile
+: 1724944717:0;cd lvs-base-ubuntu
+: 1724944723:0;docker build .
+: 1724945915:0;aws login
+: 1724945942:0;cat Dockerfile
+: 1724945971:0;docker login
+: 1724946030:0;history | grep docker
+: 1724946071:0;aws --debug --profile dev06 ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 501991847235.dkr.ecr.us-east-1.amazonaws.com
+: 1724946079:0;docker pull 501991847235.dkr.ecr.us-east-1.amazonaws.com/lvs-docker-dev-lvs-base-ubuntu
+: 1724958297:0;cd hapi-fhir
+: 1724958303:0;ag BundleBuilder
+: 1724958353:0;ag setMetaField
+: 1724958425:0;ag newPrimitive
+: 1724958456:0;ag newPrimitive\(
+: 1724958463:0;ag "newPrimitive\("
+: 1725044185:0;mvn compile test gst
+: 1725044266:0;g co lvs-infrastructure/src/main/java/com/lca/lvs/rest/services/dxashared/IfsLcaService.java
+: 1725048964:0;cd /mnt/g/My\ Drive/Podcasts
+: 1725048972:0;yt-dlp -f bestaudio https://www.youtube.com/watch?v=C7-VLJxLEV4
+: 1725049563:0;yt-dlp -f bestaudio https://www.youtube.com/watch?v=6vInlCn5c98
+: 1725049624:0;yt-dlp -f bestaudio https://www.youtube.com/watch?v=sZAw71-opmA&list=RDsZAw71-opmA&start_radio=1&rv=6vInlCn5c98
+: 1725049632:0;yt-dlp -f bestaudio "https://www.youtube.com/watch?v=sZAw71-opmA&list=RDsZAw71-opmA&start_radio=1&rv=6vInlCn5c98"
+: 1725049669:0;yt-dlp -f bestaudio "https://www.youtube.com/watch?v=sZAw71-opmA"
+: 1725050154:0;yt-dlp -f bestaudio "https://www.youtube.com/watch?v=77UolNIubqk"
+: 1725050299:0;ffmpeg -i 'Matins Great Censing on ＂The Mother of Light...＂ [77UolNIubqk].m4a' -c:a libmp3lame -q:a 4 output.mp3
+: 1725373381:0;# installing babashka
+: 1725373424:0;mv /mnt/c/Users/sharape/Downloads/babashka-1.3.191-linux-amd64-static.tar.gz .
+: 1725373450:0;l opt
+: 1725373700:0;l .bin
+: 1725373711:0;echo $PATH
+: 1725373747:0;echo $PATH | tr ':' '\n'
+: 1725373782:0;l /usr/local/bin
+: 1725373795:0;l .local/bin
+: 1725373801:0;l .local/
+: 1725373815:0;l .local/share
+: 1725373826:0;l .local/share/applications
+: 1725373842:0;mkdir .local/bin
+: 1725373850:0;mv babashka-1.3.191-linux-amd64-static.tar.gz .local/bin
+: 1725373863:0;cd .local/bin
+: 1725373868:0;tar xzvf babashka-1.3.191-linux-amd64-static.tar.gz
+: 1725373877:0;rm babashka-1.3.191-linux-amd64-static.tar.gz
+: 1725373898:0;which ebb
+: 1725373903:0;ebb --help
+: 1725374169:0;md Babashka
+: 1725374173:0;cd Babashka
+: 1725374177:0;te bb.edn
+: 1725376596:0;lcd ..
+: 1725376636:0;ga hsa
+: 1725376644:0;l hsa
+: 1725376688:0;mv /mnt/c/Users/sharape/Downloads/*.pdf
+: 1725376730:0;mv /mnt/c/Users/sharape/Downloads/552f1c4d-ffe8-46ea-b7a3-36a461646bd0.pdf hsa/.
+: 1725376742:0;mv /mnt/c/Users/sharape/Downloads/5bb1ba89-3158-4e34-889b-543a6a0e5c3f.pdf hsa/.
+: 1725376753:0;mv /mnt/c/Users/sharape/Downloads/ac4fd2b4-c954-495b-93c1-aad6865af3a0.pdf hsa/.
+: 1725376773:0;open hsa/552f1c4d-ffe8-46ea-b7a3-36a461646bd0.pdf
+: 1725376825:0;mv hsa/552f1c4d-ffe8-46ea-b7a3-36a461646bd0.pdf hsa/elevate_20240101_20240331.pdf
+: 1725376833:0;open hsa/5bb1ba89-3158-4e34-889b-543a6a0e5c3f.pdf
+: 1725376877:0;mv hsa/5bb1ba89-3158-4e34-889b-543a6a0e5c3f.pdf hsa/elevate_20231001_20231231.pdf
+: 1725376885:0;open hsa/ac4fd2b4-c954-495b-93c1-aad6865af3a0.pdf
+: 1725376921:0;mv hsa/ac4fd2b4-c954-495b-93c1-aad6865af3a0.pdf hsa/elevate_20240401_20240830.pdf
+: 1725376927:0;ga hsa/.
+: 1725377293:0;gcmsg "added hsa transactions and statements"
+: 1725377333:0;cat ~/Dotfiles/.git/config
+: 1725377360:0;te .git/config
+: 1725377410:0;te ~/.emacs.d/.git/config
+: 1725377452:0;te cookbook/.git/config
+: 1725377481:0;te art_in_ctx/.git/config
+: 1725377523:0;te mondriano/.git/config
+: 1725377564:0;cat digestif/.git/config
+: 1725377585:0;l ph
+: 1725378182:0;cd mymon
+: 1725378231:0;g co -b merge-main
+: 1725378240:0;g br -d main
+: 1725378254:0;g br -D main
+: 1725378259:0;g co main
+: 1725378271:0;g merge merge-main
+: 1725378292:0;g br -d merge-main
+: 1725384606:0;g co DXA-11057-combined-data-service
+: 1725384639:0;git reset --hard HEAD~1
+: 1725384652:0;git push origin HEAD --force
+: 1725389850:0;gcmsg "DXA-11117:DXA-11118:DXA-11121:DXA-11122:DXA-11123: asynch getting data"
+: 1725389906:0;g co -b fix-failing-test
+: 1725390097:0;gcmsg "fixing failing test data"
+: 1725390104:0;g push -u origin fix-failing-test
+: 1725390273:0;g merge fix-failing-test
+: 1725390335:0;Personal/cookbook
+: 1725390837:0;curl --location 'https://fdlhdsws-ifs-sandbox.fhir.azurehealthcareapis.com/metadata'
+: 1725390909:0;curl --location 'https://fdlhdsws-ifs-sandbox.fhir.azurehealthcareapis.com/metadata' | jq '.rest.resource.type'
+: 1725390917:0;curl --location 'https://fdlhdsws-ifs-sandbox.fhir.azurehealthcareapis.com/metadata' | jq '.'
+: 1725390931:0;curl --location 'https://fdlhdsws-ifs-sandbox.fhir.azurehealthcareapis.com/metadata' | jq '.rest.resource'
+: 1725390957:0;curl --location 'https://fdlhdsws-ifs-sandbox.fhir.azurehealthcareapis.com/metadata' | jq '.rest[0].resource'
+: 1725390965:0;curl --location 'https://fdlhdsws-ifs-sandbox.fhir.azurehealthcareapis.com/metadata' | jq '.rest[0].resource.type'
+: 1725391001:0;curl --location 'https://fdlhdsws-ifs-sandbox.fhir.azurehealthcareapis.com/metadata' | jq '.rest[0].resource[].type'
+: 1725391021:0;curl --location 'https://fdlhdsws-ifs-sandbox.fhir.azurehealthcareapis.com/metadata' | jq '.rest[0].resource[].type' > test.txt
+: 1725391027:0;open test.txt
+: 1725391045:0;e test.txt
+: 1725391412:0;curl -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ikg5bmo1QU9Tc3dNcGhnMVNGeDdqYVYtbEI5dyIsImtpZCI6Ikg5bmo1QU9Tc3dNcGhnMVNGeDdqYVYtbEI5dyJ9.eyJhdWQiOiJodHRwczovL2ZkbGhkc3dzLWlmcy1zYW5kYm94LmZoaXIuYXp1cmVoZWFsdGhjYXJlYXBpcy5jb20iLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC83YjNiZjNhNS1jZTkzLTRhZmItYWJlYy03YmY0OTU0NGQyNTAvIiwiaWF0IjoxNzI1MzkwMzEzLCJuYmYiOjE3MjUzOTAzMTMsImV4cCI6MTcyNTM5NDIxMywiYWlvIjoiRTJkZ1lIaHJjV3FTOFRYZEY4MWFhMDV1dTdxWEJ3QT0iLCJhcHBpZCI6IjBlZTFmYWNjLTViMzctNDJlNy04Njg4LTZhMzU5ZGU0MzdjZSIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzdiM2JmM2E1LWNlOTMtNGFmYi1hYmVjLTdiZjQ5NTQ0ZDI1MC8iLCJpZHR5cCI6ImFwcCIsIm9pZCI6IjY0ZjdkOWUwLTgyMWQtNDI0MS04Mzk3LWY1YTBiMDBmMTY5MyIsInJoIjoiMC5BVnNBcGZNN2U1UE8tMHFyN0h2MGxVVFNVTmg0WjBfdld0eERvZi13YzNKTGxKWDVBQUEuIiwic3ViIjoiNjRmN2Q5ZTAtODIxZC00MjQxLTgzOTctZjVhMGIwMGYxNjkzIiwidGlkIjoiN2IzYmYzYTUtY2U5My00YWZiLWFiZWMtN2JmNDk1NDRkMjUwIiwidXRpIjoidjhLcGRUSFA4a1dtQlBBeno2WTRBUSIsInZlciI6IjEuMCIsInhtc19pZHJlbCI6IjcgMjIifQ.GIuKmrH8JsKIXS6a36rlnr4gw9H7lXJPHNVIBX97tO0BSCHYqA-HWPmZz7M9LApEL5ZmT-8OonH4RkrGEpmgH0ZxvLbpcmS35uWU9o-m9n3DA7xN-Xs3QpRob2NiLFegboHusC4kqnEwtjjE1ww7nrvLP1NPL3iyOJXTY4hfgzeEQfqWPsAjb3vnSpoHMAp2NReTDK1IhpjgBQp9mCMqd1meunv1144tZd3HjtCJSk8MbBKAnmzlmqUQnUzT97xA576hh_wYV7epw-xL6KMtuq3Yi_1D0ljyNPtO0IV29CXOzSEWsynaHfNp681KRD5Y_wHbMThQo9kwiazcSvDFQQ' --location 'https://fdlhdsws-ifs-sandbox.fhir.azurehealthcareapis.com/Observation/?_summary=count'
+: 1725391486:0;l DevOps
+: 1725391541:0;cd Diagrams
+: 1725391565:0;gcmsg "pushed local changes"
+: 1725393633:0;gcmsg "SMK-682: calculating how many resources are in IFS"
+: 1725393786:0;gcmsg "SMK-682: fixed sorting of resources"
+: 1725394585:0;te ~/ifs.secret
+: 1725394780:0;gcmsg "SMK-682: added code for authorization"
+: 1725398891:0;gcmsg "DXA-11117:DXA-11118:DXA-11121:DXA-11122:DXA-11123: tests pass"
+: 1725504869:0;gcmsg "DXA-11117:DXA-11118:DXA-11121:DXA-11122:DXA-11123: adding Combined Getters for all the resources; adding tests"
+: 1725566965:0;g co -b DXA-11117-DXA-11118-DXA-11121-DXA-11122-DXA-11123-combined-data-resources
+: 1725637643:0;gcmsg "DXA-11117:DXA-11118:DXA-11121:DXA-11122:DXA-11123: adding Combined data controller"
+: 1725637652:0;g push -u origin DXA-11117-DXA-11118-DXA-11121-DXA-11122-DXA-11123-combined-data-resources
+: 1725637694:0;gts
+: 1725637702:0;g co fix-failing-test
+: 1725637860:0;gcmsg "adding more time to the test on Tzvi's suggestion"
+: 1725650482:0;gcmsg "DXA-11117:DXA-11118:DXA-11121:DXA-11122:DXA-11123: updated the services based on the refactoring proposition"
+: 1725650883:0;mvn clean package install
+: 1725651198:0;which remote-dev-server
+: 1725673700:0;gcmsg "DXA-11117:DXA-11118:DXA-11121:DXA-11122:DXA-11123: updated documentation for CombinedDataService"
+: 1725677956:0;cat ~/.emacs.d/.git/config
+: 1725678042:0;/mnt/c/Users/sharape/StudioProjects/wdmtg
+: 1725678067:0;gcmsg "working application with all its infra"
+: 1725678103:0;g push -u origin master
+: 1725896868:0;ag "LOGGER\."
+: 1725906456:0;gcmsg "DXA-11117:DXA-11118:DXA-11121:DXA-11122:DXA-11123: changed logging level in controller to trace. Overall logging level is in TF configuration."
+: 1725909581:0;g merge develop
+: 1725914421:0;mvn clean compile package
+: 1725972376:0;./bin/up.sh&
+: 1725972716:0;ag -g Combined
+: 1725972723:0;ag Combined
+: 1725972746:0;ag --context 5 Combined
+: 1725972753:0;rg
+: 1725972757:0;ag --help
+: 1725972777:0;ag -B 5 Combined
+: 1725972969:0;te src/main/java/com/lca/lvs/rest/controllers/CombinedDataController.java
+: 1725973224:0;.lvs-docker-dev
+: 1725991807:0;q
+: 1725994136:0;curl -vvv -X GET "http://lvs-docker-dev/lvs-poc-ui/lvs-auth?nonce=eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJodHRwOi8vbHZzLWRvY2tlci1kZXYvbHZzLXJlc3QiLCJqdGkiOiJlOTg5MjZkNy02YzFiLTQ1NjYtOThkZi0yYjdlMGFlYTlkYTIiLCJhdWQiOiJ3ZWIiLCJyb2xlcyI6W10sImlhdCI6MTcyNTk5NDExMywiZXhwIjoxNzI1OTk0MTQzfQ.sp-OjNPO9BykJ7wzf8YmwKwLrRSa_1ar9Fend68gFWivithCyLhr7zkOCdJiEFSrRCWRpayVCTH0dnQplWXzgQ"
+: 1725994198:0;curl -L -X GET "http://lvs-docker-dev/lvs-rest/dev-tools/launch-direct?iss=https%3A%2F%2Feeh-smart-launcher-stu3-qa.dev01.dxa.labcorp.com%2Fv%2Fr3%2Ffhir&orgId=dkr-stu3-qa&appId=lvs-poc-ui&practitionerId=pe-134977&patientId=d793-4r00d2-20409491-3947b80-938f309&updateLastLogin=true"
+: 1725994240:0;curl -X GET "http://lvs-docker-dev/lvs-rest/dev-tools/launch-direct?iss=https%3A%2F%2Feeh-smart-launcher-stu3-qa.dev01.dxa.labcorp.com%2Fv%2Fr3%2Ffhir&orgId=dkr-stu3-qa&appId=lvs-poc-ui&practitionerId=pe-134977&patientId=d793-4r00d2-20409491-3947b80-938f309&updateLastLogin=true"
+: 1725994274:0;curl -vvv -X GET "http://lvs-docker-dev/lvs-poc-ui/lvs-auth?nonce=eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJodHRwOi8vbHZzLWRvY2tlci1kZXYvbHZzLXJlc3QiLCJqdGkiOiI1Mzg0NDUwNC1jYzI2LTRhZWMtOTY0MC04Y2Y0NjkwYjFmYTQiLCJhdWQiOiJ3ZWIiLCJyb2xlcyI6W10sImlhdCI6MTcyNTk5NDI0NSwiZXhwIjoxNzI1OTk0Mjc1fQ.20cuO9pJFUqVsN0NC88E-dE-pf8Jaq7VWTv0G1RfO2oD4J0oNbi2vDLVeRKVtdF9mQumsfZKB9lOZdwp6HhJKA"
+: 1725994322:0;ag lvs-auth
+: 1725994336:0;te src/main/java/com/lca/lvs/rest/controllers/LvsAuthController.java
+: 1725994397:0;curl -vvv -X GET -H "Accept: application/json" "http://lvs-docker-dev/lvs-poc-ui/lvs-auth?nonce=eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJodHRwOi8vbHZzLWRvY2tlci1kZXYvbHZzLXJlc3QiLCJqdGkiOiI3ODdiNTVmNS0xNWUzLTRhNTUtYTc1MS1jMWIyODlmNjVmNTciLCJhdWQiOiJ3ZWIiLCJyb2xlcyI6W10sImlhdCI6MTcyNTk5NDM2MiwiZXhwIjoxNzI1OTk0MzkyfQ.nd_WYjJMywIlOoRPDXtpHl17lBy38T_E41a5fC81t5HfTN4MXxoNHJA087lx9Vsp3-ihFejN-SxzBEAuApMc3w"
+: 1725994474:0;curl -vvv -X GET -H "Accept: application/json" -H "Content-Type: application/json" "http://lvs-docker-dev/lvs-poc-ui/lvs-auth?nonce=eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJodHRwOi8vbHZzLWRvY2tlci1kZXYvbHZzLXJlc3QiLCJqdGkiOiI3ODdiNTVmNS0xNWUzLTRhNTUtYTc1MS1jMWIyODlmNjVmNTciLCJhdWQiOiJ3ZWIiLCJyb2xlcyI6W10sImlhdCI6MTcyNTk5NDM2MiwiZXhwIjoxNzI1OTk0MzkyfQ.nd_WYjJMywIlOoRPDXtpHl17lBy38T_E41a5fC81t5HfTN4MXxoNHJA087lx9Vsp3-ihFejN-SxzBEAuApMc3w"
+: 1725994502:0;curl -vvv -X GET -H "Accept: application/json" -H "Content-Type: application/json" "http://lvs-docker-dev/lvs-rest/lvs-auth?nonce=eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJodHRwOi8vbHZzLWRvY2tlci1kZXYvbHZzLXJlc3QiLCJqdGkiOiI3ODdiNTVmNS0xNWUzLTRhNTUtYTc1MS1jMWIyODlmNjVmNTciLCJhdWQiOiJ3ZWIiLCJyb2xlcyI6W10sImlhdCI6MTcyNTk5NDM2MiwiZXhwIjoxNzI1OTk0MzkyfQ.nd_WYjJMywIlOoRPDXtpHl17lBy38T_E41a5fC81t5HfTN4MXxoNHJA087lx9Vsp3-ihFejN-SxzBEAuApMc3w"
+: 1725994565:0;curl -vvv -X GET "http://lvs-docker-dev/lvs-poc-ui/lvs-auth?nonce=eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJodHRwOi8vbHZzLWRvY2tlci1kZXYvbHZzLXJlc3QiLCJqdGkiOiIxYmE0ODNlMC00ZTQ4LTQ2YzAtYjE1Ni1iMjAyNzczODA2NWEiLCJhdWQiOiJ3ZWIiLCJyb2xlcyI6W10sImlhdCI6MTcyNTk5MzYwMSwiZXhwIjoxNzI1OTkzNjMxfQ.IwGcFmUelSEGueZ1tfXsP6oxRSqEYmoPIfJTpjTPYc1JFGeWzHSESV8-W7Yn2eCc-VQVZPiFQkrmsuO2uafpgw"
+: 1725994582:0;curl -vvv -X GET "http://lvs-docker-dev/lvs-rest/dev-tools/launch-direct?iss=https%3A%2F%2Feeh-smart-launcher-stu3-qa.dev01.dxa.labcorp.com%2Fv%2Fr3%2Ffhir&orgId=dkr-stu3-qa&appId=lvs-poc-ui&practitionerId=pe-134977&patientId=d793-4r00d2-20409491-3947b80-938f309&updateLastLogin=true"
+: 1725994631:0;curl -vvv -X GET -H "Accept: application/json" -H "Content-Type: application/json" "http://lvs-docker-dev/lvs-rest/lvs-auth?nonce=eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJodHRwOi8vbHZzLWRvY2tlci1kZXYvbHZzLXJlc3QiLCJqdGkiOiJmOTUyOWY0Mi05MzE4LTRjNjEtYjlmNi0yZTBiOWEzMWVmNzIiLCJhdWQiOiJ3ZWIiLCJyb2xlcyI6W10sImlhdCI6MTcyNTk5NDU4MywiZXhwIjoxNzI1OTk0NjEzfQ.pMrCkWUKWq7iD5xfUoW3W3AtosD7hKJYNc1onn2x1M4rT2omMJKwTxcEBpDu9nEuOGjdrofU8Kp7zXp9fSgpNQ"
+: 1726002145:0;gcmsg "DXA-11117:DXA-11118:DXA-11119: DXA-11120: DXA-11121:DXA-11122:DXA-11123:DXA-11124:DXA-11125:DXA-12103: adding a scope to Oath token refresher"
+: 1726003258:0;gcmsg "DXA-11117:DXA-11118:DXA-11119: DXA-11120: DXA-11121:DXA-11122:DXA-11123:DXA-11124:DXA-11125:DXA-12103: added missing Encounters"
+: 1726003337:0;g co src/main/java/com/lca/lvs/rest/controllers/EmrDataController.java
+: 1726003360:0;gcmsg "DXA-11117:DXA-11118:DXA-11119: DXA-11120: DXA-11121:DXA-11122:DXA-11123:DXA-11124:DXA-11125:DXA-12103: fixing typo in URL for Condition resources"
+: 1726061503:0;git shortlog
+: 1726061521:0;git shortlog --count
+: 1726061713:0;git shortlog -se --count --email
+: 1726061930:0;git shortlog -s --count --date=short --pretty=format:'"%h","%an","%ad","%s"'
+: 1726061940:0;git shortlog -se --count --date=short --pretty=format:'"%h","%an","%ad","%s"'
+: 1726061946:0;git shortlog -se --count
+: 1726061964:0;git shortlog -se --count --date=short --format:'"%h","%an","%ad","%s"'
+: 1726062000:0;git shortlog -nse --count --date=short --format:'"%h","%an","%ad","%s"'
+: 1726062006:0;git shortlog -nse --count
+: 1726069764:0;gitk
+: 1726069974:0;gd --stat incremental-loading | git shortlog
+: 1726069982:0;gd --stat incremental-loading
+: 1726069993:0;g shortlog incremental-loading
+: 1726070115:0;gd --stat incremental-loading-merge
+: 1726077212:0;gd 170ce8de0 229d37db1
+: 1726077263:0;gd incremental-loading-merge DXA-11057-combined-data-service
+: 1726077707:0;g co  DXA-11117-DXA-11118-DXA-11121-DXA-11122-DXA-11123-combined-data-resources
+: 1726077729:0;gd --stat incremental-loading-merge DXA-11057-combined-data-service
+: 1726079482:0;g co DXA-11051-ifsdroservice
+: 1726088073:0;Projects
+: 1726088084:0;cd Diagrams/
+: 1726088455:0;cat ~/ifs.secret
+: 1726239496:0;cd cookbook
+: 1726256454:0;ps aux
+: 1726256482:0;l Projects/lvs-services
+: 1726256561:0;l /var/log
+: 1726256610:0;l /opt
+: 1726256617:0;l /opt/idea-IU-241.14494.240
+: 1726256673:0;l ~/.cache/JetBrains/IntelliJIdea2024.1/
+: 1726256682:0;l ~/.cache/JetBrains/IntelliJIdea2024.1/log/
+: 1726256701:0;te ~/.cache/JetBrains/IntelliJIdea2024.1/log/idea.log
+: 1726256805:0;l .local/share/JetBrains
+: 1726256817:0;l .local/share/JetBrains/IntelliJIdea2024.1/aws-toolkit-jetbrains-standalone
+: 1726256822:0;rd .local/share/JetBrains/IntelliJIdea2024.1/aws-toolkit-jetbrains-standalone
+: 1726496037:0;gcmsg "DXA-12358: using common approach to DRO in both Ifs and Combined data services"
+: 1726497275:0;gcmsg "DXA-12358: test to pass"
+: 1726513448:0;g show -p HEAD
+: 1726513459:0;gd HEAD~1
+: 1726518099:0;~gst
+: 1726586076:0;gd incremental-loading-merge
+: 1726598308:0;l snap
+: 1726598312:0;l snap/firefox
+: 1726598321:0;l Desktop
+: 1726598353:0;l Downloads
+: 1726598357:0;l Personal
+: 1726598376:0;te .
+: 1726598968:0;g co -b DXA-12102-incremental-loading-setting
+: 1726599050:0;../Projects
+: 1726599178:0;g clone ssh://git@git.labcorp.com:7999/fst/fdl-tracker.git
+: 1726599832:0;explorer.exe .
+: 1726681372:0;curl google.com
+: 1726681382:0;curl -L google.com
+: 1726775574:0;ag windows.net
+: 1726775583:0;ag fdl-
+: 1726855667:0;gd incremental-loading
+: 1726865873:0;ga .
+: 1726865889:0;gcmsg "DXA-12339: Tracker API service"
+: 1726866481:0;g push -u origin DXA-12339-call-tracker
+: 1726867486:0;ga **/TrackerService*
+: 1726867508:0;gcmsg "DXA-12339: cleanup"
+: 1726867536:0;gcmsg "DXA-12339: changed modifiers for getXXXQuery methods in AbstractEmrFhirService"
+: 1726867558:0;ag -g QueryUtils
+: 1726888963:0;g merge release/7.13.0
+: 1726888985:0;g reset --hard
+: 1726891255:0;gd feature/dxa-11798
+: 1726891302:0;gd feature/dxa-11798 HEAD
+: 1726891405:0;g merge --help
+: 1726891457:0;g merge --no-ff feature/dxa-11798
+: 1726891637:0;grehh
+: 1726891642:0;g merge --abort
+: 1726891761:0;g merge DXA-11051-ifsdroservice
+: 1726891787:0;te lvs-fhir/src/test/resources/com/lca/lvs/fhir/utils/PatientAddressRandom2.json
+: 1726891819:0;ga merge --continue
+: 1726891894:0;g merge DXA-11117-DXA-11118-DXA-11121-DXA-11122-DXA-11123-combined-data-resources
+: 1726891917:0;g merge DXA-11057-combined-data-service
+: 1726892797:0;pgrep -f \.Idea | xargs kill
+: 1726892821:0;Personal
+: 1726892951:0;cat ~/.cache/JetBrains/IntelliJIdea2024.1
+: 1726892966:0;cat ~/.cache/JetBrains/IntelliJIdea2024.1/log/idea.log
+: 1726893604:0;l ~/.cache
+: 1726893610:0;l ~/.cache/JetBrains
+: 1726893743:0;cd ~/.cache
+: 1726893749:0;l JetBrains
+: 1726893764:0;l JetBrains/IntelliJIdea2024.1
+: 1726893768:0;l JetBrains/IntelliJIdea2024.1/plugins
+: 1726893777:0;l JetBrains/IntelliJIdea2024.2
+: 1726893795:0;l JetBrains/IntelliJIdea2024.2/log
+: 1726893818:0;cat JetBrains/IntelliJIdea2024.2/log/idea.log
+: 1727097583:0;unalias idea
+: 1727097616:0;/opt/idea-IU-241.14494.240/bin/idea
+: 1727097886:0;te ~/Dotfiles
+: 1727097976:0;which idea
+: 1727098061:0;g merge incremental-loading
+: 1727107695:0;g merge DXA-11051-ifsdroservice-controller
+: 1727116454:0;gcmsg "DXA-12102: move ResultType and Mode enums up a level"
+: 1727116472:0;g merge incremental-loading-merge
+: 1727119389:0;docker pull mr.microsoft.com/mssql/server:2022-latest
+: 1727119402:0;docker pull mcr.microsoft.com/mssql/server:2022-latest
+: 1727119417:0;docker images
+: 1727119560:0;l sql
+: 1727119566:0;l sql/entrypoint
+: 1727119585:0;chmod a+x sql/entrypoint/*.sh
+: 1727120236:0;cat sql/entrypoint/create-database.sh
+: 1727126273:0;ga-u
+: 1727126304:0;gcmsg "DXA-12102: updated mode/result type params to the controller calls"
+: 1727126353:0;gcmsg "DXA-12102: temporarily disable failing tests"
+: 1727126365:0;g push -u origin DXA-12102-incremental-loading-setting
+: 1727148455:0;gcmsg "DXA-12102: moved test to lvs-services"
+: 1727153148:0;gcmsg "DXA-12102: lvsuinostreamingpanelviewcontroller test"
+: 1727183538:0;g co -b DXA-12339-call-tracker
+: 1727183554:0;g lg
+: 1727184055:0;g co -b DXA-12339-call-tracker-simple
+: 1727202099:0;mvn clean compile package install 
+: 1727209860:0;g stash
+: 1727291004:0;gcmsg "DXA-12339: updating services with configurable properties"
+: 1727297641:0;gcmsg "DXA-12339: major refactor of IncrementalXXXService and clean up useless methods and overrides"
+: 1727466037:0;gcmsg "DXA-12457: massive refactoring of incremental fhir service"
+: 1727466384:0;g sync
+: 1727466411:0;cat ~/.bin
+: 1727466417:0;cat ~/.bin/git-refresh
+: 1727466574:0;gd release/7.13.0
+: 1727466706:0;g co feature/12434
+: 1727466742:0;g co 958bf329029e2c91f2b89d4afa04be5dfaea6be1
+: 1727466769:0;g co -b query-utils
+: 1727466782:0;gd query-utils
+: 1727466828:0;gd --stat query-utils
+: 1727467232:0;g log --follow -- **/QueryUtils.java
+: 1727467239:0;g log --all --follow -- **/QueryUtils.java
+: 1727467258:0;g log --all -p --follow -- **/QueryUtils.java
+: 1727467299:0;g br --contains 8a5c7a07d437be7bdc4e046399ce224d39d635b6
+: 1727467458:0;g co  253cfd11b
+: 1727467466:0;g co -b query-utils-2
+: 1727467586:0;g co -b release/7.13.0
+: 1727467591:0;g co release/7.13.0
+: 1727467846:0;g co release/7.13.0 **/QueryUtils.java
+: 1727467885:0;g co release/7.13.0 **/QueryUtils*.java
+: 1727467893:0;g co release/7.13.0 **/QueryUtil*.java
+: 1727468004:0;gcmsg "DXA-12457: ok, there's no way to do it with just merges so we get QueryUtils through just checking it out from release/7.13.0 branch"
+: 1727468263:0;g co release/7.13.0 **/QueryUtilsTest.java
+: 1727468326:0;g co feature/dxa-11798
+: 1727468407:0;g reset --soft HEAD~
+: 1727468426:0;g merge feature/dxa-11798
+: 1727469610:0;g co -b tbr
+: 1727469825:0;gd feature/dxa-11798 -- **/AbstractBundleQuery.java
+: 1727470029:0;g co 683550c8b1f4dcf5a658d5836b2b4d089b4bd58c
+: 1727470038:0;g co -b arjun-work
+: 1727470051:0;gd arjun-work
+: 1727470058:0;gd --stat arjun-work
+: 1727470272:0;g br -d tbr
+: 1727470276:0;g br -d arjun-work
+: 1727470284:0;g br -d query-utils
+: 1727470286:0;g br -d query-utils-2
+: 1727470316:0;g br -D arjun-work
+: 1727470331:0;g co -b 968f9bd7242cf7e5c819c5546e5220be9b03e569
+: 1727470347:0;g br -d 968f9bd7242cf7e5c819c5546e5220be9b03e569
+: 1727470363:0;g br -D 968f9bd7242cf7e5c819c5546e5220be9b03e569
+: 1727470366:0;g co 968f9bd7242cf7e5c819c5546e5220be9b03e569
+: 1727470379:0;g co -b arjun-query-work
+: 1727470397:0;g cherry-pick b2804161a3c83c4a0c9c57481340a2614719257e
+: 1727470504:0;g cherry-pick --continue
+: 1727470528:0;g cherry-pick 08053e4f613cc3212e61d33bda07f97f2a74f2b1
+: 1727470543:0;g cherry-pick 31a801aee1bfcb64200289a9efca22b38f7d416c
+: 1727470554:0;g cherry-pick 4e9160d1a89b924b2d344451b4b092eea2d384f3
+: 1727470571:0;g cherry-pick e98a1e3822a0a4977d24883b4e7ae7402c0c4cd1
+: 1727470585:0;g cherry-pick f26a89fd4d6951cc611d72566561f8a2840b995c
+: 1727470598:0;g cherry-pick 525ffd1c2010211131bb6db5c2c7d957872c4431
+: 1727470611:0;g cherry-pick e71eac917a31944311a161509414fff47b3f876a
+: 1727470622:0;g cherry-pick e47935075a29c4ba66241a8b099bd4376d32bdaa
+: 1727470635:0;g cherry-pick 1747b46540b56bafdb99e245e47031d5c44c1a64
+: 1727470647:0;g cherry-pick 683550c8b1f4dcf5a658d5836b2b4d089b4bd58c
+: 1727470660:0;gd DXA-12339-call-tracker
+: 1727470671:0;gd --stat DXA-12339-call-tracker
+: 1727470746:0;g br -D arjun-query-work
+: 1727470821:0;gd feature/dxa-11798..release/7.13.0 > arjun-query-work.patch
+: 1727470825:0;cat arjun-query-work.patch
+: 1727470885:0;rm arjun-query-work.patch
+: 1727470894:0;gd feature/dxa-11798..release/7.13.0
+: 1727470899:0;gd --stat feature/dxa-11798..release/7.13.0
+: 1727470961:0;gd --stat release/7.13.0..feature/dxa-11798
+: 1727471014:0;gd --stat feature/dxa-11798
+: 1727723758:0;gd release/7.13.0 > arjun_work.diff
+: 1727723810:0;gd release/7.13.0..HEAD > arjun_work.diff
+: 1727723876:0;gd HEAD..release/7.13.0 > arjun_work.diff
+: 1727724921:0;gd --stat HEAD..release/7.13.0
+: 1727744098:0;pgrep e
+: 1727744102:0;pgrep -f Emacs
+: 1727744105:0;pgrep -f emacs
+: 1727744401:0;pgrep -f emacs | xargs kill
+: 1727744414:0;pgrep -f Idea
+: 1727744418:0;pgrep -f idea
+: 1727747032:0;g apply arjun_work.diff
+: 1727747063:0;gd HEAD..release/7.13.0 > arjun_work_1.diff
+: 1727748805:0;g apply arjun_work_1.diff
+: 1727748847:0;ga lvs-smart-on-fhir
+: 1727748913:0;mvn clean compile testgst
+: 1727751051:0;qgst
+: 1727751077:0;g co HEAD~1
+: 1727790867:0;gd HEAD~1 -- **/CodeSystemBundleQuery*
+: 1727790932:0;gd HEAD~1 -- **/*Query*
+: 1727791055:0;g co origin/DXA-12339-call-tracker
+: 1727791068:0;g br -D DXA-12339-call-tracker
+: 1727791076:0;g co DXA-12339-call-tracker
+: 1727811582:0;ag -g DateUtils
+: 1727811631:0;g co release/7.13.0 lvs-smart-on-fhir/src/main/java/com/lca/lvs/smartonfhir/utils/DateUtils.java
+: 1727813148:0;gcmsg "DXA-12457: sifting/picking up Arjun's changes from release/7.13.0 branch"
+: 1727813209:0;g co release/7.13.0 lvs-smart-on-fhir/src/main/java/com/lca/lvs/smartonfhir/cache/query/AdHocResourceQuery.java
+: 1727814479:0;gd release/7.13.0 -- **/CodeSystemBundleQueryTest*
+: 1727814504:0;gd release/7.13.0 -- **/CodeSystemBundleQuery*
+: 1727814521:0;gd release/7.13.0 -- **/AbstractBundleQuery*
+: 1727814528:0;gd release/7.13.0 -- **/AbstractQuery*
+: 1727814697:0;gd release/7.13.0 -- **/UrlCapturingInterceptor*
+: 1727830179:0;gcmsg "DXA-12457: finally changes from release/7.13 necessary for group key are incorporated"
+: 1727832455:0;mvn clean compile test
+: 1727872774:0;yt-dlp -f mp4 https://x.com/i/status/1840770964314820647
+: 1727872890:0;yt-dlp --no-check-certificates -f mp4 https://x.com/i/status/1840770964314820647
+: 1727880372:0;gcmsg "DXA-12457: added tests for Incremental loading query"
+: 1727894013:0;g prune
+: 1727894020:0;g clean
+: 1727894025:0;g clean -n
+: 1727894041:0;g clean -f
+: 1727894156:0;g co develop
+: 1727894970:0;g co -b DXA-12472-combined-dro-service
+: 1727898420:0;gd --cached
+: 1727898451:0;gcmsg "DXA-12472: Basics of the CombinedDROService in place along with a test"
+: 1727898461:0;g push -u origin DXA-12472-combined-dro-service
+: 1727983876:0;gcmsg "DXA-12472: incorporated suggestions for the CombinedDROService from Arjun and Gaurav"
+: 1727985794:0;g refresh
+: 1728068119:0;g co -b DXA-12475-incremental-settings
+: 1728068134:0;mvn clean compile package install
+: 1728070638:0;htop
+: 1728308777:0;idea 
+: 1728309721:0;ll
+: 1728309768:0;mvn compile install
+: 1728325098:0;gitk --all
+: 1728325659:0;mvn clean compile test verify
+: 1728326736:0;mvn test -Dtest=IfsDROServiceTest
+: 1728326790:0;mvn test -DfailIfNoTests=false -Dtest=IfsDROServiceTest
+: 1728326903:0;mvn -v
+: 1728326907:0;java -version
+: 1728329163:0;mvn install 
+: 1728335533:0;cat ~/.m2/settings.xml
+: 1728336258:0;gcmsg "DXA-12475: test that changes context"
+: 1728336266:0;g co incremental-loading-merge
+: 1728336276:0;g co -b incremental-loading-merge-demo
+: 1728336314:0;g merge DXA-12339-call-tracker
+: 1728336465:0;g merge --continue
+: 1728336562:0;g merge DXA-12475-incremental-settings 
+: 1728336582:0;g co DXA-12475-incremental-settings
+: 1728336588:0;g merge incremental-loading-merge-demo
+: 1728353711:0;ag settings
+: 1728353947:0;~/.lvs-docker-dev
+: 1728355953:0;mvn clean compile package test verify
+: 1728359116:0;mvn compile test
+: 1728359298:0;ga -u 
+: 1728360415:0;g push -u origin DXA-12475-incremental-settings
+: 1728361103:0;g co -b DXA-12341-load-resources-before-ui
+: 1728363158:0;gcmsg "DXA-12341: load resources before ui in EmrConnectorService"
+: 1728363168:0;g push -u origin DXA-12341-load-resources-before-ui
+: 1728363665:0;g merge  DXA-12475-incremental-settings
+: 1728364005:0;gcmsg "DXA-12475: using incremental loading settings from the CC to chose between EMR and Incremental EMR"
+: 1728365383:0;gd DXA-12102-incremental-loading-setting
+: 1728365427:0;g co DXA-12102-incremental-loading-setting
+: 1728365462:0;ag -g Mode.*
+: 1728365642:0;g stash pop
+: 1728365666:0;g stash list
+: 1728366065:0;g co -b DXA-12102-incremental-loading-setting-mode-result-type
+: 1728366087:0;gcmsg "DXA-12475: add enums for Mode and ResultType"
+: 1728366184:0;g show b4f39ba0
+: 1728366228:0;g show aef7d9fb
+: 1728366249:0;g co -b DXA-12475-incremental-settings-controller
+: 1728366257:0;g cherry-pick aef7d9fb
+: 1728366262:0;mvn compile
+: 1728366494:0;ggst
+: 1728366517:0;gmcsg "DXA-12475: problem with Practitioner"
+: 1728366526:0;gcmsg "DXA-12475: problem with Practitioner"
+: 1728366531:0;mvn clean compile 
+: 1728390962:0;docker exec -it lvs-docker-dev-lvs-rest-1 sh -c "echo > /opt/labcorp/user-home/logs/lvs-rest.log"
+: 1728391336:0;cd fdl-tracker
+: 1728391375:0;docker-compose up
+: 1728391430:0;fdl-tracker
+: 1728391460:0;cat docker-compose.yml
+: 1728396976:0;te ./bin/restart.sh
+: 1728396986:0;source
+: 1728396993:0;restart-lvs
+: 1728416079:0;cd Personal
+: 1728416117:0;cd Clojure
+: 1728416125:0;l ClojureDart
+: 1728416149:0;cat ClojureDart/clj/src/cljd/flutter/alpha2.cljd
+: 1728416300:0;..
+: 1728416304:0;e . &
+: 1728416334:0;cd Clojure/Babashka
+: 1728416336:0;bb
+: 1728416360:0;bb --help
+: 1728416364:0;bb version
+: 1728416368:0;bb tasks
+: 1728416373:0;bb hello
+: 1728416383:0;bb repl
+: 1728482435:0;gcmsg "DXA-12457: merging the results of work on tracker service and incremental loading work"
+: 1728482455:0;g push -u origin incremental-loading-merge-demo
+: 1728483520:0;gcmsg "DXA-12475: incremental loading is used in DataController depending on CC settings"
+: 1728483528:0;mvn clean compile
+: 1728483551:0;g push -u origin DXA-12475-incremental-settings-controller
+: 1728495380:0;mvn compile package install
+: 1728495698:0;gcmsg "DXA-12457: fixed the test that fails after we decided to go for a nested 'enabled' flag for incremental loading"
+: 1728505399:0;g br -a
+: 1728505407:0;g br -a | grep load
+: 1728505429:0;g co DXA-12341-load-resources-before-ui
+: 1728655926:0;cat bb.edn
+: 1728659651:0;projects
+: 1728659655:0;~/Projects
+: 1728659799:0;lvs-poc-ui
+: 1728659809:0;grhh
+: 1728659832:0;cat README.md
+: 1728659843:0;ng build
+: 1728659850:0;npm build
+: 1728659885:0;code . 
+: 1728662615:0;l ~/.bin
+: 1728662640:0;history
+: 1728662660:0;history | grep assume
+: 1728662760:0;ls /tmp/.X11-unix
+: 1728662825:0;cat /mnt/wslg/weston.log | grep isConnected_V
+: 1728662831:0;cat /mnt/wslg/weston.log
+: 1728663102:0;echo $DISPLAY
+: 1728667920:0;ag -g /combine
+: 1728667940:0;g grep \/combined
+: 1728667994:0;ag -g Comb
+: 1728668002:0;ag /comb
+: 1728668013:0;ag -g \/comb
+: 1728668026:0;ag \/comb
+: 1728668030:0;ag comb
+: 1728668083:0;g log -p | grep "/comb"
+: 1728669110:0;g show HEAD
+: 1728671450:0;ag OasisHost
+: 1728671458:0;ag oasis
+: 1728672500:0;pgrep -f .idea | xargs kill
+: 1728672510:0;pgrep -f idea | xargs kill
+: 1728673243:0;history | grep OUT
+: 1728673253:0;OUT=$(aws --profile=master01 sts assume-role --role-arn arn:aws:iam::749776248005:role/DeveloperUsers --role-session-name aaa); export AWS_ACCESS_KEY_ID=$(echo $OUT | jq -r '.Credentials''.AccessKeyId'); export AWS_SECRET_ACCESS_KEY=$(echo $OUT | jq -r '.Credentials''.SecretAccessKey');
+: 1728673259:0;env
+: 1728673299:0;cat ~/.aws/credentials
+: 1728674216:0;ag LVS_POC_UI_BUILD_MODE
+: 1728674232:0;code .
+: 1728674482:0;npm run build
+: 1728674653:0;PWD
+: 1728674662:0;pwd
+: 1728674695:0;./bin/up.sh &
+: 1728933284:0;lvs-services
+: 1728933287:0;lvs-rest
+: 1728934109:0;idea
+: 1729026341:0;gd
+: 1729026367:0;gcmsg "DXA-12341: loading resources"
+: 1729026394:0;g co incremental-loading
+: 1729026455:0;g co -b DXA-12639-combined-data-controller
+: 1729026472:0;g pull
+: 1729026494:0;g co incremental-loading-merge-demo
+: 1729026506:0;mvn package install
+: 1729026747:0;l
+: 1729026755:0;mvn package 
+: 1729027449:0;lvs-docker-dev
+: 1729088338:0;g lga
+: 1729088347:0;ga -u
+: 1729088348:0;gst
+: 1729088360:0;gcmsg "DXA-12639: combined data controller"
+: 1729088362:0;g push
+: 1729088388:0;g push -u origin DXA-12639-combined-data-controller
+: 1729088496:0;./bin/restart.sh
+: 1729094511:0;idea
+: 1729102783:0;l
+: 1729102980:0;g lga
+: 1729102986:0;g pull
+: 1729102995:0;g lga
+: 1729103028:0;g co incremental-loading
+: 1729103032:0;g pull
+: 1729103875:0;gst
+: 1729103878:0;g pull
+: 1729103882:0;g lga
+: 1729105174:0;g co -b incremental-loading-deploy
+: 1729105184:0;g push -u incremental-loading-deploy
+: 1729105190:0;g push -u origin incremental-loading-deploy
+: 1729105206:0;lvs-poc-ui
+: 1729105210:0;l
+: 1729105213:0;cd ..
+: 1729105215:0;..
+: 1729105218:0;lvs-poc-ui
+: 1729105219:0;l
+: 1729105237:0;cat package.json
+: 1729105424:0;cat pom.xml
+: 1729106099:0;ag powermock
+: 1729106282:0;g lga
+: 1729106295:0;gd incremental-loading-merge
+: 1729106306:0;gd incremental-loading-merge-demo
+: 1729106317:0;g co incremental-loading-merge
+: 1729106320:0;g pull
+: 1729106323:0;g lga
+: 1729106334:0;g co incremental-loading-merge-demo
+: 1729106335:0;gd
+: 1729108281:0;g pull
+: 1729108284:0;g lga
+: 1729108293:0;fdl-tracker
+: 1729108294:0;l
+: 1729108296:0;g pull
+: 1729108299:0;gd
+: 1729108305:0;g stash
+: 1729108307:0;g pull
+: 1729108313:0;g lga
+: 1729182268:0;g pull
+: 1729196201:0;gst
+: 1729196204:0;g pull
+: 1729196218:0;g lga
+: 1729196456:0;g co incremental-loading
+: 1729196459:0;g pull
+: 1729196526:0;g merge DXA-12639-combined-data-controller
+: 1729196533:0;g push
+: 1729196538:0;g co incremental-loading-deploy
+: 1729196542:0;g merge incremental-loading
+: 1729196556:0;g push
+: 1729196670:0;gd gst
+: 1729196678:0;gd incremental-loading-merge
+: 1729196682:0;gd incremental-loading-merge --stat
+: 1729196716:0;gd DXA-12339-call-tracker
+: 1729197307:0;g lga
+: 1729197314:0;gitk --all
+: 1729197370:0;g co incremental-loading-merge
+: 1729197372:0;g pull
+: 1729197381:0;g merge incremental-loading-merge-demo
+: 1729197430:0;gst
+: 1729197716:0;g merge --continue
+: 1729197753:0;g lgs
+: 1729197755:0;g lga
+: 1729197823:0;g co -b DXA-12692-tracker-oauth
+: 1729224709:0;gst
+: 1729224725:0;ga -u
+: 1729224726:0;gst
+: 1729224736:0;mvn compile test verify
+: 1729227003:0;gst
+: 1729227006:0;ga -u
+: 1729227037:0;gcmsg "DXA-12692: updated tracker service and fixed failing tests"
+: 1729227040:0;g push
+: 1729227058:0;g push -u origin DXA-12692-tracker-oauth
+: 1729232877:0;gst
+: 1729232880:0;ga -u
+: 1729232928:0;g push
+: 1729232934:0;gst
+: 1729232965:0;gcmsg "DXA-12692: finally OAuth and search (encoding issue) works! Need some cleanup"
+: 1729232968:0;g push
+: 1729256806:0;restart-lvs
+: 1729257515:0;.lvs-docker-dev
+: 1729257521:0;docker exec -it lvs-docker-dev-lvs-rest-1 sh -c "echo > /opt/labcorp/user-home/logs/lvs-rest.log"
+: 1729257525:0;restart-lvs
+: 1729258746:0;code .
+: 1729261521:0;gst
+: 1729261524:0;gd
+: 1729261529:0;ga -u
+: 1729261542:0;gcmsg "DXA-12692: some cleanup"
+: 1729261543:0;g push
+: 1729261694:0;code .
+: 1729261705:0;restart-lvs
+: 1729263129:0;docker exec -it lvs-docker-dev-lvs-rest-1 sh -c "echo > /opt/labcorp/user-home/logs/lvs-rest.log"
+: 1729263132:0;restart-lvs
+: 1729265769:0;g pull
+: 1729265772:0;g lga
+: 1729265780:0;g co incremental-loading-merge
+: 1729265782:0;g pull
+: 1729265789:0;g push
+: 1729266167:0;g lga
+: 1729266178:0;g pull
+: 1729266244:0;gst
+: 1729266250:0;ga -u
+: 1729266286:0;gcmsg "DXA-12592: change URL path for Combined Data controller to /data/combined"
+: 1729266287:0;g push
+: 1729266328:0;restart-lvs
+: 1729472690:0;g lga
+: 1729472901:0;g co DXA-12341-load-resources-before-ui
+: 1729472908:0;g pull
+: 1729472912:0;g lga
+: 1729472943:0;g merge incremental-loading-merge
+: 1729472951:0;g lga
+: 1729472979:0;g show --stat HEAD
+: 1729472985:0;g show --stat HEAD~1
+: 1729473372:0;g co incremental-loading-merge
+: 1729473374:0;g pull
+: 1729473380:0;g show HEAD
+: 1729473384:0;g show -p HEAD
+: 1729473392:0;gd HEAD
+: 1729473395:0;g show HEAD
+: 1729473399:0;g lga
+: 1729473429:0;g show b646ec956
+: 1729523549:0;l
+: 1729523553:0;g pull
+: 1729523556:0;g lga
+: 1729523591:0;g merge DXA-12692-tracker-oauth
+: 1729523596:0;g lga
+: 1729523599:0;g push
+: 1729523689:0;l
+: 1729523693:0;g pull
+: 1729523695:0;g lga
+: 1729523710:0;g co DXA-12341-load-resources-before-ui
+: 1729523713:0;g pull
+: 1729523744:0;g push
+: 1729523782:0;g co incremental-loading-merge
+: 1729523923:0;gst
+: 1729523933:0;mvn compile test verify
+: 1729525551:0;ga -u
+: 1729525592:0;gcmsg "DXA-12592: making sure all the incremental loading settings are on Org level"
+: 1729525593:0;g push
+: 1729525716:0;g lga
+: 1729525733:0;g co DXA-12341-load-resources-before-ui
+: 1729525744:0;g merge incremental-loading-merge
+: 1729525748:0;g push
+: 1729525751:0;g lga
+: 1729530972:0;restart-lvs
+: 1729535218:0;gst
+: 1729535220:0;ga -u
+: 1729535233:0;gcmsg "DXA-12341: loading resources before UI"
+: 1729535234:0;g push
+: 1729538567:0;docker exec -it lvs-docker-dev-lvs-rest-1 sh -c "echo > /opt/labcorp/user-home/logs/lvs-rest.log"
+: 1729539841:0;gst
+: 1729539845:0;g lga
+: 1729539855:0;g co incremental-loading-merge
+: 1729539859:0;restart-lvs
+: 1729547420:0;gd
+: 1729547547:0;cd ../Projects/lvs-docker-dev/
+: 1729547554:0;./bin/restart.sh
+: 1729547702:0;restart-lvs
+: 1729548794:0;gst
+: 1729548800:0;gd
+: 1729548804:0;ga -u
+: 1729548810:0;g pull
+: 1729548817:0;gst
+: 1729548874:0;gcmsg "DXA-12341: updated query string in CodeSystemBundleQuery and removed exception throwing from Tracker Service"
+: 1729548875:0;g push
+: 1729548910:0;gst
+: 1729548913:0;gd
+: 1729548918:0;ga -u
+: 1729548933:0;gcmsg "DXA-12341: updated settings for tracker service"
+: 1729548934:0;g push
+: 1729548939:0;g pull
+: 1729548943:0;g lga
+: 1729548963:0;g merge origin/incremental-loading-deploy
+: 1729548969:0;gst
+: 1729548971:0;g push
+: 1729548975:0;g lga
+: 1729562315:0;lvs-services
+: 1729562319:0;idea
+: 1729562328:0;lvs-rest
+: 1729562897:0;restart-lvs
+: 1729563467:0;history
+: 1729563540:0;l ~/.bin
+: 1729563562:0;e ~/Dotfiles/scripts &
+: 1729563871:0;cd ~/Dotfiles
+: 1729563872:0;l
+: 1729563874:0;cat README
+: 1729563891:0;gst
+: 1729563895:0;gd
+: 1729563899:0;gst

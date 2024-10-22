@@ -19,7 +19,7 @@ which nodenv > /dev/null && \
 #export PATH=/opt/idea-IC-233.14015.106/bin:$PATH
 export PATH=/opt/idea-IU-241.14494.240/bin:$PATH
 # let's add an alias for idea and redirect all the noise to dev/null
-alias idea='idea.sh > /dev/null 2>&1 &'
+alias idea='idea NUL &'
 
 
 # Adding 'sdk' command from SDKMAN!

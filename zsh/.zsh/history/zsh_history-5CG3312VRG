@@ -135,7 +135,6 @@
 : 1707369010:0;ping 2.2.2.2
 : 1707369322:0;sudo vim /etc/resolv.conf
 : 1707369377:0;nslookup google.com
-: 1707420543:0;cat /etc/resolv.conf
 : 1707420583:0;routef 
 : 1707420592:0;ip
 : 1707420597:0;ip route google.com
@@ -502,7 +501,6 @@ libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-d
 : 1708117595:0;git push
 : 1708362484:0;g clone ssh://git@git.labcorp.com:7999/dx/tf-aws-base-infrastructure.git
 : 1708364700:0;cate package.json
-: 1708364704:0;cat package.json
 : 1708364759:0;which node 
 : 1708373411:0;which npx
 : 1708373428:0;apt search npm
@@ -943,7 +941,6 @@ q
 : 1710254865:0;cd ../QA01
 : 1710255254:0;gcmsg "DXA-10484: changed the mode of the redis connection to the one working with shard type"
 : 1710255521:0;ag dx-lvs-rest-host
-: 1710257462:0;gd HEAD
 : 1710258603:0;l terraform/extdev/lvs-poc-ui-config.tf
 : 1710265272:0;ag SmartOnFhirController
 : 1710265284:0;code lvs-rest/src/main/java/com/lca/lvs/rest/controllers/SmartOnFhirController.java
@@ -1573,7 +1570,6 @@ sudo apt remove netstandard*
 : 1713287772:0;gcmsg "DXA-11126: moved testcontainers into lvs-test-utils"
 : 1713289461:0;g co fixing-failing-tests-relying-on-redis
 : 1713289659:0;mvn clean compile install -pl lvs-smart-on-fhir
-: 1713291887:0;g lgs
 : 1713292849:0;g co -b DXA-11153-fix-dxa-auth-client-settings
 : 1713292879:0;gcmsg "DXA-11153: correct settings for DXA auth client in MASTER01 AWS account"
 : 1713292890:0;g push -u origin DXA-11153-fix-dxa-auth-client-settings
@@ -1619,7 +1615,6 @@ sudo apt remove netstandard*
 : 1713451377:0;apt search pngquant
 : 1713451503:0;sudo apt install pngquant
 : 1713451563:0;Documents
-: 1713451577:0;cd Log
 : 1713451625:0;cp Pasted\ image\ 20240417121816.png /mnt/c/Users/sharape/Documents/.
 : 1713451629:0;../..
 : 1713451642:0;pngquant Pasted\ image\ 20240417121816.png
@@ -3069,7 +3064,6 @@ git push -u origin main
 : 1721751734:0;pngquant Pasted\ image\ 20240318111936-fs8.png
 : 1721751745:0;pngquant Pasted\ image\ 20240318111936-fs8-fs8.png
 : 1721751799:0;cd /mnt/c/Users/sharape/Documents/LabCorp/Log
-: 1721751803:0;cd files
 : 1721751846:0;pngquant --version
 : 1721751885:0;pngquant --speed 1 'Pasted image 20240723100227.png'
 : 1721752009:0;f='Pasted image 20240318111936-fs8-fs8-fs8.png'; mv -- "$f" "${f#-fs8}"
@@ -3193,7 +3187,6 @@ git push -u origin main
 : 1721926324:0;curl -v  http://lvs-docker-dev/lvs-auth?nonce=eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJodHRwOi8vbHZzLWRvY2tlci1kZXYvbHZzLXJlc3QiLCJqdGkiOiJlNjMxZWQ3Mi01MjllLTQyNjEtYmNjMy01M2NiZDFlNTk1ZjQiLCJhdWQiOiJ3ZWIiLCJyb2xlcyI6W10sImlhdCI6MTcyMTkyNjA1MiwiZXhwIjoxNzIxOTI2MDgyfQ.IquBbER4bOw-L6uFb-_AFkOTy1940SYe9dWIvK60oOqVWGanGOmx9G456hUYMyBdhGCFKHWwi3Y8TJrDVnkZ_A
 : 1721929993:0;mvn compile install -Dmaven.test.skip=true
 : 1721930033:0;cd ~/.bin/
-: 1721930479:0;cd scripts/.bin
 : 1721930487:0;chmod a+x restart-lvs
 : 1721934890:0;gcmsg "DXA-11932: added serialization utility for multiple objects and unit test for it"
 : 1721936084:0;ga **/SerializationUtils*
@@ -3817,10 +3810,8 @@ EOF
 : 1723664394:0;hledger bal --output-format=csv --daily --value=then --cost --depth=0 ^Expenses
 : 1723664435:0;hledger bal --output-format=csv --daily --value=then --cost --depth=0 ^Expenses > 1.csv
 : 1723664610:0;hledger bal --output-format=csv --daily -b 2024 --value=then --cost --depth=0 ^Expenses > 1.csv
-: 1723666032:0;cd ~/.lvs-docker-dev
 : 1723666040:0;ag lvsRest
 : 1723666168:0;ag  ENDPOINTS_SECRETSMANAGERSERVICE_ARN
-: 1723668128:0;mvn compile test verify
 : 1723729533:0;cat linux-install.sh
 : 1723730587:0;mvn -pl lvs-infrastructure compile test verify
 : 1723730687:0;gcmsg "DXA-11051: using both IT and unit test for the IfsDROService"
@@ -3851,14 +3842,12 @@ EOF
 : 1724338660:0;git branch -r | grep -v ' -> '
 : 1724338709:0;git symbolic-ref HEAD 2>&-
 : 1724338752:0;currentbranchref="$(git symbolic-ref HEAD 2>&-)"
-: 1724338788:0;cd ~/Dotfiles
 : 1724338796:0;l scripts
 : 1724338837:0;rm History.md
 : 1724338845:0;ga scripts
 : 1724338865:0;gcmsg "added a script for quick restarting of LVS Docker Dev stack"
 : 1724338899:0;g add --interactive
 : 1724338966:0;gcmsg "updated HISTSIZE"
-: 1724342584:0;stow scripts
 : 1724342597:0;l scripts/.bin
 : 1724342617:0;chmod a+x scripts/.bin/digestif
 : 1724342635:0;rm ~/.bin/digestif
@@ -3876,7 +3865,6 @@ EOF
 : 1724437441:0;gcmsg "DXA-11057: updated the test for CombinedDataService. Still issues with multiple threads and SecurityContextUtils. Now it's not in the child thread but more in the redis thread: fqes-rx-redis-1: Cannot invoke \"com.lca.lvs.fhir.JwtContext.getCustomerId()\" because \"jwtContext\" is null"
 : 1724447746:0;ag supportsSort
 : 1724685374:0;cd StudioProjects
-: 1724685377:0;cd ..
 : 1724685379:0;proj.db
 : 1724685389:0;ag fhirQuerySettings
 : 1724685414:0;te lvs-services/lvs-fhir/src/test/resources/com/lca/lvs/fhir/settings/app-setting-synthetic-dx-report.json
@@ -3890,7 +3878,6 @@ EOF
 : 1724687184:0;ng
 : 1724687457:0;npm install -g @angular/cli@11.2.2 npm@latest
 : 1724687546:0;rehahs
-: 1724687548:0;rehash
 : 1724687556:0;npm install
 : 1724687576:0;nodenv list
 : 1724687580:0;nodenv versions
@@ -4068,7 +4055,6 @@ EOF
 : 1725972757:0;ag --help
 : 1725972777:0;ag -B 5 Combined
 : 1725972969:0;te src/main/java/com/lca/lvs/rest/controllers/CombinedDataController.java
-: 1725973224:0;.lvs-docker-dev
 : 1725991807:0;q
 : 1725994136:0;curl -vvv -X GET "http://lvs-docker-dev/lvs-poc-ui/lvs-auth?nonce=eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJodHRwOi8vbHZzLWRvY2tlci1kZXYvbHZzLXJlc3QiLCJqdGkiOiJlOTg5MjZkNy02YzFiLTQ1NjYtOThkZi0yYjdlMGFlYTlkYTIiLCJhdWQiOiJ3ZWIiLCJyb2xlcyI6W10sImlhdCI6MTcyNTk5NDExMywiZXhwIjoxNzI1OTk0MTQzfQ.sp-OjNPO9BykJ7wzf8YmwKwLrRSa_1ar9Fend68gFWivithCyLhr7zkOCdJiEFSrRCWRpayVCTH0dnQplWXzgQ"
 : 1725994198:0;curl -L -X GET "http://lvs-docker-dev/lvs-rest/dev-tools/launch-direct?iss=https%3A%2F%2Feeh-smart-launcher-stu3-qa.dev01.dxa.labcorp.com%2Fv%2Fr3%2Ffhir&orgId=dkr-stu3-qa&appId=lvs-poc-ui&practitionerId=pe-134977&patientId=d793-4r00d2-20409491-3947b80-938f309&updateLastLogin=true"
@@ -4122,10 +4108,8 @@ EOF
 : 1726256822:0;rd .local/share/JetBrains/IntelliJIdea2024.1/aws-toolkit-jetbrains-standalone
 : 1726496037:0;gcmsg "DXA-12358: using common approach to DRO in both Ifs and Combined data services"
 : 1726497275:0;gcmsg "DXA-12358: test to pass"
-: 1726513448:0;g show -p HEAD
 : 1726513459:0;gd HEAD~1
 : 1726518099:0;~gst
-: 1726586076:0;gd incremental-loading-merge
 : 1726598308:0;l snap
 : 1726598312:0;l snap/firefox
 : 1726598321:0;l Desktop
@@ -4178,10 +4162,8 @@ EOF
 : 1727097616:0;/opt/idea-IU-241.14494.240/bin/idea
 : 1727097886:0;te ~/Dotfiles
 : 1727097976:0;which idea
-: 1727098061:0;g merge incremental-loading
 : 1727107695:0;g merge DXA-11051-ifsdroservice-controller
 : 1727116454:0;gcmsg "DXA-12102: move ResultType and Mode enums up a level"
-: 1727116472:0;g merge incremental-loading-merge
 : 1727119389:0;docker pull mr.microsoft.com/mssql/server:2022-latest
 : 1727119402:0;docker pull mcr.microsoft.com/mssql/server:2022-latest
 : 1727119417:0;docker images
@@ -4199,7 +4181,6 @@ EOF
 : 1727183554:0;g lg
 : 1727184055:0;g co -b DXA-12339-call-tracker-simple
 : 1727202099:0;mvn clean compile package install 
-: 1727209860:0;g stash
 : 1727291004:0;gcmsg "DXA-12339: updating services with configurable properties"
 : 1727297641:0;gcmsg "DXA-12339: major refactor of IncrementalXXXService and clean up useless methods and overrides"
 : 1727466037:0;gcmsg "DXA-12457: massive refactoring of incremental fhir service"
@@ -4256,7 +4237,6 @@ EOF
 : 1727470622:0;g cherry-pick e47935075a29c4ba66241a8b099bd4376d32bdaa
 : 1727470635:0;g cherry-pick 1747b46540b56bafdb99e245e47031d5c44c1a64
 : 1727470647:0;g cherry-pick 683550c8b1f4dcf5a658d5836b2b4d089b4bd58c
-: 1727470660:0;gd DXA-12339-call-tracker
 : 1727470671:0;gd --stat DXA-12339-call-tracker
 : 1727470746:0;g br -D arjun-query-work
 : 1727470821:0;gd feature/dxa-11798..release/7.13.0 > arjun-query-work.patch
@@ -4319,7 +4299,6 @@ EOF
 : 1728308777:0;idea 
 : 1728309721:0;ll
 : 1728309768:0;mvn compile install
-: 1728325098:0;gitk --all
 : 1728325659:0;mvn clean compile test verify
 : 1728326736:0;mvn test -Dtest=IfsDROServiceTest
 : 1728326790:0;mvn test -DfailIfNoTests=false -Dtest=IfsDROServiceTest
@@ -4328,13 +4307,10 @@ EOF
 : 1728329163:0;mvn install 
 : 1728335533:0;cat ~/.m2/settings.xml
 : 1728336258:0;gcmsg "DXA-12475: test that changes context"
-: 1728336266:0;g co incremental-loading-merge
 : 1728336276:0;g co -b incremental-loading-merge-demo
 : 1728336314:0;g merge DXA-12339-call-tracker
-: 1728336465:0;g merge --continue
 : 1728336562:0;g merge DXA-12475-incremental-settings 
 : 1728336582:0;g co DXA-12475-incremental-settings
-: 1728336588:0;g merge incremental-loading-merge-demo
 : 1728353711:0;ag settings
 : 1728353947:0;~/.lvs-docker-dev
 : 1728355953:0;mvn clean compile package test verify
@@ -4362,19 +4338,15 @@ EOF
 : 1728366517:0;gmcsg "DXA-12475: problem with Practitioner"
 : 1728366526:0;gcmsg "DXA-12475: problem with Practitioner"
 : 1728366531:0;mvn clean compile 
-: 1728390962:0;docker exec -it lvs-docker-dev-lvs-rest-1 sh -c "echo > /opt/labcorp/user-home/logs/lvs-rest.log"
 : 1728391336:0;cd fdl-tracker
 : 1728391375:0;docker-compose up
-: 1728391430:0;fdl-tracker
 : 1728391460:0;cat docker-compose.yml
 : 1728396976:0;te ./bin/restart.sh
 : 1728396986:0;source
-: 1728396993:0;restart-lvs
 : 1728416079:0;cd Personal
 : 1728416117:0;cd Clojure
 : 1728416125:0;l ClojureDart
 : 1728416149:0;cat ClojureDart/clj/src/cljd/flutter/alpha2.cljd
-: 1728416300:0;..
 : 1728416304:0;e . &
 : 1728416334:0;cd Clojure/Babashka
 : 1728416336:0;bb
@@ -4392,18 +4364,14 @@ EOF
 : 1728495698:0;gcmsg "DXA-12457: fixed the test that fails after we decided to go for a nested 'enabled' flag for incremental loading"
 : 1728505399:0;g br -a
 : 1728505407:0;g br -a | grep load
-: 1728505429:0;g co DXA-12341-load-resources-before-ui
 : 1728655926:0;cat bb.edn
 : 1728659651:0;projects
 : 1728659655:0;~/Projects
-: 1728659799:0;lvs-poc-ui
 : 1728659809:0;grhh
 : 1728659832:0;cat README.md
 : 1728659843:0;ng build
 : 1728659850:0;npm build
 : 1728659885:0;code . 
-: 1728662615:0;l ~/.bin
-: 1728662640:0;history
 : 1728662660:0;history | grep assume
 : 1728662760:0;ls /tmp/.X11-unix
 : 1728662825:0;cat /mnt/wslg/weston.log | grep isConnected_V
@@ -4417,227 +4385,317 @@ EOF
 : 1728668026:0;ag \/comb
 : 1728668030:0;ag comb
 : 1728668083:0;g log -p | grep "/comb"
-: 1728669110:0;g show HEAD
 : 1728671450:0;ag OasisHost
 : 1728671458:0;ag oasis
 : 1728672500:0;pgrep -f .idea | xargs kill
-: 1728672510:0;pgrep -f idea | xargs kill
 : 1728673243:0;history | grep OUT
 : 1728673253:0;OUT=$(aws --profile=master01 sts assume-role --role-arn arn:aws:iam::749776248005:role/DeveloperUsers --role-session-name aaa); export AWS_ACCESS_KEY_ID=$(echo $OUT | jq -r '.Credentials''.AccessKeyId'); export AWS_SECRET_ACCESS_KEY=$(echo $OUT | jq -r '.Credentials''.SecretAccessKey');
 : 1728673259:0;env
 : 1728673299:0;cat ~/.aws/credentials
 : 1728674216:0;ag LVS_POC_UI_BUILD_MODE
-: 1728674232:0;code .
 : 1728674482:0;npm run build
 : 1728674653:0;PWD
 : 1728674662:0;pwd
 : 1728674695:0;./bin/up.sh &
-: 1728933284:0;lvs-services
-: 1728933287:0;lvs-rest
-: 1728934109:0;idea
-: 1729026341:0;gd
 : 1729026367:0;gcmsg "DXA-12341: loading resources"
-: 1729026394:0;g co incremental-loading
 : 1729026455:0;g co -b DXA-12639-combined-data-controller
-: 1729026472:0;g pull
-: 1729026494:0;g co incremental-loading-merge-demo
 : 1729026506:0;mvn package install
-: 1729026747:0;l
 : 1729026755:0;mvn package 
-: 1729027449:0;lvs-docker-dev
-: 1729088338:0;g lga
-: 1729088347:0;ga -u
-: 1729088348:0;gst
 : 1729088360:0;gcmsg "DXA-12639: combined data controller"
-: 1729088362:0;g push
 : 1729088388:0;g push -u origin DXA-12639-combined-data-controller
-: 1729088496:0;./bin/restart.sh
-: 1729094511:0;idea
-: 1729102783:0;l
-: 1729102980:0;g lga
-: 1729102986:0;g pull
-: 1729102995:0;g lga
-: 1729103028:0;g co incremental-loading
-: 1729103032:0;g pull
-: 1729103875:0;gst
-: 1729103878:0;g pull
-: 1729103882:0;g lga
 : 1729105174:0;g co -b incremental-loading-deploy
 : 1729105184:0;g push -u incremental-loading-deploy
 : 1729105190:0;g push -u origin incremental-loading-deploy
-: 1729105206:0;lvs-poc-ui
-: 1729105210:0;l
 : 1729105213:0;cd ..
-: 1729105215:0;..
 : 1729105218:0;lvs-poc-ui
-: 1729105219:0;l
 : 1729105237:0;cat package.json
 : 1729105424:0;cat pom.xml
 : 1729106099:0;ag powermock
-: 1729106282:0;g lga
-: 1729106295:0;gd incremental-loading-merge
 : 1729106306:0;gd incremental-loading-merge-demo
-: 1729106317:0;g co incremental-loading-merge
-: 1729106320:0;g pull
-: 1729106323:0;g lga
 : 1729106334:0;g co incremental-loading-merge-demo
-: 1729106335:0;gd
-: 1729108281:0;g pull
-: 1729108284:0;g lga
 : 1729108293:0;fdl-tracker
-: 1729108294:0;l
-: 1729108296:0;g pull
-: 1729108299:0;gd
 : 1729108305:0;g stash
-: 1729108307:0;g pull
-: 1729108313:0;g lga
-: 1729182268:0;g pull
-: 1729196201:0;gst
-: 1729196204:0;g pull
-: 1729196218:0;g lga
 : 1729196456:0;g co incremental-loading
-: 1729196459:0;g pull
 : 1729196526:0;g merge DXA-12639-combined-data-controller
-: 1729196533:0;g push
 : 1729196538:0;g co incremental-loading-deploy
 : 1729196542:0;g merge incremental-loading
-: 1729196556:0;g push
 : 1729196670:0;gd gst
 : 1729196678:0;gd incremental-loading-merge
 : 1729196682:0;gd incremental-loading-merge --stat
 : 1729196716:0;gd DXA-12339-call-tracker
-: 1729197307:0;g lga
 : 1729197314:0;gitk --all
-: 1729197370:0;g co incremental-loading-merge
-: 1729197372:0;g pull
 : 1729197381:0;g merge incremental-loading-merge-demo
-: 1729197430:0;gst
 : 1729197716:0;g merge --continue
 : 1729197753:0;g lgs
-: 1729197755:0;g lga
 : 1729197823:0;g co -b DXA-12692-tracker-oauth
-: 1729224709:0;gst
-: 1729224725:0;ga -u
-: 1729224726:0;gst
-: 1729224736:0;mvn compile test verify
-: 1729227003:0;gst
-: 1729227006:0;ga -u
 : 1729227037:0;gcmsg "DXA-12692: updated tracker service and fixed failing tests"
-: 1729227040:0;g push
 : 1729227058:0;g push -u origin DXA-12692-tracker-oauth
-: 1729232877:0;gst
-: 1729232880:0;ga -u
-: 1729232928:0;g push
-: 1729232934:0;gst
 : 1729232965:0;gcmsg "DXA-12692: finally OAuth and search (encoding issue) works! Need some cleanup"
-: 1729232968:0;g push
-: 1729256806:0;restart-lvs
 : 1729257515:0;.lvs-docker-dev
-: 1729257521:0;docker exec -it lvs-docker-dev-lvs-rest-1 sh -c "echo > /opt/labcorp/user-home/logs/lvs-rest.log"
-: 1729257525:0;restart-lvs
-: 1729258746:0;code .
-: 1729261521:0;gst
-: 1729261524:0;gd
-: 1729261529:0;ga -u
 : 1729261542:0;gcmsg "DXA-12692: some cleanup"
-: 1729261543:0;g push
-: 1729261694:0;code .
-: 1729261705:0;restart-lvs
-: 1729263129:0;docker exec -it lvs-docker-dev-lvs-rest-1 sh -c "echo > /opt/labcorp/user-home/logs/lvs-rest.log"
-: 1729263132:0;restart-lvs
-: 1729265769:0;g pull
-: 1729265772:0;g lga
-: 1729265780:0;g co incremental-loading-merge
-: 1729265782:0;g pull
-: 1729265789:0;g push
-: 1729266167:0;g lga
-: 1729266178:0;g pull
-: 1729266244:0;gst
-: 1729266250:0;ga -u
 : 1729266286:0;gcmsg "DXA-12592: change URL path for Combined Data controller to /data/combined"
-: 1729266287:0;g push
-: 1729266328:0;restart-lvs
-: 1729472690:0;g lga
-: 1729472901:0;g co DXA-12341-load-resources-before-ui
-: 1729472908:0;g pull
-: 1729472912:0;g lga
-: 1729472943:0;g merge incremental-loading-merge
-: 1729472951:0;g lga
 : 1729472979:0;g show --stat HEAD
 : 1729472985:0;g show --stat HEAD~1
-: 1729473372:0;g co incremental-loading-merge
-: 1729473374:0;g pull
-: 1729473380:0;g show HEAD
 : 1729473384:0;g show -p HEAD
 : 1729473392:0;gd HEAD
 : 1729473395:0;g show HEAD
-: 1729473399:0;g lga
 : 1729473429:0;g show b646ec956
-: 1729523549:0;l
-: 1729523553:0;g pull
-: 1729523556:0;g lga
 : 1729523591:0;g merge DXA-12692-tracker-oauth
-: 1729523596:0;g lga
-: 1729523599:0;g push
-: 1729523689:0;l
-: 1729523693:0;g pull
-: 1729523695:0;g lga
-: 1729523710:0;g co DXA-12341-load-resources-before-ui
-: 1729523713:0;g pull
-: 1729523744:0;g push
-: 1729523782:0;g co incremental-loading-merge
-: 1729523923:0;gst
-: 1729523933:0;mvn compile test verify
-: 1729525551:0;ga -u
 : 1729525592:0;gcmsg "DXA-12592: making sure all the incremental loading settings are on Org level"
-: 1729525593:0;g push
-: 1729525716:0;g lga
 : 1729525733:0;g co DXA-12341-load-resources-before-ui
 : 1729525744:0;g merge incremental-loading-merge
-: 1729525748:0;g push
-: 1729525751:0;g lga
-: 1729530972:0;restart-lvs
-: 1729535218:0;gst
-: 1729535220:0;ga -u
 : 1729535233:0;gcmsg "DXA-12341: loading resources before UI"
-: 1729535234:0;g push
-: 1729538567:0;docker exec -it lvs-docker-dev-lvs-rest-1 sh -c "echo > /opt/labcorp/user-home/logs/lvs-rest.log"
-: 1729539841:0;gst
-: 1729539845:0;g lga
 : 1729539855:0;g co incremental-loading-merge
-: 1729539859:0;restart-lvs
-: 1729547420:0;gd
 : 1729547547:0;cd ../Projects/lvs-docker-dev/
-: 1729547554:0;./bin/restart.sh
-: 1729547702:0;restart-lvs
-: 1729548794:0;gst
-: 1729548800:0;gd
-: 1729548804:0;ga -u
-: 1729548810:0;g pull
-: 1729548817:0;gst
 : 1729548874:0;gcmsg "DXA-12341: updated query string in CodeSystemBundleQuery and removed exception throwing from Tracker Service"
-: 1729548875:0;g push
-: 1729548910:0;gst
-: 1729548913:0;gd
-: 1729548918:0;ga -u
 : 1729548933:0;gcmsg "DXA-12341: updated settings for tracker service"
-: 1729548934:0;g push
-: 1729548939:0;g pull
-: 1729548943:0;g lga
 : 1729548963:0;g merge origin/incremental-loading-deploy
-: 1729548969:0;gst
-: 1729548971:0;g push
-: 1729548975:0;g lga
 : 1729562315:0;lvs-services
-: 1729562319:0;idea
-: 1729562328:0;lvs-rest
-: 1729562897:0;restart-lvs
 : 1729563467:0;history
 : 1729563540:0;l ~/.bin
 : 1729563562:0;e ~/Dotfiles/scripts &
 : 1729563871:0;cd ~/Dotfiles
-: 1729563872:0;l
 : 1729563874:0;cat README
-: 1729563891:0;gst
-: 1729563895:0;gd
-: 1729563899:0;gst
+: 1729565386:0;rehash
+: 1729565398:0;cd scripts/.bin
+: 1729565413:0;chmod a+x refresh-aws
+: 1729565423:0;stow scripts
+: 1729565457:0;cd ~/.lvs-docker-dev
+: 1729566460:0;cd /mnt/c/Users/sharape/Documents/LabCorp
+: 1729566465:0;cd Log
+: 1729566468:0;cd files
+: 1729566548:0;pngquant --speed 1 'Pasted image 20241021132145-fs8.png'
+: 1729566573:0;rm 'Pasted image 20241021132145-fs8.png'
+: 1729566582:0;rm 'Pasted image 20241021132145-fs8-fs8.png'
+: 1729566747:0;pngquant --speed 1 'Pasted image 20241021132145.png'
+: 1729566757:0;open Pasted\ image\ 20241021132145-fs8.png
+: 1729566975:0;pngquant --speed 1 *.png --ext .png --force
+: 1729567026:0;l
+: 1729569854:0;lvs-docker-dev
+: 1729569857:0;./bin/restart.sh
+: 1729578194:0;lvs-rest
+: 1729578208:0;gd
+: 1729578314:0;gcmsg "DXA-12592: update tracker service to work with a particular webclient, specify proto and port"
+: 1729578321:0;gst
+: 1729578323:0;ga -u
+: 1729578366:0;gcmsg "DXA-12592: update webclient configuration to work with tracker service and disregard SSL issues. Not For PROD
+: 1729578370:0;gcmsg "DXA-12592: update webclient configuration to work with tracker service and disregard SSL issues. Not For PROD"
+: 1729578373:0;g push
+: 1729604006:0;..
+: 1729604009:0;ag elvisRestAP
+: 1729605359:0;code ~/Dotfiles/scripts/.bin
+: 1729605387:0;refresh-aws
+: 1729605488:0;ag CLOUD_AWS_CREDENTIALS_
+: 1729605766:0;docker exec -it lvs-docker-dev-lvs-rest-1 sh -c "echo > /opt/labcorp/user-home/logs/lvs-rest.log"
+: 1729608922:0;ag mdm-patient-id
+: 1729691950:0;cat /etc/resolv.conf
+: 1729692051:0;sudo dhcpclient -r
+: 1729692064:0;sudo dhclient -r
+: 1729692069:0;sudo dhclient
+: 1729692081:0;ping nextcloud.home.
+: 1729692083:0;ping nextcloud.home
+: 1729715576:0;g lga
+: 1729715608:0;restart-lvs
+: 1729715620:0;g pull
+: 1729715753:0;g co -b DXA-12340-validate-tracker-changes
+: 1729716973:0;mvn compile test verify
+: 1729780051:0;idea
+: 1729782362:0;pgrep -f idea | xargs kill
+: 1729782381:0;code .
+: 1729782613:0;lvs-services
+: 1729782616:0;idea
+: 1729784992:0;mvn compile test verify
+: 1729795292:0;gst
+: 1729795320:0;ga -u
+: 1729795481:0;gcmsg "DXA-12340: modifications for Tracker service and made sure all the tests pass"
+: 1729795484:0;g push
+: 1729795497:0;g push -u origin DXA-12340-validate-tracker-changes
+: 1729796131:0;lvs-rest
+: 1729796138:0;lvs-docker-dev
+: 1729796142:0;restart-lvs
+: 1729797182:0;~/.lvs-docker-dev
+: 1729797183:0;l
+: 1729797187:0;code .
+: 1729797202:0;docker exec -it lvs-docker-dev-lvs-rest-1 sh -c "echo > /opt/labcorp/user-home/logs/lvs-rest.log"
+: 1729797412:0;refresh-aws
+: 1729797522:0;restart-lvs
+: 1729797957:0;gst
+: 1729797959:0;ga -u
+: 1729797974:0;gcmsg "DXA-12340: updated webclent configuration for tracker"
+: 1729797979:0;g pull
+: 1729797987:0;g lga
+: 1729798004:0;g merge (origin/incremental-loading-deploy
+: 1729798007:0;g merge origin/incremental-loading-deploy
+: 1729798024:0;g lga
+: 1729798029:0;g push
+: 1729798145:0;docker exec -it lvs-docker-dev-lvs-rest-1 sh -c "echo > /opt/labcorp/user-home/logs/lvs-rest.log"
+: 1729798367:0;refresh-aws
+: 1729798376:0;restart-lvs
+: 1729799097:0;gst
+: 1729799104:0;gd
+: 1729799114:0;g stash
+: 1729799117:0;g pull
+: 1729799121:0;g stash pop
+: 1729799139:0;ga -u "DXA-12340: updated TrackerService logging"
+: 1729799144:0;ga -u
+: 1729799150:0;gcmsg "DXA-12340: updated TrackerService logging"
+: 1729799152:0;g push
+: 1729862462:0;restart-lvs
+: 1729872498:0;idea
+: 1729872532:0;gst
+: 1729872534:0;g stash
+: 1729872541:0;g co DXA-12341-load-resources-before-ui
+: 1729873707:0;gst
+: 1729873709:0;gd
+: 1729873718:0;ga -u
+: 1729874433:0;gst
+: 1729874435:0;gd
+: 1729874457:0;gcmsg "DXA-12341: loading resources before UI using Hooks mechanism"
+: 1729874649:0;gst
+: 1729874659:0;g push
+: 1729874699:0;g co -b DXA-12637-sync-async-modes-resource-loading
+: 1729874703:0;ga -u
+: 1729874722:0;gcmsg "DXA-12637: Using 'asyncMode' parameter for Hook loading resources"
+: 1729874737:0;g push -u origin DXA-12637-sync-async-modes-resource-loading
+: 1730209938:0;idea
+: 1730223297:0;l
+: 1730227793:0;cat ~/.bin/refresh-aws
+: 1730227885:0;l ~/.aws/config
+: 1730227888:0;cat ~/.aws/config
+: 1730227893:0;cat ~/.aws/credentials
+: 1730228082:0;OUT=$(aws --profile=$PROFILE sts assume-role --role-arn $ROLE --role-session-name aaa)\
+echo $OUT
+: 1730228099:0;PROFILE=master01\
+ROLE=arn:aws:iam::749776248005:role/DeveloperUsers\
+ 
+: 1730228106:0;OUT=$(aws --profile=$PROFILE sts assume-role --role-arn $ROLE --role-session-name aaa)\
+echo $OUT
+: 1730230723:0;gst
+: 1730230727:0;g pull
+: 1730230734:0;g lga
+: 1730230740:0;g co incremental-loading-merge
+: 1730230742:0;g pull
+: 1730230753:0;restart-lvs
+: 1730230842:0;g lga
+: 1730304008:0;l
+: 1730304015:0;gst
+: 1730304017:0;gd
+: 1730304201:0;l
+: 1730304208:0;g pull
+: 1730304212:0;g lga
+: 1730304297:0;g co DXA-12340-validate-tracker-changes
+: 1730304304:0;g stash pop
+: 1730304306:0;gd
+: 1730304337:0;ga -u
+: 1730304795:0;gcmsg "DXA-12340: more logging for the tracker service"
+: 1730304797:0;g push
+: 1730304805:0;g co incremental-loading-merge
+: 1730304807:0;g pull
+: 1730304810:0;g lga
+: 1730304869:0;g merge DXA-12341-load-resources-before-ui
+: 1730304877:0;g lga
+: 1730304904:0;g merge DXA-12637-sync-async-modes-resource-loading
+: 1730304908:0;g lga
+: 1730304931:0;g merge  DXA-12340-validate-tracker-changes
+: 1730304936:0;g lga
+: 1730304938:0;g push
+: 1730321674:0;idea
+: 1730323139:0;gst
+: 1730323143:0;g pull
+: 1730323146:0;g lga
+: 1730323162:0;echo "build" >> README.md
+: 1730323166:0;ga -u
+: 1730323193:0;gcmsg "DXA-12340: kick off the build"
+: 1730323195:0;g push
+: 1730323209:0;restart-lvs
+: 1730323305:0;g pull
+: 1730323333:0;g co -b DXA-12458-lastUpdate-settings
+: 1730385475:0;gst
+: 1730406437:0;idea
+: 1730407376:0;lvs-services
+: 1730410152:0;l
+: 1730410156:0;idea
+: 1730486574:0;lvs-rest
+: 1730486576:0;l
+: 1730486578:0;g pull
+: 1730489425:0;lvs-docker-dev
+: 1730489426:0;l
+: 1730489430:0;restart-lvs
+: 1730489651:0;hapi-fhir
+: 1730489653:0;code .
+: 1730494508:0;l
+: 1730495710:0;ag addParam
+: 1730495720:0;ag addParam(
+: 1730495722:0;ag addParam\(
+: 1730495734:0;ag "addParam\\("
+: 1730728689:0;gst
+: 1730728691:0;gd
+: 1730728698:0;idea
+: 1730729121:0;ag CompositeCriterion
+: 1730729634:0;gst
+: 1730729640:0;mvn clean compile package test verify
+: 1730730561:0;gst
+: 1730730563:0;ga -u
+: 1730730610:0;gcmsg "DXA-12458: taking a lastUpdate field from settings"
+: 1730730613:0;g push
+: 1730730620:0;g push -u origin DXA-12458-lastUpdate-settings
+: 1730736866:0;g pull
+: 1730737906:0;g lga
+: 1730739198:0;restart-lvs
+: 1730744168:0;~/.lvs-docker-dev
+: 1730744172:0;docker exec -it lvs-docker-dev-lvs-rest-1 sh -c "echo > /opt/labcorp/user-home/logs/lvs-rest.log"
+: 1730744179:0;code .
+: 1730755196:0;gst
+: 1730755198:0;ga -u
+: 1730755203:0;mvn clean compile package test verify
+: 1730755449:0;ga -u
+: 1730755487:0;gcmsg "DXA-12458: updates according to review with Arjun V. Now we have 'last updated' field configuration in dateFilter"
+: 1730755492:0;g push
+: 1730756215:0;l
+: 1730756723:0;g pull
+: 1730756732:0;g co incremental-loading-merge
+: 1730756735:0;g merge DXA-12637-sync-async-modes-resource-loading
+: 1730756737:0;g push
+: 1730756757:0;g merge DXA-12341-load-resources-before-ui
+: 1730756759:0;g push
+: 1730756857:0;g merge DXA-12458-lastUpdate-settings
+: 1730756860:0;g push
+: 1730757272:0;g lga
+: 1730757283:0;g show HEAD
+: 1730757290:0;te README.md
+: 1730757318:0;GA -U
+: 1730757320:0;ga -u
+: 1730757332:0;gcmsg "DXA-12458: kickoff the build"
+: 1730757335:0;g push
+: 1730834348:0;ping nextcloud.feastforeyes.com
+: 1730835960:0;nslookup nextcloud.home
+: 1730835982:0;nslookup 192.168.1.158
+: 1730835988:0;ping 192.168.1.158
+: 1730841100:0;g pull
+: 1730841104:0;g lga
+: 1730841126:0;g push
+: 1730841137:0;g pull
+: 1730841141:0;echo "build" >> README.md
+: 1730841144:0;ga -u
+: 1730841148:0;gcmsg "DXA-12458: kickoff the build"
+: 1730841150:0;g push
+: 1730905812:0;g pull
+: 1730905822:0;g lga
+: 1730906560:0;restart-lvs
+: 1730911400:0;idea
+: 1730911438:0;gst
+: 1730911569:0;docker exec -it lvs-docker-dev-lvs-rest-1 sh -c "echo > /opt/labcorp/user-home/logs/lvs-rest.log"
+: 1730911594:0;..
+: 1730911771:0;e Dotfiles &
+: 1730911930:0;alias clear-logs='docker exec -it lvs-docker-dev-lvs-rest-1 sh -c "echo > /opt/labcorp/user-home/logs/lvs-rest.log"'
+: 1730911935:0;clear-logs
+: 1730911983:0;cd Dotfiles
+: 1730911984:0;gst
+: 1730911990:0;gd
+: 1730912003:0;refresh-aws
+: 1730912021:0;gd
+: 1730912043:0;gst
+: 1730912059:0;ga scripts
+: 1730912066:0;ga **/*.zsh
+: 1730912067:0;gst
+: 1730912095:0;gcmsg "Added alias to clear logs, printing refreshing tokens from AWS"

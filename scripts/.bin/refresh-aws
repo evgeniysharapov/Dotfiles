@@ -6,6 +6,7 @@ PROFILE=master01
 ROLE=arn:aws:iam::749776248005:role/DeveloperUsers
 
 OUT=$(aws --profile=$PROFILE sts assume-role --role-arn $ROLE --role-session-name aaa)
+echo $OUT
 export AWS_ACCESS_KEY_ID=$(echo $OUT | jq -r '.Credentials''.AccessKeyId')
 export AWS_SECRET_ACCESS_KEY=$(echo $OUT | jq -r '.Credentials''.SecretAccessKey')
 print "AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID"

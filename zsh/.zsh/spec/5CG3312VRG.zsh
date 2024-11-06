@@ -20,7 +20,8 @@ which nodenv > /dev/null && \
 export PATH=/opt/idea-IU-241.14494.240/bin:$PATH
 # let's add an alias for idea and redirect all the noise to dev/null
 alias idea='idea NUL &'
-
+# alias to clear logs in `lvs-rest.log`
+alias clear-logs-lvs-rest='docker exec -it lvs-docker-dev-lvs-rest-1 sh -c "echo > /opt/labcorp/user-home/logs/lvs-rest.log"'
 
 # Adding 'sdk' command from SDKMAN!
 export SDKMAN_DIR="$HOME/.sdkman"

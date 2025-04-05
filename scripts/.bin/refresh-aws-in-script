@@ -1,0 +1,29 @@
+#!/bin/env zsh
+
+PROFILE=master01
+ROLE=arn:aws:iam::749776248005:role/DeveloperUsers
+# TODO: make it a param
+SCRIPT_FILE="$HOME/.lvs-docker-dev/env-files/taskdef/lvs-rest-qa-demo-tracker.sh"
+
+echo "Refreshing AWS Access Tokens in $SCRIPT_FILE..."
+
+
+OUT=$(aws --profile=$PROFILE sts assume-role --role-arn $ROLE --role-session-name aaa)
+#echo $OUT
+export AWS_ACCESS_KEY_ID=$(echo $OUT | jq -r '.Credentials''.AccessKeyId')
+export AWS_SECRET_ACCESS_KEY=$(echo $OUT | jq -r '.Credentials''.SecretAccessKey')
+export AWS_SESSION_TOKEN=$(echo $OUT | jq -r '.Credentials''.SessionToken')
+#print "AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID"
+#print "AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY"
+#print "AWS_SESSION_TOKEN=$AWS_SESSION_TOKEN"
+
+# Updating the file
+# Use sed to replace the credentials in the file
+sed -i.bak \
+  -e "s|^export AWS_ACCESS_KEY_ID=.*|export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID|" \
+  -e "s|^export AWS_SECRET_ACCESS_KEY=.*|export AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY|" \
+  -e "s|^export AWS_SESSION_TOKEN=.*|export AWS_SESSION_TOKEN=$AWS_SESSION_TOKEN|" \
+  "$SCRIPT_FILE"
+
+echo "AWS credentials in $SCRIPT_FILE have been updated. Old script is saved in $SCRIPT_FILE.bak"
+

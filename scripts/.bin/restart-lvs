@@ -15,4 +15,5 @@ done
 
 # Restart
 cd "${LVS_DOCKER_DEV_DIR}"
+echo $(pwd)
 sh ./bin/restart.sh
